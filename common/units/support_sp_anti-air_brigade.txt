@@ -1,0 +1,257 @@
+sub_units = {
+
+	support_light_sp_anti_air = {
+		sprite = light_armor
+		map_icon_category = armored
+		priority = 0
+		ai_priority = 0
+		active = yes
+		
+		type = {
+			armor
+			anti_air
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+		combat_width = 0
+		
+		transport = light_tank_aa_equipment
+		
+		essential = {
+			light_tank_aa_equipment
+			fuel_equipment
+		}
+		
+		need = {
+			light_tank_aa_equipment = 10
+			 
+		}
+		
+		can_be_parachuted = yes
+		
+		manpower = 300
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.3
+		training_time = 180
+		weight = 0.5
+		
+		supply_consumption = 0.1
+
+		#support unit nerf
+		# hard_attack = -0.5
+		# air_attack = -0.4
+		# breakthrough = -0.5
+		# defense = -0.4
+		# ap_attack = -0.5
+		armor_value = -0.9
+	}
+	
+	support_medium_sp_anti_air = {
+		sprite = medium_armor
+		map_icon_category = armored
+		priority = 0
+		ai_priority = 0
+		active = yes
+		
+		type = {
+			armor
+			anti_air
+			support
+		}
+		
+		group = support
+		
+		transport = medium_tank_aa_equipment
+		
+		essential = {
+			fuel_equipment
+			medium_tank_aa_equipment
+		}
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+		combat_width = 0
+
+		need = {
+			medium_tank_aa_equipment = 10
+			 
+		}
+		manpower = 300
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.3
+		training_time = 180
+		weight = 0.75
+		supply_consumption = 0.1
+		maximum_speed = 8
+
+		#support unit nerf
+		# hard_attack = -0.5
+		# air_attack = -0.4
+		# breakthrough = -0.5
+		# defense = -0.4
+		# ap_attack = -0.5
+		armor_value = -0.9
+	}
+	
+	support_heavy_sp_anti_air = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 0
+		ai_priority = 0
+		active = yes
+		training_time = 180
+		
+		type = {
+			armor
+			anti_air
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+		
+		transport = heavy_tank_aa_equipment
+		
+		combat_width = 0
+		
+		essential = {
+			fuel_equipment
+			heavy_tank_aa_equipment
+		}
+		
+		need = {
+			heavy_tank_aa_equipment = 6
+			
+		}
+		manpower = 300
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.3
+		weight = 1.0
+		supply_consumption = 0.1
+		maximum_speed = 5
+
+		#support unit nerf
+		# hard_attack = -0.5
+		# air_attack = -0.4
+		# breakthrough = -0.5
+		# defense = -0.4
+		# ap_attack = -0.5
+		armor_value = -0.9
+	}
+	
+	support_super_heavy_sp_anti_air = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 0
+		ai_priority = 0
+		active = yes
+		categories = {
+			category_support_battalions
+			category_army
+		}
+		
+		group = support
+		
+		type = {
+			armor
+			anti_air
+			support
+		}
+
+		combat_width = 0
+		
+		transport = super_heavy_tank_aa_equipment
+		
+		essential = {
+			super_heavy_tank_aa_equipment
+			fuel_equipment
+		}
+		
+		need = {
+			super_heavy_tank_aa_equipment = 3
+			
+		}
+		manpower = 300
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.3
+		training_time = 180
+		weight = 1.3
+		supply_consumption = 0.1
+		maximum_speed = 4
+
+		#support unit nerf
+		# hard_attack = -0.5
+		# air_attack = -0.4
+		# breakthrough = -0.5
+		# defense = -0.4
+		# ap_attack = -0.5
+		armor_value = -0.9
+	}
+	
+	support_modern_sp_anti_air = {
+		sprite = medium_armor
+		map_icon_category = armored
+		priority = 0
+		ai_priority = 0
+		active = yes
+		
+		type = {
+			armor
+			anti_air
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+		combat_width = 0
+		
+		transport = modern_tank_aa_equipment
+		
+		essential = {
+			fuel_equipment
+			modern_tank_aa_equipment
+		}
+		
+		need = {
+			modern_tank_aa_equipment = 6
+			
+		}
+		manpower = 300
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.3
+		training_time = 180
+		weight = 1.0
+		supply_consumption = 0.1
+
+		#support unit nerf
+		# hard_attack = -0.5
+		# air_attack = -0.4
+		# breakthrough = -0.5
+		# defense = -0.4
+		# ap_attack = -0.5
+		armor_value = -0.9
+	}
+}

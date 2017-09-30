@@ -1,0 +1,258 @@
+sub_units = {
+
+	support_light_tank_destroyer = {
+		sprite = "light_armor"
+		map_icon_category = armored
+		priority = 0
+		ai_priority = 0
+		active = yes
+		
+		type = {
+			armor
+			anti_tank
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+		combat_width = 0
+		
+		transport = light_tank_destroyer_equipment
+		
+		essential = {
+			light_tank_destroyer_equipment
+			fuel_equipment
+		}
+		
+		need = {
+			light_tank_destroyer_equipment = 20
+			
+		}
+		
+		can_be_parachuted = yes
+		
+		manpower = 300
+		max_organisation = 0
+		default_morale = 0.2
+		max_strength = 0.3
+		training_time = 180
+		weight = 0.5
+		supply_consumption = 0.1
+		
+		#support unit nerf
+		# soft_attack = -0.5
+		# hard_attack = -0.4
+		# breakthrough = -0.5
+		# defense = -0.5
+		# ap_attack = -0.4
+		# armor_value = -0.7
+	}
+	
+	support_medium_tank_destroyer = {
+		sprite = "medium_armor"
+		map_icon_category = armored
+		priority = 0
+		ai_priority = 0
+		active = yes
+		
+		type = {
+			armor
+			support
+			anti_tank
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+
+		combat_width = 0
+		
+		transport = medium_tank_destroyer_equipment
+		
+		essential = {
+			fuel_equipment
+			medium_tank_destroyer_equipment
+		}
+		
+		need = {
+			medium_tank_destroyer_equipment = 20
+			
+		}
+		manpower = 300
+		max_organisation = 0
+		default_morale = 0.2
+		max_strength = 0.3
+		training_time = 180
+		weight = 0.75
+		supply_consumption = 0.11
+		maximum_speed = 8
+		
+		#support unit nerf
+		# hard_attack = -0.4
+		# breakthrough = -0.5
+		# defense = -0.5
+		# ap_attack = -0.4
+		armor_value = -0.9
+	}
+	
+	# support_heavy_tank_destroyer = {
+		# sprite = "heavy_armor"
+		# map_icon_category = armored
+		# priority = 0
+		# ai_priority = 0
+		# active = yes
+		# training_time = 180
+		
+		# type = {
+			# armor
+			# support
+			# anti_tank
+		# }
+		
+		# group = support
+		
+		# categories = {
+			# category_support_battalions
+			# category_army
+		# }
+
+		# combat_width = 0
+		
+		# transport = heavy_tank_destroyer_equipment
+		
+		# essential = {
+			# fuel_equipment
+			# heavy_tank_destroyer_equipment
+		# }
+		
+		# need = {
+			# heavy_tank_destroyer_equipment = 12
+			
+		# }
+		# manpower = 300
+		# max_organisation = 0
+		# default_morale = 0.2
+		# max_strength = 0.3
+		# weight = 1.0
+		# supply_consumption = 0.15
+		# maximum_speed = 5
+		
+		# support unit nerf
+		# soft_attack = -0.5
+		# hard_attack = -0.4
+		# breakthrough = -0.5
+		# defense = -0.5
+		# ap_attack = -0.4
+		# armor_value = -0.9
+	# }
+	
+	# support_super_heavy_tank_destroyer = {
+		# sprite = "heavy_armor"
+		# map_icon_category = armored
+		# priority = 0
+		# ai_priority = 0
+		# active = yes
+		
+		# type = {
+			# armor
+			# support
+			# anti_tank
+		# }
+
+		# group = support
+		
+		# categories = {
+			# category_support_battalions
+			# category_army
+		# }
+
+		# combat_width = 0
+		
+		# transport = super_heavy_tank_destroyer_equipment
+		
+		# essential = {
+			# fuel_equipment
+			# super_heavy_tank_destroyer_equipment
+		# }
+		
+		# need = {
+			# super_heavy_tank_destroyer_equipment = 4
+			
+		# }
+		# manpower = 300
+		# max_organisation = 0
+		# default_morale = 0.2
+		# max_strength = 0.3
+		# training_time = 180
+		# weight = 1.3
+		# supply_consumption = 0.2
+		# maximum_speed = 4
+		
+		# support unit nerf
+		# soft_attack = -0.5
+		# hard_attack = -0.4
+		# breakthrough = -0.5
+		# defense = -0.5
+		# ap_attack = -0.4
+		# armor_value = -0.9
+	# }
+	
+	support_modern_tank_destroyer = {
+		sprite = "medium_armor"
+		map_icon_category = armored
+		priority = 0
+		ai_priority = 0
+		active = yes
+		
+		type = {
+			armor
+			support
+			anti_tank
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+		combat_width = 0
+		
+		transport = modern_tank_destroyer_equipment
+		
+		essential = {
+			fuel_equipment
+			modern_tank_destroyer_equipment
+		}
+		
+		need = {
+			modern_tank_destroyer_equipment = 12
+			 
+		}
+		manpower = 300
+		max_organisation = 0
+		default_morale = 0.2
+		max_strength = 0.3
+		training_time = 180
+		weight = 1.0
+		supply_consumption = 0.15
+		
+		#support unit nerf
+		# soft_attack = -0.5
+		# hard_attack = -0.4
+		# breakthrough = -0.5
+		# defense = -0.5
+		# ap_attack = -0.4
+		armor_value = -0.9
+	}
+}
