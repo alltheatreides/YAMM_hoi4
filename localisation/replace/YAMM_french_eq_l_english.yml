@@ -1,0 +1,9 @@
+﻿l_english:
+ FRA_medium_tank_equipment_1:1 "SOMUA S35"
+ FRA_medium_tank_equipment_1_short:1 "S35"
+ FRA_medium_tank_equipment_2:1 "SOMUA S40"
+ FRA_medium_tank_equipment_2_short:1 "S40"
+ FRA_medium_tank_equipment_1:0 "SOMUA S35"
+ FRA_medium_tank_equipment_1_short:0 "S35"
+ FRA_medium_tank_equipment_2:0 "SOMUA S40"
+ FRA_medium_tank_equipment_2_short:0 "S40"

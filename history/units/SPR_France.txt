@@ -1,0 +1,22 @@
+units = {
+    division = {
+		name = "1ere Division Volontaire"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "2ieme Division Volontaire"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+    division = {
+		name = "3ieme Division Volontaire"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "4ieme Division Volontaire"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+}

@@ -1,0 +1,10 @@
+﻿l_english:
+ militia:0 "Militia"
+ militia_desc:0 "Light civil or indigenous forces with light equipment, little combat training and capacities."
+ light_infantry:0 "Light Infantry"
+ light_infantry_desc:0 "Light infantry units lack the greater firepower, operational mobility of their regular counterparts, but possess greater tactical mobility and the ability to execute missions in severely restrictive terrain and in areas where weather makes mobility difficult"
+ light_cruiser_aa_1:0 "Early War AA Light Cruiser"
+ light_cruiser_aa_2:0 "Mid-War AA Light Cruiser"
+ light_cruiser_aa_3:0 "Late War AA Light Cruiser"
+ light_cruiser_aa:0 "AA Light Cruiser"
+ 

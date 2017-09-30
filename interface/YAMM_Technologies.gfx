@@ -1,0 +1,275 @@
+spriteTypes = {	
+
+	#Artillery
+	SpriteType = {
+		name = "GFX_light_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/light_Art_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_heavy_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_1_comintern.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_light_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/light_Art_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_heavy_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_2_comintern.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_light_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/light_Art_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_heavy_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_3_comintern.dds"
+	}
+	
+	
+	#Anti-Air
+	SpriteType = {
+		name = "GFX_heavy_antiair_1_medium"
+		texturefile = "gfx/interface/technologies/Heavy_AA_1_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_heavy_antiair_2_medium"
+		texturefile = "gfx/interface/technologies/Heavy_AA_2_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_heavy_antiair_3_medium"
+		texturefile = "gfx/interface/technologies/Heavy_AA_3_axis.dds"
+	}
+	
+	
+	
+	#GERMANY
+	SpriteType = {
+		name = "GFX_GER_heavy_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/GER_Heavy_Art_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_heavy_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_2_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_heavy_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_3_axis.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_GER_light_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/light_Art_1_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_light_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/light_Art_2_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_light_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/light_Art_3_axis.dds"
+	}
+	
+	
+	#FRA
+	SpriteType = {
+		name = "GFX_FRA_heavy_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_1_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_heavy_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_2_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_heavy_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_3_allies.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_FRA_light_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/light_Art_1_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_light_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/light_Art_2_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_light_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/light_Art_3_allies.dds"
+	}
+	
+	
+	#ENG
+	SpriteType = {
+		name = "GFX_ENG_heavy_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_1_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_heavy_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_2_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_heavy_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_3_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_light_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/light_Art_1_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_light_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/light_Art_2_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_light_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/light_Art_3_allies.dds"
+	}
+	
+	#ITA
+	SpriteType = {
+		name = "GFX_ITA_heavy_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_1_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_heavy_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_2_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_heavy_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_3_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_light_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/light_Art_1_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_light_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/light_Art_2_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_light_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/light_Art_3_axis.dds"
+	}
+	
+	#JAP
+	SpriteType = {
+		name = "GFX_JAP_heavy_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_1_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_heavy_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_2_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_heavy_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_3_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_light_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/light_Art_1_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_light_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/light_Art_2_axis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_light_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/light_Art_3_axis.dds"
+	}
+	
+	#USA
+	SpriteType = {
+		name = "GFX_USA_heavy_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_1_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_heavy_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_2_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_heavy_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_3_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_light_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/light_Art_1_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_light_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/light_Art_2_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_light_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/light_Art_3_allies.dds"
+	}
+	
+	
+	#SOV
+	SpriteType = {
+		name = "GFX_SOV_heavy_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_1_comintern.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_heavy_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_2_comintern.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_heavy_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/Heavy_Art_3_comintern.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_light_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/light_Art_1_comintern.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_light_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/light_Art_2_comintern.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_light_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/light_Art_3_comintern.dds"
+	}
+	
+}

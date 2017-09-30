@@ -1,0 +1,23 @@
+technologies = {
+	
+	bf_109_e = {
+		
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		
+		enable_equipments = {
+			bf_109_e_fighter_equipment
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+	}
+	
+}

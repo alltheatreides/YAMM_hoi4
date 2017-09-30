@@ -1,0 +1,17 @@
+spriteTypes = {	
+	#################################
+	### On-map-counters for SHIPS ###
+
+	spriteType = { name = "GFX_unit_light_cruiser_aa_icon_medium_white"					texturefile = "gfx/interface/counters/ships_small/onmap_light_cruiser_aa.dds" }
+
+
+	#############################################################################
+	### Large ships images used in NAVAL-COMBAT-VIEW and SELECTED-FLEETS-VIEW ###
+
+	spriteType = { name = "GFX_unit_light_cruiser_aa_icon_medium"		texturefile = "gfx/interface/navalcombat/ships/light_cruiser_aa.dds"	noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_cruiser_aa_1_icon_medium"		texturefile = "gfx/interface/navalcombat/ships/light_cruiser_aa_I.dds"		noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_light_cruiser_aa_2_icon_medium"		texturefile = "gfx/interface/navalcombat/ships/light_cruiser_aa_II.dds"		noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_cruiser_aa_3_icon_medium"		texturefile = "gfx/interface/navalcombat/ships/light_cruiser_aa_III.dds"	noOfFrames = 2 }
+	
+	
+}

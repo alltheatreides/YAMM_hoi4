@@ -1,0 +1,13 @@
+spriteTypes = {	
+
+	# ---------------------------------------------------------------------------
+	# Code expects GFX_navalcombat_ship_icon_ + sprite_name set in subunit defs
+	
+	spriteType = { # "light_cruiser_aa"
+		name = "GFX_navalcombat_ship_icon_light_cruiser_aa"
+		texturefile = "gfx/interface/navalcombat/ships/light_cruiser_aa.dds"
+		noOfFrames = 2
+	}
+	
+
+}

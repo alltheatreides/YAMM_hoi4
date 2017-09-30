@@ -1,0 +1,180 @@
+equipments = {
+		light_carrier = {
+		is_archetype = yes 
+		is_buildable = no
+		sprite = light_carrier
+		type = carrier
+		
+		upgrades = {
+			ship_deckspace_upgrade
+			carrier_armor_upgrade
+			ship_engine_upgrade
+			ship_reliability_upgrade			
+		}
+		
+		interface_category = interface_category_screen_ships
+		
+		ap_attack = 0
+		attack = 0
+		fire_range = 8
+		torpedo_attack = 0
+		carrier_size = 18
+		
+		anti_air_attack = 1
+		
+		armor_value = 0
+		evasion = 5
+		
+		surface_detection = 10
+		sub_detection = 20
+		surface_visibility = 15
+		naval_speed = 18
+		reliability = 0.70
+		
+		naval_range = 2800
+		
+		max_strength = 100
+		
+		port_capacity_usage = 1
+		
+		# (Describes combat behaviour - hidden stat)
+		offensive_weapons = no
+
+		build_cost_ic = 2000
+		resources = {
+			oil = 1
+			steel = 2
+		}
+		
+		manpower = 650
+	}
+	
+	light_carrier_1 = {
+		archetype = light_carrier
+		priority = 70
+		
+		type = {
+			screen_ship
+			carrier
+		}
+		
+		ap_attack = 0
+		attack = 0.2
+		fire_range = 15
+		torpedo_attack = 0
+		carrier_size = 22
+		
+		anti_air_attack = 2
+		
+		armor_value = 3
+		evasion = 4
+		
+		surface_detection = 10
+		sub_detection = 5
+		surface_visibility = 20
+		naval_speed = 20
+		reliability = 0.60
+		
+		naval_range = 4000
+		
+		max_strength = 125
+		
+		port_capacity_usage = 1
+		
+		# (Describes combat behaviour - hidden stat)
+		offensive_weapons = no
+
+		build_cost_ic = 2250
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 1
+		}
+		
+		manpower = 1650
+	}
+	
+	light_carrier_2 = {
+		archetype = light_carrier
+		parent = light_carrier_1
+		priority = 70
+		
+		type = {
+			screen_ship
+			carrier
+		}
+		
+		ap_attack = 0
+		attack = 0.3
+		fire_range = 16
+		torpedo_attack = 0
+		carrier_size = 26
+		
+		anti_air_attack = 3
+		
+		armor_value = 4
+		evasion = 5
+		
+		surface_detection = 20
+		sub_detection = 5
+		surface_visibility = 20
+		naval_speed = 22
+		reliability = 0.70
+
+		naval_range = 5000
+		
+		max_strength = 150
+		
+		port_capacity_usage = 1
+
+		build_cost_ic = 2300
+		resources = {
+			oil = 2
+			steel = 3
+			chromium = 1
+		}		
+		manpower = 1815
+	}
+	
+	light_carrier_3 = {
+		archetype = light_carrier
+		parent = light_carrier_2
+		priority = 70
+		
+		type = {
+			carrier
+			capital_ship
+		}
+		
+		ap_attack = 0
+		attack = 0.4
+		fire_range = 17
+		torpedo_attack = 0
+		carrier_size = 32
+		
+		anti_air_attack = 4
+		
+		armor_value = 5
+		evasion = 6
+		
+		surface_detection = 30
+		sub_detection = 5
+		surface_visibility = 20
+		naval_speed = 24
+		reliability = 0.80
+
+		naval_range = 6000
+		
+		max_strength = 175
+		
+		port_capacity_usage = 1
+
+		build_cost_ic = 2450
+		resources = {
+			oil = 2
+			steel = 4
+			chromium = 2
+		}		
+		manpower = 1980
+	}
+}

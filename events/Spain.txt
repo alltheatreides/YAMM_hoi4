@@ -1,0 +1,2364 @@
+﻿###########################
+# Spanish Events
+###########################
+
+add_namespace = spain
+
+# Spanish Civil War
+country_event = {
+	id = spain.1
+	title = spain.1.t
+	desc = spain.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_global_flag = scw_over }
+		tag = SPR
+		has_defensive_war = no
+		date > 1936.2.16 # Trigger at some point after 1936 elections
+	}
+	
+	option = { # Support Nationalists
+		name = spain.1.a
+		trigger = { is_ai = no }
+		hidden_effect = {
+		    FRA = {
+			country_event = { id = spain.32 days = 2 }
+			}
+			POR = {
+			country_event = { id = spain.35 days = 5 }
+			}
+			set_capital = 176
+			remove_ideas = SPR_riots
+			remove_ideas = SPR_riots2
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = democratic
+				size = 0.7
+				capital = 41
+				states = { 41 165 167 168 172 173 175 }
+			}
+			country_event = { id = spain.20 days = 275 }
+			country_event = { id = spain.21 days = 60 }
+			remove_idea = SPR_zamora
+			set_cosmetic_tag = CIV
+			create_country_leader = {
+	            name = "Emilio Mola"
+	            desc = "POLITICS_MOLA_DESC"
+	            picture = "Portrait_Spain_Mola.dds"
+	            expire = "1965.1.1"
+	            ideology = falangism
+	            traits = {
+	            }
+            }
+			set_province_controller = 1048
+			set_province_controller = 7183
+		    set_province_controller = 875
+			
+			create_country_leader = {
+	            name = "Gonzalo Queipo de Llano"
+	            desc = "POLITICS_LLANO_DESC"
+	            picture = "Portrait_Spain_Queipo.dds"
+	            expire = "1965.1.1"
+	            ideology = despotism
+	            traits = {
+	            }
+            }
+			
+			create_country_leader = {
+	            name = "José Díaz"
+	            desc = "POLITICS_JOSE_DIAZ_DESC"
+	            picture = "Portrait_Spain_Jose_Diaz.dds"
+	            expire = "1965.1.1"
+	            ideology = stalinism
+	            traits = {
+		        #
+	            }
+			}
+            set_party_name = {
+		        ideology = communism 
+		        long_name = SPR_pce_long 
+		        name = SPR_pce 
+            }
+			
+			set_party_name = {
+		        ideology = fascism
+		        long_name = SPR_franco_long 
+		        name = SPR_franco 
+            }
+			
+			set_party_name = {
+		        ideology = neutrality
+		        long_name = SPR_llano_long 
+		        name = SPR_llano
+            }
+			
+            create_field_marshal = {
+	            name = "Francisco Franco"
+	            portrait_path = "gfx/leaders/SPA/Portrait_Spain_Francisco_Franco.dds"
+	            traits = { offensive_doctrine }
+	            skill = 2
+            }
+			create_field_marshal = {
+	            name = "Miguel Cabanellas"
+	            portrait_path = "gfx/leaders/SPA/Portrait_Spain_Cabanellas.dds"
+	            traits = { old_guard }
+	            skill = 2
+            }
+            create_corps_commander = {
+	            name = "José Enrique Varela"
+	            portrait_path = "gfx/leaders/SPA/Portrait_Spain_Varela.dds"
+	            traits = { urban_assault_specialist }
+	            skill = 2
+            }
+            create_corps_commander = {
+	            name = "Juan Yagüe"
+	            portrait_path = "gfx/leaders/SPA/Portrait_Spain_Yague.dds"
+	            traits = { fortress_buster }
+	            skill = 2
+            }
+            create_corps_commander = {
+	            name = "Luis Orgaz"
+	            portrait_path = "gfx/leaders/SPA/Portrait_Spain_Orgaz.dds"
+	            traits = { hill_fighter }
+	            skill = 2
+            }
+            create_corps_commander = {
+	            name = "Alfredo Kindelán"
+	            portrait_path = "gfx/leaders/SPA/Portrait_Spain_Kindelan.dds"
+	            traits = { old_guard }
+	            skill = 2
+            }			
+			every_country = {
+				limit = {
+					original_tag = SPR
+					has_government = democratic
+				}
+				if = {
+		        limit = {
+		            has_country_flag = casares
+			    } 
+		    create_country_leader = {
+	            name = "José Giral"
+	            desc = "POLITICS_FAI_DESC"
+	            picture = "Portrait_SPR_Giral.dds"
+	            expire = "1965.1.1"
+	            ideology = socialism
+	            traits = {
+	            }
+            }
+		    }
+				load_oob = "SPR_Civil_War"
+				set_equipment_fraction = 0.3
+				set_national_unity = 0.9
+				#country_event = { id = spain.3 days = 1 }
+				country_event = { id = spain.11 days = 5 }
+				set_politics = {
+			        ruling_party = democratic
+			        elections_allowed = yes
+		            last_election = "1936.2.16"
+	                election_frequency = 48
+		        }
+				set_cosmetic_tag = CIV
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.5
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = 0.45
+			    }
+			    create_country_leader = {
+	                name = "Francisco Largo Caballero"
+	                desc = "POLITICS_CABALLERO_DESC"
+	                picture = "Portrait_Spain_Caballero.dds"
+	                expire = "1965.1.1"
+	                ideology = marxism
+	                traits = {
+		             #
+	                }
+                }
+                create_field_marshal = {
+	            name = "José Miaja"
+	            portrait_path = "gfx/leaders/SPR/Portrait_Spain_Miaja.dds"
+	            traits = { inspirational_leader }
+	            skill = 2
+            }
+			create_field_marshal = {
+	            name = "Carlos Masquelet"
+	            portrait_path = "gfx/leaders/SPR/Portrait_Spain_Masquelet.dds"
+	            traits = { fast_planner }
+	            skill = 2
+            }
+			create_corps_commander = {
+	            	name = "Enrique Líster"
+	                portrait_path = "gfx/leaders/SPR/Portrait_Spain_Lister.dds"
+	                traits = { trickster }
+	                skill = 1
+            }
+            create_corps_commander = {
+	            	name = "Juan Modesto"
+	                portrait_path = "gfx/leaders/SPR/Portrait_Spain_Modesto.dds"
+	                traits = { trait_engineer }
+	                skill = 2
+            }
+            create_corps_commander = {
+	            	name = "Valentín González"
+	                portrait_path = "gfx/leaders/SPR/Portrait_Spain_Valentin.dds"
+	                traits = { hill_fighter }
+	                skill = 1
+            }					
+			}
+			news_event = { hours = 6 id = news.63 }
+			set_global_flag = spanish_civil_war
+			
+			load_oob = "SPA_Civil_War"
+			set_equipment_fraction = 0.3
+			set_national_unity = 0.8
+			
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
+			
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.3
+			}
+
+			#country_event = { id = spain.2 days = 7 }
+		}
+		custom_effect_tooltip = nationalists_chosen
+	}
+	# option = { # Support Republicans
+		# name = spain.1.b
+		# hidden_effect = {
+		    # remove_idea = SPR_riots
+			# FRA = {
+			# country_event = { id = spain.32 days = 2 }
+			# }
+			# POR = {
+			# country_event = { id = spain.35 days = 5 }
+			# }
+			# start_civil_war = {
+				# ideology = fascism
+				# size = 0.3
+				# capital = 176
+				# states = { 699 178 290 176 174 171 177 166 744 }
+			# }
+			# if = {
+		        # limit = {
+		            # has_country_flag = casares
+			    # } 
+		    # create_country_leader = {
+	            # name = "José Giral"
+	            # desc = "POLITICS_FAI_DESC"
+	            # picture = "Portrait_SPR_Giral.dds"
+	            # expire = "1965.1.1"
+	            # ideology = socialism
+	            # traits = {
+	            # }
+            # }
+		    # }
+			# set_cosmetic_tag = CIV
+			# every_country = {
+				# limit = {
+					# original_tag = SPR
+					# has_government = fascism
+				# }
+				# remove_idea = SPR_zamora
+				# set_equipment_fraction = 0.3
+				# set_national_unity = 0.8
+				# #country_event = { id = spain.2 days = 1 }
+				# load_oob = "SPA_Civil_War"	
+				# set_cosmetic_tag = CIV
+				# country_event = { id = spain.20 days = 275 }
+				# country_event = { id = spain.21 days = 60 }
+				# set_party_name = {
+		            # ideology = neutrality
+		            # long_name = SPR_llano_long 
+		            # name = SPR_llano
+                # }
+				# set_party_name = {
+		            # ideology = fascism
+		            # long_name = SPR_franco_long 
+		            # name = SPR_franco 
+                # }
+				# add_popularity = {
+				   # ideology = fascism
+				   # popularity = 1
+			    # }
+			
+			    # add_popularity = {
+				    # ideology = neutrality
+				    # popularity = 0.3
+			    # }
+				# create_country_leader = {
+	                # name = "Emilio Mola"
+	                # desc = "POLITICS_MOLA_DESC"
+	                # picture = "Portrait_Spain_Mola.dds"
+	                # expire = "1965.1.1"
+	                # ideology = falangism
+	                # traits = {
+	                # }
+                # }
+                # #create_country_leader = {
+	                # #name = "Francisco Franco"
+	                # #desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+	                # #picture = "Portrait_Spain_Francisco_Franco.dds"
+	                # #expire = "1965.1.1"
+	                # #ideology = falangism
+	                # #traits = {
+	                # #}
+                # #}
+                # create_country_leader = {
+	                # name = "José Díaz"
+	                # desc = "POLITICS_JOSE_DIAZ_DESC"
+	                # picture = "Portrait_Spain_Jose_Diaz.dds"
+	                # expire = "1965.1.1"
+	                # ideology = stalinism
+	                # traits = {
+		            # #
+	                # }
+				# }
+				# set_province_controller = 1048
+			# set_province_controller = 7183
+		    # set_province_controller = 875
+				# create_country_leader = {
+	                # name = "Gonzalo Queipo de Llano"
+	                # desc = "POLITICS_LLANO_DESC"
+	                # picture = "Portrait_Spain_Queipo.dds"
+	                # expire = "1965.1.1"
+	                # ideology = despotism
+	                # traits = {
+	                # }
+                # }
+            	# set_party_name = {
+		            # ideology = communism 
+		            # long_name = SPR_pce_long 
+		            # name = SPR_pce 
+                # }
+                # create_field_marshal = {
+	            # name = "Francisco Franco"
+	            # portrait_path = "gfx/leaders/SPA/Portrait_Spain_Francisco_Franco.dds"
+	            # traits = { offensive_doctrine }
+	            # skill = 2
+            # }
+			# create_field_marshal = {
+	            # name = "Miguel Cabanellas"
+	            # portrait_path = "gfx/leaders/SPA/Portrait_Spain_Cabanellas.dds"
+	            # traits = { old_guard }
+	            # skill = 2
+            # }
+            # create_corps_commander = {
+	            # name = "José Enrique Varela"
+	            # portrait_path = "gfx/leaders/SPA/Portrait_Spain_Varela.dds"
+	            # traits = { urban_assault_specialist }
+	            # skill = 2
+            # }
+            # create_corps_commander = {
+	            # name = "Juan Yagüe"
+	            # portrait_path = "gfx/leaders/SPA/Portrait_Spain_Yague.dds"
+	            # traits = { fortress_buster }
+	            # skill = 2
+            # }
+            # create_corps_commander = {
+	            # name = "Luis Orgaz"
+	            # portrait_path = "gfx/leaders/SPA/Portrait_Spain_Orgaz.dds"
+	            # traits = { hill_fighter }
+	            # skill = 2
+            # }
+            # create_corps_commander = {
+	            # name = "Alfredo Kindelán"
+	            # portrait_path = "gfx/leaders/SPA/Portrait_Spain_Kindelan.dds"
+	            # traits = { old_guard }
+	            # skill = 2
+            # }				
+			# }
+			# news_event = { hours = 6 id = news.63 }
+			# set_global_flag = spanish_civil_war
+			
+			# create_field_marshal = {
+	            # name = "José Miaja"
+	            # portrait_path = "gfx/leaders/SPR/Portrait_Spain_Miaja.dds"
+	            # traits = { inspirational_leader }
+	            # skill = 2
+            # }
+			# create_field_marshal = {
+	            # name = "Carlos Masquelet"
+	            # portrait_path = "gfx/leaders/SPR/Portrait_Spain_Masquelet.dds"
+	            # traits = { fast_planner }
+	            # skill = 2
+            # }
+			# create_corps_commander = {
+	            	# name = "Enrique Líster"
+	                # portrait_path = "gfx/leaders/SPR/Portrait_Spain_Lister.dds"
+	                # traits = { trickster }
+	                # skill = 1
+            # }
+            # create_corps_commander = {
+	            	# name = "Juan Modesto"
+	                # portrait_path = "gfx/leaders/SPR/Portrait_Spain_Modesto.dds"
+	                # traits = { trait_engineer }
+	                # skill = 2
+            # }
+            # create_corps_commander = {
+	            	# name = "Valentín González"
+	                # portrait_path = "gfx/leaders/SPR/Portrait_Spain_Valentin.dds"
+	                # traits = { hill_fighter }
+	                # skill = 1
+            # }			
+			
+			# set_politics = {
+			    # ruling_party = democratic
+			    # elections_allowed = yes
+		        # last_election = "1936.2.16"
+	            # election_frequency = 48
+		    # }
+			
+			# add_popularity = {
+				# ideology = democratic
+				# popularity = 1
+			# }	
+			# add_popularity = {
+				# ideology = communism
+				# popularity = 0.4
+			# }
+			# add_popularity = {
+				# ideology = fascism
+				# popularity = -1
+			# }
+            # add_popularity = {
+				# ideology = neutrality
+				# popularity = -1
+			# }				
+			# load_oob = "SPR_Civil_War"
+			# set_equipment_fraction = 0.3
+			# set_national_unity = 0.8
+			
+			# #country_event = { id = spain.3 days = 7 }
+			# country_event = { id = spain.11 days = 45 }
+		# }
+		# custom_effect_tooltip = republicans_chosen
+	# }
+}
+
+# Nationalists: Seek Support
+country_event = {
+	id = spain.2
+	title = spain.2.t
+	desc = spain.2.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_civil_war = yes
+		original_tag = SPR
+	}
+
+	option = {
+		name = spain.2.a
+		every_country = {
+			limit = {
+				has_government = fascism
+				NOT = { original_tag = SPR }
+			}
+			country_event = { id = spain.4 days = 1 }
+		}
+		if = {
+			limit = {
+				POR = { NOT = { has_government = communism } }
+			}
+			POR = { country_event = { id = spain.4 days = 1 } }
+		}
+	}
+
+	option = {
+		name = spain.2.b
+		add_political_power = 40
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Republicans: Seek Support
+country_event = {
+	id = spain.3
+	title = spain.2.t
+	desc = spain.3.d
+	picture = GFX_report_event_spain_civil_war_volunteers
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_civil_war = yes
+	}
+
+	option = {
+		name = spain.3.a
+		every_country = {
+			limit = {
+				has_government = communism
+				NOT = { tag = SPR }
+			}
+			country_event = { id = spain.5 days = 1 }
+		}
+		if = {
+			limit = {
+				MEX = { NOT = { has_government = fascism } }
+			}
+			MEX = { country_event = { id = spain.5 days = 1 } }
+		}
+	}
+
+	option = {
+		name = spain.3.b
+		add_political_power = 40
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Nationalist Spain Wants Our Help
+country_event = {
+	id = spain.4
+	title = spain.4.t
+	desc = spain.4.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	is_triggered_only = yes
+
+	trigger = {
+		SPR = { has_civil_war = yes }
+	}
+
+	option = {
+		name = spain.4.a
+		set_country_flag = promised_help_nationalist_spain
+		custom_effect_tooltip = spain.4.a.tt
+	}
+
+	option = {
+		name = spain.4.b
+		
+	}
+}
+
+# Republican Spain Wants Our Help
+country_event = {
+	id = spain.5
+	title = spain.5.t
+	desc = spain.5.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		SPR = { has_civil_war = yes }
+	}
+
+	option = {
+		name = spain.5.a
+		set_country_flag = promised_help_republican_spain
+		custom_effect_tooltip = spain.4.a.tt
+	}
+
+	option = {
+		name = spain.5.b
+		
+	}
+}
+
+# Nationalist Spain Appreciates our Help
+country_event = {
+	id = spain.6
+	title = spain.6.t
+	desc = spain.6.d
+	picture = GFX_report_event_finnish_letter
+	
+	trigger = {
+		has_country_flag = promised_help_nationalist_spain
+		SPR = { has_civil_war = yes }
+		any_country = {
+			original_tag = SPR
+			has_government = fascism
+			ROOT = { is_lend_leasing = PREV }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = spain.6.a
+		clr_country_flag = promised_help_nationalist_spain
+		every_country = {
+			limit = {
+				original_tag = SPR
+				has_government = fascism
+			}
+			add_opinion_modifier = { target = ROOT modifier = lend_leased_spanish_civil_war }
+		}
+	}
+}
+
+# Republican Spain Appreciates our Help
+country_event = {
+	id = spain.7
+	title = spain.7.t
+	desc = spain.7.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	
+	trigger = {
+		has_country_flag = promised_help_republican_spain
+		SPR = { has_civil_war = yes }
+		is_lend_leasing = SPR
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = spain.7.a
+		clr_country_flag = promised_help_republican_spain
+		SPR = { add_opinion_modifier = { target = ROOT modifier = lend_leased_spanish_civil_war } }
+	}
+}
+
+# Civil war over. Move Capital
+country_event = {
+	id = spain.8
+	title = spain.8.t
+	desc = spain.8.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	
+	trigger = {
+		original_tag = SPR
+		has_government = fascism
+		has_global_flag = nationalist_victory
+		owns_state = 41
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+		name = spain.8.a
+		set_capital = 41
+	}
+	option = {
+		ai_chance = { factor = 0 }
+		name = spain.8.b
+	}
+}
+
+# Election of 1936
+country_event = {
+	id = spain.9
+	title = spain.9.t
+	desc = spain.9.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPR
+		date < 1937.1.1
+	}
+
+	# Popular Front
+	option = {
+		ai_chance = { factor = 1 }
+		name = spain.9.a
+		set_country_flag = election_1936
+		set_party_name = 
+		{ideology = democratic 
+		long_name = SPR_democratic_party_azana_long 
+		name = SPR_democratic_party_azana }
+		
+		create_country_leader = {
+	        name = "Manuel Azana"
+	        desc = "POLITICS_MANUEL_AZANA_DESC"
+	        picture = "Portrait_Spain_Manuel_Azana.dds"
+	        expire = "1965.1.1"
+	        ideology = socialism
+	        traits = {
+	        }
+        }
+		hidden_effect = {
+		country_event = { id = spain.27 days = 1 }
+		country_event = { id = spain.12 days = 70 }
+		country_event = { id = spain.13 days = 90 }
+		country_event = { id = spain.25 days = 146 }
+		country_event = { id = spain.1 days = 151 }
+		set_country_flag = popular_front
+		}
+	}
+
+	# CEDA
+	# option = {
+		# ai_chance = { factor = 0 }
+		# name = spain.9.b
+		# set_politics = {
+			# ruling_party = neutrality
+			# elections_allowed = yes
+		    # last_election = "1936.2.16"
+	        # election_frequency = 48
+		# }
+		# set_party_name = 
+		# {ideology = democratic 
+		# long_name = SPR_democratic_party_azana_long 
+		# name = SPR_democratic_party_azana }
+		
+		# create_country_leader = {
+	        # name = "Manuel Azana"
+	        # desc = "POLITICS_MANUEL_AZANA_DESC"
+	        # picture = "Portrait_Spain_Manuel_Azana.dds"
+	        # expire = "1965.1.1"
+	        # ideology = socialism
+	        # traits = {
+	        # }
+        # }
+		# hidden_effect = {
+		# country_event = { id = spain.12 days = 70 }
+		# country_event = { id = spain.13 days = 90 }
+		# country_event = { id = spain.26 days = 146 }
+		# country_event = { id = spain.10 days = 151 }
+		# }
+		# set_country_flag = SPR_communist_civil_war
+	# }
+}
+
+# Spanish Civil War if CEDA is elected
+country_event = {
+	id = spain.10
+	title = spain.10.t
+	desc = spain.10.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_global_flag = scw_over }
+		has_country_flag = SPR_communist_civil_war
+		has_defensive_war = no
+		NOT = { has_government = democratic }
+		NOT = { has_government = communism }
+		date > 1936.7.17
+	}
+	
+	option = { # Support Government
+		name = spain.10.a
+		trigger = { is_ai = no }
+		hidden_effect = {
+		    remove_idea = SPR_riots
+			start_civil_war = {
+				ideology = communism
+				size = 0.5
+				capital = 165
+				states = { 165 167 168 173 169 166 170 178 741 }
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = yes
+		        last_election = "1936.2.16"
+	            election_frequency = 48
+			}
+			
+			create_field_marshal = {
+	            name = "Francisco Franco"
+	            portrait_path = "gfx/leaders/SPA/Portrait_Spain_Francisco_Franco.dds"
+	            traits = { offensive_doctrine }
+	            skill = 2
+            }
+			
+			create_corps_commander = {
+	            name = "Manuel Goded"
+	            portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	            traits = { trait_mountaineer }
+	            skill = 1
+            }
+			
+			every_country = {
+				limit = {
+					original_tag = SPR
+					has_government = communism
+				}
+				load_oob = "SPR_CEDA_WAR"
+				set_equipment_fraction = 0.7
+				set_national_unity = 0.8
+				remove_idea = SPR_zamora
+				create_field_marshal = {
+	                name = "Valentín González"
+	                portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	                traits = { defensive_doctrine }
+	                skill = 1
+                }
+				set_country_flag = commie_spain
+			    set_cosmetic_tag = SPC
+			    create_corps_commander = {
+	            	name = "Líster Forján"
+	                portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	                traits = { trickster }
+	                skill = 1
+                }	
+			}
+			#country_event = { id = spain.16 days = 928 }
+			news_event = { hours = 6 id = news.63 }
+			set_global_flag = spanish_civil_war
+			
+			load_oob = "SPA_CEDA_WAR"
+			set_equipment_fraction = 0.7
+			set_national_unity = 0.9
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}		
+			
+		}
+		custom_effect_tooltip = ceda_chosen
+	}
+	option = { # Support Communists
+		name = spain.10.b
+		hidden_effect = {
+		    remove_idea = SPR_riots
+			start_civil_war = {
+				ideology = neutrality
+				size = 0.5
+				capital = 41
+				states = { 699 290 176 172 174 171 177 175 297 41 744 }
+			}
+			set_capital = 165
+			set_country_flag = commie_spain
+			set_cosmetic_tag = SPC
+			every_country = {
+				limit = {
+					original_tag = SPR
+					has_government = neutrality
+				}
+				set_equipment_fraction = 0.7
+				set_national_unity = 0.9
+				load_oob = "SPA_CEDA_WAR"
+				set_politics = {
+			        ruling_party = neutrality
+			        elections_allowed = yes
+		            last_election = "1936.2.16"
+	                election_frequency = 48
+		        }
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				create_field_marshal = {
+	                name = "Francisco Franco"
+	                portrait_path = "gfx/leaders/SPA/Portrait_Spain_Francisco_Franco.dds"
+	                traits = { offensive_doctrine }
+	                skill = 2
+                }
+				
+				create_corps_commander = {
+	                name = "Manuel Goded"
+	                portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	                traits = { trait_mountaineer }
+	                skill = 1
+                }
+			}
+			remove_idea = SPR_zamora
+			news_event = { hours = 6 id = news.63 }
+			set_global_flag = spanish_civil_war
+			
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			load_oob = "SPR_CEDA_WAR"
+			set_equipment_fraction = 0.7
+			set_national_unity = 0.8
+			add_popularity = {
+				ideology = fascism
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 1
+			}
+            
+            create_field_marshal = {
+	                name = "Valentín González"
+	                portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	                traits = { defensive_doctrine }
+	                skill = 1
+                }
+			    create_corps_commander = {
+	            	name = "Líster Forján"
+	                portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	                traits = { trickster }
+	                skill = 1
+                }				
+		}
+		custom_effect_tooltip = republican_chosen
+	}
+	option = { # Support Fascists
+		name = spain.10.c
+		trigger = { is_ai = no }
+		hidden_effect = {
+		    remove_idea = SPR_riots
+			start_civil_war = {
+				ideology = communism
+				size = 0.5
+				capital = 165
+				states = { 165 167 168 173 169 166 170 178 741 }
+			}
+			every_country = {
+				limit = {
+					original_tag = SPR
+					has_government = communism
+				}
+				remove_idea = SPR_zamora
+				load_oob = "SPR_CEDA_WAR"
+				set_equipment_fraction = 0.3
+				set_national_unity = 0.9
+				#country_event = { id = spain.3 days = 1 }
+				create_field_marshal = {
+	                name = "Valentín González"
+	                portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	                traits = { defensive_doctrine }
+	                skill = 1
+                }
+				set_country_flag = commie_spain
+			    set_cosmetic_tag = SPC
+			    create_corps_commander = {
+	            	name = "Líster Forján"
+	                portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	                traits = { trickster }
+	                skill = 1
+                }	
+			}
+			news_event = { hours = 6 id = news.63 }
+			set_global_flag = spanish_civil_war
+			
+			load_oob = "SPA_CEDA_WAR"
+			set_equipment_fraction = 0.3
+			set_national_unity = 0.9
+			
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+		        last_election = "1936.2.16"
+	            election_frequency = 48
+			}
+			#country_event = { id = spain.17 days = 928 }
+			
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+            create_field_marshal = {
+	            name = "Francisco Franco"
+	            portrait_path = "gfx/leaders/SPA/Portrait_Spain_Francisco_Franco.dds"
+	            traits = { offensive_doctrine }
+	            skill = 2
+            }
+
+            create_corps_commander = {
+	            name = "Manuel Goded"
+	            portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	            traits = { trait_mountaineer }
+	            skill = 1
+            }
+            set_country_flag = SPR_democratic_fascist			
+
+			#country_event = { id = spain.2 days = 7 }
+		}
+		custom_effect_tooltip = nationalists_chosen
+	}
+}
+
+# Socialist gov.
+country_event = {
+	id = spain.11
+	title = spain.11.t
+	desc = spain.11.d
+	picture = GFX_report_event_worker_protests
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	trigger = {
+		has_civil_war = yes
+	}
+
+	option = {
+		name = spain.11.a
+		hidden_effect = {
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = yes
+		    last_election = "1936.2.16"
+	        election_frequency = 48
+	    }
+		create_country_leader = {
+	        name = "Manuel Azana"
+	        desc = "POLITICS_MANUEL_AZANA_DESC"
+	        picture = "Portrait_Spain_Manuel_Azana.dds"
+	        expire = "1965.1.1"
+	        ideology = socialism
+	        traits = {
+	        }
+        }
+		add_popularity = {
+		    ideology = communism
+			popularity = 0.2
+		}
+		country_event = { id = spain.19 days = 230 }
+		
+		load_oob = "SPR_additional_militias"
+		}
+		custom_effect_tooltip = militias
+		ai_chance = { factor = 1 }
+	}
+
+	option = {
+		name = spain.11.b
+		add_political_power = 50
+		ai_chance = { factor = 0 }
+		add_national_unity = -0.1
+		hidden_effect = {
+		create_country_leader = {
+	        name = "Manuel Azana"
+	        desc = "POLITICS_MANUEL_AZANA_DESC"
+	        picture = "Portrait_Spain_Manuel_Azana.dds"
+	        expire = "1965.1.1"
+	        ideology = socialism
+	        traits = {
+	        }
+        }
+		}
+	}
+	
+	# Anarchist
+	option = {
+		ai_chance = { factor = 0 }
+		name = spain.11.c
+		hidden_effect = {
+		remove_idea = SPR_zamora
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		create_country_leader = {
+	        name = "Manuel Azana"
+	        desc = "POLITICS_MANUEL_AZANA_DESC"
+	        picture = "Portrait_Spain_Manuel_Azana.dds"
+	        expire = "1965.1.1"
+	        ideology = socialism
+	        traits = {
+	        }
+        }
+		set_party_name = 
+		{ideology = communism
+		long_name = SPR_cnt_long 
+		name = SPR_cnt }
+		
+		add_popularity = {
+		    ideology = communism
+			popularity = 0.2
+		}
+		create_country_leader = {
+	        name = "Comité Central de la FAI"
+	        desc = "POLITICS_FAI_DESC"
+	        picture = "Portrait_Spain_CNT.dds"
+	        expire = "1965.1.1"
+	        ideology = anarchist_communism
+	        traits = {
+			comitee
+	        }
+        }
+		set_cosmetic_tag = CNT
+		set_country_flag = cnt_in_power
+		}
+		custom_effect_tooltip = anarchy
+		set_rule = { can_create_factions = yes }
+		SOV = { 
+			add_opinion_modifier = { target = SPR modifier = large_decrease } 
+		}
+		ENG = { 
+			add_opinion_modifier = { target = SPR modifier = large_decrease } 
+		}
+		FRA = { 
+			add_opinion_modifier = { target = SPR modifier = large_decrease } 
+		}
+		GER = { 
+			add_opinion_modifier = { target = SPR modifier = large_decrease } 
+		}
+		ITA = { 
+			add_opinion_modifier = { target = SPR modifier = large_decrease } 
+		}
+		
+	}
+}
+
+# Alcala-Zamora
+country_event = {
+	id = spain.12
+	title = spain.12.t
+	desc = spain.12.d
+	picture = GFX_report_event_zamora
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_global_flag = scw_over }
+		tag = SPR
+		has_defensive_war = no
+		date > 1936.2.16 # Trigger at some point after 1936 elections
+	}
+
+
+	option = {
+		name = spain.12.a
+		
+		add_popularity = {
+		    ideology = democratic
+			popularity = 0.05
+		}
+		
+		add_popularity = {
+		    ideology = communism
+			popularity = 0.05
+		}
+		remove_idea = SPR_zamora
+		add_political_power = 25
+		hidden_effect = {
+		set_country_flag = casares
+		}
+		if = {
+		    limit = {
+		    has_country_flag = popular_front
+			}
+		create_country_leader = {
+	        name = "Santiago Casares Quiroga"
+	        desc = "POLITICS_FAI_DESC"
+	        picture = "Portrait_SPR_Casares.dds"
+	        expire = "1965.1.1"
+	        ideology = socialism
+	        traits = {
+	        }
+        }
+		}
+		
+		
+		
+		ai_chance = { factor = 0.5 }
+	}
+
+	# option = {
+        # name = spain.12.b
+		# add_popularity = {
+		    # ideology = neutrality
+			# popularity = 0.05
+		# }
+		
+		# add_popularity = {
+		    # ideology = fascism
+			# popularity = 0.05
+		# }
+		# ai_chance = { factor = 0.5 }
+		
+	# }
+}
+
+# Riots
+country_event = {
+	id = spain.13
+	title = spain.13.t
+	desc = spain.13.d
+	picture = GFX_report_event_worker_protests
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_global_flag = scw_over }
+		tag = SPR
+		has_defensive_war = no
+		date > 1936.2.16 # Trigger at some point after 1936 elections
+	}
+
+
+	option = {
+		name = spain.13.a
+		
+		add_popularity = {
+		    ideology = democratic
+			popularity = 0.05
+		}
+		
+		add_popularity = {
+		    ideology = neutrality
+			popularity = 0.05
+		}
+		ai_chance = { factor = 0.5 }
+	}
+
+	# option = {	
+	    # name = spain.13.b
+		# add_popularity = {
+		    # ideology = communism
+			# popularity = 0.05
+		# }
+		
+		# add_popularity = {
+		    # ideology = fascism
+			# popularity = 0.05
+		# }
+		# ai_chance = { factor = 0.5 }
+		
+	# }
+}
+
+# Election of 1940 - Socialist
+country_event = {
+	id = spain.14
+	title = spain.14.t
+	desc = spain.14.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = SPR
+		date > 1940.1.1
+		date < 1941.1.1
+		has_government = communism
+		has_country_flag = SPR_democratic_socialist
+	}
+
+	# Socialist victory
+	option = {
+		ai_chance = { factor = 0.5 }
+		name = spain.14.a
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		set_country_flag = commie_spain
+		set_cosmetic_tag = SPC
+        remove_idea = SPR_zamora		
+	}
+
+	# Democratic victory
+	option = {
+		ai_chance = { factor = 0.5 }
+		name = spain.14.b
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		    last_election = "1940.2.16"
+	        election_frequency = 48
+		}
+	}
+}
+
+# Election of 1940 - Democratic
+country_event = {
+	id = spain.15
+	title = spain.14.t
+	desc = spain.15.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = SPR
+		date > 1940.1.1
+		date < 1941.1.1
+		has_government = democratic
+	}
+
+	# Socialist victory
+	option = {
+		ai_chance = { factor = 0.3 }
+		name = spain.14.a
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = yes
+		    last_election = "1940.2.16"
+	        election_frequency = 48
+		}
+        set_country_flag = SPR_democratic_socialist		
+	}
+
+	# Democratic victory
+	option = {
+		ai_chance = { factor = 0.4 }
+		name = spain.14.b
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		    last_election = "1940.2.16"
+	        election_frequency = 48
+		}
+	}
+	
+	# CEDA victory
+	option = {
+		ai_chance = { factor = 0.3 }
+		name = spain.15.c
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = yes
+		    last_election = "1940.2.16"
+	        election_frequency = 48
+		}
+	}
+}
+
+# Election of 1940 - CEDA
+country_event = {
+	id = spain.16
+	title = spain.14.t
+	desc = spain.16.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = SPR
+		date > 1940.1.1
+		date < 1941.1.1
+		has_government = neutrality
+	}
+
+	# Fascist victory
+	option = {
+		ai_chance = { factor = 0.3 }
+		name = spain.16.a
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = yes
+		    last_election = "1940.2.16"
+	        election_frequency = 48
+		}
+        set_country_flag = SPR_democratic_fascist		
+	}
+
+	# Democratic victory
+	option = {
+		ai_chance = { factor = 0.4 }
+		name = spain.14.b
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		    last_election = "1940.2.16"
+	        election_frequency = 48
+		}
+	}
+	
+	# CEDA victory
+	option = {
+		ai_chance = { factor = 0.3 }
+		name = spain.15.c
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = yes
+		    last_election = "1940.2.16"
+	        election_frequency = 48
+		}
+	}
+}
+
+# Election of 1940 - Fascist
+country_event = {
+	id = spain.17
+	title = spain.14.t
+	desc = spain.17.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPR
+		date > 1940.1.1
+		date < 1941.1.1
+		has_government = fascism
+		has_country_flag = SPR_democratic_fascist
+	}
+
+	# Fascist victory
+	option = {
+		ai_chance = { factor = 0.5 }
+		name = spain.16.a
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+        remove_idea = SPR_zamora		
+	}
+
+	# CEDA victory
+	option = {
+		ai_chance = { factor = 0.5 }
+		name = spain.15.c
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = yes
+		    last_election = "1940.2.16"
+	        election_frequency = 48
+		}
+	}
+}
+
+# Real Negrin
+country_event = {
+	id = spain.19
+	title = spain.18.t
+	desc = spain.18.d
+	picture = GFX_report_event_worker_protests
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = SPR
+		date > 1937.1.1
+		date < 1938.1.1
+		has_government = communism
+	}
+
+	# Negrin
+	option = {
+		ai_chance = { factor = 1 }
+		name = spain.18.a
+		create_country_leader = {
+	        name = "Juan Negrín"
+	        desc = "POLITICS_NEGRIN_DESC"
+	        picture = "Portrait_Spain_Negrin.dds"
+	        expire = "1965.1.1"
+	        ideology = marxism
+	        traits = {
+	        }
+        }
+		add_national_unity = 0.1
+		hidden_effect = {
+		set_country_flag = SPR_democratic_socialist
+		}
+	}
+
+	# Democratic victory
+	option = {
+		name = spain.18.c
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		    last_election = "1936.2.16"
+	        election_frequency = 48
+		}
+		add_national_unity = -0.3
+		add_political_power = -100
+		add_popularity = {
+		    ideology = democratic
+			popularity = 0.15
+		}
+	}
+	
+	# PCE
+	option = {
+		name = spain.18.b
+		create_country_leader = {
+	            name = "José Díaz"
+	            desc = "POLITICS_JOSE_DIAZ_DESC"
+	            picture = "Portrait_Spain_Jose_Diaz.dds"
+	            expire = "1965.1.1"
+	            ideology = stalinism
+	            traits = {
+		        #
+	            }
+		}
+            set_party_name = {
+		        ideology = communism 
+		        long_name = SPR_pce_long 
+		        name = SPR_pce 
+            }
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		add_ideas = communist_influence
+		remove_idea = SPR_zamora
+		set_country_flag = commie_spain
+		set_cosmetic_tag = SPC
+	}
+}
+
+# Unification decree
+country_event = {
+	id = spain.20
+	title = spain.20.t
+	desc = spain.20.d
+	picture = GFX_report_event_fascist_speech
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1937.1.1
+		has_government = fascism
+	}
+
+	# Falange
+	option = {
+		ai_chance = { factor = 1 }
+		name = spain.20.a
+		set_party_name = 
+		{ideology = fascism
+		long_name = SPR_fetjons_long 
+		name = SPR_fetjons }
+		
+		GER = { 
+			add_opinion_modifier = {
+				target = 
+				    every_country = {
+				        limit = {
+				            original_tag = SPR
+				            has_government = fascism
+				        }
+				    }
+				modifier = large_increase
+			}
+		}
+	    add_political_power = 100
+		hidden_effect = {
+		    add_popularity = {
+		        ideology = fascism
+			    popularity = 1
+		    }
+			add_popularity = {
+		        ideology = neutrality
+			    popularity = 0.1
+		    }
+		    add_popularity = {
+		        ideology = democratic
+			    popularity = 0.1
+		    }
+			add_popularity = {
+		        ideology = communism
+			    popularity = 0.2
+		    }
+			set_party_name = {  
+			    ideology = neutrality
+		        long_name = SPR_ade_long 
+		        name = SPR_ade 
+			}
+			set_party_name = {  
+			    ideology = democratic
+		        long_name = SPR_anfd_long 
+		        name = SPR_anfd
+			}
+			
+			create_country_leader = {
+	            name = "Segismundo Casado"
+	            desc = "POLITICS_CASADO_DESC"
+	            picture = "Portrait_Spain_Casado.dds"
+	            expire = "1965.1.1"
+	            ideology = centrism
+	            traits = {
+		        #
+	            }
+		    }
+			create_country_leader = {
+	            name = "Indalecio Prieto"
+	            desc = "POLITICS_PRIETO_DESC"
+	            picture = "Portrait_Spain_Prieto.dds"
+	            expire = "1965.1.1"
+	            ideology = socialism
+	            traits = {
+		        #
+	            }
+		    }
+		}
+	}
+
+	# Directory
+	# option = {
+		# ai_chance = { factor = 0 }
+		# name = spain.20.b
+		# set_party_name = 
+		# {ideology = fascism 
+		# long_name = SPR_mil_long 
+		# name = SPR_mil }
+		
+		# ENG = { 
+			# add_opinion_modifier = {
+				# target = 
+				    # every_country = {
+				        # limit = {
+				            # original_tag = SPR
+				            # has_government = fascism
+				        # }
+				    # }
+				# modifier = large_increase
+			# }
+		# }
+		# add_political_power = 100
+		# hidden_effect = {
+		    # add_popularity = {
+		        # ideology = fascism
+			    # popularity = 1
+		    # }
+			# add_popularity = {
+		        # ideology = neutrality
+			    # popularity = 0.1
+		    # }
+		    # add_popularity = {
+		        # ideology = democratic
+			    # popularity = 0.1
+		    # }
+			# add_popularity = {
+		        # ideology = communism
+			    # popularity = 0.2
+		    # }
+			# set_party_name = {  
+			    # ideology = neutrality
+		        # long_name = SPR_ade_long 
+		        # name = SPR_ade 
+			# }
+			# set_party_name = {  
+			    # ideology = democratic
+		        # long_name = SPR_anfd_long 
+		        # name = SPR_anfd
+			# }
+			
+			# create_country_leader = {
+	            # name = "Segismundo Casado"
+	            # desc = "POLITICS_CASADO_DESC"
+	            # picture = "Portrait_Spain_Casado.dds"
+	            # expire = "1965.1.1"
+	            # ideology = centrism
+	            # traits = {
+		        # #
+	            # }
+		    # }
+			# create_country_leader = {
+	            # name = "Indalecio Prieto"
+	            # desc = "POLITICS_PRIETO_DESC"
+	            # picture = "Portrait_Spain_Prieto.dds"
+	            # expire = "1965.1.1"
+	            # ideology = socialism
+	            # traits = {
+		        # #
+	            # }
+		    # }
+		# }
+	# }
+}
+
+# Elect a leader
+country_event = {
+	id = spain.21
+	title = spain.21.t
+	desc = spain.21.d
+	picture = GFX_report_event_fascist_speech
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = SPR
+		government = fascism
+	}
+
+	# Franco
+	option = {
+		name = spain.21.a
+		create_country_leader = {
+	            name = "Francisco Franco"
+	            desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+	            picture = "Portrait_Spain_Francisco_Franco.dds"
+	            expire = "1965.1.1"
+	            ideology = falangism
+	            traits = {
+	            }
+        }	
+		add_political_power = 100
+		hidden_effect = {
+		    set_country_flag = SPR_alzamiento
+		}
+	}
+
+	# Mola
+	# option = {
+	    # ai_chance = { factor = 0 }
+		# name = spain.21.b
+	    # add_political_power = -100
+		# hidden_effect = {
+		    # set_country_flag = SPR_alzamiento
+		# }
+	# }
+}
+
+# Monarchy?
+country_event = {
+	id = spain.23
+	title = spain.23.t
+	desc = spain.23.d
+	picture = GFX_report_event_fascist_speech
+	
+	trigger = {
+		original_tag = SPR
+		has_government = fascism
+		has_global_flag = nationalist_victory
+		has_country_flag = SPR_alzamiento
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	# option = {
+		# name = spain.23.a
+		# add_ideas = alfonso
+	# }
+	option = {
+		ai_chance = { factor = 1 }
+		name = spain.23.b
+	}
+}
+
+# No Pasaran!
+country_event = {
+	id = spain.24
+	title = spain.24.t
+	desc = spain.24.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	trigger = {
+		original_tag = SPR
+		OR = {
+		has_government = communism
+		has_government = democratic
+		}
+		has_civil_war = yes
+		any_country = {
+				limit = {
+					original_tag = SPR
+					has_government = fascism
+				}
+			OR = {
+			controls_state = 170
+			controls_state = 175
+			}
+		}
+		
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = spain.24.a
+		add_timed_idea = { idea = SPR_no_pasaran days = 650 }
+	}
+}
+
+# Calvo Sotelo
+news_event = {
+	id = spain.25
+	title = spain.25.t
+	desc = spain.25.d
+	picture = GFX_news_event_generic_riot
+	
+	trigger = {
+		original_tag = SPR
+		OR = {
+		has_government = communism
+		has_government = democratic
+		}
+		NOT = {
+		has_civil_war = yes
+		}
+		
+	}
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = spain.25.a
+		add_political_power = -75
+	}
+}
+
+# José Díaz
+news_event = {
+	id = spain.26
+	title = spain.26.t
+	desc = spain.26.d
+	picture = GFX_news_event_generic_riot
+	
+	trigger = {
+		original_tag = SPR
+		OR = {
+		has_government = fascism
+		has_government = neutrality
+		}
+		NOT = {
+		has_civil_war = yes
+		}
+		
+	}
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = spain.25.a
+		add_political_power = -75
+	}
+}
+
+# Popular Front
+news_event = {
+	id = spain.27
+	title = spain.27.t
+	desc = spain.27.d
+	picture = GFX_news_event_election_vote
+	
+	trigger = {
+		original_tag = SPR
+		NOT = {
+		has_civil_war = yes
+		}
+		
+	}
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = spain.27.a
+	}
+}
+
+# Election of 1944 - Socialist
+country_event = {
+	id = spain.28
+	title = spain.28.t
+	desc = spain.28.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = SPR
+		date > 1944.1.1
+		date < 1945.1.1
+		has_government = communism
+		has_country_flag = SPR_democratic_socialist
+	}
+
+	# Socialist victory
+	option = {
+		ai_chance = { factor = 1 }
+		name = spain.14.a
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		set_country_flag = commie_spain
+		set_cosmetic_tag = SPC
+        remove_idea = SPR_zamora		
+	}
+
+	# Democratic victory
+	option = {
+		name = spain.14.b
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		    last_election = "1944.2.16"
+	        election_frequency = 48
+		}
+	}
+}
+
+
+# Election of 1944 - Democracy
+country_event = {
+	id = spain.29
+	title = spain.28.t
+	desc = spain.29.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = SPR
+		date > 1944.1.1
+		date < 1945.1.1
+		OR = {
+		has_government = neutrality
+		has_government = democratic
+		}
+	}
+
+
+	# Democratic victory
+	option = {
+		ai_chance = { factor = 0.5 }
+		name = spain.29.a
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		    last_election = "1944.2.16"
+	        election_frequency = 48
+		}
+		set_party_name = {
+		        ideology = democratic
+		        long_name = SPR_ars_long 
+		        name = SPR_ars
+            }
+	}
+	
+	# CEDA victory
+	option = {
+		ai_chance = { factor = 0.5 }
+		name = spain.29.b
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = yes
+		    last_election = "1944.2.16"
+	        election_frequency = 48
+		}
+		set_party_name = {
+		        ideology = democratic
+		        long_name = SPR_ars_long 
+		        name = SPR_ars
+            }
+	}
+}
+
+# Election of 1944 - Fascist
+country_event = {
+	id = spain.30
+	title = spain.28.t
+	desc = spain.30.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPR
+		date > 1944.1.1
+		date < 1945.1.1
+		has_government = fascism
+		has_country_flag = SPR_democratic_fascist
+	}
+
+	# Fascist victory
+	option = {
+		ai_chance = { factor = 0.5 }
+		name = spain.16.a
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+        remove_idea = SPR_zamora		
+	}
+
+	# CEDA victory
+	option = {
+		ai_chance = { factor = 0.5 }
+		name = spain.15.c
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = yes
+		    last_election = "1944.2.16"
+	        election_frequency = 48
+		}
+	}
+}
+
+# Socialist Congress
+country_event = {
+	id = spain.31
+	title = spain.31.t
+	desc = spain.31.d
+	picture = GFX_report_event_journalists_speech
+	
+    fire_only_once = yes
+	
+	trigger = {
+		has_civil_war = no
+		NOT = { has_government = communism }
+		NOT = { has_government = fascism }
+		tag = SPR
+		date > 1940.1.1
+		date < 1944.1.1
+	}
+	
+	mean_time_to_happen = {
+		days = 90
+	}
+
+
+	option = {
+		name = spain.31.a
+		add_political_power = 50
+        add_popularity = {
+		        ideology = democratic
+			    popularity = 0.2
+		    }
+		set_party_name = {
+		        ideology = communism
+		        long_name = SPR_pce_long 
+		        name = SPR_pce
+            }
+		create_country_leader = {
+	            name = "José Díaz"
+	            desc = "POLITICS_JOSE_DIAZ_DESC"
+	            picture = "Portrait_Spain_Jose_Diaz.dds"
+	            expire = "1965.1.1"
+	            ideology = stalinism
+	            traits = {
+		        #
+	            }
+			}
+	}
+	
+}
+
+# France - Help the Republic?
+country_event = {
+	id = spain.32
+	title = spain.32.t
+	desc = spain.32.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		SPR = { has_civil_war = yes }
+	}
+
+	option = { #Send Support
+	    ai_chance = { factor = 0.1 }
+		name = spain.32.a
+		set_country_flag = promised_help_republican_spain
+		hidden_effect = {
+		add_manpower = -5000
+		GER = {
+		country_event = { id = spain.33 days = 2 }
+		}
+		every_country = {
+				limit = {
+					original_tag = SPR
+					has_government = democratic
+				}
+			country_event = { id = spain.34 days = 5 }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = D01 }
+		}
+		add_manpower = -5000
+		custom_effect_tooltip = support_republic
+	}
+
+	option = {
+	    ai_chance = { factor = 0.9 }
+		name = spain.32.b
+	}
+}
+
+# Germany- France Supports the Republic!
+country_event = {
+	id = spain.33
+	title = spain.33.t
+	desc = spain.33.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		SPR = { has_civil_war = yes }
+	}
+
+	# option = { #War!
+		# name = spain.33.a
+		    # GER = {
+		    # declare_war_on = { target = FRA type = annex_everything }
+			# }
+		    # FRA = {
+		    # create_faction = "french_alliance"
+			# set_rule = { can_create_factions = yes }
+			# if = {
+			# limit = {
+			# SPR = {
+			# has_government = fascist
+			# }
+			# }
+			# add_to_faction = D01
+			# D01 = {
+				# add_ai_strategy = {
+					# type = alliance
+					# id = "FRA"
+					# value = 200
+				# }
+			# }
+			# }
+			# if = {
+			# limit = {
+			# SPR = {
+			# has_government = democratic
+			# }
+			# }
+			# add_to_faction = SPR
+			# SPR = {
+				# add_ai_strategy = {
+					# type = alliance
+					# id = "FRA"
+					# value = 200
+				# }
+			# }
+			# }
+			# }
+		# if = {
+		    # limit = {
+			# SPR = {
+			# has_government = fascist
+			# }
+			# }
+			# add_to_faction = SPR
+			# SPR = {
+				# add_ai_strategy = {
+					# type = alliance
+					# id = "GER"
+					# value = 200
+				# }
+			# }
+			# }
+			# if = {
+			# limit = {
+			# SPR = {
+			# has_government = democratic
+			# }
+			# }
+			# add_to_faction = D01
+			# D01 = {
+				# add_ai_strategy = {
+					# type = alliance
+					# id = "GER"
+					# value = 200
+				# }
+			# }
+			# }
+		# news_event = { hours = 6 id = spain.37 }
+	# }
+
+	option = { #Hold Back
+		name = spain.33.b
+		add_political_power = -20
+	}
+}
+
+# Republic-Support Arrives!
+country_event = {
+	id = spain.34
+	title = spain.34.t
+	desc = spain.34.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		SPR = { has_civil_war = yes }
+	}
+
+	option = { #Yay!
+		name = spain.34.a
+		add_opinion_modifier = { target = FRA modifier = democratic_leanings_good }
+		add_ideas = democratic_influence
+		if = {
+		    limit = {
+			SPR = {
+			has_government = democratic
+			}
+			}
+			FRA = {
+			send_equipment = { target = SPR type = infantry_equipment amount = 2000 }
+			send_equipment = { target = SPR type = artillery_equipment amount = 40 }
+			}
+			}
+		if = {
+			limit = {
+			SPR = {
+			has_government = fascist
+			}
+			}
+			FRA = {
+			send_equipment = { target = D01 type = infantry_equipment amount = 2000 }
+			send_equipment = { target = D01 type = artillery_equipment amount = 40 }
+			}
+		}
+		add_manpower = 5000
+		hidden_effect = {
+		load_oob = SPR_France
+		}
+		custom_effect_tooltip = support_got
+	}
+}
+
+# Portugal - Viriatos
+country_event = {
+	id = spain.35
+	title = spain.35.t
+	desc = spain.35.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		SPR = { has_civil_war = yes }
+	}
+
+	option = { #Send Support
+	    ai_chance = { factor = 0.8 }
+		name = spain.35.a
+		hidden_effect = {
+		every_country = {
+				limit = {
+					original_tag = SPR
+					has_government = fascism
+				}
+			country_event = { id = spain.36 days = 5 }
+		}
+		}
+		add_manpower = -2000
+		custom_effect_tooltip = send_viriatos
+	}
+
+	option = {
+	    ai_chance = { factor = 0.2 }
+		name = spain.35.b
+	}
+}
+
+# Nationalists-Viriatos arrive!
+country_event = {
+	id = spain.36
+	title = spain.36.t
+	desc = spain.36.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		SPR = { has_civil_war = yes }
+	}
+
+	option = { #Yay!
+		name = spain.34.a
+		add_opinion_modifier = { target = POR modifier = large_increase }
+		if = {
+		    limit = {
+			SPR = {
+			has_government = democratic
+			}
+			}
+			POR = {
+			send_equipment = { target = D01 type = infantry_equipment amount = 300 }
+			}
+			}
+		if = {
+			limit = {
+			SPR = {
+			has_government = fascist
+			}
+			}
+			POR = {
+			send_equipment = { target = D01 type = infantry_equipment amount = 300 }
+			}
+		}
+		add_manpower = 2000
+		hidden_effect = {
+		load_oob = SPR_Viriatos
+		}
+		custom_effect_tooltip = viriatos_got
+	}
+}
+
+# Spanish Civil War escalates
+news_event = {
+	id = spain.37
+	title = spain.37.t
+	desc = spain.37.d
+	picture = GFX_news_event_romanian_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = spain.37.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = FRA
+				original_tag = SPR
+			}
+		}
+	}
+	option = {
+		name = spain.37.b
+		trigger = {
+        OR = {		
+		TAG = GER
+		TAG = FRA
+		original_tag = SPR
+		}
+	}
+}
