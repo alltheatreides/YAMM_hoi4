@@ -6,15 +6,20 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }  # Spanish Arty Rgt/Bge had 2 Bn 105mm arty
-		engineer = { x = 0 y = 1 }   # Eng Bn
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -23,19 +28,14 @@ division_template = {
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-		cavalry = { x = 1 y = 3 }
 		cavalry = { x = 2 y = 0 }
 		cavalry = { x = 2 y = 1 }
-		cavalry = { x = 2 y = 2 }
-		cavalry = { x = 2 y = 3 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }      # Recon consisted of motorcycles and ACs
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
 	}
 }
 division_template = {
@@ -46,9 +46,10 @@ division_template = {
 		mountaineers = { x = 0 y = 1 }
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }  # Spanish Arty Rgt/Bge had 2 Bn 105mm arty
+		DIV_HQ = { x = 0 y = 0 }
 	}
 }
 division_template = {
@@ -60,7 +61,9 @@ division_template = {
 		infantry = { x = 1 y = 1 }	
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   # Eng Bn
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 }
 

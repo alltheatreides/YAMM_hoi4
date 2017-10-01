@@ -1,0 +1,50 @@
+spriteTypes = {	
+	spriteType = { name = "GFX_unit_support_modern_tank_destroyer_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_supmodtd_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_super_heavy_tank_destroyer_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_supshtd_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_heavy_tank_destroyer_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_suphtd_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_medium_tank_destroyer_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_supmtd_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_light_tank_destroyer_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_supltd_icon.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_unit_support_modern_tank_destroyer_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_super_heavy_tank_destroyer_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_heavy_tank_destroyer_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_medium_tank_destroyer_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_light_tank_destroyer_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_light_armor_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_suplarm_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_light_tank_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_armor_icon.dds" noOfFrames = 2}
+
+	spriteType = { name = "GFX_unit_support_modern_sp_artillery_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/unit_supmodart_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_super_heavy_sp_artillery_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_supshart_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_heavy_sp_artillery_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_suphart_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_medium_sp_artillery_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_supmart_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_light_sp_artillery_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_suplart_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_medium_armor_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_supmarm_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_medium_tank_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_armor_icon.dds" noOfFrames = 2}
+
+	spriteType = { name = "GFX_unit_support_modern_sp_artillery_icon_medium_white" 			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_super_heavy_sp_artillery_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_heavy_sp_artillery_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_medium_sp_artillery_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_light_sp_artillery_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_support_modern_sp_anti_air_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/unit_supmodaa_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_super_heavy_sp_anti_air_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_supshaa_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_heavy_sp_anti_air_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_suphaa_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_medium_sp_anti_air_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_supmaa_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_light_sp_anti_air_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_suplaa_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_heavy_armor_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_supharm_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_heavy_tank_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2}
+
+	spriteType = { name = "GFX_unit_support_modern_sp_anti_air_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_super_heavy_sp_anti_air_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_heavy_sp_anti_air_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_medium_sp_anti_air_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_light_sp_anti_air_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_support_modern_armor_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_supmodarm_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_modern_tank_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2}
+
+	spriteType = { name = "GFX_unit_support_super_heavy_armor_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_supsharm_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_support_super_heavy_tank_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2}
+
+	
+}

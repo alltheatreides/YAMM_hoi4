@@ -1068,7 +1068,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_anti_fascist_diplomacy }
 		x = 10
 		y = 3
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1196,7 +1196,7 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1219,7 +1219,7 @@ focus_tree = {
 		}
 		x = 10
 		y = 5
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1252,6 +1252,7 @@ focus_tree = {
 				NOT = { has_idea = officers_purged_9 }			
 				NOT = { has_idea = officers_purged_10 }			
 			}
+			threat > 10.000
 		}
 		will_lead_to_war_with = JAP
 		cost = 10
@@ -1301,7 +1302,7 @@ focus_tree = {
 		available = { has_offensive_war = no }
 		x = 12
 		y = 3
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1429,7 +1430,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_improve_stalin_line }
 		x = 12
 		y = 4
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1485,7 +1486,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_claims_on_baltic }
 		x = 12
 		y = 5
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1546,7 +1547,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_baltic_security }
 		x = 12
 		y = 6
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1623,7 +1624,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_offer_poland_protection }
 		x = 12
 		y = 7
-		cost = 10
+		cost = 4.3
 		available = {
 			is_puppet = no
 			NOT =  { is_in_faction_with = POL }
@@ -1711,6 +1712,7 @@ focus_tree = {
 				has_war = no
 				is_puppet = no
 			}
+			threat > 10.00
 		}
 		x = 14
 		y = 7

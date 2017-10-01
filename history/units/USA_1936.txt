@@ -12,15 +12,22 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+		
 	}
 	support = {
-		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+		field_hospital = { x = 0 y = 2 } # large but inefficient medical establishment developed through time to best in class
 	}
 }
 division_template = {
-	name = "National Guard Division"  	# Standard formation for NG divisions through late 1940
-
+	name = "National Guard Division"  	# Peacetime establishment (average) for NG divisions through late 1940
+						# Switch to full division at mobilisation
 	regiments = {						
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -36,8 +43,28 @@ division_template = {
 		infantry = { x = 3 y = 2 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
-		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+		DIV_HQ = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 2 }   # US Eng Rgt consisted of 2 Bns
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Armored Division" 				# mod
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }		
+		light_armor = { x = 1 y = 0 }		
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }		
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }	
+		motorized = { x = 2 y = 2 }		
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 	}
 }
 division_template = {
@@ -54,20 +81,24 @@ division_template = {
 		cavalry = { x = 1 y = 3 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
-		engineer = { x = 0 y = 1 }   # US Eng Bn
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
+		engineer = { x = 0 y = 2 }   # US Eng Bn
+		artillery = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
 	}
 }
 division_template = {
 	name = "Garrison Brigade"  		# used for island defense (older equipment, lower experience)
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 	}
 	priority = 0
 }
@@ -83,8 +114,8 @@ division_template = {
 	}
 	
 	support = {
-		engineer = { x = 0 y = 0 }  
-		recon = { x = 0 y = 1 }
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 	}
 }
 
@@ -954,11 +985,20 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "USA"
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.1
 		efficiency = 50
 	}
-
+	
+	add_equipment_production = {
+		equipment = {
+			type = heavy_infantry_equipment_0
+			creator = "USA"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1

@@ -19,5 +19,28 @@ ideas = {
 			}
 		}
 	}
+	
+	country = {
+		real_neutrality = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+
+			modifier = {
+				join_faction_tension = 2
+				enemy_justify_war_goal_time = 5.0
+				army_core_defence_factor = 0.2
+			}
+		}
+	}
 }
 

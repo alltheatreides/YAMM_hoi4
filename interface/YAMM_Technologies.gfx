@@ -58,61 +58,61 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_GER_heavy_artillery_2_medium"
-		texturefile = "gfx/interface/technologies/Heavy_Art_2_axis.dds"
+		texturefile = "gfx/interface/technologies/GER_Heavy_Art_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_GER_heavy_artillery_3_medium"
-		texturefile = "gfx/interface/technologies/Heavy_Art_3_axis.dds"
+		texturefile = "gfx/interface/technologies/GER_Heavy_Art_3.dds"
 	}
 	
 	
 	SpriteType = {
 		name = "GFX_GER_light_artillery_1_medium"
-		texturefile = "gfx/interface/technologies/light_Art_1_axis.dds"
+		texturefile = "gfx/interface/technologies/GER_Light_Art_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_GER_light_artillery_2_medium"
-		texturefile = "gfx/interface/technologies/light_Art_2_axis.dds"
+		texturefile = "gfx/interface/technologies/GER_Light_Art_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_GER_light_artillery_3_medium"
-		texturefile = "gfx/interface/technologies/light_Art_3_axis.dds"
+		texturefile = "gfx/interface/technologies/GER_Light_Art_3.dds"
 	}
 	
 	
 	#FRA
 	SpriteType = {
 		name = "GFX_FRA_heavy_artillery_1_medium"
-		texturefile = "gfx/interface/technologies/Heavy_Art_1_allies.dds"
+		texturefile = "gfx/interface/technologies/FRA_Heavy_Art_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_FRA_heavy_artillery_2_medium"
-		texturefile = "gfx/interface/technologies/Heavy_Art_2_allies.dds"
+		texturefile = "gfx/interface/technologies/FRA_Heavy_Art_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_FRA_heavy_artillery_3_medium"
-		texturefile = "gfx/interface/technologies/Heavy_Art_3_allies.dds"
+		texturefile = "gfx/interface/technologies/FRA_Heavy_Art_3.dds"
 	}
 	
 	
 	SpriteType = {
 		name = "GFX_FRA_light_artillery_1_medium"
-		texturefile = "gfx/interface/technologies/light_Art_1_allies.dds"
+		texturefile = "gfx/interface/technologies/FRA_Light_Art_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_FRA_light_artillery_2_medium"
-		texturefile = "gfx/interface/technologies/light_Art_2_allies.dds"
+		texturefile = "gfx/interface/technologies/FRA_Light_Art_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_FRA_light_artillery_3_medium"
-		texturefile = "gfx/interface/technologies/light_Art_3_allies.dds"
+		texturefile = "gfx/interface/technologies/FRA_Light_Art_3.dds"
 	}
 	
 	
@@ -270,6 +270,13 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SOV_light_artillery_3_medium"
 		texturefile = "gfx/interface/technologies/light_Art_3_comintern.dds"
+	}
+	
+	
+	# FUEL
+	SpriteType = {
+		name = "GFX_tech_fuel_medium"
+		texturefile = "gfx/interface/technologies/tech_fuel.dds"
 	}
 	
 }

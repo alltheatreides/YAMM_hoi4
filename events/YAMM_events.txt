@@ -1,0 +1,69 @@
+﻿add_namespace = yamm
+
+news_event = {
+	id = yamm.29
+	title = yamm.29.t
+	desc = yamm.29.d
+	picture = GFX_report_event_vichy_negotiations
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = yamm.10.a 
+	}
+}
+
+news_event = {
+	id = yamm.30
+	title = yamm.30.t
+	desc = yamm.30.desc
+	picture = GFX_news_event_vichy_neutral
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = yamm.10.a 
+	}
+}
+
+news_event = {
+	id = yamm.31
+	title = yamm.31.t
+	desc = yamm.31.desc
+	picture = GFX_news_event_do_not_give_up
+	
+	trigger = {
+		tag = FRA
+		FRA = { has_capitulated = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = yamm.10.a 
+	}
+}
+
+# Plan Vert
+country_event = {
+	id = yamm.32
+	title = yamm.32.t
+	desc = yamm.32.desc
+	picture = GFX_report_event_plan_vert
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = yamm.32.a
+		15 = {
+			damage_building = { type = infrastructure damage = 1 }
+		}
+		
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

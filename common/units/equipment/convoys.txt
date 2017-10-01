@@ -28,7 +28,7 @@ equipments = {
 		naval_speed = 12
 		max_strength = 30
 		max_organisation = 30
-		anti_air_attack = 0.5
+		# anti_air_attack = 0.5
 
 
         #Space taken in convoy

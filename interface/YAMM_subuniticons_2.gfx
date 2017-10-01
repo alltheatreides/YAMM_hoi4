@@ -1,0 +1,30 @@
+spriteTypes = {	
+	
+	##################################
+	### Large images for Groups ###
+
+	spriteType = { name = "GFX_group_frontline_support_icon" textureFile = "gfx/interface/counters/divisions_large/unit_art_icon.dds" noOfFrames = 2 }
+		
+	
+	spriteType = { name = "GFX_unit_DIV_HQ_icon_medium" textureFile = "gfx/interface/counters/divisions_large/support_unit_DIV_HQ_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_DIV_HQ_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_DIV_HQ_icon.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_heavy_artillery_icon_medium" textureFile = "gfx/interface/counters/divisions_large/support_unit_heavy_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_artillery_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_heavy_art_icon.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_light_artillery_icon_medium" textureFile = "gfx/interface/counters/divisions_large/support_unit_light_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_artillery_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_light_art_icon.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_heavy_artillery_icon_medium" textureFile = "gfx/interface/counters/divisions_large/support_unit_heavy_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_artillery_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_heavy_art_icon.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_motorized_heavy_artillery_brigade_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_heavy_art_motorized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_motorized_heavy_artillery_brigade_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_support_unit_heavy_art_icon.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_motorized_heavy_anti_air_brigade_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_heavy_anti_air_motorized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_motorized_heavy_anti_air_brigade_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_anti_air_motorized_icon.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_recon_mot_icon" textureFile = "gfx/interface/counters/divisions_large/unit_recon_mot_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_recon_mot_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_recon_mot_icon.dds" noOfFrames = 2 }
+	
+}

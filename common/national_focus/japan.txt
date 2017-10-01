@@ -622,23 +622,24 @@ focus_tree = {
 		prerequisite = { focus = found_own_faction_focus focus = axis_leanings_focus }
 		available = {
 			16 = { NOT = { is_controlled_by = FRA } }
+			EFR = { exists = yes }
 			is_puppet = no
 		}
 		
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = demand_indochina_focus_tt
-				OR = {
-					has_war_with = FRA
-					is_in_faction_with = FRA
-					AND = {
-						NOT = { 286 = { is_owned_by = FRA } }	
-						NOT = { 670 = { is_owned_by = FRA } }
-						NOT = { 671 = { is_owned_by = FRA } }
-					}
-				}
-			}
-		}
+		# bypass = {
+			# custom_trigger_tooltip = {
+				# tooltip = demand_indochina_focus_tt
+				# OR = {
+					# has_war_with = FRA
+					# is_in_faction_with = FRA
+					# AND = {
+						# NOT = { 286 = { is_owned_by = FRA } }	
+						# NOT = { 670 = { is_owned_by = FRA } }
+						# NOT = { 671 = { is_owned_by = FRA } }
+					# }
+				# }
+			# }
+		# }
 		
 		x = 5
 		y = 4
@@ -663,7 +664,7 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {
-			FRA = { country_event = { id = france.1 } }
+			EFR = { country_event = { id = france.1 } }
 		}
 	}
 	focus = {

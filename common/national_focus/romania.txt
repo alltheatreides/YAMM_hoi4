@@ -115,6 +115,7 @@ focus_tree = {
 				exists = yes
 				is_puppet = no
 			}
+			threat > 10.000
 		}
 
 		bypass = {
@@ -372,8 +373,12 @@ focus_tree = {
 					active = yes
 				}
 			}
-			# add_to_tech_sharing_group = ROM_invite_german_advisors_tech_group
-			# GER = { add_to_tech_sharing_group = ROM_invite_german_advisors_tech_group }
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -443,6 +448,10 @@ focus_tree = {
 			is_in_faction = no
 			NOT = { has_war_with = GER }
 			is_subject = no
+			SOV = { 
+			controls_state = 78
+			controls_state = 80
+			}
 		}
 
 		bypass = {
@@ -590,6 +599,7 @@ focus_tree = {
 			}
 			NOT = { has_war_with = POL }
 			is_subject = no
+			threat > 10.000
 		}
 
 		bypass = {
@@ -1203,7 +1213,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			random_state = {
+			79 = {
 				limit = {
 					has_state_flag = ROM_malaxa_IC
 				}
@@ -1217,7 +1227,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			79 = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV } 
 					free_building_slots = {
@@ -1300,7 +1310,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			random_state = {
+			84 = {
 				limit = {
 					has_state_flag = ROM_hunedoara_steel_works_IC
 				}
@@ -1318,7 +1328,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			84 = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV } 
 					free_building_slots = {
@@ -1534,7 +1544,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			threat > 10.000
 		}
 
 		bypass = {
@@ -3603,7 +3613,8 @@ focus_tree = {
 						mountaineers = { x = 2 y = 2 }
 					}
 					support = {
-						artillery = { x = 0 y = 0 }
+						DIV_HQ = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
 					}
 				}
 				random_owned_controlled_state = {
@@ -3611,7 +3622,7 @@ focus_tree = {
 					prioritize = { 46 }
 					create_unit = {
 						division = "name = \"Vanatori de munte\" division_template = \"Vanatori de munte\" start_experience_factor = 1.0" 
-						owner = HUN
+						owner = ROM
 					}
 				}
 			}
@@ -3793,12 +3804,18 @@ focus_tree = {
 							infantry = { x = 1 y = 2 }
 				
 		    	   		 	infantry = { x = 2 y = 0 }
-							artillery_brigade = { x = 2 y = 1 }
-							artillery_brigade = { x = 2 y = 2 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							
+							artillery_brigade = { x = 3 y = 0 }	
+							artillery_brigade = { x = 3 y = 1 }
+							artillery_brigade = { x = 3 y = 2 }
+							artillery_brigade = { x = 3 y = 3 }
 						}
 						support = {
-							engineer = { x = 0 y = 0 }
-							recon = { x = 0 y = 1 }
+							DIV_HQ = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+							recon = { x = 0 y = 2 }
 						}
 					}
 					else = {
@@ -3816,11 +3833,18 @@ focus_tree = {
 								infantry = { x = 1 y = 2 }
 					
 			    	   		 	infantry = { x = 2 y = 0 }
-								artillery_brigade = { x = 2 y = 1 }
-								artillery_brigade = { x = 2 y = 2 }
+								infantry = { x = 2 y = 1 }
+								infantry = { x = 2 y = 2 }
+								
+								artillery_brigade = { x = 3 y = 0 }
+								artillery_brigade = { x = 3 y = 1 }
+								artillery_brigade = { x = 3 y = 2 }
+								artillery_brigade = { x = 3 y = 3 }
 							}
 							support = {
-								engineer = { x = 0 y = 0 }
+								DIV_HQ = { x = 0 y = 0 }
+								engineer = { x = 0 y = 1 }
+								recon = { x = 0 y = 2 }
 							}
 						}
 					}
@@ -3920,19 +3944,23 @@ focus_tree = {
 						regiments = {
 							medium_armor = { x = 0 y = 0 }
 							medium_armor = { x = 0 y = 1 }
+							medium_armor = { x = 0 y = 2 }
 				
 		    	   		 	medium_armor = { x = 1 y = 0 }
 							medium_armor = { x = 1 y = 1 }
+							medium_armor = { x = 1 y = 2 }
 				
 		    	   		 	motorized = { x = 2 y = 0 }
 							motorized = { x = 2 y = 1 }
+							motorized = { x = 2 y = 2 }
 
-		    	   		 	motorized = { x = 3 y = 0 }
-							motorized = { x = 3 y = 1 }
+		    	   		 	motorized_artillery_brigade = { x = 3 y = 0 }
+							motorized_artillery_brigade = { x = 3 y = 1 }
+							motorized_artillery_brigade = { x = 3 y = 2 }
 						}
 						support = {
-							engineer = { x = 0 y = 0 }
-							artillery = { x = 0 y = 1 }
+							DIV_HQ = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
 							recon = { x = 0 y = 2 }
 						}
 					}
@@ -3948,20 +3976,24 @@ focus_tree = {
 								regiments = {
 									medium_armor = { x = 0 y = 0 }
 									medium_armor = { x = 0 y = 1 }
+									medium_armor = { x = 0 y = 2 }
 						
 				    	   		 	medium_armor = { x = 1 y = 0 }
 									medium_armor = { x = 1 y = 1 }
+									medium_armor = { x = 1 y = 2 }
 						
 				    	   		 	motorized = { x = 2 y = 0 }
 									motorized = { x = 2 y = 1 }
+									motorized = { x = 2 y = 2 }
 
-				    	   		 	motorized = { x = 3 y = 0 }
-									motorized = { x = 3 y = 1 }
+									motorized_artillery_brigade = { x = 3 y = 0 }
+									motorized_artillery_brigade = { x = 3 y = 1 }
+									motorized_artillery_brigade = { x = 3 y = 2 }
 								}
 								support = {
-									engineer = { x = 0 y = 0 }
-									artillery = { x = 0 y = 1 }
-									recon = { x = 0 y = 2 }
+									DIV_HQ = { x = 0 y = 0 }
+									engineer = { x = 0 y = 1 }
+									artillery = { x = 0 y = 2 }
 								}
 							}
 							else = {
@@ -3976,20 +4008,25 @@ focus_tree = {
 										regiments = {
 											light_armor = { x = 0 y = 0 }
 											light_armor = { x = 0 y = 1 }
+											light_armor = { x = 0 y = 2 }
 								
 						    	   		 	light_armor = { x = 1 y = 0 }
 											light_armor = { x = 1 y = 1 }
+											light_armor = { x = 1 y = 2 }
 								
 						    	   		 	motorized = { x = 2 y = 0 }
 											motorized = { x = 2 y = 1 }
+											motorized = { x = 2 y = 2 }
 
-						    	   		 	motorized = { x = 3 y = 0 }
-											motorized = { x = 3 y = 1 }
+						    	   		 	motorized_artillery_brigade = { x = 3 y = 0 }
+											motorized_artillery_brigade = { x = 3 y = 1 }
+											motorized_artillery_brigade = { x = 3 y = 2 }
 										}
 										support = {
-											engineer = { x = 0 y = 0 }
-											artillery = { x = 0 y = 1 }
-											recon = { x = 0 y = 2 }
+											DIV_HQ = { x = 0 y = 0 }
+											engineer = { x = 0 y = 1 }
+											artillery = { x = 0 y = 2 }
+											recon = { x = 0 y = 3 }
 										}
 									}
 									else = {
@@ -4000,19 +4037,24 @@ focus_tree = {
 											regiments = {
 												light_armor = { x = 0 y = 0 }
 												light_armor = { x = 0 y = 1 }
+												light_armor = { x = 0 y = 2 }
 									
 							    	   		 	light_armor = { x = 1 y = 0 }
 												light_armor = { x = 1 y = 1 }
+												light_armor = { x = 1 y = 2 }
 									
 							    	   		 	motorized = { x = 2 y = 0 }
 												motorized = { x = 2 y = 1 }
+												motorized = { x = 2 y = 2 }
 
-							    	   		 	motorized = { x = 3 y = 0 }
-												motorized = { x = 3 y = 1 }
+												motorized_artillery_brigade = { x = 3 y = 0 }
+												motorized_artillery_brigade = { x = 3 y = 1 }
+												motorized_artillery_brigade = { x = 3 y = 2 }
 											}
 											support = {
-												engineer = { x = 0 y = 0 }
-												artillery = { x = 0 y = 1 }
+												DIV_HQ = { x = 0 y = 0 }
+												engineer = { x = 0 y = 1 }
+												artillery = { x = 0 y = 2 }
 											}
 										}
 									}

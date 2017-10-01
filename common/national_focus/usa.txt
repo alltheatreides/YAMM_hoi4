@@ -161,6 +161,14 @@ focus_tree = {
 		available = {
 			has_government = democratic
 			controls_state = 369
+			OR = {
+				JAP = { 
+				controls_state = 336
+				}
+				SIA = { 
+				controls_state = 336
+				}
+			}
 		}
 		x = 2
 		y = 2
@@ -171,7 +179,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = rubber
-				amount = 10
+				amount = 90
 				state = 369 #Kentucky
 			}
 		}
@@ -2840,7 +2848,10 @@ focus_tree = {
 		id = USA_black_chamber
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = USA_pax_americana }
-		available = { is_puppet = no }
+		available = { 
+			is_puppet = no
+			threat > 10.00
+		}
 		x = 32
 		y = 3
 		cost = 10
@@ -3336,5 +3347,70 @@ focus_tree = {
 			}
 		}
 	}
-
+	
+	focus = {
+		id = USA_vichy_ultimatum
+		icon = GFX_goal_generic_position_armies
+		x = 36
+		y = 0
+		cost = 4.3
+		
+		available = {
+			tag = USA
+			EFR = { exists = yes }
+			EFR = { is_in_faction = no }
+			is_in_faction_with = ENG
+			GER = { has_war_with = SOV }
+		}
+		
+		completion_reward = {
+			country_event = { days = 1 id = vichy.1 }
+			EFR = { country_event = { days = 1 id = vichy.2 } }
+		}
+	}
+	
+	focus = {
+		id = USA_operation_torch
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = USA_vichy_ultimatum }
+		x = 36
+		y = 2
+		cost = 4.3
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = EFR }
+			hidden_effect = {
+				if = {
+					limit = { NOT = { USA = { has_tech = basic_medium_art } } }
+					USA = { set_technology = { basic_medium_art = 1 }	}
+				}
+				if = {
+					limit = { NOT = { USA = { has_tech = mechanised_infantry } } }
+					USA = { set_technology = { mechanised_infantry = 1 }	}
+				}
+				if = {
+					limit = { NOT = { USA = { has_tech = basic_medium_tank } } }
+					USA = { set_technology = { basic_medium_tank = 1 }	}
+				}
+				if = {
+					limit = { NOT = { ENG = { has_tech = basic_medium_tank } } }
+					ENG = { set_technology = { basic_medium_tank = 1 }	}
+				}
+				if = {
+					limit = { NOT = { ENG = { has_tech = basic_heavy_tank } } }
+					ENG = { set_technology = { basic_heavy_tank = 1 }	}
+				}
+				if = {
+					limit = { NOT = { ENG = { has_tech = basic_medium_art } } }
+					ENG = { set_technology = { basic_medium_art = 1 }	}
+				}
+			}
+			hidden_effect = {
+				load_oob = USA_Torch_historical
+				ENG = { load_oob = ENG_Torch_historical }
+			}
+			custom_effect_tooltip = USA_operation_torch_effect_1
+		}
+	}
+	
 }

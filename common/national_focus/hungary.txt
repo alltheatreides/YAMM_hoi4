@@ -70,7 +70,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			threat > 10.000
 		}
 
 		bypass = {
@@ -2114,7 +2114,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			threat > 10.000
 		}
 
 		bypass = {
@@ -4578,9 +4578,10 @@ focus_tree = {
 							infantry = { x = 1 y = 2 }
 						}
 						support = {
-							recon = { x = 0 y = 0 }
-							artillery = { x = 0 y = 1 }
-							engineer = { x = 0 y = 1 }
+							DIV_HQ = { x = 0 y = 0 }
+							recon = { x = 0 y = 1 }
+							artillery = { x = 0 y = 2 }
+							engineer = { x = 0 y = 3 }
 						}
 					}
 					else = {
@@ -4598,9 +4599,10 @@ focus_tree = {
 								infantry = { x = 1 y = 2 }
 							}
 							support = {
-								recon = { x = 0 y = 0 }
-								artillery = { x = 0 y = 1 }
-								engineer = { x = 0 y = 1 }
+								DIV_HQ = { x = 0 y = 0 }
+								recon = { x = 0 y = 1 }
+								artillery = { x = 0 y = 2 }
+								engineer = { x = 0 y = 3 }
 							}
 						}					
 					}

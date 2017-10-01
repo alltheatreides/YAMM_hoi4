@@ -1,0 +1,23 @@
+﻿l_english:
+ _light_armor:0 "Light Tank Battalion"
+ _medium_armor:0 "Medium Tank Battalion"
+ _heavy_armor:0 "Heavy Tank Battalion"
+ _modern_armor:0 "Modern Tank Battalion"
+ _super_heavy_armor:0 "Super Heavy Tank Battalion"
+ _light_tank_destroyer:0 "Light Tank Destroyer Battalion"
+ _medium_tank_destroyer:0 "Medium Tank Destroyer Battalion"
+ _heavy_tank_destroyer:0 "Heavy Tank Destroyer Battalion"
+ _modern_tank_destroyer:0 "Modern Tank Destroyer Battalion"
+ _super_heavy_tank_destroyer:0 "Super Heavy Tank Destroyer Battalion"
+
+ _light_sp_artillery:0 "Light SP Artillery Battalion"
+ _medium_sp_artillery:0 "Medium SP Artillery Battalion"
+ _heavy_sp_artillery:0 "Heavy SP Artillery Battalion"
+ _modern_sp_artillery:0 "Modern SP Artillery Battalion"
+ _super_heavy_sp_artillery:0 "Super Heavy SP Artillery Battalion"
+
+ _light_sp_anti_air:0 "Light SP Anti-Air Battalion"
+ _medium_sp_anti_air:0 "Medium SP Anti-Air Battalion"
+ _heavy_sp_anti_air:0 "Heavy SP Anti-Air Battalion"
+ _modern_sp_anti_air:0 "Modern SP Anti-Air Battalion"
+ _super_heavy_sp_anti_air:0 "Super Heavy SP Anti-Air Battalion"

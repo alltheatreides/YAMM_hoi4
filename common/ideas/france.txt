@@ -360,6 +360,7 @@ ideas = {
 			}			
 			available = {
 				has_completed_focus = FRA_leftist_rhetoric
+				NOT = {has_country_flag = free_france}
 			}
 			
 			traits = { communist_revolutionary }
@@ -378,7 +379,33 @@ ideas = {
 				factor = 0
 			}
 		}	
+		andre_marty = { # France libre so De gaulle (et pas Thorez en exil)
 			
+			
+			allowed = {
+				original_tag = "FRA"
+			}			
+			available = {
+				has_completed_focus = FRA_leftist_rhetoric
+				has_country_flag = free_france
+			}
+			
+			traits = { communist_revolutionary }
+	
+			on_add = {
+				country_event = political.1
+			}
+			
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}			
 		leon_blum = {
 			
 			
@@ -386,7 +413,9 @@ ideas = {
 				original_tag = "FRA"
 			}
 			
-
+			available = {
+				NOT = {has_country_flag = free_france}
+			}
 			
 			traits = { democratic_reformer }
 	
@@ -404,7 +433,33 @@ ideas = {
 				factor = 0
 			}
 		}
-		
+		FRA_FREE_rene_cassin = {
+			
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			available = {
+				has_country_flag = free_france
+			}
+			
+			traits = { democratic_reformer }
+	
+			on_add = {
+				country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}		
 		marcel_bucard = {
 			
 			
@@ -413,6 +468,7 @@ ideas = {
 			}
 			available ={
 				has_completed_focus = FRA_right_wing_rhetoric
+				NOT = {has_completed_focus = free_france}
 			}
 			
 			traits = { fascist_demagogue }
@@ -437,6 +493,10 @@ ideas = {
 			allowed = {
 				original_tag = "FRA"
 			}
+			available = {
+				NOT = {has_country_flag = free_france}
+			}
+
 			
 			picture = generic_political_advisor_europe_5
 			
@@ -458,7 +518,9 @@ ideas = {
 			allowed = {
 				original_tag = "FRA"
 			}
-			
+			available = {
+				has_completed_focus = FRA_leftist_rhetoric
+			}			
 			picture = generic_political_advisor_europe_3
 			
 			traits = { backroom_backstabber }
@@ -494,7 +556,9 @@ ideas = {
 			allowed = {
 				original_tag = "FRA"
 			}
-			
+			available = {
+				has_country_flag = free_france
+			}			
 			picture = generic_army_europe_5
 			
 			traits = { war_industrialist }
@@ -557,7 +621,9 @@ ideas = {
 			allowed = {
 				original_tag = "FRA"
 			}
-
+			available = {
+				NOT = {has_country_flag = free_france}
+			}
 			picture = generic_political_advisor_europe_3
 			
 			traits = { quartermaster_general }
@@ -586,6 +652,7 @@ ideas = {
 			}
 			available = {
 				has_completed_focus = FRA_aggressive_focus
+				NOT = {has_country_flag = free_france}
 			}
 
 			cost = 50
@@ -601,10 +668,22 @@ ideas = {
 			
 			
 			allowed = {
+					AND = {	
 				original_tag = FRA
+						NOT = {has_country_flag = become_vichy}
+					}	
+			
 			}
 			available = {
+				OR = {
+					AND = {	
+						original_tag = FRA
 				has_completed_focus = FRA_defensive_focus
+						NOT = {has_country_flag = free_france}
+					}	
+					original_tag = EFR
+				}
+				
 			}
 
 			cost = 50
@@ -623,7 +702,9 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-			
+			available = {
+				NOT = {has_country_flag = free_france}
+			}			
 
 			
 			traits = { army_chief_offensive_1 }
@@ -640,7 +721,9 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-			
+			available = {
+				NOT = {has_country_flag = free_france}
+			}			
 
 			
 			traits = { army_chief_defensive_1 }
@@ -656,7 +739,9 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-			
+			available = {
+				NOT = {has_country_flag = free_france}
+			}			
 
 			
 			traits = { army_chief_maneuver_1 }
@@ -672,10 +757,21 @@ ideas = {
 			
 			
 			allowed = {
+				OR = {	
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}
 			
-
+			available = {
+				OR = {
+					AND = {	
+						original_tag = FRA
+						NOT = {has_country_flag = free_france}
+					}	
+					original_tag = EFR
+				}
+			}
 			
 			traits = { navy_chief_decisive_battle_2 }
 			
@@ -688,10 +784,21 @@ ideas = {
 			
 			
 			allowed = {
+				OR = {	
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}
 			
-
+			available = {
+				OR = {
+					AND = {	
+						original_tag = FRA
+						NOT = {has_country_flag = free_france}
+					}	
+					original_tag = EFR
+				}
+			}
 			
 			traits = { navy_chief_naval_aviation_1 }
 			
@@ -704,7 +811,20 @@ ideas = {
 			
 			
 			allowed = {
+				OR = {	
 				original_tag = FRA
+					original_tag = EFR
+				}
+			}
+			
+			available = {
+				OR = {
+					AND = {	
+				original_tag = FRA
+						NOT = {has_country_flag = free_france}
+					}	
+					original_tag = EFR
+				}
 			}
 			
 
@@ -725,6 +845,11 @@ ideas = {
 				original_tag = FRA
 			}
 			
+			available = {
+				original_tag = FRA
+				NOT = {has_country_flag = free_france}	
+			}
+			
 
 			
 			traits = { air_chief_ground_support_1 }
@@ -741,7 +866,10 @@ ideas = {
 				original_tag = FRA
 			}
 			
-
+			available = {
+				original_tag = FRA
+				NOT = {has_country_flag = free_france}
+			}
 			
 			traits = { air_chief_all_weather_1 }
 			
@@ -757,7 +885,10 @@ ideas = {
 				original_tag = FRA
 			}
 			
-
+			available = {
+				original_tag = FRA
+				NOT = {has_country_flag = free_france}
+			}
 			
 			traits = { air_chief_reform_2 }
 			
@@ -776,7 +907,10 @@ ideas = {
 				original_tag = FRA
 			}
 			
-
+			available = {
+				original_tag = FRA
+				NOT = {has_country_flag = free_france}
+			}
 			
 			traits = { army_cavalry_2 }
 			
@@ -789,7 +923,20 @@ ideas = {
 			
 			
 			allowed = {
+				OR = {	
 				original_tag = FRA
+					original_tag = EFR
+				}
+			}
+			
+			available = {
+				OR = {
+					AND = {	
+				original_tag = FRA
+						NOT = {has_country_flag = free_france}
+					}	
+					original_tag = EFR
+				}
 			}
 			
 
@@ -808,7 +955,10 @@ ideas = {
 				original_tag = FRA
 			}
 			
-
+			available = {
+				original_tag = FRA
+				has_country_flag = free_france
+			}
 			
 			traits = { army_commando_2 }
 			
@@ -824,7 +974,10 @@ ideas = {
 				original_tag = FRA
 			}
 			
-
+			available = {
+				original_tag = FRA
+				NOT = {has_country_flag = free_france}
+			}
 			
 			traits = { air_air_combat_training_2 }
 			
@@ -853,10 +1006,21 @@ ideas = {
 			
 			
 			allowed = {
+				OR = {	
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}
 			
-
+			available = {
+				OR = {
+					AND = {	
+						original_tag = FRA
+						NOT = {has_country_flag = free_france}
+					}	
+					original_tag = EFR
+				}
+			}
 			
 			traits = { air_tactical_bombing_2 }
 			
@@ -869,7 +1033,20 @@ ideas = {
 			
 			
 			allowed = {
+				OR = {	
+					original_tag = FRA
+					original_tag = EFR
+				}
+			}
+			
+			available = {
+				OR = {
+					AND = {	
 				original_tag = FRA
+						NOT = {has_country_flag = free_france}
+					}	
+					original_tag = EFR
+				}
 			}
 			
 
@@ -903,7 +1080,10 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-			
+			available = {
+				original_tag = FRA
+				NOT = {has_country_flag = free_france}
+			}			
 
 			
 			traits = { navy_screen_2 }
@@ -946,7 +1126,10 @@ ideas = {
 		somua = {
 						
 			allowed = {
+				OR = {
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}
 			cost = 150			
 			research_bonus = {
@@ -972,7 +1155,10 @@ ideas = {
 			picture = generic_tank_manufacturer_2
 						
 			allowed = {
+				OR = {
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}
 						
 			research_bonus = {
@@ -996,7 +1182,10 @@ ideas = {
 		somua = {
 		
 			allowed = {
+				OR = {
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}
 
 			research_bonus = {
@@ -1013,7 +1202,10 @@ ideas = {
 		mas = {
 						
 			allowed = {
+				OR = {
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}
 						
 			research_bonus = {
@@ -1026,7 +1218,10 @@ ideas = {
 		schneider = {
 						
 			allowed = {
+				OR = {
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}		
 			
 			research_bonus = {
@@ -1046,7 +1241,10 @@ ideas = {
 			cost = 150
 			
 			allowed = {
+				OR = {
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}
 			
 			research_bonus = {
@@ -1059,7 +1257,10 @@ ideas = {
 		bloch = {
 						
 			allowed = {
+				OR = {
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}
 			
 			cost = 150
@@ -1079,7 +1280,10 @@ ideas = {
 			cost = 150
 			
 			allowed = {
+				OR = {
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}
 						
 			research_bonus = {
@@ -1094,7 +1298,10 @@ ideas = {
 			cost = 150
 			
 			allowed = {
-				original_tag = FRA
+			OR = {
+					original_tag = FRA
+					original_tag = EFR
+				}
 			}
 						
 			research_bonus = {
@@ -1107,7 +1314,10 @@ ideas = {
 		latecoere = {
 						
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = EFR
+				}
 			}
 			cost = 150			
 			research_bonus = {
@@ -1120,7 +1330,10 @@ ideas = {
 		dewoitine = {
 						
 			allowed = {
+				OR = {
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}
 			cost = 150			
 			research_bonus = {
@@ -1138,7 +1351,10 @@ ideas = {
 		fcm = {
 						
 			allowed = {
+				OR = {
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}
 						
 			research_bonus = {
@@ -1154,7 +1370,10 @@ ideas = {
 		famh = {
 						
 			allowed = {
+				OR = {
 				original_tag = FRA
+					original_tag = EFR
+				}
 			}
 						
 			research_bonus = {
@@ -1239,7 +1458,10 @@ ideas = {
 				original_tag = FRA
 			}
 			
-			
+			available = {	
+				original_tag = FRA
+				NOT = {has_country_flag = free_france}
+			}			
 			research_bonus = {
 				naval_doctrine = 0.07
 			}
@@ -1251,7 +1473,20 @@ ideas = {
 			
 			
 			allowed = {
+				OR = {
 				original_tag = FRA
+					original_tag = EFR
+				}
+			}
+			
+			available = {
+				OR = {
+					AND = {	
+				original_tag = FRA
+						NOT = {has_country_flag = free_france}
+					}	
+					original_tag = EFR
+				}
 			}
 			
 			cost = 250 
@@ -1266,7 +1501,13 @@ ideas = {
 		jean_marie_bergeret = {
 						
 			allowed = {
+				OR = {
+					AND = {
 				original_tag = FRA
+						NOT = {has_country_flag = free_france}
+					}	
+					original_tag = EFR
+				}
 			}
 						
 			research_bonus = {
@@ -1282,7 +1523,11 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-			
+			available = {		
+				original_tag = FRA
+				NOT = {has_country_flag = free_france}
+
+			}			
 			
 			research_bonus = {
 				nuclear = 0.10

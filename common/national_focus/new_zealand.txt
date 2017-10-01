@@ -2129,6 +2129,9 @@ focus_tree = {
 					infantry = { x = 1 y = 1 }
 					infantry = { x = 1 y = 2 }
 				}
+				support = {
+					DIV_HQ = { x = 0 y = 0 }
+				}
 			}
 			random_owned_controlled_state = {
 				prioritize = { 284 723 }

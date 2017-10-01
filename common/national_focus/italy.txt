@@ -1471,7 +1471,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		
+		available = {
+			GER = { has_war_with = POL }
+		}
+		
 		bypass = {
 			NOT = { country_exists = YUG }
 		}
@@ -1537,6 +1541,7 @@ focus_tree = {
 			NOT = {
 				has_war_with = YUG
 			}
+			GER = { has_war_with = POL }
 		}
 
 		completion_reward = {

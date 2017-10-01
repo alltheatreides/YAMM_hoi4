@@ -145,7 +145,7 @@ ideas = {
 		# }
 		
 	    
-			lure_them_in = {
+		lure_them_in = {
 			removal_cost = -1
 			picture = FRA_scw_intervention_nationalists_focus
 			
@@ -169,6 +169,7 @@ ideas = {
 				army_speed_factor = 0.15
 				army_core_attack_factor = 0.30
 				army_core_defence_factor = 0.60
+				supply_consumption_factor = -0.5
 			}
 		}
 		rear = {

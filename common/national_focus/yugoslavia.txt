@@ -987,6 +987,7 @@ focus_tree = {
 				exists = yes
 				has_capitulated = no
 			}
+			threat > 10.00
 		}
 
 		bypass = {

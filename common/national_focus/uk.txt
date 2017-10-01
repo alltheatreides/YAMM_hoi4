@@ -1855,7 +1855,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		x = 29
 		y = 2
-		cost = 10
+		cost = 4.3
 		completion_reward = {
 			447 = {
 				add_building_construction = {
@@ -1883,7 +1883,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		x = 25
 		y = 3
-		cost = 10
+		cost = 4.3
 		completion_reward = {
 			118 = {
 				add_building_construction = {
@@ -1945,7 +1945,7 @@ focus_tree = {
 		icon = GFX_goal_generic_defence
 		x = 28
 		y = 4
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2408,7 +2408,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		x = 17
 		y = 3
-		cost = 10
+		cost = 4.3
 
 		available_if_capitulated = yes
 
@@ -2471,7 +2471,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 15
 		y = 4
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2608,7 +2608,7 @@ focus_tree = {
 		icon = GFX_goal_generic_trade
 		x = 15
 		y = 6
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2637,7 +2637,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		x = 17
 		y = 7
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2656,7 +2656,7 @@ focus_tree = {
 		icon = GFX_goal_generic_fortify_city
 		x = 17
 		y = 4
-		cost = 10
+		cost = 4.3
 
 		available = {
 			336 = {
@@ -2705,7 +2705,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		x = 17
 		y = 5
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2767,7 +2767,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction2
 		x = 17
 		y = 6
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2826,7 +2826,7 @@ focus_tree = {
 		icon = GFX_goal_generic_fortify_city
 		x = 19
 		y = 4
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -2860,7 +2860,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		x = 19
 		y = 5
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2909,7 +2909,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		x = 19
 		y = 6
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2967,7 +2967,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		x = 19
 		y = 7
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -3000,7 +3000,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		x = 22
 		y = 3
-		cost = 10
+		cost = 4.3
 
 		available_if_capitulated = yes
 

@@ -1,0 +1,369 @@
+﻿### OOB ###
+division_template = {
+	name = "Division d'Infanterie Vichy"		# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 3 y = 4}
+		
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 } 	# Heavy Arty Regiment had 2x 155mm battalions
+		anti_tank = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Brigade de Chars de Combat" 	# Brigade de Chars de Combat, independent armor brigades of 2x Rgts., 2 Bns. each
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Régiment d'Infanterie Vichy"			# Infantry Brigade	
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	##### armistice army #####
+	
+	##Métropole
+	# 1er groupe de divisions militaires (Avignon)
+	division = {
+		name = "7. Division Militaire"
+		location = 641  # Bourg En Bresse
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	division = {
+		name = "14. Division Militaire"
+		location = 6613  # Lyon
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	division = {
+		name = "15. Division Militaire"
+		location = 11834  # Marseille
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	division = {
+		name = "16. Division Militaire"
+		location = 9898  # Montpellier
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	# 2e groupe de divisions militaires (Clermont-Ferrand) :
+	division = {
+		name = "9. Division Militaire"
+		location = 651  # Chateauroux
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	division = {
+		name = "12. Division Militaire"
+		location = 620  # Limoges
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+
+	division = {
+		name = "13. Division Militaire"
+		location = 769  # Clermont-Ferrand
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	division = {
+		name = "17. Division Militaire"
+		location = 6766  # Toulouse
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	
+	##Outre Mer
+	#Madagascar
+	# Troupes de Madagascar
+	division = {	
+		name = "Troupes de Madagascar"	
+		location = 5222
+		division_template = "Régiment d'Infanterie Vichy" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		
+
+	}
+	#Indochine
+	division = {
+		name = "Division de Marche du Tonkin"
+		location = 4075  # Hanoi
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	division = {
+		name = "Brigade d'Annam-Laos"
+		location = 4075  # Hanoi
+		division_template = "Régiment d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	division = {
+		name = "Division de Cochinchine-Cambodge"
+		location = 4401  # Saigon
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	
+	#Afrique du Nord
+	# MAROC
+	division = {
+		name = "Division de Fez"
+		location = 7100  # Fez
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	division = {
+		name = "Division de Meknès"
+		location = 4084  # Mèknes
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	division = {
+		name = "Division de Casablanca"
+		location = 7069  # Casablanca
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	division = {
+		name = "Division de Marrakech"
+		location = 4139  # Marrakech
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	
+	division = {
+		name = "8ème Régiment de Tirailleurs Marocains"
+		location = 7069  # Casablanca
+		division_template = "Régiment d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	division = {
+		name = "15ème Régiment de Tirailleurs Sénégalais"
+		location = 7069  # Casablanca
+		division_template = "Régiment d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	
+	#XIX Corps D'Armée Algérie et Tunis
+	division = {
+		name = "Division de Marche d'Algers"
+		location = 1145  # Algers
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	division = {
+		name = "13ème Régiment de Tirailleurs Sénégalais"
+		location = 1145  # Algers
+		division_template = "Régiment d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	division = {
+		name = "1er Régiment de Zouaves"
+		location = 1145  # Algers
+		division_template = "Régiment d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	division = {
+		name = "Division de Marche de Constantine"
+		location = 12051  # Constantine
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	division = {
+		name = "Division de Marche d'Oran"
+		location = 7132  # Oran
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	
+	division = {
+		name = "4ème Régiment de Tirailleurs Sénégalais"
+		location = 7132  # Oran
+		division_template = "Régiment d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	division = {
+		name = "2ème Régiments de Marche Mixtes de Zouaves et de Tirailleurs"
+		location = 7132  # Oran
+		division_template = "Régiment d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	division = {
+		name = "Division de Marche de Tunis"
+		location = 11969  # Tunis
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	#Syrie
+	division = {
+		name = "Division du Levant"
+		location = 4111  # Damas
+		division_template = "Division d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+
+	}
+	division = {
+		name = "24ème Régiment d’Infanterie Coloniale"
+		location = 4111  # Damas
+		division_template = "Régiment d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	division = {
+		name = "1er Régiment de Troupes Spéciales du Levant"
+		location = 4111  # Damas
+		division_template = "Régiment d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	division = {
+		name = "2ème Régiment de Troupes Spéciales du Levant"
+		location = 4111  # Damas
+		division_template = "Régiment d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	division = {
+		name = "3ème Régiment de Troupes Spéciales du Levant"
+		location = 4111  # Damas
+		division_template = "Régiment d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	division = {
+		name = "Régiment de Chasseurs Libanais"
+		location = 4111  # Damas
+		division_template = "Régiment d'Infanterie Vichy"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	division = {
+		name = "7ème Chasseurs d’Afrique"
+		location = 4111  # Damas
+		division_template = "Brigade de Chars de Combat"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+	division = {
+		name = "6ème Chasseurs d’Afrique"
+		location = 4111  # Damas
+		division_template = "Brigade de Chars de Combat"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		
+	}
+}

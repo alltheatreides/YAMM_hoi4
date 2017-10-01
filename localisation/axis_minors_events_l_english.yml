@@ -1,0 +1,40 @@
+﻿l_english:
+##Add in focus tree fight between german influenced and more radical Hlinka guard, more and more imitating the SS and the Slovak Popular Party (still fascist)
+#Ruthenia
+
+ axis_minors.1.t:0 "Subcarpathian Rus Declares Itself an Autonomous Region"
+ axis_minors.1.desc:0 "Due to the emfeeblement of the czechoslovak government central government, the region of Subcarpathian Rus, mainly inhabited by Rusyn (Ruthenians) a ukrainian subgroup declared itself an autonomous region. It will now enjoy all the right that were promised when the country became independent but were limited by the Prague's government."
+ axis_minors.1.a:0 "It's their right anyway"
+ axis_minors.1.b:0 "We finally recover some levels of autonomy (play Subcarpathian Rus)."
+ axis_minors.1.c:0 "Let them go"
+ axis_minors.1.d:0 "Let them embrace their destiny (play independent Carpatho-Ukraine)"
+ 
+ axis_minors.2.t:0 "The Hungarian Menace"
+ axis_minors.2.desc:0 "With the destruction of Czechoslovakia, the risk of an invasion grows day by day. Maybe we could survive the rapid changes shaking the region by proposing to join the Kingdom of Hungary, while keeping a maximum of autonomy." 
+ axis_minors.2.a:0 "Send envoys to Budapest"
+ axis_minors.2.b:0 "Let them come" 
+ axis_minors.2.c:0 "They are not ready to attack now (delay the attack)"
+ 
+ axis_minors.3.t:0 "Carpatho-Ukraine Seeks Protection"
+ axis_minors.3.desc:0 "A delegation from the so called "Republic of Carpatho-Ukraine" arrived today and proposed us an unexpected deal. Aware of the risks of invasion and of our claims on their territory, they are ready to abandon their new independence in exchange for autonomy within Hungary. While accepting would limit our influence on that small region, only partially restoring the borders of historical Hungary; invading the region could lead to the implication of rival powers." 
+ axis_minors.3.a:0 "Intergrate them as an autonomous region"
+ axis_minors.3.b:0 "Subcarpathia is a part of historical Hungary, invade them." 
+ 
+ axis_minors.4.t:0 "Intervene in Carpatho-Ukraine?"
+ axis_minors.4.desc:0 "The self-proclaimed Republic of Carpatho-Ukraine is new and isolated. As a part of historical Hungary, it should be under hungarian government. With the desintegration of Czechoslovakia, that little region is now ready return to its rightful owners." 
+ axis_minors.4.a:0 "Do nothing"
+ axis_minors.4.b:0 "Launch the plan" 
+ 
+ axis_minors.5.t:0 "A Free Society"
+ axis_minors.5.desc:0 "With the change in the political leadership, basic liberties are again guaranteed through the country. Consequently associations are forming and democratic ideas are spreading through the country." 
+ axis_minors.5.a:0 "We must cherish the return of liberty" 
+ 
+ #Croatia
+ 
+ axis_minors_croatia.1.t:0 "Reunion with Yugoslavia"
+ axis_minors_croatia.1.desc:0 "Now that Tito is Leading both of our governments, it is time to unite with Yugoslavia."
+ axis_minors_croatia.1.a:0 "Long live the SFR Yugoslavia!"
+ 
+ axis_minors_croatia.2.t:0 "Croat Communists Want to Join us"
+ axis_minors_croatia.2.desc:0 "The croat communists want to join our glorious union of the southern slavs."
+ axis_minors_croatia.2.a:0 "Welcome back!"

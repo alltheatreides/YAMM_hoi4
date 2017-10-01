@@ -1471,6 +1471,7 @@ focus_tree = {
 	 				}
 	 			}
 	 		}
+			threat > 10.000
 		}
 	 	prerequisite = { focus = FRA_support_status_quo }
 	 	mutually_exclusive = { focus = FRA_go_with_britain }
@@ -1723,6 +1724,7 @@ focus_tree = {
 	 		focus = FRA_support_status_quo
 	 	}
 	 	available = {
+			threat > 10.000
 		}
 	 	prerequisite = { focus = FRA_initiate_government_reform }
 		x = 15
@@ -2380,6 +2382,136 @@ focus_tree = {
 				uses = 2
 				category = naval_bomber
 			}
+		}
+	}
+	
+	###FREE FRANCE PART
+	
+	focus = {
+		id = FRA_france_libre
+		icon = GFX_focus_france_libre
+		x = 35
+		y = 0
+		cost = 3.5
+		
+		available_if_capitulated = yes
+		
+		available = {
+			EFR = { exists = yes } 
+		}
+		
+		completion_reward = {
+			country_event = { days = 1 id = free_france.1 }
+			hidden_effect = {
+				load_oob = FRA_free_france
+				set_technology = { antitank2 = 1 }
+				set_technology = { antitank1 = 1 }
+			}
+			custom_effect_tooltip = FRA_free_france_effect_1
+			# 8193 = {
+				# add_extra_state_shared_building_slots = 12
+				# add_building_construction = {
+					# type = industrial_complex
+					# level = 12
+					# instant_build = yes
+				# }
+				# add_extra_state_shared_building_slots = 6
+				# add_building_construction = {
+					# type = arms_factory
+					# level = 6
+					# instant_build = yes
+				# }
+			# }
+		}
+	}
+	
+	focus = {
+		id = FRA_sway_west_africa
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = FRA_france_libre }
+		x = 35
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = { days = 1 id = free_france.2 }
+			custom_effect_tooltip = west_africa_sway_tt
+		}
+	}
+	
+	focus = {
+		id = FRA_sway_syria
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = FRA_france_libre }
+		prerequisite = { focus = FRA_sway_west_africa }
+		x = 37
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = { days = 1 id = free_france.5 }
+			custom_effect_tooltip = syria_sway_tt
+		}
+	}
+	
+	focus = {
+		id = FRA_organize_the_resistance
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = FRA_sway_syria }
+		prerequisite = { focus = FRA_sway_west_africa }
+		x = 36
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = { days = 1 id = free_france.8 }
+		}
+	}
+	
+	focus = {
+		id = FRA_unleash_the_resistance_1
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = FRA_organize_the_resistance }
+		x = 36
+		y = 3
+		cost = 1
+		
+		available = {
+			has_war_with = EFR
+			is_ai = no
+		}
+		
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = { days = 1 id = free_france.9 }
+		}
+	}
+	
+	focus = {
+		id = FRA_unleash_the_resistance_2
+		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = FRA_organize_the_resistance }
+		x = 38
+		y = 3
+		cost = 1
+		
+		available = {
+			is_ai = no
+		}
+				
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = { days = 1 id = yamm.32 }
 		}
 	}
 }

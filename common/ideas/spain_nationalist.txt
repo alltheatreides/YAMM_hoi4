@@ -17,7 +17,7 @@ ideas = {
 
 			modifier = {
 				ai_get_ally_desire_factor = -70
-				join_faction_tension = 1
+				join_faction_tension = 2
 				conscription = -0.07
 			}
 		}
