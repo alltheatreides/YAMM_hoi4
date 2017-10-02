@@ -1,6 +1,6 @@
 ﻿###### OOB ######
 division_template = {
-	name = "Motorised Division II"
+	name = "Motorised Division 41"
 
 	regiments = {
 
@@ -30,7 +30,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Armor Division II"
+	name = "Armor Division 41"
 
 	regiments = {
 
@@ -65,7 +65,7 @@ units = {
 	division= {
 		name = "Armored Division"		
 		location = 788 # Norfolk
-		division_template = "Armor Division II"
+		division_template = "Armor Division 41"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 		
@@ -73,7 +73,7 @@ units = {
 	division= {
 		name = "3rd Infantry Division"		
 		location = 788 # Norfolk
-		division_template = "Motorised Division II"
+		division_template = "Motorised Division 41"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 		
@@ -81,7 +81,7 @@ units = {
 	division= {
 		name = "9th Infantry Division"		
 		location = 788 # Norfolk
-		division_template = "Motorised Division II"
+		division_template = "Motorised Division 41"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 		
@@ -89,7 +89,7 @@ units = {
 	division= {
 		name = "34th Infantry Division"		
 		location = 788 # Norfolk
-		division_template = "Motorised Division II"
+		division_template = "Motorised Division 41"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 		
@@ -97,7 +97,7 @@ units = {
 	division= {
 		name = "Infantry Division"		
 		location = 788 # Norfolk
-		division_template = "Motorised Division II"
+		division_template = "Motorised Division 41"
 		start_experience_factor = 0.7
 		start_equipment_factor = 0.10
 		
@@ -105,7 +105,7 @@ units = {
 	division= {
 		name = "Armored Division"		
 		location = 788 # Norfolk
-		division_template = "Armor Division II"
+		division_template = "Armor Division 41"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 		

@@ -1,5 +1,47 @@
 ﻿add_namespace = yamm
 
+
+# France Heads up
+news_event = {
+	id = yamm.1
+	title = yamm.1.t
+	desc = yamm.1.desc
+	picture = GFX_news_event_do_not_give_up
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+	}
+	
+	option = {
+		name = yamm.10.a
+	}
+	
+}
+
+# Canada Valentine tank from UK
+country_event = {
+	id = yamm.33
+	title = yamm.33.t
+	desc = yamm.33.desc
+	picture = GFX_report_event_tank_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = yamm.33.a
+		create_production_license = {
+			target = CAN 
+			equipment = {
+				type = heavy_tank_equipment_1
+			}
+			cost_factor = 0
+		}
+	}
+}
+
+
 news_event = {
 	id = yamm.29
 	title = yamm.29.t
@@ -13,6 +55,7 @@ news_event = {
 	}
 }
 
+# Vichy news event about neutrality
 news_event = {
 	id = yamm.30
 	title = yamm.30.t
@@ -26,6 +69,7 @@ news_event = {
 	}
 }
 
+# Heads up for france when capitulated
 news_event = {
 	id = yamm.31
 	title = yamm.31.t

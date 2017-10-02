@@ -27,7 +27,7 @@ country_event = {
 		name = vichy.2.a
 		ai_chance = { factor = 100 }
 		USA = { country_event = { id = vichy.3 } }
-		news_event = { hours = 6 id = pfu.30 }
+		news_event = { hours = 6 id = yamm.30 }
 	}	
 }
 

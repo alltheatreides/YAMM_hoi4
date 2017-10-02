@@ -1714,6 +1714,10 @@ country_event = {
         }	
 		add_political_power = 100
 		hidden_effect = {
+			set_technology = { basic_light_tank = 1 }
+		}
+		load_oob = SPR_additional_help
+		hidden_effect = {
 		    set_country_flag = SPR_alzamiento
 		}
 	}

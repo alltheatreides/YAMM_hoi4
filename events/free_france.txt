@@ -277,3 +277,20 @@ country_event = {
 	}
 }
 
+# Heads up start of the game
+country_event = {
+	id = free_france.11
+	title = free_france.11.t
+	desc = free_france.11.desc
+	picture = GFX_report_event_french_resistance
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+	}
+	
+	option = {
+		name = yamm.10.a
+	}
+}

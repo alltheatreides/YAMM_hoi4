@@ -1,6 +1,6 @@
 technologies = {
 	
-	bf_109_e = {
+	bf_109_f = {
 		
 		research_cost = 1
 
@@ -10,7 +10,7 @@ technologies = {
 		}
 		
 		enable_equipments = {
-			bf_109_e_fighter_equipment
+			bf_109_f_fighter_equipment_1
 		}
 		
 		categories = {

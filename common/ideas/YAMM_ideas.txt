@@ -42,5 +42,40 @@ ideas = {
 			}
 		}
 	}
+	
+	country = {
+		incompetent_aircraft_industry = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_fighter_production_diverted
+			
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				strat_bomber_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+			}
+		}
+	}
 }
 

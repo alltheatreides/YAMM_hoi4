@@ -1,0 +1,1238 @@
+spriteTypes = {	
+
+
+#德国一战坦克_german great war tank#
+SpriteType = {
+name = "GFX_GER_gwtank_medium"
+texturefile = "gfx/interface/technologies/ger_gwtank.dds"
+} 
+
+#德国轻型坦克_german light tank#
+SpriteType = {
+name = "GFX_GER_basic_light_td_medium"
+texturefile = "gfx/interface/technologies/ger_basic_light_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_basic_light_art_medium"
+texturefile = "gfx/interface/technologies/ger_basic_light_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_basic_light_spaa_medium"
+texturefile = "gfx/interface/technologies/ger_basic_light_tank_aa.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_improved_light_td_medium"
+texturefile = "gfx/interface/technologies/ger_imp_light_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_improved_light_art_medium"
+texturefile = "gfx/interface/technologies/ger_imp_light_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_improved_light_spaa_medium"
+texturefile = "gfx/interface/technologies/ger_imp_light_tank_aa.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_advanced_light_td_medium"
+texturefile = "gfx/interface/technologies/ger_adv_light_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_advanced_light_art_medium"
+texturefile = "gfx/interface/technologies/ger_adv_light_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_advanced_light_spaa_medium"
+texturefile = "gfx/interface/technologies/ger_adv_light_tank_aa.dds"
+}
+
+#德国中型坦克_german medium tank#
+SpriteType = {
+name = "GFX_GER_basic_medium_td_medium"
+texturefile = "gfx/interface/technologies/ger_basic_main_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_basic_medium_art_medium"
+texturefile = "gfx/interface/technologies/ger_basic_main_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_basic_medium_spaa_medium"
+texturefile = "gfx/interface/technologies/ger_basic_main_tank_aa.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_improved_medium_td_medium"
+texturefile = "gfx/interface/technologies/ger_imp_main_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_improved_medium_art_medium"
+texturefile = "gfx/interface/technologies/ger_imp_main_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_improved_medium_spaa_medium"
+texturefile = "gfx/interface/technologies/ger_imp_main_tank_aa.dds"
+}
+
+
+SpriteType = {
+name = "GFX_GER_advanced_medium_td_medium"
+texturefile = "gfx/interface/technologies/ger_adv_main_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_advanced_medium_art_medium"
+texturefile = "gfx/interface/technologies/ger_adv_main_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_advanced_medium_spaa_medium"
+texturefile = "gfx/interface/technologies/ger_adv_main_tank_aa.dds"
+}
+
+#德国重型坦克_german heavy tank#
+SpriteType = {
+name = "GFX_GER_basic_heavy_td_medium"
+texturefile = "gfx/interface/technologies/ger_basic_heavy_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_improved_heavy_td_medium"
+texturefile = "gfx/interface/technologies/ger_imp_heavy_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_improved_heavy_art_medium"
+texturefile = "gfx/interface/technologies/ger_imp_heavy_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_advanced_heavy_td_medium"
+texturefile = "gfx/interface/technologies/ger_adv_heavy_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_advanced_heavy_art_medium"
+texturefile = "gfx/interface/technologies/ger_adv_heavy_tank_spa.dds"
+}
+
+#德国主战坦克_german main battle tank#
+SpriteType = {
+name = "GFX_GER_modern_td_medium"
+texturefile = "gfx/interface/technologies/ger_main_battle_tank_td.dds"
+}
+
+#德国超重坦克_german super heavy tank#
+SpriteType = {
+name = "GFX_GER_super_heavy_td_medium"
+texturefile = "gfx/interface/technologies/ger_superheavy_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_super_heavy_art_medium"
+texturefile = "gfx/interface/technologies/ger_superheavy_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_super_heavy_spaa_medium"
+texturefile = "gfx/interface/technologies/ger_superheavy_tank_aa.dss"
+}
+
+#德国喷气战斗机_german jet fighter#
+SpriteType = {
+name = "GFX_GER_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/ger_jet_fighter2.dds"
+}	
+
+SpriteType = {
+name = "GFX_GER_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/ger_jet_fighter1.dds"
+}
+
+#德国喷气战略轰炸机_german jet strategic bomber#
+SpriteType = {
+name = "GFX_GER_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/ger_jet_strategic_bomber1.dds"
+}
+
+#德国喷气战术轰炸机_german jet tactical bomber#
+SpriteType = {
+name = "GFX_GER_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/ger_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_GER_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/ger_jet_tactical_bomber1.dds"
+}
+
+#德国火箭截击机_german rocket interceptor#
+SpriteType = {
+name = "GFX_GER_rocket_interceptor_equipment_3_medium"
+texturefile = "gfx/interface/technologies/ger_rocket_interceptor_3.dds"
+}		
+	
+SpriteType = {
+name = "GFX_GER_rocket_interceptor_equipment_2_medium"
+texturefile = "gfx/interface/technologies/ger_rocket_interceptor_2.dds"
+}		
+	
+SpriteType = {
+name = "GFX_GER_rocket_interceptor_equipment_1_medium"
+texturefile = "gfx/interface/technologies/ger_rocket_interceptor_1.dds"
+}
+
+#德国舰载俯冲轰炸机_german carrier-based CAS#
+SpriteType = {
+name = "GFX_GER_cv_CAS1_medium"
+texturefile = "gfx/interface/technologies/GER_CAS1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_GER_cv_CAS2_medium"
+texturefile = "gfx/interface/technologies/GER_CAS2_cv.dds"
+}	
+
+#德国舰载战斗机_german carrier-based fighter#
+SpriteType = {
+name = "GFX_GER_cv_fighter1_medium"
+texturefile = "gfx/interface/technologies/GER_fighter1_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_cv_fighter2_medium"
+texturefile = "gfx/interface/technologies/GER_fighter2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_GER_cv_fighter3_medium"
+texturefile = "gfx/interface/technologies/GER_fighter3_cv.dds"
+}
+
+#德国舰载海军轰炸机_german carrier-based naval bomber#
+SpriteType = {
+name = "GFX_GER_cv_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/GER_naval_bomber1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_GER_cv_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/GER_naval_bomber2_cv.dds"
+}
+
+#德国步兵武器_german infantry weapon#
+# SpriteType = {
+# name = "GFX_GER_infantry_weapons_medium"
+# texturefile = "gfx/interface/technologies/GER_infantry_equipment_0.dds"
+# }
+
+# SpriteType = {
+# name = "GFX_GER_infantry_weapons1_medium"
+# texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
+# }
+
+#德国摩步/机步载具_german motorized/mechanized vehicles#
+# SpriteType = {
+# name = "GFX_GER_mechanised_infantry1_medium"
+# texturefile = "gfx/interface/technologies/GER_mechanized_equipment_1.dds"
+# }
+
+# SpriteType = {
+# name = "GFX_GER_mechanised_infantry3_medium"
+# texturefile = "gfx/interface/technologies/GER_mechanized_equipment_3.dds"
+# }
+
+
+
+#苏联一战坦克_USSR great war tank#
+SpriteType = {
+name = "GFX_SOV_gwtank_medium"
+texturefile = "gfx/interface/technologies/sov_gwtank.dds"
+} 
+
+#苏联轻型坦克_USSR light tank#
+SpriteType = {
+name = "GFX_SOV_basic_light_td_medium"
+texturefile = "gfx/interface/technologies/SOV_basic_light_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_basic_light_art_medium"
+texturefile = "gfx/interface/technologies/SOV_basic_light_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_basic_light_spaa_medium"
+texturefile = "gfx/interface/technologies/SOV_basic_light_tank_aa.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_improved_light_td_medium"
+texturefile = "gfx/interface/technologies/SOV_imp_light_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_improved_light_art_medium"
+texturefile = "gfx/interface/technologies/SOV_imp_light_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_advanced_light_td_medium"
+texturefile = "gfx/interface/technologies/SOV_adv_light_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_advanced_light_art_medium"
+texturefile = "gfx/interface/technologies/SOV_adv_light_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_advanced_light_spaa_medium"
+texturefile = "gfx/interface/technologies/SOV_adv_light_tank_aa.dds"
+}
+ 
+#苏联中型坦克_USSR medium tank#
+SpriteType = {
+name = "GFX_SOV_basic_medium_td_medium"
+texturefile = "gfx/interface/technologies/SOV_basic_main_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_basic_medium_spaa_medium"
+texturefile = "gfx/interface/technologies/SOV_basic_main_tank_aa.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_improved_medium_td_medium"
+texturefile = "gfx/interface/technologies/SOV_imp_main_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_improved_medium_art_medium"
+texturefile = "gfx/interface/technologies/SOV_imp_main_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_improved_medium_spaa_medium"
+texturefile = "gfx/interface/technologies/SOV_imp_main_tank_aa.dds"
+}
+
+
+SpriteType = {
+name = "GFX_SOV_advanced_medium_td_medium"
+texturefile = "gfx/interface/technologies/SOV_adv_main_tank_td.dds"
+}
+ 
+#苏联重型坦克_USSR heavy tank#
+SpriteType = {
+name = "GFX_SOV_basic_heavy_td_medium"
+texturefile = "gfx/interface/technologies/SOV_basic_heavy_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_basic_heavy_art_medium"
+texturefile = "gfx/interface/technologies/SOV_basic_heavy_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_improved_heavy_td_medium"
+texturefile = "gfx/interface/technologies/SOV_imp_heavy_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_improved_heavy_art_medium"
+texturefile = "gfx/interface/technologies/SOV_imp_heavy_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_advanced_heavy_td_medium"
+texturefile = "gfx/interface/technologies/SOV_adv_heavy_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_advanced_heavy_art_medium"
+texturefile = "gfx/interface/technologies/SOV_adv_heavy_tank_spa.dds"
+}
+
+#苏联主战坦克_USSR main battle tank#
+SpriteType = {
+name = "GFX_SOV_modern_td_medium"
+texturefile = "gfx/interface/technologies/SOV_main_battle_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_modern_spaa_medium"
+texturefile = "gfx/interface/technologies/SOV_main_battle_tank_aa.dds"
+}
+
+#苏联超重坦克_USSR super heavy tank#
+SpriteType = {
+name = "GFX_SOV_super_heavy_td_medium"
+texturefile = "gfx/interface/technologies/SOV_superheavy_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_super_heavy_art_medium"
+texturefile = "gfx/interface/technologies/SOV_superheavy_tank_spa.dds"
+}
+
+#苏联喷气战斗机_USSR jet fighter#
+SpriteType = {
+name = "GFX_SOV_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/sov_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SOV_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/sov_jet_fighter2.dds"
+}
+
+#苏联喷气战略轰炸机_USSR jet strategic bomber#
+SpriteType = {
+name = "GFX_SOV_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/sov_jet_strategic_bomber1.dds"
+}
+
+#苏联喷气战术轰炸机_USSR jet tactical bomber#
+SpriteType = {
+name = "GFX_SOV_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/sov_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_SOV_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/sov_jet_tactical_bomber1.dds"
+}
+
+#苏联舰载俯冲轰炸机_USSR carrier-based CAS#
+SpriteType = {
+name = "GFX_SOV_cv_CAS2_medium"
+texturefile = "gfx/interface/technologies/SOV_CAS2_cv.dds"
+}	
+
+#苏联舰载战斗机_USSR carrier-based fighter#
+SpriteType = {
+name = "GFX_SOV_cv_fighter1_medium"
+texturefile = "gfx/interface/technologies/SOV_fighter1_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_cv_fighter2_medium"
+texturefile = "gfx/interface/technologies/SOV_fighter2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_SOV_cv_fighter3_medium"
+texturefile = "gfx/interface/technologies/SOV_fighter3_cv.dds"
+}
+
+
+
+#美国轻型坦克_USA light tank#
+SpriteType = {
+name = "GFX_USA_basic_light_td_medium"
+texturefile = "gfx/interface/technologies/USA_basic_light_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_USA_improved_light_td_medium"
+texturefile = "gfx/interface/technologies/USA_imp_light_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_USA_improved_light_art_medium"
+texturefile = "gfx/interface/technologies/USA_imp_light_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_USA_improved_light_spaa_medium"
+texturefile = "gfx/interface/technologies/USA_imp_light_tank_aa.dds"
+}
+
+SpriteType = {
+name = "GFX_USA_advanced_light_td_medium"
+texturefile = "gfx/interface/technologies/USA_adv_light_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_USA_advanced_light_art_medium"
+texturefile = "gfx/interface/technologies/USA_adv_light_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_USA_advanced_light_spaa_medium"
+texturefile = "gfx/interface/technologies/USA_adv_light_tank_aa.dds"
+}
+ 
+#美国中型坦克_USA medium tank#
+SpriteType = {
+name = "GFX_USA_basic_medium_td_medium"
+texturefile = "gfx/interface/technologies/USA_basic_main_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_USA_basic_medium_art_medium"
+texturefile = "gfx/interface/technologies/USA_basic_main_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_USA_improved_medium_td_medium"
+texturefile = "gfx/interface/technologies/USA_imp_main_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_USA_improved_medium_art_medium"
+texturefile = "gfx/interface/technologies/USA_imp_main_tank_spa.dds"
+}
+
+SpriteType = {
+name = "GFX_USA_advanced_medium_td_medium"
+texturefile = "gfx/interface/technologies/USA_adv_main_tank_td.dds"
+}
+
+SpriteType = {
+name = "GFX_USA_advanced_medium_art_medium"
+texturefile = "gfx/interface/technologies/USA_adv_main_tank_spa.dds"
+}
+ 
+#美国重型坦克_USA heavy tank#
+SpriteType = {
+name = "GFX_USA_advanced_heavy_art_medium"
+texturefile = "gfx/interface/technologies/USA_adv_heavy_tank_spa.dds"
+}
+
+#美国主战坦克_USA main battle tank#
+SpriteType = {
+name = "GFX_USA_modern_spaa_medium"
+texturefile = "gfx/interface/technologies/USA_main_battle_tank_aa.dds"
+}
+
+#美国喷气战斗机_USA jet fighter#
+SpriteType = {
+name = "GFX_USA_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/usa_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_USA_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/usa_jet_fighter2.dds"
+}
+
+#美国喷气战略轰炸机_USA jet strategic bomber#
+SpriteType = {
+name = "GFX_USA_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/usa_jet_strategic_bomber1.dds"
+}
+
+#美国喷气战术轰炸机_USA jet tactical bomber#	
+SpriteType = {
+name = "GFX_USA_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/usa_jet_tactical_bomber2.dds"
+}
+
+#美国舰载俯冲轰炸机_USA carrier-based CAS#
+SpriteType = {
+name = "GFX_USA_cv_CAS1_medium"
+texturefile = "gfx/interface/technologies/USA_CAS1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_USA_cv_CAS2_medium"
+texturefile = "gfx/interface/technologies/USA_CAS2_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_USA_cv_CAS3_medium"
+texturefile = "gfx/interface/technologies/USA_CAS3_cv.dds"
+}
+
+#美国舰载战斗机_USA carrier-based fighter#
+SpriteType = {
+name = "GFX_USA_cv_early_fighter_medium"
+texturefile = "gfx/interface/technologies/USA_early_fighter_cv.dds"
+}
+
+#美国舰载海军轰炸机_USA carrier-based naval bomber#
+SpriteType = {
+name = "GFX_USA_cv_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/USA_naval_bomber2_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_USA_cv_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/USA_naval_bomber3_cv.dds"
+}
+
+
+
+#英国喷气战斗机_UK jet fighter#
+SpriteType = {
+name = "GFX_ENG_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_ENG_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/eng_jet_fighter2.dds"
+}
+
+#英国喷气战略轰炸机_UK jet strategic bomber#
+SpriteType = {
+name = "GFX_ENG_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_strategic_bomber1.dds"
+}
+
+#英国喷气战术轰炸机_UK jet tactical bomber#
+SpriteType = {
+name = "GFX_ENG_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_tactical_bomber1.dds"
+}	
+	
+SpriteType = {
+name = "GFX_ENG_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/eng_jet_tactical_bomber2.dds"
+}
+
+#英国舰载俯冲轰炸机_UK carrier-based CAS#
+SpriteType = {
+name = "GFX_ENG_cv_CAS1_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_ENG_cv_CAS2_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_ENG_cv_CAS3_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS3_cv.dds"
+}	
+
+#英国舰载战斗机_UK carrier-based fighter#
+SpriteType = {
+name = "GFX_ENG_cv_early_fighter_medium"
+texturefile = "gfx/interface/technologies/ENG_early_fighter_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_ENG_cv_fighter1_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter1_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_ENG_cv_fighter2_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_ENG_cv_fighter3_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter3_cv.dds"
+}
+
+#英国舰载海军轰炸机_UK carrier-based naval bomber#
+SpriteType = {
+name = "GFX_ENG_cv_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_ENG_cv_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_ENG_cv_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber3_cv.dds"
+}
+
+
+
+#加拿大喷气战斗机_Canadian jet fighter#
+SpriteType = {
+name = "GFX_CAN_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/can_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_CAN_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/can_jet_fighter2.dds"
+}
+
+#加拿大喷气战略轰炸机_Canadian jet strategic bomber#
+SpriteType = {
+name = "GFX_CAN_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_strategic_bomber1.dds"
+}
+
+#加拿大喷气战术轰炸机_Canadian jet tactical bomber#
+SpriteType = {
+name = "GFX_CAN_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_tactical_bomber1.dds"
+}	
+	
+SpriteType = {
+name = "GFX_CAN_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/eng_jet_tactical_bomber2.dds"
+}
+
+#加拿大舰载俯冲轰炸机_Canadian carrier-based CAS#
+SpriteType = {
+name = "GFX_CAN_cv_CAS1_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_CAN_cv_CAS2_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_CAN_cv_CAS3_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS3_cv.dds"
+}	
+
+#加拿大舰载战斗机_Canadian carrier-based fighter#
+SpriteType = {
+name = "GFX_CAN_cv_early_fighter_medium"
+texturefile = "gfx/interface/technologies/ENG_early_fighter_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_CAN_cv_fighter1_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter1_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_CAN_cv_fighter2_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_CAN_cv_fighter3_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter3_cv.dds"
+}
+
+#加拿大舰载海军轰炸机_Canadian carrier-based naval bomber#
+SpriteType = {
+name = "GFX_CAN_cv_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_CAN_cv_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_CAN_cv_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber3_cv.dds"
+}
+
+
+
+#澳大利亚喷气战斗机_Australian jet fighter#
+SpriteType = {
+name = "GFX_AST_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_AST_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/ast_jet_fighter2.dds"
+}
+
+#澳大利亚喷气战略轰炸机_Australian jet strategic bomber#
+SpriteType = {
+name = "GFX_AST_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_strategic_bomber1.dds"
+}
+
+#澳大利亚喷气战术轰炸机_Australian jet tactical bomber#
+SpriteType = {
+name = "GFX_AST_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_tactical_bomber1.dds"
+}	
+	
+SpriteType = {
+name = "GFX_AST_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/eng_jet_tactical_bomber2.dds"
+}
+
+#澳大利亚舰载俯冲轰炸机_Australian carrier-based CAS#
+SpriteType = {
+name = "GFX_AST_cv_CAS1_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_AST_cv_CAS2_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_AST_cv_CAS3_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS3_cv.dds"
+}	
+
+#澳大利亚舰载战斗机_Australian carrier-based fighter#
+SpriteType = {
+name = "GFX_AST_cv_early_fighter_medium"
+texturefile = "gfx/interface/technologies/ENG_early_fighter_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_AST_cv_fighter1_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter1_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_AST_cv_fighter2_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_AST_cv_fighter3_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter3_cv.dds"
+}
+
+#澳大利亚舰载海军轰炸机_Australian carrier-based naval bomber#
+SpriteType = {
+name = "GFX_AST_cv_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_AST_cv_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_AST_cv_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber3_cv.dds"
+}
+
+#澳大利亚战斗机_Australian fighter#
+SpriteType = {
+name = "GFX_AST_fighter2_medium"
+texturefile = "gfx/interface/technologies/AST_fighter2.dds"
+}
+
+#澳大利亚俯冲轰炸机_Australian CAS#
+SpriteType = {
+name = "GFX_AST_CAS1_medium"
+texturefile = "gfx/interface/technologies/AST_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_AST_CAS3_medium"
+texturefile = "gfx/interface/technologies/AST_CAS3.dds"
+}	
+
+
+
+#新西兰喷气战斗机_NZL jet fighter#
+SpriteType = {
+name = "GFX_NZL_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_NZL_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/eng_jet_fighter2.dds"
+}
+
+#新西兰喷气战略轰炸机_NZL jet strategic bomber#
+SpriteType = {
+name = "GFX_NZL_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_strategic_bomber1.dds"
+}
+
+#新西兰喷气战术轰炸机_NZL jet tactical bomber#
+SpriteType = {
+name = "GFX_NZL_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_tactical_bomber1.dds"
+}	
+	
+SpriteType = {
+name = "GFX_NZL_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/eng_jet_tactical_bomber2.dds"
+}
+
+#新西兰舰载俯冲轰炸机_NZL carrier-based CAS#
+SpriteType = {
+name = "GFX_NZL_cv_CAS1_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_NZL_cv_CAS2_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_NZL_cv_CAS3_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS3_cv.dds"
+}	
+
+#新西兰舰载战斗机_NZL carrier-based fighter#
+SpriteType = {
+name = "GFX_NZL_cv_early_fighter_medium"
+texturefile = "gfx/interface/technologies/ENG_early_fighter_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_NZL_cv_fighter1_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter1_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_NZL_cv_fighter2_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_NZL_cv_fighter3_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter3_cv.dds"
+}
+
+#新西兰舰载海军轰炸机_NZL carrier-based naval bomber#
+SpriteType = {
+name = "GFX_NZL_cv_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_NZL_cv_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_NZL_cv_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber3_cv.dds"
+}
+
+
+
+#南非喷气战斗机_south african jet fighter#
+SpriteType = {
+name = "GFX_SAF_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SAF_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/eng_jet_fighter2.dds"
+}
+
+#南非喷气战略轰炸机_ south african jet strategic bomber#
+SpriteType = {
+name = "GFX_SAF_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_strategic_bomber1.dds"
+}
+
+#南非喷气战术轰炸机_ south african jet tactical bomber#
+SpriteType = {
+name = "GFX_SAF_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_tactical_bomber1.dds"
+}	
+	
+SpriteType = {
+name = "GFX_SAF_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/eng_jet_tactical_bomber2.dds"
+}
+
+#南非舰载俯冲轰炸机_ south african carrier-based CAS#
+SpriteType = {
+name = "GFX_SAF_cv_CAS1_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_SAF_cv_CAS2_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_SAF_cv_CAS3_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS3_cv.dds"
+}	
+
+#南非舰载战斗机_ south african carrier-based fighter#
+SpriteType = {
+name = "GFX_SAF_cv_early_fighter_medium"
+texturefile = "gfx/interface/technologies/ENG_early_fighter_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_SAF_cv_fighter1_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter1_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_SAF_cv_fighter2_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_SAF_cv_fighter3_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter3_cv.dds"
+}
+
+#南非舰载海军轰炸机_ south african carrier-based naval bomber#
+SpriteType = {
+name = "GFX_SAF_cv_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_SAF_cv_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_SAF_cv_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber3_cv.dds"
+}
+
+
+
+#印度喷气战斗机_Indian jet fighter#
+SpriteType = {
+name = "GFX_RAJ_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_RAJ_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/eng_jet_fighter2.dds"
+}
+
+#印度喷气战略轰炸机_Indian jet strategic bomber#
+SpriteType = {
+name = "GFX_RAJ_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_strategic_bomber1.dds"
+}
+
+#印度喷气战术轰炸机_Indian jet tactical bomber#
+SpriteType = {
+name = "GFX_RAJ_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/eng_jet_tactical_bomber1.dds"
+}	
+	
+SpriteType = {
+name = "GFX_RAJ_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/eng_jet_tactical_bomber2.dds"
+}
+
+#印度舰载俯冲轰炸机_Indian carrier-based CAS#
+SpriteType = {
+name = "GFX_RAJ_cv_CAS1_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_RAJ_cv_CAS2_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_RAJ_cv_CAS3_medium"
+texturefile = "gfx/interface/technologies/ENG_CAS3_cv.dds"
+}	
+
+#印度舰载战斗机_Indian carrier-based fighter#
+SpriteType = {
+name = "GFX_RAJ_cv_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RAJ_early_fighter_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_RAJ_cv_fighter1_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter1_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_RAJ_cv_fighter2_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_RAJ_cv_fighter3_medium"
+texturefile = "gfx/interface/technologies/ENG_fighter3_cv.dds"
+}
+
+#印度舰载海军轰炸机_Indian carrier-based naval bomber#
+SpriteType = {
+name = "GFX_RAJ_cv_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_RAJ_cv_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber2_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_RAJ_cv_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/ENG_naval_bomber3_cv.dds"
+}
+
+#印度战斗机_Indian fighter#
+SpriteType = {
+name = "GFX_RAJ_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RAJ_early_fighter.dds"
+}
+
+
+
+#替换TFV飞机图标_replace tfv aircraft icons#
+SpriteType = {
+name = "GFX_AST_CAS2_medium"
+texturefile = "gfx/interface/technologies/AST_CAS2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_AST_fighter3_medium"
+texturefile = "gfx/interface/technologies/AST_fighter3.dds"
+}	
+	
+SpriteType = {
+name = "GFX_AST_fighter1_medium"
+texturefile = "gfx/interface/technologies/AST_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_RAJ_fighter1_medium"
+texturefile = "gfx/interface/technologies/RAJ_fighter1.dds"
+}
+
+
+
+#日本喷气战斗机_japanese jet fighter#
+SpriteType = {
+name = "GFX_JAP_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/jap_jet_fighter2.dds"
+}	
+
+SpriteType = {
+name = "GFX_JAP_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/jap_jet_fighter1.dds"
+}
+
+#日本舰载俯冲轰炸机_japanese carrier-based CAS#
+SpriteType = {
+name = "GFX_JAP_cv_CAS1_medium"
+texturefile = "gfx/interface/technologies/JAP_CAS1_cv.dds"
+}	
+
+#日本舰载战斗机_japanese carrier-based fighter#
+SpriteType = {
+name = "GFX_JAP_cv_early_fighter_medium"
+texturefile = "gfx/interface/technologies/JAP_early_fighter_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_JAP_cv_fighter3_medium"
+texturefile = "gfx/interface/technologies/JAP_fighter3_cv.dds"
+}
+
+#日本舰载海军轰炸机_japanese carrier-based naval bomber#
+SpriteType = {
+name = "GFX_JAP_cv_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/JAP_naval_bomber3_cv.dds"
+}	
+
+
+
+#意大利喷气战斗机_italian jet fighter#
+SpriteType = {
+name = "GFX_ITA_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/ita_jet_fighter2.dds"
+}	
+
+SpriteType = {
+name = "GFX_ITA_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/ita_jet_fighter1.dds"
+}
+
+#意大利舰载俯冲轰炸机_italian carrier-based CAS#
+SpriteType = {
+name = "GFX_ITA_cv_CAS1_medium"
+texturefile = "gfx/interface/technologies/ITA_CAS1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_ITA_cv_CAS2_medium"
+texturefile = "gfx/interface/technologies/ITA_CAS2_cv.dds"
+}
+
+#意大利舰载战斗机_italian carrier-based fighter#
+SpriteType = {
+name = "GFX_ITA_cv_fighter3_medium"
+texturefile = "gfx/interface/technologies/ITA_fighter3_cv.dds"
+}
+
+#意大利舰载海军轰炸机_italian carrier-based naval bomber#
+SpriteType = {
+name = "GFX_ITA_cv_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/ITA_naval_bomber1_cv.dds"
+}	
+
+
+
+#法国喷气战斗机_french jet fighter#
+SpriteType = {
+name = "GFX_FRA_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/fra_jet_fighter1.dds"
+}	
+
+#法国舰载俯冲轰炸机_french carrier-based CAS#
+SpriteType = {
+name = "GFX_FRA_cv_CAS1_medium"
+texturefile = "gfx/interface/technologies/FRA_CAS1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_FRA_cv_CAS3_medium"
+texturefile = "gfx/interface/technologies/FRA_CAS3_cv.dds"
+}	
+
+#法国舰载战斗机_french carrier-based fighter#
+SpriteType = {
+name = "GFX_FRA_cv_early_fighter_medium"
+texturefile = "gfx/interface/technologies/FRA_early_fighter_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_FRA_cv_fighter1_medium"
+texturefile = "gfx/interface/technologies/FRA_fighter1_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_FRA_cv_fighter2_medium"
+texturefile = "gfx/interface/technologies/FRA_fighter2_cv.dds"
+}
+
+#法国舰载海军轰炸机_french carrier-based naval bomber#
+SpriteType = {
+name = "GFX_FRA_cv_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/FRA_naval_bomber1_cv.dds"
+}	
+
+
+
+
+
+
+}

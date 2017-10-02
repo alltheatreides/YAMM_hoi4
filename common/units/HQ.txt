@@ -97,7 +97,7 @@ sub_units = {
 		
 		supply_consumption = 0.1
 
-		initiative = 0.25
+		initiative = 0.10
 		need = {
 			support_equipment = 40
 			motorized_equipment = 10

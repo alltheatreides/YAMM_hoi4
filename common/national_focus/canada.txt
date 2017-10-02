@@ -2206,22 +2206,23 @@ focus_tree = {
 		y = 6
 		relative_position_id = CAN_army_modernization 
 
-		cost = 10
+		cost = 4.3
 
 		ai_will_do = {
 			factor = 25
 		}
 
 		available = {
-
+			ENG = { has_tech = basic_heavy_tank }
+			ENG = { has_completed_focus = ENG_tank_focus }
 		}
 		
 		bypass = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		complete_tooltip = {
@@ -2235,13 +2236,7 @@ focus_tree = {
 				uses = 1
 				category = armor
 			}
-			add_tech_bonus = {
-				name = CAN_the_valentine_tank
-				ahead_reduction = 1
-				bonus = 0.5
-				uses = 1
-				category = cat_light_armor
-			}
+			ENG = { country_event = { days = 1 id = yamm.33 }	}
 		}
 	}
 

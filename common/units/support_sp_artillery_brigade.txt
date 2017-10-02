@@ -30,7 +30,7 @@ sub_units = {
 		}
 		
 		need = {
-			light_tank_artillery_equipment = 30
+			light_tank_artillery_equipment = 12
 			 
 		}
 		
@@ -82,7 +82,7 @@ sub_units = {
 		}
 		
 		need = {
-			medium_tank_artillery_equipment = 30
+			medium_tank_artillery_equipment = 12
 			 
 		}
 		manpower = 300
@@ -236,7 +236,7 @@ sub_units = {
 		}
 		
 		need = {
-			modern_tank_artillery_equipment = 20
+			modern_tank_artillery_equipment = 12
 			
 		}
 		manpower = 300

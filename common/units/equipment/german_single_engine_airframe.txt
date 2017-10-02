@@ -1,6 +1,6 @@
 equipments = {
 
-	bf_109_e_fighter_equipment = {
+	bf_109_f_fighter_equipment = {
 		year = 1939
 
 		is_archetype = yes
@@ -54,22 +54,22 @@ equipments = {
 		manpower = 20
 	}
 	
-	# Bf109 E
-	bf_109_e_fighter_equipment_1 = {
-		year = 1940
+	# Bf109 f
+	bf_109_f_fighter_equipment_1 = {
+		year = 1939
 
 		archetype = fighter_equipment
-		parent = bf_109_e_fighter_equipment
+		parent = bf_109_f_fighter_equipment
 		priority = 10
 
-		air_range = 1000
-		maximum_speed = 650
-		air_agility = 65
-		air_attack = 27
-		air_defence = 12		
-
+		air_range = 700
+		maximum_speed = 500
+		air_agility = 50
+		air_attack = 18
+		air_defence = 10
+		
 				
-		build_cost_ic = 26
+		build_cost_ic = 24
 		resources = {
 			oil = 2
 			aluminium = 3

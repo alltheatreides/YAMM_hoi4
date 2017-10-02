@@ -36,8 +36,17 @@ country_event = {
 
 		annex_country = { target = AUS transfer_troops = yes }
 		add_political_power = 75
-		add_named_threat = { threat = 2 name = germany.4.t }
+		add_named_threat = { threat = 10 name = germany.4.t }
 		set_country_flag = AUS_annexed
+		if = {
+			limit = {
+				has_dlc = "Death or Dishonor"
+			}
+			country_event = {
+				id = DOD_yugoslavia.30
+				days = 4
+			}
+		}
 		news_event = { hours = 6 id = news.36 }
 	}
 }
@@ -80,7 +89,10 @@ country_event = {
 	
 	option = {
 		name = germany.5.b		#refuse
-		ai_chance = { factor = 25 }
+		trigger = { NOT = { is_puppet_of = GER } }
+		ai_chance = { 
+			factor = 25 
+		}
 		GER =  { add_opinion_modifier = { target = ROOT modifier = refused_anti_comintern_pact_opinion } }
 	}
 
@@ -108,6 +120,7 @@ country_event = {
 	
 	option = {
 		name = germany.6.b		#refuse
+		trigger = { NOT = { is_puppet_of = GER } }
 		add_opinion_modifier = { target = GER modifier = refused_tripartite_pact_opinion }
 	}
 
@@ -2160,7 +2173,7 @@ country_event = {
 		add_tech_bonus = {
 			name = med_armor_bonus
 			ahead_reduction = 1
-			technology = basic_medium_tank
+			category = cat_medium_armor
 		}
 		add_tech_bonus = {
 			name = armor_bonus
@@ -2190,6 +2203,7 @@ country_event = {
 			technology = basic_medium_tank
 		}
 		add_tech_bonus = {
+			name = GER_soviet_treaty
 			bonus = 0.5
 			uses = 2
 			category = armor
@@ -2719,7 +2733,7 @@ country_event = {
 			add_national_unity = -0.2
 			create_faction = "the_berlin_moscow_axis"
 			add_to_faction = SOV
-			add_named_threat = { threat = 5 name = germany.89.t }
+			add_named_threat = { threat = 10 name = germany.89.t }
 			every_other_country = {
 				limit = {
 					has_government = fascism 
@@ -2981,7 +2995,7 @@ country_event = {
 			custom_effect_tooltip = germany.98_tt
 			effect_tooltip = {
 				add_political_power = -75
-				add_named_threat = { threat = 7 name = GER_fate_of_yugoslavia }
+				add_named_threat = { threat = 5 name = GER_fate_of_yugoslavia }
 				annex_country = { target = YUG transfer_troops = no }
 			}
 		}
@@ -2999,7 +3013,7 @@ country_event = {
 				}
 			}
 			add_political_power = -75
-			add_named_threat = { threat = 7 name = GER_fate_of_yugoslavia }
+			add_named_threat = { threat = 5 name = GER_fate_of_yugoslavia }
 			annex_country = { target = YUG transfer_troops = no }
 
 			hidden_effect = {
@@ -3038,7 +3052,7 @@ country_event = {
 			custom_effect_tooltip = germany.98_tt
 			effect_tooltip = {
 				add_political_power = -25
-				add_named_threat = { threat = 5 name = GER_fate_of_yugoslavia }
+				add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
 				CRO = {
 					if = {
 						limit = { YUG = { owns_state = 103 } }
@@ -3071,7 +3085,7 @@ country_event = {
 				}
 			}
 			add_political_power = -25
-			add_named_threat = { threat = 5 name = GER_fate_of_yugoslavia }
+			add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
 			CRO = {
 				if = {
 					limit = { YUG = { owns_state = 103 } }
@@ -3115,7 +3129,7 @@ country_event = {
 			YUG = { country_event = yugoslavia.9 }
 			custom_effect_tooltip = germany.98_tt
 			effect_tooltip = {
-				add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
+				add_named_threat = { threat = 2 name = GER_fate_of_yugoslavia }
 				
 				CRO = {
 					if = {
@@ -3154,7 +3168,7 @@ country_event = {
 					}
 				}
 			}
-			add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
+			add_named_threat = { threat = 2 name = GER_fate_of_yugoslavia }
 			
 			CRO = {
 				if = {

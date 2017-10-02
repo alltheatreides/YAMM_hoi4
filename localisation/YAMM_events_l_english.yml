@@ -1,4 +1,11 @@
 ﻿l_english:
+ yamm.1.t:0 "France in YAMM"
+ yamm.1.desc:0 "France plays a bit differently in YAMM. \n Vichy will happen and you will lose all your troops. So you cannot expect to abandon France as your army will melt when you capitulate. \nSo give a jolly good fight to the jerries and enjoy the new Free France focuses (on the right of the focus tree) \n You also get free divisions through events and focuses. \nYour role is key for Operation Torch in securing the beaches thansk to  your Resistance Focuses. \n \nBonne chance et faites honneur à la République !"
+ yamm.33.t:0 "The Valentine Tank"
+ yamm.33.desc:0 "To develop its own tank forces, Canada has established tank production facilities but in terms of design it is much simpler to rely on the design from England. \n We have obtained the Valentine design patent and should be able to produce it in our own facilities now."
+ yamm.33.a:0 "Thank you based UK."
  yamm.10.a:0 "Thanks for the heads up"
+ yamm.30.t:0 "France stays neutral"
+ yamm.30.desc:0 "The French Government at Vichy never joined the Axis but did not fight the English and the Allies either despite several attacks on its possessions. \n \n Not all French are happy with the situation but the official stance of the government in this world conflict is to maintain an armed neutrality and wait for the storm to pass out. \n \n France is defeated and must be rebuilt and it is not by joining a war again."
  yamm.31.t:0 "The Fight Goes On"
- yamm.31.desc:0 "The Battle for France is over, but the war still rages on. Do not leave juste because you lost metropolitan France. \n \n PFU has some interesting mechanics for Free France in your National Focus (on the right) where you can help a lot for Operation Torch and get free divisions from the war in North Africa and later help in the war in Italy/D-Day. \n \n Courage !"
+ yamm.31.desc:0 "The Battle for France is over, but the war still rages on. Do not leave juste because you lost metropolitan France. \n \n YAMM has some interesting mechanics for Free France in your National Focus (on the right) where you can help a lot for Operation Torch and get free divisions from the war in North Africa and later help in the war in Italy/D-Day. \n \n Courage !"
