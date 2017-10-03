@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Yon-tan-i Saidan" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
+	name = "Yon-tan-i Shidan" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
 									# 1 engineering regiment, 1 recon regiment
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -26,7 +26,7 @@
 }
 
 division_template = {
-	name = "San-tan-i Saidan" 			# (Triangular) Infantry Division - 3 infantry regiments (3k men each), 1 field artillery regiment plus integral artillery,
+	name = "San-tan-i Shidan" 			# (Triangular) Infantry Division - 3 infantry regiments (3k men each), 1 field artillery regiment plus integral artillery,
 									# 1 engineering regiment, 1 recon regiment, up to 4 field hospitals and transport and labour elements, 2-3 cavalry regiments
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -207,9 +207,9 @@ units = {
 
 	#Kita Homengun - North Japan Army
 	division = {
-		name = "7 'Kuma' Saidan"
+		name = "7 'Kuma' Shidan"
 		location = 10125 #Asahigawa
-		division_template = "Yon-tan-i Saidan"
+		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -236,13 +236,13 @@ units = {
 
 	#Chuo Homengun - East Japan Army
 	division = {
-		name = "2 'Yu' Saidan"
+		name = "2 'Yu' Shidan"
 		location = 7087 #Shizuoka
-		division_template = "Yon-tan-i Saidan"
+		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Konoe Saidan"
+		name = "Konoe Shidan"
 		location = 1182 #Tokyo
 		division_template = "Konoe Shidan"			# Elite Guard unit (highest experience, best equipment)
 		start_experience_factor = 0.4
@@ -263,9 +263,9 @@ units = {
 
 	#Roppou Homengun - West Japan Army
 	division = {
-		name = "4 'Yodo' Saidan"
+		name = "4 'Yodo' Shidan"
 		location = 9950 #Nagasaki
-		division_template = "Yon-tan-i Saidan"
+		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -296,36 +296,36 @@ units = {
 
 	#3 Homengun - 3rd Field Army
 	division = {
-		name = "3 'Ko' Saidan"
+		name = "3 'Ko' Shidan"
 		location = 12068 #Taipei
-		division_template = "Yon-tan-i Saidan"
+		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "6 'Mei' Shidan"
 		location = 12068 #Taipei
-		division_template = "Yon-tan-i Saidan"
+		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "11 'Nishiki' Shidan"
 		location = 12068 #Taipei
-		division_template = "Yon-tan-i Saidan"
+		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 
 
 	#Chosen Gun - Korea Army
 	division = {
-		name = "19 'Tora' Saidan"
+		name = "19 'Tora' Shidan"
 		location = 4052 #Pyongyang
-		division_template = "San-tan-i Saidan"
+		division_template = "San-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "20 'Asa' Saidan"
+		name = "20 'Asa' Shidan"
 		location = 7125 #Seoul
-		division_template = "San-tan-i Saidan"
+		division_template = "San-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -474,15 +474,15 @@ units = {
 		start_equipment_factor = 0.3		
 	}
 	division = {
-		name = "9 'Take' Saidan"
+		name = "9 'Take' Shidan"
 		location = 3944 #Near Changkufeng Lake
-		division_template = "Yon-tan-i Saidan"
+		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "14 'Sho' Saidan"
+		name = "14 'Sho' Shidan"
 		location = 3843 #Eastern Manchuria
-		division_template = "Yon-tan-i Saidan"
+		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	#Hoppou Manchuko Homengun - Northern Manchukuo Army
@@ -500,9 +500,9 @@ units = {
 		start_equipment_factor = 0.7		
 	}
 	division = {
-		name = "1 'Gyoku' Saidan"
+		name = "1 'Gyoku' Shidan"
 		location = 10612
-		division_template = "Yon-tan-i Saidan"
+		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -548,13 +548,13 @@ units = {
 	division = {
 		name = "8 'Sugi' Shidan"
 		location = 1693
-		division_template = "Yon-tan-i Saidan"
+		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "12 'Ken' Saidan"
+		name = "12 'Ken' Shidan"
 		location = 7569
-		division_template = "Yon-tan-i Saidan"
+		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	
@@ -623,7 +623,7 @@ units = {
 	### Kita-Shina Ichigun - North China Army ###
 	#Independents
 	division = {
-		name = "5 'Koi' Saidan"
+		name = "5 'Koi' Shidan"
 		location = 3955 #East Hebei Autonomous Council
 		division_template = "Jidousha Shidan"
 		start_experience_factor = 0.3
@@ -644,15 +644,15 @@ units = {
 	#2 Homengun - 2nd Field Army
 
 	division = {
-		name = "10 'Tetsu' Saidan"
+		name = "10 'Tetsu' Shidan"
 		location = 881
-		division_template = "Yon-tan-i Saidan"
+		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "16 'Kaki' Shidan"
 		location = 9768
-		division_template = "Yon-tan-i Saidan"
+		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 

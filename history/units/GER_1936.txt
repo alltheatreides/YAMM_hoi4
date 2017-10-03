@@ -65,7 +65,7 @@ division_template = {
 		
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }		
+		motorized = { x = 1 y = 2 }
 		
 		motorized = { x = 2 y = 0 }
 	    motorized = { x = 2 y = 1 }
@@ -87,32 +87,7 @@ division_template = {
 	priority = 2
 }
 division_template = {
-	name = "Fallschirmjäger"
-
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-		paratrooper = { x = 0 y = 2 }
-		paratrooper = { x = 1 y = 0 }
-		paratrooper = { x = 1 y = 1 }
-		paratrooper = { x = 1 y = 2 }
-		paratrooper = { x = 2 y = 0 }
-		paratrooper = { x = 2 y = 1 }
-		paratrooper = { x = 2 y = 2 }
-	}
-	
-	support = {
-		DIV_HQ = { x = 0 y = 0 }
-	 	engineer = { x = 0 y = 1 }
-	    recon = { x = 0 y = 2 }
-		# artillery = { x = 0 y = 3 }
-	}
-	priority = 2
-}
-
-
-division_template = {
-	name = "Gebirgsjäger-Brigade"		# Gebirgsbrigade
+	name = "Gebirgs-Brigade"		# Gebirgsbrigade
 	#Note: precursor to Gebirgs-Divisions
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -201,10 +176,10 @@ units = {
 	}
 
 	division= {	
-		name = "1st Fallschirmjäger Division "
-		location = 11276
-		division_template = "Fallschirmjäger"
-		start_experience_factor = 0.4
+		name = "SS-Verfügungstruppe" 
+		location = 11505
+		division_template = "Motorized-Division"
+		start_experience_factor = 0.3
 	}
 
 	### 3. Armee (Wehrmacht-Gruppenkommando) ###
@@ -263,7 +238,7 @@ units = {
 	division= {	
 		name = "Kavallerie-Kommando Insterburg" 
 		location = 281
-		division_template = "Kavallerie-Division"
+		division_template = "Kavallerie-Brigade"
 		start_experience_factor = 0.3
 	}
 
@@ -349,9 +324,9 @@ units = {
 		start_experience_factor = 0.3
 	}			
 	division= {	
-		name = "Gebirgsjäger-Brigade" 
+		name = "Gebirgs-Brigade" 
 		location = 692
-		division_template = "Gebirgsjäger-Brigade" 
+		division_template = "Gebirgs-Brigade" 
 		start_experience_factor = 0.3
 	}
 

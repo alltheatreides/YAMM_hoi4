@@ -3,21 +3,21 @@
 # These names can NOT be removed or changes, as the code uses them....
 
 weather_rain_light = { # on Region 
-	air_detection = -0.1
-	naval_detection = -0.1
-	naval_hit_chance = -0.05
-	naval_speed_factor = -0.05
-	naval_strike = -0.2
+	air_detection = -0.2
+	naval_detection = -0.2
+	naval_hit_chance = -0.10
+	naval_speed_factor = -0.10
+	naval_strike = -0.4
 	air_accidents = 0.1
-	air_mission_efficiency = -0.1
+	air_mission_efficiency = -0.2
 
 	local_org_regain = -0.05
 }
 weather_rain_heavy = { # on Region 
-	air_detection = -0.2
-	naval_detection = -0.2
-	naval_hit_chance = -0.1
-	naval_speed_factor = -0.1
+	air_detection = -0.4
+	naval_detection = -0.4
+	naval_hit_chance = -0.2
+	naval_speed_factor = -0.2
 	carrier_traffic = -1.0
 	air_accidents = 0.3
 	air_bombing_targetting = -0.5
@@ -37,15 +37,15 @@ weather_snow = { # on Region
 }
 weather_blizzard = { # on Region 
 	local_supplies = -0.35
-	air_detection = -0.3
+	air_detection = -0.6
 	naval_detection = -0.3
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
-	carrier_traffic = -1.0
+	carrier_traffic = -2.0
 	air_accidents = 0.3
-	air_bombing_targetting = -0.7
-	local_org_regain = -0.3
-	air_mission_efficiency = -0.3
+	air_bombing_targetting = -1.4
+	local_org_regain = -0.6
+	air_mission_efficiency = -0.6
 }
 weather_sandstorm = { # on Region 
 	local_supplies = -0.2
@@ -72,18 +72,18 @@ weather_extreme_cold = { # on Province
 weather_very_cold = { # on Province
 	local_supplies = -0.05
 	winter_attrition = 0.2
-	dig_in_speed_factor = -0.4
+	dig_in_speed_factor = -0.6
 	army_attack_factor = -0.35
 	army_speed_factor = -0.35
 }
 weather_very_hot = { # on Province
 	local_supplies = -0.05
-	heat_attrition = 0.1
+	heat_attrition = 0.2
 }
 weather_extreme_hot = { # on Province
 	local_supplies = -0.2
-	heat_attrition = 0.2
-	local_org_regain = -0.05
+	heat_attrition = 0.3
+	local_org_regain = -0.1
 }
 weather_ground_snow_medium = { # on Province
 	local_supplies = -0.1
@@ -91,10 +91,11 @@ weather_ground_snow_medium = { # on Province
 	army_attack_factor = -0.25
 }
 weather_ground_snow_high = { # on Province
+	army_speed_factor = -0.8
+	local_org_regain = -0.1
+	army_attack_factor = -0.6
+	winter_attrition = 0.4
 	local_supplies = -0.2
-	army_speed_factor = -0.3
-	local_org_regain = -0.05
-	army_attack_factor = -0.4
 }
 
 night = { # On province. Multiplied by amount of darkness.

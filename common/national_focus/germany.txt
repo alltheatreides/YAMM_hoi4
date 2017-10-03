@@ -389,6 +389,10 @@ focus_tree = {
 				uses = 1
 				category = para_tech
 			}
+			hidden_effect = {
+				set_technology = { paratroopers = 1 }
+				load_oob = GER_paras
+			}
 			add_tech_bonus = {
 				name = air_sup_bonus
 				bonus = 0.5

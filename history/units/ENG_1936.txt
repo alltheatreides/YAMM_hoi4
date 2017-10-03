@@ -39,22 +39,8 @@ division_template = {
         recon = { x = 0 y = 1 }
 	}
 }
-# division_template = {
-	# name = "Army Tank Brigade"
-
-	# regiments = {
-		# heavy_armor = { x = 0 y = 0 }	
-		# heavy_armor = { x = 0 y = 1 }
-        # heavy_armor = { x = 0 y = 2 }		
-	# }
-	# support = {
-		# DIV_HQ = { x = 0 y = 0 }
-        # recon = { x = 0 y = 1 }
-	# }
-# }
-
 division_template = {
-	name = "Armored Cavalry Brigade"
+	name = "Tank Brigade"
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -66,21 +52,6 @@ division_template = {
         recon = { x = 0 y = 1 }
 	}
 }
-
-division_template = {
-	name = "Infantry Brigade"
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-	support = {
-		DIV_HQ = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-}
-
 division_template = {
 	name = "Colonial Garrison"
 
@@ -114,44 +85,6 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
-		name = "1st Cavalry Brigade"
-		location = 9458
-		division_template = "Cavalry Brigade"
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "ENG" version_name = "Light Tank Mk.IV" } }
-		force_equipment_variants = { armored_car_equipment_1 = { owner = "ENG" version_name = "Lanchester" } }
-		start_experience_factor = 0.3
-	}
-	division= {	
-		name = "Royal Tank Regiment"
-		location = 9458
-		division_template = "Army Tank Brigade"
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "ENG" version_name = "Light Tank Mk.VI" } }
-		force_equipment_variants = { armored_car_equipment_1 = { owner = "ENG" version_name = "Lanchester" } }
-		start_experience_factor = 0.3
-	}
-	#London District
-	division= {	
-		name = "56th 'London' Division"
-		location = 6103 	# City of London
-		#division_template = "Infantry Division"
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		#start_equipment_factor = 0.3
-	}
-	division= {	
-		name = "Guards Brigade"
-		location = 9239 	# Windsor
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.5
-	}
-	#Northern Ireland District
-	division= {	
-		name = "Ulster Brigade"
-		location = 3379 	# Belfast
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.2
-	}
 	#Scottish Command
 	division= {	
 		name = "51st 'Highland' Infantry Division"
@@ -163,14 +96,6 @@ units = {
 	}
 	division= {	
 		name = "52nd 'Lowland' Infantry Division"
-		location = 9392 	# Edinburgh
-		#division_template = "Infantry Division"
-		division_template = "Territorial Division"
-		start_experience_factor = 0.2
-		#start_equipment_factor = 0.3
-	}
-	division= {	
-		name = "Glasgow Brigade"
 		location = 9392
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -268,7 +193,7 @@ units = {
 	division= {	
 		name = "Royal Tank Regiment"
 		location = 9239
-		division_template = "Armored Cavalry Brigade"
+		division_template = "Tank Brigade"
 		start_experience_factor = 0.3
 	}
 	division= {	
@@ -293,13 +218,7 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "Salisbury Brigade"
-		location = 6351
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.1
-	}
-
+	
 	### Middle East Command ###
 	#Sudan
 	division= {	
@@ -320,13 +239,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
-	}
-	division= {	
-		name = "Palestine Policing Force"
-		location = 4206
-		division_template = "Infantry Brigade"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_experience_factor = 0.1
 	}
 	#Aden
 	division= {	
@@ -1033,7 +945,7 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "ENG"
 		}
-		requested_factories = 3
+		requested_factories = 2
 		progress = 0.1
 		efficiency = 50
 	}
@@ -1043,8 +955,7 @@ instant_effect = {
 			type = heavy_infantry_equipment_0
 			creator = "ENG"
 		}
-		requested_factories = 2
-		progress = 0.1
+		requested_factories = 1
 		efficiency = 50
 	}
 

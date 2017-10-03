@@ -30,26 +30,62 @@ division_template = {
 	name = "Gebirgs-Division"  
 	# Note: Mountain Divisions are same as Infantry Divisions above, but with mountain regiments
 	regiments = {
-		mountaineers = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
+		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }	
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 2 y = 0 }	# Chasseurs Alpins (HOI3 elites)
-		mountaineers = { x = 2 y = 1 }	# Chasseurs Alpins (HOI3 elites)
-		mountaineers = { x = 2 y = 2 }	# Chasseurs Alpins (HOI3 elites)
-		
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		artillery_brigade = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		recon = { x = 0 y = 1}
 		engineer = { x = 0 y = 2 }
 		artillery = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Gebirgsbrigade" 	
+	# Independent Mountain Brigade, triangle organization
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+support = {
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Grenzbrigade"  			# Border divisions are garrison units; lower equipment, experience
+	# Independent Border Brigade, binary organization
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+support = {
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Leichte-Brigade" 			
+	# Independent Cavalry Brigade
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+support = {
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
 	}
 }
 
@@ -59,7 +95,7 @@ units = {
 	division = {
 		name = "Gebirgsbrigade 10"
 		location = 11590
-		division_template = "Gebirgs-Division"
+		division_template = "Gebirgsbrigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
@@ -67,15 +103,15 @@ units = {
 	division = {
 		name = "Grenzbrigade 10"
 		location = 3612
-		division_template = "Gebirgs-Division"
+		division_template = "Gebirgsbrigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}
 	division = {
-		name = "Infanterie-Division 1"
+		name = "Leichte-Brigade 1"
 		location = 11590
-		division_template = "Infanterie-Division"
+		division_template = "Leichte-Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
@@ -84,7 +120,7 @@ units = {
 	division = {
 		name = "Division 1"
 		location = 6666
-		division_template = "Infanterie-Division"
+		division_template = "Grenzbrigade"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
@@ -92,7 +128,7 @@ units = {
 	division = {
 		name = "Grenzbrigade 1"
 		location = 6666
-		division_template = "Infanterie-Division"
+		division_template = "Grenzbrigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -101,7 +137,7 @@ units = {
 	division = {
 		name = "Division 2"
 		location = 9622
-		division_template = "Infanterie-Division"
+		division_template = "Grenzbrigade"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
@@ -109,7 +145,7 @@ units = {
 	division = {
 		name = "Grenzbrigade 2"
 		location = 9622
-		division_template = "Infanterie-Division"
+		division_template = "Grenzbrigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -117,7 +153,7 @@ units = {
 	division = {
 		name = "Grenzbrigade 3"
 		location = 9622
-		division_template = "Infanterie-Division"
+		division_template = "Grenzbrigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -136,7 +172,7 @@ units = {
 	division = {
 		name = "Gebirgsbrigade 11"
 		location = 11604
-		division_template = "Gebirgs-Division"
+		division_template = "Gebirgsbrigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
@@ -144,14 +180,14 @@ units = {
 	#division = {
 	#	name = "Grenzbrigade 11"
 	#	location = 9587
-	#	division_template = "Gebirgs-Division"
+	#	division_template = "Gebirgsbrigade"
 	#	start_experience_factor = 0.1
 	#	start_equipment_factor = 0.3
 	#}
 	division = {
-		name = "Infanterie-Division 2"
+		name = "Leichte-Brigade 2"
 		location = 11604
-		division_template = "Infanterie-Division"
+		division_template = "Leichte-Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
@@ -199,7 +235,7 @@ units = {
 	#division = {
 	#	name = "Gebirgsbrigade 9"
 	#	location = 636
-	#	division_template = "Gebirgs-Division"
+	#	division_template = "Gebirgsbrigade"
 	#	start_experience_factor = 0.2
 	#	start_equipment_factor = 0.3
 	#}
@@ -208,7 +244,7 @@ units = {
 	division = {
 		name = "Gebirgsbrigade 12"
 		location = 658
-		division_template = "Gebirgs-Division"
+		division_template = "Gebirgsbrigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
@@ -216,14 +252,14 @@ units = {
 	division = {
 		name = "Grenzbrigade 12"
 		location = 3662
-		division_template = "Infanterie-Division"
+		division_template = "Grenzbrigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
 	#division = {
-	#	name = "Infanterie-Division 3"
+	#	name = "Leichte-Brigade 3"
 	#	location = 658
-	#	division_template = "Infanterie-Division"
+	#	division_template = "Leichte-Brigade"
 	#	start_experience_factor = 0.2
 	#	start_equipment_factor = 0.3
 	#}
@@ -255,7 +291,7 @@ units = {
 	division = {
 		name = "Grenzbrigade 7"
 		location = 661
-		division_template = "Infanterie-Division"
+		division_template = "Grenzbrigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
