@@ -130,7 +130,7 @@ units = {
 	division = {
 		name = "2. Konjička Divizija"
 		location = 11887
-		division_template = "Pesadijska Divizija"
+		division_template = "Konjička Divizija"
 		start_experience_factor = 0.1
 		# start_equipment_factor = 0.3
 
@@ -177,7 +177,7 @@ units = {
 	division = {
 		name = "1. Konjička Divizija"
 		location = 9627
-		division_template = "Pesadijska Divizija"
+		division_template = "Konjička Divizija"
 		start_experience_factor = 0.1
 		# start_equipment_factor = 0.3
 
@@ -196,7 +196,7 @@ units = {
 	division = {
 		name = "3. Konjička Divizija"
 		location = 614
-		division_template = "Pesadijska Divizija"
+		division_template = "Konjička Divizija"
 		start_experience_factor = 0.1
 		# start_equipment_factor = 0.3
 

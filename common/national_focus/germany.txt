@@ -3520,4 +3520,26 @@ focus_tree = {
 			GRE = { country_event = { id = greece.3 hours = 6 } }
 		}
 	}
+	
+	focus = {
+		id = GER_fall_blau
+		prerequisite = { focus = GER_ussr_war_goal }
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		available = {
+			date > 1942.5.28
+			SOV = { has_completed_focus = SOV_the_great_patriotic_war_focus }
+			GER = { controls_state = 206 }
+			SOV = { controls_state = 219 }
+			SOV = { controls_state = 217 }
+		}
+		x = 9
+		y = 8
+		cost = 4.3
+		completion_reward = {
+			add_timed_idea = { idea = blitzkrieg_idea days = 90 }
+		}
+	}
+	
+	
+	
 }

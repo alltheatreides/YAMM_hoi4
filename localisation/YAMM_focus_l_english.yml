@@ -27,4 +27,6 @@
  mechanized_equipment_research:0 "Mechanized Research Time"
  GER_enigma_focus:0 "Enigma Cipher Program" 
  GER_enigma_focus_desc:0 "Developed by Arthur Scherbius just after the Great War, our Enigma cipher machines may just mean the difference between victory and defeat. It is well-known that the most important weapon in any war is information, and Enigma guarantees that our plans remain secret. Like Germany's iron will, our codes are unbreakable."
+ GER_fall_blau:0 "Case Blue"
+ GER_fall_blau_desc:0 "Our Barbarossa offensive has been met with initial success and the Red Army had suffered some major defeats but are far from defeated...Despite these setbacks, the Fuhrer wants an offensive solution, and has issued Führer Directive No. 41 with the objective of seizing the oil resources of the Caucasus. "
  ROM_license_german_equipment:0 "License Foreign Equipment" 

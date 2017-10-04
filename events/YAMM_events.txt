@@ -111,3 +111,32 @@ country_event = {
 		}
 	}
 }
+
+#Hitler Rage from fall blau failure
+country_event = {
+	id = yamm.34
+	title = yamm.34.t
+	desc = yamm.34.desc
+	picture = GFX_report_event_hitler_rage
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		GER = { has_completed_focus = GER_fall_blau }
+		NOT = { has_idea = blitzkrieg_idea }
+		NOT = { has_idea = hitler_rage }
+		NOT {
+			GER = { has_full_control_of_state = 217 }
+			GER = { has_full_control_of_state = 231 }
+			GER = { has_full_control_of_state = 229 }
+			GER = { has_full_control_of_state = 233 }
+		}
+	}
+	
+	option = {
+		name = yamm.34.a
+		add_timed_idea = { idea = hitler_rage days = 100 }
+	}
+	
+}

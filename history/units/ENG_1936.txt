@@ -85,6 +85,40 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
+	division= {	
+		name = "1st Cavalry Brigade"
+		location = 9458
+		division_template = "Cavalry Brigade"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Royal Tank Regiment"
+		location = 9458
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.3
+	}
+	#London District
+	division= {	
+		name = "56th 'London' Division"
+		location = 6103 	# City of London
+		#division_template = "Infantry Division"
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		#start_equipment_factor = 0.3
+	}
+	division= {	
+		name = "Guards Brigade"
+		location = 9239 	# Windsor
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	#Northern Ireland District
+	division= {	
+		name = "Ulster Brigade"
+		location = 3379 	# Belfast
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
 	#Scottish Command
 	division= {	
 		name = "51st 'Highland' Infantry Division"
@@ -102,14 +136,18 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
+	division= {	
+		name = "Glasgow Brigade"
+		location = 9392
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
 	#Northern Command
 	division= {	
 		name = "5th Cavalry Brigade"
 		location = 11297
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "5th Infantry Division"
@@ -118,7 +156,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division= {	
-		name = "50th 'Northumbrian' Motorized Division"
+		name = "50th 'Northumbrian' Infantry Division"
 		location = 9397
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -162,8 +200,6 @@ units = {
 		location = 407
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "42nd 'East Lancashire' Infantry Division"
@@ -218,7 +254,12 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-	
+	division= {	
+		name = "Salisbury Brigade"
+		location = 6351
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
 	### Middle East Command ###
 	#Sudan
 	division= {	
@@ -240,6 +281,13 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
+	division= {	
+		name = "Palestine Policing Force"
+		location = 4206
+		division_template = "Colonial Garrison"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+		start_experience_factor = 0.1
+	}
 	#Aden
 	division= {	
 		name = "Aden Defense Force"
@@ -256,24 +304,18 @@ units = {
 		location = 7011
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
 	}
 	division= {	
 		name = "Canal Brigade"
 		location = 1155
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
-
 	}
 	division= {	
 		name = "The Cavalry Brigade (Egypt)"
 		location = 4076
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
 	}
 	#Gibraltar
 	division= {	
@@ -281,8 +323,6 @@ units = {
 		location = 4135
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
-
 	}
 	
 	#Malta
@@ -291,8 +331,6 @@ units = {
 		location = 12003
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
-
 	}
 	
 	###East Africa
@@ -301,24 +339,18 @@ units = {
 		location = 1939
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
 	}
 	division= {	  
 		name = "Southern Africa Force"
 		location = 12911
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "Northern Rhodesia Groups"
 		location = 1939
 		division_template = "Colonial Garrison"			# Colonial militia (lowest equipment and experience)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_equipment_factor = 0.3
-
 	}
 
 	###West Africa
@@ -327,16 +359,12 @@ units = {
 		location = 2050
 		division_template = "Colonial Garrison"			# Colonial militia (lowest equipment and experience)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_equipment_factor = 0.15
-
 	}
 	division= {	  
 		name = "2 West African Force"
 		location = 10862 
 		division_template = "Colonial Garrison"			# Colonial militia (lowest equipment and experience)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_equipment_factor = 0.15
-
 	}
 	
 	### Far East Command ###

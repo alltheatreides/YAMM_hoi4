@@ -20,6 +20,7 @@ technologies = {
 		
 		enable_subunits = {
 			infantry
+			light_infantry
 		}
 		
 		enable_subunits = {

@@ -245,9 +245,9 @@ country_event = {
 	trigger = {
 		OR = {
 			FRA = {
-				has_full_control_of_state= { 461 }
-				has_full_control_of_state= { 459 } 
-				has_full_control_of_state= { 462 } 
+				has_full_control_of_state =  461
+				has_full_control_of_state = 459 
+				has_full_control_of_state = 462
 			}
 			ENG = {
 				has_full_control_of_state= { 461 }

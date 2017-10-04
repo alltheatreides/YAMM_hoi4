@@ -21,7 +21,7 @@
 		engineer = { x = 0 y = 1 }
 	}
 }
-ivision_template = {
+division_template = {
 	name = "Division de Cavalerie"  	# Cavalry Division
 
 	regiments = {

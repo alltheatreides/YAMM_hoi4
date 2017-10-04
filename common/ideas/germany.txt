@@ -182,7 +182,7 @@ ideas = {
 			picture = air_war_plans_division_focus
 			
 			modifier = {
-				army_speed_factor = 0.10
+				army_speed_factor = 0.15
 				army_attack_factor = 0.10
 				army_org_factor = 0.10
 				army_morale_factor = 0.10

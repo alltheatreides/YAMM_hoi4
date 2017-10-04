@@ -668,7 +668,7 @@ on_actions = {
 				limit = {
                     tag = SPR
 				}
-				event = spain.12
+				country_event = spain.12
 			}
 		}
 	}

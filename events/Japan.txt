@@ -206,6 +206,15 @@ country_event = {
 		hidden_effect = {
 			news_event = { days = 5 id = news.5 }
 		}
+		
+		# Dirty changes to give Vichy French Indochina to Japan
+		JAP = {
+			transfer_state = 286
+			transfer_state = 670
+			transfer_state = 671
+			transfer_state = 741
+		}
+		
 		JAP = {
 			if = {
 				limit = {

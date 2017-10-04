@@ -10,7 +10,7 @@ sub_units = {
 		priority = 301
 		ai_priority = 10
 		active = yes
-		support_brigade = yes
+		# support_brigade = yes
 
 		type = {
 			# infantry

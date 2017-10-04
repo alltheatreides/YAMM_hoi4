@@ -101,10 +101,11 @@ armor_generic = {
 			regiments = {
 				light_armor = 6
 				motorized = 3
+				motorized_artillery_brigade = 4
 			}
 		}
 		
-		allowed_types = {
+		allowed_types = { DIV_HQ 
 			light_armor
 			motorized
 			engineer
@@ -177,10 +178,11 @@ armor_generic = {
 			regiments = {
 				heavy_armor = 6
 				infantry = 3
+				motorized_artillery_brigade = 4
 			}
 		}
 		
-		allowed_types = {
+		allowed_types = { DIV_HQ 
 			modern_armor
 			heavy_armor
 			
@@ -264,10 +266,11 @@ armor_generic = {
 			regiments = {
 				medium_armor = 6
 				motorized = 3
+				motorized_artillery_brigade = 4
 			}
 		}
 
-		allowed_types = {
+		allowed_types = { DIV_HQ 
 			modern_armor
 			medium_armor
 			motorized
@@ -346,11 +349,12 @@ armor_generic = {
 			regiments = {
 				modern_armor = 6
 				mechanized = 3
+				motorized_artillery_brigade = 4
 			}
 		}
 		
 
-		allowed_types = {
+		allowed_types = { DIV_HQ 
 			modern_armor
 			motorized
 			mechanized
@@ -451,10 +455,11 @@ garrison_generic = {
 			}
 		}
 		
-		allowed_types = {
+		allowed_types = { DIV_HQ 
 			light_infantry
 			infantry
 			military_police
+			DIV_HQ
 		}
 	}
 }
@@ -547,7 +552,7 @@ infantry_generic = {
 			}
 		}
 		
-		allowed_types = {
+		allowed_types = { DIV_HQ 
 			DIV_HQ
 			infantry		
 			engineer
@@ -653,7 +658,7 @@ mountaineers_generic = {
 			}
 		}
 		
-		allowed_types = {
+		allowed_types = { DIV_HQ 
 			DIV_HQ
 			mountaineers
 			artillery
@@ -748,13 +753,11 @@ marines_generic = {
 				logistics_company = 1
 			}
 			
-			regiments = {
-				marine = 9
-			}
+			regiments = { marine = 9 artillery_brigade = 4 }
 		}
 
 		
-		allowed_types = {
+		allowed_types = { DIV_HQ 
 			DIV_HQ
 			marine
 			engineer
@@ -852,7 +855,7 @@ paratrooper_generic = {
 			}
 		}
 		
-		allowed_types = {
+		allowed_types = { DIV_HQ 
 			paratrooper
 			engineer
 			recon

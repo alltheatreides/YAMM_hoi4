@@ -57,7 +57,7 @@ focus_tree = {
 					}
 				}
 				remove_ideas = great_depression
-				remov_ideas = great_depression_1
+				remove_ideas = great_depression_1
 				remove_ideas = great_depression_2
 			}
 		}
