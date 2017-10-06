@@ -1316,35 +1316,35 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = SPR_fas3
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = SPR_fas12 }
-		bypass = { is_in_faction_with = GER }
-		available = {
-			is_puppet = no
-			is_in_faction = no
-		}
+	# focus = {
+		# id = SPR_fas3
+		# icon = GFX_goal_generic_major_alliance
+		# prerequisite = { focus = SPR_fas12 }
+		# bypass = { is_in_faction_with = GER }
+		# available = {
+			# is_puppet = no
+			# is_in_faction = no
+		# }
 		
-		x = 18
-		y = 5
-		cost = 10
+		# x = 18
+		# y = 5
+		# cost = 10
 
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			GER = { 
-				country_event = { id = spainf.1 } 
-			}
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 0.5
-				uses = 1
-				category = land_doctrine
-			}
-		}
-	}
+		# ai_will_do = {
+			# factor = 10
+		# }
+		# completion_reward = {
+			# GER = { 
+				# country_event = { id = spainf.1 } 
+			# }
+			# add_tech_bonus = {
+				# name = land_doc_bonus
+				# bonus = 0.5
+				# uses = 1
+				# category = land_doctrine
+			# }
+		# }
+	# }
 	
 	
 	

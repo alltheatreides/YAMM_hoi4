@@ -629,6 +629,43 @@ create_equipment_variant = {
 	obsolete = yes
 }
 
+create_equipment_variant = {
+	name = "Leichtetraktor"
+	type = gw_tank_equipment
+	upgrades = {
+		tank_gun_upgrade = 4
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "NbFz V"
+	type = heavy_tank_equipment_0
+	upgrades = {
+		tank_gun_upgrade = 3
+		tank_engine_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "PzKpfw.I Ausf.B"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_reliability_upgrade = 4
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "PzKpfw II Ausf.A"
+	type = light_tank_equipment_2
+	upgrades = {
+		tank_gun_upgrade = 1
+		tank_armor_upgrade = 2
+		tank_reliability_upgrade = 1
+	}
+}
+
 
 ## 1939 Start ##
 1939.1.1 = {

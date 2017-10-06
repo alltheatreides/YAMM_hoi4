@@ -7,3 +7,5 @@
  FRA_medium_tank_equipment_1_short:0 "S35"
  FRA_medium_tank_equipment_2:0 "SOMUA S40"
  FRA_medium_tank_equipment_2_short:0 "S40"
+ FRA_light_tank_equipment_2:0 "Renault R35"
+ FRA_light_tank_equipment_2_short:0 "R35"

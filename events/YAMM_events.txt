@@ -140,3 +140,49 @@ country_event = {
 	}
 	
 }
+
+country_event = {
+	id = yamm.35
+	title = yamm.35.t
+	desc = yamm.35.desc
+	picture = GFX_report_event_generic_usa_treaty
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		DEN = { 			
+			controls_state = 100
+			controls_state = 101 
+			controls_state = 337
+			has_capitulated = yes
+		}
+	}
+	
+	option = {
+		name = yamm.35.a
+		USA = { 
+			transfer_state = 100 
+			transfer_state = 101 
+		}
+		USA = {
+			transfer_state = 337
+		}
+		news_event = { hours = 6 id = yamm.36 }
+	}
+}
+
+news_event = {
+	id = yamm.36
+	title = yamm.36.t
+	desc = yamm.36.desc
+	picture = GFX_news_event_generic_read_write
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = yamm.36.a
+	}
+}

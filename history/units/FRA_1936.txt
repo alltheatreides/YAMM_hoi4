@@ -121,6 +121,24 @@ division_template = {
 	}
 }
 division_template = {
+	name = "Division Légère de Cavalerie" 	# DLC
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }      # Recon Group consisted of 64 ACs/scout cars
+		artillery = { x = 0 y = 2 } 
+       	engineer = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+	}
+}
+division_template = {
 	name = "Division Légère Mécanique" 		# Division Légère Mécanique
 
 	regiments = {
@@ -188,7 +206,7 @@ units = {
 		location = 11502
 		division_template = "Brigade de Chars de Combat" 		# FT-17s
 		start_experience_factor = 0.2
-		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" version_name = "FT-17" } }
 	}
 
 	# Xe Corps d'Armée (Région Militaire in 1936) -- Strassbourg
@@ -243,7 +261,7 @@ units = {
 		location = 11516
 		division_template = "Brigade de Chars de Combat" 		# FT-17s
 		start_experience_factor = 0.2
-		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" version_name = "FT-17" } }
 	}
 
 	# Ie Corps d'Armée (Région Militaire in 1936) -- Lille
@@ -290,7 +308,7 @@ units = {
 		location = 13011
 		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
 		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { light_tank_equipment_2 = { owner = "FRA" version_name = "AMC 35" } }
 	}
 
 	# IVe Corps d'Armée (Région Militaire in 1936) -- Le Mans
@@ -353,7 +371,7 @@ units = {
 		location = 11465
 		division_template = "Brigade de Chars de Combat" 		# R-35s
 		start_experience_factor = 0.2
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { light_tank_equipment_2 = { owner = "FRA" version_name = "R35" } }
 	}
 
 	# Région Militaire de Paris -- Paris
@@ -387,7 +405,7 @@ units = {
 		division_template = "Brigade de Chars de Combat" 		# R-35s
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" version_name = "FT-17" } }
 	}
 
 	# VIIe Corps d'Armée (Région Militaire in 1936) -- Besançon
@@ -432,7 +450,7 @@ units = {
 	division= {	
 		name = "Longuyon Div. d'Inf. de Forteresse"
 		location = 5291
-		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		division_template = "Secteur Fortifié" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -440,7 +458,7 @@ units = {
 	division= {	
 		name = "Metz Div. d'Inf. de Forteresse"
 		location = 11502
-		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		division_template = "Secteur Fortifié" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -448,7 +466,7 @@ units = {
 	division= {	
 		name = "Sarreguimines Div. d'Inf. de Forteresse"
 		location = 3629
-		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		division_template = "Secteur Fortifié" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -456,7 +474,7 @@ units = {
 	division= {	
 		name = "Strassbourg Div. d'Inf. de Forteresse"
 		location = 9503
-		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		division_template = "Secteur Fortifié" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -464,7 +482,7 @@ units = {
 	division= {	
 		name = "Mulhouse Div. d'Inf. de Forteresse"
 		location = 678
-		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		division_template = "Secteur Fortifié" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -557,7 +575,7 @@ units = {
 		location = 6613
 		division_template = "Brigade de Chars de Combat" 			# FT-17s
 		start_experience_factor = 0.2
-		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" version_name = "FT-17" } }
 	}
 
 
@@ -589,7 +607,7 @@ units = {
 	division= {	
 		name = "Nice Div. d'Inf. de Forteresse"
 		location = 9909
-		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		division_template = "Secteur Fortifié" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -1171,6 +1189,7 @@ instant_effect = {
 		equipment = {
 			type = light_tank_equipment_2
 			creator = "FRA" 
+			version_name = "R35"
 		}
 		requested_factories = 1
 		progress = 0.4

@@ -32,7 +32,7 @@ division_template = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
-        cavalry = { x = 0 y = 3 }
+		light_armor = { x = 1 y = 0 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -89,12 +89,14 @@ units = {
 		name = "1st Cavalry Brigade"
 		location = 9458
 		division_template = "Cavalry Brigade"
+force_equipment_variants = { light_tank_equipment_1 = { owner = "ENG" version_name = "Light Tank Mk.VI" } }
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "Royal Tank Regiment"
 		location = 9458
 		division_template = "Tank Brigade"
+force_equipment_variants = { light_tank_equipment_1 = { owner = "ENG" version_name = "Light Tank Mk.VI" } }
 		start_experience_factor = 0.3
 	}
 	#London District
@@ -144,9 +146,10 @@ units = {
 	}
 	#Northern Command
 	division= {	
-		name = "5th Cavalry Brigade"
+		name = "2nd Cavalry Brigade"
 		location = 11297
 		division_template = "Cavalry Brigade"
+force_equipment_variants = { light_tank_equipment_1 = { owner = "ENG" version_name = "Light Tank Mk.VI" } }
 		start_experience_factor = 0.2
 	}
 	division= {	
@@ -199,6 +202,7 @@ units = {
 		name = "6th Cavalry Brigade"
 		location = 407
 		division_template = "Cavalry Brigade"
+force_equipment_variants = { light_tank_equipment_1 = { owner = "ENG" version_name = "Light Tank Mk.VI" } }
 		start_experience_factor = 0.2
 	}
 	division= {	
@@ -227,9 +231,10 @@ units = {
 	}
 	#Southern Command
 	division= {	
-		name = "Royal Tank Regiment"
+		name = "1st Tank Brigade"
 		location = 9239
 		division_template = "Tank Brigade"
+force_equipment_variants = { gw_tank_equipment = { owner = "ENG" version_name = "Medium Mk.II" } }
 		start_experience_factor = 0.3
 	}
 	division= {	
@@ -1001,6 +1006,7 @@ instant_effect = {
 		equipment = {
 			type = light_tank_equipment_1
 			creator = "ENG" 
+			version_name = "Light Tank Mk.VI"
 		}
 		requested_factories = 1
 		progress = 0.4

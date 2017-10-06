@@ -1,0 +1,8 @@
+spriteTypes = {	
+	
+	####################################################
+	### Small images for DIVISIONS (On-map-counters) ###
+	
+	spriteType = { name = "GFX_unit_DIV_HQ_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_rocket_artillery_icon.dds" noOfFrames = 2 }
+	
+}

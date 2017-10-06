@@ -130,3 +130,128 @@ if = {
 	}
 }
 
+########################## WM Tank Variants at start ####################################################
+
+create_equipment_variant = {
+	name = "KH 60"
+	type = gw_tank_equipment
+	upgrades = {
+		tank_gun_upgrade = 2
+		tank_armor_upgrade = 1
+		tank_reliability_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "KH 70"
+	type = gw_tank_equipment
+	upgrades = {
+		tank_gun_upgrade = 2
+		tank_armor_upgrade = 1
+		tank_engine_upgrade = 1
+		tank_reliability_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "LT-34"
+	type = gw_tank_equipment
+	upgrades = {
+		tank_gun_upgrade = 4
+		tank_armor_upgrade = 1
+		tank_engine_upgrade = 6
+		tank_reliability_upgrade = 2
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "T-33"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_gun_upgrade = 1
+		tank_armor_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "AH-IV"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_armor_upgrade = 1
+		tank_reliability_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "R1 'Small Tank'"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_armor_upgrade = 1
+		tank_reliability_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "AH-IV-Sv"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_gun_upgrade = 1
+		tank_armor_upgrade = 1
+		tank_engine_upgrade = 1
+		tank_reliability_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "S-I"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_gun_upgrade = 1
+		tank_engine_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "S-Id"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_gun_upgrade = 6
+		tank_engine_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "LT-35"
+	type = light_tank_equipment_2
+	upgrades = {
+		tank_gun_upgrade = 2
+		tank_armor_upgrade = 2
+		tank_reliability_upgrade = 4
+	}
+}
+
+create_equipment_variant = {
+	name = "(LT)TNHP"
+	type = light_tank_equipment_2
+	upgrades = {
+		tank_armor_upgrade = 2
+		tank_engine_upgrade = 1
+		tank_reliability_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "(LT)TNHsw"
+	type = light_tank_equipment_2
+	upgrades = {
+		tank_gun_upgrade = 2
+		tank_armor_upgrade = 2
+		tank_engine_upgrade = 1
+		tank_reliability_upgrade = 1
+	}
+}

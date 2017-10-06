@@ -12,6 +12,8 @@ news_event = {
 	desc = free_france.1.desc
 	picture = GFX_news_event_appel_18_juin
 	
+	major = yes
+	
 	is_triggered_only = yes
 	
 	option = {

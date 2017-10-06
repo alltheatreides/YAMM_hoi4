@@ -1500,9 +1500,104 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			CZE = {
+				set_technology = { basic_medium_tank = 1 }
+				create_equipment_variant = {
+					name = "LT-38 E"
+					type = medium_tank_equipment_1
+					parent_version = 0
+					upgrades = {
+						tank_gun_upgrade = 2
+						tank_armor_upgrade = 4
+						tank_engine_upgrade = 3
+						tank_reliability_upgrade = 6
+					}
+				}
+			}
+			SLO = {
+				set_technology = { basic_medium_tank = 1 }
+				create_equipment_variant = {
+					name = "LT-38 E"
+					type = medium_tank_equipment_1
+					parent_version = 0
+					upgrades = {
+						tank_gun_upgrade = 2
+						tank_armor_upgrade = 4
+						tank_engine_upgrade = 3
+						tank_reliability_upgrade = 6
+					}
+				}
+			}
+			SLO = {
+				set_technology = { improved_light_tank = 1 }
+				create_equipment_variant = {
+					name = "LT-35"
+					type = light_tank_equipment_2
+					upgrades = {
+						tank_gun_upgrade = 2
+						tank_armor_upgrade = 2
+						tank_reliability_upgrade = 4
+					}
+				}
+			}
+			CZE = {
+				create_production_license = {
+					target = GER 
+					equipment = {
+						type = light_tank_equipment_2
+						version_name = "LT-35"
+					}
+					cost_factor = 0
+				}
+				create_production_license = {
+					target = GER 
+					equipment = {
+						type = medium_tank_equipment_1
+						version_name = "LT-38 E"
+					}
+					cost_factor = 0
+				}
+			}
+			SLO = {
+				create_production_license = {
+					target = GER 
+					equipment = {
+						type = light_tank_equipment_2
+						version_name = "LT-35"
+					}
+					cost_factor = 0
+				}
+				create_production_license = {
+					target = GER 
+					equipment = {
+						type = medium_tank_equipment_1
+						version_name = "LT-38 E"
+					}
+					cost_factor = 0
+				}
+			}
+		}
+		
+	}
+	
 	option = {
 		name = germany.55.a
 		ai_chance = { factor = 80 }
+		add_equipment_to_stockpile = {
+			type = light_tank_equipment_2
+			version_name = "LT-35"
+			amount = 750 
+			producer = CZE 
+		}
+		add_equipment_to_stockpile = {
+			type = medium_tank_equipment_1
+			version_name = "LT-38 E"
+			amount = 500 
+			producer = CZE 
+		}
+		
 		if = {
 			limit = {
 				70 = {

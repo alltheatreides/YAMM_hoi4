@@ -1129,6 +1129,7 @@ focus_tree = {
 		
 		available = {
 			date > 1941.5.21
+			date < 1941.9.21
 		}
 		cancel = {
 			NOT = { country_exists = SOV }
@@ -1410,7 +1411,10 @@ focus_tree = {
 		id = GER_demand_memel
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_anschluss }
-		available = { is_puppet = no }
+		available = { 
+			is_puppet = no
+			date > 1939.1.1
+		}
 		x = 16
 		y = 2
 		cost = 10
@@ -2283,7 +2287,7 @@ focus_tree = {
 		#}
 		x = 12
 		y = 7
-		cost = 10
+		cost = 30
 		ai_will_do = {
 			factor = 10
 		}	

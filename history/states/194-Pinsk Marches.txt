@@ -3,7 +3,7 @@ state={
 	id=194
 	name="STATE_194" # Mozyr
 	manpower = 934632
-	
+	impassable = yes
 	state_category = rural
 
 	history={

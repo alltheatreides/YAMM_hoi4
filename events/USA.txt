@@ -228,6 +228,7 @@ country_event = {
 			}
 		}		
 		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
+		add_political_power = -75
 		if = {
 			limit = {
 				has_idea = standard_oil_california

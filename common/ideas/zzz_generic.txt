@@ -14,7 +14,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_dockyard = 0.2
+				industrial_capacity_dockyard = 0.1
 			}
 		}
 
@@ -33,63 +33,63 @@ ideas = {
 			equipment_bonus = {
 				fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				cv_fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				jet_fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				cv_CAS_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				CAS_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				nav_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				cv_nav_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				rocket_interceptor_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				tac_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				jet_tac_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				jet_strat_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				heavy_fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				strat_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				transport_plane_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 				guided_missile_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.1
 				}
 			}		
 		}

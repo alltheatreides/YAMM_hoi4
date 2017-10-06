@@ -1802,6 +1802,10 @@ focus_tree = {
 			factor = 1
 		}
 
+		available = {
+			has_tech = rocket_engines
+		}		
+		
 		available_if_capitulated = yes
 
 		completion_reward = {

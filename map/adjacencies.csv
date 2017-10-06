@@ -282,6 +282,79 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 115;3111;impassable;-1;-1;-1;-1;-1;;Norway/Sweden
 6214;11058;impassable;-1;-1;-1;-1;-1;;Norway/Sweden
 192;6055;impassable;-1;-1;-1;-1;-1;;Norway/Sweden
+12502;13076;impassable;-1;-1;-1;-1;-1;;Northern Soviet Union
+1781;4843;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+1781;10560;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7864;10560;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7864;4858;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12541;4858;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12541;12614;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12541;1725;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7806;1725;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7806;10704;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7806;4729;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12669;4729;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10632;4729;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10632;12686;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+1787;12686;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+1787;7752;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+1787;7749;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12612;7749;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12612;10575;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10629;1959;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10629;4960;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+2087;4960;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+2087;4960;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+2087;10451;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+4525;10451;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+4525;7631;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+4525;10424;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12331;10424;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12331;7048;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12331;4612;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+4973;5042;impassable;-1;-1;-1;-1;-1;;Sinkiang
+8086;4682;impassable;-1;-1;-1;-1;-1;;Sinkiang
+8086;7702;impassable;-1;-1;-1;-1;-1;;Sinkiang
+10885;7702;impassable;-1;-1;-1;-1;-1;;Sinkiang
+10885;7792;impassable;-1;-1;-1;-1;-1;;Sinkiang
+12864;7792;impassable;-1;-1;-1;-1;-1;;Sinkiang
+5736;7792;impassable;-1;-1;-1;-1;-1;;Sinkiang
+5736;10614;impassable;-1;-1;-1;-1;-1;;Sinkiang
+5736;12524;impassable;-1;-1;-1;-1;-1;;Sinkiang
+5736;4947;impassable;-1;-1;-1;-1;-1;;Sinkiang
+2074;4947;impassable;-1;-1;-1;-1;-1;;Sinkiang
+2074;1698;impassable;-1;-1;-1;-1;-1;;Sinkiang
+2074;12890;impassable;-1;-1;-1;-1;-1;;Sinkiang
+2074;10865;impassable;-1;-1;-1;-1;-1;;Sinkiang
+10315;10865;impassable;-1;-1;-1;-1;-1;;Sinkiang
+10315;4914;impassable;-1;-1;-1;-1;-1;;Sinkiang
+10315;8037;impassable;-1;-1;-1;-1;-1;;Sinkiang
+1778;4843;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+1778;12820;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7971;12820;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12596;7971;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+5076;7971;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+5076;2028;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+2028;2099;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+2028;5100;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10770;5100;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+5031;5100;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+5031;12327;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12776;12327;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12776;5057;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7511;5057;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7511;1630;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+3742;1630;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+3742;6638;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+3742;1985;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8081;1985;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8081;3745;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8081;10880;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8081;4986;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8081;10854;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10724;10854;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8055;10854;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8055;1959;impassable;-1;-1;-1;-1;-1;;Gobi Desert
 4135;1048;impassable;-1;-1;-1;-1;-1;;gibraltar
 4135;10094;impassable;-1;-1;-1;-1;-1;;gibraltar
 -1;-1;;-1;-1;-1;-1;-1;-1;

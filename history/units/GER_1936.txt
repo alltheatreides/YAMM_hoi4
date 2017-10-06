@@ -158,21 +158,21 @@ units = {
 		location = 6521
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" version_name = "PzKpfw.I Ausf.B" } }
 	}
 	division= {	
 		name = "2. Panzer-Division"
 		location = 6521
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" version_name = "PzKpfw.I Ausf.B" } }
 	}
 	division= {	
 		name = "3. Panzer-Division"
 		location = 6521
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" version_name = "PzKpfw.I Ausf.B" } }
 	}
 
 	division= {	
@@ -560,6 +560,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_2
+			version_name = "PzKpfw II Ausf.A"
 			creator = "GER" 
 		}
 		requested_factories = 2

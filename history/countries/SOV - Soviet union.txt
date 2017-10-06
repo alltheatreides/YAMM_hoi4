@@ -21,6 +21,7 @@ set_technology = {
 	gw_artillery = 1
 	gwtank = 1
 	basic_light_tank = 1  # PLACEHOLDER
+improved_light_tank = 1 		# WM addition
 	basic_heavy_tank = 1  # PLACEHOLDER
 	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
@@ -682,3 +683,186 @@ create_equipment_variant = {
 		}
 	}
 }
+################ Tank Versions #######################################
+
+create_equipment_variant = {
+	name = "T-18"
+	type = gw_tank_equipment
+	upgrades = {
+		tank_gun_upgrade = 1
+		tank_armor_upgrade = 2
+		tank_reliability_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "T-26 A1"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_armor_upgrade = 1
+		tank_reliability_upgrade = 3
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "T-26 A3"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_gun_upgrade = 2
+		tank_armor_upgrade = 1
+		tank_reliability_upgrade = 3
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "T-26 A4"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_gun_upgrade = 4
+		tank_armor_upgrade = 1
+		tank_reliability_upgrade = 3
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "T-26 A5"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_gun_upgrade = 6
+		tank_armor_upgrade = 1
+		tank_reliability_upgrade = 3
+	}
+}
+
+create_equipment_variant = {
+	name = "T-27"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_reliability_upgrade = 4
+	}
+}
+
+create_equipment_variant = {
+	name = "T-26 B1"
+	type = light_tank_equipment_2
+	upgrades = {
+		tank_gun_upgrade = 2
+		tank_armor_upgrade = 1
+		tank_reliability_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "T-32"
+	type = heavy_tank_equipment_0
+	upgrades = {
+		tank_gun_upgrade = 3
+		tank_engine_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "T-35"
+	type = heavy_tank_equipment_0
+	upgrades = {
+		tank_gun_upgrade = 3
+		tank_armor_upgrade = 1
+		tank_engine_upgrade = 3
+		tank_reliability_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "T-28"
+	type = heavy_tank_equipment_0
+	upgrades = {
+		tank_gun_upgrade = 3
+		tank_armor_upgrade = 1
+		tank_engine_upgrade = 4
+	}
+}
+
+create_equipment_variant = {
+	name = "BT.2A"
+	type = light_tank_equipment_2
+	upgrades = {
+		tank_gun_upgrade = 1
+		tank_engine_upgrade = 3
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "BT.5"
+	type = light_tank_equipment_2
+	upgrades = {
+		tank_gun_upgrade = 6
+		tank_engine_upgrade = 4
+		tank_reliability_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "BT.7"
+	type = light_tank_equipment_2
+	upgrades = {
+		tank_gun_upgrade = 6
+		tank_armor_upgrade = 1
+		tank_engine_upgrade = 5
+		tank_reliability_upgrade = 1
+	}
+}
+
+# create_equipment_variant = {
+	# name = "BA.27"
+	# type = armored_car_equipment_1
+	# upgrades = {
+		# armored_car_at_upgrade = 4
+	# }
+	# obsolete = yes
+# }
+
+# create_equipment_variant = {
+	# name = "FAI"
+	# type = armored_car_equipment_1
+	# upgrades = {
+		# tank_engine_upgrade = 4
+	# }
+	# obsolete = yes
+# }
+
+# create_equipment_variant = {
+	# name = "BA.20"
+	# type = armored_car_equipment_1
+	# upgrades = {
+		# tank_armor_upgrade = 1
+		# tank_engine_upgrade = 5
+		# tank_reliability_upgrade = 2
+	# }
+# }
+
+# create_equipment_variant = {
+	# name = "BAI-M"
+	# type = armored_car_equipment_1
+	# upgrades = {
+		# armored_car_at_upgrade = 3
+		# tank_armor_upgrade = 1
+		# tank_engine_upgrade = 3
+		# tank_reliability_upgrade = 1
+	# }
+# }
+
+# create_equipment_variant = {
+	# name = "BA.6"
+	# type = armored_car_equipment_2
+	# upgrades = {
+		# armored_car_at_upgrade = 5
+		# tank_armor_upgrade = 1
+	# }
+# }

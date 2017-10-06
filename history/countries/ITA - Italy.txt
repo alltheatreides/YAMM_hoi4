@@ -384,3 +384,63 @@ create_equipment_variant = {
 		}
 	}
 }
+################################### Tank and AC variants ###############################################################
+
+create_equipment_variant = {
+	name = "Fiat 3000A (L5/21)"
+	type = gw_tank_equipment
+	upgrades = {
+		tank_armor_upgrade = 2
+		tank_engine_upgrade = 1
+		tank_reliability_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Fiat 3000B (L5/30)"
+	type = gw_tank_equipment
+	upgrades = {
+		tank_gun_upgrade = 4
+		tank_armor_upgrade = 2
+		tank_engine_upgrade = 2
+		tank_reliability_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "CV 33"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_armor_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "L3/35"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_armor_upgrade = 1
+		tank_engine_upgrade = 1
+		tank_reliability_upgrade = 1
+	}
+}
+
+# create_equipment_variant = {
+	# name = "Lancia-Ansaldo 1ZM"
+	# type = armored_car_equipment_1
+	# upgrades = {
+		# tank_engine_upgrade = 1
+	# }
+	# obsolete = yes
+# }
+
+# create_equipment_variant = {
+	# name = "Fiat AB 611"
+	# type = armored_car_equipment_1
+	# upgrades = {
+		# tank_armor_upgrade = 2
+	# }
+# }

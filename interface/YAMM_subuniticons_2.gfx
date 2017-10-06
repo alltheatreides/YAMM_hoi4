@@ -7,7 +7,7 @@ spriteTypes = {
 		
 	
 	spriteType = { name = "GFX_unit_DIV_HQ_icon_medium" textureFile = "gfx/interface/counters/divisions_large/support_unit_DIV_HQ_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_DIV_HQ_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_DIV_HQ_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_DIV_HQ_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_rocket_artillery_icon.dds" noOfFrames = 2 }
 	
 	spriteType = { name = "GFX_unit_heavy_artillery_icon_medium" textureFile = "gfx/interface/counters/divisions_large/support_unit_heavy_art_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_heavy_artillery_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_heavy_art_icon.dds" noOfFrames = 2 }

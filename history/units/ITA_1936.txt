@@ -270,18 +270,21 @@ units = {
 		location = 11584
 		division_template = "Divisione Celere"	
 		start_experience_factor = 0.3
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "ITA" version_name = "L3/35" } }
 	}
 	division= {	
 		name = "2a Divisione Celere 'Emanuele Filiberto'"
 		location = 11584
 		division_template = "Divisione Celere"	
 		start_experience_factor = 0.3
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "ITA" version_name = "L3/35" } }
 	}
 	division= {	
 		name = "3a Divisione Celere 'Principe Amedeo'"
 		location = 11584
 		division_template = "Divisione Celere"	
 		start_experience_factor = 0.3
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "ITA" version_name = "CV 33" } }
 	}
 
 	### Gruppo d'Armata Sud ###
@@ -891,6 +894,7 @@ instant_effect = {
 			equipment = {
 				type = light_tank_equipment_1
 				creator = "ITA" 
+				version_name = "L3/35"
 			}
 			requested_factories = 1
 			progress = 0.4

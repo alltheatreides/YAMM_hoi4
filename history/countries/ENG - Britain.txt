@@ -783,6 +783,41 @@ create_equipment_variant = {
 	}
 }
 
+### Tank Variants ###
+
+create_equipment_variant = {
+	name = "Medium Mk.II"
+	type = gw_tank_equipment
+	upgrades = {
+		tank_gun_upgrade = 4
+		tank_engine_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Vickers Six Ton Tank Mk.IV"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_gun_upgrade = 6
+		tank_engine_upgrade = 1
+		tank_reliability_upgrade = 3
+	}
+	# obsolete = yes
+}
+create_equipment_variant = {
+	name = "Light Tank Mk.VI"
+	type = light_tank_equipment_1
+	upgrades = {
+		tank_gun_upgrade = 1
+		tank_armor_upgrade = 1
+		tank_engine_upgrade = 3
+		tank_reliability_upgrade = 3
+	}
+}
+
+
+
 1939.1.1 = {
 	create_equipment_variant = {
 		name = "Tribal Class"

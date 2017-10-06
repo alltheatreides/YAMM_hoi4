@@ -121,7 +121,7 @@ division_template = {
 													# Also represents groups of independent tank, mech brigades of the time, though groups are best represented by tank bge 
 													# (2x M/L tank + 1x mot), and 2x mech bge (2x L tank + 1x mot)
 	regiments = {
-		light_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
 		light_armor = { x = 0 y = 2 }
 		light_armor = { x = 1 y = 0 }		
@@ -231,7 +231,8 @@ units = {
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
-
+		force_equipment_variants = { heavy_tank_equipment_0 = { owner = "SOV" version_name = "T-28" } }
+		force_equipment_variants = { light_tank_equipment_2 = { owner = "SOV" version_name = "BT.5" } }
 	}
 
 	### Leningraskaya Gruppa Armiya (Leningrad Army Group) -- Leningrad ###
@@ -301,7 +302,8 @@ units = {
 		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
-
+		force_equipment_variants = { heavy_tank_equipment_0 = { owner = "SOV" version_name = "T-28" } }
+		force_equipment_variants = { light_tank_equipment_2 = { owner = "SOV" version_name = "BT.7" } }
 	}
 
 	# 5ya Strelkoviy Korpus
@@ -335,7 +337,8 @@ units = {
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
-
+		force_equipment_variants = { gw_tank_equipment = { owner = "SOV" version_name = "T-18" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "SOV" version_name = "T-27" } }
 	}
 
 	# 6ya Kavaleriyskiy Korpus
@@ -460,7 +463,8 @@ units = {
 		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
-
+		force_equipment_variants = { heavy_tank_equipment_0 = { owner = "SOV" version_name = "T-28" } }
+		force_equipment_variants = { light_tank_equipment_2 = { owner = "SOV" version_name = "BT.5" } }
 	}
 
 	# 3ya Strelkoviy Korpus		
@@ -516,6 +520,8 @@ units = {
 		location = 6380
 		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge, 1x Mot Bge
 		start_experience_factor = 0.3
+		force_equipment_variants = { gw_tank_equipment = { owner = "SOV" version_name = "T-18" } }
+		force_equipment_variants = { light_tank_equipment_2 = { owner = "SOV" version_name = "T-26 B1" } }
 	}
 
 
@@ -789,7 +795,8 @@ units = {
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
-
+		force_equipment_variants = { gw_tank_equipment = { owner = "SOV" version_name = "T-18" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "SOV" version_name = "T-27" } }
 	}
 
 	# 6ya Strelkoviy Korpus		
@@ -823,7 +830,8 @@ units = {
 		division_template = "Mekhanizirovaniy Korpus"		# 1x H Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
-
+		force_equipment_variants = { heavy_tank_equipment_0 = { owner = "SOV" version_name = "T-32" } }
+		force_equipment_variants = { light_tank_equipment_2 = { owner = "SOV" version_name = "BT.5" } }
 	}
 
 	# 17ya Strelkoviy Korpus		
@@ -876,6 +884,8 @@ units = {
 		location = 11437
 		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge, 1x Mot Bge
 		start_experience_factor = 0.3
+		force_equipment_variants = { gw_tank_equipment = { owner = "SOV" version_name = "T-18" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "SOV" version_name = "T-26 A3" } }
 	}
 
 
@@ -1331,7 +1341,8 @@ units = {
 		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
-
+		force_equipment_variants = { heavy_tank_equipment_0 = { owner = "SOV" version_name = "T-28" } }
+		force_equipment_variants = { light_tank_equipment_2 = { owner = "SOV" version_name = "BT.2A" } }
 	}
 
 	# Subordinate to VO
@@ -1714,8 +1725,9 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_1
+			type = light_tank_equipment_2
 			creator = "SOV" 
+			version_name = "BT.7"
 		}
 		requested_factories = 3
 		progress = 0.4

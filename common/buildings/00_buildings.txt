@@ -56,7 +56,7 @@ buildings = {
 		only_costal = yes
 		is_port = yes
 		icon_frame = 6
-		max_level = 10
+		max_level = 15
 		value = 1
 	}
 
@@ -154,7 +154,7 @@ buildings = {
 
 	nuclear_reactor = {
 		show_on_map = 1
-		base_cost = 30000
+		base_cost = 60000
 		icon_frame = 13
 		nuclear_reactor = yes
 		nuclear_production_factor = 1
