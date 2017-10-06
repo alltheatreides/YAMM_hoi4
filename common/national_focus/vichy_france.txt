@@ -232,7 +232,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = { remove_idea = idea_EFR_STO add_idea = idea_EFR_STO2 } 
 			GER = {
-				add_manpower = 12000 
+				add_manpower = 120000 
 			}
 			if = { 
 				limit = {

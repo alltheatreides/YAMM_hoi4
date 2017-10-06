@@ -1601,7 +1601,7 @@ country_event = {
 			remove_ideas = officers_purged_9
 			add_timed_idea = {
 				idea = officers_purged_10
-				days = 438
+				days = 258
 			}
 		}
 		country_event = { id = soviet.1511 days = 146 }

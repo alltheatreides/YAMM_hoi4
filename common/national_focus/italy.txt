@@ -1789,6 +1789,7 @@ focus_tree = {
 				is_in_faction = no
 				is_puppet = no
 			}
+			threat > 10.00
 		}
 		cancel = {
 			is_in_faction_with = GER
