@@ -261,10 +261,10 @@ ideas = {
 			
 			equipment_bonus = {
 				destroyer = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.2 instant = yes
 				}
 				convoy = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.2 instant = yes
 				}
 			}
 		}

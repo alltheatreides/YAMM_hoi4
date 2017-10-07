@@ -1648,7 +1648,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_slovenia_dalmatia_claims focus = ITA_yugoslavia_friend }
 		x = 14
 		y = 2
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1721,7 +1721,7 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 10
 
@@ -1761,7 +1761,7 @@ focus_tree = {
 		
 		x = 10
 		y = 4
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 10
 		}	
@@ -1942,7 +1942,7 @@ focus_tree = {
 		cancel = { has_war_with = GER }
 		x = 12
 		y = 4
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}

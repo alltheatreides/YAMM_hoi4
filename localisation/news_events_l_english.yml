@@ -1,0 +1,437 @@
+﻿l_english: 
+
+
+newsevent.2.t:0 "The Battle of Cable Street" 
+
+newsevent.2.d:0 "Officers of the Metropolitan Police and anti-fascist protesters clashed today in a series of skirmishes down Cable Street in the East End of London. The police were protecting a march by members of the British Union of Fascists, led by their leader Sir Oswald Mosley. There had already been reports of riots breaking out across parts of East London in anticipation of the march, and numerous left-wing groups had gathered in and around Cable Street to confront Mosley's Blackshirts head-on.\n\nSo far, there have been clashes between 20,000 protesters, 6,000 police officers and 3,000 Blackshirts, with several hundred participants either arrested or injured."
+ 
+
+newsevent.2.a:0 "Is this the end for British fascism?" 
+
+newsevent.3.t:0 "The Cable Street Massacre" 
+
+newsevent.3.d:0 "Several hundred people were killed today in the East End of London during a running battle between the Metropolitan Police and anti-fascist protesters gathered in opposition to a march by Sir Oswald Mosley and the British Union of Fascists. There had already been a number of serious anti-Semitic incidents involving members of Mosley's organization, but today's attacks quickly escalated into armed violence after an anarchist group opened fire on Mosley and the Blackshirt vanguard with rifles and a stolen Lewis gun.\n\nBy seven o'clock some 8,000 police officers and Territorial Army reservists had locked down most of the East End, and by midnight casualties included some 370 dead and almost 4,000 wounded."
+ 
+
+newsevent.3.a:0 "This is a black day for Britain." 
+
+newsevent.4.t:0 "Kaiser Wilhelm II Dies" 
+
+newsevent.4.d:0 "Wilhelm II, the last Kaiser of the German Empire, has died today at Huis Doorn, his family estate in [HOL.GetNameDef], at the age of 82. His eldest son Wilhelm, the former Crown Prince, succeeds him as head of the House of Hohenzollern and chief claimant to the German throne abolished in 1918.\n\nA longstanding critic of the present regime in Berlin, Wilhelm II had long been a focal point for both monarchists and embittered exiles of all stripes. His eldest grandson, a Wehrmacht officer also named Wilhelm, was killed in action last year."
+ 
+
+newsevent.4.a:0 "It is the end of an era." 
+
+newsevent.5.t:0 "General Ludendorff Dies" 
+
+newsevent.5.d:0 "Erich Ludendorff, long considered the strategic mastermind behind Imperial Germany's war effort after 1916, has died today in Munich at the age of 72. Appointed Field Marshal von Hindenburg's quartermaster general in August 1916, Ludendorff's obsessive attention to detail and analytical planning contrasted greatly with his superior's more relaxed, overarching style of command.\n\nAn early supporter of the NSDAP, Ludendorff was a leading figure at both the Kapp and Beer Hall putches. When offered promotion to field marshal for his 70th birthday, he angrily refused: 'a field marshal is made on the battlefield, not at a birthday tea party!'"
+ 
+
+newsevent.5.a:0 "The heroes of Tannenberg are no more." 
+
+newsevent.6.t:0 "Lloyd George Dies" 
+
+newsevent.6.d:0 "David Lloyd George, the man who led the British Empire through the second half of the Great War, has died today at the age of 82. He had been suffering ill health for some time, and died peacefully with his wife Frances and daughter Megan by his side.\n\nDespite the many controversies surrounding his womanizing persona and at times defeatest attitude during the present conflict, Mr. Lloyd George will be fondly remembered as a great wartime leader, an orator with few equals, for laying the foundations of the welfare state, and as perhaps Britain's final Liberal prime minister."
+ 
+
+newsevent.6.a:0 "The Welsh Wizard is no more." 
+
+newsevent.7.t:0 "Ramsay MacDonald Dies" 
+
+newsevent.7.d:0 "James Ramsay MacDonald, Britain's first Labour prime minister and until very recently Lord President of the Council, has died today at the age of 71. Mr. MacDonald had been suffering from renewed periods of mental and physical exhaustion for some time, and it was during his latest sea voyage - good sea air being a known cure-all - that he finally succumbed to his illness.\n\nThough a controversial and divisive figure within the Labour party in recent years, Mr. MacDonald was nonetheless well respected for his considerable political achievements and leading the first Labour government."
+ 
+
+newsevent.7.a:0 "May he rest in peace." 
+
+newsevent.8.t:0 "Richard Hauptmann Executed" 
+
+newsevent.8.d:0 "Bruno Richard Hauptmann, the German-born carpenter convicted of the abduction and murder of Charles Augustus Lindbergh Jr., was today executed in the electric chair at the New Jersey State Prison.\n\nMr. Hauptmann, who was 36, always denied his role in the 1932 kidnap and murder of Charles Lindbergh's 20-month-old son, in what was dubbed 'The Crime of the Century.'\n\nThough there has been no way to positively confirm the identity of Lindbergh's kidnapper, law enforcement officials have always been confident Hauptmann was guilty of the crime."
+ 
+
+newsevent.8.a:0 "Let the bastard fry!" 
+
+newsevent.9.t:0 "John D. Rockefeller Dies" 
+
+newsevent.9.d:0 "John Davison Rockefeller Sr., long considered the wealthiest man on Earth, has died today at The Casements, his home in Ormond Beach, Florida. He was 97 years old.\n\nRockefeller, who with his younger brother William co-founded the Standard Oil Company in 1870, was noted for his excessive wealth, philanthropy, and adherence to captitalism built on a social Darwinist model. As well as his numerous business interests, Rockefeller founded several universities and the General Education Board, and supported the Republican party from its inception.\n\nHe is survived by two of his five children, Alta and John Jr."
+ 
+
+newsevent.9.a:0 "And so the dynasty continues." 
+
+newsevent.10.t:0 "Gabriele D'Annunzio Dies" 
+
+newsevent.10.d:0 "General Gabriele D'Annunzio, Prince of Montenevoso, has died today at his home in Gardone Riviera at the age of 74. A writer, poet, journalist, playwright and national war hero, D'Annunzio later became noted for his literary and political leanings, numerous affairs, and latterly as one of the founders of the Italian fascist movement.\n\nDespite the opulent state funeral and mausoleum planned for him, many in [ITA.GetNameDef] believe Il Duce will feel a sense of relief at the news of his great rival and mentor D'Annunzio's passing."
+ 
+
+newsevent.10.a:0 "Il Vate is no more." 
+
+newsevent.11.t:0 "Corneliu Codreanu Killed Fleeing Custody" 
+
+newsevent.11.d:0 "Corneliu Zelea Codreanu, the charismatic and influential leader of Romania's Iron Guard legionary movement, was killed last night after attempting to flee custody whilst awaiting trial. Codreanu, an ultra-nationalist anti-Semite long viewed by right-wing elements in [ROM.GetNameDef] as the country's next leader, was known as Căpitanul ('the Captain') by his followers and enjoyed an immense cult of personality.\n\nExactly what happens now is unknown, but it seems likely that Ion Antonescu will soon assume command of the Iron Guard."
+ 
+
+newsevent.11.a:0 "We all mourn the death of Căpitanul." 
+
+newsevent.12.t:0 "Nadezhda Krupskaya Dies" 
+
+newsevent.12.d:0 "Nadezhda Konstantinovna Krupskaya, known as Nadya, has died today in Moscow at the age of 70. The widow of Vladimir Ilyich Ulyanov ('Lenin'), Nadya had been Marshal Stalin's deputy education minister since 1929 and a member of the Supreme Soviet since 1931.\n\nA great supporter of Stalin and a harsh critic of Leon Trotsky - of whom she famously said 'Marxist analysis was never Comrade Trotsky's strong point' - Nadya was among her husband's closest advisors and greatly admired by the Soviet people."
+ 
+
+newsevent.12.a:0 "We will mourn her dearly." 
+
+newsevent.13.t:0 "Pope Pius XI Dies" 
+
+newsevent.13.d:0 "Ambrogio Damiano Achille Ratti, His Holiness Pope Pius XI, has died today at the Apostolic Palace of the Vatican City at the age of 81. He had been ill for some time, and had suffered three heart attacks.\n\nAn outspoken man of great personal drive, Pius XI was passionate about science and technology; he founded Vatican Radio and was the first pontiff to address his people over the wireless. He was also a man of high standards and demanded even his brother and sister address him as His Holiness."
+ 
+
+newsevent.13.a:0 "The Holy Father has passed on." 
+
+newsevent.15.t:0 "The Strange Death of Italo Balbo" 
+
+newsevent.15.d:0 "Italo Balbo, [ITA.GetNameDef]'s colorful Blackshirt leader, air marshal and heir apparent to Benito Mussolini, was killed today after his Savoia-Marchetti SM.79 was shot down by friendly fire over Tobruk.\n\nBalbo, a keen aviator and key modernizing figure within the Regia Aeronautica Italiana, was en route to resume governorship of Libya when his plane - possibly mistaken for a Bristol Blenheim - was hit by anti-air flak and immolated upon impact.\n\nBalbo and Mussolini had an at times fraught relationship; Balbo favored an accommodation with the Allies rather than the Pact of Steel with [GER.GetNameDef]. Despite this, foul play is not suspected."
+ 
+
+newsevent.15.a:0 "Disaster!" 
+
+newsevent.16.t:0 "Air Marshal Balbo Narrowly Escapes Death" 
+
+newsevent.16.d:0 "Italo Balbo, [ITA.GetNameDef]'s colorful Blackshirt leader, air marshal and heir apparent to Benito Mussolini, narrowly escaped death today after his Savoia-Marchetti SM.79 evaded friendly fire over Tobruk.\n\nBalbo, a keen aviator and key modernizing figure within the Regia Aeronautica Italiana, was en route to resume governorship of Libya when his plane - possibly mistaken for a Bristol Blenheim - was knocked off course by a stray round of flak and forced to make an emergency landing in the Libyan desert.\n\nShaken by his near-death experience but as jovial as ever, Balbo was last seen inspecting colonial troops in Tobruk."
+ 
+
+newsevent.16.a:0 "He lives to fight another day." 
+
+newsevent.17.t:0 "Sir Austen Chamberlain Dies" 
+
+newsevent.17.d:0 "Sir Joseph Austen Chamberlain, elder son of the late Mr. Joseph Chamberlain and half-brother of Neville, has died today at the age of 73. The last survivor of the Victorian political establishment of which his father had been a leading figure, Sir Austen was a man of considerable achievements and - along with Mr. Churchill - the most prominent advocate of Imperial rearmament.\n\nWell known as a co-author of the Locarno and Kellogg-Briand pacts, Sir Austen had long held the opinion that [GER.GetNameDef] wished to achieve her territorial aims peacefully, but in recent years thought this increasingly unlikely."
+ 
+
+newsevent.17.a:0 "Let us pray he was wrong." 
+
+newsevent.18.t:0 "Strasserist Coup In [GER.GetNameDef]" 
+
+newsevent.18.d:0 "This morning our ambassador to [GER.GetNameDef] confirmed reports that Adolf Hitler, Germany's self-styled Führer, was last night overthrown in an inter-party coup acting on behalf of the exiled Otto Strasser, younger brother of Gregor Strasser - one of the Hitlerite faction's numerous assassination victims.\n\nStrasser, currently believed to be en route from Switzerland, eschews many of his predecessor's overtly anti-Semitic policies and is said to favor rapprochement with the Western powers in exchange for a free reign against [SOV.GetNameDef].\n\nIt is not known exactly what this change in leadership means for Europe."
+ 
+
+newsevent.18.a:0 "Is he as mad as Hitler was?" 
+
+newsevent.19.t:0 "Military Coup In [GER.GetNameDef]" 
+
+newsevent.19.d:0 "Our ambassador to [GER.GetNameDef] has today informed the government that, owing to perceived military and strategic blunders in recent years, the NSDAP - Germany's ruling party - has been overthrown by senior members of the Wehrmacht working alongside elements of the civil service and the Berlin police force.\n\nAt the head of this anti-Nazi cabal is none other than August von Mackensen, the famed 'Amerikanerfresser' and the most senior figure within Germany's military hierarchy. Though in effect little more than a figurehead, Mackensen is a national hero who commands great respect among all Germans."
+ 
+
+newsevent.19.a:0 "What? Mackensen is still alive?" 
+
+newsevent.20.t:0 "Adolf Hitler Commits Suicide" 
+
+newsevent.20.d:0 "It has today been reported over German radio that Adolf Hitler, Führer of [GER.GetNameDef], is dead. Details are scarce owing to the present situation in Germany, but it seems likely that Herr Hitler and his new wife, Eva Braun, enacted a joint suicide pact in the Führerbunker as it became increasingly clear that Germany's war effort had deteriorated beyond repair.\n\nExactly how the Hitlers died and where their remains now are is not yet known, but it has been confirmed that Admiral Dönitz - commander of the Kriegsmarine - will succeed Herr Hitler as President of [GER.GetNameDef]. It is thought that the office of Führer will remain vacant."
+ 
+
+newsevent.20.a:0 "The world is burning around him." 
+
+newsevent.21.t:0 "Trotskyist Coup In [PRC.GetNameDef]" 
+
+newsevent.21.d:0 "Our ambassador to [SOV.GetNameDef] has today confirmed reports that Chen Duxiu, the exiled founder of the Communist Party of China, has been installed as leader of [PRC.GetNameDef] by a combined Sino-Soviet army.\n\nMao Zedong, the powerful communist warlord and previous party chairman, is rumored to have been hanged by a street mob in Bao'an. The current situation is seemingly one of confusion whilst Trotskyist forces establish control of the state, but with the death of Chairman Mao victory is all but certain for Duxiu and his forces. In that event, an alliance between Trotsky and Duxiu is inevitable."
+ 
+
+newsevent.21.a:0 "What does this mean for China?" 
+
+newsevent.22.t:0 "The Treaty of Beijing" 
+
+newsevent.22.d:0 "The foreign ambassadors of [CHI.GetNameDef] and [JAP.GetNameDef] have today announced a cessation of hostilities between their two countries. In exchange for peace, the Japanese territories of Taiwan, East Hebei and Kwantung will be returned to [CHI.GetNameDef], with the additional clause that [JAP.GetNameDef] will abandon its claims in Manchuria.\n\nThe Treaty of Beijing fundamentally changes the entire situation in Asia; Japanese aggression has not only been checked, but completely reversed. Chinese mastery of the old Qing Empire has now been restored, and there is once again an Asian power ruling from Lhasa to Vladivostok."
+ 
+
+newsevent.22.a:0 "This changes everything!" 
+
+newsevent.23.t:0 "Corporatist Coup In Russia" 
+
+newsevent.23.d:0 "The future of the former Soviet Union was thrown into doubt earlier today when Viktor Baydalakov, leader of the so-called 'Solidarist' movement, came to power in a short but violent Moscow coup. Mr. Baydalakov is something of an unknown quantity, and many have labelled him a dangerous fraud at the head of a sycophantic personality cult; in these respects he does not appear to differ too much from the communists he has overthrown.\n\nExactly what Mr. Baydalakov and the National Alliance of Russian Solidarists stand for is not yet certain, but he has warned of 'known knowns' and 'unknown knowns' and is said to speak in tongues."
+ 
+
+newsevent.23.a:0 "Wait, what? Who is this guy?" 
+
+newsevent.24.t:0 "[FRA.GetNameDef] Puppets [BEL.GetNameDef]" 
+
+newsevent.24.d:0 "The [FRA.GetAdjective] foreign ambassador has today announced that [BEL.GetNameDef] has become a satellite state of [FRA.GetNameDef] -- a 'buffer zone' against future aggression, in expectation that any likely invasion of France will attempt to bypass the Maginot Line.\n\nDespite international condemnation and strong words from the League of Nations, the general consensus is that an emboldened France is infinitely preferable to a revanchist Germany.\n\nThis confirms earlier reports that Marshal Gamelin is mobilizing the French Army for a general advance towards the Dutch border; it is already known that General de Gaulle is currently inspecting men of the Armée d'Ardennes - Gamelin's vanguard - in Brussels."
+ 
+
+newsevent.24.a:0 "Oh, not gallant little Belgium!" 
+
+newsevent.25.t:0 "The Sino-Soviet Pact" 
+
+newsevent.25.d:0 "Mr. Molotov, the Soviet foreign minister, has today announced that the governments of [PRC.GetNameDef] and [SOV.GetNameDef] have signed a 'treaty of collectivist friendship in perpetuity.' This treaty, which is being referred to in the Russian press as a Sino-Soviet Pact, is in effect a full military and cultural alliance between the two communist powers.\n\nThe long-term effects of this alliance are not yet known, although it is to be believed that Chairman Duxiu will benefit from significant Soviet military support in his campaign against the Kuomintang resistance."
+ 
+
+newsevent.25.a:0 "This doesn't bode well..." 
+
+newsevent.26.t:0 "World Revolution!" 
+
+newsevent.26.d:0 "Leon Trotsky, leader of [SOV.GetNameDef], has today announced on Russian state radio that he is calling for the workers of the world to unite and rise up as one. He has spoken at length of the merits of global communist revolution and what society can achieve once it has freed itself from the shackles of a class hierarchy.\n\nThere are already reports of riots breaking out in neighboring countries, and our own armed forces are now experiencing sporadic outbreaks of troop desertion; we can surely cope in the short term, but how long will this unrest last? We can not and should not become a police state."
+ 
+
+newsevent.26.a:0 "There will be blood on the streets." 
+
+newsevent.27.t:0 "José Antonio Primo de Rivera Executed" 
+
+newsevent.27.d:0 "The founder of the far-right Falange Española, José Antonio Primo de Rivera, was executed by firing squad at Alicante prison earlier today after having been charged with conspiracy and military insurrection.\n\nThe Duke, son of the former Spanish prime minister Miguel Primo de Rivera, was the political leader of the country's Nationalist faction and viewed as a potential head of state should the government's forces capitulate.\n\nThough the outcome of the civil war is still unclear, it is thought very likely that General Franco will now assume command of both the Nationalist army and Falangist movement."
+ 
+
+newsevent.27.a:0 "Yet more instability in Spain..." 
+
+newsevent.29.t:0 "The Duke of Kent Killed In Air Crash" 
+
+newsevent.29.d:0 "The death of Prince George, Duke of Kent - King George VI's youngest brother - was announced in The Times newspaper today. The exact details of the Duke's death remain confidential due to the sensitivity surrounding military intelligence during [ENG.GetNameDef]'s wartime situation, but unconfirmed reports obtained from German radio intercepts reveal that Prince George was en route to Iceland on an as yet unknown diplomatic mission.\n\nWhat is known is that Prince George's aircraft - a Short Sunderland flying boat - crashed into a hillside in the village of Dunbeath in Caithness, Scotland. There were no survivors."
+ 
+
+newsevent.29.a:0 "Our condolences to the King." 
+
+newsevent.30.t:0 "The Duke of Kent Rescued At Sea" 
+
+newsevent.30.d:0 "It has today been reported by the BBC World Service that Prince George, Duke of Kent was rescued at sea yesterday by fishermen from the Norwegian trawler Haakon. An official statement by the Court of St. James's reveals that the King's youngest brother was on a routine diplomatic flight from Invergordon in Scotland to Reykjavík, the Icelandic capital, when he lost control of his Short Sunderland flying boat and parachuted to safety.\n\nDespite landing in the treacherous waters of the North Atlantic, Prince George was soon spotted and rescued. He has expressed profound thanks to his saviors and is reported to be recovering swiftly at Balmoral."
+ 
+
+newsevent.30.a:0 "He is lucky to be alive!" 
+
+newsevent.31.t:0 "Benito Mussolini Removed From Office" 
+
+newsevent.31.d:0 "Benito Mussolini, the self-styled 'Duce' of Fascism, was removed from office this morning by King Victor Emmanuel III. Deeply concerned about [ITA.GetNameDef]'s war effort to date, the King chose to convene a meeting of the Grand Council of Fascism - of which Mussolini had been president - in order to emphasise the deteriorating situation and formally dismiss 'Il Duce' in front of his cabinet. Mussolini's immediate fate remains unknown, though he has been placed under house arrest at the Campo Imperatore ski resort.\n\nHe has been replaced as prime minister and commander-in-chief by the well-known Marshal of Italy, [ITA.GetLeader], currently the viceroy of Italian East Africa."
+ 
+
+newsevent.31.a:0 "The fool is gone." 
+
+newsevent.32.t:0 "Fascist Government Overthrown In [ITA.GetNameDef]" 
+
+newsevent.32.d_balbo:0 "The [ITA.GetAdjective] foreign ambassador has today announced that, owing to [ITA.GetNameDef]'s worsening war situation, Marshal Balbo has been dismissed as prime minister and commander-in-chief of the Italian Armed Forces.\n\nExasperated by the apparent systemic incompetence of his Prime Minister's fascist government, King Victor Emmanuel III has refused to replace Balbo with another PNF minister, and has instead assumed personal control of government. No longer a fascist one-party state, [ITA.GetNameDef] is once again an absolute monarchy in which all aspects of government are controlled by the King."
+ 
+
+newsevent.32.d_badoglio:0 "The [ITA.GetAdjective] foreign ambassador has today announced that, owing to [ITA.GetNameDef]'s worsening war situation, Marshal Badoglio has been dismissed as prime minister and commander-in-chief of the Italian Armed Forces.\n\nExasperated by the apparent systemic incompetence of his Prime Minister's fascist government, King Victor Emmanuel III has refused to replace Badoglio with another PNF minister, and has instead assumed personal control of government. No longer a fascist one-party state, [ITA.GetNameDef] is once again an absolute monarchy in which all aspects of government are controlled by the King."
+ 
+
+newsevent.32.d_de_bono:0 "The [ITA.GetAdjective] foreign ambassador has today announced that, owing to [ITA.GetNameDef]'s worsening war situation, Marshal De Bono has been dismissed as prime minister and commander-in-chief of the Italian Armed Forces.\n\nExasperated by the apparent systemic incompetence of his Prime Minister's fascist government, King Victor Emmanuel III has refused to replace De Bono with another PNF minister, and has instead assumed personal control of government. No longer a fascist one-party state, [ITA.GetNameDef] is once again an absolute monarchy in which all aspects of government are controlled by the King."
+ 
+
+newsevent.32.a:0 "A new chapter begins." 
+
+newsevent.33.t:0 "[GER.GetNameDef] Destroys Maginot Line" 
+
+newsevent.33.d:0 "[FRA.GetNameDef]'s vaunted Ligne Maginot - the brainchild of former ministers André Maginot and Paul Painlevé - was today almost entirely destroyed by specialist 'pioniere' demolition units of the German Wehrmact.\n\nMuch of the work was done using a series of timed 'shaped charge' explosives like those used to neutralize Fort Eben-Emael, with the main fortified blockhouses then being blown to pieces by long-range railway artillery guns.\n\nWith the destruction of the Maginot Line, the Westwall (or 'Siegfried Line') remains the only fortified defensive line in Western Europe."
+ 
+
+newsevent.33.a:0 "What a waste of money!" 
+
+newsevent.34.t:0 "Sir Oswald Mosley Flees London" 
+
+newsevent.34.d:0 "The [ENG.GetAdjective] ambassador has today announced via the BBC World Service that Sir Oswald Mosley, the fascist leader of [ENG.GetNameDef], has been sighted fleeing London in his custom-built Vickers Wellington - nicknamed 'Boudica.' Unconfirmed reports state that Sir Oswald may well have left his wife and children behind, though the family dog was reported missing as of yesterday evening.\n\nQuite why Sir Oswald has decided to flee the country is a mystery, but increased tensions between the British Union of Fascists and the Army are thought to have played a role. His likely successor is the eccentric military theorist J.F.C. Fuller, a noted occultist and author recently promoted to field marshal by King Edward VIII."
+ 
+
+newsevent.34.a:0 "A military government in London?" 
+
+newsevent.35.t:0 "King Edward VIII Abdicates" 
+
+newsevent.35.d:0 "King Edward VIII has today shocked the world by announcing live over the radio that he has abdicated the thrones of [ENG.GetNameDef] and the other Commonwealth realms in favor of his younger brother, Albert, Duke of York. Edward - now known as the Duke of Windsor - discharged his final duty as King-Emperor by giving royal assent to His Majesty's Declaration of Abdication Act 1936, by which he formally renounced the Crown for both himself and any future heirs and successors.\n\nThe Duke and Mrs. Simpson - Edward's unpopular and twice-divorced American mistress - have made it known that they intend to move to France immediately, where they plan to marry in the spring."
+ 
+
+newsevent.35.a:0 "But will his brother be up to the job?" 
+
+newsevent.36.t:0 "King Edward VIII Marries American Divorcée" 
+
+newsevent.36.d:0 "It has today been announced via the BBC World Service that King Edward VIII has caused a constitutional crisis within the British and Commonwealth governments by insisting on going ahead with his planned marriage to Wallis Simpson, the King's twice-divorced American mistress and a rumored Nazi sympathiser.\n\nBacked by senior politicians including Mr. Churchill and Mr. Lloyd George, the King has set a date of June 3rd next year for the royal wedding, and is insistent on Mrs. Simpson being given the full title and honors of Queen Consort. He has been quite clear that there will be no more suggestions of a 'second-class queen' or he and Mrs. Simpson entering into a morganatic marriage."
+ 
+
+newsevent.36.a:0 "Well, why shouldn't he marry her?" 
+
+newsevent.37.t:0 "The Hoover Dam Is Completed" 
+
+newsevent.37.d:0 "The Hoover Dam, the largest construction project in American history, was finally completed today. A concrete arch-gravity dam in the Black Canyon of the Colorado River, construction began in 1931 and was largely complete by the end of 1935; the project cost $49 million and the lives of over a hundred construction workers.\n\nThe Dam impounds Lake Mead - the largest reservoir in [USA.GetNameDef] - and provides clean drinking water and hydroelectric power to millions of homes in the states of Nevada, Arizona, and California. With today's transfer of the Dam from Six Companies, Inc. to the federal government, the project has been finalized more than two years ahead of schedule."
+ 
+
+newsevent.37.a:0 "Huh, that's one hell of a dam!" 
+
+newsevent.39.t:0 "Mount Rushmore Completed" 
+
+newsevent.39.d:0 "Work on the massive Mount Rushmore National Memorial was finally halted today. Designed and sculpted by Gutzon Borglum, his son Lincoln, and some 400 masonry workers, the four 60-foot edifices depicting Presidents Washington, Jefferson, Roosevelt and Lincoln have been carved into the granite face of Mount Rushmore since 1927.\n\nThough not technically complete, the project has so far cost just shy of $1 million and the elder Borglum died earlier this year, meaning further substantive work is unlikely. Unusually - and thankfully - for such a huge undertaking involving dynamite and rigging, no workers assigned to the project have ever been killed."
+ 
+
+newsevent.39.a:0 "It is a monument to our greatness!" 
+
+newsevent.40.t:0 "Plane Flies Into Empire State Building" 
+
+newsevent.40.d:0 "Tragedy quite literally struck New York City earlier today when a B-25 Mitchell bomber flew into the side of the Empire State Building, killing fourteen people and causing damage in the region of $1 million. The pilot, William Franklin Smith Jr., was on a routine personnel transport mission from Bedford Army Air Field to Newark Airport when, asking for clearance to land due to the very heavy fog, he proceeded anyway and crashed between the 78th and 80th floors, carving an 18'x20' hole into the New York City landmark.\n\nThose so far confirmed dead are Smith, his co-pilot, a friend on-board the plane, and eleven people who had been inside the building near the point of impact."
+ 
+
+newsevent.40.a:0 "Disaster!" 
+
+newsevent.41.t:0 "1939 New York World's Fair" 
+
+newsevent.41.d:0 "With its opening slogan of 'Dawn of a New Day,' the 1939 World's Fair started today, covering an immense 1,216 acres of Flushing Meadows-Corona Park, New York. In terms of both area and number of exhibitions, it is believed to be the second-largest world's fair yet organized behind 1904's Louisiana Purchase Exposition in St. Louis.\n\nOver 200,000 people attended today's grand opening in Lower Manhattan, which coincided with the 150th anniversary of George Washington's inauguration. The myriad exhibits are divided among several themed zones, whilst luminaries including Albert Einstein and Thomas Mann have already given talks. All being well, the Exposition is due to run into next year."
+ 
+
+newsevent.41.a:0 "We have seen the world of tomorrow!" 
+
+newsevent.42.t:0 "[FRA.GetLeader] Forms New Grande Armée" 
+
+newsevent.42.d:0 "The [FRA.GetAdjective] foreign minister has this morning given a speech to the League of Nations proclaiming that [FRA.GetLeader]'s government has formed a new Grande Armée and is now recruiting men from throughout France and her colonies. Not only must [FRA.GetNameDef] defend herself from aggressive neighbours, he said, but she must be prepared to fight to the last man. Indeed, it is imperative that all peace-loving Europeans join up and become 'Français par le sang verse' and fight for peace and liberty, he continued.\n\nReaction from other European governments has been mixed; some view the Grande Armée as a necessary counter to growing totalitarianism, whilst others see it as an army of occupation."
+ 
+
+newsevent.42.a:0 "Another grave threat to Europe." 
+
+newsevent.43.t:0 "German Unrestricted Submarine Warfare" 
+
+newsevent.43.d:0 "The [GER.GetAdjective] foreign minister has today informed the government that [GER.GetLeader] has announced a policy of unrestricted submarine warfare, and that henceforth all naval vessels in international waters must be considered 'belligerent enemy forces acting against the interests of the Aryan peoples.'\n\nQuite what the long-term effects of this change in policy will be is unknown, but it seems likely that further such 'incidents' involving neutral convoys being sank by German U-boats may yet draw other nations into conflict with [GER.GetNameDef].\n\nGrand Admiral Dönitz has so far been unavailable for comment."
+ 
+
+newsevent.43.a:0 "The rules of war must be respected!" 
+
+newsevent.44.t:0 "[GER.GetLeader] Retreats To Alpine Fortress" 
+
+newsevent.44.d:0 "Aerial reconnaissance reports have today confirmed last week's bizarre rumors that [GER.GetLeader] and the German high command have retreated to a network of concrete fortresses dug into the Alps.\n\nApparently known as the 'Alpenfestung', this - until now - secret network of underground tunnels and reinforced bunkers has recently been upgraded with formidable anti-air defenses, and is rumored to be garrisoned by several elite mountain divisions.\n\nAlleged sightings of 'flying saucers' being launched from a secret airbase within the mountains have so far been dismissed as 'unlikely'." 
+
+newsevent.44.a:0 "They can't hide up there forever... can they?" 
+
+newsevent.45.t:0 "German Heavy Water Refinement" 
+
+newsevent.45.d:0 "It has this morning been reported in a number of European newspapers that [GER.GetNameDef] has begun refinement of so-called 'heavy water' as the next step in its ambitious 'Wunderwaffe' program.\n\nWith German political and military dominance of [NOR.GetNameDef] now secured, the Vemork electrolytic heavy water plant has been turned over by Norsk Hydro to German control. With the resources and technical expertise now at [GER.GetLeader]'s disposal, it is thought to be only a matter of time until [GER.GetNameDef] is in possession of its first atomic weapon.\n\nThe real question is... would they dare use it?" 
+
+newsevent.45.a:0 "Surprise, surprise. [GER.GetLeader] wants a doomsday device." 
+
+newsevent.46.t:0 "The Manhattan Project" 
+
+newsevent.46.d:0 "It has today been reported in several Central American newspapers that [USA.GetNameDef] has almost certainly started work on designing what is being called a 'nuclear device.'\n\nThe reports - vague and unconfirmed, but thought to be accurate - state that a number of eminent scientists from both [USA.GetNameDef] and [ENG.GetNameDef] have now been conducting transatlantic 'research and development' trips for several months, and that evidently their efforts have at last borne fruit.\n\nThough it is not clear how advanced this 'Manhattan Project' is, it must be assumed that immense funding and resources are involved." 
+
+newsevent.46.a:0 "So this is the Arsenal of Democracy?" 
+
+newsevent.47.t:0 "[SOV.GetLeader] Launches Operation 'Zet'" 
+
+newsevent.47.d:0 "Rogue elements within the Soviet high command - no doubt soon to be purged - have today leaked details of [SOV.GetLeader]'s latest act of foreign intervention. The operation - codenamed 'Zet' - aims to supply one or more of the warring Chinese warlord factions with several shipments of Polikarpov I-15 fighter planes.\n\nAlthough ostensibly a non-aligned observer of the Chinese Civil War, it is an open secret that [SOV.GetNameDef] has for some time now been supplying raw materials, arms and 'volunteers' to aid the Chinese in their struggle against [JAP.GetNameDef].\n\nDue to Moscow's current power struggles, it is believed direct intervention is unlikely." 
+
+newsevent.47.a:0 "Let's hope so, for everyone's sake." 
+
+newsevent.48.t:0 "Anglo-Japanese Alliance Renewed" 
+
+newsevent.48.d:0 "It has this morning been announced by the Court of St. James's that His Majesty's government last night entered into a treaty of alliance with [JAP.GetNameDef]. In renewing the Anglo-Japanese Treaty of 1902, the British and Japanese Empires have in effect agreed to divide the Asian mainland between them, with Japanese nominal rule over most of China being acknowledged in exchange for British basing rights and protection of the vital Hong Kong-Singapore trade route. The alliance also removes a potential threat to British India.\n\nWhilst the exact stipulations of the treaty are unknown, the revival of the Anglo-Japanese Alliance dramatically redraws the political map and leaves [SOV.GetNameDef] encircled." 
+
+newsevent.48.a:0 "Well, who saw that coming?" 
+
+newsevent.50.t:0 "General Billotte Killed In Car Accident" 
+
+newsevent.50.d:0 "General Gaston Billotte, commander of the French First Army Group, was today killed in an automobile accident after his car overturned en route from a staff meeting in Ypres.\n\nBillotte, 64 and close to retirement, had reportedly burst into tears when told of the sheer scale of the German invasion, and General Ironside - the Chief of the Imperial General Staff - yesterday said of Billotte, 'the man is completely beaten.' Upon hearing of Billotte's death, Lord Gort's chief of staff is quoted as having said: 'With all respect, he's no loss to us in this emergency.'\n\nHis son Pierre continues the family's military service as a tank captain." 
+
+newsevent.50.a:0 "Disaster!" 
+
+newsevent.51.t:0 "General Billotte Narrowly Escapes Death" 
+
+newsevent.51.d:0 "General Gaston Billotte, commander of the French First Army Group, was today very nearly killed in an automobile accident after his car overturned en route from a staff meeting in Ypres.\n\nBillotte, 64 and close to retirement, suffered a broken arm and severe bruising but has insisted on returning to frontline duty. The driver and a junior officer accompanying Billotte were less fortunate; the former is in a coma, and the latter was killed on impact.\n\nDespite his lucky escape, Billotte remains pessimistic; 'I'm shattered and I can't do anything against these Panzers' he yesterday remarked to Lord Gort, commander of the British Expeditionary Force." 
+
+newsevent.51.a:0 "Lucky devil." 
+
+newsevent.52.t:0 "Marshal d'Espèrey Dies" 
+
+newsevent.52.d:0 "It has today been reported that Louis Franchet d'Espèrey, Marshal of France, has died at the age of 86. A true character and extremely driven - if at times pompous - commander, d'Espèrey's numerous colorful exploits include entering Constantinople atop a white horse after the Ottomans' defeat in 1918 - emulating Sultan Mehmed II after the Fall of Byzantium - and crushing Béla Kun's 1919 communist uprising in Hungary.\n\nAs commander of the large multi-national Allied force based at Salonika, d'Espèrey conducted the successful Macedonian campaign of 1918 that caused the collapse of the Central Powers in Southern Europe and hastened the call for an armistice." 
+
+newsevent.52.a:0 "A true hero of France!" 
+
+newsevent.53.t:0 "The Third Emu War" 
+
+newsevent.53.d:0 "War! What is it good for? Absolutely nothing... unless you're an emu, in which case it's a source of great pride and resilience; the recent 'avian border skirmishes' flaring up across much of Western Australia appear to herald the continuation of the Great Emu War.\n\nIt has been reported today in the Auckland Free Press that thick, billowing clouds of black smoke have been seen off the coast of Queensland, suggesting hellish fires so apocalyptic that they have raged across most of the Australian continent. It is currently unknown if the smoke is simply the result of catastrophic wildfires, or whether the rumors of the Australian Army's new 'wonder weapons' are true." 
+
+newsevent.53.a:0 "What the hell are they doing to those emus?" 
+
+newsevent.54.t:0 "Béla Kun Executed" 
+
+newsevent.54.d:0 "Béla Kun is dead! The infamous communist revolutionary and leader of the short-lived Hungarian Soviet Republic has reportedly been executed by NKVD agents in Moscow. Though it is not known when he died, Kun is believed to be one of countless dissidents, Trotskyists and 'counter-revolutionaries' arrested, tried and executed on the orders of [SOV.GetLeader].\n\nA veteran of the Great War, Kun was an ultra-radical Marxist who frequently clashed with Lenin and the 'pragmatic' Old Bolsheviks. Kun's communist government in Budapest was the second after Lenin's, although his movements after the 1919 Revolution are not well documented." 
+
+newsevent.54.a:0 "This is Stalin's doing..." 
+
+newsevent.55.t:0 "Guglielmo Marconi Dies" 
+
+newsevent.55.d:0 "Guglielmo Marconi, Marquis of Marconi, has died at his home in Rome today at the age of 63. An inventor and electrical engineer of international renown, Marconi is generally credited with the invention of radio and was a key pioneer of the international telegraph system.\n\nAs well as being a co-recipient of the 1909 Nobel Prize in Physics, Marconi was an entrepreneur, businessman, and founder of The Wireless Telegraph & Signal Company - which provided a commercial outlet for his various interests. Marconi was created a marquis in 1929 by King Victor Emmanuel III, and it is believed that a state funeral is being planned for him." 
+
+newsevent.55.a:0 "A fantastic mind!" 
+
+newsevent.56.t:0 "British Expeditionary Force Arrives In France" 
+
+newsevent.56.d:0 "This newspaper has today received a leaked report from [Root.GetNameDef]'s ambassador to [FRA.GetNameDef], detailing the transfer of several motorized and armored divisions en route from [ENG.GetNameDef]. Though no official announcement has been made, it can be safely assumed that these cross-Channel sightings indicate a second British Expeditionary Force has been dispatched to Paris under French Army command.\n\nAs in 1914, the presence of the BEF in France confirms multiple reports that the [ENG.GetAdjective] and [FRA.GetAdjective] governments are once again cooperating in the face of the perceived [GER.GetAdjective] threat." 
+
+newsevent.56.a:0 "But will it make a difference?" 
+
+newsevent.57.t:0 "The Port Chicago Disaster" 
+
+newsevent.57.d:0 "Disaster struck the small town of Port Chicago, California today as a munitions cache exploded whilst being loaded onto a cargo ship bound for the Pacific. The incident happened at the Port Chicago Naval Magazine - a local USN munitions depot - and though exact casualty figures are not yet available, first responders currently estimate a death toll of several hundred.\n\nOur latest reports indicate that firefighters and navy reservists are struggling to contain the fires, and that although further explosions are considered unlikely, all non-essential personnel are being evacuated from the area as a precaution." 
+
+newsevent.57.a:0 "We must reevaluate our safety regulations." 
+
+newsevent.58.t:0 "Major Military Exercises In [USA.GetNameDef]" 
+
+newsevent.58.d:0 "As conflicts both large and small escalate around the world, it is inevitable that certain hitherto peaceful nations begin preparation for overseas intervention. Unconfirmed reports made to this newspaper suggest that [USA.GetAdjective] troops are currently engaged in large-scale maneuvers across a variety of states, with Louisiana and Oregon said to involve wargames with 'armies' of over 100,000 men.\n\nExactly where President [USA.GetLeader] and his chiefs of staff are intending to eventually send these troops is unknown, but it is perhaps worth remembering that the American Expeditionary Forces numbered some two million men by the Armistice of 1918." 
+
+newsevent.58.a:0 "Preparing... but for what?" 
+
+newsevent.59.t:0 "The Treaty of London" 
+
+newsevent.59.d:0 "For the second time in half a century, the foreign ambassador of [ETH.GetNameDef] has today announced a comprehensive [ETH.GetAdjective] victory over the invading forces of [ITA.GetLeader]'s [ITA.GetNameDef]. What began as a slow war of attrition led by the old and overcautious Marshal of Italy, Emilio De Bono, has ended with the ejection of yet another European army from the Horn of Africa.\n\nIn exchange for an end to hostilities, [ITA.GetLeader] has reluctantly agreed to the demilitarization of Eritrea and Italian Somaliland, which are now in effect League of Nations mandates. With the Treaty of London now signed, the Second Italo-Abyssinian War is over." 
+
+newsevent.59.a:0 "Will [ITA.GetLeader]'s ambitions end here?" 
+
+newsevent.60.t:0 "'Foo Fighters' Invading The Skies!" 
+
+newsevent.60.d:0 "This newspaper has today learned that an increasing number of [Root.GetAdjective] pilots are reporting sightings of so-called 'foo fighters' during routine combat and reconnaissance missions over [GER.GetNameDef]. The exact descriptions of these currently unidentified flying objects vary, but the general pattern seems to be floating bright lights that 'zig zag' at incredible speed, before eventually disappearing from sight.\n\nAs of going to print, the [Root.GetAdjective] government has yet to officially comment on the matter, although senior sources in the military claim the sightings are simply optical illusions and the long-term effects of pilot fatigue." 
+
+newsevent.60.a:0 "Could they be some kind of weapon?" 
+
+newsevent.61.t:0 "Zeppelins Spotted!" 
+
+newsevent.61.d:0 "It has today been reported in several major news publications that huge armadas of airships have been spotted flying over a number of major cities, including Lisbon, Buenos Aires and Kuala Lumpur.\n\nWhilst it is not currently believed that the citizens of [Root.GetNameDef] are in any immediate danger, the renewed usage of zeppelins in a non-civilian role is alarming to say the least, and [Root.GetLeader] has urged vigilance and calm on the part of the [Root.GetAdjective] people.\n\nFor now, we are being told that the [Root.GetAdjective] government is allocating all available resources to identifying the mystery threat." 
+
+newsevent.61.a:0 "Light up the skies!" 
+
+newsevent.62.t:0 "German 'Amerikabomber' Program Confirmed" 
+
+newsevent.62.d:0 "The New York Times has today announced the first successful [GER.GetAdjective] attack on an [USA.GetAdjective] city with the use of transatlantic strategic bombers, flying directly across the Atlantic from [GER.GetNameDef]. The state-of-the-art aircraft are believed to be a mass-produced variant of Messerschmitt's Me 264 prototype, which [Root.GetAdjective] intelligence services have been aware of for several months.\n\nWhether these so-called 'Amerikabombers' can hasten the end of the War is anyone's guess, but President [USA.GetLeader] is said to have reacted with horror when informed that New Yorkers had been killed in high-altitude bombing raids carried out by 'giant flying fortresses.'" 
+
+newsevent.62.a:0 "Halfway across the world...?" 
+
+newsevent.63.t:0 "General Wever Killed In Air Crash" 
+
+newsevent.63.d:0 "It has today been announced by the Propagandaministerium that Walther Wever, Chief of the Luftwaffe General Staff, has been killed in an air crash en route from Dresden to Berlin. Paying tribute over the wireless this morning, Dr. Goebbels revealed that General Wever had been due to give a lecture at the Luftkriegsschule Klotzsche, but had decided to return to the capital on learning of the death of a friend.\n\nGeneral Wever, who was 48, had long advocated the Luftwaffe adopt a policy of high-altitude strategic bombing; he continually pressed [GER.GetLeader] to fund the controversial and ambitious 'Uralbomber Projekt' in which long-range bombers would strike [SOV.GetAdjective] cities in the East." 
+
+newsevent.63.a:0 "A true pioneer of air warfare." 
+
+newsevent.64.t:0 "Italy Announces Claims On Tirol" 
+
+newsevent.64.d:0 "Speaking to the [ITA.GetAdjective] people from a balcony in Rome today, [ITA.GetLeader] has announced that [ITA.GetName] fully considers the entirety of the old county of Tirol - encompassing both German and Italian-speaking populations - to be a 'rightful and integral part of [ITA.GetName].'\n\nVarious legal documents and the results of a local referendum in Alto Adige appear to have cemented [ITA.GetName]'s claims, although the League of Nations inspectorate does not consider the plebiscite to have been either fair or legally binding. Regardless, the [ITA.GetAdjective] government feels that Tirol has been a legal possession of theirs since the Treaty of Saint-Germain-en-Laye in 1919, after which the region was 'illegally' divided in two." 
+
+newsevent.64.a:0 "No! Tirol is not Italian!" 
+
+newsevent.64.b:0 "Oh boy, the Germans will love this..." 
+
+newsevent.64.c:0 "It should have been Italian since 1918!" 
+
+# 65 USA_restore_status_quo
+
+# 66 USA_assert_western_supremacy
+
+# 67 USA_strike_at_the_empire
+
+# 68 USA_defense_of_the_pacific
+
+newsevent.69.t:0 "Italo Balbo Launches Coup In [ITA.GetNameDef]" 
+
+newsevent.69.d:0 "The [ITA.GetAdjective] foreign minister has today reported that as of 11:17 PM yesterday evening, Italo Balbo - formerly Marshal of the Air Force and a close ally of Benito Mussolini - has assumed emergency powers and the office of Prime Minister of [ITA.GetNameDef]. Details coming out of Rome are currently scarce, but the few leaked reports this newspaper has been able to obtain suggest that 'Il Duce' has been exiled to the island of Elba with a small household guard -- there, it is believed, he is beyond the reach of his allies on the continent.\n\nExactly what Marshal Balbo's plans for expanding the [ITA.GetAdjective] armed forces are is unclear, though his love of all things aeronautical and general distrust of [GER.GetNameDef] are common knowledge." 
+
+newsevent.69.a:0 "Ayyyy, it's-a-Balbo!" 
+
+newsevent.70.t:0 "[SOV.GetNameDef] Embraces Socialism in One Country" 
+
+newsevent.70.d:0 "\nVyacheslav Molotov, the [SOV.GetAdjective] Minister of Foreign Affairs, has today announced that henceforth [SOV.GetNameDef] shall pursue a policy of Socialism in One Country. Molotov has only recently been confirmed in his post by [SOV.GetLeader], but the two have long been in agreement that the future of Russia's experiment with communism can best be ensured by closing the borders and beginning large-scale industrial and military projects like those of the recent Five Year Plan.\n\nThough many observers in the West remain skeptical of [SOV.GetAdjective] ambitions both at home and abroad, the general consensus seems to be that Marshal Stalin's idea of a defensive, inward-looking USSR is the lesser of two evils." 
+
+newsevent.70.a:0 "So long as it remains that way." 
+
+newsevent.71.t:0 "[SOV.GetNameDef] Embraces Permanent Revolution" 
+
+newsevent.71.d:0 "\nChristian Rakovsky, the [SOV.GetAdjective] Minister of Foreign Affairs, has today announced that henceforth [SOV.GetNameDef] shall pursue a policy of Permanent Revolution. Rakovsky has only recently been confirmed in his post by [SOV.GetLeader], but the two have long been in agreement that the future of Russia's experiment with communism can best be ensured by fomenting and supporting workers' uprisings worldwide.\n\nThough many observers in the West have until now been skeptical of [SOV.GetAdjective] ambitions both at home and abroad, today's announcement presents a level of escalation not yet seen; the threat of [SOV.GetAdjective] political and military intervention across the globe is now very real indeed." 
+
+newsevent.71.a:0 "We must prepare for what is to come." 
+
+newsevent.72.t:0 "[USA.GetNameDef] Launches Operation 'Paperclip'" 
+
+newsevent.72.d:0 "\n[Root.GetAdjective] military intelligence has today published information regarding the [USA.GetAdjective] government's policy of extracting key scientific and technological personnel from across war-torn Europe, and primarily [GER.GetNameDef]. Information on this particular program is scarce owing to its obviously classified nature, but it is believed the primary targets are top-level [GER.GetAdjective] engineers and rocket scientists such as Wernher and Magnus von Braun.\n\nThough still very much a mystery, it is assumed that Operation 'Paperclip' is the brainchild of the Office of Strategic Services or a similar governmental body, and is likely related to the much-rumored Operation 'Overcast'." 
+
+newsevent.72.a:0 "This is the future of warfare." 

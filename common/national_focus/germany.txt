@@ -658,8 +658,8 @@ focus_tree = {
 				upgrades = {
 					plane_gun_upgrade = 6
 					plane_range_upgrade = 5
-					plane_engine_upgrade = 20
-					plane_reliability_upgrade = 14
+					plane_engine_upgrade = 10
+					plane_reliability_upgrade = 12
 				}
 			}
 			add_ideas = GER_air_innovations_2_idea
@@ -1618,6 +1618,7 @@ focus_tree = {
 				NOT = { controls_state = 85 }
 				NOT = { controls_state = 10 }	
 			}
+			POL = { has_capitulated = yes }
 			OR = { 
 				has_war_with = ENG
 				NOT = {country_exists = ENG}

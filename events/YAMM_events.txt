@@ -76,6 +76,8 @@ news_event = {
 	desc = yamm.31.desc
 	picture = GFX_news_event_do_not_give_up
 	
+	fire_only_once = yes
+	
 	trigger = {
 		tag = FRA
 		FRA = { has_capitulated = yes }
@@ -140,7 +142,7 @@ country_event = {
 	}
 	
 }
-
+# Danish Islands transfer
 country_event = {
 	id = yamm.35
 	title = yamm.35.t
@@ -162,16 +164,19 @@ country_event = {
 	option = {
 		name = yamm.35.a
 		USA = { 
-			transfer_state = 100 
-			transfer_state = 101 
+			transfer_state = 101
+			transfer_state = 337
+		}
+		ICE = {
+			transfer_state = 100
 		}
 		USA = {
-			transfer_state = 337
+			puppet = ICE
 		}
 		news_event = { hours = 6 id = yamm.36 }
 	}
 }
-
+# News Event Danish Islands transfer
 news_event = {
 	id = yamm.36
 	title = yamm.36.t

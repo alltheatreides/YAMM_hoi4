@@ -1278,7 +1278,7 @@ focus_tree = {
 	 	available = {
 	 		GER = {	has_war = yes }
 		}
-		bypass = { is_in_faction_with = GER }
+		# bypass = { is_in_faction_with = GER }
 	 	prerequisite = { focus = SPR_fas2 }
 		x = 18
 		y = 4
@@ -1306,7 +1306,7 @@ focus_tree = {
 				can_send_volunteers = yes
 			}
 			
-			# GER = {
+			# SPR = {
 				# country_event = { 
 					# days = 1 
 					# id = spainf.27

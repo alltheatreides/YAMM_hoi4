@@ -904,42 +904,43 @@ country_event = {
 		ai_chance = { factor = 100 }
 		
 		hidden_effect = {
-			ENG = { 
-			transfer_state = 927
-			}
-			ENG = { 
-			transfer_state = 669
-			}
-			ENG = { 
-			transfer_state = 668
-			}
-			ENG = { 
-			transfer_state = 667
-			}
-			ENG = { 
-			transfer_state = 334
-			}
-			ENG = { 
-			transfer_state = 335
-			}
-			ENG = { 
-			transfer_state = 672
-			}
-			ENG = { 
-			transfer_state = 673
-			}
-			ENG = { 
-			transfer_state = 738
-			}
-			ENG = { 
-			transfer_state = 766
-			}
-			ENG = { 
-			transfer_state = 767
-			}
-			ENG = { 
-			transfer_state = 721
-			}
+			puppet = INS
+			# ENG = { 
+			# transfer_state = 927
+			# }
+			# ENG = { 
+			# transfer_state = 669
+			# }
+			# ENG = { 
+			# transfer_state = 668
+			# }
+			# ENG = { 
+			# transfer_state = 667
+			# }
+			# ENG = { 
+			# transfer_state = 334
+			# }
+			# ENG = { 
+			# transfer_state = 335
+			# }
+			# ENG = { 
+			# transfer_state = 672
+			# }
+			# ENG = { 
+			# transfer_state = 673
+			# }
+			# ENG = { 
+			# transfer_state = 738
+			# }
+			# ENG = { 
+			# transfer_state = 766
+			# }
+			# ENG = { 
+			# transfer_state = 767
+			# }
+			# ENG = { 
+			# transfer_state = 721
+			# }
 		}
 			set_country_flag = east_indies_II
 		

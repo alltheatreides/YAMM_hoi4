@@ -1,6 +1,7 @@
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 NDefines.NCountry.SUPPLY_BASE_MULT = 0
+NDefines.NCountry.SUPPLY_CONVOY_FACTOR = 2
 NDefines.NTechnology.BASE_TECH_COST = 110
 NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0.05
 NDefines.NDiplomacy.BASE_STAGE_COUP_TOTAL_COST = 2000000
@@ -63,7 +64,7 @@ NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 0.8								-- How much efficien
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 3							-- Convoy starts regaining it's efficiency after X days without any convoys being sink.
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.05
 NDefines.NNavy.EXPERIENCE_FACTOR_CARRIER_GAIN = 0.01
-NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.95
+-- NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.95
 NDefines.NNavy.NAVAL_COMBAT_RESULT_TIMEOUT_YEARS = 1								-- after that many years, we clear the naval combat results, so they don't get stuck forever in the memory.
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 5                                 		-- base speed of units on water being transported
 NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.75

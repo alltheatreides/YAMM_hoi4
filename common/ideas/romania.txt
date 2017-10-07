@@ -970,21 +970,21 @@ ideas = {
 			}
 		}
 
-		ROM_gheorghe_mihail = {
+		# ROM_gheorghe_mihail = {
 			
 			
-			allowed = {
-				original_tag = ROM
-			}
+			# allowed = {
+				# original_tag = ROM
+			# }
 			
-			picture = generic_army_europe_3
+			# picture = generic_army_europe_3
 			
-			traits = { army_commando_2 }
+			# traits = { army_commando_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+			# ai_will_do = {
+				# factor = 1
+			# }
+		# }
 
 		ROM_paul_teodorescu = {
 			

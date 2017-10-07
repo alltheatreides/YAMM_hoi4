@@ -604,6 +604,12 @@ country_event = {
 			transfer_state = 730
 			set_capital = 26
 			add_ideas = idea_EFR_neutrality
+			hidden_effect = {
+				add_resource = { type = aluminium amount = 72 state = 52 }
+				# add_resource = { type = aluminium amount = -72 state = 20 }
+				add_resource = { type = steel amount = 56 state = 158 }
+				# add_resource = { type = steel amount = -56 state = 32 }
+			}
 			diplomatic_relation = { country = ENG relation = non_aggression_pact }
 			diplomatic_relation = { country = USA relation = non_aggression_pact }
 			diplomatic_relation = { country = PHI relation = non_aggression_pact }
@@ -615,6 +621,7 @@ country_event = {
 			diplomatic_relation = { country = NZL relation = non_aggression_pact }
 			diplomatic_relation = { country = BRA relation = non_aggression_pact }
 			diplomatic_relation = { country = GER relation = non_aggression_pact }
+			diplomatic_relation = { country = ITA relation = non_aggression_pact }
 			create_corps_commander = {
 				name = "Henri Dentz"
 				picture = "Portrait_France_Generic_land_3.dds" ##looks like the generic portrait is really him

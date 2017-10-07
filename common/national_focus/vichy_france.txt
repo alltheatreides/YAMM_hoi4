@@ -20,7 +20,11 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-
+		
+		ai_will_do = {
+			factor = 200			
+		}
+		
 		completion_reward = {
 			add_political_power = 120
 			hidden_effect  {
@@ -51,7 +55,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 10
 		}
 	}
 
@@ -67,7 +71,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 2
+			factor = 5
 		}
 
 		bypass = {
@@ -189,7 +193,7 @@ focus_tree = {
 
 		
 		ai_will_do = {
-			factor = 2
+			factor = 50
 		}
 
 		completion_reward = {
@@ -226,7 +230,7 @@ focus_tree = {
 
 		
 		ai_will_do = {
-			factor = 2
+			factor = 50
 		}
 
 		completion_reward = {
