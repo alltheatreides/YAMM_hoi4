@@ -443,7 +443,7 @@ sub_units = {
 		supply_consumption = 0.11
 		
 		#Stats mod
-		breakthrough = 0.1
+		breakthrough = 0.15
 	
 		# this is what moves us and sets speed
 		transport = motorized_equipment
@@ -518,6 +518,9 @@ sub_units = {
 		training_time = 120
 		suppression = 1
 		weight = 1
+		
+		#Stats mod
+		breakthrough = 0.20
 		
 		supply_consumption = 0.18
 		

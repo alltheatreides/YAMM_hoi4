@@ -14,8 +14,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				enemy_justify_war_goal_time = 5.0
-				join_faction_tension = 2.00
+				enemy_justify_war_goal_time = 10.0
+				justify_war_goal_time = 0.9
+				join_faction_tension = 1.0
 				lend_lease_tension = 2
 				send_volunteers_tension = 0.20
 				guarantee_tension = 2.0

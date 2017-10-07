@@ -191,7 +191,7 @@ create_country_leader = {
 	}
 }
 
-set_convoys = 100
+set_convoys = 1000
 set_national_unity = 0.9
 
 1939.1.1 = {

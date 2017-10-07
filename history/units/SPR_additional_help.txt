@@ -28,11 +28,11 @@ units = {
 		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "ITA" } }
 	}
-	division = {
-		name = "Segunda División Blindada"
-		location = 7183  # Sevilla
-		division_template = "División Blindada"
-		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
-	}
+	# division = {
+		# name = "Segunda División Blindada"
+		# location = 7183  # Sevilla
+		# division_template = "División Blindada"
+		# start_experience_factor = 0.3
+		# force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+	# }
 }

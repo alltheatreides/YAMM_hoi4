@@ -646,6 +646,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		
+		available = {
+			NOT = {
+				SPR = { has_civil_war = yes }
+			}
+		}
 
 		available_if_capitulated = yes
 

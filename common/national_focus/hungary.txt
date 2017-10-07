@@ -4008,6 +4008,7 @@ focus_tree = {
 
 		available = {
 			is_in_faction = yes
+			threat > 10
 		}
 
 		bypass = {
@@ -4297,6 +4298,7 @@ focus_tree = {
 
 		available = {
 			is_in_faction = yes
+			threat > 10
 		}
 
 		bypass = {

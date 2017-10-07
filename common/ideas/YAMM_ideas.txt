@@ -36,8 +36,8 @@ ideas = {
 			
 
 			modifier = {
-				join_faction_tension = 4
-				justify_war_goal_time = 5.0
+				join_faction_tension = 0.9
+				justify_war_goal_time = 10.0
 				enemy_justify_war_goal_time = 5.0
 				army_core_defence_factor = 0.2
 			}

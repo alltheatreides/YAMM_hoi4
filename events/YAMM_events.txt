@@ -38,6 +38,16 @@ country_event = {
 			}
 			cost_factor = 0
 		}
+		set_technology = { basic_heavy_tank = 1 }
+		create_equipment_variant = {
+			name = "Valentine Mk.I LP"
+			type = heavy_tank_equipment_1
+			parent_version = 0
+			upgrades = {
+				tank_engine_upgrade = 15
+				tank_reliability_upgrade = 3
+			}
+		}
 	}
 }
 
@@ -189,5 +199,110 @@ news_event = {
 	
 	option = {
 		name = yamm.36.a
+	}
+}
+
+
+# Fuck paradox math
+country_event = {
+	id = yamm.37
+	title = yamm.37.t
+	desc = yamm.37.desc
+	picture = GFX_report_event_plan_vert
+	
+	hidden = yes 
+	
+	trigger = {
+		threat > 0.90
+		threat < 0.95
+	}
+	
+	immediate = {
+		add_threat = -5
+	}
+	
+	option = {
+		name = yamm.32.a
+		
+	}
+}
+
+# Fuck paradox math
+country_event = {
+	id = yamm.38
+	title = yamm.38.t
+	desc = yamm.38.desc
+	picture = GFX_report_event_plan_vert
+	
+	hidden = yes 
+	
+	trigger = {
+		threat > 0.85
+		threat < 0.90
+	}
+	
+	immediate = {
+		add_threat = -4
+	}
+	
+	option = {
+		name = yamm.32.a
+		
+	}
+}
+
+# Fuck paradox math
+country_event = {
+	id = yamm.39
+	title = yamm.39.t
+	desc = yamm.39.desc
+	picture = GFX_report_event_plan_vert
+	
+	hidden = yes 
+	
+	trigger = {
+		threat > 0.95
+	}
+	
+	immediate = {
+		add_threat = -10
+	}
+	
+	option = {
+		name = yamm.32.a
+		
+	}
+}
+
+# Fuck paradox math
+country_event = {
+	id = yamm.40
+	title = yamm.40.t
+	desc = yamm.40.desc
+	picture = GFX_report_event_plan_vert
+	
+	hidden = yes 
+	
+	trigger = {
+		OR = {
+			threat = 0.90
+			threat = 0.95
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { threat = 0.90 }
+			add_threat = -5
+		}
+		if = {
+			limit = { threat = 0.95 }
+			add_threat = -10
+		}
+	}
+	
+	option = {
+		name = yamm.32.a
+		
 	}
 }

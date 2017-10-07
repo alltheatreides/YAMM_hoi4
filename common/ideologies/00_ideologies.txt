@@ -39,7 +39,7 @@ ideologies = {
 		faction_impact_on_world_tension = -0.1
 		
 		modifiers = {
-			generate_wargoal_tension = 1.00
+			generate_wargoal_tension = 0.8
 			join_faction_tension = 0.80
 			lend_lease_tension = 0.50
 			send_volunteers_tension = 0.50
@@ -144,7 +144,7 @@ ideologies = {
 		
 		modifiers = {
 			justify_war_goal_when_in_major_war_time = -0.80
-			join_faction_tension = 0.80
+			join_faction_tension = 0.4
 		}
 
 		ai_fascist = yes # uses the fascist AI behaviour

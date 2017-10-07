@@ -207,7 +207,7 @@ improved_light_tank = 1 		# WM addition
 }
 
 
-set_convoys = 220
+set_convoys = 1220
 set_national_unity = 0.55
 
 set_politics = {
