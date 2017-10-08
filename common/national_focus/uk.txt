@@ -1818,6 +1818,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_national_unity = 0.1
+			add_political_power = 75
 		}
 	}
 	focus = {

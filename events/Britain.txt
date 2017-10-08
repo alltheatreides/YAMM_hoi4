@@ -22,15 +22,21 @@ country_event = {
 		}
 		add_tech_bonus = {
 			name = tizard_mission_focus
-			uses = 1
 			bonus = 0.5
-			technology = fighter2
+			uses = 1
+			category = radar_tech
 		}
 		add_tech_bonus = {
 			name = tizard_mission_focus
 			bonus = 0.5
-			uses = 2
-			category = radar_tech
+			uses = 1
+			category = jet_technology
+		}
+		add_tech_bonus = {
+			name = tizard_mission_focus
+			bonus = 0.5
+			uses = 1
+			category = nuclear
 		}
 	}
 	

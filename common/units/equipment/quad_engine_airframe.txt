@@ -24,7 +24,7 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 0.5
 		reliability = 0.8
 
 		# Air vs Navy - high damage / low hit chance / hard to hurt
@@ -68,7 +68,7 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 0.5
 		reliability = 0.8
 
 		# Air vs Navy - high damage / low hit chance / hard to hurt
@@ -98,7 +98,7 @@ equipments = {
 		air_agility = 5
 		air_attack = 50
 		air_defence = 30
-		air_bombing = 30
+		air_bombing = 15
 		
 		# build_cost_ic = 36
 	}
@@ -116,7 +116,7 @@ equipments = {
 		air_agility = 7
 		air_attack = 100
 		air_defence = 45
-		air_bombing = 45
+		air_bombing = 22.5
 		
 		build_cost_ic = 62
 		resources = {
@@ -139,7 +139,7 @@ equipments = {
 		air_agility = 10
 		air_attack = 150
 		air_defence = 60
-		air_bombing = 60
+		air_bombing = 30
 		
 		build_cost_ic = 64
 		resources = {
@@ -161,7 +161,7 @@ equipments = {
 		air_agility = 14
 		air_attack = 100
 		air_defence = 54
-		air_bombing = 64
+		air_bombing = 32
 	}
 
 	# Transport plane ##########################

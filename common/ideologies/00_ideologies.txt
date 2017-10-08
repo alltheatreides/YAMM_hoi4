@@ -40,7 +40,7 @@ ideologies = {
 		
 		modifiers = {
 			generate_wargoal_tension = 0.8
-			join_faction_tension = 0.80
+			join_faction_tension = 0.60
 			lend_lease_tension = 0.50
 			send_volunteers_tension = 0.50
 			guarantee_tension = 0.25

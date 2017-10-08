@@ -1,0 +1,1896 @@
+﻿add_namespace = newsevent
+
+# Cable Street Trigger (HIDDEN)
+news_event = {
+	id = newsevent.1
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1936.10.1
+		date < 1936.11.1
+		has_start_date < 1936.01.02
+		ENG = {
+			exists = yes
+			has_war = no
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			70 = { ENG = { news_event = { id = newsevent.2 } } }
+			# 30 = { ENG = { news_event = { id = newsevent.3 } } }
+		}
+	}
+	
+	option = {
+		name = newsevent.1.a
+	}
+}
+
+# The Battle of Cable Street
+news_event = {
+	id = newsevent.2
+	title = newsevent.2.t
+	desc = newsevent.2.d
+	picture = GFX_news_event_cable_street
+	
+	#major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = newsevent.2.a
+	}
+}
+
+# The Cable Street Massacre
+news_event = {
+	id = newsevent.3
+	title = newsevent.3.t
+	desc = newsevent.3.d
+	picture = GFX_news_event_cable_street_alt
+	
+	#major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = cable_street
+	}
+	
+	option = {
+		name = newsevent.3.a
+	}
+}
+
+# Kaiser Wilhelm II Dies
+news_event = {
+	id = newsevent.4
+	title = newsevent.4.t
+	desc = newsevent.4.d
+	picture = GFX_news_event_kaiser_death
+	
+	#major = yes
+	
+	trigger = {
+		date > 1941.6.1
+		date < 1941.7.1
+		NOT = { has_country_flag = kaiser_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.4.a
+		set_country_flag = kaiser_dead
+	}
+}
+
+# General Ludendorff Dies
+news_event = {
+	id = newsevent.5
+	title = newsevent.5.t
+	desc = newsevent.5.d
+	picture = GFX_news_event_ludendorff_death
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = GER
+			is_subject_of = GER
+		}
+		date > 1937.12.1
+		date < 1938.1.1
+		has_start_date < 1936.01.02
+		NOT = { has_country_flag = ludendorff_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.5.a
+		set_country_flag = ludendorff_dead
+	}
+}
+
+# Lloyd George Dies
+news_event = {
+	id = newsevent.6
+	title = newsevent.6.t
+	desc = newsevent.6.d
+	picture = GFX_news_event_lloyd_george_death
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = ENG
+			is_subject_of = ENG
+		}
+		date > 1945.3.1
+		date < 1945.4.1
+		NOT = { has_country_flag = lloyd_george_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.6.a
+		set_country_flag = lloyd_george_dead
+	}
+}
+
+# Ramsay MacDonald Dies
+news_event = {
+	id = newsevent.7
+	title = newsevent.7.t
+	desc = newsevent.7.d
+	picture = GFX_news_event_ramsay_macdonald_death
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = ENG
+			is_subject_of = ENG
+		}
+		date > 1937.11.1
+		date < 1937.12.1
+		has_start_date < 1936.01.02
+		NOT = { has_country_flag = ramsay_macdonald_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.7.a
+		set_country_flag = ramsay_macdonald_dead
+	}
+}
+
+# Richard Hauptmann Executed
+news_event = {
+	id = newsevent.8
+	title = newsevent.8.t
+	desc = newsevent.8.d
+	picture = GFX_news_event_richard_hauptmann_death
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = USA
+			is_subject_of = USA
+		}
+		date > 1936.4.1
+		date < 1936.5.1
+		has_start_date < 1936.01.02
+		NOT = { has_country_flag = richard_hauptmann_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.8.a
+		set_country_flag = richard_hauptmann_dead
+	}
+}
+
+# John D. Rockefeller Dies
+news_event = {
+	id = newsevent.9
+	title = newsevent.9.t
+	desc = newsevent.9.d
+	picture = GFX_news_event_rockefeller_death
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = USA
+			is_subject_of = USA
+		}
+		date > 1937.5.1
+		date < 1937.6.1
+		has_start_date < 1936.01.02
+		NOT = { has_country_flag = rockefeller_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.9.a
+		set_country_flag = rockefeller_dead
+	}
+}
+
+# Gabriele D'Annunzio Dies
+news_event = {
+	id = newsevent.10
+	title = newsevent.10.t
+	desc = newsevent.10.d
+	picture = GFX_news_event_gabriele_annunzio_death
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = ITA
+			is_subject_of = ITA
+			AND = {
+				capital_scope = { is_on_continent = europe }
+				has_government = fascism
+			}
+		}
+		date > 1938.3.1
+		date < 1938.4.1
+		has_start_date < 1936.01.02
+		NOT = { has_country_flag = gabriele_annunzio_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.10.a
+		set_country_flag = gabriele_annunzio_dead
+	}
+}
+
+# Corneliu Codreanu Killed Fleeing Custody
+news_event = {
+	id = newsevent.11
+	title = newsevent.11.t
+	desc = newsevent.11.d
+	picture = GFX_news_event_codreanu_death
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = ROM
+			is_subject_of = ROM
+			AND = {
+				capital_scope = { is_on_continent = europe }
+				has_government = fascism
+			}
+		}
+		date > 1938.11.1
+		date < 1938.12.1
+		has_start_date < 1936.01.02
+		NOT = { has_country_flag = codreanu_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.11.a
+		set_country_flag = codreanu_dead
+	}
+}
+
+# Nadezhda Krupskaya Dies
+news_event = {
+	id = newsevent.12
+	title = newsevent.12.t
+	desc = newsevent.12.d
+	picture = GFX_news_event_nadezhda_krupskaya_death
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = SOV
+			is_subject_of = SOV
+			has_government = communism
+		}
+		date > 1939.2.1
+		date < 1939.3.1
+		has_start_date < 1936.01.02
+		NOT = { has_country_flag = nadezhda_krupskaya_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.12.a
+		set_country_flag = nadezhda_krupskaya_dead
+	}
+}
+
+# Pope Pius XI Dies
+news_event = {
+	id = newsevent.13
+	title = newsevent.13.t
+	desc = newsevent.13.d
+	picture = GFX_news_event_pope_death
+	
+	#major = yes
+	
+	trigger = {
+		date > 1939.2.1
+		date < 1939.3.1
+		has_start_date < 1936.01.02
+		NOT = { has_country_flag = pope_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.13.a
+		set_country_flag = pope_dead
+	}
+}
+
+# Italo Balbo Trigger (HIDDEN)
+news_event = {
+	id = newsevent.14
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1940.6.1
+		date < 1942.6.1
+		ITA = {
+			exists = yes
+			has_war_with = ENG
+			has_government = fascism
+			controls_state = 451
+			has_tech = naval_bomber1
+			NOT = {
+				OR = {
+					has_country_flag = balbo_duce
+					has_country_flag = balbo_saves_the_world
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		random_list = {
+			60 = { ITA = { news_event = { id = newsevent.15 } } }
+			# 40 = { ITA = { news_event = { id = newsevent.16 } } }
+		}
+	}
+	
+	option = {
+		name = newsevent.14.a
+	}
+}
+
+# The Strange Death of Italo Balbo
+news_event = {
+	id = newsevent.15
+	title = newsevent.15.t
+	desc = newsevent.15.d
+	picture = GFX_news_event_italo_balbo_death
+	
+	#major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = balbo_dead
+	}
+	
+	option = {
+		name = newsevent.15.a
+		if = {
+			limit = { original_tag = ITA }
+			remove_unit_leader = 103
+		}
+	}
+}
+
+# Air Marshal Balbo Narrowly Escapes Death
+news_event = {
+	id = newsevent.16
+	title = newsevent.16.t
+	desc = newsevent.16.d
+	picture = GFX_news_event_italo_balbo_death_alt
+	
+	#major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = balbo_alive
+	}
+	
+	option = {
+		name = newsevent.16.a
+	}
+}
+
+# Sir Austen Chamberlain Dies
+news_event = {
+	id = newsevent.17
+	title = newsevent.17.t
+	desc = newsevent.17.d
+	picture = GFX_news_event_austen_chamberlain_death
+	
+	#major = yes
+	
+	trigger = {
+		original_tag = ENG
+		date > 1937.3.1
+		date < 1937.4.1
+		has_start_date < 1936.01.02
+		NOT = { has_country_flag = austen_chamberlain_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.17.a
+		set_country_flag = austen_chamberlain_dead
+	}
+}
+
+# Strasserist Coup In [GER.GetNameDef]
+news_event = {
+	id = newsevent.18
+	title = newsevent.18.t
+	desc = newsevent.18.d
+	picture = GFX_news_event_otto_strasser
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = GER }
+		NOT = { has_country_flag = otto_power }
+		GER = { has_country_flag = strasserist_coup }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.18.a
+		set_country_flag = otto_power
+	}
+}
+
+# Military Coup In [GER.GetNameDef]
+news_event = {
+	id = newsevent.19
+	title = newsevent.19.t
+	desc = newsevent.19.d
+	picture = GFX_news_event_mackensen
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = GER }
+		NOT = { has_country_flag = mackensen_coup }
+		GER = { has_country_flag = nazis_overthrown }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.19.a
+		set_country_flag = mackensen_coup
+	}
+}
+
+# Adolf Hitler Commits Suicide
+news_event = {
+	id = newsevent.20
+	title = newsevent.20.t
+	desc = newsevent.20.d
+	picture = GFX_news_event_hitler_death
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = GER }
+		NOT = { has_country_flag = adolf_suicide }
+		GER = { has_country_flag = hitler_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.20.a
+		set_country_flag = adolf_suicide
+	}
+}
+
+# Trotskyist Coup In [PRC.GetNameDef]
+news_event = {
+	id = newsevent.21
+	title = newsevent.21.t
+	desc = newsevent.21.d
+	picture = GFX_news_event_chen_duxiu
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = CHI }
+		NOT = { original_tag = PRC }
+		NOT = { original_tag = SOV }
+		NOT = { has_country_flag = mao_gone }
+		PRC = { has_country_flag = chen_returns }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.21.a
+		set_country_flag = mao_gone
+	}
+}
+
+# The Treaty of Beijing
+news_event = {
+	id = newsevent.22
+	title = newsevent.22.t
+	desc = newsevent.22.d
+	picture = GFX_news_event_beijing_treaty
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = CHI }
+		NOT = { original_tag = PRC }
+		NOT = { original_tag = JAP }
+		NOT = { has_country_flag = chi_jap_peace }
+		has_global_flag = treaty_of_beijing
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.22.a
+		set_country_flag = chi_jap_peace
+	}
+}
+
+# Corporatist Coup In Russia
+news_event = {
+	id = newsevent.23
+	title = newsevent.23.t
+	desc = newsevent.23.d
+	picture = GFX_news_event_corporatism
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = SOV }
+		NOT = { has_country_flag = solidarist_coup }
+		SOV = { has_country_flag = corporatist_coup }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.23.a
+		set_country_flag = solidarist_coup
+	}
+}
+
+# [FRA.GetNameDef] Annexes [BEL.GetNameDef]
+news_event = {
+	id = newsevent.24
+	title = newsevent.24.t
+	desc = newsevent.24.d
+	picture = GFX_news_event_belgium_annexed
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = FRA }
+		NOT = { original_tag = BEL }
+		NOT = { has_country_flag = fra_bel_puppet }
+		has_global_flag = belgium_puppet
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.24.a
+		set_country_flag = fra_bel_puppet
+	}
+}
+
+# The Sino-Soviet Pact
+news_event = {
+	id = newsevent.25
+	title = newsevent.25.t
+	desc = newsevent.25.d
+	picture = GFX_news_event_sino_soviet_pact
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = CHI }
+		NOT = { original_tag = PRC }
+		NOT = { original_tag = SOV }
+		NOT = { has_country_flag = chi_sov_pact }
+		has_global_flag = sino_soviet_pact
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.25.a
+		set_country_flag = chi_sov_pact
+	}
+}
+
+# World Revolution!
+news_event = {
+	id = newsevent.26
+	title = newsevent.26.t
+	desc = newsevent.26.d
+	picture = GFX_news_event_world_revolution
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = SOV }
+		NOT = { has_government = communism }
+		NOT = { has_country_flag = world_rev_happened }
+		has_global_flag = world_revolution
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.26.a
+		set_country_flag = world_rev_happened
+	}
+}
+
+# José Antonio Primo de Rivera Executed
+news_event = {
+	id = newsevent.27
+	title = newsevent.27.t
+	desc = newsevent.27.d
+	picture = GFX_news_event_de_rivera_death
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = SPR
+			is_subject_of = SPR
+			original_tag = POR
+			is_subject_of = POR
+			AND = {
+				capital_scope = { is_on_continent = europe }
+				has_government = fascism
+			}
+		}
+		date > 1936.11.1
+		date < 1936.12.1
+		has_start_date < 1936.01.02
+		has_global_flag = spanish_civil_war
+		NOT = { has_country_flag = de_rivera_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.27.a
+		set_country_flag = de_rivera_dead
+	}
+}
+
+# Duke of Kent Trigger (HIDDEN)
+news_event = {
+	id = newsevent.28
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1942.8.1
+		date < 1944.8.1
+		ENG = {
+			exists = yes
+			has_war_with = GER
+			has_government = democratic
+		}
+		OR = {
+			ICE = { controls_state = 100 }
+			any_country = {
+			is_in_faction_with = ENG
+			controls_state = 100
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		random_list = {
+			70 = { ENG = { news_event = { id = newsevent.29 } } }
+			# 30 = { ENG = { news_event = { id = newsevent.30 } } }
+		}
+	}
+	
+	option = {
+		name = newsevent.28.a
+	}
+}
+
+# The Duke of Kent Killed In Air Crash
+news_event = {
+	id = newsevent.29
+	title = newsevent.29.t
+	desc = newsevent.29.d
+	picture = GFX_news_event_duke_of_kent_death
+	
+	#major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = newsevent.29.a
+	}
+}
+
+# The Duke of Kent Rescued At Sea
+news_event = {
+	id = newsevent.30
+	title = newsevent.30.t
+	desc = newsevent.30.d
+	picture = GFX_news_event_duke_of_kent_death_alt
+	
+	#major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = newsevent.30.a
+	}
+}
+
+# Benito Mussolini Removed From Office
+news_event = {
+	id = newsevent.31
+	title = newsevent.31.t
+	desc = newsevent.31.d
+	picture = GFX_news_event_pietro_badoglio
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = ITA }
+		NOT = { has_country_flag = mussolini_gone }
+		ITA = { has_country_flag = fall_of_mussolini }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.31.a
+		set_country_flag = mussolini_gone
+	}
+}
+
+# Fascist Government Overthrown In [ITA.GetNameDef]
+news_event = {
+	id = newsevent.32
+	title = newsevent.32.t
+	desc = { text = newsevent.32.d_balbo		trigger = { ITA = { has_country_flag = balbo_duce } } }
+	desc = { text = newsevent.32.d_badoglio		trigger = { ITA = { has_country_flag = badoglio_duce } } }
+	desc = { text = newsevent.32.d_de_bono		trigger = { ITA = { has_country_flag = de_bono_duce } } }
+	picture = GFX_news_event_victor_emmanuel
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = ITA }
+		NOT = { has_country_flag = fascists_gone }
+		ITA = { has_country_flag = king_takes_control }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.32.a
+		set_country_flag = fascists_gone
+	}
+}
+
+# [GER.GetNameDef] Destroys Maginot Line
+news_event = {
+	id = newsevent.33
+	title = newsevent.33.t
+	desc = newsevent.33.d
+	picture = GFX_news_event_maginot_destroyed
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = FRA }
+		NOT = { original_tag = GER }
+		NOT = { has_country_flag = maginot_gone }
+		has_global_flag = maginot_line_destroyed
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.33.a
+		set_country_flag = maginot_gone
+	}
+}
+
+# Sir Oswald Mosley Flees London
+news_event = {
+	id = newsevent.34
+	title = newsevent.34.t
+	desc = newsevent.34.d
+	picture = GFX_news_event_oswald_mosley
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = ENG }
+		NOT = { has_country_flag = mosley_goes }
+		ENG = { has_country_flag = flight_of_mosley }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.34.a
+		set_country_flag = mosley_goes
+	}
+}
+
+# King Edward VIII Abdicates
+news_event = {
+	id = newsevent.35
+	title = newsevent.35.t
+	desc = newsevent.35.d
+	picture = GFX_news_event_king_abdicates
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = ENG }
+		NOT = { has_country_flag = ted_goes }
+		ENG = { has_country_flag = king_abdicates }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.35.a
+		set_country_flag = ted_goes
+	}
+}
+
+# King Edward VIII Marries American Divorcée
+news_event = {
+	id = newsevent.36
+	title = newsevent.36.t
+	desc = newsevent.36.d
+	picture = GFX_news_event_king_stays
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = ENG }
+		NOT = { has_country_flag = ted_stays }
+		ENG = { has_country_flag = king_stays }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.36.a
+		set_country_flag = ted_stays
+	}
+}
+
+# The Hoover Dam Is Completed
+news_event = {
+	id = newsevent.37
+	title = newsevent.37.t
+	desc = newsevent.37.d
+	picture = GFX_news_event_hoover_dam
+	
+	#major = yes
+
+	trigger = {
+		has_start_date < 1936.01.02
+		NOT = { original_tag = USA }
+		NOT = { has_country_flag = hoover_dam }
+		USA = { has_completed_focus = USA_finish_hoover_dam }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.37.a
+		set_country_flag = hoover_dam
+	}
+}
+
+# King Edward Trigger (HIDDEN)
+news_event = {
+	id = newsevent.38
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1936.12.1
+		date < 1937.1.1
+		has_start_date < 1936.01.02
+		ENG = {
+			exists = yes
+			has_country_flag = ENG_king_died
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	immediate = {
+		random_list = {
+			80 = { ENG = { country_event = { id = britain.17 } } }
+			20 = { ENG = { country_event = { id = leaderevent.59 } } }
+		}
+	}
+	
+	option = {
+		name = newsevent.38.a
+	}
+}
+
+# Mount Rushmore Completed
+news_event = {
+	id = newsevent.39
+	title = newsevent.39.t
+	desc = newsevent.39.d
+	picture = GFX_news_event_mount_rushmore
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = USA
+			is_subject_of = USA
+		}
+		date > 1941.10.1
+		date < 1941.11.1
+		NOT = { has_country_flag = mount_rushmore }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.39.a
+		set_country_flag = mount_rushmore
+	}
+}
+
+# Plane Flies Into Empire State Building
+news_event = {
+	id = newsevent.40
+	title = newsevent.40.t
+	desc = newsevent.40.d
+	picture = GFX_news_event_empire_state_crash
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = USA
+			is_subject_of = USA
+		}
+		date > 1945.7.1
+		date < 1945.8.1
+		NOT = { has_country_flag = empire_state_crash }
+		USA = { has_tech = tactical_bomber2 }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.40.a
+		set_country_flag = empire_state_crash
+	}
+}
+
+# 1939 New York World's Fair
+news_event = {
+	id = newsevent.41
+	title = newsevent.41.t
+	desc = newsevent.41.d
+	picture = GFX_news_event_worlds_fair
+	
+	#major = yes
+	
+	trigger = {
+		date > 1939.5.1
+		date < 1939.6.1
+		has_start_date < 1936.01.02
+		USA = {
+			exists = yes
+			has_war = no
+		}
+		NOT = { has_country_flag = worlds_fair }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.41.a
+		set_country_flag = worlds_fair
+	}
+}
+
+# [FRA.GetLeader] Forms New Grande Armée
+news_event = {
+	id = newsevent.42
+	title = newsevent.42.t
+	desc = newsevent.42.d
+	picture = GFX_news_event_grand_army
+	
+	#major = yes
+
+	trigger = {
+		NOT = { original_tag = FRA }
+		NOT = { has_country_flag = grande_armee }
+		FRA = { has_completed_focus = FRA_grand_army }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.42.a
+		set_country_flag = grande_armee
+	}
+}
+
+# German Unrestricted Submarine Warfare
+news_event = {
+	id = newsevent.43
+	title = newsevent.43.t
+	desc = newsevent.43.d
+	picture = GFX_news_event_submarine_warfare
+	
+	#major = yes
+
+	trigger = {
+		NOT = { original_tag = GER }
+		NOT = { has_country_flag = unrestricted_submarine_warfare }
+		GER = { has_completed_focus = GER_unrestricted_submarine_warfare }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.43.a
+		set_country_flag = unrestricted_submarine_warfare
+	}
+}
+
+# [GER.GetLeader] Retreats To Alpine Fortress
+news_event = {
+	id = newsevent.44
+	title = newsevent.44.t
+	desc = newsevent.44.d
+	picture = GFX_news_event_alpenfestung
+	
+	#major = yes
+
+	trigger = {
+		NOT = { original_tag = GER }
+		NOT = { has_country_flag = german_national_redoubt }
+		GER = { has_completed_focus = GER_alpenfestung }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.44.a
+		set_country_flag = german_national_redoubt
+	}
+}
+
+# German Heavy Water Refinement
+news_event = {
+	id = newsevent.45
+	title = newsevent.45.t
+	desc = newsevent.45.d
+	picture = GFX_news_event_heavy_water
+	
+	#major = yes
+
+	trigger = {
+		NOT = { original_tag = GER }
+		NOT = { has_country_flag = heavy_water }
+		GER = { has_completed_focus = GER_heavy_water_refinement }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.45.a
+		set_country_flag = heavy_water
+	}
+}
+
+# The Manhattan Project
+news_event = {
+	id = newsevent.46
+	title = newsevent.46.t
+	desc = newsevent.46.d
+	picture = GFX_news_event_manhattan_project
+	
+	#major = yes
+
+	trigger = {
+		NOT = { original_tag = USA }
+		NOT = { has_country_flag = manhattan_project }
+		USA = { has_completed_focus = USA_manhattan_project }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.46.a
+		set_country_flag = manhattan_project
+	}
+}
+
+# [SOV.GetLeader] Launches Operation 'Zet'
+news_event = {
+	id = newsevent.47
+	title = newsevent.47.t
+	desc = newsevent.47.d
+	picture = GFX_news_event_operation_zet
+	
+	#major = yes
+
+	trigger = {
+		NOT = { original_tag = SOV }
+		NOT = { original_tag = CHI }
+		NOT = { original_tag = PRC }
+		NOT = { has_country_flag = zet_launched }
+		SOV = { has_completed_focus = SOV_operation_zet }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.47.a
+		set_country_flag = zet_launched
+	}
+}
+
+# Anglo-Japanese Alliance Renewed
+news_event = {
+	id = newsevent.48
+	title = newsevent.48.t
+	desc = newsevent.48.d
+	picture = GFX_news_event_anglo_japanese_alliance
+	
+	#major = yes
+
+	trigger = {
+		NOT = { original_tag = ENG }
+		NOT = { original_tag = JAP }
+		NOT = { has_country_flag = anglo_japanese_alliance }
+		JAP = {
+			has_completed_focus = join_allies_focus
+			is_in_faction_with = ENG
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.48.a
+		set_country_flag = anglo_japanese_alliance
+	}
+}
+
+# Gaston Billotte Trigger (HIDDEN)
+news_event = {
+	id = newsevent.49
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1940.5.1
+		date < 1942.6.1
+		FRA = {
+			exists = yes
+			has_war_with = GER
+			has_war_together_with = ENG
+			NOT = { has_global_flag = fall_of_france }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		random_list = {
+			60 = { FRA = { news_event = { id = newsevent.50 } } }
+			40 = { FRA = { news_event = { id = newsevent.51 } } }
+		}
+	}
+	
+	option = {
+		name = newsevent.49.a
+	}
+}
+
+# General Billotte Killed In Car Accident
+news_event = {
+	id = newsevent.50
+	title = newsevent.50.t
+	desc = newsevent.50.d
+	picture = GFX_news_event_gaston_billotte_death
+	
+	#major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = billotte_dead
+	}
+	
+	option = {
+		name = newsevent.50.a
+		if = {
+			limit = { original_tag = FRA }
+			remove_unit_leader = 104
+		}
+	}
+}
+
+# General Billotte Narrowly Escapes Death
+news_event = {
+	id = newsevent.51
+	title = newsevent.51.t
+	desc = newsevent.51.d
+	picture = GFX_news_event_gaston_billotte_death_alt
+	
+	#major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = newsevent.51.a
+	}
+}
+
+# Marshal d'Espèrey Dies
+news_event = {
+	id = newsevent.52
+	title = newsevent.52.t
+	desc = newsevent.52.d
+	picture = GFX_news_event_desperate_frankie_death
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = FRA
+			is_subject_of = FRA
+		}
+		date > 1942.7.1
+		date < 1942.8.1
+		NOT = { has_country_flag = desperate_frankie_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.52.a
+		set_country_flag = desperate_frankie_dead
+	}
+}
+
+# The Third Emu War
+news_event = {
+	id = newsevent.53
+	title = newsevent.53.t
+	desc = newsevent.53.d
+	picture = GFX_news_event_emu_war
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = AST }
+		NOT = { has_country_flag = emu_war_over }
+		AST = { has_completed_focus = AST_conclude_the_emu_war }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.53.a
+		set_country_flag = emu_war_over
+	}
+}
+
+# Béla Kun Executed
+news_event = {
+	id = newsevent.54
+	title = newsevent.54.t
+	desc = newsevent.54.d
+	picture = GFX_news_event_bela_kun_executed
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = HUN
+			is_subject_of = HUN
+			AND = {
+				capital_scope = { is_on_continent = europe }
+				has_government = communism
+			}
+		}
+		date > 1938.9.1
+		date < 1939.12.1
+		has_start_date < 1936.01.02
+		NOT = { has_country_flag = bela_kun_executed }
+		SOV = { has_completed_focus = SOV_great_purge }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.54.a
+		set_country_flag = bela_kun_executed
+	}
+}
+
+# Guglielmo Marconi Dies
+news_event = {
+	id = newsevent.55
+	title = newsevent.55.t
+	desc = newsevent.55.d
+	picture = GFX_news_event_marconi_death
+	
+	#major = yes
+	
+	trigger = {
+		date > 1937.7.1
+		date < 1937.8.1
+		NOT = { has_country_flag = marconi_dead }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.55.a
+		set_country_flag = marconi_dead
+	}
+}
+
+# British Expeditionary Force Arrives In France
+news_event = {
+	id = newsevent.56
+	title = newsevent.56.t
+	desc = newsevent.56.d
+	picture = GFX_news_event_bef_france
+	
+	#major = yes
+
+	trigger = {
+		NOT = { original_tag = ENG }
+		NOT = { original_tag = FRA }
+		NOT = { has_country_flag = bef_france }
+		ENG = { has_completed_focus = ENG_establish_BEF }
+		has_global_flag = BEF_sent
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.56.a
+		set_country_flag = bef_france
+	}
+}
+
+# The Port Chicago Disaster
+news_event = {
+	id = newsevent.57
+	title = newsevent.57.t
+	desc = newsevent.57.d
+	picture = GFX_news_event_port_chicago_disaster
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = USA
+			is_subject_of = USA
+		}
+		date > 1944.7.1
+		date < 1944.8.1
+		NOT = { has_country_flag = port_chicago_disaster }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.57.a
+		set_country_flag = port_chicago_disaster
+	}
+}
+
+# Major Military Exercises In [USA.GetNameDef]
+news_event = {
+	id = newsevent.58
+	title = newsevent.58.t
+	desc = newsevent.58.d
+	picture = GFX_news_event_louisiana_maneuvers
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = USA }
+		NOT = { has_country_flag = louisiana_maneuvers }
+		USA = { has_completed_focus = USA_army_maneuvers }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.58.a
+		set_country_flag = louisiana_maneuvers
+	}
+}
+
+# The Treaty of London
+news_event = {
+	id = newsevent.59
+	title = newsevent.59.t
+	desc = newsevent.59.d
+	picture = GFX_news_event_london_treaty
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = ITA }
+		NOT = { original_tag = ETH }
+		NOT = { has_country_flag = eth_ita_peace }
+		has_global_flag = treaty_of_london
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.59.a
+		set_country_flag = eth_ita_peace
+	}
+}
+
+# 'Foo Fighters' Invading The Skies!
+news_event = {
+	id = newsevent.60
+	title = newsevent.60.t
+	desc = newsevent.60.d
+	picture = GFX_news_event_foo_fighters
+	
+	#major = yes
+	
+	trigger = {
+		NOT = {
+			OR = {
+				original_tag = GER
+				is_in_faction_with = GER
+			}
+		}
+		NOT = { has_country_flag = foo_fighters }
+		GER = {
+			exists = yes
+			has_war = yes
+			has_completed_focus = GER_wunderwaffe
+			OR = {
+				has_tech = jet_fighter1
+				has_tech = jet_heavy_fighter1
+				has_tech = jet_tactical_bomber1
+				has_tech = jet_strategic_bomber1
+			}
+			OR = {
+				has_equipment = { jet_fighter_equipment > 9 }
+				has_equipment = { jet_heavy_fighter_equipment > 9 }
+				has_equipment = { jet_tac_bomber_equipment > 9 }
+				has_equipment = { jet_strat_bomber_equipment > 9 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.60.a
+		set_country_flag = foo_fighters
+	}
+}
+
+# Zeppelins Spotted!
+news_event = {
+	id = newsevent.61
+	title = newsevent.61.t
+	desc = newsevent.61.d
+	picture = GFX_news_event_zeppelins
+	
+	#major = yes
+	
+	trigger = {
+		has_war = no
+		NOT = { has_country_flag = zeppelins_spotted }
+		any_country = {
+			has_capitulated = no
+			has_war = no
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+			has_tech = strategic_bomber0
+			has_equipment = { strat_bomber_equipment_0 > 74 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.61.a
+		set_country_flag = zeppelins_spotted
+	}
+}
+
+# German 'Amerikabomber' Program Confirmed
+news_event = {
+	id = newsevent.62
+	title = newsevent.62.t
+	desc = newsevent.62.d
+	picture = GFX_news_event_amerika_bomber
+	
+	#major = yes
+
+	trigger = {
+		NOT = { original_tag = GER }
+		NOT = { has_country_flag = amerika_bomber }
+		GER = {
+			exists = yes
+			has_war_with = USA
+			has_completed_focus = GER_amerika_bomber_focus
+			has_tech = strategic_bomber4
+			has_equipment = { strat_bomber_equipment_4 > 9 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.62.a
+		set_country_flag = amerika_bomber
+	}
+}
+
+# General Wever Killed In Air Crash
+news_event = {
+	id = newsevent.63
+	title = newsevent.63.t
+	desc = newsevent.63.d
+	picture = GFX_news_event_wever_death
+	
+	#major = yes
+	
+	trigger = {
+		OR = {
+			original_tag = GER
+			is_subject_of = GER
+		}
+		date > 1936.6.3
+		has_start_date < 1936.01.02
+		NOT = { has_country_flag = wever_dead }
+		GER = { has_completed_focus = GER_tactical_air_effort }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.63.a
+		set_country_flag = wever_dead
+	}
+}
+
+# Italy Announces Claims On Tirol
+news_event = {
+	id = newsevent.64
+	title = newsevent.64.t
+	desc = newsevent.64.d
+	picture = GFX_news_event_journalists_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = newsevent.64.a
+		trigger = {
+			OR = {
+				tag = AUS
+				tag = GER
+				tag = SWI
+			}
+		}
+	}
+
+	option = {
+		name = newsevent.64.b
+		trigger = {
+			NOT = {
+				OR = {
+					tag = AUS
+					tag = GER
+					tag = SWI
+					tag = ITA
+				}
+			}
+			NOT = {
+				has_government = fascism
+			}
+		}
+	}
+
+	option = {
+		name = newsevent.64.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = AUS
+					tag = GER
+					tag = SWI
+					tag = ITA
+				}
+			}
+			has_government = fascism
+		}
+	}
+}
+
+# RESERVED: newsevent.65 - newsevent.68
+
+# Italo Balbo Launches Coup In [ITA.GetNameDef]
+news_event = {
+	id = newsevent.69
+	title = newsevent.69.t
+	desc = newsevent.69.d
+	picture = GFX_news_event_italo_balbo_leader
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = ITA }
+		NOT = { has_country_flag = balbo_leader }
+		ITA = { has_country_flag = balbo_saves_the_world }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.69.a
+		set_country_flag = balbo_leader
+	}
+}
+
+# [SOV.GetNameDef] Embraces Socialism in One Country
+news_event = {
+	id = newsevent.70
+	title = newsevent.70.t
+	desc = newsevent.70.d
+	picture = GFX_news_event_socialism_in_one_country
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = SOV }
+		NOT = { has_country_flag = socialism_in_one_country }
+		SOV = { has_completed_focus = SOV_socialism_in_one_country }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.70.a
+		set_country_flag = socialism_in_one_country
+	}
+}
+
+# [SOV.GetNameDef] Embraces Permanent Revolution
+news_event = {
+	id = newsevent.71
+	title = newsevent.71.t
+	desc = newsevent.71.d
+	picture = GFX_news_event_permanent_revolution
+	
+	#major = yes
+	
+	trigger = {
+		NOT = { original_tag = SOV }
+		NOT = { has_country_flag = permanent_revolution }
+		SOV = { has_completed_focus = SOV_permanent_revolution }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.71.a
+		set_country_flag = permanent_revolution
+	}
+}
+
+# [USA.GetNameDef] Launches Operation 'Paperclip'
+news_event = {
+	id = newsevent.72
+	title = newsevent.72.t
+	desc = newsevent.72.d
+	picture = GFX_news_event_operation_paperclip
+	
+	#major = yes
+
+	trigger = {
+		NOT = { original_tag = USA }
+		NOT = { has_country_flag = paperclip_launched }
+		USA = { has_completed_focus = USA_rocketry_focus }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = newsevent.72.a
+		set_country_flag = paperclip_launched
+	}
+}

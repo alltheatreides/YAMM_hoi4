@@ -18,6 +18,7 @@ ideas = {
 			modifier = {
 				ai_get_ally_desire_factor = -70
 				join_faction_tension = 4
+				justify_war_goal_time = 10.0
 				conscription = -0.07
 			}
 		}
