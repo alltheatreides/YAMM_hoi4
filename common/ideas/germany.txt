@@ -216,12 +216,21 @@ ideas = {
 		
 		speer = {
 
+			cost = 300
 			
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				date > 1942.6.1
+			}
 			
 			traits = { armaments_organizer }
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
 		}
 		
 		hjalmar_schacht = {

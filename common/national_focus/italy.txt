@@ -1531,7 +1531,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_slovenia_dalmatia_claims }
 		x = 16
 		y = 1
-		cost = 10
+		cost = 2.143
 		ai_will_do = {
 			factor = 0.25
 		}

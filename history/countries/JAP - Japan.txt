@@ -159,7 +159,7 @@ create_import = {
 	}
 }
 
-set_convoys = 400
+set_convoys = 2000
 
 if = {
 	limit = {

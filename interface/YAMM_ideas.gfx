@@ -36,4 +36,9 @@ spriteType = {
 		texturefile = "gfx/interface/ideas/GER_idea_hitler_rage.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_GER_STO"
+		texturefile = "gfx/interface/ideas/EFR_STO.dds"
+	}
+	
 }

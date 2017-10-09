@@ -397,6 +397,9 @@ focus_tree = {
 		id = FRA_algerie_france
 		icon = GFX_goal_generic_construct_civilian
 		available = {
+			NOT = {
+				EFR = { exists = yes }
+			}
 		}
 		x = 2
 		y = 0
@@ -2471,6 +2474,7 @@ focus_tree = {
 		
 		completion_reward = {
 			country_event = { days = 1 id = free_france.8 }
+			custom_effect_tooltip = organize_the_resistance_tt
 		}
 	}
 	
@@ -2492,6 +2496,7 @@ focus_tree = {
 		
 		completion_reward = {
 			country_event = { days = 1 id = free_france.9 }
+			custom_effect_tooltip = unleash_the_resistance_1_tt
 		}
 	}
 	
@@ -2512,6 +2517,7 @@ focus_tree = {
 		
 		completion_reward = {
 			country_event = { days = 1 id = yamm.32 }
+			custom_effect_tooltip = unleash_the_resistance_2_tt
 		}
 	}
 }

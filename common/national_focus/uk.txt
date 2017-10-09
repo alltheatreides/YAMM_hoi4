@@ -2002,7 +2002,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = air_base
-					level = 1
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2250,7 +2250,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = air_base
-					level = 1
+					level = 8
 					instant_build = yes
 				}
 			}

@@ -96,5 +96,41 @@ ideas = {
 			}
 		}
 	}
+	
+	country = {
+		idea_GER_STO = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		idea_GER_STO2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
 }
 

@@ -910,7 +910,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 		
 		hidden_effect = {
-			puppet = INS
+			ENG = { puppet = INS }
 			# ENG = { 
 			# transfer_state = 927
 			# }
@@ -956,4 +956,69 @@ country_event = {
 		# ai_chance = { factor = 0 }
 		# set_country_flag = east_indies_II
 	# }
+}
+
+###############################################################
+################### Crete #########################
+country_event = {  
+	id = britain.34
+	title = britain.34.t
+	desc = britain.34.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		tag = ENG
+		not = { has_country_flag = crete }
+		GRE = { has_defensive_war = yes }
+		OR = {
+			NOT = { GER = { controls_state = 182 }}
+			NOT = { ITA = { controls_state = 182 }}
+			NOT = { ROM = { controls_state = 182 }}
+			NOT = { BUL = { controls_state = 182 }}
+		}
+		GRE = { controls_state = 182}		
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = britain.34.a
+		
+		hidden_effect = {
+			GRE = {
+				country_event = { id = britain.35 hours = 1 }
+			}
+		}
+		set_country_flag = crete
+	}
+}
+
+country_event = {
+	id = britain.35 
+	title = britain.35.t
+	desc = britain.35.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = britain.35.a
+		ai_chance = { factor = 100 }
+		
+		hidden_effect = {
+			ENG = { 
+				transfer_state = 182
+			}
+		}
+		set_country_flag = crete_II
+		
+	}
 }

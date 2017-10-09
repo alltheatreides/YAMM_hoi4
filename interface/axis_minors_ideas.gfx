@@ -343,6 +343,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/EFR_STO.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_EFR_STO2"
+		texturefile = "gfx/interface/ideas/EFR_STO.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_EFR_joseph_darnand"
 		texturefile = "gfx/interface/ideas/EFR_joseph_darnand.dds"
 	}

@@ -74,7 +74,7 @@ ideas = {
 		}
 		idea_EFR_STO2 = {
 
-			picture = idea_EFR_STO
+			# picture = idea_EFR_STO2
 		
 			allowed = {
 				always = no

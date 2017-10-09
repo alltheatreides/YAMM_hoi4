@@ -648,9 +648,9 @@ focus_tree = {
 		}
 		
 		available = {
-			NOT = {
-				SPR = { has_civil_war = yes }
-			}
+			# NOT = {
+				# SPR = { has_civil_war = yes }
+			# }
 		}
 
 		available_if_capitulated = yes

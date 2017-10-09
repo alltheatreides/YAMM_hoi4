@@ -49,6 +49,7 @@ set_technology = {
 	early_armored_car = 1		# WM addition
 	basic_armored_car = 1		# WM addition
 	tech_field_hospital = 1
+	tech_military_police = 1
 }
 
 

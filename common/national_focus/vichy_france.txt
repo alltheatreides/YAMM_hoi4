@@ -188,7 +188,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		available = {
-			is_puppet_of = GER 
+			# is_puppet_of = GER 
 		}
 
 		
@@ -200,6 +200,7 @@ focus_tree = {
 			add_ideas = idea_EFR_STO
 			GER = {
 				add_manpower = 120000 
+				add_ideas = idea_GER_STO
 			}
 			if = { 
 				limit = {
@@ -225,7 +226,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		available = {
-			is_puppet_of = GER 
+			# is_puppet_of = GER 
 		}
 
 		
@@ -236,7 +237,8 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = { remove_idea = idea_EFR_STO add_idea = idea_EFR_STO2 } 
 			GER = {
-				add_manpower = 120000 
+				add_manpower = 120000
+				swap_ideas = { remove_idea = idea_GER_STO add_idea = idea_GER_STO2 } 
 			}
 			if = { 
 				limit = {
@@ -264,10 +266,10 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
+					EFR = { is_subject = yes } 
 				
 				}
-				SLO = { OVERLORD = { has_government = fascism } }
+				EFR = { OVERLORD = { has_government = fascism } }
 			}
 		}
 		x = 0
