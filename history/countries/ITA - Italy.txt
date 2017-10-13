@@ -29,14 +29,18 @@ set_technology = {
 	early_fighter = 1
 	early_bomber = 1
 	naval_bomber1 = 1
+	strategic_bomber0 = 1
 	CAS1 = 1
 	early_submarine = 1
+	basic_submarine = 1
 	early_destroyer = 1
 	early_light_cruiser = 1
+	basic_light_cruiser = 1
 	early_heavy_cruiser = 1
 	early_battleship = 1
 	basic_battleship = 1
 	early_battlecruiser = 1
+	early_carrier = 1
 	transport = 1
 	trench_warfare = 1
 	fleet_in_being = 1
@@ -44,6 +48,7 @@ set_technology = {
 	light_artillery_1 = 1
 	support_weapons = 1
 	tech_logistics_company = 1
+	force_rotation = 1
 }
 
 # DIPLOMACY / WAR 36
@@ -188,15 +193,25 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Pietro Badoglio"
 	picture = "Portrait_Italy_Pietro_Badoglio.dds"
-	traits = { defensive_doctrine old_guard }
+	traits = { offensive_doctrine old_guard }
 	skill = 1
+	id = 102
+}
+
+create_field_marshal = {
+	name = "Italo Balbo"
+	picture = "Portrait_Italy_Italo_Balbo.dds"
+	traits = { inspirational_leader }
+	skill = 2
+	id = 103
 }
 
 create_field_marshal = {
 	name = "Emilio De Bono"
-	picture = "portrait_italy_emilio_de_bono.dds"
-	traits = { defensive_doctrine old_guard }
-	skill = 1
+	picture = "Portrait_Italy_Emilio_De_Bono.dds"
+	traits = { defensive_doctrine thorough_planner old_guard }
+	skill = 2
+	id = 106
 }
 
 create_corps_commander = {
@@ -204,7 +219,62 @@ create_corps_commander = {
 	picture = "Portrait_Italy_Ugo_Cavallero.dds"
 	traits = {  old_guard }
 	skill = 1
-	rank = 1
+}
+
+create_corps_commander = {
+	name = "Rodolfo Graziani"
+	picture = "Portrait_Italy_Rodolfo_Graziani.dds"
+	traits = { commando }
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Ettore Bastico"
+	picture = "Portrait_Italy_Ettore_Bastico.dds"
+	traits = { cavalier }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Mario Roatta"
+	picture = "Portrait_Italy_Mario_Roatta.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Alfredo Guzzoni"
+	picture = "Portrait_Italy_Alfredo Guzzoni.dds"
+	traits = { }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Giulio Martinat"
+	picture = "Portrait_Italy_Giulio_Martinat.dds"
+	traits = { trait_mountaineer }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Italo Gariboldi"
+	picture = "Portrait_Italy_Italo_Gariboldi.dds"
+	traits = { }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Gastone Gambara"
+	picture = "Portrait_Italy_Gastone Gambara.dds"
+	traits = { urban_assault_specialist }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Junio Valerio Borghese"
+	picture = "Portrait_Italy_Junio_Valerio_Borghese.dds"
+	traits = { naval_invader }
+	skill = 4
 }
 
 create_corps_commander = {
@@ -223,30 +293,23 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Ubaldo Soddu"
-	picture = "Portrait_Italy_Ubaldo_Soddu.dds"
-	traits = {  }
-	skill = 1
+	name = "Annibale Bergonzoli"
+	picture = "Portrait_Italy_Annibale_Bergonzoli.dds"
+	traits = { }
+	skill = 3
 }
 
 create_corps_commander = {
-	name = "Italo Balbo"
-	picture = "portrait_italy_italo_balbo.dds"
+	name = "Ubaldo Soddu"
+	picture = "portrait_italy_ubaldo_soddu.dds"
 	traits = {  }
 	skill = 1
-}
-
-create_field_marshal = {
-	name = "Rodolfo Graziani"
-	picture = "portrait_italy_radolfo_graziani.dds"
-	traits = { offensive_doctrine }
-	skill = 2
 }
 
 create_navy_leader = {
 	name = "Inigo Campioni"
 		picture = "Portrait_Italy_Inigo_Campioni.dds"
-	traits = { superior_tactician spotter }
+	traits = { blockade_runner spotter }
 	skill = 2
 }
 
@@ -260,21 +323,35 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Giuseppe Fioravanzo"
 		picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
-	traits = { superior_tactician }
+	traits = { air_controller }
 	skill = 3
 }
 
 create_navy_leader = {
 	name = "Carlo Bergamini"
 		picture = "Portrait_Italy_Carlo_Bergamini.dds"
-	traits = { superior_tactician }
+	traits = { }
 	skill = 2
 }
 
 create_navy_leader = {
 	name = "Angelo Iachino"
 		picture = "Portrait_Italy_Angelo_Iachino.dds"
-	traits = { superior_tactician spotter }
+	traits = { spotter }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Arturo Riccardi"
+	picture = "Portrait_Italy_Generic_navy_1.dds"
+	traits = { air_controller fly_swatter }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Angelo Parona"
+	picture = "Portrait_Italy_Generic_navy_2.dds"
+	traits = { }
 	skill = 2
 }
 

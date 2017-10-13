@@ -1,0 +1,45 @@
+spriteTypes = {
+
+	### BUL tanks ###	
+	
+	SpriteType = {
+		name = "GFX_BUL_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/BUL_imp_light_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_BUL_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/BUL_imp_main_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_BUL_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/BUL_basic_main_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_BUL_CAS1_medium"
+		texturefile = "gfx/interface/technologies/BUL_CAS1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BUL_CAS2_medium"
+		texturefile = "gfx/interface/technologies/BUL_CAS2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BUL_fighter1_medium"
+		texturefile = "gfx/interface/technologies/BUL_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BUL_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/BUL_early_fighter.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_BUL_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/BUL_tactical_bomber2.dds"
+	}	
+}

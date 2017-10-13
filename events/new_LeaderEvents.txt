@@ -1,0 +1,1310 @@
+﻿add_namespace = leaderevent
+
+# Édouard Daladier Resigns
+# country_event = {
+	# id = leaderevent.2
+	# title = leaderevent.2.t
+	# desc = leaderevent.2.d
+	# picture = GFX_report_event_daladier
+	
+	# fire_only_once = yes
+	
+	# trigger = {
+		# original_tag = FRA
+		# has_country_leader = { name = "Édouard Daladier" }
+		# has_government = democratic
+		# has_global_flag = fall_of_france
+		# NOT = { has_country_flag = daladier_resigned }
+		# NOT = { has_country_flag = france_de_gaulle }
+	# }	
+
+	# mean_time_to_happen = {
+		# days = 7
+	# }
+
+	# option = {
+		# name = leaderevent.2.a
+		# retire_country_leader = yes
+		# create_country_leader = {
+		# name = "Paul Reynaud"
+		# desc = "POLITICS_PAUL_REYNAUD_DESC"
+		# picture = "Portrait_France_Paul_Reynaud.dds"
+		# expire = "1965.1.1"
+		# ideology = liberalism
+		# traits = {
+	   		# }
+    		# }
+		# set_country_flag = daladier_resigned
+  	# }
+# }
+
+# Marshal Pétain Resigns
+# country_event = {
+	# id = leaderevent.3
+	# title = leaderevent.3.t
+	# desc = leaderevent.3.d
+	# picture = GFX_report_event_petain
+	
+	# fire_only_once = yes
+	
+	# trigger = {
+		# original_tag = FRA
+		# has_country_leader = { name = "Philippe Pétain" }
+		# has_government = neutrality
+		# has_country_flag = become_vichy
+		# date > 1942.1.1
+		# NOT = { has_country_flag = petain_resigned }
+	# }	
+
+	# mean_time_to_happen = {
+		# days = 150
+	# }
+
+	# option = {
+		# name = leaderevent.3.a
+		# retire_country_leader = yes
+		# create_country_leader = {
+		# name = "François Darlan"
+		# desc = "POLITICS_FRANCOIS_DARLAN_DESC"
+		# picture = "Portrait_France_Francois_Darlan.dds"
+		# expire = "1965.1.1"
+		# ideology = centrism
+		# traits = {
+			# assassination_survivor
+	   		# }
+    		# }
+		# set_country_flag = petain_resigned
+		# remove_unit_leader = 100
+  	# }
+# }
+
+# The Fall of Mussolini
+country_event = {
+	id = leaderevent.4
+	title = leaderevent.4.t
+	desc = leaderevent.4.d
+	picture = GFX_report_event_mussolini
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ITA
+		has_country_leader = { name = "Benito Mussolini" }
+		has_government = fascism
+		has_war_with = ENG
+		NOT = {
+			OR = {
+				ITA = { controls_state = 453 } # Suez
+					any_country = {
+					is_in_faction_with = ITA
+					controls_state = 453
+					}
+				}
+			}
+		date > 1943.1.1
+		surrender_progress > 0.25
+		NOT = { has_country_flag = balbo_saves_the_world }
+		NOT = { has_country_flag = fall_of_mussolini }
+		NOT = { has_country_flag = duce_killed }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	# option = {
+		# name = leaderevent.4.a
+		# trigger = {
+			# has_country_flag = balbo_alive
+		# }
+		# retire_country_leader = yes
+		# create_country_leader = {
+		# name = "Italo Balbo"
+		# desc = "POLITICS_ITALO_BALBO_DESC"
+		# picture = "Portrait_Italy_Italo_Balbo.dds"
+		# expire = "1965.1.1"
+		# ideology = fascism_ideology
+		# traits = {
+			# chief_flying_eagle
+			# dislikes_germany
+	   		# }
+    		# }
+		# set_country_flag = fall_of_mussolini
+		# set_country_flag = balbo_duce
+		# remove_unit_leader = 103
+  	# }
+
+	option = {
+		name = leaderevent.4.b
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Pietro Badoglio"
+			desc = "POLITICS_PIETRO_BADOGLIO_DESC"
+			picture = "gfx/leaders/ITA/Portrait_Italy_Pietro_Badoglio.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				}
+    	}
+		set_country_flag = fall_of_mussolini
+		set_country_flag = badoglio_duce
+		remove_unit_leader = 102
+  	}
+
+	# option = {
+		# name = leaderevent.4.c
+		# trigger = {
+			# NOT = { has_country_flag = de_bono_fired }
+		# }
+		# retire_country_leader = yes
+		# create_country_leader = {
+		# name = "Emilio De Bono"
+		# desc = "POLITICS_EMILIO_DE_BONO_DESC"
+		# picture = "Portrait_Italy_Emilio_De_Bono.dds"
+		# expire = "1965.1.1"
+		# ideology = fascism_ideology
+		# traits = {
+	   		# }
+    		# }
+		# set_country_flag = fall_of_mussolini
+		# set_country_flag = de_bono_duce
+		# remove_unit_leader = 106
+  	# }
+}
+
+# The King Takes Control
+country_event = {
+	id = leaderevent.5
+	title = leaderevent.5.t
+	desc = leaderevent.5.d
+	picture = GFX_report_event_victor_emmanuel
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ITA
+		has_government = fascism
+		has_war_with = ENG
+		NOT = {
+			OR = {
+				ITA = { controls_state = 115 } # Sicily
+					any_country = {
+					is_in_faction_with = ITA
+					controls_state = 115
+					}
+				}
+			}
+		date > 1944.1.1
+		surrender_progress > 0.4
+		has_country_flag = fall_of_mussolini
+		NOT = { has_country_flag = balbo_saves_the_world }
+		NOT = { has_country_flag = king_takes_control }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = victor_emmanuel
+		}
+	}
+
+	option = {
+		name = leaderevent.5.a
+		effect_tooltip = {
+			remove_ideas = victor_emmanuel
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			parties = {
+				neutrality = { 
+					popularity = 63
+				}
+
+				democratic = { 
+					popularity = 21
+				}
+
+				fascism = {
+					popularity = 7
+				}
+					
+				communism = {
+					popularity = 9
+				}
+			}
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+		name = "Victor Emmanuel III"
+		desc = "POLITICS_VICTOR_EMMANUEL_DESC"
+		picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
+		expire = "1965.1.1"
+		ideology = moderatism
+		traits = {
+			popular_figurehead
+	   		}
+    		}
+		set_country_flag = king_takes_control
+  	}
+}
+
+
+# The 1939 General Election
+country_event = {
+	id = leaderevent.7
+	title = leaderevent.7.t
+	desc = leaderevent.7.d
+	picture = GFX_report_event_attlee
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = ENG
+		has_government = democratic
+		has_war = no
+		date > 1939.11.1
+		date < 1940.1.1
+		NOT = {
+			OR = {
+				has_country_flag = eng_1939_election_con
+				has_country_flag = eng_1939_election_lab
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = leaderevent.7.a
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		set_country_flag = eng_1939_election_con
+	}
+
+	# option = { 
+		# name = leaderevent.7.b
+		# ai_chance = {
+			# factor = 25
+		# }
+		# set_party_name = { ideology = democratic long_name = ENG_labour_party name = ENG_labour_party }
+		# create_country_leader = {
+			# name = "Clement Attlee"
+			# desc = "POLITICS_CLEMENT_ATTLEE_DESC"
+			# picture = "Portrait_Britain_Clement_Attlee.dds"
+			# expire = "1965.1.1"
+			# ideology = socialism
+			# traits = {
+				# silent_workhorse
+			# }
+		# }
+		# set_country_flag = eng_1939_election_lab
+	# }
+}
+
+# The 1945 General Election (Tory government)
+country_event = {
+	id = leaderevent.8
+	title = leaderevent.8.t
+	desc = leaderevent.8.d
+	picture = GFX_report_event_attlee
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = ENG
+		has_government = democratic
+		date > 1945.6.1
+		date < 1946.1.1
+		NOT = { has_country_flag = eng_1939_election_lab }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = { 
+		name = leaderevent.8.a
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}		
+		set_party_name = { ideology = democratic long_name = ENG_labour_party name = ENG_labour_party }
+		create_country_leader = {
+			name = "Clement Attlee"
+			desc = "POLITICS_CLEMENT_ATTLEE_DESC"
+			picture = "Portrait_Britain_Clement_Attlee.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+
+	# option = { 	
+		# name = leaderevent.8.b
+		# ai_chance = {
+			# factor = 25
+		# }		
+		# add_national_unity = -0.05
+		# add_popularity = {
+			# ideology = communism
+			# popularity = 0.1
+		# }
+	# }
+}
+
+# The 1945 General Election (Labour government)
+country_event = {
+	id = leaderevent.9
+	title = leaderevent.9.t
+	desc = leaderevent.9.d
+	picture = GFX_report_event_attlee
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = ENG
+		has_government = democratic
+		date > 1945.6.1
+		date < 1946.1.1
+		has_country_flag = eng_1939_election_lab
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = { 	
+		name = leaderevent.9.a
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		add_national_unity = 0.05
+	}
+
+	# option = { 
+		# name = leaderevent.9.b
+		# ai_chance = {
+			# factor = 25
+		# }
+		# set_party_name = { ideology = democratic long_name = ENG_democratic_party name = ENG_democratic_party }
+		# create_country_leader = {
+			# name = "Winston Churchill"
+			# desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			# picture = "Portrait_Britain_Winston_Churchill.dds"
+			# expire = "1965.1.1"
+			# ideology = conservatism
+			# traits = {
+				# dislikes_germany
+			# }
+		# }
+	# }
+}
+
+# Albert Sarraut Resigns
+# country_event = {
+	# id = leaderevent.10
+	# title = leaderevent.10.t
+	# desc = leaderevent.10.d
+	# picture = GFX_report_event_sarraut
+	
+	# fire_only_once = yes
+	
+	# trigger = {
+		# original_tag = FRA
+		# has_country_leader = { name = "Albert Sarraut" }
+		# has_government = democratic
+		# date > 1936.06.04
+		# has_start_date < 1936.01.02
+		# has_global_flag = spanish_civil_war
+		# NOT = { has_country_flag = sarraut_resigned }
+	# }
+
+	# mean_time_to_happen = {
+		# days = 7
+	# }
+
+	# option = {
+		# name = leaderevent.10.a
+		# retire_country_leader = yes
+		# create_country_leader = {
+		# name = "Édouard Daladier"
+		# desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+		# picture = "Portrait_France_Edouard_Daladier.dds"
+		# expire = "1965.1.1"
+		# ideology = liberalism
+		# traits = {
+	   		# }
+    		# }
+		# set_country_flag = sarraut_resigned
+  	# }
+# }
+
+# The Assassination of François Darlan
+# country_event = {
+	# id = leaderevent.11
+	# title = leaderevent.11.t
+	# desc = leaderevent.11.d
+	# picture = GFX_report_event_darlan
+	
+	# fire_only_once = yes
+	
+	# trigger = {
+		# original_tag = FRA
+		# has_country_leader = { name = "François Darlan" }
+		# has_government = neutrality
+		# has_country_flag = petain_resigned
+		# date > 1942.12.24
+		# NOT = { has_country_flag = darlan_survived }
+	# }	
+
+	# mean_time_to_happen = {
+		# days = 30
+	# }
+
+	# option = {
+		# name = leaderevent.11.a
+		# kill_country_leader = yes
+		# create_country_leader = {
+		# name = "Pierre Laval"
+		# desc = "POLITICS_PIERRE_LAVAL_DESC"
+		# picture = "Portrait_France_Pierre_Laval.dds"
+		# expire = "1965.1.1"
+		# ideology = moderatism
+		# traits = {
+	   		# }
+    		# }
+		# set_country_flag = darlan_killed
+  	# }
+# }
+
+
+# Adolf Hitler Commits Suicide
+country_event = {
+	id = leaderevent.14
+	title = leaderevent.14.t
+	desc = leaderevent.14.d
+	picture = GFX_report_event_hitler
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = GER
+		has_country_leader = { name = "Adolf Hitler" }
+		has_government = fascism
+		has_war = yes
+		NOT = { has_country_flag = hitler_dead }
+		NOT = { has_country_flag = nazis_overthrown }
+		NOT = { has_country_flag = oster_conspiracy }
+		NOT = { has_country_flag = strasserist_coup }
+		NOT = { 5 = { is_controlled_by = GER } }
+		NOT = { 42 = { is_controlled_by = GER } }
+		surrender_progress > 0.5
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = leaderevent.14.a
+		kill_country_leader = yes
+		create_country_leader = {
+		name = "Karl Dönitz"
+		desc = "POLITICS_KARL_DONITZ_DESC"
+		picture = "Portrait_Germany_Karl_Donitz.dds"
+		expire = "1965.1.1"
+		ideology = nazism
+		traits = {
+	   		}
+    		}
+		set_country_flag = hitler_dead
+		remove_unit_leader = 26
+  	}
+}
+
+# Destruction of the Maginot Line
+country_event = {
+	id = leaderevent.22
+	title = leaderevent.22.t
+	desc = leaderevent.22.d
+	picture = GFX_report_event_maginot_line
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = GER
+		FRA = { has_capitulated = yes }
+		28 = { is_controlled_by = GER }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = leaderevent.22.a
+		28 = {
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 549
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 678
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 3629
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 6529
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 9503
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 9559
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 11502
+			}
+		}
+		set_global_flag = maginot_line_destroyed
+		add_political_power = 50
+  	}
+}
+
+# Destruction of Fort Eben-Emael
+country_event = {
+	id = leaderevent.23
+	title = leaderevent.23.t
+	desc = leaderevent.23.d
+	picture = GFX_report_event_eben_emael
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = GER
+		BEL = { has_capitulated = yes }
+		34 = { is_controlled_by = GER }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = leaderevent.23.a
+		34 = {
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 11519
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 6537
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 9444
+			}
+		}
+		set_global_flag = fort_eben_emael_destroyed
+  	}
+}
+
+# Destruction of the Alpine Line
+country_event = {
+	id = leaderevent.24
+	title = leaderevent.24.t
+	desc = leaderevent.24.d
+	picture = GFX_report_event_alpine_line
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ITA
+		FRA = { has_capitulated = yes }
+		735 = { is_controlled_by = ITA }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = leaderevent.24.a
+		735 = {
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 764
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 9909
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 3959
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 6975
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 3764
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 9745
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 778
+			}
+		}
+		set_global_flag = alpine_line_destroyed
+  	}
+}
+
+
+# Further Maginot Line Demolition
+country_event = {
+	id = leaderevent.32
+	title = leaderevent.32.t
+	desc = leaderevent.32.d
+	picture = GFX_report_event_maginot_line
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = GER
+		has_global_flag = maginot_line_destroyed
+		18 = { is_controlled_by = GER }
+		29 = { is_controlled_by = GER }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = leaderevent.32.a
+		18 = {
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 3560
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 5291
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 9472
+			}
+		}
+		29 = {
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 575
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 3447
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 11483
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 11606
+			}
+		}
+  	}
+}
+
+# Japanese Defeat in China
+country_event = {
+	id = leaderevent.42
+	title = leaderevent.42.t
+	desc = leaderevent.42.d
+	picture = GFX_report_event_chinese_soldiers
+
+	trigger = {
+		original_tag = JAP
+		has_war_with = CHI
+		has_civil_war = no
+		OR = {
+			is_in_faction = no
+			is_faction_leader = yes
+		}
+		has_global_flag = CHI_unite
+		NOT = { has_global_flag = treaty_of_beijing }
+		"MAN" = { has_capitulated = yes }
+		"MEN" = { has_capitulated = yes }
+	}
+
+	mean_time_to_happen = { days = 20 }
+
+	fire_only_once = yes
+
+	option = {
+		name = leaderevent.42.a
+		ai_chance = {
+			base = 90
+		}
+		CHI = {
+			country_event = { id = leaderevent.43 }
+		}
+		custom_effect_tooltip = leaderevent.42.a_tt
+		if = {
+			limit = {
+				CHI = {
+					has_global_flag = CHI_surrender_territory
+				}
+			}
+			effect_tooltip = {
+				JAP = { white_peace = CHI }
+				CHI = {
+					transfer_state = 524
+					transfer_state = 597
+					transfer_state = 608
+					transfer_state = 609
+					transfer_state = 614
+					transfer_state = 746
+					annex_country = { target = "MAN" transfer_troops = no }
+					annex_country = { target = "MEN" transfer_troops = no }
+				}
+			}
+		}
+		if = {
+			limit = {
+				CHI = {
+					NOT = { has_global_flag = CHI_surrender_territory }
+				}
+			}
+			effect_tooltip = {
+				JAP = { white_peace = CHI }
+				CHI = {
+					transfer_state = 524
+					transfer_state = 609
+					transfer_state = 746
+					annex_country = { target = "MAN" transfer_troops = no }
+					annex_country = { target = "MEN" transfer_troops = no }
+				}
+			}
+		}
+	}
+
+	# option = {
+		# name = leaderevent.42.b
+		# ai_chance = {
+			# base = 10
+			# modifier = {
+				# factor = 0
+				# is_historical_focus_on = yes
+			# }
+		# }
+	# }
+}
+
+# The Treaty of Beijing
+country_event = {
+	id = leaderevent.43
+	title = leaderevent.43.t
+	desc = leaderevent.43.d
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+
+	option = {
+		name = leaderevent.43.a
+		ai_chance = {
+			base = 90
+		}
+		add_named_threat = { threat = 5 name = treaty_of_beijing_signed }
+		if = {
+			limit = {
+				CHI = {
+					has_global_flag = CHI_surrender_territory
+				}
+			}
+			white_peace = JAP
+			transfer_state = 524
+			transfer_state = 597
+			transfer_state = 608
+			transfer_state = 609
+			transfer_state = 614
+			transfer_state = 746
+			annex_country = { target = "MAN" transfer_troops = no }
+			annex_country = { target = "MEN" transfer_troops = no }
+		}
+		if = {
+			limit = {
+				CHI = {
+					NOT = { has_global_flag = CHI_surrender_territory }
+				}
+			}
+			white_peace = JAP
+			transfer_state = 524
+			transfer_state = 609
+			transfer_state = 746
+			annex_country = { target = "MAN" transfer_troops = no }
+			annex_country = { target = "MEN" transfer_troops = no }
+		}
+		JAP = { country_event = { id = leaderevent.45 } }
+		set_global_flag = treaty_of_beijing
+	}
+
+	# option = {
+		# name = leaderevent.43.b
+		# ai_chance = {
+			# base = 10
+			# modifier = {
+				# factor = 0
+				# is_historical_focus_on = yes
+			# }			
+		# }
+		# JAP = { country_event = { id = leaderevent.44 } }
+	# }
+}
+
+
+# The Demilitarization of Korea
+country_event = {
+	id = leaderevent.45
+	title = leaderevent.45.t
+	desc = leaderevent.45.d
+	picture = GFX_report_event_japanese_soldiers_03
+
+	is_triggered_only = yes
+
+	option = {
+		name = leaderevent.45.a
+		525 = { set_demilitarized_zone = yes }
+		527 = { set_demilitarized_zone = yes }
+	}
+}
+
+# [ITA.GetLeader] Sends Regio Esercito Support
+# country_event = {
+	# id = leaderevent.87
+	# title = leaderevent.87.t
+	# desc = leaderevent.87.d
+	# picture = GFX_report_event_fascist_militia
+
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = leaderevent.87.a
+		# add_manpower = 50000
+		# add_equipment_to_stockpile = {
+			# type = infantry_equipment_1
+			# amount = 5000
+			# producer = ITA
+		# }
+		# add_equipment_to_stockpile = {
+			# type = artillery_equipment_1
+			# amount = 250
+			# producer = ITA
+		# }
+		# add_tech_bonus = {
+			# bonus = 0.5
+			# uses = 1
+			# category = land_doctrine
+		# }
+	# }
+# }
+
+# [ITA.GetLeader] Sends Regia Aeronautica Support
+# country_event = {
+	# id = leaderevent.88
+	# title = leaderevent.88.t
+	# desc = leaderevent.88.d
+	# picture = GFX_report_event_ace_died
+
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = leaderevent.88.a
+		# add_manpower = 10000
+		# add_equipment_to_stockpile = {
+			# type = CAS_equipment_1
+			# amount = 125
+			# producer = ITA
+		# }
+		# add_equipment_to_stockpile = {
+			# type = nav_bomber_equipment_1
+			# amount = 125
+			# producer = ITA
+		# }
+		# add_tech_bonus = {
+			# bonus = 0.5
+			# uses = 1
+			# category = air_doctrine
+		# }
+	# }
+# }
+
+# [ITA.GetLeader] Sends Regia Marina Support
+# country_event = {
+	# id = leaderevent.89
+	# title = leaderevent.89.t
+	# desc = leaderevent.89.d
+	# picture = GFX_report_event_usa_destroyers
+
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = leaderevent.89.a
+		# add_manpower = 20000
+		# custom_effect_tooltip = ITA_SPR_naval_tt
+		# add_tech_bonus = {
+			# bonus = 0.5
+			# uses = 1
+			# category = naval_doctrine
+		# }
+		# hidden_effect = {
+			# load_oob = "SPR_italian_support"
+		# }
+	# }
+# }
+
+
+# Allied Fighter Aces Offer Their Services
+country_event = {
+	id = leaderevent.97
+	title = leaderevent.97.t
+	desc = leaderevent.97.d
+	picture = GFX_report_event_fighters
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_capitulated = no
+		has_war_with = GER
+		CZE = {
+			OR = {
+				has_capitulated = yes
+				is_subject_of = GER
+			}
+			NOT = {
+				AND = {
+					has_government = ROOT
+					has_war_with = ENG
+				}
+			}
+		}
+		POL = {
+			OR = {
+				has_capitulated = yes
+				is_subject_of = GER
+			}
+			NOT = {
+				AND = {
+					has_government = ROOT
+					has_war_with = ENG
+				}
+			}
+		}
+		NOT = { has_country_flag = ENG_allied_aces }
+	}	
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = leaderevent.97.a
+		custom_effect_tooltip = ENG_allied_aces_tt
+		hidden_effect = {
+			add_ace = {
+				name = "Karel"
+				surname = "Kuttelwascher"
+				callsign = "Kut"
+				type = fighter_unique
+			}
+			add_ace = {
+				name = "Josef"
+				surname = "František"
+				type = fighter_unique
+			}
+			add_ace = {
+				name = "Stanisław"
+				surname = "Skalski"
+				type = fighter_unique
+			}
+			add_ace = {
+				name = "Witold"
+				surname = "Urbanowicz"
+				type = fighter_unique
+			}
+		}
+		set_country_flag = ENG_allied_aces
+  	}
+	# option = {
+		# name = leaderevent.97.b
+		# air_experience = 50
+		# add_tech_bonus = {
+			# name = ENG_allied_aces
+			# bonus = 0.5
+			# uses = 2
+			# category = air_doctrine
+		# }
+		# set_country_flag = ENG_allied_aces
+  	# }
+}
+
+# [ITA.GetLeader] Sends Blackshirt Support
+# country_event = {
+	# id = leaderevent.98
+	# title = leaderevent.98.t
+	# desc = leaderevent.98.d
+	# picture = GFX_report_event_mussolini
+
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = leaderevent.98.a
+		# custom_effect_tooltip = ITA_SPR_CCNN_2_tt
+		# hidden_effect = {
+			# load_oob = "SPR_blackshirt_support"
+		# }
+	# }
+# }
+
+
+# Michael Joseph Savage Dies
+country_event = {
+	id = leaderevent.103
+	title = leaderevent.103.t
+	desc = leaderevent.103.d
+	picture = GFX_report_event_europe_funeral
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = NZL
+		has_country_leader = { name = "Michael Joseph Savage" }
+		has_government = democratic
+		date > 1940.3.27
+		NOT = { has_country_flag = savage_died }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = leaderevent.103.a
+		kill_country_leader = yes
+		create_country_leader = {
+		name = "Peter Fraser"
+		desc = "POLITICS_PETER_FRASER_DESC"
+		picture = "Portrait_NewZealand_Peter_Fraser.dds"
+		expire = "1965.1.1"
+		ideology = socialism
+		traits = {
+	   		}
+    		}
+		set_country_flag = savage_died
+  	}
+}
+
+# Hertzog's Government Falls
+country_event = {
+	id = leaderevent.104
+	title = leaderevent.104.t
+	desc = leaderevent.104.d
+	picture = GFX_report_event_parliament
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = SAF
+		has_country_leader = { name = "J. B. M. Hertzog" }
+		has_government = democratic
+		is_in_faction_with = ENG
+		has_war_together_with = ENG
+		NOT = { has_country_flag = hertzog_gone }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = leaderevent.104.a
+		retire_country_leader = yes
+		create_country_leader = {
+		name = "Jan Smuts"
+		desc = "POLITICS_JAN_SMUTS_DESC"
+		picture = "Portrait_SouthAfrica_Jan_Smuts.dds"
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+	   		}
+    		}
+		set_country_flag = hertzog_gone
+  	}
+}
+
+
+# Destruction of the Sudeten Forts
+country_event = {
+	id = leaderevent.106
+	title = leaderevent.106.t
+	desc = leaderevent.106.d
+	picture = GFX_report_event_maginot_line
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = GER
+		CZE = {
+			OR = {
+				has_capitulated = yes
+				is_subject_of = GER
+			}
+		}
+		69 = { is_controlled_by = GER }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = leaderevent.106.a
+		69 = {
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 424
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 469
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 3585
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 5283
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 6470
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 9555
+			}
+			remove_building = {
+				type = bunker
+				level = 10
+				province = 11432
+			}
+		}
+		set_global_flag = sudeten_forts_destroyed
+  	}
+}
+
+# [CHI.GetLeader] Activates The Flying Tigers
+country_event = {
+	id = leaderevent.107
+	title = leaderevent.107.t
+	desc = leaderevent.107.d
+	picture = GFX_report_event_chinese_army_training
+	
+	trigger = {
+		date > 1939.1.1
+		CHI = { exists = yes }
+		CHI = { has_defensive_war = yes }
+	}
+	
+	option = {
+		name = leaderevent.107.a
+		air_experience = 50
+		if = {
+			limit = { NOT = { has_tech = CAS1 } }
+			set_technology = { CAS1 = 1 }
+		}
+		if = {
+			limit = { NOT = { has_tech = fighter1 } }
+			set_technology = { fighter1 = 1 }
+		}
+		custom_effect_tooltip = CHI_flying_tigers_oob
+		hidden_effect = {
+			load_oob = "CHI_flying_tigers"
+		}
+		set_global_flag = the_flying_tigers
+	}
+}

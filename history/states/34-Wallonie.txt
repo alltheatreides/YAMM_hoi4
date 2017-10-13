@@ -16,10 +16,19 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
+			anti_air_building = 2
 			arms_factory = 1
 			industrial_complex = 4
 			air_base = 1
-
+			11519 = {
+				bunker = 4
+			}
+			6537 = {
+				bunker = 2
+			}
+			9444 = {
+				bunker = 1
+			}
 		}
 		add_core_of = BEL
 	}

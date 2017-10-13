@@ -45,26 +45,6 @@ news_event = {
 	}
 }
 
-# The Cable Street Massacre
-news_event = {
-	id = newsevent.3
-	title = newsevent.3.t
-	desc = newsevent.3.d
-	picture = GFX_news_event_cable_street_alt
-	
-	#major = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_global_flag = cable_street
-	}
-	
-	option = {
-		name = newsevent.3.a
-	}
-}
-
 # Kaiser Wilhelm II Dies
 news_event = {
 	id = newsevent.4
@@ -429,26 +409,6 @@ news_event = {
 	}
 }
 
-# Air Marshal Balbo Narrowly Escapes Death
-news_event = {
-	id = newsevent.16
-	title = newsevent.16.t
-	desc = newsevent.16.d
-	picture = GFX_news_event_italo_balbo_death_alt
-	
-	#major = yes
-	
-	is_triggered_only = yes
-
-	immediate = {
-		set_country_flag = balbo_alive
-	}
-	
-	option = {
-		name = newsevent.16.a
-	}
-}
-
 # Sir Austen Chamberlain Dies
 news_event = {
 	id = newsevent.17
@@ -473,56 +433,6 @@ news_event = {
 	option = {
 		name = newsevent.17.a
 		set_country_flag = austen_chamberlain_dead
-	}
-}
-
-# Strasserist Coup In [GER.GetNameDef]
-news_event = {
-	id = newsevent.18
-	title = newsevent.18.t
-	desc = newsevent.18.d
-	picture = GFX_news_event_otto_strasser
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = GER }
-		NOT = { has_country_flag = otto_power }
-		GER = { has_country_flag = strasserist_coup }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.18.a
-		set_country_flag = otto_power
-	}
-}
-
-# Military Coup In [GER.GetNameDef]
-news_event = {
-	id = newsevent.19
-	title = newsevent.19.t
-	desc = newsevent.19.d
-	picture = GFX_news_event_mackensen
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = GER }
-		NOT = { has_country_flag = mackensen_coup }
-		GER = { has_country_flag = nazis_overthrown }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.19.a
-		set_country_flag = mackensen_coup
 	}
 }
 
@@ -551,33 +461,6 @@ news_event = {
 	}
 }
 
-# Trotskyist Coup In [PRC.GetNameDef]
-news_event = {
-	id = newsevent.21
-	title = newsevent.21.t
-	desc = newsevent.21.d
-	picture = GFX_news_event_chen_duxiu
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = CHI }
-		NOT = { original_tag = PRC }
-		NOT = { original_tag = SOV }
-		NOT = { has_country_flag = mao_gone }
-		PRC = { has_country_flag = chen_returns }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.21.a
-		set_country_flag = mao_gone
-	}
-}
-
 # The Treaty of Beijing
 news_event = {
 	id = newsevent.22
@@ -602,110 +485,6 @@ news_event = {
 	option = {
 		name = newsevent.22.a
 		set_country_flag = chi_jap_peace
-	}
-}
-
-# Corporatist Coup In Russia
-news_event = {
-	id = newsevent.23
-	title = newsevent.23.t
-	desc = newsevent.23.d
-	picture = GFX_news_event_corporatism
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = SOV }
-		NOT = { has_country_flag = solidarist_coup }
-		SOV = { has_country_flag = corporatist_coup }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.23.a
-		set_country_flag = solidarist_coup
-	}
-}
-
-# [FRA.GetNameDef] Annexes [BEL.GetNameDef]
-news_event = {
-	id = newsevent.24
-	title = newsevent.24.t
-	desc = newsevent.24.d
-	picture = GFX_news_event_belgium_annexed
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = FRA }
-		NOT = { original_tag = BEL }
-		NOT = { has_country_flag = fra_bel_puppet }
-		has_global_flag = belgium_puppet
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.24.a
-		set_country_flag = fra_bel_puppet
-	}
-}
-
-# The Sino-Soviet Pact
-news_event = {
-	id = newsevent.25
-	title = newsevent.25.t
-	desc = newsevent.25.d
-	picture = GFX_news_event_sino_soviet_pact
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = CHI }
-		NOT = { original_tag = PRC }
-		NOT = { original_tag = SOV }
-		NOT = { has_country_flag = chi_sov_pact }
-		has_global_flag = sino_soviet_pact
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.25.a
-		set_country_flag = chi_sov_pact
-	}
-}
-
-# World Revolution!
-news_event = {
-	id = newsevent.26
-	title = newsevent.26.t
-	desc = newsevent.26.d
-	picture = GFX_news_event_world_revolution
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = SOV }
-		NOT = { has_government = communism }
-		NOT = { has_country_flag = world_rev_happened }
-		has_global_flag = world_revolution
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.26.a
-		set_country_flag = world_rev_happened
 	}
 }
 
@@ -802,21 +581,6 @@ news_event = {
 	}
 }
 
-# The Duke of Kent Rescued At Sea
-news_event = {
-	id = newsevent.30
-	title = newsevent.30.t
-	desc = newsevent.30.d
-	picture = GFX_news_event_duke_of_kent_death_alt
-	
-	#major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = newsevent.30.a
-	}
-}
 
 # Benito Mussolini Removed From Office
 news_event = {
@@ -893,6 +657,7 @@ news_event = {
 	option = {
 		name = newsevent.33.a
 		set_country_flag = maginot_gone
+		
 	}
 }
 
@@ -921,55 +686,6 @@ news_event = {
 	}
 }
 
-# King Edward VIII Abdicates
-news_event = {
-	id = newsevent.35
-	title = newsevent.35.t
-	desc = newsevent.35.d
-	picture = GFX_news_event_king_abdicates
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = ENG }
-		NOT = { has_country_flag = ted_goes }
-		ENG = { has_country_flag = king_abdicates }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.35.a
-		set_country_flag = ted_goes
-	}
-}
-
-# King Edward VIII Marries American Divorcée
-news_event = {
-	id = newsevent.36
-	title = newsevent.36.t
-	desc = newsevent.36.d
-	picture = GFX_news_event_king_stays
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = ENG }
-		NOT = { has_country_flag = ted_stays }
-		ENG = { has_country_flag = king_stays }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.36.a
-		set_country_flag = ted_stays
-	}
-}
 
 # The Hoover Dam Is Completed
 news_event = {
@@ -978,17 +694,17 @@ news_event = {
 	desc = newsevent.37.d
 	picture = GFX_news_event_hoover_dam
 	
-	#major = yes
+	# major = yes
 
 	trigger = {
 		has_start_date < 1936.01.02
-		NOT = { original_tag = USA }
+		original_tag = USA
 		NOT = { has_country_flag = hoover_dam }
-		USA = { has_completed_focus = USA_finish_hoover_dam }
+		#USA = { has_completed_focus = USA_finish_hoover_dam }
 	}
 
 	mean_time_to_happen = {
-		days = 7
+		days = 77
 	}
 	
 	option = {
@@ -997,38 +713,6 @@ news_event = {
 	}
 }
 
-# King Edward Trigger (HIDDEN)
-news_event = {
-	id = newsevent.38
-	hidden = yes
-	
-	fire_only_once = yes
-	
-	trigger = {
-		date > 1936.12.1
-		date < 1937.1.1
-		has_start_date < 1936.01.02
-		ENG = {
-			exists = yes
-			has_country_flag = ENG_king_died
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	immediate = {
-		random_list = {
-			80 = { ENG = { country_event = { id = britain.17 } } }
-			20 = { ENG = { country_event = { id = leaderevent.59 } } }
-		}
-	}
-	
-	option = {
-		name = newsevent.38.a
-	}
-}
 
 # Mount Rushmore Completed
 news_event = {
@@ -1119,30 +803,6 @@ news_event = {
 	}
 }
 
-# [FRA.GetLeader] Forms New Grande Armée
-news_event = {
-	id = newsevent.42
-	title = newsevent.42.t
-	desc = newsevent.42.d
-	picture = GFX_news_event_grand_army
-	
-	#major = yes
-
-	trigger = {
-		NOT = { original_tag = FRA }
-		NOT = { has_country_flag = grande_armee }
-		FRA = { has_completed_focus = FRA_grand_army }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.42.a
-		set_country_flag = grande_armee
-	}
-}
 
 # German Unrestricted Submarine Warfare
 news_event = {
@@ -1194,31 +854,6 @@ news_event = {
 	}
 }
 
-# German Heavy Water Refinement
-news_event = {
-	id = newsevent.45
-	title = newsevent.45.t
-	desc = newsevent.45.d
-	picture = GFX_news_event_heavy_water
-	
-	#major = yes
-
-	trigger = {
-		NOT = { original_tag = GER }
-		NOT = { has_country_flag = heavy_water }
-		GER = { has_completed_focus = GER_heavy_water_refinement }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.45.a
-		set_country_flag = heavy_water
-	}
-}
-
 # The Manhattan Project
 news_event = {
 	id = newsevent.46
@@ -1241,62 +876,6 @@ news_event = {
 	option = {
 		name = newsevent.46.a
 		set_country_flag = manhattan_project
-	}
-}
-
-# [SOV.GetLeader] Launches Operation 'Zet'
-news_event = {
-	id = newsevent.47
-	title = newsevent.47.t
-	desc = newsevent.47.d
-	picture = GFX_news_event_operation_zet
-	
-	#major = yes
-
-	trigger = {
-		NOT = { original_tag = SOV }
-		NOT = { original_tag = CHI }
-		NOT = { original_tag = PRC }
-		NOT = { has_country_flag = zet_launched }
-		SOV = { has_completed_focus = SOV_operation_zet }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.47.a
-		set_country_flag = zet_launched
-	}
-}
-
-# Anglo-Japanese Alliance Renewed
-news_event = {
-	id = newsevent.48
-	title = newsevent.48.t
-	desc = newsevent.48.d
-	picture = GFX_news_event_anglo_japanese_alliance
-	
-	#major = yes
-
-	trigger = {
-		NOT = { original_tag = ENG }
-		NOT = { original_tag = JAP }
-		NOT = { has_country_flag = anglo_japanese_alliance }
-		JAP = {
-			has_completed_focus = join_allies_focus
-			is_in_faction_with = ENG
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.48.a
-		set_country_flag = anglo_japanese_alliance
 	}
 }
 
@@ -1325,7 +904,7 @@ news_event = {
 	immediate = {
 		random_list = {
 			60 = { FRA = { news_event = { id = newsevent.50 } } }
-			40 = { FRA = { news_event = { id = newsevent.51 } } }
+			# 40 = { FRA = { news_event = { id = newsevent.51 } } }
 		}
 	}
 	
@@ -1358,21 +937,6 @@ news_event = {
 	}
 }
 
-# General Billotte Narrowly Escapes Death
-news_event = {
-	id = newsevent.51
-	title = newsevent.51.t
-	desc = newsevent.51.d
-	picture = GFX_news_event_gaston_billotte_death_alt
-	
-	#major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = newsevent.51.a
-	}
-}
 
 # Marshal d'Espèrey Dies
 news_event = {
@@ -1403,66 +967,6 @@ news_event = {
 	}
 }
 
-# The Third Emu War
-news_event = {
-	id = newsevent.53
-	title = newsevent.53.t
-	desc = newsevent.53.d
-	picture = GFX_news_event_emu_war
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = AST }
-		NOT = { has_country_flag = emu_war_over }
-		AST = { has_completed_focus = AST_conclude_the_emu_war }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.53.a
-		set_country_flag = emu_war_over
-	}
-}
-
-# Béla Kun Executed
-news_event = {
-	id = newsevent.54
-	title = newsevent.54.t
-	desc = newsevent.54.d
-	picture = GFX_news_event_bela_kun_executed
-	
-	#major = yes
-	
-	trigger = {
-		OR = {
-			original_tag = HUN
-			is_subject_of = HUN
-			AND = {
-				capital_scope = { is_on_continent = europe }
-				has_government = communism
-			}
-		}
-		date > 1938.9.1
-		date < 1939.12.1
-		has_start_date < 1936.01.02
-		NOT = { has_country_flag = bela_kun_executed }
-		SOV = { has_completed_focus = SOV_great_purge }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.54.a
-		set_country_flag = bela_kun_executed
-	}
-}
-
 # Guglielmo Marconi Dies
 news_event = {
 	id = newsevent.55
@@ -1485,33 +989,6 @@ news_event = {
 	option = {
 		name = newsevent.55.a
 		set_country_flag = marconi_dead
-	}
-}
-
-# British Expeditionary Force Arrives In France
-news_event = {
-	id = newsevent.56
-	title = newsevent.56.t
-	desc = newsevent.56.d
-	picture = GFX_news_event_bef_france
-	
-	#major = yes
-
-	trigger = {
-		NOT = { original_tag = ENG }
-		NOT = { original_tag = FRA }
-		NOT = { has_country_flag = bef_france }
-		ENG = { has_completed_focus = ENG_establish_BEF }
-		has_global_flag = BEF_sent
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.56.a
-		set_country_flag = bef_france
 	}
 }
 
@@ -1541,57 +1018,6 @@ news_event = {
 	option = {
 		name = newsevent.57.a
 		set_country_flag = port_chicago_disaster
-	}
-}
-
-# Major Military Exercises In [USA.GetNameDef]
-news_event = {
-	id = newsevent.58
-	title = newsevent.58.t
-	desc = newsevent.58.d
-	picture = GFX_news_event_louisiana_maneuvers
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = USA }
-		NOT = { has_country_flag = louisiana_maneuvers }
-		USA = { has_completed_focus = USA_army_maneuvers }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.58.a
-		set_country_flag = louisiana_maneuvers
-	}
-}
-
-# The Treaty of London
-news_event = {
-	id = newsevent.59
-	title = newsevent.59.t
-	desc = newsevent.59.d
-	picture = GFX_news_event_london_treaty
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = ITA }
-		NOT = { original_tag = ETH }
-		NOT = { has_country_flag = eth_ita_peace }
-		has_global_flag = treaty_of_london
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.59.a
-		set_country_flag = eth_ita_peace
 	}
 }
 
@@ -1641,71 +1067,6 @@ news_event = {
 	}
 }
 
-# Zeppelins Spotted!
-news_event = {
-	id = newsevent.61
-	title = newsevent.61.t
-	desc = newsevent.61.d
-	picture = GFX_news_event_zeppelins
-	
-	#major = yes
-	
-	trigger = {
-		has_war = no
-		NOT = { has_country_flag = zeppelins_spotted }
-		any_country = {
-			has_capitulated = no
-			has_war = no
-			OR = {
-				has_government = fascism
-				has_government = communism
-			}
-			has_tech = strategic_bomber0
-			has_equipment = { strat_bomber_equipment_0 > 74 }
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.61.a
-		set_country_flag = zeppelins_spotted
-	}
-}
-
-# German 'Amerikabomber' Program Confirmed
-news_event = {
-	id = newsevent.62
-	title = newsevent.62.t
-	desc = newsevent.62.d
-	picture = GFX_news_event_amerika_bomber
-	
-	#major = yes
-
-	trigger = {
-		NOT = { original_tag = GER }
-		NOT = { has_country_flag = amerika_bomber }
-		GER = {
-			exists = yes
-			has_war_with = USA
-			has_completed_focus = GER_amerika_bomber_focus
-			has_tech = strategic_bomber4
-			has_equipment = { strat_bomber_equipment_4 > 9 }
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.62.a
-		set_country_flag = amerika_bomber
-	}
-}
-
 # General Wever Killed In Air Crash
 news_event = {
 	id = newsevent.63
@@ -1736,161 +1097,3 @@ news_event = {
 	}
 }
 
-# Italy Announces Claims On Tirol
-news_event = {
-	id = newsevent.64
-	title = newsevent.64.t
-	desc = newsevent.64.d
-	picture = GFX_news_event_journalists_speech
-
-	major = yes
-
-	is_triggered_only = yes
-
-	fire_for_sender = no
-
-	option = {
-		name = newsevent.64.a
-		trigger = {
-			OR = {
-				tag = AUS
-				tag = GER
-				tag = SWI
-			}
-		}
-	}
-
-	option = {
-		name = newsevent.64.b
-		trigger = {
-			NOT = {
-				OR = {
-					tag = AUS
-					tag = GER
-					tag = SWI
-					tag = ITA
-				}
-			}
-			NOT = {
-				has_government = fascism
-			}
-		}
-	}
-
-	option = {
-		name = newsevent.64.c
-		trigger = {
-			NOT = {
-				OR = {
-					tag = AUS
-					tag = GER
-					tag = SWI
-					tag = ITA
-				}
-			}
-			has_government = fascism
-		}
-	}
-}
-
-# RESERVED: newsevent.65 - newsevent.68
-
-# Italo Balbo Launches Coup In [ITA.GetNameDef]
-news_event = {
-	id = newsevent.69
-	title = newsevent.69.t
-	desc = newsevent.69.d
-	picture = GFX_news_event_italo_balbo_leader
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = ITA }
-		NOT = { has_country_flag = balbo_leader }
-		ITA = { has_country_flag = balbo_saves_the_world }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.69.a
-		set_country_flag = balbo_leader
-	}
-}
-
-# [SOV.GetNameDef] Embraces Socialism in One Country
-news_event = {
-	id = newsevent.70
-	title = newsevent.70.t
-	desc = newsevent.70.d
-	picture = GFX_news_event_socialism_in_one_country
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = SOV }
-		NOT = { has_country_flag = socialism_in_one_country }
-		SOV = { has_completed_focus = SOV_socialism_in_one_country }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.70.a
-		set_country_flag = socialism_in_one_country
-	}
-}
-
-# [SOV.GetNameDef] Embraces Permanent Revolution
-news_event = {
-	id = newsevent.71
-	title = newsevent.71.t
-	desc = newsevent.71.d
-	picture = GFX_news_event_permanent_revolution
-	
-	#major = yes
-	
-	trigger = {
-		NOT = { original_tag = SOV }
-		NOT = { has_country_flag = permanent_revolution }
-		SOV = { has_completed_focus = SOV_permanent_revolution }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.71.a
-		set_country_flag = permanent_revolution
-	}
-}
-
-# [USA.GetNameDef] Launches Operation 'Paperclip'
-news_event = {
-	id = newsevent.72
-	title = newsevent.72.t
-	desc = newsevent.72.d
-	picture = GFX_news_event_operation_paperclip
-	
-	#major = yes
-
-	trigger = {
-		NOT = { original_tag = USA }
-		NOT = { has_country_flag = paperclip_launched }
-		USA = { has_completed_focus = USA_rocketry_focus }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = newsevent.72.a
-		set_country_flag = paperclip_launched
-	}
-}

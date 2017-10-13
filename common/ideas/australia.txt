@@ -981,7 +981,7 @@ high_command = {
 			}
 			
 			research_bonus = {
-				electronics = 0.075
+				electronics = 0.10
 			}
 
 			cost = 75

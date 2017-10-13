@@ -1,5 +1,6 @@
 ideas = {
-
+	
+	#USA
 	country = {
 		wartime_industry_focus = {
 			allowed = {
@@ -20,6 +21,7 @@ ideas = {
 		}
 	}
 	
+	#Generic
 	country = {
 		real_neutrality = {
 			allowed = {
@@ -44,6 +46,7 @@ ideas = {
 		}
 	}
 	
+	#France
 	country = {
 		incompetent_aircraft_industry = {
 			allowed = {
@@ -79,6 +82,7 @@ ideas = {
 		}
 	}
 	
+	#Germany
 	country = {
 		hitler_rage = {
 			allowed = {
@@ -97,6 +101,7 @@ ideas = {
 		}
 	}
 	
+	#Germany
 	country = {
 		idea_GER_STO = {
 
@@ -129,6 +134,27 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+	
+	#Allies
+	country = {
+		enigma_machine_cracked = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_spy_intel
+			
+			removal_cost = -1
+			
+			modifier = {
+				decryption_factor = 0.3
 			}
 		}
 	}

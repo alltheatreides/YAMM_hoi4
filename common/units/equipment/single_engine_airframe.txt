@@ -122,7 +122,7 @@ equipments = {
 
 		# Air vs Navy - medium damage / high hit chance / medium to hurt
 		naval_strike_attack = 3
-		naval_strike_targetting = 10
+		naval_strike_targetting = 5
 		
 		build_cost_ic = 22
 		resources = {
@@ -548,7 +548,7 @@ equipments = {
 		air_ground_attack = 5
 
 		naval_strike_attack = 3
-		naval_strike_targetting = 10		
+		naval_strike_targetting = 5		
 	}
 
 	# Improved CAS
@@ -574,7 +574,7 @@ equipments = {
 		}
 		
 		naval_strike_attack = 5
-		naval_strike_targetting = 10
+		naval_strike_targetting = 5
 	}
 
 	# Advanced CAS
@@ -600,7 +600,7 @@ equipments = {
 		}		
 
 		naval_strike_attack = 10
-		naval_strike_targetting = 10
+		naval_strike_targetting = 5
 	}
 	
 	# Basic Carrier CAS

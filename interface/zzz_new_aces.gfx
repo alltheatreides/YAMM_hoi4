@@ -1,0 +1,12 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_USA_ace_Amelia_Earhart"
+		texturefile = "gfx/aces/USA_ace_Amelia_Earhart.dds"
+	}
+	spriteType = {
+		name = "GFX_AST_ace_Emu_King"
+		texturefile = "gfx/aces/AST_ace_Emu_King.dds"
+	}
+
+}

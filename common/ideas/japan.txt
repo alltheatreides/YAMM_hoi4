@@ -19,6 +19,7 @@ ideas = {
 			modifier = {
 				industry_air_damage_factor = -0.1
 				army_morale_factor = 0.1
+				enemy_justify_war_goal_time = 1.0
 			}
 		}
 	

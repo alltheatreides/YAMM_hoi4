@@ -41,4 +41,19 @@ spriteType = {
 		texturefile = "gfx/interface/ideas/EFR_STO.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_enigma_idea"
+		texturefile = "gfx/interface/ideas/GER_enigma.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Bletchley_Park"
+		texturefile = "gfx/interface/ideas/ENG_bletchley_park.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_enigma_machine_cracked"
+		texturefile = "gfx/interface/ideas/GER_enigma.dds"
+	}
+	
 }

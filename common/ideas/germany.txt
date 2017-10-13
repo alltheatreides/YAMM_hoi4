@@ -50,7 +50,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_spy_coup
+			# picture = generic_spy_coup
 
 			research_bonus = {
 				decryption_tech = 0.05
@@ -964,6 +964,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = GER
+			}
+			available = {
+				NOT = { has_country_flag = wever_dead }
 			}
 			
 			research_bonus = {

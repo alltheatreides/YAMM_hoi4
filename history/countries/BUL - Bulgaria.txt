@@ -6,6 +6,11 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
+	BUL_imro
+	BUL_second_national_catastrophe
+	BUL_great_depression
+	BUL_revisionism
+	BUL_bulgarian_tsardom
 }
 
 set_technology = {
@@ -158,13 +163,13 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Zivko Topalovic"
-	desc = "POLITICS_ZIVCO_TOPALOVIC_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	name = "Nikola Mushanov"
+	desc = "POLITICS_NIKOLA_MUSHANOV_DESC"
+	picture = "Portrait_Bulgaria_Nikola_Mushanov.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
-		#
+		dislikes_germany
 	}
 }
 
@@ -181,14 +186,21 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Vasil Tenev Boydev"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	picture = "Portrait_Bulgaria_Vasil_Tenev_Boydev.dds"
 	traits = { panzer_leader }
 	skill = 3
 }
 
 create_field_marshal = {
 	name = "Georgi Nikolov Popov"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	picture = "Portrait_Bulgaria_Georgi_Nikolov_Popov.dss"
+	traits = { defensive_doctrine }
+	skill = 4
+}
+
+create_field_marshal = {
+	name = "Nikola Ivanov"
+	picture = "Portrait_Bulgaria_Georgi_Nikolov_Popov.dss"
 	traits = { defensive_doctrine }
 	skill = 4
 }

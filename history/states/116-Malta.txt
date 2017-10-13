@@ -13,7 +13,7 @@ state=
 			infrastructure = 3
 			air_base = 3
 			12003 = {
-				naval_base = 3
+				naval_base = 6
 				coastal_bunker = 1
 			}
 		}

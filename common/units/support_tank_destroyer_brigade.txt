@@ -34,7 +34,7 @@ sub_units = {
 			
 		}
 		
-		can_be_parachuted = yes
+		# can_be_parachuted = yes
 		
 		manpower = 300
 		max_organisation = 0

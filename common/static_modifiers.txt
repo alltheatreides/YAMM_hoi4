@@ -136,7 +136,7 @@ occupation_policy_4 = { # Harshest
 
 # The following is multiplied by local resistance strength.
 resistance_effect = {
-	local_supplies = -0.5
+	local_supplies = -0.8
 	local_intel_to_enemies = 1
 	local_factory_sabotage = 0.75
 	attrition = 0.25

@@ -1,0 +1,29 @@
+﻿air_wings = {
+	
+	325 = {
+		CAS_equipment_1 =  {		
+			owner = "USA" 
+			amount = 80
+		}
+		name = "The Flying Tigers"
+		ace={
+			modifier="support_unique"
+			name="Robert"
+			surname="Smith"
+			callsign="Tadpole"
+			portrait="western_european_ace_m_2"
+		}
+		fighter_equipment_1 =  {		
+			owner = "USA" 
+			amount = 160
+		}
+		name = "The Flying Tigers"
+		ace={
+			modifier="fighter_unique"
+			name="David"
+			surname="Lee"
+			callsign="Tex"
+			portrait="western_european_ace_m_2"
+		}
+	}
+}

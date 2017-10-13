@@ -1,0 +1,872 @@
+﻿l_english: 
+
+
+leaderevent.1.t:0 "Stanley Baldwin Resigns" 
+
+
+leaderevent.1.d:0 "Two weeks after the coronation of King George VI, Mr. Baldwin has announced that he will resign the premiership in order to retire at the age of 70. Having led the National Government on-and-off since 1923, he has been the steady hand responsible for bringing the British Empire out of the Great Depression, and in recent years has reluctantly overseen the beginning of Imperial re-armament and the abdication of King Edward VIII. He steps down as a popular and successful prime minister, but has he done enough to counter the growing threat from Germany?" 
+
+leaderevent.1.a:0 "Mr. Chamberlain shall seek to form a government." 
+
+leaderevent.2.t:0 "Édouard Daladier Resigns" 
+
+
+leaderevent.2.d:0 "With the collapse of the Third Republic and the refusal of the German government to offer an Armistice, it must fall to fresh leadership to continue the fight from the colonies. Whilst few would doubt that Monsieur Daladier has been a fine prime minister, he simply could not contend with the extraordinary set of circumstances in which France has found herself. We can but pray there is light at the end of the tunnel."
+ 
+
+leaderevent.2.a:0 "Monsieur Reynaud shall seek to form a government." 
+
+leaderevent.3.t:0 "Marshal Pétain Resigns" 
+
+
+leaderevent.3.d:0 "Marshal Pétain, the Lion of Verdun and Hero of France, is fast-approaching 90 years old. Though still strong, proud and of sound mind, the old Marshal cannot carry on forever, and the many burdens of state are slowly wearing him down. La Révolution Nationale must and shall continue, but it is now believed that the Prime Minister, François Darlan, would be better-placed to assume control of the French State."
+ 
+
+leaderevent.3.a:0 "Admiral Darlan shall take over the reins of government." 
+
+leaderevent.4.t:0 "The Fall of Mussolini" 
+
+
+leaderevent.4.d:0 "For many years now King Victor Emmanuel III has watched his prime minister, the self-styled 'Duce' Benito Mussolini, with a mix of fear and confusion. Whilst the King was content to let the foolish clown prance around the world stage for as long as his antics brought Italy diplomatic and military prestige without the spilling of blood; now, however, the war effort is floundering and the Suez Canal remains in Allied control. Mussolini has been arrested, and the King has requested that a replacement be sent for, but which of the Marshals of Italy should he appoint?"
+ 
+
+leaderevent.4.a:0 "Marshal Balbo shall form a government." 
+
+leaderevent.4.b:0 "Marshal Badoglio shall form a government." 
+
+leaderevent.4.c:0 "Marshal De Bono shall form a government." 
+
+leaderevent.5.t:0 "The King Takes Control" 
+
+
+leaderevent.5.d:0 "Despite the King's best efforts in recent years, Italy's war leadership under the Partito Nazionale Fascista has been catastrophic. It was hoped that by overthrowing the unpopular and incompetent 'Duce' that progress would be made, but [ITA.GetLeader]'s renewed defensive strategies have come to naught. The only option that remains is for the King to overthrow the useless Marshal and assume personal control of the government himself."
+ 
+
+leaderevent.5.a:0 "The King shall assume command of government." 
+
+leaderevent.6.t:0 "The Flight of Sir Oswald Mosley" 
+
+
+leaderevent.6.d:0 "Though at first Sir Oswald Mosley and his British Union of Fascists were seen as a welcome relief from the perceived widespread corruption and mismanagement associated with the National Government, it did not take long for Mosley's increasingly erratic behaviour to become a cause for concern. Of the numerous distinguished military figures who chose to keep a low profile during the present turmoil, the noted occultist, esoteric and armoured warfare proponent J.F.C. Fuller has for some time now been seen as a possible caretaker leader. A former ally of Mosley only recently promoted to Field Marshal by King Edward VIII, Fuller has at last chosen to step out of the shadows."
+ 
+
+leaderevent.6.a:0 "Field Marshal Fuller shall assume command of government." 
+
+leaderevent.7.t:0 "The 1939 General Election" 
+
+
+leaderevent.7.d:0 "Due to the prolonged effects of the Great Depression and the deteriorating situation in Europe, there has not been a general election in Britain since 1935. Under the leadership of Ramsay MacDonald, Stanley Baldwin and more recently [Root.GetLeader], the National Government has continued to steer the Empire through increasingly murky waters, and the Prime Minister now believes that a late autumn general election would help to steady the ship and provide the Conservative Party with a fresh mandate. It is thought that having helped the country avoid another Great War the government will 'romp home' to victory, but Mr. Attlee and the Labour Party are nonetheless feeling confident of making substantial gains."
+ 
+
+leaderevent.7.a:0 "Conservative Party" 
+
+leaderevent.7.b:0 "Labour Party" 
+
+leaderevent.8.t:0 "The 1945 General Election" 
+
+leaderevent.8.d:0 "Years of total war and strategic bombing have left the British Empire ravaged and shaken to its very core, but with the end now finally in sight a fresh general election has been called. [Root.GetLeader] is understandably confident of a renewed mandate for the Conservative Party, and much is being made of his status as the man who led Britain through the War. Despite these advantages, he has been privately informed that he is not seen as the man to 'win the peace' at home, and it seems many of the overseas votes have already been declared for Mr. Attlee's Labour Party..."
+ 
+
+leaderevent.8.a:0 "Labour Party" 
+
+leaderevent.8.b:0 "Conservative Party" 
+
+leaderevent.9.t:0 "The 1945 General Election" 
+
+
+leaderevent.9.d:0 "Years of total war and strategic bombing have left the British Empire ravaged and shaken to its very core, but with the end now finally in sight a fresh general election has been called. [Root.GetLeader] is understandably confident of a renewed mandate for the Labour Party, and much is being made of his status as the man who led Britain through the War. Though there is still a viable opposition in the form of Mr. Churchill's Conservative Party, they are not popular with the working classes or the many thousands of troops returning from overseas, and few see them as the right people to rebuild the country's infrastructure and public services."
+ 
+
+leaderevent.9.a:0 "Labour Party" 
+
+leaderevent.9.b:0 "Conservative Party" 
+
+leaderevent.10.t:0 "Albert Sarraut Resigns" 
+
+
+leaderevent.10.d:0 "With the situation in Spain having now deteriorated into full-scale civil war, there are many in government who fear the very real possibility of civil unrest in France; particularly from some of the more radical communist and anarchist elements within both the Army and the Chamber of Deputies. Despite these tensions, Monsieur Sarraut's administration has been attempting to provide Spain's Republican faction with machine guns and heavy artillery; a deeply unpopular policy and one likely to bring about a constitutional crisis. Rather than risk fresh elections or bring down the government, the Prime Minister has chosen to resign."
+ 
+
+leaderevent.10.a:0 "Monsieur Daladier shall seek to form a government." 
+
+leaderevent.11.t:0 "The Assassination of François Darlan" 
+
+
+leaderevent.11.d:0 "Never the most popular of men, Admiral Darlan has today been slain by an assassin's bullet in his headquarters. The gunman has been named as Fernand Bonnier de La Chapelle, a 20 year-old monarchist aligned with Henri d'Orléans, the supposed comte de Paris. His precise motives are unclear and indeed irrelevant; he is a traitor and will be executed by firing squad. Despite the Admiral's death the business of government must continue, and therefore the Prime Minister now also assumes the role of Chief of the French State."
+ 
+
+leaderevent.11.a:0 "Monsieur Laval shall take over the reins of government." 
+
+leaderevent.12.t:0 "Darlan Survives Assassination Attempt" 
+
+
+leaderevent.12.d:0 "Never the most popular of men, Admiral Darlan today narrowly escaped an assassin's bullet in his headquarters. The gunman has been named as Fernand Bonnier de La Chapelle, a 20 year-old monarchist aligned with Henri d'Orléans, the supposed comte de Paris. His precise motives are unclear and indeed irrelevant; he is a traitor and will be executed by firing squad. In light of the assassination attempt, the Prime Minister has stressed the need for a review of Admiral Darlan's security detail and a full investigation into how this near-tragedy was allowed to happen."
+ 
+
+leaderevent.12.a:0 "We must redouble our efforts." 
+
+leaderevent.13.t:0 "Military Coup Against Nazi Regime" 
+
+
+leaderevent.13.d:0 "With the Rhineland once again under foreign occupation and enemy troops pushing into Germany itself, the Third Reich's foreign policy lays in tatters; without herculean effort the war is surely lost. Senior elements within the Wehrmacht have for several years now consistently argued against Nazi diktat, warning that the rearmament process was nowhere near complete. In the so-called Kaiser-Putsch, the 'Führer' and his thuggish Nazi sycophants have been overthrown by a small but influential monarchist wing of the Heer operating under instruction from Generalfeldmarschall August von Mackensen, the legendary 'Amerikanerfresser'."
+ 
+
+leaderevent.13.a:0 "The old order has been restored." 
+
+leaderevent.14.t:0 "Adolf Hitler Commits Suicide" 
+
+
+leaderevent.14.d:0 "With the armies of the Third Reich being defeated on all fronts, the situation looks increasingly dire. The collapse of our German border defenses mean that the enemy now approaches Festung Berlin itself; the Führer has reluctantly conceded that the War is lost, and very likely Germany along with it. He and his new wife, Eva Braun, have today in the Führerbunker taken their own lives with the help of cyanide capsules and a gunshot wound to the head. As per the Führer's last will and testament, Großadmiral Karl Dönitz is to succeed him as head of state and leader of the war effort. The world watches..."
+ 
+
+leaderevent.14.a:0 "Heil Dönitz!" 
+
+leaderevent.15.t:0 "China and the Axis" 
+
+leaderevent.15.d:0 "Our recent support for Generalissimo Chiang Kai-shek and the Kuomintang regime has not been without controversy, and especially from those both in government and the Wehrmacht who have long-argued for an alliance with the Empire of Japan. However, the ongoing situation in the Far East means that now is as good a time as any to approach the Chinese leadership with a formal offer of alliance. Should we invite Nanjing to the Axis?"
+ 
+
+leaderevent.15.a:0 "Yes, we must subdue Asia." 
+
+leaderevent.15.b:0 "No, they are irrelevant." 
+
+leaderevent.16.t:0 "Invitation to the Axis" 
+
+leaderevent.16.d:0 "For many years now the German Wehrmacht has been involved in training and arming the National Revolutionary Army, and thanks to the advanced German officer corps we have slowly brought our armies up to European standards. Today, a cable came in from Berlin asking whether the great Generalissimo Chiang Kai-shek would consent to signing the Tripartite Pact, alongside representatives from the Third Reich and the Kingdom of Italy. We have been invited to the powerful Berlin-Rome Axis; should we become the third member?"
+ 
+
+leaderevent.16.a:0 "Yes, they will make powerful allies." 
+
+leaderevent.16.b:0 "No, they are cruel and barbarous fanatics." 
+
+leaderevent.17.t:0 "China Accepts Axis Membership" 
+
+leaderevent.17.d:0 "Wisely, [CHI.GetNameDef] has accepted our offer of a formal alliance. They are now a member of the Axis powers and our bastion in the East."
+ 
+
+leaderevent.17.a:0 "Excellent!" 
+
+leaderevent.18.t:0 "China Rejects Axis Membership" 
+
+leaderevent.18.d:0 "For reasons quite unfathomable, the Chinese leadership have rejected our offer to join the Axis. They disapprove of our 'methods' and question our motives. In hindsight, the generals were probably right... we should have gone with Japan. For this slight, China must be wiped from the face of the Earth."
+ 
+
+leaderevent.18.a:0 "We will crush them!" 
+
+leaderevent.19.t:0 "Germany Demands Alsace-Lorraine" 
+
+leaderevent.19.d:0 "For some time now the Nazi regime in Berlin has been posturing and sabre-rattling, attempting to intimidate its smaller neighbours and subsume various German-speaking peoples into the Reich. We have tried to understand the Führer's concerns and we have listened to his grievances, but clearly Austria was not enough and his word means nothing. Now the Führer claims Alsace-Lorraine, so what are we to do? France does not want another war and may not even survive one, but surely we cannot acquiesce to these Nazi thugs?"
+ 
+
+leaderevent.19.a:0 "Regrettably, we must surrender Alsace-Lorraine." 
+
+leaderevent.19.b:0 "Enough is enough!" 
+
+leaderevent.20.t:0 "France Accepts German Claims" 
+
+leaderevent.20.d:0 "The cowardly French have finally accepted our rightful claim to Elsass-Lothringen and surrendered it to the Reich. Even now, Wehrmacht garrison troops are marching into Strassburg and Metz. The lies of Versailles have been reversed."
+ 
+
+leaderevent.20.a:0 "At last, 1918 is avenged!" 
+
+leaderevent.21.t:0 "France Rejects German Claims" 
+
+leaderevent.21.d:0 "The cowardly French have refused to accept our rightful claim on Elsass-Lothringen and continue to hide behind their 'invincible' Maginot Line. The French foreign minister has rebuffed our political efforts, and all German diplomatic personnel are now being expelled from France."
+ 
+
+leaderevent.21.a:0 "They will pay the iron price." 
+
+leaderevent.22.t:0 "Destruction of the Maginot Line" 
+
+leaderevent.22.d:0 "The final victory over [FRA.GetNameDef] has seen the rightful transfer of Elsass-Lothringen back to [GER.GetNameDef] after its unlawful theft in 1918. We can now pull down the Maginot Line, that symbol of French cowardice and false defiance."
+ 
+
+leaderevent.22.a:0 "Mr. Todt, tear down this wall!" 
+
+leaderevent.23.t:0 "Destruction of Fort Eben-Emael" 
+
+leaderevent.23.d:0 "Our crushing victory over [BEL.GetNameDef] has seen the annexation of the Wallonische Region into [GER.GetNameDef]. The famous Fort Eben-Emael, part of the so-called Fortified Position of Liège, can now be pulled down."
+ 
+
+leaderevent.23.a:0 "Better than it being used against us later." 
+
+leaderevent.24.t:0 "Destruction of the Alpine Line" 
+
+leaderevent.24.d:0 "With the fall of [FRA.GetNameDef] and our acquisition of Savoia, we can begin work pulling down the Alpine Line, the southernmost section of the once-formidable Maginot Line."
+ 
+
+leaderevent.24.a:0 "Knock it down!" 
+
+leaderevent.25.t:0 "The Hatay Question" 
+
+leaderevent.25.d:0 "The region currently known as Hatay Province has been administered as part of the French Mandate of Syria since 1925, but prior to that was part of the Aleppo Vilayet of the Ottoman Empire. A region of great cultural and religious diversity, Hatay is politically divided between Syrian nationalists, Turkish secessionists, and French colonialists. Now, following June's rigged referendum, the Kemalist leadership in Ankara are demanding we return the province to [TUR.GetNameDef]. There are other options, but what should we do?"
+ 
+
+leaderevent.25.a:0 "Return Hatay." 
+
+leaderevent.25.b:0 "Keep Hatay." 
+
+leaderevent.25.c:0 "Grant Syria independence." 
+
+leaderevent.26.t:0 "France Returns Hatay Province" 
+
+leaderevent.26.d:0 "Following June's free and fair elections in Hatay Province in which an overwhelming majority voted to rejoin [TUR.GetNameDef], the government of [FRA.GetNameDef] has finally acquiesced to the will of the people. After twenty years of foreign colonial rule, Hatay is ours once again."
+ 
+
+leaderevent.26.a:0 "Then they shall be our friends." 
+
+leaderevent.27.t:0 "France Keeps Hatay Province" 
+
+leaderevent.27.d:0 "Following June's free and fair elections in Hatay Province in which an overwhelming majority voted to rejoin [TUR.GetNameDef], the government of [FRA.GetNameDef] has firmly rejected the will of the people. Despite twenty years of foreign colonial rule, the good people of Hatay must endure further suffering. If we wish to retake Hatay, it looks like we must do so by force."
+ 
+
+leaderevent.27.a:0 "Germany may offer an alternative..." 
+
+leaderevent.28.t:0 "France Affirms Syrian Independence" 
+
+leaderevent.28.d:0 "Following June's free and fair elections in Hatay Province in which an overwhelming majority voted to rejoin [TUR.GetNameDef], the government of [FRA.GetNameDef] has chosen not only to defy our humble request for the return of Hatay Province, but has gone so far as to release [SYR.GetNameDef] as an independent state. This is a truly astonishing turn of events, and we should not rule out the use of force to redress the situation."
+ 
+
+leaderevent.28.a:0 "Liberation must be an option." 
+
+leaderevent.29.t:0 "The Future of Manchukuo" 
+
+leaderevent.29.d:0 "We have effectively been a puppet state of [JAP.GetNameDef] since 1932, but the deteriorating situation in China means that many of our politicians are now clamouring for independence. Though lacking in industry, [MAN.GetNameDef] is vast and has great potential. What should we do?"
+ 
+
+leaderevent.29.a:0 "Let us go it alone." 
+
+leaderevent.29.b:0 "Maintain Japanese protection." 
+
+leaderevent.30.t:0 "Indian Independence Promised" 
+
+leaderevent.30.d:0 "For some years now the traditionally efficient Imperial bureaucracy has been undermined and sabotaged by the non-violent protest movement led by Mr. Gandhi and his cohorts. As Mr. Churchill put it in 1931, "it is alarming and also nauseating to see Mr Gandhi, a seditious Middle Temple lawyer, now posing as a fakir of a type well known in the East, striding half-naked up the steps of the Vice-regal palace to parley on equal terms with the representative of the King-Emperor." Thankfully, the promise of Indian independence after the War's conclusion has led Mr. Gandhi's followers to cease their protests -- much to the benefit of [RAJ.GetNameDef]."
+ 
+
+leaderevent.30.a:0 "We are freed of our shackles." 
+
+leaderevent.31.t:0 "Operation Weserübung (AI event)" 
+
+leaderevent.31.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.31.a:0 "Extra troops." 
+
+leaderevent.32.t:0 "Further Maginot Line Demolition" 
+
+leaderevent.32.d:0 "With the destruction of the primary redoubts in Alsace-Lorraine, we should consider removing the remnants of the former Maginot Line along the Franco-Belgian border. It was often proposed that a line of forts should be extended to the English Channel, and now with the Fall of France we have no need of these concrete eyesores."
+ 
+
+leaderevent.32.a:0 "If there's anything there, pull it down." 
+
+leaderevent.33.t:0 "Around Maginot (AI event)" 
+
+leaderevent.33.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.33.a:0 "Extra troops." 
+
+leaderevent.34.t:0 "Intervention in the Spanish Civil War" 
+
+leaderevent.34.d:0 "With Spain having finally descended into full-scale civil war, Europe's fragile network of alliances is now being tested to breaking point. Those nations, like [Root.GetName], which lie on the periphery of extremist political dogma must now make a choice: do we support the Nationalists or Republicans in Spain, or remain detached from such affairs?"
+ 
+
+leaderevent.34.a:0 "Support the Nationalists." 
+
+leaderevent.34.b:0 "Support the Republicans." 
+
+leaderevent.34.c:0 "It is not for us to get involved." 
+
+leaderevent.35.t:0 "[From.GetName] Sends Nationalist Volunteers" 
+
+leaderevent.35.d:0 "Our loyal and courageous friends in [From.GetName] have sent us three additional Brigada Legionario, which now await our command in Coruña. Surely such evident international support for our regime heralds the end of the Republican cause?"
+ 
+
+leaderevent.35.a:0 "Magnífico!" 
+
+leaderevent.36.t:0 "[From.GetName] Sends Republican Volunteers" 
+
+leaderevent.36.d:0 "Our loyal and courageous friends in [From.GetName] have sent us three additional Brigada Internacionales, which now await our command in Barcelona. Surely such evident international support for our regime heralds the end of the Nationalist cause?"
+ 
+
+leaderevent.36.a:0 "Magnífico!" 
+
+leaderevent.37.t:0 "The Return of Chen Duxiu" 
+
+leaderevent.37.d:0 "With the return to power of Leon Trotsky in [SOV.GetNameDef] and his call for world revolution, the isolationist, pro-Stalin regime under Chairman Mao has become increasingly untenable. In recent months it has become clear that Chen Duxiu, a co-founder of the Chinese Communist Party and long-time supporter of Trotsky, has won favor with the Politburo in Moscow. Now, after years of exile and disgrace, Chairman Duxiu has taken control of the government and seeks to form a Sino-Soviet Pact."
+ 
+
+leaderevent.37.a:0 "Send word to Moscow at once." 
+
+leaderevent.38.t:0 "Chen Duxiu Proposes Sino-Soviet Pact" 
+
+leaderevent.38.d:0 "The fruits borne of our call for world revolution are many and varied. Even now, supporters of the Chinese exile Chen Duxiu have mounted a successful coup against the oppressive authoritarian regime of Mao Zedong, who is now feared dead. Chairman Duxiu's newly-appointed foreign minister has proposed that [PRC.GetNameDef] and [SOV.GetNameDef] sign a joint Sino-Soviet Pact and 'treaty of collectivist friendship in perpetuity.' Clearly our revolution has now spread to China, but should we take this step?"
+ 
+
+leaderevent.38.a:0 "Very well, sign it." 
+
+leaderevent.38.b:0 "Leave the Chinese to their fate." 
+
+leaderevent.39.t:0 "Invitation to the Axis" 
+
+leaderevent.39.d:0 "The German ambassador to [FIN.GetNameDef] has today presented the government with an invitation to become a member of the Axis powers and join the great crusade against Bolshevism. Finns have fought and died alongside Germans before, and it is not long ago that our brave soldiers were allied against the 'Red Menace' as it attempted to sweep across Europe. That said, should we get involved in this new and terrible Weltkrieg?"
+ 
+
+leaderevent.39.a:0 "We have no choice, the Reds must be stopped!" 
+
+leaderevent.39.b:0 "Our neutrality must be preserved." 
+
+leaderevent.40.t:0 "Finland Accepts Axis Membership" 
+
+leaderevent.40.d:0 "Wisely, [FIN.GetNameDef] has accepted our offer of a formal alliance. They are now a member of the Axis powers and will join our crusade against the socialist virus."
+ 
+
+leaderevent.40.a:0 "To Leningrad, then!" 
+
+leaderevent.41.t:0 "Finland Rejects Axis Membership" 
+
+leaderevent.41.d:0 "Wishing to preserve his country's neutrality and independence, the ever-craven Finnish ambassador has rejected our benevolent offer of military alliance. Reasons were given, although apparently Herr Ribbentrop was so incensed at the reply that he neglected to take note of them. It is a black day for German diplomacy."
+ 
+
+leaderevent.41.a:0 "No matter, they shall be next to fall." 
+
+leaderevent.42.t:0 "Japanese Defeat in China" 
+
+leaderevent.42.d:0 "With our client states [MAN.GetNameDef] and [MEN.GetNameDef] defeated and the Emperor's forces being pushed back on all fronts, it is surely time to sue for peace with [CHI.GetNameDef]. Despite our best efforts, [JAP.GetNameDef] simply does not have the manpower or political will to continue a protracted land war in Asia.\n\nWe should cut our losses and make peace with the Chinese. Should we cede them our Chinese territories in exchange for an end to hostilities?"
+ 
+
+leaderevent.42.a:0 "Yes, the game's up." 
+
+leaderevent.42.b:0 "No, fight to the last man!" 
+
+leaderevent.43.t:0 "The Treaty of Beijing" 
+
+leaderevent.43.d:0 "Generalissimo Chiang Kai-shek and the Kuomintang regime are now assured of their place in History! The vile Japanese have been pushed back to the sea and Manchuria is once again under Chinese rule.\n\nAn emissary for [JAP.GetNameDef] has sued for peace on the Emperor's behalf; he reports that the Japanese government is willing to cede the states of Taiwan, East Hebei and Kwantung in exchange for peace. In addition, [JAP.GetNameDef] will abandon its claims in Manchuria."
+ 
+
+leaderevent.43.a:0 "The Middle Kingdom is victorious!" 
+
+leaderevent.43.b:0 "Why should we stop now?" 
+
+leaderevent.44.t:0 "The Treaty of Beijing Rejected" 
+
+leaderevent.44.d:0 "The Chinese have rejected our overtures of peace; the Treaty of Beijing was torn up by Kuomintang officials during its first reading, and we now face the stark possibility of an endless war with [CHI.GetNameDef].\n\nIf we are to bring this war to a successful close [JAP.GetNameDef] will require new and deadly weapons."
+ 
+
+leaderevent.44.a:0 "Are we safe on Fortress Japan?" 
+
+leaderevent.45.t:0 "The Demilitarization of Korea" 
+
+leaderevent.45.d:0 "One of the harshest terms of the Treaty of Beijing is the establishment of the Korean peninsula as an international demilitarized zone. At the insistance of the Kuomintang government, it is to come under the administration of the League of Nations. As such, all Japanese military personnel must now return to the Home Islands."
+ 
+
+leaderevent.45.a:0 "So be it." 
+
+leaderevent.46.t:0 "New Convoys (AI event)" 
+
+leaderevent.46.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.46.a:0 "Extra convoys." 
+
+leaderevent.47.t:0 "The Return of Otto Strasser" 
+
+leaderevent.47.d:0 "The German people have grown restless. Time after time they were promised a short, swift war with minimal casualties. They were told [GER.GetNameDef] would be victorious, her honor and territory restored. 'The end will justify the means,' Dr. Goebbels shouted over the wireless. Clearly this has not happened, and there is now no end in sight. Hitlerism has failed. Strasserism must not."
+ 
+
+leaderevent.47.a:0 "A new direction for the Third Reich." 
+
+leaderevent.48.t:0 "Solidarism: A New Beginning" 
+
+leaderevent.48.d:0 "Russia has been through the worst catastrophe of her long and glorious history; she is defeated, she is bled white, and her experiment with Marxism is now at an end. From the ashes of the old Soviet state must come unity, harmony and rebirth. Viktor Baydalakov, a man of great courage and vision, speaks directly to the crowds with passion and sincerity. He believes that a new politics and a new society must be created, and that they in turn will give birth to a new Russia. The Solidarists are on the march!"
+ 
+
+leaderevent.48.a:0 "We must view life through a new lens." 
+
+leaderevent.49.t:0 "War with China (AI event)" 
+
+leaderevent.49.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.49.a:0 "Extra troops." 
+
+leaderevent.50.t:0 "Subdue the Warlords (AI event)" 
+
+leaderevent.50.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.50.a:0 "Extra troops." 
+
+leaderevent.51.t:0 "France Demands Belgian Submission" 
+
+leaderevent.51.d:0 "[FRA.GetLeader] has threatened us with war if we do not forego our neutrality and become a satellite of [FRA.GetNameDef]! Marshal Gamelin - the French commander-in-chief - claims this is necessary in order to defend both France and Belgium against future German aggression, although few in government believe that [GER.GetNameDef] wishes us any harm. Our policy of neutrality means we have no formal alliances, and surely [ENG.GetNameDef] will not risk yet another continental war by coming to our aid a second time.\n\nWe are between a rock and a hard place; what should we do?"
+ 
+
+leaderevent.51.a:0 "Regrettably, we must acquiesce." 
+
+leaderevent.51.b:0 "Stand our ground!" 
+
+leaderevent.52.t:0 "Belgium Accepts" 
+
+leaderevent.52.d:0 "[BEL.GetLeader] has sensibly accepted our generous offer of protection and placed the resources of the [BEL.GetAdjective] state at our disposal. With [BEL.GetAdjective] neutrality now at an end, Marshal Gamelin is free to move the French Army into Belgium to set up a flexible defensive line facing the Rhine, giving us a tremendous strategic advantage over [GER.GetNameDef].\n\nWe may have angered a few of our neighbors, but the added security and resources now afforded to us is surely a price worth paying."
+ 
+
+leaderevent.52.a:0 "Magnifique!" 
+
+leaderevent.53.t:0 "Belgium Rejects Ultimatum" 
+
+leaderevent.53.d:0 "The stubborn and stupid government of [BEL.GetNameDef] has today signed their country's death warrant by refusing our generous offer of protection. By remaining outside [FRA.GetNameDef]'s sphere of influence, the Belgians serve only to weaken both us and themselves against the inevitable German onslaught. Peaceful suzerainty would have been preferable, but Marshal Gamelin is equally happy to send in General de Gaulle and his tanks."
+ 
+
+leaderevent.53.a:0 "Those Flemish bastards!" 
+
+leaderevent.54.t:0 "[JAP.GetNameDef] Launches 'U Go' Offensive" 
+
+leaderevent.54.d:0 "The Japanese High Command has today launched Operation 'C', also known as the 'U Go' offensive. Commanded by Renya Mutaguchi and Masakazu Kawabe, their twin aims are to reinforce and resupply Burma, and thence push westwards into Bengal. Obviously, this cannot be allowed to happen; whereas the mountains and jungles of Burma are easily defensible terrain, protecting the entire subcontinent is impossible.\n\nOur forces have already suffered serious losses in Burma, and the continued presence of the Indian National Army only worsens our situation as thousands of native troops continue to desert to the ranks of the Japanese 'liberators.'"
+ 
+
+leaderevent.54.a:0 "We must retake Burma at all costs!" 
+
+leaderevent.55.t:0 "[SOV.GetNameDef] Sends Air Support" 
+
+leaderevent.55.d:0 "We have today received the first shipment of Polikarpov I-15 fighter planes from [SOV.GetNameDef]! Though not the most modern aircraft, they will serve us well in our life-or-death struggle against [JAP.GetNameDef], and the several hundred Soviet pilots who arrived with them will surely make a great contribution to the war in the skies."
+ 
+
+leaderevent.55.a:0 "Thanks very much, Uncle Joe!" 
+
+leaderevent.56.t:0 "Attack Yugoslavia (AI event)" 
+
+leaderevent.56.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.56.a:0 "Declare war." 
+
+leaderevent.57.t:0 "Neutral Republican Spain (AI event)" 
+
+leaderevent.57.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.57.a:0 "Stay neutral." 
+
+leaderevent.58.t:0 "Axis Paratroopers (AI event)" 
+
+leaderevent.58.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.58.a:0 "Fall from the sky." 
+
+leaderevent.59.t:0 "King Edward VIII Refuses To Step Aside" 
+
+leaderevent.59.d:0 "Prime Minister Baldwin has made it quite clear that the dignity of the King-Emperor would be impinged if he were to marry not just a commoner, but a divorcée and an American one at that. After much soul-searching, His Majesty - backed by Mr. Churchill, Mr. Lloyd George, and other members of the 'King's Party' - has chosen to press ahead with his plan to marry Mrs. Simpson, who has since insisted upon the rightful title and dignity of Queen Consort. The precise constitutional ramifications of this process are yet to be fully felt, but Mr. Baldwin and several senior members of the government have already tendered their resignations to the King, and large crowds have been spotted gathering outside Whitehall. Amidst the chaos, the premiership must surely now fall to one of the King's allies in Parliament."
+ 
+
+leaderevent.59.a:0 "Churchill, governing from the Commons." 
+
+leaderevent.59.b:0 "Halifax, governing from the Lords." 
+
+leaderevent.60.t:0 "Pacific Support1 (AI event)" 
+
+leaderevent.60.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.60.a:0 "Marines." 
+
+leaderevent.61.t:0 "Pacific Support2 (AI event)" 
+
+leaderevent.61.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.61.a:0 "Marines." 
+
+leaderevent.62.t:0 "Baltic Support (AI event)" 
+
+leaderevent.62.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.62.a:0 "Infantry." 
+
+leaderevent.63.t:0 "British Expeditionary Force Sent To France" 
+
+leaderevent.63.d:0 "Excellent news, Monsieur le Président. [From.GetLeader]'s government has sent Lord Gort at the head of the British Expeditionary Force to aid us in our time of crisis. Six well-trained motorized infantry divisions and two tank brigades now await our command in Paris, fully absorbed into the French Army's command structure."
+ 
+
+leaderevent.63.a:0 "We shall put them to good use!" 
+
+leaderevent.64.t:0 "[ENG.GetNameDef] Cedes Newfoundland and Labrador" 
+
+leaderevent.64.d:0 "Good news, sir. [From.GetLeader]'s government has offered to cede us the territory of the former Dominion of Newfoundland. Currently administered directly from London, Newfoundland ceased to be an independent Dominion within the Empire in 1934; whilst setting up a new colonial government in St. John's has been considered, ceding Newfoundland and Labrador directly to us is surely the most efficient solution. We can now pass a new British North America Act and absorb Newfoundland as the tenth province of [CAN.GetNameDef]!"
+ 
+
+leaderevent.64.a:0 "It was only ever a matter of time." 
+
+leaderevent.65.t:0 "[JAP.GetLeader] Proposes Anglo-Japanese Alliance" 
+
+leaderevent.65.d:0 "Curious news indeed, sir. The foreign minister of [JAP.GetNameDef] has been instructed by [JAP.GetLeader] to offer a renewal of the 1902 Anglo-Japanese Alliance, which lapsed in 1923. Events in the Far East have taken an unexpected turn, and the war between [JAP.GetNameDef] and [SOV.GetNameDef] means that [RAJ.GetNameDef] and our other colonies are safe from Japanese aggression. We may not agree with everything [JAP.GetLeader]'s government has done, but they would surely prove a powerful ally against our mutual foes." 
+
+leaderevent.65.a:0 "Absolutely! It should never have been terminated." 
+
+leaderevent.65.b:0 "Fob them off with a treaty and some research." 
+
+leaderevent.65.c:0 "No... we can't afford another war." 
+
+leaderevent.66.t:0 "[ENG.GetLeader] Ratifies Anglo-Japanese Alliance" 
+
+leaderevent.66.d:0 "Excellent news, sir. The 1902 Anglo-Japanese Treaty of Alliance between [ENG.GetNameDef] and [JAP.GetNameDef] has been formally renewed. The amended document was signed this morning at 10 Downing Street by [ENG.GetLeader] and the Japanese ambassador to [ENG.GetNameDef]. It is with great pride that I say that [JAP.GetNameDef] is now a formal member of the Allied powers."
+ 
+
+leaderevent.66.a:0 "The Emperor will be most pleased." 
+
+leaderevent.67.t:0 "[ENG.GetLeader] Offers Anglo-Japanese Pact" 
+
+leaderevent.67.d:0 "I bring mixed blessings, sir. Our efforts to renew the Anglo-Japanese Alliance have been rebuffed by [ENG.GetLeader], who views such an act as 'provocative' to the régime in Moscow. In lieu of a formal alliance, however, the British government is willing to sign a non-aggression pact with the Japanese ambassador in London. As well as this, a lucrative research treaty has been agreed to."
+ 
+
+leaderevent.67.a:0 "Hmm... very well." 
+
+leaderevent.68.t:0 "[ENG.GetLeader] Rejects Japanese Rapprochement" 
+
+leaderevent.68.d:0 "It is with great shame that I must report to the Emperor the failure of the Imperial diplomatic mission in London. It had been hoped that the Anglo-Japanese Alliance could be renewed so as to safeguard our Southeast Asian and Pacific interests during the present conflict with [SOV.GetNameDef], but the British view us as an 'aggressive power' and do not dare risk war with [SOV.GetLeader]. Alas, there shall be no alliance with the British Empire."
+ 
+
+leaderevent.68.a:0 "Curses, our diplomacy is in tatters!" 
+
+leaderevent.69.t:0 "The Blomberg–Fritsch Affair" 
+
+leaderevent.69.d:0 "In recent years the Wehrmacht has been subjected to a number of scandals and political crises, the latest of which is now being dubbed the Blomberg–Fritsch affair. Werner von Blomberg and Werner von Fritsch, two high-ranking Wehrmacht officials, have brought the armed forces into disrepute; the former's new trophy wife is an ex-prostitute, and the latter is almost certainly a homosexual. It is the Führer's wish that the military now be brought under his direct control, and so those who stand in the way of progress must be cast aside."
+ 
+
+leaderevent.69.a:0 "Force von Blomberg to resign." 
+
+leaderevent.69.b:0 "Force von Fritsch to resign." 
+
+leaderevent.69.c:0 "Force out all the Old Guard." 
+
+leaderevent.70.t:0 "Spanish Civil War AI Reduction (AI event)" 
+
+leaderevent.70.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.70.a:0 "Reduce WT." 
+
+leaderevent.71.t:0 "Sino-Japanese War AI Reduction (AI event)" 
+
+leaderevent.71.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.71.a:0 "Reduce WT." 
+
+leaderevent.72.t:0 "The Third Emu War" 
+
+leaderevent.72.d:0 "Thwarted in our previous attempts at wiping out the mobs of emus who make Lewis gunners quake with fear, the humanoid population of Australia no longer recognize the country they once called home. Men bring home stories of children being dragged into the forest by bullet-proof emus, and women refuse to travel out in the open due to stories of avian ambushes.\n\nWe have a number of options available to us, and this time the Army are not prepared to accept anything less than an unconditional surrender. Sir, how should we attack?"
+ 
+
+leaderevent.72.a:0 "At night, with airships and railway artillery." 
+
+leaderevent.72.b:0 "By day, with half-tracks and heavy tanks." 
+
+leaderevent.72.c:0 "Who cares? Let's just nuke the bastards!" 
+
+leaderevent.73.t:0 "Italian-German Technology Sharing" 
+
+leaderevent.73.d:0 "[GER.GetLeader], Führer of [GER.GetNameDef], has agreed to a long-term research & development exchange between our two nations. As well as existing military support, [ITA.GetNameDef] will now also benefit from state-of-the-art German technology."
+ 
+
+leaderevent.73.a:0 "Excellent!" 
+
+leaderevent.74.t:0 "The New Zealand Division of the Royal Navy" 
+
+leaderevent.74.d:0 "Since 1921 we have maintained a small but crucial naval presence in the South Pacific in the form of the New Zealand Division. Traditionally comprising a pair of light cruisers, the Division is shortly due to be upgraded with more modern vessels, and Prime Minister [NZL.GetLeader] has requested that we transfer the Division to direct New Zealand control. We can of course do this, but other options are available."
+ 
+
+leaderevent.74.a:0 "Send sailors and naval strategists." 
+
+leaderevent.74.b:0 "Send the New Zealand Division." 
+
+leaderevent.74.c:0 "Send the Battlecruiser Squadron." 
+
+leaderevent.75.t:0 "[ENG.GetLeader] Sends Sailors & Naval Strategists" 
+
+leaderevent.75.d:0 "Owing to a shortage of available vessels, [ENG.GetLeader]'s government has declined to transfer any ships to our direct control. However, the Admiralty has dispatched some 5,000 Royal Navy sailors and a number of skilled theorists."
+ 
+
+leaderevent.75.a:0 "These men will prove useful." 
+
+leaderevent.76.t:0 "[ENG.GetLeader] Sends The New Zealand Division" 
+
+leaderevent.76.d:0 "As requested, [ENG.GetLeader]'s government has transferred the New Zealand Division to our direct control."
+ 
+
+leaderevent.76.a:0 "Back where they belong!" 
+
+leaderevent.77.t:0 "[ENG.GetLeader] Sends The Battlecruiser Squadron" 
+
+leaderevent.77.d:0 "Well, this was unexpected... [ENG.GetLeader]'s government has transferred the Battlecruiser Squadron to our direct control."
+ 
+
+leaderevent.77.a:0 "Aha, a proper navy!" 
+
+leaderevent.78.t:0 "Destroyers for Bases Agreement" 
+
+leaderevent.78.d:0 "With the conclusion of the Destroyers for Bases Agreement between [USA.GetNameDef] and [ENG.GetNameDef], it has been decided to transfer a small number of Great War-era destroyers to the Royal Canadian Navy so as to patrol our coastal waters and protect the vital Atlantic shipping convoys."
+ 
+
+leaderevent.78.a:0 "Free ships!" 
+
+leaderevent.79.t:0 "The 1938 Constitution of Romania"
+ 
+
+leaderevent.79.d:0 "It can safely be said that the premiership of [ROM.GetLeader] has been neither effective nor popular, although many within the corridors of power whisper that this was always the King's desired outcome.\n\nWith the breakdown of law and order and the inability of the PNC to either pass legislation or form a parliamentary coalition, the ensuing political vacuum has allowed the possibility for the King himself to declare a new constitution and take personal control of the state." 
+
+leaderevent.79.a:0 "Seize power!" 
+
+leaderevent.79.b:0 "Await the Iron Guard." 
+
+leaderevent.80.t:0 "Political Extremism in Romania"
+ 
+
+leaderevent.80.d:0 "As Europe's sovereign states continue to disintegrate all around us - caught between Soviet communism and German national socialism - it is now time for [ROM.GetNameDef] to make a stand. Despite pressure from the Iron Guard at home and various fascist and Nazi parties abroad, we remain detached from such extremes.\n\nHowever, the King has now suggested that Octavian Goga be appointed prime minister of a minority PNC government, so as to 'prepare the people for what may come.'" 
+
+leaderevent.80.a:0 "Ask Goga to form a government." 
+
+leaderevent.80.b:0 "Let the moderates squabble among themselves." 
+
+leaderevent.81.t:0 "Italian Defeat in Abyssinia"
+ 
+
+leaderevent.81.d:0 "Il Duce, I bring disastrous news from Italian East Africa... Marshal De Bono's valiant forces have been overwhelmed by the savage Ethiopians, who now look to march into our rightful imperial governorates of Eritrea and Somalia!\n\nWith defeat now all but certain, the best we can hope for is a white peace followed by League of Nations arbitration. Perhaps we can spin it as an intentional withdrawal... would Il Duce not like to be seen as the great peacemaker of our time?" 
+
+leaderevent.81.a:0 "This is De Bono's fault..." 
+
+leaderevent.81.b:0 "Never! It all belongs to the King!" 
+
+leaderevent.82.t:0 "The Treaty of London" 
+
+leaderevent.82.d:0 "Victory! His Imperial Majesty [ETH.GetLeader] and the armies of [ETH.GetNameDef] have defeated the cowardly fascists led by the old Marshal of Italy, Emilio De Bono. Leading troops on behalf of King Victor Emmanuel III, the ever-cautious De Bono allowed the bulk of his armies to be cut off, surrounded and destroyed by a much smaller [ETH.GetAdjective] guerilla force led by Seyoum Mengesha.\n\nWith a peace accord now being signed in London, [ETH.GetNameDef] is victorious once again!"
+ 
+
+leaderevent.82.a:0 "How has this happened... again!?" 
+
+leaderevent.83.t:0 "The Demilitarization of Italian East Africa" 
+
+leaderevent.83.d:0 "In order to prevent further [ITA.GetAdjective] colonial aggression or a Third Italo-Abyssinian War, the Treaty of London stipulates that the provinces of Eritrea and Italian Somaliland become international demilitarized zones under a League of Nations mandate. As such, all [ITA.GetAdjective] military personnel must now be expelled from the Horn of Africa."
+ 
+
+leaderevent.83.a:0 "We are a laughing stock..." 
+
+leaderevent.84.t:0 "Downed Mystery Aircraft Reveals Unexpected Passenger"
+ 
+
+leaderevent.84.d:0 "Sir, exciting news! A few weeks ago one of our Avro Lincoln heavy bombers failed to return to base, and was subsequently reported as missing. This morning, a report from Coast Guard vessels just off Cairns has identified the crash site near a small rocky inlet.\n\nWhilst the crew do not appear to have survived, also on board was a passenger: a lone emu, who through various squarks and chirps has identified himself as a king among his people, and a leading general during the Great Emu War." 
+
+leaderevent.84.a:0 "Give him a division." 
+
+leaderevent.84.b:0 "Give him a new plane." 
+
+leaderevent.84.c:0 "Make him... our King?" 
+
+leaderevent.85.t:0 "Greenland Continues The Fight"
+ 
+
+leaderevent.85.d:0 "With the capitulation and occupation of [DEN.GetNameDef] in recent days, it is imperative that the strategically vital [DEN.GetAdjective] colony of Greenland does not fall to our enemies; the hardy Greenlanders do not wish to go down without a fight, and have rejected Copenhagen's order to surrender. With that in mind, it would be expedient for [USA.GetAdjective] forces to occupy the island and install a number of radio and weather facilities." 
+
+leaderevent.85.a:0 "It's for the best." 
+
+leaderevent.86.t:0 "Italian Intervention in the Spanish Civil War" 
+
+leaderevent.86.d:0 "Duce! Duce! Duce! Sir, the situation in Spain has escalated into full-blown civil war; whilst the Republican government is weak and sapped of morale, the Nationalist forces under General Franco cannot be assured of victory without our help. The brave soldiers of the Corpo Truppe Volontarie are already in action, but they need reinforcements..."
+ 
+
+leaderevent.86.a:0 "Send volunteers and weapons." 
+
+leaderevent.86.b:0 "Send air support." 
+
+leaderevent.86.c:0 "Send naval support." 
+
+leaderevent.86.e:0 "Send the Blackshirts." 
+
+leaderevent.87.t:0 "[ITA.GetLeader] Sends Regio Esercito Support" 
+
+leaderevent.87.d:0 "Generalissimo! Our steadfast ally [ITA.GetLeader] has heeded our call for reinforcements from [ITA.GetNameDef]... Nationalist forces have been replenished with thousands of new recruits, rifles, and artillery pieces."
+ 
+
+leaderevent.87.a:0 "Time for the final push!" 
+
+leaderevent.88.t:0 "[ITA.GetLeader] Sends Regia Aeronautica Support" 
+
+leaderevent.88.d:0 "Generalissimo! Our steadfast ally [ITA.GetLeader] has heeded our call for reinforcements from [ITA.GetNameDef]... Nationalist forces have been replenished with thousands of new recruits and hundreds of modern aircraft."
+ 
+
+leaderevent.88.a:0 "Let's strafe them!" 
+
+leaderevent.89.t:0 "[ITA.GetLeader] Sends Regia Marina Support" 
+
+leaderevent.89.d:0 "Generalissimo! Our steadfast ally [ITA.GetLeader] has heeded our call for reinforcements from [ITA.GetNameDef]... Nationalist forces have been replenished with thousands of new recruits and a squadron of destroyers and submarines."
+ 
+
+leaderevent.89.a:0 "Let's sink some convoys!" 
+
+leaderevent.90.t:0 "The Government of India Act 1935" 
+
+leaderevent.90.d:0 "Originally passed in August 1935, the new Government of India Act is the intended successor to the current 1919 Act of the same name. Its primary aims are to end the controversial 'Diarchy' system, lay the groundwork for the proposed Federation of India, establish a Federal Court, and expand the electorate from seven million up to 35 million. Two other major provisions of the Act are the separation of both Aden and Burma from India. The Act is due to come into force today, but should it?"
+ 
+
+leaderevent.90.a:0 "Commence the Act in full." 
+
+leaderevent.90.b:0 "Commence the Act in part." 
+
+leaderevent.90.c:0 "Repeal the Act." 
+
+leaderevent.91.t:0 "Government of India Act 1935 Comes Into Effect" 
+
+leaderevent.91.d:0 "[ENG.GetLeader]'s government has today signed into law the Government of India Act 1935; a major piece of legislation, its effects include an increased franchise, the establishment of the Federal Court of India, and the separation of the provinces of Aden and Burma from India. Though the Act was always going to be controversial in that it attempts - and largely fails - to restrain the influence of the Raj's various political factions, the beleaguered [RAJ.GetLeader] is nonetheless working tirelessly to implement its provisions."
+ 
+
+leaderevent.91.a:0 "We are a step closer to independence." 
+
+leaderevent.92.t:0 "Government of India Act 1935 Comes Into Effect" 
+
+leaderevent.92.d:0 "[ENG.GetLeader]'s government has today signed into law the Government of India Act 1935; a hugely contentious piece of legislation, it is believed that the King personally redacted entire pages of the final Act in an attempt to curtail the perceived loss of royal power. The few surviving major clauses include an increased franchise, provincial boundary changes, and the separation of the province of Aden from India. Though the Act was always going to be controversial, few expected such a skewered piece of legislation to be signed into law."
+ 
+
+leaderevent.92.a:0 "Perhaps non-violent protest is not enough?" 
+
+leaderevent.93.t:0 "Government of India Act 1935 Repealed" 
+
+leaderevent.93.d:0 "[ENG.GetLeader]'s government has today repealed the Government of India Act 1935, a major piece of legislation that was due to come into force later this week. Quite why the [ENG.GetAdjective] government has decided on such a rancorous course of action is unknown, but the consequences are surely grave indeed; riots have broken out in major cities across India, and [RAJ.GetLeader] cowers under siege at Viceroy's House. It is impossible to say what the future holds for the subcontinent, but the Imperial administration is now at breaking point, and [RAJ.GetNameDef] is a tinderbox..."
+ 
+
+leaderevent.93.a:0 "We must break free of our British chains!" 
+
+leaderevent.94.t:0 "Burma (AI event)" 
+
+leaderevent.94.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.94.a:0 "Become non-aligned." 
+
+leaderevent.95.t:0 "Italo Balbo's Final Gambit" 
+
+leaderevent.95.d:0 "The premiership of the self-styled 'Duce' [ITA.GetLeader] continues to limp from catastrophe to catastrophe, and the signing of the Treaty of London now confirms [ITA.GetNameDef]'s demotion to second-rate European power. The King is not happy, the people are beginning to question the legitimacy of the ruling Partito Nazionale Fascista, and elements within the Regio Esercito are now openly calling for [ITA.GetLeader] to be dismissed. With his chance now in sight, the popular and charismatic 'prince of the skies' Italo Balbo has staged a small palace coup and imprisoned Il Duce."
+ 
+
+leaderevent.95.a:0 "He is our last chance for greatness!" 
+
+leaderevent.96.t:0 "Annexation of Luxemburg and Elsass-Lothringen" 
+
+leaderevent.96.d:0 "With the conquest of the partially German-speaking territories of Luxemburg and Elsass-Lothringen, we are now in a position to annex them directly into [GER.GetNameDef] as Reichsgaue; these quasi-colonial administrative zones maintain a degree of local autonomy - owing to their distinct historical and cultural characteristics - but are nonetheless considered integral provinces of the Reich."
+ 
+
+leaderevent.96.a:0 "We are all Germans now." 
+
+leaderevent.97.t:0 "Allied Fighter Aces Offer Their Services" 
+
+leaderevent.97.d:0 "The loss of [CZE.GetNameDef] and [POL.GetNameDef] to [GER.GetNameDef]'s war machine has resulted in large numbers of now stateless soldiers, sailors and airmen making their way across to us from the Continent.\n\nAmong these military refugees are a number of top-rate fighter aces; many are high-ranking officers in their own countries, and whilst we cannot absorb them all into the Royal Air Force, the best among them could be put to work defending our skies... or providing strategic support to the officer corps at Fighter Command."
+ 
+
+leaderevent.97.a:0 "Yes, give them planes!" 
+
+leaderevent.97.b:0 "No, they would better serve us at Fighter Command HQ." 
+
+leaderevent.98.t:0 "[ITA.GetLeader] Sends Blackshirt Support" 
+
+leaderevent.98.d:0 "Generalissimo! Our steadfast ally [ITA.GetLeader] has heeded our call for reinforcements from [ITA.GetNameDef]... Nationalist forces have been replenished with three new Italian Blackshirt divisions, fresh from victory in Abyssinia."
+ 
+
+leaderevent.98.a:0 "The iron will of fascism prevails!" 
+
+leaderevent.99.t:0 "[FRA.GetLeader] Offers Alsace-Lorraine For Axis Membership" 
+
+leaderevent.99.d:0 "Curious news from the Élysée Palace, Mein Führer... [FRA.GetLeader] has sent word to our ambassador in Nancy, claiming that the [FRA.GetAdjective] government would be willing to negotiate the transfer of the former imperial province of Elsass-Lothringen back to [GER.GetNameDef], in exchange for [FRA.GetNameDef]'s entry into the Axis.\n\nIt is believed that the recent change of policy in Paris is due to the appointment of a new, largely pro-German government in the Chamber of Deputies, and a general feeling among the Mouvement Franciste hierarchy that a Franco-German Axis would provide a bulwark against perceived [ENG.GetAdjective] [ITA.GetAdjective] threats."
+ 
+
+leaderevent.99.a:0 "Why would we refuse?" 
+
+leaderevent.99.b:0 "No, we will not forgot Versailles." 
+
+leaderevent.100.t:0 "[GER.GetLeader] Welcomes France Into The Axis" 
+
+leaderevent.100.d:0 "I bring joyous news from the Reich Chancellery, Monsieur le Président... [GER.GetLeader], Führer of [GER.GetNameDef], has accepted our generous offer of peace and reconciliation. With the transfer of Alsace-Lorraine back to [GER.GetNameDef], we can concentrate on building an alliance of military and political might that will bring Europe's enemies to their knees."
+ 
+
+leaderevent.100.a:0 "Vive la entente-allemande!" 
+
+leaderevent.101.t:0 "[GER.GetLeader] Rejects French Axis Membership" 
+
+leaderevent.101.d:0 "I bring disappointing news from the Reich Chancellery, Monsieur le Président... [GER.GetLeader], Führer of [GER.GetNameDef], has rejected our generous offer of peace and reconciliation. It would seem that even after twenty years, the ignominy of 1918 has not been forgotten in Berlin. However, owing to [GER.GetAdjective] ambitions elsewhere on the continent, a non-aggression pact has today been signed between [GER.GetNameDef] and [FRA.GetNameDef]. If there is to be another Great War, it has at least been postponed a while longer..."
+ 
+
+leaderevent.101.a:0 "Peace, but for how long?" 
+
+leaderevent.102.t:0 "Barbarossa Support (AI event)" 
+
+leaderevent.102.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.102.a:0 "Divisions." 
+
+leaderevent.103.t:0 "Michael Joseph Savage Dies" 
+
+leaderevent.103.d:0 "Long revered as a fantastic orator and a man who 'gets things done', Michael Joseph Savage has died today in Wellington at the age of 68. Savage, who had been [NZL.GetNameDef]'s prime minister since Forbes' resignation in 1935, was always considered a charismatic and effective political operator, and in more recent years has been associated with the Labour Party's impressive record in government -- most notably winning its first ever electoral victory, and implementing numerous economic recovery policies and social welfare programmes.\n\nUnbeknownst to the general public, Savage had been suffering from colon cancer since before the 1938 election and many of his duties had been carried out by Peter Fraser, who now succeeds him."
+ 
+
+leaderevent.103.a:0 "Mr. Fraser shall seek to form a government." 
+
+leaderevent.104.t:0 "Hertzog's Government Falls" 
+
+leaderevent.104.d:0 "With constitutional crisis looming, the government of Prime Minister [SAF.GetLeader] fell this morning after a motion to remain neutral in [SAF.GetNameDef]'s recently-joined war alongside [ENG.GetNameDef] was defeated 80 to 67 in Parliament. Owing to the country's serious domestic situation and our wartime obligations to London, the Governor-General refused the Prime Minister's request to dissolve Parliament and go to the country.\n\nThis afternoon, Mr. Hertzog's coalition partner and deputy, Jan Smuts, was invited by the Governor-General to form a government. Smuts, recently appointed a Field Marshal by the King, is a close friend and ally of [ENG.GetLeader] and considered a staunch proponent of continuing the war."
+ 
+
+leaderevent.104.a:0 "Field Marshal Smuts shall seek to form a government." 
+
+leaderevent.105.t:0 "[USA.GetAdjective] Agents Assassinate [ITA.GetLeader]" 
+
+leaderevent.105.d:0 "Disaster has befallen [ITA.GetNameDef]! Only hours ago our dear leader [ITA.GetLeader], Duce of Fascism and First Minister of the King, fell victim to an assassin's bullet whilst inspecting his household cavalry outside the Palazzo Venezia in Rome.\n\nThough several of the killers appear to have escaped justice - for now - a member of the group was apprehended hiding in the undercarriage of a supply truck near the Capitoline Hill; though his exact details are unknown, he is believed to be an agent of President [USA.GetLeader]'s Office of Strategic Services, and there can be no question that the group were carrying out official orders.\n\nA state of emergency has been declared, and His Majesty shall personally assume control of the government."
+ 
+
+leaderevent.105.a:0 "The bastards will pay for this!" 
+
+leaderevent.106.t:0 "Destruction of the Sudeten Forts" 
+
+leaderevent.106.d:0 "[GER.GetAdjective] victory over Czechoslovakia has resulted in the dismemberment of that state, and so the mighty ring of forts that once defended the Sudetenland may now be demilitarized and torn down.\n\nAfter all, why should [GER.GetNameDef] continue to pay for the upkeep and defense of these concrete monstrosities? They are miles from the frontline!"
+ 
+
+leaderevent.106.a:0 "We won't be needing them anymore." 
+
+leaderevent.107.t:0 "[USA.GetLeader] Activates The Flying Tigers" 
+
+leaderevent.107.d:0 "President [USA.GetLeader] has today authorized the use of the First American Volunteer Group - known as the 'Flying Tigers' - in our struggle against [JAP.GetNameDef]. Commanded by Claire Lee Chennault and based in the city of Kunming in Yunnan province, the AVG comprises trained pilots from all branches of the US military -- though American citizens trained by American officers, these men serve in the National Revolutionary Army and wear Chinese uniforms and insignia.\n\nThe activation of the 'Flying Tigers' could not have come sooner, as despite a surplus of manpower [CHI.GetLeader]'s forces are woefully lacking in both trained pilots and effective ground-attack aircraft."
+ 
+
+leaderevent.107.a:0 "Let's tear the Japs to shreds!" 
+
+leaderevent.108.t:0 "Free Carrier Planes (AI event)" 
+
+leaderevent.108.d:0 "You shouldn't be reading this!"
+ 
+
+leaderevent.108.a:0 "Carrier Planes." 
+
+leaderevent.109.t:0 "[SOV.GetAdjective] Defeat in Siberia" 
+
+leaderevent.109.d:0 "With our client states [MON.GetNameDef] and [TAN.GetNameDef] defeated and the Far Eastern Front in a state of total collapse, it is surely time to sue for peace with [JAP.GetNameDef]. Despite our best efforts, [SOV.GetNameDef] simply does not have the manpower or political will to continue a protracted land war in the Far East.\n\nWe should cut our losses and make peace with the Japanese. Should we cede them our Siberian territories in exchange for an end to hostilities?"
+ 
+
+leaderevent.109.a:0 "Yes, the game's up." 
+
+leaderevent.109.b:0 "No, fight to the last man!" 
+
+leaderevent.110.t:0 "The Treaty of Vladivostok" 
+
+leaderevent.110.d:0 "General Tojo and the Kwantung Army are now assured of their place in History! The vile [SOV.GetAdjective]s have been pushed back to the Urals and Mongolia is now part of the Greater East Asia Co-Prosperity Sphere.\n\nAn emissary for [SOV.GetNameDef] has sued for peace on [SOV.GetLeader]'s behalf; he reports that the [SOV.GetAdjective] government is willing to cede Mongolia and Eastern Siberia in exchange for peace."
+ 
+
+leaderevent.110.a:0 "The Emperor is victorious!" 
+
+leaderevent.110.b:0 "No, push on to Moscow!" 
+
+leaderevent.111.t:0 "The Treaty of Vladivostok Rejected" 
+
+leaderevent.111.d:0 "The Japanese have rejected our overtures of peace; the Treaty of Vladivostok was torn up by Kwantung Army officials during its first reading, and we now face the stark possibility of an endless war with [JAP.GetNameDef].\n\nIf we are to bring this war to a successful close [SOV.GetNameDef] will require new and deadly weapons."
+ 
+
+leaderevent.111.a:0 "We will hold them off at the Urals!" 

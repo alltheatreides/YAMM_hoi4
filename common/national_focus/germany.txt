@@ -2283,6 +2283,12 @@ focus_tree = {
 					has_government = fascism
 				}
 			}
+			NOT = {
+				GER = {
+					has_offensive_war_with = SOV
+				}
+			}
+			
 		}
 		
 		#bypass = {

@@ -1,10 +1,54 @@
 
 spriteTypes = {
-
+	
+	#Info event
+	spriteType = {
+		name = "GFX_report_event_start_info"
+		texturefile = "gfx/event_pictures/report_event_start_info.dds"
+	}
+	
+	#Fall Blau
 	spriteType = {
 		name = "GFX_report_event_hitler_rage"
 		texturefile = "gfx/event_pictures/report_event_hitler_rage.dds"
 	}
 	
+	##### Enigma #####
+	spriteType = {
+		name = "GFX_report_event_marian_rejewski"
+		texturefile = "gfx/event_pictures/event_marian_rejewski.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_operation_ultra"
+		texturefile = "gfx/event_pictures/event_operation_ultra.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_bletchley_park"
+		texturefile = "gfx/event_pictures/event_bletchley_park.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_bletchley_park_one"
+		texturefile = "gfx/event_pictures/event_bletchley_park_one.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_bletchley_park_end"
+		texturefile = "gfx/event_pictures/event_bletchley_park.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_operation_z"
+		texturefile = "gfx/event_pictures/event_bletchley_park_one.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_enigma"
+		texturefile = "gfx/event_pictures/event_enigma.dds"
+	}
+	# spriteType = {
+		# name = "GFX_report_event_enigma_M4"
+		# texturefile = "gfx/event_pictures/event_enigma_M4.dds"
+	# }
+	# spriteType = {
+		# name = "GFX_report_event_enigma_code_found"
+		# texturefile = "gfx/event_pictures/event_enigma_code_found.dds"
+	# }
 	
 }

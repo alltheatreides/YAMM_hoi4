@@ -306,3 +306,55 @@ country_event = {
 		
 	}
 }
+
+# Information Event at the start
+country_event = {
+	id = yamm.41
+	title = yamm.41.t
+	picture = GFX_report_event_start_info
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	desc = {
+		text = yamm.41.d.ger
+		trigger = {
+			tag = GER
+		}
+	}
+	desc = {
+		text = yamm.41.d.ita
+		trigger = {
+			tag = ITA
+		}
+	}
+	desc = {
+		text = yamm.41.d.eng
+		trigger = {
+			tag = ENG
+		}
+	}
+	desc = {
+		text = yamm.41.d.jap
+		trigger = {
+			tag = JAP
+		}
+	}
+	desc = {
+		text = yamm.41.d.usa
+		trigger = {
+			tag = USA
+		}
+	}
+	desc = {
+		text = yamm.41.d.sov
+		trigger = {
+			tag = SOV
+		}
+	}
+	
+	option = {
+		name = yamm.41.a
+	}
+}
