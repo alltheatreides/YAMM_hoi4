@@ -1291,6 +1291,9 @@ country_event = {
 		CHI = { exists = yes }
 		CHI = { has_defensive_war = yes }
 		tag = CHI
+		CHI = { is_in_faction = yes }
+		# CHI = { controls_state = 599 }
+		CHI = { controls_state = 605 }
 	}
 	
 	option = {
@@ -1307,6 +1310,7 @@ country_event = {
 		custom_effect_tooltip = CHI_flying_tigers_oob
 		hidden_effect = {
 			load_oob = "CHI_flying_tigers"
+			# load_oob = "CHI_flying_tigers_2"
 		}
 		set_global_flag = the_flying_tigers
 	}

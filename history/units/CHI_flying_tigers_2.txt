@@ -1,0 +1,17 @@
+﻿air_wings = {
+	
+	599 = {
+		fighter_equipment_1 =  {		
+			owner = "USA" 
+			amount = 80
+		}
+		name = "The Flying Tigers II"
+		ace={
+			modifier="fighter_unique"
+			name="David"
+			surname="Lee"
+			callsign="Tex"
+			portrait=1
+		}
+	}
+}
