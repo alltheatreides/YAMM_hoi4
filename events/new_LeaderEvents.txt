@@ -1284,10 +1284,13 @@ country_event = {
 	desc = leaderevent.107.d
 	picture = GFX_report_event_chinese_army_training
 	
+	fire_only_once = yes
+	
 	trigger = {
 		date > 1939.1.1
 		CHI = { exists = yes }
 		CHI = { has_defensive_war = yes }
+		tag = CHI
 	}
 	
 	option = {

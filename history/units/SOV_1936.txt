@@ -231,7 +231,7 @@ units = {
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
-		force_equipment_variants = { heavy_tank_equipment_0 = { owner = "SOV" version_name = "T-28" } }
+		force_equipment_variants = { heavy_tank_equipment_1 = { owner = "SOV" version_name = "T-28" } }
 		force_equipment_variants = { light_tank_equipment_2 = { owner = "SOV" version_name = "BT.5" } }
 	}
 
@@ -302,7 +302,7 @@ units = {
 		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
-		force_equipment_variants = { heavy_tank_equipment_0 = { owner = "SOV" version_name = "T-28" } }
+		force_equipment_variants = { heavy_tank_equipment_1 = { owner = "SOV" version_name = "T-28" } }
 		force_equipment_variants = { light_tank_equipment_2 = { owner = "SOV" version_name = "BT.7" } }
 	}
 
@@ -463,7 +463,7 @@ units = {
 		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
-		force_equipment_variants = { heavy_tank_equipment_0 = { owner = "SOV" version_name = "T-28" } }
+		force_equipment_variants = { heavy_tank_equipment_1 = { owner = "SOV" version_name = "T-28" } }
 		force_equipment_variants = { light_tank_equipment_2 = { owner = "SOV" version_name = "BT.5" } }
 	}
 
@@ -830,7 +830,7 @@ units = {
 		division_template = "Mekhanizirovaniy Korpus"		# 1x H Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
-		force_equipment_variants = { heavy_tank_equipment_0 = { owner = "SOV" version_name = "T-32" } }
+		force_equipment_variants = { heavy_tank_equipment_1 = { owner = "SOV" version_name = "T-32" } }
 		force_equipment_variants = { light_tank_equipment_2 = { owner = "SOV" version_name = "BT.5" } }
 	}
 
@@ -1341,7 +1341,7 @@ units = {
 		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
-		force_equipment_variants = { heavy_tank_equipment_0 = { owner = "SOV" version_name = "T-28" } }
+		force_equipment_variants = { heavy_tank_equipment_1 = { owner = "SOV" version_name = "T-28" } }
 		force_equipment_variants = { light_tank_equipment_2 = { owner = "SOV" version_name = "BT.2A" } }
 	}
 
