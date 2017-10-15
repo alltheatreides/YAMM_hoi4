@@ -26,18 +26,18 @@ country_event = {
 			JAP = { country_event = { id = japan.1 } }
 		}
 	}
-	option = { # Make more concessions
-		name = china.1.b
-		ai_chance = { factor = 15 }
-		JAP = {
-			effect_tooltip = {
-				transfer_state = 608
-				transfer_state = 597
-				transfer_state = 614
-			}
-			country_event = { id = japan.2 }
-		}
-	}
+	# option = { # Make more concessions
+		# name = china.1.b
+		# ai_chance = { factor = 15 }
+		# JAP = {
+			# effect_tooltip = {
+				# transfer_state = 608
+				# transfer_state = 597
+				# transfer_state = 614
+			# }
+			# country_event = { id = japan.2 }
+		# }
+	# }
 }
 
 # Germany Withdraws Advisors

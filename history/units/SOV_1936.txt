@@ -666,7 +666,7 @@ units = {
 	# 8ya Strelkoviy Korpus		
 	division= {			
 		name = "24ya 'Samaro-Ulyanovsk' Strelk. Div."		
-		location = 215
+		location = 304
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -674,7 +674,7 @@ units = {
 	}			
 	division= {			
 		name = "46ya Strelkovaya Diviziya"		
-		location = 9554
+		location = 9493
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85

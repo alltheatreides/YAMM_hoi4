@@ -21,7 +21,7 @@ set_technology = {
 	gw_artillery = 1
 	gwtank = 1
 	basic_light_tank = 1  # PLACEHOLDER
-improved_light_tank = 1 		# WM addition
+	improved_light_tank = 1
 	basic_heavy_tank = 1  # PLACEHOLDER
 	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
@@ -42,6 +42,7 @@ improved_light_tank = 1 		# WM addition
 	heavy_artillery_1 = 1
 	light_artillery_1 = 1
 	support_weapons = 1
+	interwar_antitank = 1
 }
 
 1939.1.1 = {

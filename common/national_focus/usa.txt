@@ -161,14 +161,14 @@ focus_tree = {
 		available = {
 			has_government = democratic
 			controls_state = 369
-			OR = {
-				JAP = { 
-				controls_state = 336
-				}
-				SIA = { 
-				controls_state = 336
-				}
-			}
+			# OR = {
+				# JAP = { 
+				# controls_state = 336
+				# }
+				# SIA = { 
+				# controls_state = 336
+				# }
+			# }
 		}
 		x = 2
 		y = 2
@@ -179,9 +179,10 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = rubber
-				amount = 90
+				amount = 16
 				state = 369 #Kentucky
 			}
+			set_technology = { synth_oil_experiments = 1 }
 		}
 	}
 
