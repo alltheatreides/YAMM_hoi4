@@ -1005,20 +1005,20 @@ ideas = {
 	high_command = {
 	
 	
-		CAN_guy_simonds = {
+		# CAN_guy_simonds = {
 			
-			picture = generic_army_europe_1
+			# picture = generic_army_europe_1
 
-			allowed = {
-				original_tag = CAN
-			}
+			# allowed = {
+				# original_tag = CAN
+			# }
 			
-			traits = { army_artillery_2 }
+			# traits = { army_artillery_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+			# ai_will_do = {
+				# factor = 1
+			# }
+		# }
 
 		CAN_gino_verchiella = {
 			

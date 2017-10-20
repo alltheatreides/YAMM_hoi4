@@ -51,4 +51,29 @@ spriteTypes = {
 		# texturefile = "gfx/event_pictures/event_enigma_code_found.dds"
 	# }
 	
+	spriteType = {
+		name = "GFX_report_event_soviet_generic"
+		texturefile = "gfx/event_pictures/report_event_voronezh.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_soviet_partisan"
+		texturefile = "gfx/event_pictures/report_event_partisan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_soviet_training"
+		texturefile = "gfx/event_pictures/report_event_soviet_training.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_soviet_people_militia"
+		texturefile = "gfx/event_pictures/report_event_people_militia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_soviet_winter_offensive"
+		texturefile = "gfx/event_pictures/report_event_winter_offensive.dds"
+	}
+	
 }

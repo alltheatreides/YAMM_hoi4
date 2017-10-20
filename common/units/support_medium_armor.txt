@@ -26,30 +26,49 @@ sub_units = {
 		transport = medium_tank_equipment
 		
 		essential = {
-			fuel_equipment
 			medium_tank_equipment
 		}
 		
 		need = {
-			medium_tank_equipment = 80
-			motorized_equipment = 4
-			
+			medium_tank_equipment = 100
 		}
-
-		manpower = 300
-		max_organisation = 4
-		max_strength = 1
-		default_morale = 0.2
+		manpower = 500
+		max_organisation = 20
+		max_strength = 2
+		default_morale = 0.3
 		training_time = 180
-		weight = 0.75
-		supply_consumption = 0.11
-		maximum_speed = 8
-
-		#support unit nerf
-		# hard_attack = -0.5
-		# breakthrough = -0.5
-		# defense = -0.5
-		# ap_attack = -0.5
+		weight = 1.25
+		supply_consumption = 0.22
 		armor_value = -0.9
+
+		#Tanks are awesome
+		soft_attack = 0.5
+
+		forest = {
+		    # attack = -0.15
+			movement = -0.4
+		}
+		hills = 	{
+		    # attack = -0.05
+		}
+		mountain = 	{
+		    # attack = -0.1
+		}
+		jungle = {
+		    # attack = -0.2
+			movement = -0.4
+		}
+		marsh = {
+		    # attack = -0.05
+			movement = -0.1
+		}
+		# urban = {
+			# attack = -0.2
+			# defence = -0.1
+		# }
+		river = { 
+			attack = -0.1
+			movement = -0.2
+		}
 	}
 }

@@ -1,0 +1,42 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_imro"
+		texturefile = "gfx/interface/ideas/idea_imro.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_bulgarian_tsardom"
+		texturefile = "gfx/interface/ideas/idea_bulgarian_tsardom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_vmz_sopot"
+		texturefile = "gfx/interface/ideas/idea_vmz_sopot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_arsenal_ad"
+		texturefile = "gfx/interface/ideas/idea_arsenal_ad.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_petrol_ad"
+		texturefile = "gfx/interface/ideas/idea_petrol_ad.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_navibulgar"
+		texturefile = "gfx/interface/ideas/idea_navibulgar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_bdz"
+		texturefile = "gfx/interface/ideas/idea_bdz.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_bulyard"
+		texturefile = "gfx/interface/ideas/idea_bulyard.dds"
+	}
+}

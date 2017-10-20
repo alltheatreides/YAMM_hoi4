@@ -84,7 +84,7 @@ country_event = {
 	option = {
 		name = enigma.3.a
 		set_country_flag = operation_ultra
-		add_timed_idea = { idea = enigma_machine_cracked days = 365 }
+		add_timed_idea = { idea = enigma_machine_cracked days = 730 }
 		country_event = enigma.4
 		
 		ai_chance = { factor = 100 }

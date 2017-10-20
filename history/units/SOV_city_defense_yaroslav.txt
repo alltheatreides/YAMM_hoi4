@@ -1,0 +1,37 @@
+﻿##### Division Templates #####
+# division_template = {
+	# name = "Narodnoe Opolcheniye Diviziya"			# People's Militia
+
+	# regiments = {
+		# light_infantry = { x = 0 y = 0 }
+		# light_infantry = { x = 0 y = 1 }
+		# light_infantry = { x = 0 y = 2 }
+		# light_infantry = { x = 1 y = 0 }
+		# light_infantry = { x = 1 y = 1 }
+		# light_infantry = { x = 1 y = 2 }
+		# light_infantry = { x = 2 y = 0 }
+		# light_infantry = { x = 2 y = 1 }
+		# light_infantry = { x = 2 y = 2 }
+		
+		# artillery_brigade = { x = 3 y = 0 }
+		# artillery_brigade = { x = 3 y = 1 }
+		# artillery_brigade = { x = 3 y = 2 }
+	# }
+	# support = {
+		# DIV_HQ = { x = 0 y = 0 }
+	# }
+# }
+
+##### OOB #####
+units = {
+	# Yaroslav People's Militia	
+	division= {	
+		name = "Yaroslav Narodnoe Opolcheniye Kavaleriyskaya Diviziya"		
+		location = 121
+		division_template = "Narodnoe Opolcheniye Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+
+	}			
+}
+#####################

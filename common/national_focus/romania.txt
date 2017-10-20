@@ -1923,7 +1923,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 
-		cost = 10
+		cost = 4.3
 
 		ai_will_do = {
 			factor = 1
@@ -1937,8 +1937,9 @@ focus_tree = {
 			is_subject = no
 			OR = {
 				has_war = yes
-				threat > 0.25
+				# threat > 0.25
 			}
+			ROM = { surrender_progress > 0.1 }
 		}
 
 		bypass = {
@@ -2409,6 +2410,8 @@ focus_tree = {
 				has_government = fascism
 			}
 			date > 1939.1.1
+			SOV = { controls_state = 78 }
+			SOV = { controls_state = 80 }
 		}
 
 		bypass = {

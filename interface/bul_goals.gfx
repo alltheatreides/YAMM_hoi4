@@ -1,0 +1,19 @@
+spriteTypes = {	
+	
+	#### Spanish goal icons
+
+	SpriteType = { 
+		name = "GFX_focus_greater_bulgaria"
+		texturefile = "gfx/interface/goals/focus_BUL_greater_bulgaria.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_bulgarisation"
+		texturefile = "gfx/interface/goals/focus_BUL_bulgarisation.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_bul_royal_tsardom"
+		texturefile = "gfx/interface/goals/focus_BUL_royal_tsardom.dds"
+	}
+}

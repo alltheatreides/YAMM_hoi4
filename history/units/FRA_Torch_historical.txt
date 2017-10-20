@@ -30,7 +30,7 @@ division_template = {
 	support = {
 	
 	}
-	priority = 1
+	priority = 0
 }
 
 

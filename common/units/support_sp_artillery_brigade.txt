@@ -25,31 +25,20 @@ sub_units = {
 		combat_width = 0
 		
 		essential = {
-			fuel_equipment
 			light_tank_artillery_equipment
 		}
 		
 		need = {
 			light_tank_artillery_equipment = 12
-			 
+			
 		}
-		
-		# can_be_parachuted = yes
-		
-		manpower = 300
+		manpower = 500
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 0.3
+		max_strength = 0.6
 		training_time = 180
-		weight = 0.5
-		supply_consumption = 0.2
-		
-		#support unit nerf
-		# soft_attack = -0.4
-		# hard_attack = -0.5
-		# breakthrough = -0.4
-		# defense = -0.5
-		# ap_attack = -0.5
+		weight = 1
+		supply_consumption = 0.4
 		armor_value = -0.9
 	}
 	
@@ -77,22 +66,20 @@ sub_units = {
 		transport = medium_tank_artillery_equipment
 		
 		essential = {
-			fuel_equipment
 			medium_tank_artillery_equipment
 		}
 		
 		need = {
 			medium_tank_artillery_equipment = 12
-			 
+			
 		}
-		manpower = 300
+		manpower = 500
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 0.3
+		max_strength = 0.6
 		training_time = 180
-		weight = 0.75
-		supply_consumption = 0.22
-		maximum_speed = 8
+		weight = 1.25
+		supply_consumption = 0.44
 		
 		#support unit nerf
 		# soft_attack = -0.4

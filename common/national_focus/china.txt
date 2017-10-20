@@ -451,6 +451,9 @@ focus_tree = {
 		x = 12
 		y = 0
 		cost = 10
+		ai_will_do = {
+			factor = 700
+		}
 		completion_reward = {
 			army_experience = 20
 		    		add_tech_bonus = {
@@ -476,6 +479,9 @@ focus_tree = {
 		cancel = {
 		}
 		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 700
+		}
 		
 		completion_reward = {
 			army_experience = 25
@@ -638,20 +644,23 @@ focus_tree = {
 			has_war = yes
 			OR = {
 				surrender_progress > 0.26
-				}
-				AND = {
-					608 = {
-						controller = {
-							has_war_with = ROOT
-						}
+			}
+			AND = {
+				608 = {
+					controller = {
+						has_war_with = ROOT
 					}
 				}
 			}
+		}
 		bypass = {
-				CHI = {
-	    owns_state = 716
-					}
+			CHI = {
+				owns_state = 716
 			}
+		}
+		ai_will_do = {
+			factor = 700
+		}
 		continue_if_invalid = yes
 		x = 12
 		y = 2

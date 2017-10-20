@@ -129,7 +129,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_finish_five_year_plan }
 		x = 0
 		y = 1
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -152,13 +152,24 @@ focus_tree = {
 				is_owned_and_controlled_by = SOV
 				industrial_complex > 1
 			}
+			202 = {
+				is_owned_and_controlled_by = SOV
+				arms_factory > 2
+				industrial_complex > 0
+			}
 			has_defensive_war = yes
 			573 = {
 				is_owned_and_controlled_by = SOV
 			}
 			582 = {
 				is_owned_and_controlled_by = SOV
-			} 
+			}
+			583 = {
+				is_owned_and_controlled_by = SOV
+			}
+			221 = {
+				is_owned_and_controlled_by = SOV
+			}
 		}
 		completion_reward = {
 			219 = {
@@ -187,6 +198,22 @@ focus_tree = {
 					level = 2
 				}
 			}
+			202 = {
+				remove_building = {
+					type = arms_factory
+					level = 6
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 6
+				}
+			}
+			221 = {
+				remove_building = {
+					type = arms_factory
+					level = 5
+				}
+			}
 			573 = {
 				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
@@ -201,15 +228,28 @@ focus_tree = {
 				}
 			}
 			582 = {
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 11
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 9
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
+					instant_build = yes
+				}
+			}
+			583 = {
+				add_extra_state_shared_building_slots = 14
+				add_building_construction = {
+					type = arms_factory
+					level = 8
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -240,7 +280,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		cost = 5
+		cost = 4.3
 		ai_will_do = {
 			factor = 100
 		}	
@@ -382,7 +422,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = SOV_The_Great_Patriotic_War_idea
+			add_timed_idea = { idea = SOV_The_Great_Patriotic_War_idea days = 912 }
 		}
 	}
 	
@@ -556,35 +596,51 @@ focus_tree = {
 					set_state_flag = SOV_production_effort_2AF
 				}
 			}
+			222 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			221 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
-	focus = {
-		id = SOV_extra_tech_slot_early
-		icon = GFX_focus_research
-		text = extra_tech_slot
-		prerequisite = { focus = SOV_production_effort }
-		prerequisite = { focus = SOV_collectivist_propaganda }
-		x = 2
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 5
-		}
+	# focus = {
+		# id = SOV_extra_tech_slot_early
+		# icon = GFX_focus_research
+		# text = extra_tech_slot
+		# prerequisite = { focus = SOV_production_effort }
+		# prerequisite = { focus = SOV_collectivist_propaganda }
+		# x = 2
+		# y = 2
+		# cost = 10
+		# ai_will_do = {
+			# factor = 5
+		# }
 
-		available_if_capitulated = yes
+		# available_if_capitulated = yes
 
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
+		# completion_reward = {
+			# add_research_slot = 1
+		# }
+	# }
 	
 	focus = {
 		id = SOV_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = SOV_extra_tech_slot_early }
+		prerequisite = { focus = SOV_production_effort }
 		x = 2
-		y = 3
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 5
@@ -699,11 +755,56 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = SOV_develop_the_urals
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_infrastructure_effort }
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
 
+		available_if_capitulated = yes
+
+		available = {
+			controls_state = 573
+			controls_state = 587
+		}
+
+		completion_reward = {
+			add_political_power = 40
+			582 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = tungsten
+				amount = 46
+				state = 573
+			}
+			add_resource = {
+				type = tungsten
+				amount = 88
+				state = 582
+			}
+			add_resource = {
+				type = steel
+				amount = 40
+				state = 573
+			}
+		}
+	}
+	
 	focus = {
 		id = SOV_tranformation_of_nature
 		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = SOV_infrastructure_effort }
+		prerequisite = { focus = SOV_develop_the_urals }
 		x = 2
 		y = 4
 		cost = 10
@@ -719,11 +820,12 @@ focus_tree = {
 			add_political_power = 120
 			add_resource = {
 				type = rubber
-				amount = 6
+				amount = 40
 				state = 404
 			}
 		}
 	}
+	
 
 	focus = {
 		id = SOV_stalin_constitution
@@ -746,7 +848,7 @@ focus_tree = {
 		id = SOV_collectivist_propaganda
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_positive_heroism }
+		# mutually_exclusive = { focus = SOV_positive_heroism }
 		x = 4
 		y = 1
 		cost = 10
@@ -763,30 +865,30 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_militarized_schools
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = SOV_collectivist_propaganda }
-		x = 4
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
+	# focus = {
+		# id = SOV_militarized_schools
+		# icon = GFX_goal_generic_army_doctrines
+		# prerequisite = { focus = SOV_collectivist_propaganda }
+		# x = 4
+		# y = 2
+		# cost = 10
+		# ai_will_do = {
+			# factor = 1
+		# }
 
-		available_if_capitulated = yes
+		# available_if_capitulated = yes
 
-		completion_reward = {
-			add_ideas = militarized_schools
-		}
-	}
+		# completion_reward = {
+			# add_ideas = militarized_schools
+		# }
+	# }
 
 	focus = {
 		id = SOV_workers_culture
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus = SOV_militarized_schools }
+		prerequisite = { focus = SOV_collectivist_propaganda }
 		x = 4
-		y = 3
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -804,7 +906,7 @@ focus_tree = {
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = SOV_workers_culture }
 		x = 4
-		y = 4
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -824,7 +926,7 @@ focus_tree = {
 		id = SOV_positive_heroism
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_collectivist_propaganda }
+		# mutually_exclusive = { focus = SOV_collectivist_propaganda }
 		x = 6
 		y = 1
 		cost = 10
@@ -1092,7 +1194,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_ocean_going_navy }
 		x = 13
 		y = 1
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1110,7 +1212,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_peoples_commissariat }
 		x = 11
 		y = 2
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2038,7 +2140,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_peoples_commissariat }
 		x = 16
 		y = 2
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 0.5
 

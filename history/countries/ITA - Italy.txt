@@ -231,7 +231,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ettore Bastico"
 	picture = "Portrait_Italy_Ettore_Bastico.dds"
-	traits = { cavalier }
+	# traits = { cavalier }
 	skill = 2
 }
 

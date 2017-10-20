@@ -261,22 +261,22 @@ ideas = {
 
 	high_command = {
 
-		SWE_axel_rappe = {
+		# SWE_axel_rappe = {
 			
-			picture = generic_army_europe_1
+			# picture = generic_army_europe_1
 			
-			allowed = {
-				original_tag = SWE
-			}
+			# allowed = {
+				# original_tag = SWE
+			# }
 			
 
 			
-			traits = { army_artillery_2 }
+			# traits = { army_artillery_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+			# ai_will_do = {
+				# factor = 1
+			# }
+		# }
 	
 		SWE_archibald_douglas = {
 			

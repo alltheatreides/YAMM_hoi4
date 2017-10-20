@@ -243,6 +243,7 @@ add_to_faction = SIK
 add_ideas = {
 	trotskyite_plot
 	home_of_revolution
+	SOV_soviet_taylorism_fordism
 }
 
 create_country_leader = {

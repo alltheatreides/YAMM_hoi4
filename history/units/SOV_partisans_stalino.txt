@@ -1,0 +1,37 @@
+﻿
+units = {
+	# division= {
+		# name = "Partisans"
+		# location = 
+		# division_template = "Partisans"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	# }
+	
+	division= {
+		name = "Partisans"
+		location = 6505
+		division_template = "Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division= {
+		name = "Partisans"
+		location = 3479
+		division_template = "Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	
+	division= {
+		name = "Partisans"
+		location = 502
+		division_template = "Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	
+	
+}
+#####################

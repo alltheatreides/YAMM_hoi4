@@ -1,0 +1,11 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_report_event_drama_uprising"
+		texturefile = "gfx/event_pictures/report_event_drama_uprising.dds"
+	}
+
+}
+
+
+

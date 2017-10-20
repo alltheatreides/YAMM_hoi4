@@ -22,6 +22,7 @@ set_technology = {
 	early_submarine = 1	
 	trench_warfare = 1
 	motorised_infantry = 1
+	interwar_antitank = 1
 }
 
 1939.1.1 = {

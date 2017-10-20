@@ -17,7 +17,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription = 0.005
+				conscription = 0.015
 			}
 		}
 	
@@ -92,7 +92,7 @@ ideas = {
 				subversive_activites_upkeep = -0.5
 				land_reinforce_rate = 0.3
 				decryption_factor = 0.2
-				encryption_factor = 0.2
+				# encryption_factor = 0.2
 			}
 		}
 		
@@ -201,7 +201,7 @@ ideas = {
 			
 			modifier = {
 				drift_defence_factor = 0.5
-				encryption_factor = 0.2
+				# encryption_factor = 0.2
 			}
 			rule = {
 				can_create_factions = yes
@@ -403,7 +403,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.20
+				army_org_factor = -0.15
 				experience_gain_factor = -0.5
 			}
 		}
@@ -427,8 +427,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.15
-				experience_gain_factor = -0.5
+				army_org_factor = -0.10
+				experience_gain_factor = -0.25
 			}
 		}
 		officers_purged_9 = {
@@ -452,7 +452,7 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.10
-				experience_gain_factor = -0.5
+				experience_gain_factor = -0.25
 			}
 		}
 		officers_purged_10 = {
@@ -476,7 +476,7 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.05
-				experience_gain_factor = -0.5
+				experience_gain_factor = -0.25
 			}
 		}
 
@@ -630,7 +630,7 @@ ideas = {
 			}
 			
 			modifier = {
-				unity_factor = 0.2
+				unity_factor = 0.1
 			}
 
 		}
@@ -668,6 +668,7 @@ ideas = {
 				industrial_capacity_factory = 0.10
 				production_factory_start_efficiency_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
 		
@@ -686,6 +687,63 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.05
+			}
+		}
+		
+		SOV_soviet_taylorism_fordism = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = generic_central_management
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = -0.4
+			}
+		}
+		
+		SOV_winter_offensive_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = FRA_army_of_aggression_focus
+			
+			modifier = {
+				army_attack_factor = 0.3
+			}
+		}
+		
+		SOV_conscripts_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = generic_war_preparation
+			
+			modifier = {
+				minimum_training_level = -0.05
+				training_time_army_factor = -0.80
+				production_speed_air_base_factor = 0.5
 			}
 		}
 
@@ -874,6 +932,21 @@ ideas = {
 			ai_will_do = {
 				factor = 0
 			}
+		}
+		
+		alexey_stakhanov = {
+			
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				has_completed_focus = SOV_positive_heroism
+			}
+			
+			traits = { hero_worker }
+			# modifier = {
+				# industrial_capacity_factory = 0.05
+			# }
 		}
 	}
 		

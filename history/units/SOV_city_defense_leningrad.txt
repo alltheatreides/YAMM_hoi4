@@ -1,0 +1,119 @@
+﻿##### Division Templates #####
+# division_template = {
+	# name = "Narodnoe Opolcheniye Diviziya"			# People's Militia
+
+	# regiments = {
+		# light_infantry = { x = 0 y = 0 }
+		# light_infantry = { x = 0 y = 1 }
+		# light_infantry = { x = 0 y = 2 }
+		# light_infantry = { x = 1 y = 0 }
+		# light_infantry = { x = 1 y = 1 }
+		# light_infantry = { x = 1 y = 2 }
+		# light_infantry = { x = 2 y = 0 }
+		# light_infantry = { x = 2 y = 1 }
+		# light_infantry = { x = 2 y = 2 }
+		
+		# artillery_brigade = { x = 3 y = 0 }
+		# artillery_brigade = { x = 3 y = 1 }
+		# artillery_brigade = { x = 3 y = 2 }
+	# }
+	# support = {
+		# DIV_HQ = { x = 0 y = 0 }
+	# }
+# }
+
+
+##### OOB #####
+units = {
+	# Leningrad People's Militia	
+	division= {	
+		name = "1st (Kirov) Narodnoe Opolcheniye Diviziya"		
+		location = 3151
+		division_template = "Narodnoe Opolcheniye Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+
+	}			
+	division= {			
+		name = "2nd (Moscow) Narodnoe Opolcheniye Diviziya"		
+		location = 3151
+		division_template = "Narodnoe Opolcheniye Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+
+	}			
+	division= {			
+		name = "3rd (Frunze) Narodnoe Opolcheniye Diviziya"		
+		location = 3151
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+
+	}
+	
+	division= {			
+		name = "1st Guards Narodnoe Opolcheniye Diviziya"		
+		location = 3151
+		division_template = "Narodnoe Opolcheniye Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+
+	}
+	division= {	
+		name = "2nd Guards Narodnoe Opolcheniye Diviziya"		
+		location = 3151
+		division_template = "Narodnoe Opolcheniye Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+
+	}			
+	division= {			
+		name = "4th (Dzerzhinsky) Narodnoe Opolcheniye Diviziya"		
+		location = 3151
+		division_template = "Narodnoe Opolcheniye Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+
+	}			
+	division= {			
+		name = "3rd Guards Narodnoe Opolcheniye Diviziya"		
+		location = 3151
+		division_template = "Narodnoe Opolcheniye Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+
+	}
+	division= {			
+		name = "4th Guards Narodnoe Opolcheniye Diviziya"		
+		location = 3151
+		division_template = "Narodnoe Opolcheniye Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+
+	}
+	division= {			
+		name = "5th (Kuybishevskaya) Narodnoe Opolcheniye Diviziya"		
+		location = 3151
+		division_template = "Narodnoe Opolcheniye Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+
+	}
+	division= {			
+		name = "6th Narodnoe Opolcheniye Diviziya"		
+		location = 3151
+		division_template = "Narodnoe Opolcheniye Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+
+	}
+	division= {			
+		name = "7th Narodnoe Opolcheniye Diviziya"		
+		location = 3151
+		division_template = "Narodnoe Opolcheniye Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+
+	}
+}
+#####################

@@ -2252,7 +2252,7 @@ focus_tree = {
 		x = 21
 		y = 0
 
-		cost = 10
+		cost = 4.3
 
 		ai_will_do = {
 			factor = 9

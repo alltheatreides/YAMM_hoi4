@@ -1,0 +1,39 @@
+﻿##### Division Templates #####
+
+
+units = {
+	# division= {
+		# name = "Partisans"
+		# location = 
+		# division_template = "Partisans"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	# }
+	
+	division= {
+		name = "Partisans"
+		location = 6387
+		division_template = "Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division= {
+		name = "Partisans"
+		location = 6273
+		division_template = "Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	
+	division= {
+		name = "Partisans"
+		location = 6387
+		division_template = "Partisans"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	
+	
+}
+#####################

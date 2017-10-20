@@ -73,8 +73,9 @@ set_technology = {
 }
 
 set_convoys = 100
-			add_ideas = {
+add_ideas = {
 	free_trade
+	real_neutrality
 }
 set_politics = {
 

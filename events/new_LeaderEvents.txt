@@ -1225,6 +1225,7 @@ country_event = {
 			OR = {
 				has_capitulated = yes
 				is_subject_of = GER
+				NOT = { exists = yes }
 			}
 		}
 		69 = { is_controlled_by = GER }

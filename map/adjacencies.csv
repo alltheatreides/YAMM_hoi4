@@ -401,4 +401,90 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6763;3711;impassable;-1;-1;-1;-1;-1;;Caucasus
 6763;1450;impassable;-1;-1;-1;-1;-1;;Caucasus
 11645;1450;impassable;-1;-1;-1;-1;-1;;Caucasus
+4363;1577;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+1248;1577;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+1248;4554;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+7229;4554;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+7229;7426;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+10309;7426;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+4379;7426;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+1302;10238;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+1302;10195;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+7280;10195;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+7280;4260;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+12297;4260;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+12297;10326;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+4397;10326;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+4397;1362;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+9988;1362;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+4388;4275;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4388;1296;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+12220;1296;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+12122;1296;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4392;1296;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4392;12292;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4392;1385;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4348;1385;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4348;1315;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4348;7295;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+10193;7295;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4566;4408;impassable;-1;-1;-1;-1;-1;;Thanon Thong Chai Mountains
+7559;4408;impassable;-1;-1;-1;-1;-1;;Thanon Thong Chai Mountains
+7312;4408;impassable;-1;-1;-1;-1;-1;;Thanon Thong Chai Mountains
+10456;8045;impassable;-1;-1;-1;-1;-1;;Luang Prabang Mountains
+10330;8045;impassable;-1;-1;-1;-1;-1;;Luang Prabang Mountains
+10356;8045;impassable;-1;-1;-1;-1;-1;;Luang Prabang Mountains
+10356;7531;impassable;-1;-1;-1;-1;-1;;Luang Prabang Mountains
+7675;12317;impassable;-1;-1;-1;-1;-1;;Daen Lao Mountains
+7675;7647;impassable;-1;-1;-1;-1;-1;;Daen Lao Mountains
+10371;7647;impassable;-1;-1;-1;-1;-1;;Daen Lao Mountains
+1990;7647;impassable;-1;-1;-1;-1;-1;;Daen Lao Mountains
+12284;3651;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+1333;1014;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+4059;1014;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+4019;1014;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+4019;4147;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+7190;4147;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+7190;10033;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+7163;10033;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+7163;11966;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+7534;11966;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+7534;3999;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+10227;4310;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+10227;1364;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+4384;1364;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+4384;1376;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+4384;10297;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+12255;10297;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+12255;4412;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+10227;4310;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+10227;1364;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+4384;1364;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+4384;1376;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+4384;10297;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+12255;10297;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+12255;4412;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+10509;12488;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1648;12488;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1648;8360;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+4652;8360;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+7673;10522;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+12302;10522;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+12302;4446;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+7327;4446;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+7327;1460;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+7327;10354;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+12181;10354;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+12343;10354;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+12343;10382;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1533;10382;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1533;7368;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+10294;7440;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+10294;12138;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+10150;12138;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+10150;7308;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1274;7308;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1274;12209;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1313;12209;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1313;4320;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
 -1;-1;;-1;-1;-1;-1;-1;-1;

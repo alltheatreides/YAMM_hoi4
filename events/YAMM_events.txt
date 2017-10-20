@@ -358,3 +358,1410 @@ country_event = {
 		name = yamm.41.a
 	}
 }
+
+# Information Event during game
+country_event = {
+	id = yamm.42
+	title = yamm.42.t
+	picture = GFX_report_event_start_info
+	
+	trigger = {
+		tag = SOV
+		surrender_progress > 0.2
+	}
+	
+	desc = {
+		text = yamm.42.d.sov
+		trigger = {
+			tag = SOV
+		}
+	}
+	
+	option = {
+		name = yamm.42.a
+	}
+}
+
+# Soviet Training Time
+country_event = {
+	id = yamm.43
+	title = yamm.43.t
+	desc = yamm.43.desc
+	picture = GFX_report_event_soviet_training
+	
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		NOT { has_idea = SOV_conscripts_idea }
+	}
+	
+	immediate = {
+		add_ideas = SOV_conscripts_idea
+	}
+	
+	option = {
+		name = yamm.43.a
+	}
+}
+
+# Soviet Winter Offensive start
+country_event = {
+	id = yamm.44
+	title = yamm.44.t
+	desc = yamm.44.desc
+	picture = GFX_report_event_soviet_winter_offensive
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		date > 1941.12.1
+		SOV = { controls_state = 219 }
+		NOT { has_country_flag = soviet_winter_offensive_1 }
+	}
+	
+	immediate = {
+		add_timed_idea = { idea = SOV_winter_offensive_idea days = 75 }
+		set_country_flag = soviet_winter_offensive_1
+	}
+	
+	option = {
+		name = yamm.44.a
+	}
+}
+
+# Soviet Winter Offensive end
+country_event = {
+	id = yamm.45
+	title = yamm.45.t
+	desc = yamm.45.desc
+	picture = GFX_report_event_soviet_winter_offensive
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		has_country_flag = soviet_winter_offensive_1
+		NOT = { has_idea = SOV_winter_offensive_idea }
+	}
+	
+	option = {
+		name = yamm.45.a
+		clr_country_flag = soviet_winter_offensive_1
+	}
+}
+
+# Soviet Cities Events - Defense of Sevastopol
+country_event = {
+	id = yamm.46
+	title = yamm.46.t
+	desc = yamm.46.desc
+	picture = GFX_report_event_soviet_people_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		NOT { has_country_flag = SOV_city_defense_sevastopol }
+		NOT = { SOV = { controls_state = 196 } }
+	}
+	
+	option = {
+		name = yamm.46.a
+		load_oob = SOV_city_defense_sevastopol
+		set_country_flag = SOV_city_defense_sevastopol
+		137 = {
+			add_building_construction = {
+				type = bunker
+				province = 3686
+				level = 5
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = yamm.46.b
+	}
+}
+
+# Soviet Cities Events - Defense of Leningrad
+country_event = {
+	id = yamm.47
+	title = yamm.47.t
+	desc = yamm.47.desc
+	picture = GFX_report_event_soviet_people_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		NOT { has_country_flag = SOV_city_defense_leningrad }
+		NOT = { SOV = { controls_state = 209 } }
+	}
+	
+	option = {
+		name = yamm.46.a
+		load_oob = SOV_city_defense_leningrad
+		set_country_flag = SOV_city_defense_leningrad
+		195 = {
+			add_building_construction = {
+				type = bunker
+				province = 3151
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3151
+				level = 3
+				instant_build = yes
+			}
+		}
+		
+	}
+	option = {
+		name = yamm.46.b
+	}
+}
+
+# Soviet Cities Events - Defense of Moscow
+country_event = {
+	id = yamm.48
+	title = yamm.48.t
+	desc = yamm.48.desc
+	picture = GFX_report_event_soviet_people_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		NOT { has_country_flag = SOV_city_defense_moscow }
+		NOT = {
+			OR = {
+				SOV = { controls_state = 242 }
+				SOV = { controls_state = 243 }
+				SOV = { controls_state = 224 }
+			}
+		}
+	}
+	
+	option = {
+		name = yamm.46.a
+		load_oob = SOV_city_defense_moscow
+		set_country_flag = SOV_city_defense_moscow
+		219 = {
+			add_building_construction = {
+				type = bunker
+				province = 6380
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11282
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3391
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 6414
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3259
+				level = 1
+				instant_build = yes
+			}
+		}
+		
+	}
+	option = {
+		name = yamm.46.b
+	}
+}
+
+# Soviet Cities Events - Defense of Rostov
+country_event = {
+	id = yamm.49
+	title = yamm.49.t
+	desc = yamm.49.desc
+	picture = GFX_report_event_soviet_people_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		NOT { has_country_flag = SOV_city_defense_rostov }
+		NOT = {
+			OR = {
+				SOV = { controls_state = 227 }
+			}
+		}
+	}
+	
+	option = {
+		name = yamm.46.a
+		load_oob = SOV_city_defense_rostov
+		set_country_flag = SOV_city_defense_rostov
+		218 = {
+			add_building_construction = {
+				type = bunker
+				province = 9417
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11418
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = yamm.46.b
+	}
+}
+
+# Soviet Cities Events - Defense of Stalingrad
+country_event = {
+	id = yamm.50
+	title = yamm.50.t
+	desc = yamm.50.desc
+	picture = GFX_report_event_soviet_people_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		NOT { has_country_flag = SOV_city_defense_stalingrad }
+		NOT = {
+			OR = {
+				SOV = { controls_state = 228 }
+				SOV = { controls_state = 234 }
+			}
+		}
+	}
+	
+	option = {
+		name = yamm.46.a
+		load_oob = SOV_city_defense_stalingrad
+		set_country_flag = SOV_city_defense_stalingrad
+		217 = {
+			add_building_construction = {
+				type = bunker
+				province = 9504
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 6527
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11484
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = yamm.46.b
+	}
+}
+
+# Soviet Cities Events - Defense of Krasnodar
+country_event = {
+	id = yamm.51
+	title = yamm.51.t
+	desc = yamm.51.desc
+	picture = GFX_report_event_soviet_people_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		NOT { has_country_flag = SOV_city_defense_krasnodar }
+		NOT = {
+			OR = {
+				SOV = { controls_state = 200 }
+				SOV = { controls_state = 137 }
+			}
+		}
+	}
+	
+	option = {
+		name = yamm.46.a
+		load_oob = SOV_city_defense_krasnodar
+		set_country_flag = SOV_city_defense_krasnodar
+		234 = {
+			add_building_construction = {
+				type = bunker
+				province = 3734
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 6741
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = yamm.46.b
+	}
+}
+
+# Soviet Cities Events - Defense of Voronzeh
+country_event = {
+	id = yamm.52
+	title = yamm.52.t
+	desc = yamm.52.desc
+	picture = GFX_report_event_soviet_people_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		NOT { has_country_flag = SOV_city_defense_voronezh }
+		NOT = {
+			OR = {
+				SOV = { controls_state = 225 }
+				SOV = { controls_state = 221 }
+				SOV = { controls_state = 228 }
+			}
+		}
+	}
+	
+	option = {
+		name = yamm.46.a
+		load_oob = SOV_city_defense_voronezh
+		set_country_flag = SOV_city_defense_voronezh
+		260 = {
+			add_building_construction = {
+				type = bunker
+				province = 413
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3527
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = yamm.46.b
+	}
+}
+
+# Soviet Cities Events - Defense of Yaroslav
+country_event = {
+	id = yamm.53
+	title = yamm.53.t
+	desc = yamm.53.desc
+	picture = GFX_report_event_soviet_people_militia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		NOT { has_country_flag = SOV_city_defense_yaroslav }
+		NOT = {
+			OR = {
+				SOV = { controls_state = 242 }
+				SOV = { controls_state = 243 }
+				SOV = { controls_state = 224 }
+			}
+		}
+	}
+	
+	option = {
+		name = yamm.46.a
+		load_oob = SOV_city_defense_yaroslav
+		set_country_flag = SOV_city_defense_yaroslav
+	}
+	option = {
+		name = yamm.46.b
+	}
+}
+
+# Soviet Partisans 41 warning for Germany
+country_event = {
+	id = yamm.54
+	title = yamm.54.t
+	desc = yamm.54.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		SOV = { has_defensive_war = yes }
+		SOV = { surrender_progress > 0.1 }
+		NOT = { has_country_flag = soviet_partisan_41 }
+		NOT = { date > 1942.1.1 }
+	}
+	
+	option = {
+		name = yamm.54.a
+		hidden_effect = {
+			set_country_flag = soviet_partisan_41
+			SOV = { 
+				load_oob = SOV_partisans_blank
+				set_technology = { partisans = 1 }
+			}
+		}
+	}
+}
+
+# Soviet Partisans spawn - Belarus - Minsk
+country_event = {
+	id = yamm.55
+	title = yamm.55.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 216 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_minsk
+	}
+}
+
+# Soviet Partisans spawn - Belarus - Vitebsk
+country_event = {
+	id = yamm.56
+	title = yamm.56.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 207 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_vitebsk
+	}
+}
+
+# Soviet Partisans spawn - Belarus - Smolensk
+country_event = {
+	id = yamm.57
+	title = yamm.57.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 242 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_smolensk
+	}
+}
+
+# Soviet Partisans spawn - Belarus - Gomel
+country_event = {
+	id = yamm.58
+	title = yamm.58.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 242 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_gomel
+	}
+}
+
+# Soviet Partisans spawn - Belarus - Bryansk
+country_event = {
+	id = yamm.59
+	title = yamm.59.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 224 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_bryansk
+	}
+}
+
+# Soviet Partisans spawn - Ukraine - Kiev
+country_event = {
+	id = yamm.60
+	title = yamm.60.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 202 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_kiev
+	}
+}
+
+# Soviet Partisans spawn - Ukraine - Odessa
+country_event = {
+	id = yamm.61
+	title = yamm.61.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 192 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_odessa
+	}
+}
+
+# Soviet Partisans spawn - Ukraine - Zhytomir
+country_event = {
+	id = yamm.62
+	title = yamm.62.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 201 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_zhytomir
+	}
+}
+
+# Soviet Partisans spawn - Ukraine - Chernigov
+country_event = {
+	id = yamm.63
+	title = yamm.63.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 193 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_chernigov
+	}
+}
+
+# Soviet Partisans spawn - Ukraine - Cherkasy
+country_event = {
+	id = yamm.64
+	title = yamm.64.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 203 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_cherkasy
+	}
+}
+
+# Soviet Partisans spawn - Baltic States - Estonia
+country_event = {
+	id = yamm.65
+	title = yamm.65.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 13 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_estonia
+	}
+}
+
+# Soviet Partisans spawn - Baltic States - Latvia
+country_event = {
+	id = yamm.66
+	title = yamm.66.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 12 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_latvia
+	}
+}
+
+# Soviet Partisans spawn - Baltic States - Lithuania
+country_event = {
+	id = yamm.67
+	title = yamm.67.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 11 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_lithuania
+	}
+}
+
+# Soviet Partisans spawn - Finland - Karelia
+country_event = {
+	id = yamm.68
+	title = yamm.68.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 146 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_karjala
+	}
+}
+
+# Soviet Partisans spawn - Donbass Area - Dnipropetrovsk
+country_event = {
+	id = yamm.69
+	title = yamm.69.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 453 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_dnipropetrovsk
+	}
+}
+
+# Soviet Partisans spawn - Donbass Area - Kharkov
+country_event = {
+	id = yamm.70
+	title = yamm.70.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 221 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_kharkov
+	}
+}
+
+# Soviet Partisans spawn - Donbass Area - Stalino
+country_event = {
+	id = yamm.71
+	title = yamm.71.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 227 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_stalino
+	}
+}
+
+# Soviet Partisans spawn - Donbass Area - Kherson
+country_event = {
+	id = yamm.72
+	title = yamm.72.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 196 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_kherson
+	}
+}
+
+# Soviet Partisans spawn - Kuban Region - Rostov
+country_event = {
+	id = yamm.73
+	title = yamm.73.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 218 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_rostov
+	}
+}
+
+# Soviet Partisans spawn - Kuban Region - Krasnodar
+country_event = {
+	id = yamm.74
+	title = yamm.74.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 234 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_krasnodar
+	}
+}
+
+# Soviet Partisans spawn - Kuban Region - Stavropol
+country_event = {
+	id = yamm.75
+	title = yamm.75.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 235 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_stavropol
+	}
+}
+
+# Soviet Partisans spawn - Caucasus - Georgia
+country_event = {
+	id = yamm.76
+	title = yamm.76.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 231 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_georgia
+	}
+}
+
+# Soviet Partisans spawn - Stalingrad - Millerovo
+country_event = {
+	id = yamm.77
+	title = yamm.77.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 245 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_millerovo
+	}
+}
+
+# Soviet Partisans spawn - Stalingrad - Stalingrad
+country_event = {
+	id = yamm.78
+	title = yamm.78.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 217 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_stalingrad
+	}
+}
+
+# Soviet Partisans spawn - Stalingrad - Mikhailovka
+country_event = {
+	id = yamm.79
+	title = yamm.79.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 265 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_mikhailovka
+	}
+}
+
+# Soviet Partisans spawn - Central Russia - Kursk
+country_event = {
+	id = yamm.80
+	title = yamm.80.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 220 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_kursk
+	}
+}
+
+# Soviet Partisans spawn - Central Russia - Voronezh
+country_event = {
+	id = yamm.81
+	title = yamm.81.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 260 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_voronezh
+	}
+}
+
+# Soviet Partisans spawn - Central Russia - Orel
+country_event = {
+	id = yamm.82
+	title = yamm.82.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 222 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_orel
+	}
+}
+
+# Soviet Partisans spawn - Leningrad - Nevel
+country_event = {
+	id = yamm.83
+	title = yamm.83.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 210 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_nevel
+	}
+}
+
+# Soviet Partisans spawn - Leningrad - Pskov
+country_event = {
+	id = yamm.84
+	title = yamm.84.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 209 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_pskov
+	}
+}
+
+# Soviet Partisans spawn - Leningrad - Luga
+country_event = {
+	id = yamm.85
+	title = yamm.85.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 208 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_luga
+	}
+}
+
+# Soviet Partisans spawn - Leningrad - Novgorod
+country_event = {
+	id = yamm.86
+	title = yamm.86.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 263 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_novgorod
+	}
+}
+
+# Soviet Partisans spawn - Leningrad - Rzhev
+country_event = {
+	id = yamm.87
+	title = yamm.87.t
+	desc = yamm.55.desc
+	picture = GFX_report_event_soviet_partisan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = { has_defensive_war = yes }
+		surrender_progress > 0.1
+		GER = { has_country_flag = soviet_partisan_41 }
+		NOT = {
+			SOV = { controls_state = 246 }
+		}
+	}
+	
+	mean_time_to_happen = { days = 45 }
+	
+	option = {
+		name = yamm.55.a
+		
+		load_oob = SOV_partisans_rzhev
+	}
+}
