@@ -148,6 +148,8 @@ focus_tree = {
 					is_in_faction_with = GER
 				}
 			}
+			date > 1939.1.1
+			POL = { has_capitulated = yes }
 		}
 		
 		bypass = {
@@ -206,6 +208,7 @@ focus_tree = {
 				has_government = fascism
 				has_government = neutrality
 			}
+			date > 1939.1.1
 		}
 		
 		bypass = {
@@ -262,6 +265,7 @@ focus_tree = {
 			GRE = {
 				owns_state = 184
 			}
+			has_war = yes
 		}
 
 		bypass = {

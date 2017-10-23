@@ -418,7 +418,7 @@ country_event = {
 	
 	option = {
 		name = bulgarians.18.a
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 0 }
 
 		BUL = {
 			transfer_state = 184
@@ -431,7 +431,7 @@ country_event = {
 
 	option = {
 		name = bulgarians.18.b
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 100 }
 
 		BUL = {
 			country_event = { days = 1 id = bulgarians.20 }

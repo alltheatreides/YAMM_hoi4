@@ -613,6 +613,10 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
+			
+			modifier = {
+				lend_lease_tension = 2
+			}
 
 		}
 
@@ -690,24 +694,24 @@ ideas = {
 			}
 		}
 		
-		SOV_soviet_taylorism_fordism = {
-			removal_cost = -1
+		# SOV_soviet_taylorism_fordism = {
+			# removal_cost = -1
 			
-			allowed = {
-				always = no
-			}
+			# allowed = {
+				# always = no
+			# }
 			
-			allowed_civil_war = {
-				has_government = communism
-			}
+			# allowed_civil_war = {
+				# has_government = communism
+			# }
 			
-			picture = generic_central_management
+			# picture = generic_central_management
 			
-			modifier = {
-				production_factory_max_efficiency_factor = 0.1
-				line_change_production_efficiency_factor = -0.4
-			}
-		}
+			# modifier = {
+				# production_factory_max_efficiency_factor = 0.1
+				# line_change_production_efficiency_factor = -0.4
+			# }
+		# }
 		
 		SOV_winter_offensive_idea = {
 			removal_cost = -1

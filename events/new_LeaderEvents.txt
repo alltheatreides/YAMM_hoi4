@@ -1047,6 +1047,7 @@ country_event = {
 			OR = {
 				has_capitulated = yes
 				is_subject_of = GER
+				NOT = { CZE = { exists = yes } }
 			}
 			NOT = {
 				AND = {

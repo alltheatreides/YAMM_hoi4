@@ -216,7 +216,7 @@ ideas = {
 		
 		speer = {
 
-			cost = 300
+			cost = 150
 			
 			allowed = {
 				original_tag = GER

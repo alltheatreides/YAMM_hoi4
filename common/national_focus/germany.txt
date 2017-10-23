@@ -2165,7 +2165,7 @@ focus_tree = {
 		prerequisite = { focus = GER_czech_friend focus = GER_end_of_czechoslovakia }
 		x = 12
 		y = 5
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 10
 		}

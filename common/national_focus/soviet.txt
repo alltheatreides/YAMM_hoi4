@@ -438,6 +438,7 @@ focus_tree = {
 		}
 		available = {
 			has_defensive_war_with = GER
+			SOV = { surrender_progress > 0.20 }
 		}
 		completion_reward = {
 			SOV = {
@@ -865,30 +866,30 @@ focus_tree = {
 		}
 	}
 
-	# focus = {
-		# id = SOV_militarized_schools
-		# icon = GFX_goal_generic_army_doctrines
-		# prerequisite = { focus = SOV_collectivist_propaganda }
-		# x = 4
-		# y = 2
-		# cost = 10
-		# ai_will_do = {
-			# factor = 1
-		# }
+	focus = {
+		id = SOV_militarized_schools
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = SOV_collectivist_propaganda }
+		x = 4
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
 
-		# available_if_capitulated = yes
+		available_if_capitulated = yes
 
-		# completion_reward = {
-			# add_ideas = militarized_schools
-		# }
-	# }
+		completion_reward = {
+			add_ideas = militarized_schools
+		}
+	}
 
 	focus = {
 		id = SOV_workers_culture
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = SOV_collectivist_propaganda }
 		x = 4
-		y = 2
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -906,7 +907,7 @@ focus_tree = {
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = SOV_workers_culture }
 		x = 4
-		y = 3
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 1
