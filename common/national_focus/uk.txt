@@ -1210,7 +1210,8 @@ focus_tree = {
 				name = dd_bonus
 				bonus = 0.5
 				uses = 2
-				category = dd_tech
+				technology = basic_destroyer
+				technology = improved_destroyer
 			}
 		}
 	}

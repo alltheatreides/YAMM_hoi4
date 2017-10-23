@@ -1463,13 +1463,14 @@ focus_tree = {
 				name = dd_bonus
 				bonus = 0.5
 				uses = 1
-				category = dd_tech
+				technology = basic_destroyer
+				technology = improved_destroyer
 			}
 			add_tech_bonus = {
 				name = ss_bonus
 				bonus = 0.5
 				uses = 1
-				category = ss_tech
+				technology = improved_submarine
 			}
 			add_tech_bonus = {
 				name = con_def_bonus
@@ -1893,13 +1894,14 @@ focus_tree = {
 				name = dd_bonus
 				bonus = 0.5
 				uses = 2
-				category = dd_tech
+				technology = basic_destroyer
+				technology = improved_destroyer
 			}
 			add_tech_bonus = {
 				name = ss_bonus
 				bonus = 0.5
 				uses = 2
-				category = ss_tech
+				technology = improved_submarine
 			}
 			add_tech_bonus = {
 				name = naval_doc_bonus

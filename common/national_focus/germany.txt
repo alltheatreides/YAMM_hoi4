@@ -2702,7 +2702,7 @@ focus_tree = {
 				technology = early_submarine
 				technology = basic_submarine
 				technology = improved_submarine
-				technology = advanced_submarine
+				# technology = advanced_submarine
 			}
 		}
 		

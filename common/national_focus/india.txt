@@ -3102,7 +3102,8 @@ focus_tree = {
 				name = RAJ_screening_effort
 				bonus = 0.6
 				uses = 1
-				category = dd_tech
+				technology = basic_destroyer
+				technology = improved_destroyer
 				category = cl_tech
 			}
 		}
@@ -3184,7 +3185,8 @@ focus_tree = {
 				name = RAJ_submarine_effort
 				bonus = 0.6
 				uses = 1
-				category = ss_tech
+				technology = basic_submarine
+				technology = improved_submarine
 			}
 		}
 	}

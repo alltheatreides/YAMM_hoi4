@@ -887,7 +887,7 @@ focus_tree = {
 	focus = {
 		id = SOV_workers_culture
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus = SOV_collectivist_propaganda }
+		prerequisite = { focus = SOV_militarized_schools }
 		x = 4
 		y = 3
 		cost = 10

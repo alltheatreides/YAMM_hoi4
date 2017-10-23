@@ -1119,7 +1119,7 @@ focus_tree = {
 				technology = improved_light_cruiser
 				technology = advanced_light_cruiser
 				technology = improved_heavy_cruiser
-				technology = advanced_heavy_cruiser
+				# technology = advanced_heavy_cruiser
 			}
 		}
 	}
@@ -1203,7 +1203,9 @@ focus_tree = {
 				name = ITA_atlantic_fleet
 				bonus = 0.5
 				uses = 1
-				category = cv_tech
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
 			}
 			add_tech_bonus = {
 				name = ITA_atlantic_fleet
@@ -1324,7 +1326,7 @@ focus_tree = {
 				uses = 1
 				technology = basic_destroyer
 				technology = improved_destroyer
-				technology = advanced_destroyer
+				# technology = advanced_destroyer
 			}
 			add_tech_bonus = {
 				name = con_def_bonus
@@ -1357,7 +1359,7 @@ focus_tree = {
 				uses = 1
 				technology = basic_destroyer
 				technology = improved_destroyer
-				technology = advanced_destroyer
+				# technology = advanced_destroyer
 			}
 			add_tech_bonus = {
 				name = ITA_escort_effort
@@ -1392,7 +1394,7 @@ focus_tree = {
 				uses = 1
 				technology = basic_submarine
 				technology = improved_submarine
-				technology = advanced_submarine
+				# technology = advanced_submarine
 			}
 			add_tech_bonus = {
 				name = sub_op_bonus
@@ -1426,7 +1428,8 @@ focus_tree = {
 				name = ITA_sea_wolves
 				bonus = 0.5
 				uses = 1
-				category = ss_tech
+				technology = basic_submarine
+				technology = improved_submarine
 			}
 			add_tech_bonus = {
 				name = ITA_sea_wolves
