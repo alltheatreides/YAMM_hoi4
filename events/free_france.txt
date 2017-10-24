@@ -246,22 +246,25 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			FRA = {
-				controls_state = { 461 }
-				controls_state = { 459 } 
-				controls_state = { 462 }
+			AND = {
+				FRA = { controls_state = 461 }
+				FRA = { controls_state = 459 }
+				FRA = { controls_state = 462 }
 			}
-			ENG = {
-				controls_state= { 461 }
-				controls_state= { 459 } 
-				controls_state= { 462 } 
+			AND = {
+				ENG = { controls_state = 461 }
+				ENG = { controls_state = 459 }
+				ENG = { controls_state = 462 }
 			}
-			USA = {
-				controls_state= { 461 }
-				controls_state= { 459 } 
-				controls_state= { 462 } 
+			AND = {
+				USA = { controls_state = 461 }
+				USA = { controls_state = 459 }
+				USA = { controls_state = 462 }
 			}
 		}
+		tag = FRA
+		FRA = { has_war_with = EFR }
+		NOT = { FRA = { has_country_flag = free_france_clfn } }
 	}
 	
 	option = {
@@ -276,23 +279,26 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		hidden_effect = {
+			set_country_flag = free_france_clfn
+		}
 	}
 }
 
 # Heads up start of the game
-country_event = {
-	id = free_france.11
-	title = free_france.11.t
-	desc = free_france.11.desc
-	picture = GFX_report_event_french_resistance
+# country_event = {
+	# id = free_france.11
+	# title = free_france.11.t
+	# desc = free_france.11.desc
+	# picture = GFX_report_event_french_resistance
 	
-	fire_only_once = yes
+	# fire_only_once = yes
 	
-	trigger = {
-		tag = FRA
-	}
+	# trigger = {
+		# tag = FRA
+	# }
 	
-	option = {
-		name = yamm.10.a
-	}
-}
+	# option = {
+		# name = yamm.10.a
+	# }
+# }

@@ -116,7 +116,7 @@ sub_units = {
 		# transport = heavy_tank_artillery_equipment
 		
 		# essential = {
-			# fuel_equipment
+			# 
 			# heavy_tank_artillery_equipment
 		# }
 		
@@ -167,7 +167,7 @@ sub_units = {
 		# transport = super_heavy_tank_artillery_equipment
 		
 		# essential = {
-			# fuel_equipment
+			# 
 			# super_heavy_tank_artillery_equipment
 		# }
 		
@@ -218,7 +218,7 @@ sub_units = {
 		combat_width = 0
 		
 		essential = {
-			fuel_equipment
+			
 			modern_tank_artillery_equipment
 		}
 		

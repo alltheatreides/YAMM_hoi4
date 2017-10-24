@@ -6,7 +6,7 @@ set_research_slots = 3
 
 # Starting tech
 	set_technology = {
-	tech_fuel = 1
+	
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	infantry_weapons2 = 1
@@ -44,10 +44,10 @@ set_research_slots = 3
 	electronic_mechanical_engineering = 1
 	radio = 1
 	radio_detection = 1
-	heavy_artillery_1 = 1
-	light_artillery_1 = 1
-	early_armored_car = 1		# WM addition
-	basic_armored_car = 1		# WM addition
+	
+	
+	
+	
 	tech_field_hospital = 1
 	support_weapons = 1
 	tech_logistics_company = 1

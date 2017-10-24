@@ -24,7 +24,7 @@ sub_units = {
 		transport = modern_tank_equipment
 		
 		essential = {
-			fuel_equipment
+			
 			modern_tank_equipment
 		}
 		

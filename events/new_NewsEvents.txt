@@ -1044,13 +1044,13 @@ news_event = {
 			has_completed_focus = GER_wunderwaffe
 			OR = {
 				has_tech = jet_fighter1
-				has_tech = jet_heavy_fighter1
+				# has_tech = jet_heavy_fighter1
 				has_tech = jet_tactical_bomber1
 				has_tech = jet_strategic_bomber1
 			}
 			OR = {
 				has_equipment = { jet_fighter_equipment > 9 }
-				has_equipment = { jet_heavy_fighter_equipment > 9 }
+				# has_equipment = { jet_heavy_fighter_equipment > 9 }
 				has_equipment = { jet_tac_bomber_equipment > 9 }
 				has_equipment = { jet_strat_bomber_equipment > 9 }
 			}

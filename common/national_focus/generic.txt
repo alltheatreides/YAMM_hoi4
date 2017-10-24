@@ -1638,8 +1638,7 @@ focus_tree = {
 		prerequisite = { focus = political_effort }
 		mutually_exclusive = { focus = liberty_ethos}
 		available = {
-
-                         AND = { 
+			AND = {
 			    OR = {
 				 has_government = fascism
 				 has_government = communism
@@ -1660,12 +1659,13 @@ focus_tree = {
                                          date > 1939.1.1
                                  }
 
-                                }
-                             }
-
-                        NOT = {
+			}
+			NOT = {
 				tag = CHI
-			      }
+			}
+		}
+
+                        
 		x = 18
 		y = 1
 		cost = 10

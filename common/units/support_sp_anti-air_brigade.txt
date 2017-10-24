@@ -26,7 +26,7 @@ sub_units = {
 		
 		essential = {
 			light_tank_aa_equipment
-			fuel_equipment
+			
 		}
 		
 		need = {
@@ -72,7 +72,7 @@ sub_units = {
 		transport = medium_tank_aa_equipment
 		
 		essential = {
-			fuel_equipment
+			
 			medium_tank_aa_equipment
 		}
 		categories = {
@@ -130,7 +130,7 @@ sub_units = {
 		combat_width = 0
 		
 		essential = {
-			fuel_equipment
+			
 			heavy_tank_aa_equipment
 		}
 		
@@ -180,7 +180,7 @@ sub_units = {
 		
 		essential = {
 			super_heavy_tank_aa_equipment
-			fuel_equipment
+			
 		}
 		
 		need = {
@@ -230,7 +230,7 @@ sub_units = {
 		transport = modern_tank_aa_equipment
 		
 		essential = {
-			fuel_equipment
+			
 			modern_tank_aa_equipment
 		}
 		

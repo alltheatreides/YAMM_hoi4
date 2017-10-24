@@ -1091,9 +1091,9 @@ country_event = {
 	        picture = "Portrait_Spain_CNT.dds"
 	        expire = "1965.1.1"
 	        ideology = anarchist_communism
-	        traits = {
-			comitee
-	        }
+	        # traits = {
+			# comitee
+	        # }
         }
 		set_cosmetic_tag = CNT
 		set_country_flag = cnt_in_power
@@ -1541,23 +1541,12 @@ country_event = {
 	option = {
 		ai_chance = { factor = 1 }
 		name = spain.20.a
-		set_party_name = 
-		{ideology = fascism
-		long_name = SPR_fetjons_long 
-		name = SPR_fetjons }
-		
-		GER = { 
-			add_opinion_modifier = {
-				target = 
-				    every_country = {
-				        limit = {
-				            original_tag = SPR
-				            has_government = fascism
-				        }
-				    }
-				modifier = large_increase
-			}
+		set_party_name = {
+			ideology = fascism
+			long_name = SPR_fetjons_long 
+			name = SPR_fetjons 
 		}
+		
 	    add_political_power = 100
 		hidden_effect = {
 		    add_popularity = {
@@ -1692,12 +1681,11 @@ country_event = {
 	picture = GFX_report_event_fascist_speech
 	
 	is_triggered_only = yes
-
 	fire_only_once = yes
 
 	trigger = {
 		original_tag = SPR
-		government = fascism
+		has_government = fascism
 	}
 
 	# Franco
@@ -1721,16 +1709,6 @@ country_event = {
 		    set_country_flag = SPR_alzamiento
 		}
 	}
-
-	# Mola
-	# option = {
-	    # ai_chance = { factor = 0 }
-		# name = spain.21.b
-	    # add_political_power = -100
-		# hidden_effect = {
-		    # set_country_flag = SPR_alzamiento
-		# }
-	# }
 }
 
 # Monarchy?
@@ -2110,6 +2088,7 @@ country_event = {
 		}
 		add_manpower = -5000
 		custom_effect_tooltip = support_republic
+		}
 	}
 
 	option = {
@@ -2359,10 +2338,11 @@ news_event = {
 	option = {
 		name = spain.37.b
 		trigger = {
-        OR = {		
-		TAG = GER
-		TAG = FRA
-		original_tag = SPR
+			OR = {		
+			TAG = GER
+			TAG = FRA
+			original_tag = SPR
+			}
 		}
 	}
 }

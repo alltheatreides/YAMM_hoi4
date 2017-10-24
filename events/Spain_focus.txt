@@ -538,9 +538,9 @@ country_event = {
 	
 	option = {
 		name = spainf.24.a
-		custom_effect_tooltip = {
-			partition1
-		}
+		# custom_effect_tooltip = {
+			# partition1
+		# }
 
 		hidden_effect = {
 			#news_event = { id = news.190 }#

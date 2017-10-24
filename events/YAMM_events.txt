@@ -353,6 +353,12 @@ country_event = {
 			tag = SOV
 		}
 	}
+	desc = {
+		text = yamm.41.d.hun
+		trigger = {
+			tag = HUN
+		}
+	}
 	
 	option = {
 		name = yamm.41.a
@@ -545,12 +551,10 @@ country_event = {
 		tag = SOV
 		SOV = { has_defensive_war = yes }
 		NOT { has_country_flag = SOV_city_defense_moscow }
-		NOT = {
-			OR = {
-				SOV = { controls_state = 242 }
-				SOV = { controls_state = 243 }
-				SOV = { controls_state = 224 }
-			}
+		OR = {
+			NOT = { SOV = { controls_state = 242 } }
+			NOT = { SOV = { controls_state = 242 } }
+			NOT = { SOV = { controls_state = 242 } }
 		}
 	}
 	
@@ -610,8 +614,8 @@ country_event = {
 		tag = SOV
 		SOV = { has_defensive_war = yes }
 		NOT { has_country_flag = SOV_city_defense_rostov }
-		NOT = {
-			OR = {
+		OR = {
+			NOT = {
 				SOV = { controls_state = 227 }
 			}
 		}
@@ -654,11 +658,9 @@ country_event = {
 		tag = SOV
 		SOV = { has_defensive_war = yes }
 		NOT { has_country_flag = SOV_city_defense_stalingrad }
-		NOT = {
-			OR = {
-				SOV = { controls_state = 228 }
-				SOV = { controls_state = 234 }
-			}
+		OR = {
+			NOT = { SOV = { controls_state = 228 } }
+			NOT = { SOV = { controls_state = 234 } }
 		}
 	}
 	
@@ -705,11 +707,9 @@ country_event = {
 		tag = SOV
 		SOV = { has_defensive_war = yes }
 		NOT { has_country_flag = SOV_city_defense_krasnodar }
-		NOT = {
-			OR = {
-				SOV = { controls_state = 200 }
-				SOV = { controls_state = 137 }
-			}
+		OR = {
+			NOT = { SOV = { controls_state = 200 } }
+			NOT = { SOV = { controls_state = 137 } }
 		}
 	}
 	
@@ -750,13 +750,12 @@ country_event = {
 		tag = SOV
 		SOV = { has_defensive_war = yes }
 		NOT { has_country_flag = SOV_city_defense_voronezh }
-		NOT = {
-			OR = {
-				SOV = { controls_state = 225 }
-				SOV = { controls_state = 221 }
-				SOV = { controls_state = 228 }
-			}
+		OR = {
+			NOT = { SOV = { controls_state = 225 } }
+			NOT = { SOV = { controls_state = 221 } }
+			NOT = { SOV = { controls_state = 228 } }
 		}
+		
 	}
 	
 	option = {
@@ -796,12 +795,10 @@ country_event = {
 		tag = SOV
 		SOV = { has_defensive_war = yes }
 		NOT { has_country_flag = SOV_city_defense_yaroslav }
-		NOT = {
-			OR = {
-				SOV = { controls_state = 242 }
-				SOV = { controls_state = 243 }
-				SOV = { controls_state = 224 }
-			}
+		OR = {
+			NOT = { SOV = { controls_state = 242 } }
+			NOT = { SOV = { controls_state = 243 } }
+			NOT = { SOV = { controls_state = 224 } }
 		}
 	}
 	

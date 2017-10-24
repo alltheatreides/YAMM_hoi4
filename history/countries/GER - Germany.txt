@@ -43,11 +43,6 @@ set_technology = {
 	synth_oil_experiments = 1
 	support_weapons = 1
 	transport = 1
-	heavy_artillery_1 = 1
-	light_artillery_1 = 1
-	heavy_anti_air_1 = 1
-	early_armored_car = 1		# WM addition
-	basic_armored_car = 1		# WM addition
 	tech_field_hospital = 1
 	tech_military_police = 1
 }

@@ -51,8 +51,8 @@ set_technology = {
 	trench_warfare = 1
 	base_strike = 1
 	synth_oil_experiments = 1
-	heavy_artillery_1 = 1
-	light_artillery_1 = 1
+	
+	
 	support_weapons = 1
 }
 

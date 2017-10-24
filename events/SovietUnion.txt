@@ -1611,7 +1611,7 @@ country_event = {
 		custom_effect_tooltip = soviet.37.a_tt
 	}
 }
-Purge - Fighting defensive war against major
+#Purge - Fighting defensive war against major
 country_event = {
 	id = soviet.46
 	title = soviet.46.t

@@ -1088,8 +1088,8 @@ focus_tree = {
 	focus = {
 		id = SPR_pol8
 		icon = GFX_goal_support_fascism
-		mutually_exclusive = { focus = SPR_pol3 }
-		mutually_exclusive = { focus = SPR_pol5 }
+		# mutually_exclusive = { focus = SPR_pol3 }
+		# mutually_exclusive = { focus = SPR_pol5 }
 		prerequisite = { focus = SPR_pol7 focus = SPR_pol2 }
 		available = {
 			OR = {
@@ -1156,7 +1156,7 @@ focus_tree = {
 	focus = {
 		id = SPR_repression
 		icon = GFX_focus_generic_strike_at_democracy2
-		prerequisite = { focus = SPR_armas focus = SPR_people }
+		prerequisite = { focus = SPR_armas }
 		available = {
 			OR = {
 				has_government = communism
@@ -1203,7 +1203,7 @@ focus_tree = {
 	focus = {
 		id = SPR_diplo
 		icon = GFX_goal_generic_improve_relations
-		mutually_exclusive = { focus = SPR_restore }
+		# mutually_exclusive = { focus = SPR_restore }
 		prerequisite = { focus = SPR_election }
 		available = {
 			date > 1937.1.1
@@ -1227,9 +1227,9 @@ focus_tree = {
 		id = SPR_fas1
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = SPR_diplo }
-		mutually_exclusive = { focus = SPR_dem1 }
-		mutually_exclusive = { focus = SPR_neu1 }
-		mutually_exclusive = { focus = SPR_soc1 }
+		# mutually_exclusive = { focus = SPR_dem1 }
+		# mutually_exclusive = { focus = SPR_neu1 }
+		# mutually_exclusive = { focus = SPR_soc1 }
 		available = {
 			has_government = fascism
 		}
@@ -1392,9 +1392,9 @@ focus_tree = {
 		id = SPR_neu1
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = SPR_diplo }
-		mutually_exclusive = { focus = SPR_dem1 }
+		# mutually_exclusive = { focus = SPR_dem1 }
 		mutually_exclusive = { focus = SPR_fas1 }
-		mutually_exclusive = { focus = SPR_soc1 }
+		# mutually_exclusive = { focus = SPR_soc1 }
 		x = 20
 		y = 2
 		cost = 10
@@ -1472,7 +1472,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 		    custom_effect_tooltip = available_theorist
-	        show_ideas_tooltip = rojo
+	        # show_ideas_tooltip = rojo
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
 				bonus = 0.5

@@ -7,8 +7,6 @@ set_research_slots = 3
 # Starting tech
 set_technology = {
 	tech_field_hospital = 1
-	tech_fuel = 1
-	early_armored_car = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
@@ -39,8 +37,8 @@ set_technology = {
 	transport = 1
 	mass_assault = 1
 	fleet_in_being = 1
-	heavy_artillery_1 = 1
-	light_artillery_1 = 1
+	
+	
 	support_weapons = 1
 	interwar_antitank = 1
 }
@@ -243,7 +241,7 @@ add_to_faction = SIK
 add_ideas = {
 	trotskyite_plot
 	home_of_revolution
-	SOV_soviet_taylorism_fordism
+	# SOV_soviet_taylorism_fordism
 }
 
 create_country_leader = {

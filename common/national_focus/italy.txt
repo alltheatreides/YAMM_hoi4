@@ -1477,6 +1477,7 @@ focus_tree = {
 		
 		available = {
 			GER = { has_war_with = POL }
+			POL = { has_capitulated = yes }
 		}
 		
 		bypass = {

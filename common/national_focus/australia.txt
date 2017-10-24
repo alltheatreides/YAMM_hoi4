@@ -3092,7 +3092,8 @@ focus_tree = {
 			factor = 0.2
 		}
 
-		available = { threat > 10.000
+		available = { 
+			# threat > 10.000
 			is_in_faction_with = ENG
 			ENG = { has_government = ROOT }
 			MAL = {

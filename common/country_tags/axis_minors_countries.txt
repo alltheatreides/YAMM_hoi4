@@ -1,5 +1,5 @@
 
-RUT	= "countries/Ruthenia.txt"
+# RUT	= "countries/Ruthenia.txt"
 EFR	= "countries/Etat_Francais.txt"
 
 #to edit color you need to go to common/countries/colorstxt

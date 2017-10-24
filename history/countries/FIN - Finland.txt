@@ -9,7 +9,7 @@ add_ideas = {
 }
 
 add_ideas = {
-	FIN_communism_banned
+	# FIN_communism_banned
 }
 
 add_ideas = {
@@ -18,7 +18,7 @@ add_ideas = {
 
 set_technology = {
     transport = 1
-	tech_fuel = 1
+	
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	gw_artillery = 1			
