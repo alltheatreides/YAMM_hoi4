@@ -1221,7 +1221,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		x = 9
 		y = 5
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}

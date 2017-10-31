@@ -397,7 +397,7 @@ focus_tree = {
 				name = air_sup_bonus
 				bonus = 0.5
 				uses = 2
-				category = battlefield_support_tree
+				category = air_doctrine
 			}
 
 			if = {
@@ -2732,7 +2732,7 @@ focus_tree = {
 				technology = early_submarine
 				technology = basic_submarine
 				technology = improved_submarine
-				technology = advanced_submarine
+				# technology = advanced_submarine
 			}
 		}
 	}

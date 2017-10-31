@@ -1764,3 +1764,68 @@ country_event = {
 		load_oob = SOV_partisans_rzhev
 	}
 }
+
+
+# Portugese Islands Transfer
+country_event = {  
+	id = yamm.88
+	title = yamm.88.t
+	desc = yamm.88.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+	
+	# hidden = yes
+	
+	trigger = {
+		tag = ENG
+		not = { has_country_flag = portugese_islands }
+		GER = { has_war_with = ENG }
+		FRA = { has_capitulated = yes }
+		POR = { controls_state = 697 }
+		POR = { controls_state = 698 }	
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = britain.88.a
+		
+		hidden_effect = {
+			POR = {
+				country_event = { id = yamm.89 hours = 1 }
+			}
+		}
+		set_country_flag = portugese_islands
+	}
+}
+
+# Portugese Islands Transfer
+country_event = {
+	id = yamm.89
+	title = yamm.89.t
+	desc = yamm.89.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = yamm.89.a
+		ai_chance = { factor = 100 }
+		
+		hidden_effect = {
+			ENG = { 
+				transfer_state = 698
+				transfer_state = 697
+			}
+			698 = { add_building_construction = { type = air_base province = 1751 level = 5 instant_build = yes } }
+			697 = { add_building_construction = { type = air_base province = 3118 level = 5 instant_build = yes } }
+		}
+		set_country_flag = portugese_islands_y
+		
+	}
+}

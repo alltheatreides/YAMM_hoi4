@@ -2393,7 +2393,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_flexible_foreign_policy
 
-		cost = 10
+		cost = 4.3
 
 		ai_will_do = {
 			factor = 1
@@ -2558,7 +2558,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_appoint_german_friendly_government
 
-		cost = 10
+		cost = 4.3
 
 		ai_will_do = {
 			factor = 9
