@@ -8,10 +8,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5388;803;sea;1155;-1;-1;-1;-1;SUEZ_CANAL;Suez
 299;211;sea;2282;-1;-1;-1;-1;;Småland-Öland
 6345;6287;sea;2382;-1;-1;-1;-1;;Skåne-Sjaelland
-3260;3325;;2408;-1;-1;-1;-1;;Sjaelland-Fyn
-3260;3374;;2408;-1;-1;2973;1625;;Sjaelland-SdFyn
-3277;3325;;2408;-1;-1;-1;-1;;Fyn-Jylland
-11251;3325;;2408;2956;1628;2960;1629;;Fyn-SdrJylland
+3260;3325;sea;2408;-1;-1;-1;-1;;Sjaelland-Fyn
+3277;3325;sea;2408;-1;-1;-1;-1;;Fyn-Jylland
 83;185;sea;1885;-1;-1;-1;-1;;Estonia-Ösel
 185;6201;sea;1885;-1;-1;-1;-1;;Ösel-Dagö
 83;6201;sea;1660;-1;-1;-1;-1;;Dagö-Estonia
@@ -125,10 +123,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6062;6205;sea;3590;-1;-1;-1;-1;;West Scottish-Strait
 8435;6550;sea;7452;-1;-1;-1;-1;;Aegan Isle-Strait
 7304;4360;sea;8614;-1;-1;-1;-1;;New Foundland-Strait
-5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
-5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
-2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
-5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -210,6 +204,19 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
+5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
+5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
+2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
+5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
+5960;5539;;-1;-1;-1;-1;-1;MALACCA_STRAIT;
+2714;2737;;-1;-1;-1;-1;-1;SUNDA_STRAIT;Sunda strait
+2440;2239;;-1;-1;-1;-1;-1;LOMBOK_STRAIT;Bali strait
+2265;2239;;-1;-1;-1;-1;-1;LOMBOK_STRAIT;Lombok & Alas strait
+2291;2124;;-1;-1;-1;-1;-1;SAPE_STRAIT;
+7932;8791;;-1;-1;-1;-1;-1;KANMON_STRAIT;
+6824;5946;;-1;-1;-1;-1;-1;TSUGARU_STRAIT;
+8282;8308;;-1;-1;-1;-1;-1;KERCH_STRAIT;
+3590;8340;;-1;-1;-1;-1;-1;MOYLE_STRAIT;
 4318;12789;impassable;-1;-1;-1;-1;-1;;burma 
 4996;12789;impassable;-1;-1;-1;-1;-1;;burma 
 4996;12898;impassable;-1;-1;-1;-1;-1;;burma 
@@ -275,6 +282,209 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 115;3111;impassable;-1;-1;-1;-1;-1;;Norway/Sweden
 6214;11058;impassable;-1;-1;-1;-1;-1;;Norway/Sweden
 192;6055;impassable;-1;-1;-1;-1;-1;;Norway/Sweden
+12502;13076;impassable;-1;-1;-1;-1;-1;;Northern Soviet Union
+1781;4843;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+1781;10560;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7864;10560;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7864;4858;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12541;4858;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12541;12614;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12541;1725;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7806;1725;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7806;10704;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7806;4729;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12669;4729;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10632;4729;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10632;12686;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+1787;12686;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+1787;7752;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+1787;7749;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12612;7749;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12612;10575;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10629;1959;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10629;4960;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+2087;4960;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+2087;4960;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+2087;10451;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+4525;10451;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+4525;7631;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+4525;10424;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12331;10424;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12331;7048;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12331;4612;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+4973;5042;impassable;-1;-1;-1;-1;-1;;Sinkiang
+8086;4682;impassable;-1;-1;-1;-1;-1;;Sinkiang
+8086;7702;impassable;-1;-1;-1;-1;-1;;Sinkiang
+10885;7702;impassable;-1;-1;-1;-1;-1;;Sinkiang
+10885;7792;impassable;-1;-1;-1;-1;-1;;Sinkiang
+12864;7792;impassable;-1;-1;-1;-1;-1;;Sinkiang
+5736;7792;impassable;-1;-1;-1;-1;-1;;Sinkiang
+5736;10614;impassable;-1;-1;-1;-1;-1;;Sinkiang
+5736;12524;impassable;-1;-1;-1;-1;-1;;Sinkiang
+5736;4947;impassable;-1;-1;-1;-1;-1;;Sinkiang
+2074;4947;impassable;-1;-1;-1;-1;-1;;Sinkiang
+2074;1698;impassable;-1;-1;-1;-1;-1;;Sinkiang
+2074;12890;impassable;-1;-1;-1;-1;-1;;Sinkiang
+2074;10865;impassable;-1;-1;-1;-1;-1;;Sinkiang
+10315;10865;impassable;-1;-1;-1;-1;-1;;Sinkiang
+10315;4914;impassable;-1;-1;-1;-1;-1;;Sinkiang
+10315;8037;impassable;-1;-1;-1;-1;-1;;Sinkiang
+1778;4843;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+1778;12820;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7971;12820;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12596;7971;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+5076;7971;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+5076;2028;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+2028;2099;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+2028;5100;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10770;5100;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+5031;5100;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+5031;12327;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12776;12327;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12776;5057;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7511;5057;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+7511;1630;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+3742;1630;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+3742;6638;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+3742;1985;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8081;1985;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8081;3745;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8081;10880;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8081;4986;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8081;10854;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10724;10854;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8055;10854;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+8055;1959;impassable;-1;-1;-1;-1;-1;;Gobi Desert
 4135;1048;impassable;-1;-1;-1;-1;-1;;gibraltar
 4135;10094;impassable;-1;-1;-1;-1;-1;;gibraltar
--1;-1;;-1;-1;-1;-1;-1;-1
+6571;9425;impassable;-1;-1;-1;-1;-1;;Carpathians
+6571;3743;impassable;-1;-1;-1;-1;-1;;Carpathians
+9704;3743;impassable;-1;-1;-1;-1;-1;;Carpathians
+727;3743;impassable;-1;-1;-1;-1;-1;;Carpathians
+727;9548;impassable;-1;-1;-1;-1;-1;;Carpathians
+727;11689;impassable;-1;-1;-1;-1;-1;;Carpathians
+9685;11689;impassable;-1;-1;-1;-1;-1;;Carpathians
+711;11689;impassable;-1;-1;-1;-1;-1;;Carpathians
+6679;11605;impassable;-1;-1;-1;-1;-1;;Carpathians
+3665;11605;impassable;-1;-1;-1;-1;-1;;Carpathians
+3665;6667;impassable;-1;-1;-1;-1;-1;;Carpathians
+9619;6667;impassable;-1;-1;-1;-1;-1;;Carpathians
+9175;6214;impassable;-1;-1;-1;-1;-1;;Norway
+9175;173;impassable;-1;-1;-1;-1;-1;;Norway
+6152;173;impassable;-1;-1;-1;-1;-1;;Norway
+6152;6111;impassable;-1;-1;-1;-1;-1;;Norway
+11058;6214;impassable;-1;-1;-1;-1;-1;;Norway
+11058;9126;impassable;-1;-1;-1;-1;-1;;Norway
+58;9126;impassable;-1;-1;-1;-1;-1;;Norway
+6155;9126;impassable;-1;-1;-1;-1;-1;;Norway
+6155;3132;impassable;-1;-1;-1;-1;-1;;Norway
+6155;3034;impassable;-1;-1;-1;-1;-1;;Norway
+9178;3034;impassable;-1;-1;-1;-1;-1;;Norway
+6136;6216;impassable;-1;-1;-1;-1;-1;;Norway
+11037;6216;impassable;-1;-1;-1;-1;-1;;Norway
+11037;9047;impassable;-1;-1;-1;-1;-1;;Norway
+3059;9047;impassable;-1;-1;-1;-1;-1;;Norway
+6184;11198;impassable;-1;-1;-1;-1;-1;;Norway
+6184;11101;impassable;-1;-1;-1;-1;-1;;Norway
+100;11101;impassable;-1;-1;-1;-1;-1;;Norway
+100;3129;impassable;-1;-1;-1;-1;-1;;Norway
+672;11664;impassable;-1;-1;-1;-1;-1;;Caucasus
+672;6674;impassable;-1;-1;-1;-1;-1;;Caucasus
+654;6674;impassable;-1;-1;-1;-1;-1;;Caucasus
+654;9632;impassable;-1;-1;-1;-1;-1;;Caucasus
+9626;9632;impassable;-1;-1;-1;-1;-1;;Caucasus
+1530;9632;impassable;-1;-1;-1;-1;-1;;Caucasus
+1530;11609;impassable;-1;-1;-1;-1;-1;;Caucasus
+6436;1455;impassable;-1;-1;-1;-1;-1;;Caucasus
+6436;7554;impassable;-1;-1;-1;-1;-1;;Caucasus
+6763;7554;impassable;-1;-1;-1;-1;-1;;Caucasus
+6763;3711;impassable;-1;-1;-1;-1;-1;;Caucasus
+6763;1450;impassable;-1;-1;-1;-1;-1;;Caucasus
+11645;1450;impassable;-1;-1;-1;-1;-1;;Caucasus
+4363;1577;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+1248;1577;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+1248;4554;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+7229;4554;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+7229;7426;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+10309;7426;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+4379;7426;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+1302;10238;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+1302;10195;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+7280;10195;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+7280;4260;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+12297;4260;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+12297;10326;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+4397;10326;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+4397;1362;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+9988;1362;impassable;-1;-1;-1;-1;-1;;Annamese Mountains
+4388;4275;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4388;1296;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+12220;1296;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+12122;1296;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4392;1296;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4392;12292;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4392;1385;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4348;1385;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4348;1315;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4348;7295;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+10193;7295;impassable;-1;-1;-1;-1;-1;;Tenassarim Mountains
+4566;4408;impassable;-1;-1;-1;-1;-1;;Thanon Thong Chai Mountains
+7559;4408;impassable;-1;-1;-1;-1;-1;;Thanon Thong Chai Mountains
+7312;4408;impassable;-1;-1;-1;-1;-1;;Thanon Thong Chai Mountains
+10456;8045;impassable;-1;-1;-1;-1;-1;;Luang Prabang Mountains
+10330;8045;impassable;-1;-1;-1;-1;-1;;Luang Prabang Mountains
+10356;8045;impassable;-1;-1;-1;-1;-1;;Luang Prabang Mountains
+10356;7531;impassable;-1;-1;-1;-1;-1;;Luang Prabang Mountains
+7675;12317;impassable;-1;-1;-1;-1;-1;;Daen Lao Mountains
+7675;7647;impassable;-1;-1;-1;-1;-1;;Daen Lao Mountains
+10371;7647;impassable;-1;-1;-1;-1;-1;;Daen Lao Mountains
+1990;7647;impassable;-1;-1;-1;-1;-1;;Daen Lao Mountains
+12284;3651;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+1333;1014;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+4059;1014;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+4019;1014;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+4019;4147;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+7190;4147;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+7190;10033;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+7163;10033;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+7163;11966;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+7534;11966;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+7534;3999;impassable;-1;-1;-1;-1;-1;;Arakan Mountains
+10227;4310;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+10227;1364;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+4384;1364;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+4384;1376;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+4384;10297;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+12255;10297;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+12255;4412;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+10227;4310;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+10227;1364;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+4384;1364;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+4384;1376;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+4384;10297;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+12255;10297;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+12255;4412;impassable;-1;-1;-1;-1;-1;;Titiwangsa Mountains
+10509;12488;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1648;12488;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1648;8360;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+4652;8360;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+7673;10522;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+12302;10522;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+12302;4446;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+7327;4446;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+7327;1460;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+7327;10354;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+12181;10354;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+12343;10354;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+12343;10382;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1533;10382;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1533;7368;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+10294;7440;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+10294;12138;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+10150;12138;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+10150;7308;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1274;7308;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1274;12209;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1313;12209;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+1313;4320;impassable;-1;-1;-1;-1;-1;;Sumatran Mountains
+-1;-1;;-1;-1;-1;-1;-1;-1;

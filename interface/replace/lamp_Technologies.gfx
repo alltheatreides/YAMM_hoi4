@@ -1,5 +1,6 @@
 spriteTypes = {	
 
+
 #德国一战坦克_german great war tank#
 SpriteType = {
 name = "GFX_GER_gwtank_medium"
@@ -228,6 +229,28 @@ SpriteType = {
 name = "GFX_GER_cv_naval_bomber2_medium"
 texturefile = "gfx/interface/technologies/GER_naval_bomber2_cv.dds"
 }
+
+#德国步兵武器_german infantry weapon#
+# SpriteType = {
+# name = "GFX_GER_infantry_weapons_medium"
+# texturefile = "gfx/interface/technologies/GER_infantry_equipment_0.dds"
+# }
+
+# SpriteType = {
+# name = "GFX_GER_infantry_weapons1_medium"
+# texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
+# }
+
+#德国摩步/机步载具_german motorized/mechanized vehicles#
+# SpriteType = {
+# name = "GFX_GER_mechanised_infantry1_medium"
+# texturefile = "gfx/interface/technologies/GER_mechanized_equipment_1.dds"
+# }
+
+# SpriteType = {
+# name = "GFX_GER_mechanised_infantry3_medium"
+# texturefile = "gfx/interface/technologies/GER_mechanized_equipment_3.dds"
+# }
 
 
 
@@ -1167,6 +1190,45 @@ texturefile = "gfx/interface/technologies/ITA_naval_bomber1_cv.dds"
 }	
 
 
+
+#法国喷气战斗机_french jet fighter#
+SpriteType = {
+name = "GFX_FRA_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/fra_jet_fighter1.dds"
+}	
+
+#法国舰载俯冲轰炸机_french carrier-based CAS#
+SpriteType = {
+name = "GFX_FRA_cv_CAS1_medium"
+texturefile = "gfx/interface/technologies/FRA_CAS1_cv.dds"
+}	
+
+SpriteType = {
+name = "GFX_FRA_cv_CAS3_medium"
+texturefile = "gfx/interface/technologies/FRA_CAS3_cv.dds"
+}	
+
+#法国舰载战斗机_french carrier-based fighter#
+SpriteType = {
+name = "GFX_FRA_cv_early_fighter_medium"
+texturefile = "gfx/interface/technologies/FRA_early_fighter_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_FRA_cv_fighter1_medium"
+texturefile = "gfx/interface/technologies/FRA_fighter1_cv.dds"
+}
+
+SpriteType = {
+name = "GFX_FRA_cv_fighter2_medium"
+texturefile = "gfx/interface/technologies/FRA_fighter2_cv.dds"
+}
+
+#法国舰载海军轰炸机_french carrier-based naval bomber#
+SpriteType = {
+name = "GFX_FRA_cv_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/FRA_naval_bomber1_cv.dds"
+}	
 
 
 

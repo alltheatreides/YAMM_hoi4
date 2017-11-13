@@ -58,7 +58,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "countrydivisiondesignerview"
 		position = { x=0 y=0}	
-		size = { width = 1092 height = 553 }
+		size = { width = 1177 height = 553 }
 		moveable = yes
 		fade_time = 500
 		fade_type = linear
@@ -76,19 +76,6 @@ guiTypes = {
 			spriteType = "GFX_can_paradrop_icon"
 			position = { x = 50 y = 57 }
 		}
-		
-		iconType = {
-			name = "colonial_force_flag"
-			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 100 y = 70 }
-		}
-
-		iconType = {
-			name = "colonial_force_flag_frame"
-			quadTextureSprite ="GFX_div_designer_colonial_flag_frame"
-			position = { x= 98 y = 52 }
-			alwaystransparent = yes
-		}		
 		
 		buttonType = {
 			name = "division_equipment_btn"
@@ -123,14 +110,14 @@ guiTypes = {
 			gridboxtype = {
 				name = "support_grid"
 				position = { x = 23 y = 57 }
-				size = { width = 85 height = 100%% }
+				size = { width = 170 height = 100%% }
 				slotsize = { width = 82 height = 51 }
 				format = "UPPER_LEFT"
 			}
 			
 			gridboxtype = {
 				name = "regiments_grid"
-				position = { x = 115 y = 57 }
+				position = { x = 200 y = 57 }
 				size = { width = 445 height = 100%% }
 				slotsize = { width = 82 height = 51 }
 				format = "UPPER_LEFT"
@@ -139,7 +126,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "info"
-			position = { x=536 y=13}	
+			position = { x=621 y=13}	
 			size = { width=100% height=100%% }
 			
 			containerWindowType = {
@@ -351,6 +338,7 @@ guiTypes = {
 			spriteType = "GFX_unit_super_heavy_armor_icon_medium"	
 			position = { x=37 y=106 }
 			clicksound = click_default
+			pdx_tooltip = "DIV_TEMPL_SYMBOL_TOOLTIP"
 		}	
 
 		iconType = {
@@ -442,7 +430,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "combat_header_label"
-			position = { x = 105 y = 196 }
+			position = { x = 190 y = 196 }
 			font = "hoi_18mbs"
 			text = "COMBAT_HEADER"
 			maxWidth = 372
@@ -465,7 +453,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "designerregimentswindow"
-			position = { x=530 y=40}	
+			position = { x=615 y=40}	
 			size = { width=559 height=459 }
 			margin = { top = 14 bottom = 11 }
 			verticalScrollbar = "right_vertical_slider"
@@ -620,11 +608,11 @@ guiTypes = {
 				}
 			}
 		}
-
+		# Custom icons window
 		containerWindowType = {
 			name = "div_templ_custom_icon_view"
-			position = { x=13 y=47 }
-			size = { width=532 height=447 } #512
+			position = { x=0 y=5 } #x=113 y=47
+			size = { width=865 height=100% } #width=512 height=547
 			moveable = no
 			fade_time = 500
 			fade_type = linear
@@ -659,9 +647,9 @@ guiTypes = {
 			gridBoxType = {
 				name = "symbols_grid"
 				position = { x=4 y=44 }
-				size = { width=504 height=1000 } #original 400
+				size = { width=800 height=100% }
 				slotsize = { width=84 height=50 }
-				max_slots_horizontal = 6
+				max_slots_horizontal = 10
 				format = "UPPER_LEFT"
 			}
 		}
