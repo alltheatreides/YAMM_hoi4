@@ -3579,7 +3579,10 @@ country_event = {
 		}
 		random_other_country = {
 			limit = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					tag = EFR
+				}
 				has_government = fascism
 			}
 			country_event = france.27

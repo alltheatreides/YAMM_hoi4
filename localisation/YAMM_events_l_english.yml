@@ -76,7 +76,7 @@
  yamm.41.d.jap:0 "IMPORTANT INFORMATION: \n\n- All of Asia has more resources, especially aluminium. \n- Vichy France cannot refuse to give French Indochina. \n- Beware of the chinese hordes."
  yamm.41.d.usa:0 "IMPORTANT INFORMATION: \n\n- Modified National Ideas: New Deal now increase factory slots by 50% and give a +20% bonus to civilian factory construction. ; Wartime Industry Idea now gives -30% Civilian to Military Conversion Cost ; +10% Production Efficiency Gain ; +10% Base Production Efficiency. \n- Wartime Industry National Focus now give a -75% bonus ahead of time for the following technologies: Assembly Line Production and Streamlined Line. \n- Economic laws: Undisturbed isolation and Isolation cannot be manually changed and the Giant Wakes now requires 60% WT. \n- Warbonds cannot be taken until you are at war. \n- New National Focuses on the top right of the tree regarding Vichy France and Operation Torch."
  yamm.41.d.sov:0 "IMPORTANT INFORMATION: \n\n- Some of the focuses have been reduced in length. \n- Finish the Five Year Plan gives Civilian Factory and a Civilian Goods Reduction Idea. \n- The Offcier Purge Idea lingers up until the German-Soviet War and can be removed with Defense of Moscow. \n- Added Great Patriotic War National Focus giving Great Patriotic War National Spirit. \n- Added Operation Countenance National Focus. \n- Added Defense of Stalingrad National Focus. \n- Collectivist and Positive are no longer exclusive. \n- New National Focus "Develop the Urals". \n- Please do not touch the Partisan Template and Peoples's Militia that spawn during the German-Soviet war or you crash the game, be warned !."
- yamm.41.d.hun:0 "IMPORTANT INFORMATION: \n\n- Licensing BF-109F from Germany that they get from Air Innovation II is much more efficient than your own local designs (It is an artifical variant that is equivalent roughly to fighter II) \n- You can reduce licensing cost with your focus tree, which is more efficient if you buy superior German Planes designed with their superior designers."
+ yamm.41.d.hun:0 "IMPORTANT INFORMATION: \n\n- Licensing BF-109F from Germany or Fighter II from Italy that they get from Air Innovation II is much more efficient than your own local designs (It is an artifical variant that is equivalent roughly to fighter II) \n- You can reduce licensing cost with your focus tree, which is more efficient if you buy superior German Planes designed with their superior designers."
  yamm.42.t:0 "IMPORTANT INFORMATION"
  yamm.42.d.sov:0 "Sorry to interrupt Mister Secretary, I know you are busy asking for Operation Overlord to the Allies but we have reached 20% capitulation progress and can take the Great Patriotic War National Focus."
  yamm.42.a:0 "Finally !"
@@ -152,5 +152,18 @@
  yamm.86.t:0 "Partisan Organizing in Novgorod"
  yamm.87.t:0 "Partisan Organizing in Rzhev"
  yamm.88.t:0 "The Importance of the Azores"
- yamm.88.desc:0 "The Portugese islands in the Atlantic are of enormous strategic value with regard to the defeat of the German U-boats. We must request to Portugal the use of their airbase and ports here if we want to regain the superiority at sea! "
+ yamm.88.d:0 "The Portugese islands in the Atlantic are of enormous strategic value with regard to the defeat of the German U-boats. We must request to Portugal the use of their airbase and ports here if we want to regain the superiority at sea! "
  yamm.88.a:0 "Send them the request !"
+ # Focus events Urals
+ yamm.90.t:0 "Move Industry To the Urals"
+ yamm.90.a:0 "Da tovaritch !"
+ yamm.90.d:0 "The backstabbing Hitlerists must not be allowed to seize our precious factories in the western part of the USSR. With supreme effort and sacrifice, we should be able to quickly move the most valuable heavy equipment and facilities to Chelyabinsk and other locations in the Urals."
+ 
+ # Opinion Modifier Sweden Swiss Post France Capitulation
+ SWI_cower_in_fear_1:0 "Fear of Invasion"
+ SWI_cower_in_fear_2:0 "Fear of Invasion"
+ SWE_cower_in_fear_1:0 "Fear of Invasion"
+ SWE_cower_in_fear_2:0 "Fear of Invasion"
+ yamm.91.t:0 "The Fate of Switzerland"
+ yamm.91.d:0 "With our victory over France nothing can oppose us ! The Fuhrer, hating the Swiss has asked the OKH for detailed invasion plans, but Swiss diplomats coupled with military deterrence, secured economic concessions that have delayed the nicknamed "Operation Tannenbaum". Attempts by Switzerland's small Nazi party to effect an Anschluss with Germany failed miserably, largely as a result of Switzerland's strong sense of national identity and long tradition of direct democracy and civil liberties."
+ yamm.91.a:0 "Make them cower."

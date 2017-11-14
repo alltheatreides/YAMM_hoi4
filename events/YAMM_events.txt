@@ -365,7 +365,7 @@ country_event = {
 	}
 }
 
-# Information Event during game
+# Information Event during game - Soviet
 country_event = {
 	id = yamm.42
 	title = yamm.42.t
@@ -1822,10 +1822,233 @@ country_event = {
 				transfer_state = 698
 				transfer_state = 697
 			}
-			698 = { add_building_construction = { type = air_base province = 1751 level = 5 instant_build = yes } }
-			697 = { add_building_construction = { type = air_base province = 3118 level = 5 instant_build = yes } }
+			698 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				} 
+			}
+			697 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				} 
+			}
 		}
 		set_country_flag = portugese_islands_y
 		
+	}
+}
+
+# Soviet - Move Industry to the Urals
+country_event = {
+	id = yamm.90
+	title = yamm.90.t
+	desc = yamm.90.d
+	picture = GFX_report_event_urals_industry
+	
+	trigger = {
+		219 = {
+			is_owned_and_controlled_by = SOV
+			arms_factory > 5
+			industrial_complex > 1
+		}
+		195 = {
+			is_owned_and_controlled_by = SOV
+			arms_factory > 4
+			industrial_complex > 0
+		}
+		242 = {
+			is_owned_and_controlled_by = SOV
+			industrial_complex > 1
+		}
+		202 = {
+			is_owned_and_controlled_by = SOV
+			arms_factory > 2
+			industrial_complex > 0
+		}
+		has_defensive_war = yes
+		573 = {
+			is_owned_and_controlled_by = SOV
+		}
+		582 = {
+			is_owned_and_controlled_by = SOV
+		}
+		583 = {
+			is_owned_and_controlled_by = SOV
+		}
+		221 = {
+			is_owned_and_controlled_by = SOV
+		}
+	}
+	
+	option = {
+		name = yamm.90.a
+		219 = {
+			remove_building = {
+				type = arms_factory
+				level = 6
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+		195 = {
+			remove_building = {
+				type = arms_factory
+				level = 5
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		242 = {
+			remove_building = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+		202 = {
+			remove_building = {
+				type = arms_factory
+				level = 6
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 6
+			}
+		}
+		221 = {
+			remove_building = {
+				type = arms_factory
+				level = 5
+			}
+		}
+		573 = {
+			add_extra_state_shared_building_slots = 8
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+		582 = {
+			add_extra_state_shared_building_slots = 11
+			add_building_construction = {
+				type = arms_factory
+				level = 9
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		583 = {
+			add_extra_state_shared_building_slots = 14
+			add_building_construction = {
+				type = arms_factory
+				level = 8
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 6
+				instant_build = yes
+			}
+		}
+	}
+}
+
+# Swiss Trade
+country_event = {
+	id = yamm.91
+	title = yamm.91.t
+	desc = yamm.91.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER 
+		GER = { has_war_with = ENG }
+		FRA = { has_capitulated = yes }
+	}
+	
+	immediate = {
+		add_opinion_modifier = { target = SWI modifier = SWI_cower_in_fear_1 }
+		add_opinion_modifier = { target = SWI modifier = SWI_cower_in_fear_1 }
+		add_opinion_modifier = { target = SWE modifier = SWE_cower_in_fear_1 }
+		add_opinion_modifier = { target = SWE modifier = SWE_cower_in_fear_1 }
+		SWI = {
+			add_opinion_modifier = { target = GER modifier = SWI_cower_in_fear_2 }
+		}
+		SWE = {
+			add_opinion_modifier = { target = GER modifier = SWE_cower_in_fear_2 }
+		}			
+	}
+	
+	option = {
+		name = yamm.91.a
+		random_owned_state = {
+			limit = {
+				ROOT = { has_full_control_of_state = PREV }
+				free_building_slots = {
+					building = industrial_complex
+					size > 5
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				ROOT = { has_full_control_of_state = PREV }
+				free_building_slots = {
+					building = industrial_complex
+					size > 5
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				ROOT = { has_full_control_of_state = PREV }
+				free_building_slots = {
+					building = arms_factory
+					size > 3
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
 	}
 }

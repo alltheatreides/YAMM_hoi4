@@ -1659,12 +1659,15 @@ focus_tree = {
 		}
 		available = {
 			country_exists = BUL
-			NOT = {
-				has_war_with = BUL
-			}
+			# NOT = {
+				# has_war_with = BUL
+			# }
 		}
 		bypass = {
-			NOT = { country_exists = BUL }
+			OR = {
+				NOT = { country_exists = BUL }
+				has_war_with = BUL
+			}
 		}
 		completion_reward = {
 			BUL = {
@@ -1698,7 +1701,7 @@ focus_tree = {
 			country_exists = ALB
 		}
 
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -2222,12 +2225,15 @@ focus_tree = {
 			custom_trigger_tooltip = {
 			 tooltip = ITA_claims_on_france_tt
 				any_other_country = {
-					original_tag = FRA
+					OR = {
+						original_tag = FRA
+						tag = EFR
+					}
 					has_government = fascism
 					owns_state = 735
 					controls_state = 735
-					owns_state = 1
-					controls_state = 1
+					# owns_state = 1
+					# controls_state = 1
 				}
 			}
 		}
@@ -2256,7 +2262,10 @@ focus_tree = {
 			if = {
 				limit = { 
 					any_other_country = {
-						original_tag = FRA
+						OR = {
+							original_tag = FRA
+							tag = EFR
+						}
 						has_government = fascism
 						owns_state = 735
 					}
@@ -2266,7 +2275,10 @@ focus_tree = {
 			if = {
 				limit = { 
 					any_other_country = {
-						original_tag = FRA
+						OR = {
+							original_tag = FRA
+							tag = EFR
+						}
 						has_government = fascism
 						owns_state = 1
 					}

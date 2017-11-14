@@ -76,4 +76,9 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_winter_offensive.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_event_urals_industry"
+		texturefile = "gfx/event_pictures/report_event_urals_industry.dds"
+	}
+	
 }

@@ -10,6 +10,24 @@
 
 opinion_modifiers = {
 
+	SWI_cower_in_fear_1 = {
+		trade = yes
+		value = 200
+	}
+	
+	SWE_cower_in_fear_1 = {
+		trade = yes
+		value = 200
+	}
+	
+	SWI_cower_in_fear_2 = {
+		value = 200
+	}
+	
+	SWE_cower_in_fear_2 = {
+		value = 200
+	}
+
 	BUL_treaty_of_eternal_friendship = { #special used for civil wars that are on hold and blocks faction stuff
 		value = 60
 	}

@@ -123,144 +123,144 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_move_industry_to_urals
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = SOV_finish_five_year_plan }
-		x = 0
-		y = 1
-		cost = 2
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
-			}
-		}
-		available = {
-			219 = {
-				is_owned_and_controlled_by = SOV
-				arms_factory > 5
-				industrial_complex > 1
-			}
-			195 = {
-				is_owned_and_controlled_by = SOV
-				arms_factory > 4
-				industrial_complex > 0
-			}
-			242 = {
-				is_owned_and_controlled_by = SOV
-				industrial_complex > 1
-			}
-			202 = {
-				is_owned_and_controlled_by = SOV
-				arms_factory > 2
-				industrial_complex > 0
-			}
-			has_defensive_war = yes
-			573 = {
-				is_owned_and_controlled_by = SOV
-			}
-			582 = {
-				is_owned_and_controlled_by = SOV
-			}
-			583 = {
-				is_owned_and_controlled_by = SOV
-			}
-			221 = {
-				is_owned_and_controlled_by = SOV
-			}
-		}
-		completion_reward = {
-			219 = {
-				remove_building = {
-					type = arms_factory
-					level = 6
-				}
-				remove_building = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-			195 = {
-				remove_building = {
-					type = arms_factory
-					level = 5
-				}
-				remove_building = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			242 = {
-				remove_building = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-			202 = {
-				remove_building = {
-					type = arms_factory
-					level = 6
-				}
-				remove_building = {
-					type = industrial_complex
-					level = 6
-				}
-			}
-			221 = {
-				remove_building = {
-					type = arms_factory
-					level = 5
-				}
-			}
-			573 = {
-				add_extra_state_shared_building_slots = 8
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-			582 = {
-				add_extra_state_shared_building_slots = 11
-				add_building_construction = {
-					type = arms_factory
-					level = 9
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			583 = {
-				add_extra_state_shared_building_slots = 14
-				add_building_construction = {
-					type = arms_factory
-					level = 8
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 6
-					instant_build = yes
-				}
-			}
+	# focus = {
+		# id = SOV_move_industry_to_urals
+		# icon = GFX_goal_generic_construct_civilian
+		# prerequisite = { focus = SOV_finish_five_year_plan }
+		# x = 0
+		# y = 1
+		# cost = 2
+		# ai_will_do = {
+			# factor = 10
+			# modifier = {
+				# factor = 0
+				# NOT = { has_war_with = GER }
+			# }
+		# }
+		# available = {
+			# 219 = {
+				# is_owned_and_controlled_by = SOV
+				# arms_factory > 5
+				# industrial_complex > 1
+			# }
+			# 195 = {
+				# is_owned_and_controlled_by = SOV
+				# arms_factory > 4
+				# industrial_complex > 0
+			# }
+			# 242 = {
+				# is_owned_and_controlled_by = SOV
+				# industrial_complex > 1
+			# }
+			# 202 = {
+				# is_owned_and_controlled_by = SOV
+				# arms_factory > 2
+				# industrial_complex > 0
+			# }
+			# has_defensive_war = yes
+			# 573 = {
+				# is_owned_and_controlled_by = SOV
+			# }
+			# 582 = {
+				# is_owned_and_controlled_by = SOV
+			# }
+			# 583 = {
+				# is_owned_and_controlled_by = SOV
+			# }
+			# 221 = {
+				# is_owned_and_controlled_by = SOV
+			# }
+		# }
+		# completion_reward = {
+			# 219 = {
+				# remove_building = {
+					# type = arms_factory
+					# level = 6
+				# }
+				# remove_building = {
+					# type = industrial_complex
+					# level = 2
+				# }
+			# }
+			# 195 = {
+				# remove_building = {
+					# type = arms_factory
+					# level = 5
+				# }
+				# remove_building = {
+					# type = industrial_complex
+					# level = 1
+				# }
+			# }
+			# 242 = {
+				# remove_building = {
+					# type = industrial_complex
+					# level = 2
+				# }
+			# }
+			# 202 = {
+				# remove_building = {
+					# type = arms_factory
+					# level = 6
+				# }
+				# remove_building = {
+					# type = industrial_complex
+					# level = 6
+				# }
+			# }
+			# 221 = {
+				# remove_building = {
+					# type = arms_factory
+					# level = 5
+				# }
+			# }
+			# 573 = {
+				# add_extra_state_shared_building_slots = 8
+				# add_building_construction = {
+					# type = arms_factory
+					# level = 5
+					# instant_build = yes
+				# }
+				# add_building_construction = {
+					# type = industrial_complex
+					# level = 3
+					# instant_build = yes
+				# }
+			# }
+			# 582 = {
+				# add_extra_state_shared_building_slots = 11
+				# add_building_construction = {
+					# type = arms_factory
+					# level = 9
+					# instant_build = yes
+				# }
+				# add_building_construction = {
+					# type = industrial_complex
+					# level = 2
+					# instant_build = yes
+				# }
+			# }
+			# 583 = {
+				# add_extra_state_shared_building_slots = 14
+				# add_building_construction = {
+					# type = arms_factory
+					# level = 8
+					# instant_build = yes
+				# }
+				# add_building_construction = {
+					# type = industrial_complex
+					# level = 6
+					# instant_build = yes
+				# }
+			# }
 			# REVISIT Consider implementing as events
-		}
-	}
+		# }
+	# }
 
 	focus = {
 		id = SOV_defense_of_moscow
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = SOV_move_industry_to_urals }
+		prerequisite = { focus = SOV_finish_five_year_plan }
 		available = {
 			#any_owned_state = {
 			#	any_neighbor_state = { state = 219 } # Moscow

@@ -45,7 +45,7 @@ units = {
 	division= {			
 		name = "4th Kuybishev Narodnoe Opolcheniye Diviziya"		
 		location = 6380
-		division_template = "Kavaleriyskaya Diviziya"
+		division_template = "Narodnoe Opolcheniye Narodnoe Opolcheniye Kavaleriyskaya Diviziya"
 		start_experience_factor = 0
 		start_equipment_factor = 0.1
 
@@ -70,7 +70,7 @@ units = {
 	division= {			
 		name = "7th Bauman Narodnoe Opolcheniye Diviziya"		
 		location = 6380
-		division_template = "Kavaleriyskaya Diviziya"
+		division_template = "Narodnoe Opolcheniye Kavaleriyskaya Diviziya"
 		start_experience_factor = 0
 		start_equipment_factor = 0.1
 
@@ -86,7 +86,7 @@ units = {
 	division= {			
 		name = "9th Kirov Narodnoe Opolcheniye Diviziya"		
 		location = 6380
-		division_template = "Kavaleriyskaya Diviziya"
+		division_template = "Narodnoe Opolcheniye Kavaleriyskaya Diviziya"
 		start_experience_factor = 0
 		start_equipment_factor = 0.1
 
@@ -102,7 +102,7 @@ units = {
 	division= {			
 		name = "17th Moskvorets Narodnoe Opolcheniye Diviziya"		
 		location = 6380
-		division_template = "Kavaleriyskaya Diviziya"
+		division_template = "Narodnoe Opolcheniye Kavaleriyskaya Diviziya"
 		start_experience_factor = 0
 		start_equipment_factor = 0.1
 

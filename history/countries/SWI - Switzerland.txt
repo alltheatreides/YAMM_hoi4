@@ -17,7 +17,7 @@ set_technology = {
 	motorised_infantry = 1
 }
 add_ideas = {
-	limited_conscription
+	extensive_conscription
 	real_neutrality
 }
 
@@ -121,7 +121,7 @@ set_politics = {
 
 add_ideas = {
 	neutrality_idea	
-	limited_conscription
+	extensive_conscription
 }
 
 set_national_unity = 0.85
