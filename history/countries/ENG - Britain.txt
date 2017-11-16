@@ -58,9 +58,31 @@ add_ideas = {
 	george_v
 }
 
-	give_guarantee = HOL
-	give_guarantee = BEL
-	give_guarantee = POL
+give_guarantee = HOL
+give_guarantee = BEL
+give_guarantee = POL
+
+add_relation_modifier = {
+	target = CAN
+	modifier = ROM_license_german_equipment
+}
+add_relation_modifier = {
+	target = AST
+	modifier = ROM_license_german_equipment
+}
+add_relation_modifier = {
+	target = RAJ
+	modifier = ROM_license_german_equipment
+}
+add_relation_modifier = {
+	target = SAF
+	modifier = ROM_license_german_equipment
+}
+add_relation_modifier = {
+	target = NZL
+	modifier = ROM_license_german_equipment
+}
+
 
 set_convoys = 4000
 
@@ -272,6 +294,7 @@ add_to_faction = RAJ		# Must be after puppet
 add_to_faction = MAL
 
 #give_guarantee = CZE
+give_guarantee = YUG
 
 # Order matters - here Chamberlain becomes starting leader
 

@@ -2397,8 +2397,11 @@ country_event = {
 		country_event = { hours = 6 id = news.34 }
 		hidden_effect =  {
 			FRA = { news_event = { id = france.20 days = 1 } }
+			ENG = { 
+				swap_ideas = { remove_idea = stiff_upper_lip add_idea = stiff_upper_lip_2 }
+			}
 		}
-		}	
+		}
 	}
 	# option = { # Conquer everything!
 		# name = france.14.b

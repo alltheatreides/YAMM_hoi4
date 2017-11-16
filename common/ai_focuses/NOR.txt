@@ -1,0 +1,27 @@
+
+ai_historical_focus_list_NOR = {
+	ai_national_focuses = {
+		NOR_encourage_fishing
+		NOR_lumber_industries
+		NOR_invest_in_district_industries
+		NOR_hydro
+		NOR_hydro_plants
+		NOR_nordlandsbanen
+		NOR_norsk_jernverk
+		NOR_expand_domestic_steel_production
+		NOR_statmin
+		NOR_expand_alu
+		NOR_nth
+		NOR_army
+		NOR_winter_tactics
+		NOR_til_dovre_faller
+		NOR_fund_the_rearmament
+		NOR_armfac
+		NOR_armfac1
+		NOR_armfac2
+		NOR_equipment
+		NOR_urban_defences
+		NOR_encourage_recreational_shooting
+		NOR_heimevernet
+	}
+}

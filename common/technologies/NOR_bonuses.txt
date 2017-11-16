@@ -1,0 +1,18 @@
+technologies = {
+	NOR_mountain_men = {
+
+		research_cost = 1
+
+		# only from focus!!! #
+		allow = {
+			always = no
+		}
+
+		category_army = {
+			mountain = {
+				attack = 0.10
+				movement = 0.10
+			}
+		}
+	}
+}

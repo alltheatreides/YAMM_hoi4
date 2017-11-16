@@ -59,6 +59,27 @@ country_event = {
 			set_province_controller = 7183
 		    set_province_controller = 875
 			
+			41 = {
+				add_building_construction = {
+					type = bunker
+					province = 3938
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 858
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 9767
+					level = 3
+					instant_build = yes
+				}
+			}
+			
 			create_country_leader = {
 	            name = "Gonzalo Queipo de Llano"
 	            desc = "POLITICS_LLANO_DESC"
@@ -1751,21 +1772,14 @@ country_event = {
 	trigger = {
 		original_tag = SPR
 		OR = {
-		has_government = communism
-		has_government = democratic
+			has_government = communism
+			has_government = democratic
 		}
 		has_civil_war = yes
-		any_country = {
-				limit = {
-					original_tag = SPR
-					has_government = fascism
-				}
-			OR = {
-			controls_state = 170
-			controls_state = 175
-			}
-		}
-		
+		NOT = {
+			170 = { is_controlled_by = ROOT }
+			175 = { is_controlled_by = ROOT }
+		}		
 	}
 
 	fire_only_once = yes

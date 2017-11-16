@@ -10,4 +10,15 @@ leader_traits = {
 		}
 	}
 
+partisan_leader = {
+		sprite = 10
+		random = yes
+		partisan_effect = 0.25
+		army_core_attack_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }

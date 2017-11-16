@@ -2,6 +2,10 @@ state={
 	id=89
 	name="STATE_89" # Stanislawow
 	manpower = 2180300
+	resources={
+		aluminium=8
+		oil=12
+	}
 	
 	state_category = town
 	

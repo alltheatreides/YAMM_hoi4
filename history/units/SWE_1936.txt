@@ -270,6 +270,15 @@ instant_effect = {
 		progress = 0.21
 		efficiency = 100
 	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "SWE"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
 	### Under Construction Notes ###
 	# DD: Göteborg class (x1) ("HMS Göteborg")
 	add_equipment_production = {

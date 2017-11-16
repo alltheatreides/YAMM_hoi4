@@ -23,7 +23,8 @@ add_ideas = {
 	CHI_communist_uprisings
 	public_iliteracy
 	german_advisors
-	# incompetent_industry
+	incompetent_industry
+	army_corruption
 }
 
 set_convoys = 80

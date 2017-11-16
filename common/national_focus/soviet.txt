@@ -439,6 +439,7 @@ focus_tree = {
 		available = {
 			has_defensive_war_with = GER
 			SOV = { surrender_progress > 0.20 }
+			291 = { is_controlled_by = ENG }
 		}
 		completion_reward = {
 			SOV = {
@@ -697,10 +698,11 @@ focus_tree = {
 				random_owned_controlled_state = {
 					prioritize = { 137 217 221 218 252 653 652 234 220 193 254 }
 					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 2
-						}
+						# free_building_slots = {
+							# building = infrastructure
+							# size > 2
+						# }
+						infrastructure > 2
 					}
 					add_building_construction = {
 						type = infrastructure
@@ -712,6 +714,10 @@ focus_tree = {
 			}
 			651 = {
 				limit = {
+					# free_building_slots = {
+						# building = infrastructure
+						# size < 5
+					# }
 					infrastructure < 5
 				}
 				add_building_construction = {
@@ -723,6 +729,10 @@ focus_tree = {
 			}
 			652 = {
 				limit = {
+					# free_building_slots = {
+						# building = infrastructure
+						# size < 5
+					# }
 					infrastructure < 5
 				}
 				add_building_construction = {
@@ -734,6 +744,10 @@ focus_tree = {
 			}
 			405 = {
 				limit = {
+					# free_building_slots = {
+						# building = infrastructure
+						# size < 5
+					# }
 					infrastructure < 5
 				}
 				add_building_construction = {
@@ -745,6 +759,10 @@ focus_tree = {
 			}
 			586 = {
 				limit = {
+					# free_building_slots = {
+						# building = infrastructure
+						# size < 5
+					# }
 					infrastructure < 5
 				}
 				add_building_construction = {
@@ -1098,10 +1116,11 @@ focus_tree = {
 		completion_reward = {
 			252 = {
 				limit = { 
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
+					# free_building_slots = {
+						# building = infrastructure
+						# size > 2
+					# }
+					infrastructure > 2
 					state_population > 500000
 				}
 				add_building_construction = {
@@ -1113,10 +1132,11 @@ focus_tree = {
 			}
 			653 = {
 				limit = { 
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
+					# free_building_slots = {
+						# building = infrastructure
+						# size > 2
+					# }
+					infrastructure > 2
 					state_population > 500000
 				}
 				add_building_construction = {
@@ -1128,10 +1148,11 @@ focus_tree = {
 			}
 			227 = {
 				limit = { 
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
+					# free_building_slots = {
+						# building = infrastructure
+						# size > 2
+					# }
+					infrastructure > 2
 					state_population > 500000
 				}
 				add_building_construction = {
