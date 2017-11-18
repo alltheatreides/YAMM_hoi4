@@ -499,83 +499,26 @@ ideas = {
 		}
 	}
 
-	political_advisor = {
+##################
+####Politicians
+##################
+#HoS	
+head_of_state = {
 
-		AST_alexander_hore_ruthven = {
+}
 
-			picture = generic_political_advisor_europe_1
-			
-			allowed = {
-				original_tag = AST
-			}
-			
-			traits = { quartermaster_general }
-		}
-
-		AST_robert_g_menzies = {
-
+#Foreign
+foreign_minister = {
+AST_robert_g_menzies = {
 			picture = generic_political_advisor_europe_2
-				
+			
 			allowed = {
 				original_tag = AST
 			}
 			
 			traits = { backroom_backstabber }
 		}
-
-		AST_ben_chifley = {
-
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = AST
-				has_dlc = "Together for Victory"
-			}
-			
-			cost = 100
-
-			traits = { smooth_talking_charmer }
-
-			available = {
-				has_completed_focus = AST_never_another_gallipoli
-			}
-		}
-
-		AST_herbert_v_evatt = {
-
-			picture = generic_political_advisor_europe_2
-			
-			allowed = {
-				original_tag = AST
-			}
-			
-			cost = 100
-
-			traits = { silent_workhorse }
-
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = AST_support_the_policy_of_appeasement
-				}
-			}
-		}
-
-		AST_jack_beasley = {
-
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = AST
-				has_dlc = "Together for Victory"
-			}
-			
-			traits = { war_industrialist }
-		}
-		
-
-		AST_frank_forde = {
-
+	AST_frank_forde = {
 			picture = generic_political_advisor_europe_3
 			
 			allowed = {
@@ -585,106 +528,138 @@ ideas = {
 			
 			traits = { compassionate_gentleman }
 		}
+}
 
-		AST_generic_fascist_demagogue = {
+#Propaganda/Security
+interior_minister = {
+AST_3 = {
+
+			picture = generic_political_advisor_western_european_3
+				
+			allowed = {
+				original_tag = AST
+			}
+			
+			traits = { crime_fighter }
+		}
+}
+
+#Intelligence
+intel_minister = {
+
+}
+
+#Economic
+economic_minister = {
+AST_alexander_hore_ruthven = {
+			picture = generic_political_advisor_europe_1
 			
 			allowed = {
 				original_tag = AST
-				
 			}
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = AST_support_the_centre_party
-				}
-			}
-
-			picture = generic_political_advisor_europe_4
 			
-			traits = { fascist_demagogue }
-		
-			on_add = {
-				country_event = political.7
-			}
-		
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-		
-			ai_will_do = {
-				factor = 0
-			}
+			traits = { war_industrialist }
 		}
-
-		AST_lance_sharkey = {
+		
+		AST_ben_chiffley = {
+			picture = generic_political_advisor_europe_3
 			
 			allowed = {
 				original_tag = AST
-				
+				has_dlc = "Together for Victory"
 			}
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = AST_empower_the_workers
-				}
-			}
-
-			picture = generic_communist_revolutionary_western_european_2d
 			
-			traits = { communist_revolutionary }
-		
-			on_add = {
-				country_event = political.1
-			}
-		
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-		
-			ai_will_do = {
-				factor = 0
-			}
+			traits = { captain_of_industry }
 		}
+		AST_jack_beasley = {
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = AST
+				has_dlc = "Together for Victory"
+			}
+			
+			traits = { war_industrialist }
+		}
+		AST_1 = {
 
+			picture = generic_political_advisor_western_european_1
+			
+			allowed = {
+				original_tag = AST
+			}
+			
+			traits = { resource_industrialist }
+		}
+		
+		AST_2 = {
 
+			picture = generic_political_advisor_western_european_2
+			
+			allowed = {
+				original_tag = AST
+			}
+			
+			traits = { military_entrepreneur }
+		}
+		
+		
+}
+	
+political_advisor = {
+
+		
+		AST_herbert_v_evatt = {
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = AST
+			}
+			
+			traits = { silent_workhorse }
+		}
+		
 		AST_arthur_calwell = {
-			
-			allowed = {
-				original_tag = AST
-			}
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					OR = {
-						has_completed_focus = AST_sever_ties_with_uk
-						has_completed_focus = AST_empower_the_workers
-					}
-				}
-			}
-			
 			picture = generic_democratic_reformer_western_european_2d
 			
-			traits = { democratic_reformer }
-		
-			on_add = {
-				country_event = political.13
+			allowed = {
+				original_tag = AST
 			}
-		
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
+			available = {
+				
 			}
+			
+			traits = { socialist_reformer }
+		
+			# on_add = {
+				# country_event = political.13
+			# }
 		
 			ai_will_do = {
 				factor = 0
 			}
 		}
-
+		
+		AST_vincent_massey = {
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = AST
+			}
+			
+			traits = { liberal_reformer }
+		}
+		
+		AST_r_b_bennett = {
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = AST
+			}
+			
+			traits = { conservative_reformer }
+		}		
+		
 	}
 
 theorist = {

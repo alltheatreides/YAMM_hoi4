@@ -1,7 +1,18 @@
 ideas = {
-
-	political_advisor = {
-
+head_of_state = {
+	GRE_george_ii_hos = {
+		allowed = {
+			original_tag = GRE
+		}
+		available = {
+			NOT = {
+				has_government = communism
+			}
+		}
+		traits = { effective_leader anti_communist }
+	}
+}
+foreign_minister = {
 	GRE_damaskinos = {
 
 		picture = generic_political_advisor_europe_5
@@ -12,7 +23,26 @@ ideas = {
 		
 		traits = { compassionate_gentleman }
 	}
+}
+intel_minister = {
 
+}
+interior_minister = {
+
+}
+economic_minister = {
+	GRE_evripidis_bakirtris = {
+
+		picture = generic_political_advisor_europe_3
+		
+		allowed = {
+			original_tag = GRE
+		}
+		
+		traits = { war_industrialist }
+	}
+}
+political_advisor = {
 	GRE_georgios_papandreou = {
 
 		picture = generic_political_advisor_europe_2
@@ -23,16 +53,33 @@ ideas = {
 		
 		traits = { silent_workhorse }
 	}
+	GRE_r_b_bennett = {
 
-	GRE_evripidis_bakirtris = {
-
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = GRE
+			}
+			
+			traits = { conservative_reformer }
+	}
+	GRE_vincent_massey = {
+		picture = generic_political_advisor_europe_2
+		
+		allowed = {
+			original_tag = GRE
+		}
+		
+		traits = { liberal_reformer }
+	}
+	GRE_john_horne_blackmore = {
 		picture = generic_political_advisor_europe_3
 		
 		allowed = {
 			original_tag = GRE
 		}
 		
-		traits = { war_industrialist }
+		traits = { socialist_reformer }
 	}
 }
 

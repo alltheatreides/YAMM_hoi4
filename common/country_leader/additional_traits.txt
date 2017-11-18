@@ -10,7 +10,7 @@ leader_traits = {
 		}
 	}
 
-partisan_leader = {
+	partisan_leader = {
 		sprite = 10
 		random = yes
 		partisan_effect = 0.25

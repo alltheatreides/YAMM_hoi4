@@ -1,30 +1,30 @@
 ideas = {
 	country = {
-		victor_emmanuel = {
+		# victor_emmanuel = {
 			
 			
-			allowed = {
-				original_tag = "ITA"
-			}
+			# allowed = {
+				# original_tag = "ITA"
+			# }
 
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-				NOT = {
-					any_other_country = {
-						original_tag = ITA
-						has_government = fascism
-					}
-				}
-			}
+			# allowed_civil_war = {
+				# NOT = {
+					# has_government = communism
+				# }
+				# NOT = {
+					# any_other_country = {
+						# original_tag = ITA
+						# has_government = fascism
+					# }
+				# }
+			# }
 			
-			removal_cost = -1
+			# removal_cost = -1
 			
-			modifier = {
-				unity_factor = 0.05				
-			}
-		}
+			# modifier = {
+				# unity_factor = 0.05				
+			# }
+		# }
 		vittoria_mutilata = {			
 			
 			allowed = {
@@ -93,104 +93,45 @@ ideas = {
 		}
 	}
 		
-	political_advisor = {
-		amadeo_bordiga = {
-			
+##################
+####Politicians
+##################
+#HoS
+head_of_state = {
+	# bordiga_hos = {
+		# allowed = {
+				# original_tag = "ITA"
+				# has_government = communism
+			# }
+		# traits = { communist }
+	# }
+	victor_emmanuel = {
 			
 			allowed = {
 				original_tag = "ITA"
 			}
-			
 
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
-			do_effect = {
+			allowed_civil_war = {
 				NOT = {
 					has_government = communism
-				}
 			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
-			
-		ivanoe_bonomi = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-			
-
-			
-			traits = { democratic_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
-			do_effect = {
 				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		
-		carlo_scorza = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-			
-
-			
-			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
-	
-			do_effect = {
-				NOT = {
+					any_other_country = {
+						original_tag = ITA
 					has_government = fascism
 				}
 			}
+			}
 			
-			ai_will_do = {
-				factor = 0
+			traits = {
+				  popular_figurehead				
 			}
-		}
+		}	
+}
 
-		ITA_giovanni_marinelli = {
-						
-			allowed = {
-				original_tag = "ITA"
-			}
-
-			picture = generic_political_advisor_europe_5
-						
-			traits = { prince_of_terror }
-	
-			on_add = {				
-			}
-				
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		ITA_gian_galeazzo_ciano = {
+#Foreign
+foreign_minister = {
+ITA_gian_galeazzo_ciano = {
 			
 			
 			allowed = {
@@ -199,7 +140,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_6
 						
-			traits = { compassionate_gentleman }
+			traits = {   compassionate_gentleman }
 	
 			on_add = {				
 			}
@@ -218,7 +159,7 @@ ideas = {
 
 			picture = generic_army_europe_1
 						
-			traits = { backroom_backstabber }
+			traits = {   iron_fisted_brute }
 
 			ai_will_do = {
 				factor = 0
@@ -234,7 +175,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 						
-			traits = { smooth_talking_charmer }
+			traits = {   smooth_talking_charmer }
 	
 			on_add = {				
 			}
@@ -253,7 +194,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 						
-			traits = { ideological_crusader }
+			traits = {   ideological_crusader }
 	
 			on_add = {				
 			}
@@ -262,17 +203,59 @@ ideas = {
 				factor = 0.5
 			}
 		}
-					
-		ITA_giacomo_acerbo = {
-			
-			
+}
+
+#Propaganda/Security
+interior_minister = {
+ITA_giovanni_marinelli = {
+						
 			allowed = {
 				original_tag = "ITA"
 			}
 
+			picture = generic_political_advisor_europe_5
+						
+			traits = { prince_of_terror }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+}
+
+#Intelligence
+intel_minister = {
+cesare_ame = {
+					
+			picture = idea_cesare_ame
+			
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {   dismal_enigma }
+		}
+}
+
+#Economic
+economic_minister = {
+ITA_giacomo_acerbo = {
+			
+			allowed = {
+				original_tag = ITA
+				}
+			available = {
+				has_government = fascism
+			}
+
 			picture = generic_political_advisor_europe_2
 						
-			traits = { war_industrialist }
+			traits = {   war_industrialist }
 	
 			on_add = {				
 			}
@@ -284,14 +267,16 @@ ideas = {
 					
 		ITA_junio_valerio_borghese = {
 			
-			
 			allowed = {
-				original_tag = "ITA"
+				original_tag = ITA
+				}
+			available = {
+				has_government = fascism
 			}
 
 			picture = generic_army_europe_2
 						
-			traits = { armaments_organizer }
+			traits = {   armaments_organizer }
 	
 			on_add = {				
 			}
@@ -301,35 +286,17 @@ ideas = {
 			}
 		}
 					
-		ITA_luigi_einaudi = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-
-			picture = generic_political_advisor_europe_1
-						
-			traits = { captain_of_industry }
-	
-			on_add = {				
-			}
-				
-			ai_will_do = {
-				factor = 3
-			}
-		}
-					
 		ITA_paolo_thaon_di_revel = {
-			
-			
 			allowed = {
-				original_tag = "ITA"
+				original_tag = ITA
+				}
+			available = {
+				has_government = fascism
 			}
 
 			picture = generic_navy_europe_3
 						
-			traits = { quartermaster_general }
+			traits = {   quartermaster_general }
 	
 			on_add = {				
 			}
@@ -338,7 +305,57 @@ ideas = {
 				factor = 0.3
 			}
 		}
-	}
+		alfredo_guzzoni_econ = { 
+			allowed = {
+				original_tag = ITA
+				}
+			available = {
+				has_government = fascism
+			}
+			traits = {  quartermaster_general }
+			cancel_if_invalid = no
+		}
+		antonio_sorice = { 
+			allowed = {
+				original_tag = ITA
+				}
+			available = {
+				has_government = fascism
+			}
+			traits = {   war_industrialist }
+			cancel_if_invalid = no
+		}
+}
+
+#Advisors
+political_advisor = {
+					
+		carlo_scorza = {
+			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+
+						
+			traits = { fascist_demagogue }
+	
+			on_add = {
+				country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+				
+			ai_will_do = {
+				factor = 0
+			}
+			}
+		}
 		
 	# MILITARY
 	army_chief = {
@@ -494,7 +511,53 @@ ideas = {
 			}
 		}	
 	}	
+	supreme_commander = {
+		
+		benito_mussolini_sc = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			traits = { supreme_com_mussolini }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	
+		pietro_badoglio = { #36-40
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+
+			
+			traits = { army_chief_morale_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ugo_cavallero = { #40-43
+	
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+
+			
+			traits = { army_chief_maneuver_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 	high_command = {
 	
 		mario_roatta = {

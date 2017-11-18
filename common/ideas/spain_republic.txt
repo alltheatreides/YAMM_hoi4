@@ -1,8 +1,16 @@
 ideas = {
 
-	political_advisor = {
+##################
+####Politicians
+##################
+#HoS
+head_of_state = {
+	
+}
 
-		SPR_augusto_barcia_trelles = {
+#Foreign
+foreign_minister = {
+SPR_augusto_barcia_trelles = {
 
 			picture = generic_army_europe_1
 			
@@ -13,8 +21,36 @@ ideas = {
 			
 			traits = { ideological_crusader }
 		}
+		
+}
 
-		SPR_francisco_largo_caballero = {
+#Propaganda/Security
+interior_minister = {
+	SPR_diego_martinez_barrio = {
+
+		picture = generic_navy_europe_1
+
+		allowed = {
+			original_tag = SPR
+			NOT = { has_government = fascism }
+		}
+		
+		traits = { backroom_backstabber }
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+#Intelligence
+intel_minister = {
+
+}
+
+#Economic
+economic_minister = {
+
+SPR_francisco_largo_caballero = {
 
 			picture = generic_air_europe_1
 				
@@ -25,6 +61,11 @@ ideas = {
 			
 			traits = { captain_of_industry }
 		}
+}	
+	political_advisor = {
+
+		
+
 
 		SPR_dolores_ibarruri = {
 
@@ -38,31 +79,7 @@ ideas = {
 			traits = { communist_revolutionary }
 		}
 
-		SPR_diego_martinez_barrio = {
-
-			picture = generic_navy_europe_1
-
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = fascism }
-			}
-			
-			traits = { backroom_backstabber }
-			ai_will_do = {
-				factor = 0
-			}
-		}
 		
-		SPR_alejandro = {
-
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = SPR
-			}
-			
-			traits = { fortification_engineer }
-		}
 	}
 
 	theorist = {

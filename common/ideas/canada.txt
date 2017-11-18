@@ -575,41 +575,23 @@ ideas = {
 		}
 	}
 
-	political_advisor = {
+##################
+####Politicians
+##################
+#HoS
+head_of_state = {
+		CAN_leo_richer_lafleche = {
 
-		CAN_chuck_crate = {
-
+			picture = generic_political_advisor_europe_3
+			
 			allowed = {
 				original_tag = CAN
-				
-			}
-
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = CAN_swastika_clubs
-				}
-			}
-
-			picture = generic_fascist_demagogue_commonwealth_2d
-			
-			traits = { fascist_demagogue }
-			
-			on_add = {
-				country_event = political.7
+				has_dlc = "Together for Victory"
 			}
 			
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
+			traits = { popular_figurehead }
 		}
-
+	
 		CAN_robert_manion = {
 
 			allowed = {
@@ -622,14 +604,13 @@ ideas = {
 					limit = { has_dlc = "Together for Victory" }
 					OR = {
 						has_completed_focus = CAN_strengthen_the_commonwealth_ties
-						has_completed_focus = CAN_permanent_joint_defense_board
 					}
 				}
 			}
 			
 			picture = generic_democratic_reformer_commonwealth_2d
 			
-			traits = { democratic_reformer }
+			traits = { conservative_reformer }
 			
 			on_add = {
 				country_event = political.13
@@ -637,7 +618,7 @@ ideas = {
 			
 			do_effect = {
 				NOT = {
-					has_government = democratic
+					has_government = conservatism
 				}
 			}
 			
@@ -645,66 +626,13 @@ ideas = {
 				factor = 0
 			}
 		}
+}
 
-		CAN_william_kashtan = {
-
-			allowed = {
-				original_tag = CAN
-				
-			}
-
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = CAN_burn_the_royal_portraits
-				}
-			}
-
-			picture = generic_communist_revolutionary_commonwealth_2d
-			
-			traits = { communist_revolutionary }
-			
-			on_add = {
-				country_event = political.1
-			}
-			
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-
-		CAN_ian_a_mackenzie = {
-
-			picture = generic_political_advisor_europe_1
-			
-			allowed = {
-				original_tag = CAN
-			}
-			
-			traits = { quartermaster_general }
-		}
-
-		CAN_r_b_bennett = {
-
-			picture = generic_political_advisor_europe_2
-				
-			allowed = {
-				original_tag = CAN
-			}
-			
-			traits = { silent_workhorse }
-		}
-
+#Foreign
+foreign_minister = {
 		CAN_newton_wesley_rowell = {
 
-			picture = generic_political_advisor_europe_3
+			picture = newton_wesley_rowell
 			
 			allowed = {
 				original_tag = CAN
@@ -712,32 +640,7 @@ ideas = {
 			
 			traits = { ideological_crusader }
 		}
-
-		CAN_leo_richer_lafleche = {
-
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = CAN
-				has_dlc = "Together for Victory"
-			}
-			
-			traits = { popular_figurehead }
-		}
-
-		CAN_james_ilsley = {
-
-			picture = generic_political_advisor_europe_2
-			
-			allowed = {
-				original_tag = CAN
-				has_dlc = "Together for Victory"
-			}
-			
-			traits = { war_industrialist }
-		}
-
-		CAN_louis_st_laurent = {
+	CAN_louis_st_laurent = {
 
 			picture = generic_political_advisor_europe_1
 			
@@ -752,7 +655,41 @@ ideas = {
 			
 			traits = { compassionate_gentleman }
 		}
+}
 
+#Propaganda/Security
+interior_minister = {
+
+}
+
+#Intelligence
+intel_minister = {
+
+}
+
+#Economic
+economic_minister = {
+	CAN_ian_a_mackenzie = {
+
+			picture = ian_a_mackenzie
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			traits = { quartermaster_general }
+		}
+	CAN_james_ilsley = {
+
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+			traits = { war_industrialist }
+		}
 		CAN_c_d_howe = {
 
 			picture = generic_political_advisor_europe_3
@@ -765,12 +702,46 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = CAN_rowell_sirois_commission
+				has_completed_focus = CAN_crown_corporations
 			}
 			
 			traits = { captain_of_industry }
 		}
+}
+
+#Advisors
+political_advisor = {
+	CAN_r_b_bennett = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = CAN
+			}
+			
+			traits = { silent_workhorse   }
 	}
+	CAN_vincent_massey = {
+		picture = generic_political_advisor_europe_2
+		
+		allowed = {
+			original_tag = CAN
+		}
+		
+		traits = { liberal_reformer }
+	}
+	CAN_john_horne_blackmore = {
+		picture = generic_political_advisor_europe_3
+		
+		allowed = {
+			original_tag = CAN
+		}
+		
+		traits = { socialist_reformer }
+	}
+}
+	
+
 
 	theorist = {
 

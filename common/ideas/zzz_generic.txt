@@ -752,6 +752,332 @@ ideas = {
 			}
 		}
 	}
+	
+###############################
+####Ministers
+###############################
+#Head of State
+	head_of_state = {
+		generic_hos = {
+			allowed = {
+				NOT = {
+					tag = GER
+					has_available_idea_with_traits = { idea = political_dancer limit = 1 }
+					has_available_idea_with_traits = { idea = staunch_constitutionalist limit = 1 }
+					has_available_idea_with_traits = { idea = ineffective_politician limit = 1 }
+					has_available_idea_with_traits = { idea = popular_figurehead limit = 1 }
+					has_available_idea_with_traits = { idea = great_leader limit = 1 }
+					has_available_idea_with_traits = { idea = silent_workhorse limit = 1 }
+					has_available_idea_with_traits = { idea = tough_guy limit = 1 }
+					has_available_idea_with_traits = { idea = inexperienced_amateur limit = 1 }
+					has_available_idea_with_traits = { idea = coalition_builder limit = 1 }
+					has_available_idea_with_traits = { idea = effective_leader limit = 1 }
+					has_available_idea_with_traits = { idea = naive_appeaser limit = 1 }
+					has_available_idea_with_traits = { idea = war_hero limit = 1 }
+					has_available_idea_with_traits = { idea = elder_statesman limit = 1 }
+					has_available_idea_with_traits = { idea = business_tycoon limit = 1 }
+					has_available_idea_with_traits = { idea = intellectual limit = 1 }
+					has_available_idea_with_traits = { idea = demagogue limit = 1 }
+					has_available_idea_with_traits = { idea = rising_star limit = 1 }
+				}
+			}
+			
+			traits = { effective_leader }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_hos1 = {
+			allowed = {
+				NOT = {
+					tag = GER
+					has_available_idea_with_traits = { idea = political_dancer limit = 1 }
+					has_available_idea_with_traits = { idea = staunch_constitutionalist limit = 1 }
+					has_available_idea_with_traits = { idea = ineffective_politician limit = 1 }
+					has_available_idea_with_traits = { idea = popular_figurehead limit = 1 }
+					has_available_idea_with_traits = { idea = great_leader limit = 1 }
+					has_available_idea_with_traits = { idea = silent_workhorse limit = 1 }
+					has_available_idea_with_traits = { idea = tough_guy limit = 1 }
+					has_available_idea_with_traits = { idea = inexperienced_amateur limit = 1 }
+					has_available_idea_with_traits = { idea = coalition_builder limit = 1 }
+					has_available_idea_with_traits = { idea = effective_leader limit = 1 }
+					has_available_idea_with_traits = { idea = naive_appeaser limit = 1 }
+					has_available_idea_with_traits = { idea = war_hero limit = 1 }
+					has_available_idea_with_traits = { idea = elder_statesman limit = 1 }
+					has_available_idea_with_traits = { idea = business_tycoon limit = 1 }
+					has_available_idea_with_traits = { idea = intellectual limit = 1 }
+					has_available_idea_with_traits = { idea = demagogue limit = 1 }
+					has_available_idea_with_traits = { idea = rising_star limit = 1 }
+				}
+			}
+			
+			traits = { war_hero }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_hos2 = {
+			allowed = {
+				NOT = {
+					tag = GER
+					has_available_idea_with_traits = { idea = political_dancer limit = 1 }
+					has_available_idea_with_traits = { idea = staunch_constitutionalist limit = 1 }
+					has_available_idea_with_traits = { idea = ineffective_politician limit = 1 }
+					has_available_idea_with_traits = { idea = popular_figurehead limit = 1 }
+					has_available_idea_with_traits = { idea = great_leader limit = 1 }
+					has_available_idea_with_traits = { idea = silent_workhorse limit = 1 }
+					has_available_idea_with_traits = { idea = tough_guy limit = 1 }
+					has_available_idea_with_traits = { idea = inexperienced_amateur limit = 1 }
+					has_available_idea_with_traits = { idea = coalition_builder limit = 1 }
+					has_available_idea_with_traits = { idea = effective_leader limit = 1 }
+					has_available_idea_with_traits = { idea = naive_appeaser limit = 1 }
+					has_available_idea_with_traits = { idea = war_hero limit = 1 }
+					has_available_idea_with_traits = { idea = elder_statesman limit = 1 }
+					has_available_idea_with_traits = { idea = business_tycoon limit = 1 }
+					has_available_idea_with_traits = { idea = intellectual limit = 1 }
+					has_available_idea_with_traits = { idea = demagogue limit = 1 }
+					has_available_idea_with_traits = { idea = rising_star limit = 1 }
+				}
+			}
+			
+			traits = { business_tycoon }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#Foreign Minister
+foreign_minister = {
+generic_foreign_minister = {
+			
+			allowed = {
+				NOT = { 
+					OR = {
+						tag = SOV 
+						tag = JAP
+					}
+				}
+				NOT = {
+					has_available_idea_with_traits = { idea = compassionate_gentleman limit = 1 }
+					has_available_idea_with_traits = { idea = ideological_crusader limit = 1 }
+					has_available_idea_with_traits = { idea = iron_fisted_brute limit = 1 }
+					has_available_idea_with_traits = { idea = smooth_talking_charmer limit = 1 }
+					}
+			}
+			
+			traits = { compassionate_gentleman }
+
+
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+}
+
+#Interior(Security/Propaganda) Minister
+interior_minister = {
+generic_interior_minister = {
+			
+			allowed = {
+				NOT = {
+					OR = {
+						tag = GER
+						tag = SOV
+						tag = JAP
+					}
+				}
+				NOT = {
+					has_available_idea_with_traits = { idea = prince_of_terror limit = 1 }
+					has_available_idea_with_traits = { idea = backroom_backstabber limit = 1 }
+					has_available_idea_with_traits = { idea = efficient_sociopath limit = 1 }
+					has_available_idea_with_traits = { idea = crime_fighter limit = 1 }
+					has_available_idea_with_traits = { idea = hearts_and_minds limit = 1 }
+					}
+			}
+			
+			traits = { crime_fighter }
+
+
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+}
+
+#Intel Minister
+intel_minister = {
+generic_intel_minister = {
+			
+			allowed = {
+				NOT = {
+					OR = {
+						tag = GER
+						tag = ITA
+						tag = SOV
+						tag = JAP
+					}
+				}
+				NOT = { has_available_idea_with_traits = { idea = codebreaker limit = 1 } }
+				NOT = { has_available_idea_with_traits = { idea = dismal_enigma limit = 1 } }
+			}
+				
+			traits = { dismal_enigma }
+
+
+			
+			do_effect = {
+				
+				}
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+}
+
+#Economic Minister
+economic_minister = {
+generic_captain_of_industry = {
+
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
+			}
+			
+			traits = { captain_of_industry }
+		}
+		
+		generic_fortification_engineer = {
+
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
+			}
+			
+			traits = { fortification_engineer }
+                                                  }
+
+		generic_war_industrialist = {
+
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
+			}
+			
+			traits = { war_industrialist }
+				}
+		generic_economic_minister = {
+				
+			allowed = {
+				NOT = {
+					OR = {
+						tag = GER
+						tag = ITA
+						tag = SOV
+						tag = JAP
+					}
+				}
+				NOT = {
+					has_available_idea_with_traits = { idea = capitalist limit = 1 }
+					has_available_idea_with_traits = { idea = theoretical_scientist limit = 1 }
+					has_available_idea_with_traits = { idea = administrative_genius limit = 1 }
+					has_available_idea_with_traits = { idea = resource_industrialist limit = 1 }
+					has_available_idea_with_traits = { idea = military_entrepreneur limit = 1 }
+					has_available_idea_with_traits = { idea = technical_especialist limit = 1 }
+					has_available_idea_with_traits = { idea = corrupt_kleptocrat limit = 1 }
+					has_available_idea_with_traits = { idea = fortification_engineer limit = 1 }
+					has_available_idea_with_traits = { idea = war_industrialist limit = 1 }
+					has_available_idea_with_traits = { idea = captain_of_industry limit = 1 }
+					has_available_idea_with_traits = { idea = industrial_planner limit = 1 }
+					has_available_idea_with_traits = { idea = armaments_organizer limit = 1 }
+					has_available_idea_with_traits = { idea = quartermaster_general limit = 1 }
+                }
+			}
+				
+			traits = { industrial_planner }
+
+
+			
+			do_effect = {
+				
+					}
+	
+			ai_will_do = {
+				factor = 1
+				}
+		}
+}
+
+
+political_advisor = {
+		# POLITICAL	
+		
+			
+		
+		generic_speechwriter = {
+			
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = speechwriter limit = 1 }
+				}
+			}
+
+			traits = { speechwriter }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_sympathetic_judge = {
+			
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = sympathetic_judge limit = 1 }
+				}
+				NOT = { has_idea = roland_freisler }
+				NOT = { 
+					OR = {
+						tag = ENG
+						tag = JAP
+						tag = USA
+						tag = GER
+					} 
+				}
+			}
+
+			traits = { sympathetic_judge }
+			on_add = {
+				custom_effect_tooltip = judge_TT
+				increase_corruption = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
 		
 	
 
@@ -1072,7 +1398,413 @@ ideas = {
 			traits = { war_industrialist }
 		}
 	}
-
+supreme_commander = {
+		generic_supreme_commander = {
+			
+			allowed = {
+				NOT = {
+					tag = GER
+					has_government = fascism
+				}
+				OR = {
+				AND = {
+					original_tag = GER
+					NOT = { has_government = fascism }
+					}
+				AND = {
+					original_tag = ITA
+					NOT = { has_government = fascism }
+					}
+					original_tag = USA
+					original_tag = ENG
+					original_tag = SOV
+					original_tag = SWE
+					original_tag = FRA
+					original_tag = DEN
+					original_tag = NOR
+					original_tag = ALB
+					original_tag = GRE
+					original_tag = TUR
+					original_tag = SWI
+					original_tag = SER
+					original_tag = YUG
+					original_tag = ROM
+					original_tag = SPR
+					original_tag = LAT
+					original_tag = EST
+					original_tag = LIT
+					original_tag = AUS
+					original_tag = POL
+					original_tag = CZE
+					original_tag = HOL
+					original_tag = BEL
+					original_tag = LUX
+					original_tag = DEN
+					original_tag = BUL
+					original_tag = POR
+					original_tag = FIN
+					original_tag = IRE
+					original_tag = HUN
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = CRO
+					original_tag = D01
+					original_tag = WGR
+					original_tag = DDR
+					original_tag = ISR
+					original_tag = UKR
+					original_tag = GEO
+					original_tag = KAZ
+					original_tag = AZR
+					original_tag = ARM
+					original_tag = BLR
+					original_tag = QUE
+					original_tag = NEW
+					original_tag = VLA
+					original_tag = WLL
+					original_tag = SAP
+					original_tag = ICE
+				}
+			}
+			
+			traits = { supreme_com_planner }
+		}
+		generic_supreme_commander2 = {
+			
+			allowed = {
+				OR = {
+				AND = {
+					original_tag = GER
+					NOT = { has_government = fascism }
+					}
+				AND = {
+					original_tag = ITA
+					NOT = { has_government = fascism }
+					}
+					original_tag = USA
+					original_tag = ENG
+					original_tag = SOV
+					original_tag = SWE
+					original_tag = FRA
+					original_tag = DEN
+					original_tag = NOR
+					original_tag = ALB
+					original_tag = GRE
+					original_tag = TUR
+					original_tag = SWI
+					original_tag = SER
+					original_tag = YUG
+					original_tag = ROM
+					original_tag = SPR
+					original_tag = LAT
+					original_tag = EST
+					original_tag = LIT
+					original_tag = AUS
+					original_tag = POL
+					original_tag = CZE
+					original_tag = HOL
+					original_tag = BEL
+					original_tag = LUX
+					original_tag = DEN
+					original_tag = BUL
+					original_tag = POR
+					original_tag = FIN
+					original_tag = IRE
+					original_tag = HUN
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = CRO
+					original_tag = D01
+					original_tag = WGR
+					original_tag = DDR
+					original_tag = ISR
+					original_tag = UKR
+					original_tag = GEO
+					original_tag = KAZ
+					original_tag = AZR
+					original_tag = ARM
+					original_tag = BLR
+					original_tag = QUE
+					original_tag = NEW
+					original_tag = VLA
+					original_tag = WLL
+					original_tag = SAP
+					original_tag = ICE
+					original_tag = NZL
+					original_tag = AST
+					original_tag = MNT
+				}
+			}
+			
+			traits = { supreme_com_reformer }
+		}
+		generic_supreme_commander3 = {
+			
+			allowed = {
+				OR = {
+				AND = {
+					original_tag = GER
+					NOT = { has_government = fascism }
+					}
+				AND = {
+					original_tag = ITA
+					NOT = { has_government = fascism }
+					}
+					original_tag = USA
+					original_tag = ENG
+					original_tag = SOV
+					original_tag = SWE
+					original_tag = FRA
+					original_tag = DEN
+					original_tag = NOR
+					original_tag = ALB
+					original_tag = GRE
+					original_tag = TUR
+					original_tag = SWI
+					original_tag = SER
+					original_tag = YUG
+					original_tag = ROM
+					original_tag = SPR
+					original_tag = LAT
+					original_tag = EST
+					original_tag = LIT
+					original_tag = AUS
+					original_tag = POL
+					original_tag = CZE
+					original_tag = HOL
+					original_tag = BEL
+					original_tag = LUX
+					original_tag = DEN
+					original_tag = BUL
+					original_tag = POR
+					original_tag = FIN
+					original_tag = IRE
+					original_tag = HUN
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = CRO
+					original_tag = D01
+					original_tag = WGR
+					original_tag = DDR
+					original_tag = ISR
+					original_tag = UKR
+					original_tag = GEO
+					original_tag = KAZ
+					original_tag = AZR
+					original_tag = ARM
+					original_tag = BLR
+					original_tag = QUE
+					original_tag = NEW
+					original_tag = VLA
+					original_tag = WLL
+					original_tag = SAP
+					original_tag = ICE
+					original_tag = NZL
+					original_tag = AST
+					original_tag = MNT
+				}
+			}
+			
+			traits = { supreme_com_political }
+		}
+		generic_supreme_commander4 = {
+			
+			allowed = {
+				OR = {
+				AND = {
+					original_tag = GER
+					NOT = { has_government = fascism }
+					}
+				AND = {
+					original_tag = ITA
+					NOT = { has_government = fascism }
+					}
+					original_tag = USA
+					original_tag = ENG
+					original_tag = SOV
+					original_tag = SWE
+					original_tag = FRA
+					original_tag = DEN
+					original_tag = NOR
+					original_tag = ALB
+					original_tag = GRE
+					original_tag = TUR
+					original_tag = SWI
+					original_tag = SER
+					original_tag = YUG
+					original_tag = ROM
+					original_tag = SPR
+					original_tag = LAT
+					original_tag = EST
+					original_tag = LIT
+					original_tag = AUS
+					original_tag = POL
+					original_tag = CZE
+					original_tag = HOL
+					original_tag = BEL
+					original_tag = LUX
+					original_tag = DEN
+					original_tag = BUL
+					original_tag = POR
+					original_tag = FIN
+					original_tag = IRE
+					original_tag = HUN
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = CRO
+					original_tag = D01
+					original_tag = WGR
+					original_tag = DDR
+					original_tag = ISR
+					original_tag = UKR
+					original_tag = GEO
+					original_tag = KAZ
+					original_tag = AZR
+					original_tag = ARM
+					original_tag = BLR
+					original_tag = QUE
+					original_tag = NEW
+					original_tag = VLA
+					original_tag = WLL
+					original_tag = SAP
+					original_tag = ICE
+					original_tag = NZL
+					original_tag = AST
+					original_tag = MNT
+				}
+			}
+			
+			traits = { supreme_com_old_guard }
+		}
+		generic_supreme_commander_a1 = {
+		
+			allowed = {
+				OR = {
+					original_tag = BHU
+					original_tag = CHI
+					original_tag = PRC
+					original_tag = JAP
+					original_tag = KOR
+					original_tag = MEN
+					original_tag = MAN
+					original_tag = NEP
+					original_tag = PHI
+					original_tag = SIA
+					original_tag = SIK
+					original_tag = TIB
+					original_tag = YUN
+					original_tag = MON
+					original_tag = TAN
+					original_tag = GXC
+					original_tag = SHX
+					original_tag = XSM
+					original_tag = VIN
+					original_tag = CAM
+					original_tag = MAL
+					original_tag = INS
+					original_tag = LAO
+				}
+			}
+			
+			traits = { supreme_com_planner }
+		}
+		generic_supreme_commander_a2 = {
+			
+			allowed = {
+				OR = {
+					original_tag = BHU
+					original_tag = CHI
+					original_tag = PRC
+					original_tag = JAP
+					original_tag = KOR
+					original_tag = MEN
+					original_tag = MAN
+					original_tag = NEP
+					original_tag = PHI
+					original_tag = SIA
+					original_tag = SIK
+					original_tag = TIB
+					original_tag = YUN
+					original_tag = MON
+					original_tag = TAN
+					original_tag = GXC
+					original_tag = SHX
+					original_tag = XSM
+					original_tag = VIN
+					original_tag = CAM
+					original_tag = MAL
+					original_tag = INS
+					original_tag = LAO
+				}
+			}
+			
+			traits = { supreme_com_reformer }
+		}
+		generic_supreme_commander_a3 = {
+		
+			allowed = {
+				OR = {
+					original_tag = BHU
+					original_tag = CHI
+					original_tag = PRC
+					original_tag = JAP
+					original_tag = KOR
+					original_tag = MEN
+					original_tag = MAN
+					original_tag = NEP
+					original_tag = PHI
+					original_tag = SIA
+					original_tag = SIK
+					original_tag = TIB
+					original_tag = YUN
+					original_tag = MON
+					original_tag = TAN
+					original_tag = GXC
+					original_tag = SHX
+					original_tag = XSM
+					original_tag = VIN
+					original_tag = CAM
+					original_tag = MAL
+					original_tag = INS
+					original_tag = LAO
+				}
+			}
+			
+			traits = { supreme_com_political }
+		}
+		generic_supreme_commander_a4 = {
+			
+			allowed = {
+				OR = {
+					original_tag = BHU
+					original_tag = CHI
+					original_tag = PRC
+					original_tag = JAP
+					original_tag = KOR
+					original_tag = MEN
+					original_tag = MAN
+					original_tag = NEP
+					original_tag = PHI
+					original_tag = SIA
+					original_tag = SIK
+					original_tag = TIB
+					original_tag = YUN
+					original_tag = MON
+					original_tag = TAN
+					original_tag = GXC
+					original_tag = SHX
+					original_tag = XSM
+					original_tag = VIN
+					original_tag = CAM
+					original_tag = MAL
+					original_tag = INS
+					original_tag = LAO
+				}
+			}
+			
+			traits = { supreme_com_old_guard }
+		}
+	}
 	army_chief = {
 		
 		generic_army_chief_off = {

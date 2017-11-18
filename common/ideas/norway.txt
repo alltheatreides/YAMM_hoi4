@@ -1,30 +1,11 @@
 ideas = {
 
-	political_advisor = {
-
-		NOR_halvdan_koht = {
-
-			picture = generic_political_advisor_europe_1
-
-			allowed = {
-				original_tag = NOR
-			}
-			
-			traits = { smooth_talking_charmer }
-		}
-
-		NOR_adolf_indrebo = {
-
-			picture = generic_political_advisor_europe_2
-				
-			allowed = {
-				original_tag = NOR
-			}
-			
-			traits = { captain_of_industry }
-		}
-
-		NOR_trygve_halvdan_lie = {
+##################
+####Politicians
+##################
+#HoS
+head_of_state = {
+NOR_trygve_halvdan_lie = {
 
 			picture = generic_political_advisor_europe_3
 			
@@ -34,30 +15,88 @@ ideas = {
 			
 			traits = { popular_figurehead }
 		}
-				
-		NOR_soensteby = {
+
+	NOR_haakon_vii = {
+		
+		allowed = {
+			original_tag = NOR
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = -1
+		traits = { popular_figurehead }
+	}
+}
+
+#Foreign
+foreign_minister = {
+NOR_halvdan_koht = {
+
+			picture = generic_political_advisor_europe_1
+
 			allowed = {
 				original_tag = NOR
 			}
 			
-			picture = generic_political_advisor_europe_3
-			
-			available = {
-				if = {
-					has_completed_focus = NOR_gutta_paa_skauen
-				}
-				has_government = democratic
-			}
-			
-			cost = 50
-			
-			traits = { partisan_leader }
-			
-			ai_will_do = {
-				factor = 1
-			}
+			traits = { smooth_talking_charmer }
 		}
+}
+
+#Propaganda/Security
+interior_minister = {
+
+}
+
+#Intelligence
+intel_minister = {
+
+}
+
+#Economic
+economic_minister = {
+NOR_adolf_indrebo = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = NOR
+			}
+			
+			traits = { captain_of_industry }
+		}
+}
+political_advisor = {
+	NOR_r_b_bennett = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = NOR
+			}
+			
+			traits = { conservative_reformer }
 	}
+	NOR_vincent_massey = {
+		picture = generic_political_advisor_europe_2
+		
+		allowed = {
+			original_tag = NOR
+		}
+		
+		traits = { liberal_reformer }
+	}
+	NOR_john_horne_blackmore = {
+		picture = generic_political_advisor_europe_3
+		
+		allowed = {
+			original_tag = NOR
+		}
+		
+		traits = { socialist_reformer }
+	}
+	
+}
 
 	army_chief = {
 		
@@ -822,23 +861,23 @@ ideas = {
 			}
 		}
 		
-		NOR_haakon = {
+		# NOR_haakon = {
 			
-			allowed = {
-				always = no
-			}
+			# allowed = {
+				# always = no
+			# }
 			
-			allowed_civil_war = {
-				has_government = democratic
-			}
+			# allowed_civil_war = {
+				# has_government = democratic
+			# }
 			
-			removal_cost = -1
+			# removal_cost = -1
 			
-			modifier = {
-			}
+			# modifier = {
+			# }
 			
-			traits = { popular_figurehead }
-		}
+			# traits = { popular_figurehead }
+		# }
 		
 		NOR_kongens_garde = {
 			

@@ -505,67 +505,85 @@ ideas = {
 		
 	}
 
-	political_advisor = {
 
-		CZE_vojtech_tuka = {
 
-			picture = generic_political_advisor_europe_1
+##################
+####Politicians
+##################
+	#HoS
+	head_of_state = {
 
-			allowed = {
-				original_tag = CZE
-			}
-			
-			traits = { prince_of_terror }
-		}
+	}
 
-		CZE_ferdinand_catlos = {
-
-			picture = generic_army_europe_2
-				
-			allowed = {
-				original_tag = CZE
-			}
-			
-			traits = { quartermaster_general }
-		}
-
+#Foreign
+	foreign_minister = {
 		CZE_jozef_tiso = {
-
+			allowed = {
+				original_tag = CZE
+			}
+			
 			picture = generic_political_advisor_europe_3
 			
+			traits = {   backroom_backstabber }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		CZE_stefan_osusky = {
 			allowed = {
 				original_tag = CZE
 			}
 			
-			traits = { backroom_backstabber }
-
-			ai_will_do = {
-				factor = 0
+			available = {
+				NOT = { has_government = fascism }
 			}
-		}
-
-		CZE_stefan_osusky = {
-
+			
 			picture = generic_democratic_europe
 			
-			allowed = {
-				original_tag = CZE
-			}
-			
-			traits = { democratic_reformer }
-
+			traits = {   ideological_crusader }
+			cancel_if_invalid = yes
 			ai_will_do = {
-				factor = 0
+				factor = 1
+			}
 			}
 		}
-
-		CZE_gustav_husak = {
-
-			picture = generic_communist_europe
-			
+	#Propaganda/Security
+	interior_minister = {
+		CZE_vojtech_tuka = {
 			allowed = {
 				original_tag = CZE
 			}
+			
+			picture = generic_political_advisor_europe_1
+			
+			traits = {   prince_of_terror }
+		}
+		}
+
+	#Intelligence
+	intel_minister = {
+
+	}
+	#Economic
+	economic_minister = {
+		CZE_ferdinand_catlos = {
+			allowed = {
+				original_tag = CZE
+			}
+			picture = generic_army_europe_2
+				
+			traits = { apolitical quartermaster_general }
+		}
+	}
+	#Political Advisors
+	political_advisor = {
+		CZE_gustav_husak = {
+			allowed = {
+				original_tag = CZE
+			}
+			
+			picture = generic_communist_europe
 			
 			traits = { communist_revolutionary }
 
@@ -573,21 +591,19 @@ ideas = {
 				factor = 0
 			}
 		}
-
 		CZE_konrad_henlein = {
-
-			picture = generic_fascist_europe
-			
 			allowed = {
 				original_tag = CZE
-			}
-			
+		}
+		
+			picture = generic_fascist_europe
+		
 			traits = { fascist_demagogue }
 
 			ai_will_do = {
 				factor = 0
 			}
-		}
+		}	
 	}
 
 

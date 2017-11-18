@@ -575,31 +575,89 @@ ideas = {
 		}
 	}
 
-	political_advisor = {
+head_of_state = {
+	YUG_slobodan_jovanovic = {
 
-		YUG_slobodan_jovanovic = {
-
+		picture = generic_political_advisor_europe_1
+		
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			democratic_govt = yes
+			has_government = monarchism
+		}
+		traits = {   intellectual }
+	}
+	YUG_prince_paul = {
+		
+		allowed = {
+			original_tag = YUG
+		}
+		
+		available = {
+			OR = {
+				has_government = monarchism
+				AND = {
+					democratic_govt = yes
+					has_country_flag = const_mon
+				}
+			}
+		}
+		traits = {   popular_figurehead }
+	}
+		YUG_tito_hos = {
 			picture = generic_political_advisor_europe_1
 			
 			allowed = {
 				original_tag = YUG
 			}
 			
-			traits = { popular_figurehead }
+			available = {
+				has_government = communism
+			}
+			
+			traits = { communist }
 		}
-
-		YUG_ivan_ribar = {
-
-			picture = generic_political_advisor_europe_5
-
+		YUG_milan_grol = {
+			picture = generic_political_advisor_europe_1
+			
 			allowed = {
 				original_tag = YUG
 			}
 			
-			traits = { captain_of_industry }
+			available = {
+				democratic_govt = yes
+				has_government = monarchism
+			}
+			
+			traits = {   silent_workhorse }
 		}
-
-		YUG_milan_nedic = {
+		YUG_milan_stojadinovic = {
+			
+			allowed = {
+				original_tag = YUG
+			}
+			
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = monarchism
+					democratic_govt = yes
+				}
+			}
+			
+			traits = {   naive_appeaser }
+		}
+	}
+	foreign_minister = {
+	
+	}
+	intel_minister = {
+	
+	}
+	interior_minister = {
+	YUG_milan_nedic = {
 
 			picture = generic_army_europe_2
 			
@@ -609,47 +667,43 @@ ideas = {
 			
 			traits = { prince_of_terror }
 		}
+	}
+	economic_minister = {
+	YUG_ivan_ribar = {
 
-		YUG_ivo_lola_ribar = {
+			picture = generic_political_advisor_europe_5
 
-			picture = generic_communist_europe
-			
 			allowed = {
 				original_tag = YUG
 			}
 			
+			traits = { captain_of_industry }
+		}
+	}
+	political_advisor = {
+		YUG_ivo_lola_ribar = {
+			picture = generic_communist_europe
+		
+			allowed = {
+				original_tag = YUG
+			}
+		
 			traits = { communist_revolutionary }
 		}
-
-		YUG_milovan_djilas = {
-
+	YUG_milovan_djilas = {
 			picture = generic_democratic_europe
 			
 			allowed = {
 				original_tag = YUG
 			}
 			
-			traits = { democratic_reformer }
+			traits = { socialist_reformer }
 		}
-
 		YUG_dimitrije_ljotic = {
-
 			picture = generic_fascist_europe
 			
 			allowed = {
 				original_tag = YUG
-				if = {   
-                                    OR = { 
-                                        AND = { 
-                                             OR = {  original_tag = FIN
-                                                     original_tag = SIA
-                                                  }
-
-                                                  date > 1937.1.1 
-                                              }
-                                        date > 1939.1.1
-                                        }
-                                     }
 			}
 			
 			traits = { fascist_demagogue }

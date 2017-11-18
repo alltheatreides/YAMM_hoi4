@@ -295,41 +295,115 @@ ideas = {
 		}
 	}
 
-	political_advisor = {
+head_of_state = {
+	HUN_miklos_horthy = {
 
-		HUN_kalman_kanya = {
+			allowed = {
+				original_tag = HUN
+			}
+			available = {
+				OR = {
+				has_government = monarchism
+				has_government = neutrality
+				has_government = conservatism
+				}
+			}
+			traits = {   }
+		}
+	}
+	foreign_minister = {
+			
+	HUN_kalman_kanya = {
 
 			picture = generic_political_advisor_europe_1
 
 			allowed = {
 				original_tag = HUN
 			}
-			
-			traits = { compassionate_gentleman }
-		}
-
-		HUN_lajos_remenyi_schneller = {
-
-			picture = generic_political_advisor_europe_1
-
-			allowed = {
-				original_tag = HUN
+			available = {
+				date < 1945.3.1
+				OR = {
+					has_government = conservatism
+					has_government = monarchism
+					has_government = neutrality
+					has_government = fascism
+				}
 			}
-			
-			traits = { captain_of_industry }
+			traits = {   compassionate_gentleman }
 		}
 
-		HUN_vilmos_roder = {
+		HUN_kalman_daranyi = {
 
 			picture = generic_political_advisor_europe_2
 			
 			allowed = {
 				original_tag = HUN
 			}
-			
-			traits = { war_industrialist }
-
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = monarchism
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { apolitical iron_fisted_brute }
 		}
+	}
+	intel_minister = {
+	
+	}
+	interior_minister = {
+	
+		}
+	economic_minister = {
+	HUN_lajos_remenyi_schneller = {
+
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				original_tag = HUN
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = monarchism
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = {   captain_of_industry }
+		}
+	HUN_vilmos_roder = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = HUN
+			}
+			
+			traits = {   war_industrialist }
+
+			}
+	HUN_tihamer_fabinyi = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = HUN
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = monarchism
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { apolitical capitalist }
+		}
+		}
+	political_advisor = {
 
 		HUN_gusztav_gratz = {
 
@@ -340,18 +414,7 @@ ideas = {
 				has_dlc = "Death or Dishonor"
 			}
 			
-			traits = { staunch_monarchist }
-		}
-
-		HUN_kalman_daranyi = {
-
-			picture = generic_political_advisor_europe_2
-				
-			allowed = {
-				original_tag = HUN
-			}
-			
-			traits = { smooth_talking_charmer }
+			traits = { royalist_reformer }
 		}
 
 		HUN_zoltan_tildy = {
@@ -361,8 +424,15 @@ ideas = {
 			allowed = {
 				original_tag = HUN
 			}
-			
-			traits = { silent_workhorse }
+			available = {
+				OR = {
+					democratic_govt = yes
+					has_government = monarchism
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = {   silent_workhorse }
 		}
 
 		HUN_laszlo_rajk = {
@@ -384,7 +454,7 @@ ideas = {
 				original_tag = HUN
 			}
 			
-			traits = { democratic_reformer }
+			traits = { conservative_reformer }
 		}
 
 		HUN_gyula_gombos_de_jakfa = {

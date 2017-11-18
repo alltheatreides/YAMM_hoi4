@@ -239,6 +239,21 @@ add_to_faction = GER
 add_ideas = {
 	sour_loser
 	general_staff
+	
+	#Politicians
+	hitler_hos
+	konstantin_von_neurath #FM
+	heinrich_himmler     #interior
+	wilhelm_canaris      #intel
+	hjalmar_schacht      #econ
+	hermann_goering      #poli
+	rudolf_hess          #poli
+	werner_von_fritsch   #SC
+	ludwig_beck
+	goering
+	raeder
+	
+	#Laws
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
@@ -251,7 +266,9 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
+		a_hitler
 		dictator
+		charismatic
 	}
 }
 

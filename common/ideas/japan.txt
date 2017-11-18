@@ -156,56 +156,258 @@ ideas = {
 	}
 	
 	
-	political_advisor = {	
-		sanzo_nosaka = {
+##################
+####Politicians
+##################
+#HoS
+head_of_state = {
+	nosaka_hos = {
+		allowed = {
+			original_tag = "JAP"
+			has_government = communism
+		}
+		traits = { communist }
+	}
+	hirohito_hos = {
+		allowed = {
+			original_tag = "JAP"
+		}
+		picture = "gfx/interface/ideas/ministers/idea_hirohito"
+		traits = {   popular_figurehead }
+	}
+}
+
+#Foreign
+foreign_minister = {
+		JAP_chiune_sugihara = {
 			
+			picture = generic_political_advisor_asia_3
 			
 			allowed = {
-				original_tag = "JAP"
+				original_tag = JAP
 			}
+			available = {
+			OR = {
+				has_government = fascism
+				has_government = monarchism
+				}
+			}			
+			traits = {   compassionate_gentleman }
+		}
+		hachiro_arita = {
 			
-
+			picture = idea_hachiro_arita
 			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
+			allowed = {
+				original_tag = JAP
 			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
+			available = {
+			OR = {
+				has_government = fascism
+				has_government = monarchism
 				}
 			}
 			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
+			traits = {   smooth_talking_charmer }
+		}
+}
+
+#Propaganda/Security
+interior_minister = {
+		shizuichi_tanaka = {
 			
-		kijuro_shidehara = {
-			
+			picture = idea_shizuichi_tanaka
 			
 			allowed = {
-				original_tag = "JAP"
+				original_tag = JAP
 			}
-			
-
-			
-			traits = { democratic_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = democratic
+			available = {
+			OR = {
+				has_government = fascism
+				has_government = monarchism
 				}
 			}
 			
+			traits = {   prince_of_terror }
+		}
+		kingoro_hashimoto_interior = {
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			OR = {
+				has_government = fascism
+				has_government = monarchism
+				}
+			}
+			traits = {schemer   prince_of_terror }
+			cancel_if_invalid = no
+		}
+		sadao_araki_interior = {
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+			OR = {
+				has_government = fascism
+				has_government = monarchism
+				}
+			}
+			traits = {   efficient_sociopath }
+			cancel_if_invalid = no
+		}
+		
+}
+
+#Intelligence
+intel_minister = {
+		harukichi_hyakutake = {
+			
+			picture = idea_harukichi_hyakutake
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+			traits = {   dismal_enigma }
+		}
+		arisue_seizo = {
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+			traits = {   codebreaker }
+		}
+}
+
+#Economic
+economic_minister = {
+		okinori_kaya = {			
+			picture = idea_okinori_kaya
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+			available = {
+			OR = {
+				has_government = fascism
+				has_government = monarchism
+				}
+			}
+			
+			traits = {   armaments_organizer }
+			
+		}
+		nobusuke_kishi = { 
+			allowed = {
+				original_tag = JAP
+			}
+			
+			available = {
+			OR = {
+				has_government = fascism
+				has_government = monarchism
+				has_government = conservatism
+				has_government = liberalism
+				}
+			}
+			
+			traits = {   armaments_organizer }
+			
+			cancel_if_invalid = no
+		}
+		teiichi_suzuki = {
+			allowed = {
+				original_tag = JAP
+				}
+				
+			available = {
+			OR = {
+				has_government = fascism
+				has_government = monarchism
+				}
+			}
+			
+			traits = {   war_industrialist }
+			
+			cancel_if_invalid = no
+		}
+	tsukizo_akinaga = {
+			allowed = {
+				original_tag = JAP
+				}
+				
+			available = {
+			OR = {
+				has_government = fascism
+				has_government = monarchism
+				}
+			}
+			
+			traits = {   armaments_organizer }
+			
+			cancel_if_invalid = no
+		}
+	shozo_murata = {
+			allowed = {
+				original_tag = JAP
+				}
+				
+			available = {
+			OR = {
+				has_government = fascism
+				has_government = monarchism
+				}
+			}
+			
+			traits = {   resource_industrialist }
+			
+			cancel_if_invalid = no
+		}
+	ryoichi_sasakawa = {
+			allowed = {
+				original_tag = JAP
+				}
+			available = {
+			OR = {
+				has_government = fascism
+				has_government = monarchism
+				}
+			}
+			traits = {   military_entrepreneur }
+			
+			cancel_if_invalid = no
+			
 			ai_will_do = {
-				factor = 0
+				factor = 100
+			}
+	}
+}
+
+#Advisors
+political_advisor = {	
+		sadao_araki = {
+			
+			picture = idea_sadao_araki
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+			traits = { fascist_demagogue schemer powerful }
+			
+			on_add = {
+				custom_effect_tooltip = powerful_TT
+				set_country_flag = araki_powerful
+			}
+			ai_will_do = {
+				factor = 20
+				modifier = {
+					factor = 0
+					# democratic_govt = yes
+				}
 			}
 		}
 		
@@ -245,46 +447,57 @@ ideas = {
 			
 			traits = { silent_workhorse }
 		}
-
-		JAP_hiroshi_oshima = {
-			
-			picture = generic_political_advisor_asia_1
-			
-			allowed = {
-				original_tag = JAP
-			}
-			
-			traits = { prince_of_terror }
-		}
-
-		JAP_chiune_sugihara = {
-			
-			picture = generic_political_advisor_asia_3
-			
-			allowed = {
-				original_tag = JAP
-			}
-			
-			traits = { compassionate_gentleman }
-		}
-
-		takuo_godo = {
-
-			picture = GFX_idea_takuo_godo
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			traits = { war_industrialist }
-
-			ai_will_do = {
-				factor = 2
-			}
-		}
 	}
 		
 	# MILITARY
+	supreme_commander = {
+		tojo_sc = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			traits = { supreme_com_political }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		sugiyama_sc = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			traits = { supreme_com_aggressive }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		yamamoto_sc = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			traits = { supreme_com_organizer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
 	army_chief = {
 		
 		kanin_kotohito = {
