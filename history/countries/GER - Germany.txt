@@ -42,6 +42,7 @@ set_technology = {
 	formation_flying = 1
 	synth_oil_experiments = 1
 	support_weapons = 1
+	support_weapons2 = 1
 	transport = 1
 	tech_field_hospital = 1
 	tech_military_police = 1

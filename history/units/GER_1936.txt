@@ -543,7 +543,7 @@ instant_effect = {
 	
 	add_equipment_production = {
 		equipment = {
-			type = heavy_infantry_equipment_0
+			type = heavy_infantry_equipment_1
 			creator = "GER"
 		}
 		requested_factories = 5

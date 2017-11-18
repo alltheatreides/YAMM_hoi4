@@ -2236,6 +2236,10 @@ focus_tree = {
 				category = armor
 			}
 			ENG = { country_event = { days = 1 id = yamm.33 }	}
+			add_relation_modifier = {
+				target = ENG
+				modifier = ROM_license_german_equipment
+			}
 		}
 	}
 
