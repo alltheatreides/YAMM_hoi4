@@ -1,0 +1,34 @@
+﻿add_namespace = tankvariants
+
+# Germany - PzKpfw III Ausf.J
+country_event = {
+	id = tankvariants.1
+	title = tankvariants.1.t
+	desc = tankvariants.1.d
+	picture = GFX_report_event_tank_factory
+
+	trigger = {
+		tag = GER
+		date > 1941.1.1
+		GER = { has_tech = basic_medium_tank }
+	}
+	
+	mean_time_to_happen = { days = 30 }
+
+	option = {
+		name = tankvariants.1.a
+		create_equipment_variant = {
+			name = "PzKpfw III Ausf.J"
+			type = medium_tank_equipment_1
+			parent_version = 0
+			upgrades = {
+				tank_gun_upgrade = 5
+				tank_armor_upgrade = 3
+				tank_engine_upgrade = 5
+				tank_reliability_upgrade = 4
+				tank_production_upgrade = 1
+			}
+		}
+	}
+}
+

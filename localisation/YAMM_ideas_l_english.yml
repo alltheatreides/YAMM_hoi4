@@ -4,6 +4,7 @@
  enigma_idea_desc:0 "Wouldn't you like to know?"
  blitzkrieg_idea:0 "Schwerpunkt!"
  blitzkrieg_idea_desc:0 "Trained and prepared for a surprise attack against the Soviet Union, the Wehrmacht now thunders against Germany's greatest ideological foe with relentless speed and ferocity."
+ production_speed_anti_air_building_factor:0 "Anti-Air Building Speed"
  leonid_serebryakov:0 "Leonid Serebryakov"
  alexey_stakhanov:0 "Alexey Stakhanov"
  hero_worker:0 "Hero Worker"

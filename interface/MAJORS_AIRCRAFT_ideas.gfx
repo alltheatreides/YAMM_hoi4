@@ -14,8 +14,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_gotha.tga"
 	}
 	spriteType = {
-		name = "GFX_idea_henschelair"
-		texturefile = "gfx/interface/ideas/idea_henschelair.tga"
+		name = "GFX_idea_henschel_aircraft"
+		texturefile = "gfx/interface/ideas/idea_henschel.dds"
 	}
 	
 	

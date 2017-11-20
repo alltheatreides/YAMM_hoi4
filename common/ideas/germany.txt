@@ -97,6 +97,7 @@ ideas = {
 			research_bonus = {
 				battlefield_support_tree = 0.10
 				jet_technology = 0.10
+				production_speed_anti_air_building_factor = 0.50
 			}
 
 		}	
@@ -182,7 +183,7 @@ ideas = {
 			picture = air_war_plans_division_focus
 			
 			modifier = {
-				# army_speed_factor = 0.15
+				army_speed_factor = 0.05
 				army_attack_factor = 0.10
 				army_org_factor = 0.10
 				army_morale_factor = 0.10
@@ -767,6 +768,29 @@ ideas = {
 			}
 			
 			traits = { arado_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		henschel_aircraft = {
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				date > 1942.1.1
+			}
+			
+			cost = 75
+			removal_cost = 10	
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { henschel_aircraft_manufacturer }
 			
 			ai_will_do = {
 				factor = 1

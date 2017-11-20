@@ -173,3 +173,9 @@
  yamm.92.d:0 "Mussolini just informed Marshals Pietro Badoglio, chief of the Supreme General Staff, and Italo Balbo that he intended to join the German war against Britain and France, so to be able to sit at the peace table "when the world is to be apportioned" following an Axis victory. The two marshals unsuccessfully attempted to persuade Mussolini that this was not a wise course of action, arguing that the Italian military was unprepared."
  yamm.92.a:0 "We can only accept this course of action..."
  yamm.92.b:0 "Rein the fool in !"
+ 
+ 
+ #Tank Variants
+ tankvariants.1.t:0 "The PzKpfw III Ausf.J"
+ tankvariants.1.d:0 "Our tank designers have realized that our light armor formations were not suited to this war as the light tanks armor was not sufficient for the combat needs and motorized formations could do replace them for cheaper. \n\nBut we could use our old PzKpfw III to replace them in their role, hence the latest version of the PzKpfw III, the PzKpfw III J."
+ tankvariants.1.a:0 "Why did you skipped the I version ?"

@@ -46,6 +46,7 @@ set_technology = {
 	transport = 1
 	tech_field_hospital = 1
 	tech_military_police = 1
+	Auftragstaktik = 1
 }
 
 

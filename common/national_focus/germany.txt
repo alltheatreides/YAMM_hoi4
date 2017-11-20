@@ -575,7 +575,12 @@ focus_tree = {
 				uses = 1
 				technology = tech_signal_company
 			}
-			
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 0.5
@@ -716,7 +721,6 @@ focus_tree = {
 				name = mech_army_bonus
 				technology = basic_medium_tank
 				technology = improved_medium_tank
-				technology = advanced_medium_tank
 				technology = mechanised_infantry
 			}	
 			# REVISIT Might want to add bonuses to Soviet through event, since focus branches from treaty

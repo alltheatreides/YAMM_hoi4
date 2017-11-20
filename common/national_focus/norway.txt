@@ -1087,7 +1087,7 @@ focus_tree = {
 		cost = 2
 		available = { 
 			OR = {
-				threat > 0.20
+				threat > 0.30
 				has_war = yes
 				has_government = fascism
 				has_government = communism

@@ -407,7 +407,7 @@ country_event = {
 	}
 	
 	immediate = {
-		add_ideas = SOV_conscripts_idea
+		add_timed_idea = { idea = SOV_conscripts_idea days = 730 }
 	}
 	
 	option = {
