@@ -86,31 +86,32 @@ country_event = {
 			country_event = { days = 1 id = hungary.2 }
 		}
 		set_country_flag = second_vienna_accepted_north
+		add_ideas = ROM_fascist_revisionism
 	}
-	option = { # Refuse
-		name = romania.2.b
-		ai_chance = { 
-			factor = 20 
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		HUN = {
-			country_event = { days = 1 id = hungary.4 }
-			effect_tooltip = { add_state_claim = 76 }
-		}
-		GER = {
-			country_event = { days = 1 id = germany.21 }
-			effect_tooltip = {
-				create_wargoal = {
-					type = take_state
-					target = ROM
-					generator = { 76 }
-				}
-			}
-		}
-	}
+	# option = { # Refuse
+		# name = romania.2.b
+		# ai_chance = { 
+			# factor = 20 
+			# modifier = {
+				# factor = 0
+				# is_historical_focus_on = yes
+			# }
+		# }
+		# HUN = {
+			# country_event = { days = 1 id = hungary.4 }
+			# effect_tooltip = { add_state_claim = 76 }
+		# }
+		# GER = {
+			# country_event = { days = 1 id = germany.21 }
+			# effect_tooltip = {
+				# create_wargoal = {
+					# type = take_state
+					# target = ROM
+					# generator = { 76 }
+				# }
+			# }
+		# }
+	# }
 }
 
 # Second Vienna Award - All of Transylvania
@@ -282,5 +283,36 @@ country_event = {
 			base = 0
 		}
 		
+	}
+}
+
+# Romania joins Barbarossa
+country_event = {
+	id = romania.7
+	title = romania.7.t
+	desc = romania.7.d
+	picture = GFX_country_event_rom_romania.50
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ROM
+		exists = yes
+		not = {	is_in_faction_with = SOV }
+		not = {	is_in_faction_with = ENG }
+		has_war_with = SOV
+		is_in_faction_with = GER
+		not = { has_country_flag = Romania_joins_Barbarossa }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+		
+	option = {
+		name = romania.7.a
+		set_country_flag = Romania_joins_Barbarossa
+		add_ideas = ROM_cross_the_prut
+		add_national_unity = 0.05
 	}
 }

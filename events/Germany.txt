@@ -468,32 +468,32 @@ country_event = {
 			country_event = { id = romania.2 }
 		}
 	}
-	option = { # Give Hungary all of Transylvania
-		trigger = {
-			ROM = {
-				controls_state = 77
-				controls_state = 83
-				controls_state = 84
-			}
-		}
-		name = germany.20.b
-		ai_chance = { 
-			factor = 10 
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		add_named_threat = { threat = 3 name = GER_second_vienna_award_HUN_all }
-		HUN = { 
-			set_country_flag = GER_second_vienna_award_HUN_all
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_HUN_all } 
-		}
-		ROM = {
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_ROM_all }
-			country_event = { id = romania.3 }
-		}
-	}
+	# option = { # Give Hungary all of Transylvania
+		# trigger = {
+			# ROM = {
+				# controls_state = 77
+				# controls_state = 83
+				# controls_state = 84
+			# }
+		# }
+		# name = germany.20.b
+		# ai_chance = { 
+			# factor = 10 
+			# modifier = {
+				# factor = 0
+				# is_historical_focus_on = yes
+			# }
+		# }
+		# add_named_threat = { threat = 3 name = GER_second_vienna_award_HUN_all }
+		# HUN = { 
+			# set_country_flag = GER_second_vienna_award_HUN_all
+			# add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_HUN_all } 
+		# }
+		# ROM = {
+			# add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_ROM_all }
+			# country_event = { id = romania.3 }
+		# }
+	# }
 	option = { # Give Hungary nothing
 		name = germany.20.c
 		ai_chance = { 
@@ -1597,7 +1597,7 @@ country_event = {
 			amount = 500 
 			producer = CZE 
 		}
-		
+		add_ideas = { GER_czech_factories }
 		if = {
 			limit = {
 				70 = {

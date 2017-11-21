@@ -179,3 +179,8 @@
  tankvariants.1.t:0 "The PzKpfw III Ausf.J"
  tankvariants.1.d:0 "Our tank designers have realized that our light armor formations were not suited to this war as the light tanks armor was not sufficient for the combat needs and motorized formations could do replace them for cheaper. \n\nBut we could use our old PzKpfw III to replace them in their role, hence the latest version of the PzKpfw III, the PzKpfw III J."
  tankvariants.1.a:0 "Why did you skipped the I version ?"
+ 
+ #Romania
+ romania.7.t:0 "Romania joins Barbarossa"
+ romania.7.d:0 "Soldiers,\n\nFrom the very first day of the new reign and of my national combat I vowed to lead you to victory. To wipe off the dishonorable blemish from the book of the nation and the  shadow of humiliation off your foreheads and epaulettes. Now is the time of the holiest battle, the battle for our forefathers' rights, and of the church.  The battle for the Romanian abodes and altars of all times.\n\nSoldiers, I order you: cross the Prut!\n\nCrush the enemy from the East and North. Throw the red yoke of Bolshevism off our overrun brothers. Bring back to the country the ancient Bassarabian native land and the forests of Bucovina, your fields and realms.\n\nMarshall Ion Antonescu, June 22, 1941."
+ romania.7.a:0 "Proceed."

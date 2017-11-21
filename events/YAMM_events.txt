@@ -2116,7 +2116,7 @@ country_event = {
 	desc = yamm.92.d
 	picture = GFX_report_event_hungry_mussolini
 	
-	hidden = yes
+	# hidden = yes
 	
 	fire_only_once = yes
 	
