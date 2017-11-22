@@ -1850,6 +1850,8 @@ country_event = {
 	desc = yamm.90.d
 	picture = GFX_report_event_urals_industry
 	
+	fire_only_once = yes
+	
 	trigger = {
 		219 = {
 			is_owned_and_controlled_by = SOV
@@ -1871,6 +1873,7 @@ country_event = {
 			industrial_complex > 0
 		}
 		has_defensive_war = yes
+		tag = SOV
 		573 = {
 			is_owned_and_controlled_by = SOV
 		}
