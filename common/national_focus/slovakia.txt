@@ -784,10 +784,10 @@ focus_tree = {
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
-				technology = fighter3
+				# technology = fighter3
 				technology = heavy_fighter1
 				technology = heavy_fighter2
-				technology = heavy_fighter3
+				# technology = heavy_fighter3
 			}
 		}
 	}
@@ -811,8 +811,9 @@ focus_tree = {
 				uses = 1
 				technology = strategic_bomber1
 				technology = strategic_bomber2
-				technology = strategic_bomber3
-				category = tactical_bomber
+				# technology = strategic_bomber3
+				technology = tactical_bomber1
+				technology = tactical_bomber2
 			}
 		}
 	}
@@ -958,10 +959,10 @@ focus_tree = {
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
-				technology = fighter3
+				# technology = fighter3
 				technology = heavy_fighter1
 				technology = heavy_fighter2
-				technology = heavy_fighter3
+				# technology = heavy_fighter3
 			}
 		}
 	}
@@ -987,8 +988,9 @@ focus_tree = {
 				uses = 1
 				technology = strategic_bomber1
 				technology = strategic_bomber2
-				technology = strategic_bomber3
-				category = tactical_bomber
+				# technology = strategic_bomber3
+				technology = tactical_bomber1
+				technology = tactical_bomber2
 			}
 		}
 	}	
@@ -1010,7 +1012,8 @@ focus_tree = {
 				bonus = 0.5
 				ahead_reduction = 1
 				uses = 1
-				category = cas_bomber
+				technology = CAS1
+				technology = CAS2
 			}
 		}
 	}
@@ -1253,7 +1256,7 @@ focus_tree = {
 				technology = early_submarine
 				technology = basic_submarine
 				technology = improved_submarine
-				technology = advanced_submarine
+				# technology = advanced_submarine
 			}
 		}
 	}
@@ -1290,9 +1293,9 @@ focus_tree = {
 				ahead_reduction = 1
 				uses = 1
 				technology = improved_light_cruiser
-				technology = advanced_light_cruiser
+				# technology = advanced_light_cruiser
 				technology = improved_heavy_cruiser
-				technology = advanced_heavy_cruiser
+				# technology = advanced_heavy_cruiser
 			}
 		}
 	}
@@ -1331,7 +1334,7 @@ focus_tree = {
 				technology = early_destroyer
 				technology = basic_destroyer
 				technology = improved_destroyer
-				technology = advanced_destroyer
+				# technology = advanced_destroyer
 			}
 		}
 	}
@@ -1371,13 +1374,13 @@ focus_tree = {
 				technology = basic_battlecruiser
 				technology = basic_battleship
 				technology = improved_battleship
-				technology = advanced_battleship
+				# technology = advanced_battleship
 				technology = heavy_battleship
 				technology = heavy_battleship2
 				technology = early_carrier
 				technology = basic_carrier
 				technology = improved_carrier
-				technology = advanced_carrier
+				# technology = advanced_carrier
 			}
 		}
 	}

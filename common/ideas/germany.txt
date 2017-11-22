@@ -205,7 +205,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = generic_production_bonus
+			# picture = generic_production_bonus
 			
 			removal_cost = -1
 			
@@ -836,7 +836,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.05
+				industry = 0.1
 				synth_resources = 0.1
 			}
 			

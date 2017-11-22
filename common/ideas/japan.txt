@@ -132,7 +132,7 @@ ideas = {
 			modifier = {
 				unity_factor = 0.15
 				army_morale_factor = 0.1
-				invasion_preparation = -0.5
+				invasion_preparation = -0.15
 			}			
 		}
 		
