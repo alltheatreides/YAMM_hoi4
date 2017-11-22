@@ -416,13 +416,15 @@ focus_tree = {
 			factor = 5
 		}
 		
+		cancel_if_invalid = no
+		
 		available = {
 			has_defensive_war_with = GER
 			SOV = { surrender_progress > 0.20 }
 		}
 		
 		completion_reward = {
-			add_timed_idea = { idea = SOV_The_Great_Patriotic_War_idea days = 912 }
+			add_timed_idea = { idea = SOV_The_Great_Patriotic_War_idea days = 800 }
 		}
 	}
 	

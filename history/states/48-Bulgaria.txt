@@ -20,6 +20,7 @@ state={
 			infrastructure = 5
 			industrial_complex = 6
 			air_base = 3
+			anti_air_building = 1
 		}
 		add_core_of = BUL
 	}

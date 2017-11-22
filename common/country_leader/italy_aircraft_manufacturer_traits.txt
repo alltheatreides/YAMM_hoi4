@@ -78,7 +78,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			tac_bomber_equipment = {
-				reliability = 0.2 maximum_speed = 0.1 air_agility = 0.1 air_defence = -0.1 air_bombing = 0.05
+				reliability = 0.2 maximum_speed = 0.1 air_agility = 0.1 air_defence = -0.05 air_bombing = 0.05
 			}
 		}
 	}

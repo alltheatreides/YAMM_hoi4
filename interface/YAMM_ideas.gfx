@@ -76,4 +76,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/idea_NOR_haakon.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_idea_GER_czech_factories"
+		texturefile = "gfx/interface/ideas/GER_czech_factories.dds"
+	}
+	
 }
