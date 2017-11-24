@@ -4,8 +4,10 @@ state={
 	name="STATE_42"
 	manpower = 3027739
 	resources={
-		steel=100
+		# steel=100
 		aluminium=24
+		iron=400
+		coal=100
 	}
 	
 	state_category = metropolis
@@ -17,7 +19,7 @@ state={
 			infrastructure = 7
 			industrial_complex = 3
 			anti_air_building = 3
-
+			steel_refinery = 10
 		}
 		add_core_of = GER
 	

@@ -23,6 +23,7 @@ state={
 			anti_air_building = 3
 			air_base = 6
 			anti_air_building = 3
+			power_station_coal = 2
 		}
 		add_core_of = GER
 
