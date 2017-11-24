@@ -118,6 +118,7 @@ sub_units = {
 
 		need = {
 			infantry_equipment = 10
+			small_arms_ammunition = 30
 		}
 
 		plains = {

@@ -25,7 +25,7 @@ sub_units = {
         need = {
             anti_tank_equipment = 36
             motorized_equipment = 40
-			
+			shells_ammunition = 108
         }
 
         transport = motorized_equipment

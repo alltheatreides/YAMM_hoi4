@@ -23,6 +23,7 @@ sub_units = {
 
 		need = {
 			light_tank_artillery_equipment = 12
+			shells_ammunition = 60
 			
 		}
 		manpower = 500
@@ -84,7 +85,7 @@ sub_units = {
 
 		need = {
 			medium_tank_artillery_equipment = 12
-			
+			shells_ammunition = 60
 		}
 		manpower = 500
 		max_organisation = 0
@@ -150,7 +151,7 @@ sub_units = {
 
 		need = {
 			heavy_tank_artillery_equipment = 12
-			
+			shells_ammunition = 60
 		}
 		manpower = 500
 		max_organisation = 0
@@ -215,7 +216,7 @@ sub_units = {
 
 		need = {
 			super_heavy_tank_artillery_equipment = 6
-			
+			shells_ammunition = 60
 		}
 		manpower = 500
 		max_organisation = 0
@@ -280,7 +281,7 @@ sub_units = {
 
 		need = {
 			modern_tank_artillery_equipment = 12
-			
+			shells_ammunition = 60
 		}
 		manpower = 500
 		max_organisation = 0
