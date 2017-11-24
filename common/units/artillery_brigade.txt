@@ -25,6 +25,7 @@ sub_units = {
 		manpower = 500
 		need = {
 			artillery_equipment = 12
+			shells_ammunition = 120
 		}
 		
 		max_strength = 0.6
