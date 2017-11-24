@@ -2276,9 +2276,13 @@ country_event = {
 			bonus = 0.5
 			uses = 1
 			technology = basic_medium_tank
+			technology = basic_medium_td
+			technology = basic_medium_art
+			technology = basic_medium_spaa
 			technology = improved_medium_tank
 			technology = improved_medium_art
 			technology = improved_medium_td
+			technology = improved_heavy_tank
 			technology = improved_heavy_art
 			technology = improved_heavy_td
 		}

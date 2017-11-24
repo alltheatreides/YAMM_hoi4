@@ -564,13 +564,13 @@ country_event = {
 	}
 
 	# Refuse to negotiate
-	option = {
-		name = soviet.18.b
-		#SOV = { country_event = { id = soviet.20 days = 1 } }
-		ai_chance = { factor = 0 }
-		set_global_flag = CHI_no_national_front_flag
-		custom_effect_tooltip = CHI_no_united_front
-	}
+	# option = {
+		# name = soviet.18.b
+		# SOV = { country_event = { id = soviet.20 days = 1 } }
+		# ai_chance = { factor = 0 }
+		# set_global_flag = CHI_no_national_front_flag
+		# custom_effect_tooltip = CHI_no_united_front
+	# }
 }
 
 # Xi'an Incident - Communist China
@@ -620,13 +620,13 @@ country_event = {
 	}
 
 	# Refuse to negotiate
-	option = {
-		name = soviet.19.b
-		country_event = { id = soviet.22 days = 1 }
-		set_global_flag = CHI_no_national_front_flag
-		ai_chance = { factor = 0 }
-		custom_effect_tooltip = CHI_no_united_front
-	}
+	# option = {
+		# name = soviet.19.b
+		# country_event = { id = soviet.22 days = 1 }
+		# set_global_flag = CHI_no_national_front_flag
+		# ai_chance = { factor = 0 }
+		# custom_effect_tooltip = CHI_no_united_front
+	# }
 }
 
 # Xi'an Incident - Kuomintang Refuses

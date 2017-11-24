@@ -1872,7 +1872,7 @@ country_event = {
 			arms_factory > 2
 			industrial_complex > 0
 		}
-		has_defensive_war = yes
+		SOV = { has_defensive_war = yes }
 		tag = SOV
 		573 = {
 			is_owned_and_controlled_by = SOV
@@ -2086,6 +2086,23 @@ country_event = {
 					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					limit = {
+						# ROOT = { has_full_control_of_state = PREV }
+						is_on_continent = europe
+						free_building_slots = {
+							building = arms_factory
+							size > 5
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
 						level = 5
 						instant_build = yes
 					}
