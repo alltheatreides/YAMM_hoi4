@@ -1,0 +1,65 @@
+buildings = {
+
+	synthetic_rubber_refinery = {
+		show_on_map = 1
+		base_cost = 22000
+		icon_frame = 14
+		local_resources_rubber = 4
+		refinery = yes
+		#max_level = 0 # max: 5
+		max_level = 4 # This is the max unlock level
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+	}
+	steel_refinery = {
+		show_on_map = 1
+		base_cost = 10000
+		icon_frame = 15
+		local_resources_steel = 8
+		local_resources_iron = -4
+		local_resources_energy = -2
+		refinery = yes
+		#max_level = 0 # max: 5
+		max_level = 10 # This is the max unlock level
+		# shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+	}
+	aluminium_refinery = {
+		show_on_map = 1
+		base_cost = 10000
+		icon_frame = 16
+		local_resources_aluminium = 8
+		local_resources_bauxite = -4
+		local_resources_energy = -4
+		refinery = yes
+		#max_level = 0 # max: 5
+		max_level = 10 # This is the max unlock level
+		# shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+	}
+	power_station_coal = {
+		show_on_map = 1
+		base_cost = 10000
+		icon_frame = 17
+		max_level = 10 # This is the max unlock level
+		local_resources_energy = 6
+		local_resources_coal = -3
+		# shares_slots = yes
+		value = 4
+		infrastructure_construction_effect = yes
+	}
+	power_station_hydro = {
+		show_on_map = 1
+		base_cost = 10000
+		icon_frame = 18
+		max_level = 1 # This is the max unlock level
+		local_resources_energy = 6
+		# shares_slots = yes
+		value = 4
+		infrastructure_construction_effect = yes
+	}
+}
+#EOF#
