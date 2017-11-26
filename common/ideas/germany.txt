@@ -256,7 +256,7 @@ ideas = {
 			traits = { armaments_organizer }
 			
 			modifier = {
-				industrial_capacity_factory = 0.1
+				# industrial_capacity_factory = 0.1
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}

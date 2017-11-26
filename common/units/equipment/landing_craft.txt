@@ -1,0 +1,38 @@
+equipments = {
+
+	landing_craft_equipment = {
+		year = 1915
+
+		is_archetype = yes
+		# type = landing_craft	
+		group_by = archetype
+		
+		interface_category = interface_category_land
+
+		# Combat abilities
+		
+		
+        #Space taken in convoy
+        lend_lease_cost = 0
+		
+		build_cost_ic = 70
+		resources = {
+			oil = 1
+			steel = 1
+		}
+	}
+
+	landing_craft_1 = {
+		year = 1910
+
+		archetype = landing_craft_equipment
+		priority = 10
+	}
+	
+	landing_craft_2 = {
+		year = 1910
+
+		archetype = landing_craft_equipment
+		priority = 10
+	}
+}

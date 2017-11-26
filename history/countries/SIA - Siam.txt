@@ -2,6 +2,10 @@
 
 oob = "SIA_1936"
 
+add_ideas = {
+	real_neutrality
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
