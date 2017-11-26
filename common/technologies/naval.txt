@@ -11,7 +11,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1922
 		
@@ -46,7 +46,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		
 		start_year = 1936
 
@@ -81,7 +81,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -111,7 +111,7 @@ technologies = {
 			destroyer_4
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -152,7 +152,7 @@ technologies = {
 		#	research_cost_coeff = 0.75
 		#}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1922
 		
@@ -201,7 +201,7 @@ technologies = {
 			basic_light_cruiser_aa
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		
 		start_year = 1936
 		
@@ -249,7 +249,7 @@ technologies = {
 			improved_light_cruiser_aa
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -293,7 +293,7 @@ technologies = {
 			advanced_light_cruiser_aa
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -418,7 +418,7 @@ technologies = {
 		#	research_cost_coeff = 0.75
 		#}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1922
 		
@@ -453,7 +453,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		
 		start_year = 1936
 		
@@ -487,7 +487,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -517,7 +517,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -549,7 +549,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1922
 		
@@ -579,7 +579,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -610,7 +610,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1922
 		
 		folder = {
@@ -644,7 +644,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		
 		folder = {
@@ -677,7 +677,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1940
 		
 		folder = {
@@ -706,7 +706,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1944
 		
 		folder = {
@@ -736,7 +736,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		
 		folder = {
@@ -760,7 +760,7 @@ technologies = {
 			SH_battleship_2
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -789,7 +789,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1922
 		
 		folder = {
@@ -838,7 +838,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1940
 		
 		folder = {
@@ -882,7 +882,7 @@ technologies = {
 		amphibious_invasion_defence = 0.5
 		naval_invasion_capacity = 100
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1944
 		
 		folder = {
@@ -931,7 +931,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 				
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1922
 		
@@ -976,7 +976,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		
 		folder = {
@@ -1020,7 +1020,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -1060,7 +1060,7 @@ technologies = {
 			research_cost_coeff = 0.75
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -1100,7 +1100,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1936
 		
@@ -1131,7 +1131,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -1156,7 +1156,7 @@ technologies = {
 			light_carrier_3
 		}
 	
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -1186,7 +1186,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1922
 		
@@ -1221,7 +1221,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 
 		folder = {
@@ -1255,7 +1255,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -1285,7 +1285,7 @@ technologies = {
 			submarine_4
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1944
 		
