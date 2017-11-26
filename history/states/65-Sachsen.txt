@@ -4,7 +4,7 @@ state={
 	name="STATE_65"
 	manpower = 5592576
 	resources={
-		steel=90
+		# steel=90
 	}
 
 	state_category = metropolis
@@ -17,6 +17,8 @@ state={
 			arms_factory = 3
 			industrial_complex = 7
 			anti_air_building = 3
+			steel_refinery = 9
+			power_station_coal = 10
 		}
 		victory_points = {
 			514 5 

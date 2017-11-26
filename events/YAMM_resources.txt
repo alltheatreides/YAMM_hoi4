@@ -1,0 +1,131 @@
+﻿add_namespace = resources
+
+# Energy
+country_event = {
+	id = resources.1
+	title = resources.1.t
+	desc = resources.1.d
+	picture = GFX_report_event_tank_factory
+	
+	trigger = {
+		energy < 0
+		NOT = {
+			has_idea = power_outage
+		}
+	}
+	
+	immediate = {
+		add_ideas = power_outage
+	}
+	
+	option = {
+		name = resources.10.a
+	}
+}
+
+country_event = {
+	id = resources.2
+	title = resources.2.t
+	desc = resources.2.d
+	picture = GFX_report_event_tank_factory
+	
+	trigger = {
+		energy > 0
+		has_idea = power_outage
+	}
+	
+	immediate = {
+		remove_ideas = power_outage
+	}
+	
+	option = {
+		name = resources.10.a
+	}
+}
+
+# Bauxite
+country_event = {
+	id = resources.3
+	title = resources.3.t
+	desc = resources.3.d
+	picture = GFX_report_event_tank_factory
+	
+	trigger = {
+		bauxite < 0
+		NOT = {
+			has_idea = lack_of_bauxite
+		}
+	}
+	
+	immediate = {
+		add_ideas = lack_of_bauxite
+	}
+	
+	option = {
+		name = resources.10.a
+	}
+}
+
+country_event = {
+	id = resources.4
+	title = resources.4.t
+	desc = resources.4.d
+	picture = GFX_report_event_tank_factory
+	
+	trigger = {
+		bauxite > 0
+		has_idea = lack_of_bauxite
+	}
+	
+	immediate = {
+		remove_ideas = lack_of_bauxite
+	}
+	
+	option = {
+		name = resources.10.a
+	}
+}
+
+# Coal
+country_event = {
+	id = resources.5
+	title = resources.5.t
+	desc = resources.5.d
+	picture = GFX_report_event_tank_factory
+	
+	trigger = {
+		coal < 0
+		NOT = {
+			has_idea = lack_of_coal
+		}
+	}
+	
+	immediate = {
+		add_ideas = lack_of_coal
+	}
+	
+	option = {
+		name = resources.10.a
+	}
+}
+
+# Coal
+country_event = {
+	id = resources.6
+	title = resources.6.t
+	desc = resources.6.d
+	picture = GFX_report_event_tank_factory
+	
+	trigger = {
+		coal > 1
+		has_idea = lack_of_coal
+	}
+	
+	immediate = {
+		remove_ideas = lack_of_coal
+	}
+	
+	option = {
+		name = resources.10.a
+	}
+}
