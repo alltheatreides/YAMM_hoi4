@@ -42,32 +42,32 @@ resources = {
 		convoys = 0.1
 	}
 	
-	energy = {
-		icon_frame = 8
-		cic = 0.0625
-		convoys = 0.1
-	}
+	# energy = {
+		# icon_frame = 8
+		# cic = 0.0625
+		# convoys = 0.1
+	# }
 	
 	bauxite = {
-		icon_frame = 9
-		cic = 0.0625
+		icon_frame = 8
+		cic = 0.03125
 		convoys = 0.1
 	}
 	
 	iron = {
+		icon_frame = 9
+		cic = 0.03125
+		convoys = 0.1
+	}
+	
+	copper = {
 		icon_frame = 10
 		cic = 0.0625
 		convoys = 0.1
 	}
 	
-	copper = {
-		icon_frame = 11
-		cic = 0.0625
-		convoys = 0.1
-	}
-	
 	food = {
-		icon_frame = 12
+		icon_frame = 11
 		cic = 0.0625
 		convoys = 0.1
 	}

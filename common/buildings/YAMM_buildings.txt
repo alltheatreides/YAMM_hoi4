@@ -5,6 +5,7 @@ buildings = {
 		base_cost = 22000
 		icon_frame = 14
 		local_resources_rubber = 4
+		local_resources_coal = -2
 		refinery = yes
 		#max_level = 0 # max: 5
 		max_level = 5 # This is the max unlock level
@@ -18,10 +19,11 @@ buildings = {
 		icon_frame = 15
 		local_resources_steel = 10
 		local_resources_iron = -4
-		local_resources_energy = -2
+		local_resources_coal = -2
+		# local_resources_energy = -2
 		refinery = yes
 		#max_level = 0 # max: 5
-		max_level = 10 # This is the max unlock level
+		max_level = 30 # This is the max unlock level
 		# shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
@@ -32,44 +34,45 @@ buildings = {
 		icon_frame = 16
 		local_resources_aluminium = 10
 		local_resources_bauxite = -4
-		local_resources_energy = -1
+		# local_resources_energy = -1
+		local_resources_coal = -1
 		refinery = yes
 		#max_level = 0 # max: 5
-		max_level = 10 # This is the max unlock level
+		max_level = 30 # This is the max unlock level
 		# shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
 	}
-	power_station_coal = {
-		show_on_map = 1
-		base_cost = 10000
-		icon_frame = 17
-		max_level = 10 # This is the max unlock level
-		local_resources_energy = 10
-		local_resources_coal = -4
+	# power_station_coal = {
+		# show_on_map = 1
+		# base_cost = 10000
+		# icon_frame = 17
+		# max_level = 10 # This is the max unlock level
+		# local_resources_energy = 10
+		# local_resources_coal = -4
 		# shares_slots = yes
-		value = 4
-		infrastructure_construction_effect = yes
-	}
-	power_station_hydro = {
-		show_on_map = 1
-		base_cost = 10000
-		icon_frame = 18
-		max_level = 5 # This is the max unlock level
-		local_resources_energy = 12
+		# value = 4
+		# infrastructure_construction_effect = yes
+	# }
+	# power_station_hydro = {
+		# show_on_map = 1
+		# base_cost = 10000
+		# icon_frame = 18
+		# max_level = 5 # This is the max unlock level
+		# local_resources_energy = 12
 		# shares_slots = yes
-		value = 4
-		infrastructure_construction_effect = yes
-	}
-	power_station_gas = {
-		show_on_map = 1
-		base_cost = 10000
-		icon_frame = 20
-		max_level = 5 # This is the max unlock level
-		local_resources_energy = 12
+		# value = 4
+		# infrastructure_construction_effect = yes
+	# }
+	# power_station_gas = {
+		# show_on_map = 1
+		# base_cost = 10000
+		# icon_frame = 20
+		# max_level = 5 # This is the max unlock level
+		# local_resources_energy = 12
 		# shares_slots = yes
-		value = 4
-		infrastructure_construction_effect = yes
-	}
+		# value = 4
+		# infrastructure_construction_effect = yes
+	# }
 }
 #EOF#

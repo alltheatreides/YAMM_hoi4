@@ -21,7 +21,7 @@ state={
 			industrial_complex = 1
 			air_base = 6
 			anti_air_building = 3
-			steel_refinery = 10
+			steel_refinery = 5
 			aluminium_refinery = 4
 			power_station_coal = 3
 		}

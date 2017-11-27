@@ -16,7 +16,7 @@ state={
 		buildings = {
 			infrastructure = 6
 			anti_air_building = 3
-			steel_refinery = 6
+			steel_refinery = 3
 			aluminium_refinery = 2
 		}
 		add_core_of = GER
