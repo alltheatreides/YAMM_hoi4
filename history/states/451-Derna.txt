@@ -18,7 +18,6 @@ state={
 			1130 = {
 				naval_base = 6
 			}
-			anti_air_building = 3
 		}
 		add_core_of = LBA
 	}

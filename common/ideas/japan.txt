@@ -132,7 +132,6 @@ ideas = {
 			modifier = {
 				unity_factor = 0.15
 				army_morale_factor = 0.1
-				invasion_preparation = -0.15
 			}			
 		}
 		
@@ -158,57 +157,6 @@ ideas = {
 	
 	
 	political_advisor = {	
-		sanzo_nosaka = {
-			
-			
-			allowed = {
-				original_tag = "JAP"
-			}
-			
-
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
-			
-		kijuro_shidehara = {
-			
-			
-			allowed = {
-				original_tag = "JAP"
-			}
-			
-
-			
-			traits = { democratic_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
 		
 		kingoro_hashimoto = {
 			

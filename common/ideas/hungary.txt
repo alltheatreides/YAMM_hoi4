@@ -46,6 +46,7 @@ ideas = {
 			modifier = {
 				justify_war_goal_time = -0.5
 				planning_speed = 0.2
+				generate_wargoal_tension = -0.5
 			}
 		}
 
@@ -331,18 +332,6 @@ ideas = {
 
 		}
 
-		HUN_gusztav_gratz = {
-
-			picture = generic_political_advisor_europe_1
-
-			allowed = {
-				original_tag = HUN
-				has_dlc = "Death or Dishonor"
-			}
-			
-			traits = { staunch_monarchist }
-		}
-
 		HUN_kalman_daranyi = {
 
 			picture = generic_political_advisor_europe_2
@@ -364,33 +353,12 @@ ideas = {
 			
 			traits = { silent_workhorse }
 		}
-
-		HUN_laszlo_rajk = {
-
-			picture = generic_communist_europe
-			
-			allowed = {
-				original_tag = HUN
-			}
-			
-			traits = { communist_revolutionary }
-		}
-
-		HUN_jozsef_szell = {
-
-			picture = generic_democratic_europe
-			
-			allowed = {
-				original_tag = HUN
-			}
-			
-			traits = { democratic_reformer }
-		}
-
 		HUN_gyula_gombos_de_jakfa = {
 
 			picture = generic_fascist_europe
 			
+			available = { if = { date > 1938.6.1 } }
+								
 			allowed = {
 				original_tag = HUN
 			}

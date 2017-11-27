@@ -94,57 +94,6 @@ ideas = {
 	}
 		
 	political_advisor = {
-		amadeo_bordiga = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-			
-
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
-			
-		ivanoe_bonomi = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-			
-
-			
-			traits = { democratic_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
 		
 		carlo_scorza = {
 			

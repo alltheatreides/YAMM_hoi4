@@ -63,7 +63,7 @@ ideas = {
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 			}
-                }
+		}
 
                 AST_great_depression_4 = {
 
@@ -585,71 +585,6 @@ ideas = {
 			
 			traits = { compassionate_gentleman }
 		}
-
-		AST_generic_fascist_demagogue = {
-			
-			allowed = {
-				original_tag = AST
-				
-			}
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = AST_support_the_centre_party
-				}
-			}
-
-			picture = generic_political_advisor_europe_4
-			
-			traits = { fascist_demagogue }
-		
-			on_add = {
-				country_event = political.7
-			}
-		
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-		
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		AST_lance_sharkey = {
-			
-			allowed = {
-				original_tag = AST
-				
-			}
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = AST_empower_the_workers
-				}
-			}
-
-			picture = generic_communist_revolutionary_western_european_2d
-			
-			traits = { communist_revolutionary }
-		
-			on_add = {
-				country_event = political.1
-			}
-		
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-		
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
 
 		AST_arthur_calwell = {
 			

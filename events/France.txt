@@ -28,7 +28,7 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 75
+				factor = 100
 				16 = { NOT = { is_controlled_by = FRA } } #Paris	
 			}
 		} 
@@ -173,7 +173,7 @@ country_event = {
 		16 = { is_controlled_by = GER }
 		is_in_faction_with = ENG
 		ENG = { has_war_with = GER }
-		surrender_progress > 0.9
+		surrender_progress > 0.7
 		GER = {
 			is_faction_leader = yes
 		}
@@ -189,106 +189,14 @@ country_event = {
 	immediate = {
 		set_global_flag = achievement_france_surrender
 	}
-	
-
 	option = { # Become Free French
 		name = france.10.b
 		ai_chance = {
-			factor = 85
+			factor = 100
 		}
 		set_global_flag = fall_of_france
 		GER = { country_event = france.14 }
 		custom_effect_tooltip = france.10.b_tt
-	}
-}
-
-# France suggests a Union (Britain)
-country_event = {
-	id = france.11
-	title = france.11.t
-	desc = france.11.d
-	picture = GFX_report_event_degaulle_churchill
-	
-	is_triggered_only = yes
-	
-	option = { # Refuse Union
-		name = france.11.a
-		ai_chance = {
-			factor = 10
-		}
-		FRA = {
-			country_event = { hours = 6 id = france.13 }
-		}
-	}
-	option = { # Agree to Union
-		name = france.11.b
-		ai_chance = {
-			factor = 90
-		}
-		FRA = {
-			country_event = { hours = 6 id = france.12 }
-		}
-	}
-}
-
-# Britain agrees to Union (France)
-country_event = {
-	id = france.12
-	title = france.12.t
-	desc = france.12.d
-	picture = GFX_report_event_chamberlain_announce
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = france.12.a
-		# Franco-British Union created
-		set_global_flag = fall_of_france
-		hidden_effect = {
-			every_state = {
-				limit = {
-					is_core_of = FRA
-				}
-				ENG = {
-					add_state_core = PREV
-				}
-			}
-		}
-		ENG = {
-			annex_country = { target = FRA transfer_troops = yes }
-		}
-		custom_effect_tooltip = FRA_franco_british_cores
-		hidden_effect = {
-			GER = { 
-				country_event = { hours = 6 id = news.35 }
-			}
-		}
-	}
-}
-
-# Britain refuses Union (France)
-country_event = {
-	id = france.13
-	title = france.13.t
-	desc = france.13.d
-	picture = GFX_report_event_pierre_laval
-	
-	is_triggered_only = yes
-	
-	option = { # Become Vichy
-		name = france.13.a
-		trigger = { is_ai = no }
-		set_country_flag = become_vichy
-		set_global_flag = fall_of_france
-		GER = { country_event = france.14 }
-		custom_effect_tooltip = france.10.a_tt
-		# Switches to Vichy if GER accepts
-	}
-	option = { # Become Free France
-		name = france.13.b
-		GER = { country_event = france.14 }
-		custom_effect_tooltip = france.10.b_tt
-		set_global_flag = fall_of_france
 	}
 }
 
@@ -305,6 +213,10 @@ country_event = {
 		name = france.14.a
 		ai_chance = {
 			factor = 100
+		}
+		#Set same cosmetic tag they would get on capitulation
+		FRA = {
+			set_cosmetic_tag = FRA_FREE
 		}
 		# German Occupation Zone
 		if = {
@@ -2397,11 +2309,8 @@ country_event = {
 		country_event = { hours = 6 id = news.34 }
 		hidden_effect =  {
 			FRA = { news_event = { id = france.20 days = 1 } }
-			ENG = { 
-				swap_ideas = { remove_idea = stiff_upper_lip add_idea = stiff_upper_lip_2 }
-			}
 		}
-		}
+		}	
 	}
 	# option = { # Conquer everything!
 		# name = france.14.b

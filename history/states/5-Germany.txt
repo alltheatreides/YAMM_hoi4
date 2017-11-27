@@ -26,7 +26,6 @@ state={
 
 			}
 			air_base = 6
-			anti_air_building = 3
 		}
 		add_core_of = GER
 		1939.1.1 = {

@@ -7,10 +7,8 @@ set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	motorised_infantry = 1
+	early_fighter = 1
 	support_weapons = 1
-	tech_support = 1
-	gw_artillery = 1
 }
 
 set_convoys = 10
@@ -19,16 +17,17 @@ set_convoys = 10
 
 	add_political_power = 1198
 	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
+	complete_national_focus = IRE_pol
+	complete_national_focus = IRE_1stamend
+	complete_national_focus = IRE_mob
+	complete_national_focus = IRE_armyone
+	complete_national_focus = IRE_air1
+	complete_national_focus = IRE_navy1
+	complete_national_focus = IRE_ccp
+	complete_national_focus = IRE_treet
+	complete_national_focus = IRE_coa
+	complete_national_focus = IRE_magfort
+	complete_national_focus = IRE_xmas
 	
 	oob = "IRE_1939"
 	set_technology = {
@@ -69,15 +68,15 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 98
+			popularity = 60
 		}
 
 		fascism = {
-			popularity = 1
+			popularity = 20
 		}
 		
 		communism = {
-			popularity = 1
+			popularity = 20
 		}
 	}
 	
@@ -92,15 +91,15 @@ set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 98
+				popularity = 60
 			}
 
 			fascism = {
-				popularity = 1
+				popularity = 20
 			}
 			
 			communism = {
-				popularity = 1
+				popularity = 20
 			}
 		}
 		
@@ -124,7 +123,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Eoin O'Duffy"
 	desc = "POLITICS_EOIN_ODUFFY_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	picture = "gfx/leaders/IRE/Portrait_Ireland_Duffman.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -135,7 +134,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "James Larkin"
 	desc = "POLITICS_JAMES_LARKIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	picture = "gfx/leaders/IRE/Portrait_Ireland_Big_Jim.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -154,9 +153,13 @@ create_country_leader = {
 	}
 }
 
+add_ideas = {
+	IRE_ira
+}
+
 create_corps_commander = {
 	name = "Michael Costello"
 	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
-	traits = {  }
-	skill = 2
+	traits = { old_guard  }
+	skill = 3
 }

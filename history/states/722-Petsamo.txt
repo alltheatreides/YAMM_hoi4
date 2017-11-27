@@ -3,7 +3,14 @@ state={
 	name="STATE_722"
 	manpower = 2371
 
-	state_category = enclave
+	state_category = rural
+
+	resources={
+
+		tungsten = 40
+		aluminium = 40
+		chromium = 40
+	}
 
 	history={
 		owner = FIN

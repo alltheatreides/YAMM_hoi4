@@ -17,7 +17,7 @@ ideas = {
 			
 			modifier = {
 				army_morale_factor = 0.25
-				attrition = -0.1
+				attrition = -0.15
 				army_core_attack_factor = 0.2
 				army_core_defence_factor = 0.3
 				dig_in_speed_factor = 0.10
@@ -507,7 +507,7 @@ ideas = {
 			
 			allowed = {
 				always = yes # Added via focus
-	}
+			}
 
 			allowed_civil_war = {
 				always = yes
@@ -659,6 +659,7 @@ ideas = {
 		
 		FIN_ralf_torngren = {
 
+
 			picture = generic_political_advisor_europe_1
 
 			allowed = {
@@ -753,8 +754,6 @@ ideas = {
 			allowed = {
 				original_tag = FIN
 			}
-			
-
 			
 			traits = { army_chief_offensive_2 }
 			

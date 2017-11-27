@@ -22,7 +22,6 @@ state={
 			arms_factory = 3
 			industrial_complex = 5
 			air_base = 6
-			anti_air_building = 3
 		}
 		add_core_of = AUS
 

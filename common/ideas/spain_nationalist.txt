@@ -23,26 +23,6 @@ ideas = {
 			}
 		}
 		
-		SPA_recovering_from_civil_war_2 = {
-
-			picture = FRA_matignon_agreements
-
-			allowed = {
-				original_tag = SPR
-				has_government = fascism
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			modifier = {
-				ai_get_ally_desire_factor = -70
-				join_faction_tension = 4
-				justify_war_goal_time = 10.0
-			}
-		}
-		
 		SPR_postwar1 = {
 
 			picture = great_depression
@@ -57,7 +37,7 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.20
 				political_power_cost = 0.5
 				production_factory_max_efficiency_factor = -0.1
 				industrial_capacity_factory = -0.1
@@ -78,7 +58,7 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = -0.05
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.15
 				political_power_cost = 0.25
 				production_factory_max_efficiency_factor = -0.05
 				industrial_capacity_factory = -0.05

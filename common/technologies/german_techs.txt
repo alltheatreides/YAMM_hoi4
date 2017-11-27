@@ -20,27 +20,4 @@ technologies = {
 		}
 	}
 	
-	Auftragstaktik  = {
-		
-		research_cost = 1
-
-		# only from focus!!! #####
-		allow = {
-			always = no
-		}
-		
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.15
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.15
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.15
-		}
-	}
-	
 }

@@ -22,7 +22,6 @@ state={
 			industrial_complex = 4
 			dockyard = 1
 			air_base = 3
-			anti_air_building = 3
 			11584 = {
 				naval_base = 6
 

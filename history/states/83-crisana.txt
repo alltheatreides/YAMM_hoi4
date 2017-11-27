@@ -3,9 +3,6 @@ state={
 	id=83
 	name="STATE_83"
 	manpower = 632900
-	resources={
-		aluminium=5
-	}
 	
 	state_category = town
 
@@ -15,7 +12,6 @@ state={
 			infrastructure = 5
 			arms_factory = 1
 			industrial_complex = 1
-			anti_air_building = 1
 		}
 		victory_points = {
 			6682 1 

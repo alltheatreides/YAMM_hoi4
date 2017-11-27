@@ -1,0 +1,253 @@
+﻿*************************
+Version 4.0
+*************************
+-Integrated with YAMM
+-Changed the name of Ethiopia to its historical name of Abyssinia
+-Added historical war names
+-Removed fantasy focuses from Italian tree
+-Buffed ITA's "Support Nationalist Spain"
+-Gave Switzerland forts
+
+*************************
+Version 3.5
+*************************
+-A number of fixes and small changes to focus trees
+-Integrated "Lamp's Eqpt Icons" (Credits to 电灯弗里曼)
+
+*************************
+Version 3.4
+*************************
+-Reverted refineries to vanilla
+-Fixed "Valentine Tank" focus for CAN. Now applies to Valentine tanks
+-Reverted maximum XP to 500
+
+*************************
+Version 3.3
+*************************
+-A number of fixes to focus trees
+-Implemented changes from HoI v1.4.2
+-Reverted 25% research bonuses to 50%
+-Implemented Mila Rodino Bulgaria (Credits to Admiral Caon)
+-Nerfed Bulgarian focus tree
+
+*************************
+Version 3.2
+*************************
+Because it is time-consuming to maintain a detailed changelog, but mostly because no-one really reads these, I will no longer document minor changes. If someone wishes to find every little change, do as I do all the time when modding, and use a file comparer.
+
+-Integrated most of Battlesound - Sound Modification (Credits to Tekoa)
+-Cleaned up most focus trees of singleplayer fantasy focuses
+
+*************************
+Version 3.1
+*************************
+-Changed Malaya's infantry division template to identical to that of England's
+-Locked GER's focus tree behind Rhineland. Rhineland must now be done as first focus
+-Removed FTR research bonus from "Tizard Mission"
+-Removed USA's ability to refuse "Tizard Mission"
+-Removed USA's "Pre-emptive Intervention" and "Black Chamber Operation"
+-Removed AST's "Singapore Strategy"
+-Changed recruitable MP bonus in the generic tree from 7% to 5%
+-Brought synthetic refineries from 7 oil + 4 rubber to 5 oil + 2 rubber
+-Nerfed Spain a bit more
+-Added peace event in case of Chinese victory in Second Sino-Japanese War
+-The SCW will now always trigger in July, 1936
+-Removed FRA's & ENG's ability to refuse Sudetenland
+-Removed SOV's ability to refuse the Tech Treaty
+-Removed ROM's ability to refuse ceding Bessarabia and Northern Bucovina
+-Removed GER's ability to dishonour the M-R Pact with regards to Poland
+-Forced the Russo-Japanese border skirmish to always happen and result in a historical Russian victory
+-Nerfed autonomy gain
+
+*************************
+Version 3.0
+*************************
+-Integrated some files regarding resources from YAMM (Credits to [ҒҒ] Atreides).
+-SOV now has 1934 HARM researched.
+-Removed 1944 ship research bonuses from everyone.
+-Limited armour research bonuses to LARM for nations that historically had no prerequisites for a domestic tank programme.
+-Limited ship research bonuses to 1936 levels for nations that historically had no prerequisites for a domestic ship programme.
+-Modified research bonuses from SOV's "Expand the Red Fleet" to better reflect history.
+-Nerfed Commonwealth's research bonuses to fighters to prevent them from having '36 & '40 fighters before ENG.
+-Took away GER's & SOV's ahead of time research bonuses on MARM. Now they're mere normal 50% bonuses.
+-Took away GER's HARM research bonus.
+-Various other changes to research bonuses to better reflect history. This meant bringing down most bonuses for minors to 25%.
+-Integrated "Finnish National Focus" (Credits to Kartsa)
+-Integrated "Historical Finland Army (Version 2.0) (1.1.*)" (Credits to Noif1988)
+-Integrated "Icons for plane" (Credits to Mattebubben and Schüewoo)
+-Added 40 steel, chromium and tungsten to Petsamo. #IRL provided 70-90% of GER's nickel production by 1943. Was also the most AA fortified single area in Europe, which says something about this province's importance to Germany.
+-Did a fair bit of modifying to the newly integrated mods. Added more historical content, edited existing stuff etc.
+-Took a few tech gfx files from Finlandia Invicta (Credits to Kaiser Joseph II)
+
+*************************
+Version 2.9
+*************************
+-Integrated "Irish Unit Pack" (Credits to SaintDaveUK)
+-Removed FRA's ability to say no to Rhineland
+
+*************************
+Version 2.8
+*************************
+-Integrated "Better Ireland" (Credits to Antonius Magnus)
+-Slightly nerfed IRE's focus tree and blocked off fantasy paths
+-Fixed some typos in "Better Ireland's" localisation
+-Fixed a few more oversights in USA's focus tree
+-Blocked off interventionism from the generic focus tree
+
+*************************
+Version 2.7
+*************************
+-Reverted to vanilla lag tolerance. 99% sure the new post-1940 desyncs are a vanilla issue though.
+
+*************************
+Version 2.6
+*************************
+-Re-added pre-2.0 News Event content.
+-Reverted combat log to 12 months (in-game slider can't handle more than 12).
+-Changed maximum saved focus days from 20 to 15.
+-Increased lag tolerance before the game automatically lowers the speed.
+-Added US occupation of Greenland and Iceland (Credits to Des and his PFU mod). Still need to add the previous UK invasion and occupation of the islands.
+
+*************************
+Version 2.5
+*************************
+-Removed the Chinese content for now.
+-Some further fixes to focus trees.
+
+*************************
+Version 2.4
+*************************
+-Removed one zero of each free equipment delivery in the new Chinese stuff. Some were exorbatantly high.
+-Fixed some oversights from various focus trees (no more 1944 plane research bonuses).
+
+*************************
+Version 2.3
+*************************
+-Locked off JAP's "Found Our Own Faction"
+-Integrated "China National Focus" (Credits to Gocyt, Dovahbear, Gen.Feldm. Rommel, Cobalt, GRAF and Kappa).
+-Nerfed new focus trees, spirits and ministers for CHI, MAN & PRC.
+
+*************************
+Version 2.2
+*************************
+-Removed extra research bonuses to planes from ITA & SOV (was an oversight that allowed them to still get '44 tech very early).
+-Changed "Anti-Fascist Diplomacy" and "Anti-Capitalist Diplomacy" to 70 days.
+-Added democratic drift to Liberty Ethos (+0.10%).
+-Fixed a bug with the generic tree's "Technology Sharing" focus.
+
+*************************
+Version 2.1
+*************************
+-Integrated "Pre 1.4 Support Equipment Icon" (Credits to Ricardo McCardo).
+-Removed Player-led Peace Conferences.
+-Re-added pre-2.0 content (except for HUN & ROM), research bonuses, defines etc.
+-Upped requirement for continuous focuses from 20 to 25.
+-Nerfed research bonuses for HUN, ROM & YUG.
+-Restricted fantasy focuses from HUN, ROM & YUG.
+-Restricted ROM's "Appoint Axis-friendly Government" until ROM has lost Bessarabia & Bucovina.
+-Made manual party popularity boosting impossible.
+-Made manual coup d'etats impossible.
+-Made disbanding encircled divisions return 0% of MP & equipment back.
+-Removed demagogues etc. Players now have to go through focus to change ideology. YUG, POL & RAJ cannot change from Non-Aligned.
+-Removed FRA's option to play as Vichy or to suggest the Franco-British Union.
+
+*************************
+Version 2.0
+*************************
+-Reverted all changes to focus trees to vanilla
+-Re-integrated A Swedish Tiger
+-Replaced the new annoying MP lag sound with a file that has no sound
+-Integrated a fix for generic leaders getting killed via focus (Credits to sinistersaint)
+-Integrated Player-led Peace Conferences (Credits to Neutrino)
+-Integrated Guns Trucks (Credits to McNaughton)
+-Integrated HOIIP - NATO Style Counters (Credits to el_colonel)
+-Integrated Young Mao Zedong (Credits to Yumad(?))
+-Removed conflicting graphics from Balkan Infantry Equipment and Unique Infantry Equipment
+-Made Gibraltar attackable from only 1 province
+-Added or extended impassable regions in Burma and the Himalayas
+-Re-added GER cores on Danzig, Posen, Memelland & Elsass-Lothringen via the focuses "Reassert Eastern Claims" and "Around Maginot" respectively
+
+*************************
+Version 1.5
+*************************
+-Increased combat log from 12 months to 36 months (would've gone higher but not sure about the performance hit)
+-Increased minimum focuses for Continous Focuses from 10 to 20
+-Increased maximum saved research days from 30 to 40
+-Effectively halved war score gain from strategic bombing
+-Doubled impact of recon in picking tactics
+-Increased all maximum saved XP types from 500 to 999
+-Increased maximum amount of saved focus days from 10 to 20
+
+*************************
+Version 1.4
+*************************
+-Fixed the crash issue related to China
+-Fixed loads of errors etc.
+-Made a part of the Pripet Marshes impassable (similar to HoI3)
+
+*************************
+Version 1.3
+*************************
+-Added many historically impassable regions. I plan to reduce the border gore using other methods of movement blocking, but for now some parts of the map will look quite ugly (blame PDX for making HoI4 a sandbox where tanks can drive over Mount Everest).
+
+*************************
+Version 1.2
+*************************
+-Added ENG GoIs on HOL, BEL and IRE
+-Added FRA GoI on BEL
+-Added historical territories to Vichy (roughly the same as in HoI1-3)
+-AI Spain now always becomes Nationalist Spain. Playing with a neutral AI Spain is now actually viable for MP (SCW WT ~5-6% instead of 17-18%)
+-Removed FRA core on Gabes and Senegal
+
+*************************
+Version 1.1
+*************************
+-Added MON, TAN & SIK as puppets of SOV
+-Added SIK into the Comintern
+-Removed "Secure Interests in Africa" entirely to avoid confusion
+-Fixed HUN focus tree (wasn't working before)
+-Finished rebalancing HUN focus tree (was OP)
+-Integrated Viva España - A National Focus and Overhaul Mod for Spain (Credits to Verinikin)
+-Rebalanced Viva España - A National Focus and Overhaul Mod for Spain (was ridiculously OP)
+-Nerfed generic focus tree even further (25% bonuses instead of 50% etc.). Minors should now be a tad more historically accurate.
+-All British Empire & minor armour research bonuses now only apply to light and medium tanks
+-Locked "Singapore Strategy" - SP fantasy focus and noobs keep picking it despite it being useless (and broken) in MP
+-Nerfed "CMP Truck". No more MEC for CAN in '36.
+
+
+*************************
+Version 1.0
+*************************
+-Locked non-generic fantasy focus trees
+-Locked "Secure Interests in Africa"
+-Removed ahistorical choices in US presidential elections
+-Integrated No Man's Land (Credits to YellowMoonshine for this superb mod)
+-Integrated Adiya's Historical Flag Pack (Credits to Adiya)
+-Fixed a bug with No Man's Land where parts of INS where directly controlled by HOL
+-Added a small merchant marine to British Malay so they can be traded with from the start
+-Added BHU, NEP, IRQ, OMA, YEM as puppets of ENG (as they were in HoIs 1-3)
+-Added LIB as a puppet of USA (as it was in HoIs 1-3)
+-Nerfed absurd generic focus tree research bonuses
+-Removed Kamikazes from generic focus tree	
+-Removed two 50% ARM research bonuses from GER
+-Removed one 50% ARM research bonus from SOV
+-Removed one 50% ARM research bonus from ITA
+-Changed ENG's 50% ARM to affect only M-ARM
+-Removed one 50% light aircraft research bonus from ENG
+-Removed one 50% heavy aircraft research bonus from ENG
+-Removed one 50% TAC research bonus from ENG
+-Removed one 50% NAV research bonus from ENG
+-Lowered # of 50% research bonuses from ENG's "Secret Weapons" from 6 to 4
+-Lowered # of 50% research bonuses from USA's "Committee on Technocracy" from 3 to 2
+-Lowered # of 50% research bonuses from USA's "Support Rock Island" from 3 to 2
+-Removed ahistorical news event outcomes
+-Integrated Hungarian Focuses (Credits to Tai)
+-Rebalanced Hungarian Focuses
+-Added Danzig, Memel and Poznan as German cores in GER's "Reassert Eastern Claims"
+-Added Alsace as a German core in GER's "Around the Maginot"
+-Integrated Enhanced Peace Conference AI (Credits to Neutrino)
+-Integrated Czechoslovak Tech Tree Mod (Credits to Xwing)
+-Integrated Swedish Flavor Names (Credits to Andervall)
+-Integrated Realistic Jets (Credits to Revan)
+-Integrated Balkans Infantry Weapons (Credits to Milorg OKL)
+-Integrated Unique Infantry Equipment (Credits to Ulmont)

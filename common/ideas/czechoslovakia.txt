@@ -399,6 +399,7 @@ ideas = {
 		CZE_divided_nation_2 = {
 
 			name = CZE_divided_nation
+			picture = CZE_divided_nation
 		
 			allowed = {
 				original_tag = CZE
@@ -553,36 +554,6 @@ ideas = {
 			}
 			
 			traits = { democratic_reformer }
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		CZE_gustav_husak = {
-
-			picture = generic_communist_europe
-			
-			allowed = {
-				original_tag = CZE
-			}
-			
-			traits = { communist_revolutionary }
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		CZE_konrad_henlein = {
-
-			picture = generic_fascist_europe
-			
-			allowed = {
-				original_tag = CZE
-			}
-			
-			traits = { fascist_demagogue }
 
 			ai_will_do = {
 				factor = 0

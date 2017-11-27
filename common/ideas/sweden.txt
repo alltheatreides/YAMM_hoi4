@@ -21,7 +21,7 @@ ideas = {
 				#conscription = 0.02
 			}
 		}
-		
+	
 		SWE_finlandguarantee = {
 			
 			allowed = {
@@ -207,7 +207,7 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
-	
+		
 		war_bonds = {
 			
 			allowed = {
@@ -598,7 +598,7 @@ ideas = {
 		
 			allowed = {
 				original_tag = SWE
-	}
+			}
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.2
@@ -772,7 +772,7 @@ ideas = {
 
 			allowed_civil_war = {
 				has_government = democratic
-			}
+	}
 
 			removal_cost = -1
 
@@ -899,7 +899,7 @@ ideas = {
 	
 
 	political_advisor = {
-	
+
 		
 		SWE_per_edvin_skold = {
 			picture = generic_political_advisor_europe_1
@@ -931,7 +931,7 @@ ideas = {
 		
 		SWE_thorwald_bergquist = {
 
-			picture = generic_political_advisor_europe_5
+			picture = generic_political_advisor_europe_1
 			
 			allowed = {
 				original_tag = SWE
@@ -942,7 +942,7 @@ ideas = {
 
 		SWE_osten_unden = {
 
-			picture = generic_political_advisor_europe_2
+			picture = generic_political_advisor_europe_5
 
 			allowed = {
 				original_tag = SWE
@@ -962,11 +962,33 @@ ideas = {
 			traits = { captain_of_industry }
 		}
 		
-		
+		SWE_per_engdahl = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { fascist_demagogue }
+	
+			on_add = {
+				country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
 	}
 
 	theorist = {
-	
+
 		alf_lysholm = {
 			
 			allowed = {
@@ -1200,7 +1222,7 @@ ideas = {
 
 		SWE_charles_de_champs = {
 			
-			picture = generic_navy_europe_2
+			picture = generic_navy_europe_3
 			
 			allowed = {
 				original_tag = SWE
@@ -1218,7 +1240,7 @@ ideas = {
 	}
 
 	high_command = {
-	
+
 		SWE_stig_ericson = {
 			
 			allowed = {
@@ -1322,7 +1344,7 @@ ideas = {
 		
 		designer = yes
 		
-		
+			
 		volvo = {
 			
 			allowed = {
@@ -1337,11 +1359,8 @@ ideas = {
 			
 		}
 		
-		
-		landsverk = {
-			
-			picture = generic_tank_manufacturer_2
 
+		landsverk = {
 			
 			allowed = {
 				original_tag = SWE
@@ -1364,7 +1383,7 @@ ideas = {
 			
 		designer = yes
 		
-		
+			
 		saab = { 
 			
 			
@@ -1413,7 +1432,7 @@ ideas = {
 		
 		
 		flygforvaltningens_flygverkstad = { 
-			
+
 			
 			allowed = {
 				original_tag = SWE
@@ -1453,10 +1472,6 @@ ideas = {
 				naval_equipment = 0.10
 			}
 			
-			equipment_bonus = {
-				# mer research
-			}
-			
 			traits = { coastal_defence_naval_manufacturer }
 			
 			modifier = {
@@ -1474,7 +1489,7 @@ ideas = {
 			}
 			
 			traits = { convoy_escort_naval_manufacturer }
-			
+
 			modifier = {
 			}
 		}
@@ -1496,7 +1511,7 @@ ideas = {
 			modifier = {
 			}
 		}
-	
+
 #	pansarskeppen_varv = {
 #			
 #			allowed = {
@@ -1534,7 +1549,7 @@ ideas = {
 			
 			traits = { industrial_concern }
 		}
-
+			
 #		fra_swe = {
 #			
 #			allowed = {
@@ -1616,7 +1631,7 @@ ideas = {
 		}
 	
 		husqvarna = {
-
+			
 			
 			allowed = {
 				original_tag = SWE
@@ -1656,4 +1671,5 @@ ideas = {
 		}
 		
 	}
+	
 }

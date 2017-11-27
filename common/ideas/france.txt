@@ -352,60 +352,7 @@ ideas = {
 
 	# POLITICAL
 	political_advisor = {
-		maurice_thorez = {
 			
-			
-			allowed = {
-				original_tag = "FRA"
-			}			
-			available = {
-				has_completed_focus = FRA_leftist_rhetoric
-				NOT = {has_country_flag = free_france}
-			}
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-		}	
-		andre_marty = { # France libre so De gaulle (et pas Thorez en exil)
-			
-			
-			allowed = {
-				original_tag = "FRA"
-			}			
-			available = {
-				has_completed_focus = FRA_leftist_rhetoric
-				has_country_flag = free_france
-			}
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-			
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-		}			
 		leon_blum = {
 			
 			
@@ -435,7 +382,7 @@ ideas = {
 		}
 		FRA_FREE_rene_cassin = {
 			
-			
+
 			allowed = {
 				original_tag = "FRA"
 			}
@@ -453,33 +400,6 @@ ideas = {
 			do_effect = {
 				NOT = {
 					has_government = democratic
-				}
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-		}		
-		marcel_bucard = {
-			
-			
-			allowed = {
-				original_tag = "FRA"
-			}
-			available ={
-				has_completed_focus = FRA_right_wing_rhetoric
-				NOT = {has_completed_focus = free_france}
-			}
-			
-			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = fascism
 				}
 			}
 
@@ -1034,7 +954,7 @@ ideas = {
 			
 			allowed = {
 				OR = {	
-					original_tag = FRA
+				original_tag = FRA
 					original_tag = EFR
 				}
 			}
@@ -1120,7 +1040,7 @@ ideas = {
 					maximum_speed = -0.15
 				}
 			}
-			
+						
 		}
 		
 		somua = {
@@ -1147,13 +1067,13 @@ ideas = {
 					build_cost_ic = 0.15
 				}
 			}
-			
+
 		}
 	
 		FRA_AMX = {
 		
 			picture = generic_tank_manufacturer_2
-						
+
 			allowed = {
 				OR = {
 				original_tag = FRA
@@ -1170,8 +1090,8 @@ ideas = {
 					maximum_speed = 0.05
 				}
 			}
+			
 
-		
 		}
 	}
 	
@@ -1276,7 +1196,7 @@ ideas = {
 		}
 		
 		amiot = {
-			
+						
 			cost = 150
 			
 			allowed = {
@@ -1315,7 +1235,7 @@ ideas = {
 						
 			allowed = {
 				OR = {
-					original_tag = FRA
+				original_tag = FRA
 					original_tag = EFR
 				}
 			}
@@ -1323,7 +1243,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
+						
 			traits = { latecoere_aircraft_manufacturer }
 		}
 		
@@ -1526,7 +1446,7 @@ ideas = {
 			available = {		
 				original_tag = FRA
 				NOT = {has_country_flag = free_france}
-
+			
 			}			
 			
 			research_bonus = {

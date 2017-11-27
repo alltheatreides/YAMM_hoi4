@@ -292,7 +292,7 @@ focus_tree = {
 
 		available = {
 			BUL = {
-				controls_state = 184
+				owns_state = 184
 			}
 		}
 
@@ -771,7 +771,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = med_armor_bonus
 				bonus = 0.5
-				ahead_reduction = 1
 				technology = improved_light_tank
 			}
 		}
@@ -1106,20 +1105,20 @@ focus = {
 		}
 	}
 
-	# focus = {
-		# id = BUL_bulgarian_research_committee
-		# icon = GFX_focus_research
-	 	# prerequisite = { focus = BUL_research_treaty_with_italy }
-		# x = 0
-		# y = 4
-		# cost = 10
+	focus = {
+		id = BUL_bulgarian_research_committee
+		icon = GFX_focus_research
+	 	prerequisite = { focus = BUL_research_treaty_with_italy }
+		x = 0
+		y = 4
+		cost = 10
 
-		# available_if_capitulated = yes
+		available_if_capitulated = yes
 
-		# completion_reward = {
-			# add_research_slot = 1
-		# }
-	# }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 
 	focus = {
 		id = BUL_airfields_for_germany
@@ -1162,9 +1161,9 @@ focus = {
 	focus = {
 		id = BUL_acquire_panzer_iv
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = BUL_research_treaty_with_italy }
+		prerequisite = { focus = BUL_bulgarian_research_committee }
 		x = 0
-		y = 4
+		y = 5
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1186,10 +1185,6 @@ focus = {
 				name = med_armor_bonus
 				bonus = 0.5
 				technology = improved_medium_tank
-			}
-			add_relation_modifier = {
-				target = GER
-				modifier = ROM_license_german_equipment
 			}
 		}
 	}

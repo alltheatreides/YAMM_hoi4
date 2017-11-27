@@ -239,10 +239,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/NOR/NOR_CAS2.dds"
 	}
 
-	# SpriteType = {
-		# name = "GFX_NOR_CAS3_medium"
-		# texturefile = "gfx/interface/technologies/NOR/NOR_CAS3.dds"
-	# }
+	SpriteType = {
+		name = "GFX_NOR_CAS3_medium"
+		texturefile = "gfx/interface/technologies/NOR/NOR_CAS3.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_NOR_fighter_equipment_1_medium"
@@ -304,20 +304,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/NOR/NOR_naval_bomber3.dds"
 	}	
 	
-	# SpriteType = {
-		# name = "GFX_NOR_strategic_bomber1_medium"
-		# texturefile = "gfx/interface/technologies/NOR/NOR_strategic_bomber1.dds"
-	# }	
+	SpriteType = {
+		name = "GFX_NOR_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/NOR/NOR_strategic_bomber1.dds"
+	}	
 	
-	# SpriteType = {
-		# name = "GFX_NOR_strategic_bomber2_medium"
-		# texturefile = "gfx/interface/technologies/NOR/NOR_strategic_bomber2.dds"
-	# }	
+	SpriteType = {
+		name = "GFX_NOR_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/NOR/NOR_strategic_bomber2.dds"
+	}	
 	
-	# SpriteType = {
-		# name = "GFX_NOR_strategic_bomber3_medium"
-		# texturefile = "gfx/interface/technologies/NOR/NOR_strategic_bomber3.dds"
-	# }		
+	SpriteType = {
+		name = "GFX_NOR_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/NOR/NOR_strategic_bomber3.dds"
+	}		
 	
 	SpriteType = {
 		name = "GFX_NOR_tactical_bomber1_medium"
@@ -334,30 +334,30 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/NOR/NOR_tactical_bomber3.dds"
 	}
 
-	# SpriteType = {
-		# name = "GFX_NOR_jet_fighter2_medium"
-		# texturefile = "gfx/interface/technologies/NOR/NOR_jet_fighter2.dds"
-	# }	
+	SpriteType = {
+		name = "GFX_NOR_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/NOR/NOR_jet_fighter2.dds"
+	}	
 
-	# SpriteType = {
-		# name = "GFX_NOR_jet_fighter1_medium"
-		# texturefile = "gfx/interface/technologies/NOR/NOR_jet_fighter1.dds"
-	# }
+	SpriteType = {
+		name = "GFX_NOR_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/NOR/NOR_jet_fighter1.dds"
+	}
 	
-	# SpriteType = {
-		# name = "GFX_NOR_jet_strategic_bomber1_medium"
-		# texturefile = "gfx/interface/technologies/NOR/NOR_jet_stratbomber.dds"
-	# }
+	SpriteType = {
+		name = "GFX_NOR_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/NOR/NOR_jet_stratbomber.dds"
+	}
 	
-	# SpriteType = {
-		# name = "GFX_NOR_jet_tactical_bomber2_medium"
-		# texturefile = "gfx/interface/technologies/NOR/NOR_jet_tacbomber2.dds"
-	# }	
+	SpriteType = {
+		name = "GFX_NOR_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/NOR/NOR_jet_tacbomber2.dds"
+	}	
 	
-	# SpriteType = {
-		# name = "GFX_NOR_jet_tactical_bomber1_medium"
-		# texturefile = "gfx/interface/technologies/NOR/NOR_jet_tacbomber1.dds"
-	# }
+	SpriteType = {
+		name = "GFX_NOR_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/NOR/NOR_jet_tacbomber1.dds"
+	}
 
 
 	

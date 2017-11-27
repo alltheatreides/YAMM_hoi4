@@ -1111,11 +1111,6 @@ instant_effect = {
 			producer = ENG
 	}
 	add_equipment_to_stockpile = {
-		type = heavy_infantry_equipment_0
-			amount = 3000
-			producer = FRA
-	}
-	add_equipment_to_stockpile = {
 		type = artillery_equipment_1
 			amount = 1000
 			producer = ENG

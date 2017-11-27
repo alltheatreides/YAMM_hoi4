@@ -6,19 +6,13 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
-	NOR_haakon
-	NOR_policy_of_disarmament
-	NOR_aftermath_of_the_depression
 }
 
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	support_weapons = 1
 	tech_support = 1		
 	tech_engineers = 1
-	tech_recon = 1
-	tech_mountaineers = 1
 	early_fighter = 1
 	early_bomber = 1
 	early_destroyer = 1
@@ -26,12 +20,6 @@ set_technology = {
 	early_heavy_cruiser = 1
 	tech_recon = 1
 	motorised_infantry = 1
-	motorised_infantry = 1
-	support_weapons = 1
-	tech_field_hospital = 1
-	support_weapons = 1
-	gw_artillery = 1
-	gwtank = 1
 }
 
 1939.1.1 = {
@@ -39,22 +27,21 @@ set_technology = {
 	add_political_power = 1198
 	
 	#generic focuses
-	complete_national_focus = NOR_army
-	complete_national_focus = NOR_navy
-	complete_national_focus = NOR_bases
-	complete_national_focus = NOR_hydro
-	complete_national_focus = NOR_hydro_plants
-	complete_national_focus = NOR_expand_alu
-	complete_national_focus = NOR_lumber_industries
-	complete_national_focus = NOR_invest_in_district_industries
-	complete_national_focus = NOR_de_norske_statsbaner
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
 	
 	oob = "NOR_1939"
 	set_technology = {
 		gw_artillery = 1
 		interwar_artillery = 1
 		interwar_antiair = 1
-		infantry_weapons1 = 1
 		infantry_weapons2 = 1
 		support_weapons = 1
 
@@ -87,14 +74,14 @@ set_technology = {
 	}
 }
 
-set_convoys = 1000		# biggest merchant marine in the world
+set_convoys = 80		# biggest merchant marine in the world
 set_national_unity = 0.7
 
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 80
+			popularity = 96
 		}
 
 		fascism = {
@@ -103,10 +90,6 @@ set_politics = {
 		
 		communism = {
 			popularity = 2
-		}
-		
-		neutrality = {
-			popularity = 16
 		}
 	}
 	
@@ -169,7 +152,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Johan Ludwig Mowinckel"
 	desc = "POLITICS_JOHAN_LUDWIG_MOWINCKEL_DESC"
-	picture = "Portrait_Norway_Johan_Ludwig_Mowinckel.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -180,7 +163,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Adam Egede-Nissen"
 	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
-	picture = "Portrait_Norway_Adam_Egede-Nissen.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -188,44 +171,16 @@ create_country_leader = {
 	}
 }
 
-create_field_marshal = {
+create_corps_commander = {
 	name = "Carl Gustav Fleischer"
-	picture = "Portrait_Norway_Carl_Gustav_Fleischer.dds"
-	traits = { fast_planner organisational_leader offensive_doctrine }
-	skill = 4
-}
-
-create_field_marshal = {
-	name = "Otto Ruge"
-	picture = "Portrait_Norway_Otto_Ruge.dds"
-	traits = { thorough_planner inspirational_leader }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Kristian Laake"
-	picture = "Portrait_Norway_Kristian_Laake.dds"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = {  trickster winter_specialist }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Birger Eriksen"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trickster trait_engineer }
-	skill = 3
+	skill = 4
 }
 
 create_navy_leader = {
 	name = "Elias Corneliussen"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { spotter blockade_runner }
-	skill = 3
-}
-
-create_navy_leader = {
-	name = "Henry Diesen"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 	traits = { spotter }
-	skill = 2
+	skill = 3
 }

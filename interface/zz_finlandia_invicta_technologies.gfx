@@ -68,9 +68,6 @@ spriteTypes = {
 		name = "GFX_FIN_gwtank_medium"
 		texturefile = "gfx/interface/technologies/FIN_gwtank.dds"
 	}	
-	
-	
-
 
 	SpriteType = {
 		name = "GFX_FIN_modern_submarine_medium"

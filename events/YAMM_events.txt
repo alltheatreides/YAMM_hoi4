@@ -285,18 +285,18 @@ country_event = {
 	
 	trigger = {
 		OR = {
-			threat = 0.90
-			threat = 0.95
+			threat > 0.90
+			threat < 0.95
 		}
 	}
 	
 	immediate = {
 		if = {
-			limit = { threat = 0.90 }
+			limit = { threat > 0.90 }
 			add_threat = -5
 		}
 		if = {
-			limit = { threat = 0.95 }
+			limit = { threat > 0.95 }
 			add_threat = -10
 		}
 	}
@@ -363,7 +363,6 @@ country_event = {
 	option = {
 		name = yamm.41.a
 	}
-	
 }
 
 # Information Event during game - Soviet
@@ -407,7 +406,7 @@ country_event = {
 	}
 	
 	immediate = {
-		add_timed_idea = { idea = SOV_conscripts_idea days = 730 }
+		add_ideas = SOV_conscripts_idea
 	}
 	
 	option = {
@@ -1850,8 +1849,6 @@ country_event = {
 	desc = yamm.90.d
 	picture = GFX_report_event_urals_industry
 	
-	fire_only_once = yes
-	
 	trigger = {
 		219 = {
 			is_owned_and_controlled_by = SOV
@@ -1872,8 +1869,7 @@ country_event = {
 			arms_factory > 2
 			industrial_complex > 0
 		}
-		SOV = { has_defensive_war = yes }
-		tag = SOV
+		has_defensive_war = yes
 		573 = {
 			is_owned_and_controlled_by = SOV
 		}
@@ -2054,137 +2050,5 @@ country_event = {
 				instant_build = yes
 			}
 		}
-		hidden_effect = {
-			ENG = {
-				random_owned_state = {
-					limit = {
-						# ROOT = { has_full_control_of_state = PREV }
-						is_on_continent = europe
-						free_building_slots = {
-							building = industrial_complex
-							size > 5
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = industrial_complex
-						level = 5
-						instant_build = yes
-					}
-				}
-				random_owned_state = {
-					limit = {
-						# ROOT = { has_full_control_of_state = PREV }
-						is_on_continent = europe
-						free_building_slots = {
-							building = industrial_complex
-							size > 5
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = industrial_complex
-						level = 5
-						instant_build = yes
-					}
-				}
-				random_owned_state = {
-					limit = {
-						# ROOT = { has_full_control_of_state = PREV }
-						is_on_continent = europe
-						free_building_slots = {
-							building = arms_factory
-							size > 5
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = arms_factory
-						level = 5
-						instant_build = yes
-					}
-				}
-				random_owned_state = {
-					limit = {
-						# ROOT = { has_full_control_of_state = PREV }
-						is_on_continent = europe
-						free_building_slots = {
-							building = arms_factory
-							size > 5
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = arms_factory
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-			USA = {
-				set_technology = { mass_production = 1 }
-			}
-		}
-	}
-}
-
-# Mussolini wants to be in it
-country_event = {
-	id = yamm.92
-	title = yamm.92.t
-	desc = yamm.92.d
-	picture = GFX_report_event_hungry_mussolini
-	
-	# hidden = yes
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = ITA 
-		GER = { has_war_with = FRA }
-		FRA = { surrender_progress > 0.1 }
-	}
-	
-	option = {
-		name = yamm.92.a
-		GER = {
-			add_to_faction = ITA
-		}
-		add_to_war = { targeted_alliance = GER enemy = ENG }
-		add_to_war = { targeted_alliance = GER enemy = FRA }
-	}
-	
-	option = {
-		name = yamm.92.b
-		add_political_power = -300
-	}
-}
-
-# China lose corrupt army
-country_event = {
-	id = yamm.93
-	title = yamm.93.t
-	desc = yamm.93.d
-	# picture = GFX_report_event_hungry_mussolini
-	
-	hidden = yes
-	fire_only_once = yes
-	
-	trigger = {
-		tag = CHI
-		has_army_experience > 250
-	}
-	
-	immediate = {
-		remove_ideas = army_corruption
-	}
-	
-	
-	option = {
-		name = yamm.93
 	}
 }

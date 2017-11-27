@@ -7,7 +7,7 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = YUG
-			# has_dlc = "Death or Dishonor"
+			has_dlc = "Death or Dishonor"
 		}
 	}
 	
@@ -779,7 +779,8 @@ focus_tree = {
 		}
 
 		available = {
-
+			controls_state = 109
+			controls_state = 103
 		}
 
 		bypass = {
@@ -798,8 +799,10 @@ focus_tree = {
 			remove_ideas = YUG_idea_croatian_opposition
 			release_puppet = CRO 
 			set_autonomy = { target = CRO autonomy_state = autonomy_integrated_puppet }
+			hidden_effect = {
 			news_event = { id = news.326 hours = 6 }
 		}
+	}
 	}
 
 	focus = {
@@ -1490,7 +1493,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = industry
 			}
 		}
@@ -1816,6 +1819,7 @@ focus_tree = {
 			every_owned_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -2117,7 +2121,7 @@ focus_tree = {
 			if = {
 				limit = { has_full_control_of_state = 45 }
 				45 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -2129,7 +2133,7 @@ focus_tree = {
 			if = {
 				limit = { has_full_control_of_state = 105 }
 				105 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -2141,7 +2145,7 @@ focus_tree = {
 			if = {
 				limit = { has_full_control_of_state = 107 }
 				107 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -2153,7 +2157,7 @@ focus_tree = {
 			if = {
 				limit = { has_full_control_of_state = 108 }
 				108 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -2555,9 +2559,7 @@ focus_tree = {
 			factor = 50
 		}
 
-		available = {
-
-		}
+		available = { date > 1939.1.1 }
 
 		bypass = {
 
@@ -2574,9 +2576,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_ik3_bonus
-				bonus = 0.75
+				bonus = 0.5
 				uses = 1
-				technology = fighter1 
 				technology = fighter2
 			}
 		}
@@ -2617,7 +2618,6 @@ focus_tree = {
 				name = HUN_heavy_fighter_bonus
 				bonus = 0.5
 				uses = 1
-				technology = heavy_fighter1
 				technology = heavy_fighter2
 			}
 		}
@@ -2658,7 +2658,6 @@ focus_tree = {
 				name = HUN_tactical_bomber_bonus
 				bonus = 0.5
 				uses = 1
-				technology = tactical_bomber1 
 				technology = tactical_bomber2
 			}
 		}
@@ -2990,7 +2989,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = YUG_motorized_bonus
-				bonus = 0.75
+				bonus = 0.5
 				technology = motorised_infantry
 			}
 		}
@@ -3034,9 +3033,9 @@ focus_tree = {
 			add_tech_bonus = {
 				name = YUG_motorized_support_bonus
 				bonus = 0.5
-				uses = 2
-				category = hospital_tech
-				category = logistics_tech
+				uses = 1
+				technology = tech_field_hospital2
+				technology = tech_logistics_company2
 			}
 		}
 	}
@@ -3080,7 +3079,7 @@ focus_tree = {
 				name = YUG_mechanized_focus
 				bonus = 0.5
 				uses = 1
-				category = cat_mechanized_equipment
+				technology = mechanised_infantry
 			}
 		}
 	}
@@ -3165,7 +3164,7 @@ focus_tree = {
 				name = YUG_modern_tanks
 				bonus = 0.5
 				uses = 1
-				category = armor
+	            technology = improved_light_tank
 			}
 		}
 	}
@@ -3242,7 +3241,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = YUG_small_arms
-				bonus = 0.50
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 			}
@@ -3282,7 +3281,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = YUG_domestic_artillery_production
-				bonus = 0.50
+				bonus = 0.5
 				uses = 1
 				category = artillery
 			}
@@ -3322,7 +3321,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = YUG_anti_tank_defenses
-				bonus = 0.75
+				bonus = 0.5
 				uses = 1
 				category = cat_anti_tank
 			}
@@ -3362,9 +3361,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = YUG_mountain_brigades
-				bonus = 0.75
+				bonus = 0.50
 				uses = 1
-				category = mountaineers_tech
+				technology = tech_mountaineers2
 			}
 		}
 	}
@@ -3402,7 +3401,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = YUG_independent_engineer_regiments
-				bonus = 0.75
+				bonus = 0.5
 				uses = 1
 				category = engineers_tech
 			}
@@ -3442,9 +3441,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = YUG_motorized_recon_companies
-				bonus = 0.75
+				bonus = 0.5
 				uses = 1
-				category = recon_tech
+				technology = tech_recon2
 			}
 		}
 	}
@@ -3482,9 +3481,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = YUG_form_parachute_battalions
-				bonus = 0.75
+				bonus = 0.5
 				uses = 1
-				category = para_tech
+				technology = paratroopers2
 			}
 		}
 	}
@@ -3564,7 +3563,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = YUG_supremacy_of_offense
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = cat_mobile_warfare
 				category = cat_superior_firepower
 			}
@@ -3606,7 +3605,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = YUG_supremacy_of_defense
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = cat_grand_battle_plan
 				category = cat_mass_assault
 			}
@@ -3711,6 +3710,7 @@ focus_tree = {
 			any_owned_state {
 				is_coastal = yes
 			}
+			date > 1939.1.1
 		}
 
 		bypass = {
@@ -3729,7 +3729,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = YUG_contest_the_adriatic
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = naval_doctrine
 			}
 		}
@@ -3772,7 +3772,7 @@ focus_tree = {
 				name = YUG_replace_the_dalmacija
 				bonus = 0.5
 				uses = 1
-				category = cl_tech
+				technology = improved_light_cruiser
 			}
 		}
 	}
@@ -3814,7 +3814,7 @@ focus_tree = {
 				name = YUG_naval_bombers
 				bonus = 0.5
 				uses = 1
-				category = naval_bomber
+				technology = naval_bomber2
 			}
 		}
 	}
@@ -3856,7 +3856,7 @@ focus_tree = {
 				name = YUG_heavy_cruiser_project
 				bonus = 0.5
 				uses = 1
-				category = ca_tech
+				technology = improved_heavy_cruiser
 			}
 		}
 	}
@@ -3898,7 +3898,7 @@ focus_tree = {
 				name = YUG_modern_destroyers
 				bonus = 0.5
 				uses = 1
-				category = dd_tech
+				technology = improved_destroyer
 			}
 		}
 	}
@@ -3964,6 +3964,7 @@ focus_tree = {
 				has_full_control_of_state = 103
 				has_full_control_of_state = 105
 			}
+			date > 1939.1.1
 		}
 
 		bypass = {
@@ -4075,7 +4076,7 @@ focus_tree = {
 				name = YUG_expand_the_submarine_fleet
 				bonus = 0.5
 				uses = 1
-				category = ss_tech
+				technology = improved_submarine
 			}
 		}
 	}

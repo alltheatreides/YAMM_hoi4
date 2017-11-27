@@ -167,20 +167,3 @@
  yamm.91.t:0 "The Fate of Switzerland"
  yamm.91.d:0 "With our victory over France nothing can oppose us ! The Fuhrer, hating the Swiss has asked the OKH for detailed invasion plans, but Swiss diplomats coupled with military deterrence, secured economic concessions that have delayed the nicknamed "Operation Tannenbaum". Attempts by Switzerland's small Nazi party to effect an Anschluss with Germany failed miserably, largely as a result of Switzerland's strong sense of national identity and long tradition of direct democracy and civil liberties."
  yamm.91.a:0 "Make them cower."
- 
- # Mussolini wants to be in the game
- yamm.92.t:0 "A few thousand dead..."
- yamm.92.d:0 "Mussolini just informed Marshals Pietro Badoglio, chief of the Supreme General Staff, and Italo Balbo that he intended to join the German war against Britain and France, so to be able to sit at the peace table "when the world is to be apportioned" following an Axis victory. The two marshals unsuccessfully attempted to persuade Mussolini that this was not a wise course of action, arguing that the Italian military was unprepared."
- yamm.92.a:0 "We can only accept this course of action..."
- yamm.92.b:0 "Rein the fool in !"
- 
- 
- #Tank Variants
- tankvariants.1.t:0 "The PzKpfw III Ausf.J"
- tankvariants.1.d:0 "Our tank designers have realized that our light armor formations were not suited to this war as the light tanks armor was not sufficient for the combat needs and motorized formations could do replace them for cheaper. \n\nBut we could use our old PzKpfw III to replace them in their role, hence the latest version of the PzKpfw III, the PzKpfw III J."
- tankvariants.1.a:0 "Why did you skipped the I version ?"
- 
- #Romania
- romania.7.t:0 "Romania joins Barbarossa"
- romania.7.d:0 "Soldiers,\n\nFrom the very first day of the new reign and of my national combat I vowed to lead you to victory. To wipe off the dishonorable blemish from the book of the nation and the  shadow of humiliation off your foreheads and epaulettes. Now is the time of the holiest battle, the battle for our forefathers' rights, and of the church.  The battle for the Romanian abodes and altars of all times.\n\nSoldiers, I order you: cross the Prut!\n\nCrush the enemy from the East and North. Throw the red yoke of Bolshevism off our overrun brothers. Bring back to the country the ancient Bassarabian native land and the forests of Bucovina, your fields and realms.\n\nMarshall Ion Antonescu, June 22, 1941."
- romania.7.a:0 "Proceed."

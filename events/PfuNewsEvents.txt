@@ -1,0 +1,16 @@
+﻿add_namespace = pfunews
+
+news_event = {
+	id = pfunews.1
+	title = pfunews.1.t
+	desc = pfunews.1.d
+	picture = GFX_news_event_generic_read_write
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pfunews.1.a
+	}
+}

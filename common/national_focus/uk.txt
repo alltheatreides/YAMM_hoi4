@@ -214,12 +214,6 @@ focus_tree = {
 
 			hidden_effect = {
 				load_oob = "ENG_Motorized"
-				add_tech_bonus = {
-					name = mech_bonus
-					bonus = 0.5
-					uses = 1
-					technology = mechanised_infantry
-				}
 			}
 		}
 	}
@@ -241,7 +235,8 @@ focus_tree = {
 				name = armor_bonus
 				bonus = 0.5
 				uses = 1
-				category = armor
+	                technology = improved_light_tank
+	                technology = basic_medium_tank
 			}
 			create_equipment_variant = {
 				name = "Valentine Mk.I"
@@ -583,42 +578,6 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
-			hidden_effect = {
-				random_owned_controlled_state = {
-					prioritize = { 338 128 123 125 126 127 129 }
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_limited_rearmament_focus_2IC
-				}
-				random_owned_controlled_state = {
-					prioritize = { 121 133 130 131 122 }
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_limited_rearmament_focus_2IC
-				}
-			}
 		}
 	}
 
@@ -804,7 +763,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = UK_secret_focus
 				bonus = 0.5
-				uses = 6
+				uses = 4
 				category = electronics
 				category = rocketry
 				category = nuclear
@@ -1043,7 +1002,6 @@ focus_tree = {
 				name = fighter_command_focus
 				bonus = 0.5
 				uses = 1
-				technology = heavy_fighter1
 				technology = heavy_fighter2
 			}
 		}
@@ -1068,7 +1026,7 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				technology = strategic_bomber2
-				technology = tactical_bomber2
+				technology = tactical_bomber1
 			}
 		}
 	}
@@ -1089,13 +1047,13 @@ focus_tree = {
 			add_tech_bonus = {
 				name = coastal_command_focus
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				technology = naval_bomber2
 			}
 			add_tech_bonus = {
 				name = coastal_command_focus
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				technology = tactical_bomber2
 			}
 		}
@@ -1342,7 +1300,8 @@ focus_tree = {
 				name = uk_battleship_focus
 				bonus = 0.5
 				uses = 2
-				category = bb_tech
+				technology = basic_battleship
+				technology = improved_battleship
 			}
 			
 		}
@@ -1365,7 +1324,7 @@ focus_tree = {
 				name = uk_amphibious_focus
 				bonus = 0.5
 				uses = 1
-				category = marine_tech
+				technology = marines2
 			}
 			add_tech_bonus = {
 				name = uk_amphibious_focus
@@ -2052,16 +2011,6 @@ focus_tree = {
 					type = bunker
 					level = 1
 					province = 1071
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
 					instant_build = yes
 				}
 			}

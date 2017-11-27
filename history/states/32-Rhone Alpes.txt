@@ -15,7 +15,6 @@ state={
 		owner = FRA
 		buildings = {
 			infrastructure = 4
-			anti_air_building = 1
 		}
 		victory_points = {
 			3768 2 

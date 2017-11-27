@@ -14,7 +14,6 @@ state={
 			infrastructure = 5
 			dockyard = 4
 			air_base = 5
-			anti_air_building = 3
 			11837 = {
 				naval_base = 10
 			}

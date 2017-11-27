@@ -18,11 +18,8 @@ set_technology = {
 	interwar_antiair = 1
 	gwtank = 1
 	basic_light_tank = 1
-	motorised_infantry = 1
-	#improved_light_tank = 1  # PLACEHOLDER
-	basic_heavy_tank = 0.8  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
+	heavy_fighter1 = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
 	naval_bomber1 = 1
@@ -37,19 +34,12 @@ set_technology = {
 	early_battlecruiser = 1
 	early_carrier = 1
 	trench_warfare = 1
-	motorized_army = 1
 	transport = 1
 	fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
 	radio_detection = 1
-	
-	
-	
-	
-	tech_field_hospital = 1
 	support_weapons = 1
-	tech_logistics_company = 1
 }
 
 add_ideas = {
@@ -58,31 +48,9 @@ add_ideas = {
 	george_v
 }
 
-give_guarantee = HOL
-give_guarantee = BEL
-give_guarantee = POL
-
-add_relation_modifier = {
-	target = CAN
-	modifier = ROM_license_german_equipment
-}
-add_relation_modifier = {
-	target = AST
-	modifier = ROM_license_german_equipment
-}
-add_relation_modifier = {
-	target = RAJ
-	modifier = ROM_license_german_equipment
-}
-add_relation_modifier = {
-	target = SAF
-	modifier = ROM_license_german_equipment
-}
-add_relation_modifier = {
-	target = NZL
-	modifier = ROM_license_german_equipment
-}
-
+	give_guarantee = HOL
+	give_guarantee = BEL
+	give_guarantee = POL
 
 set_convoys = 4000
 
@@ -121,7 +89,23 @@ if = {
 		freedom_level = 0.2
 	}
 	set_autonomy = {
+		target = BHU
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = NEP
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
 		target = IRQ
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = OMA
+		autonomous_state = autonomy_puppet
+	}	
+	set_autonomy = {
+		target = YEM
 		autonomous_state = autonomy_puppet
 	}
 	else = {
@@ -292,9 +276,13 @@ add_to_faction = SAF
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
 add_to_faction = MAL
+add_to_faction = BHU
+add_to_faction = NEP
+add_to_faction = IRQ
+add_to_faction = OMA
+add_to_faction = YEM
 
 #give_guarantee = CZE
-give_guarantee = YUG
 
 # Order matters - here Chamberlain becomes starting leader
 

@@ -279,11 +279,6 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		
-		# mutually_exclusive = {
-			# focus = fin_nationalismfoc
-			# focus = fin_comfoc
-		# }
 		x = 3
 		y = 1
 				completion_reward = {
@@ -302,9 +297,6 @@ focus_tree = {
 		prerequisite = {
 			focus = fin_demofoc
 		}
-		# mutually_exclusive = {
-			# focus = fin_interfoc
-		# }
 		x = 3
 		y = 2
 		
@@ -321,9 +313,6 @@ focus_tree = {
 		prerequisite = {
 			focus = fin_neutralfoc
 		}
-		# mutually_exclusive = {
-			# focus = fin_armedneutfoc
-		# }
 		x = 3
 		y = 3
 		
@@ -427,7 +416,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		cost = 10
 		prerequisite = {
-			focus = fin_joinaxisfoc
+			focus = fin_germantreatyfoc
 		}
 		
 		available = {
@@ -435,8 +424,8 @@ focus_tree = {
 			is_in_faction = no
 			FIN = { NOT = {has_war_with = GER}}}
 		
-		x = 4
-		y = 6
+		x = 3
+		y = 5
 		
 		completion_reward = { #remember to add equipment!
 
@@ -448,110 +437,102 @@ focus_tree = {
 				set_rule = { can_join_factions = no }
 				add_ideas = FIN_stopai
 				add_equipment_to_stockpile = {
-					type = infantry_equipment_1 #type of equipment, from file
-					amount = 2500 #amount
-					producer = GER #Name of country that "built" the equipment
+				type = infantry_equipment_1 #type of equipment, from file
+				amount = 2500 #amount
+				producer = GER #Name of country that "built" the equipment
 				}
 				add_equipment_to_stockpile = {
-					type = support_equipment_1 #type of equipment, from file
-					amount = 1200 #amount
-					producer = GER #Name of country that "built" the equipment
+				type = support_equipment_1 #type of equipment, from file
+				amount = 1200 #amount
+				producer = GER #Name of country that "built" the equipment
 				}
 				add_equipment_to_stockpile = {
-					type = artillery_equipment_1 #type of equipment, from file
-					amount = 900 #amount
-					producer = GER #Name of country that "built" the equipment
+				type = artillery_equipment_1 #type of equipment, from file
+				amount = 900 #amount
+				producer = GER #Name of country that "built" the equipment
 				}
 				add_equipment_to_stockpile = {
-					type = motorized_equipment_1 #type of equipment, from file
-					amount = 900 #amount
-					producer = GER #Name of country that "built" the equipment
+				type = motorized_equipment_1 #type of equipment, from file
+				amount = 900 #amount
+				producer = GER #Name of country that "built" the equipment
 				}
 				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1 #type of equipment, from file
-					amount = 800 #amount
-					producer = GER #Name of country that "built" the equipment
+				type = anti_tank_equipment_1 #type of equipment, from file
+				amount = 800 #amount
+				producer = GER #Name of country that "built" the equipment
 				}
 			
 				division_template = {
-					name = "SS-Gebirgs-Division"
+					name = "SS Division"
 					priority = 2
 	
 					regiments = {
 						mountaineers = { x = 0 y = 0 }
 						mountaineers = { x = 0 y = 1 }
 						mountaineers = { x = 0 y = 2 }
-						mountaineers = { x = 1 y = 0 }
-						mountaineers = { x = 1 y = 1 }
+						mountaineers = { x = 0 y = 3 }
+						mountaineers = { x = 0 y = 4 }
+			
+	    	   		 	artillery_brigade = { x = 1 y = 0 }
+						anti_tank_brigade = { x = 1 y = 1 }
 						mountaineers = { x = 1 y = 2 }
-						mountaineers = { x = 2 y = 0 }
-						mountaineers = { x = 2 y = 1 }
-						mountaineers = { x = 2 y = 2 }
-						
-						artillery_brigade = { x = 3 y = 0 }
-						artillery_brigade = { x = 3 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }
-						artillery_brigade = { x = 3 y = 3 }
+						mountaineers = { x = 1 y = 3 }
+						mountaineers = { x = 1 y = 4 }
+
 					}
 					
 					support = {
-						DIV_HQ = { x = 0 y = 0 }
+						recon = { x = 0 y = 0 }
 						engineer = { x = 0 y = 1 }
-						recon = { x = 0 y = 2 }
-						anti_tank = { x = 0 y = 3 }
-						field_hospital = { x = 0 y = 4 }
-						logistics_company { x = 1 y = 0 }
+						signal_company = { x = 0 y = 2 }
+						logistics_company { x = 0 y = 3 }
+					
 					}
 				}
 				
-				division_template = {
-					name = "Infanterie-Division G"
+								division_template = {
+					name = "Infantrie Division"
 					priority = 2
 	
 					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
+						mountaineers = { x = 0 y = 0 }
+						mountaineers = { x = 0 y = 1 }
+						mountaineers = { x = 0 y = 2 }
+						mountaineers = { x = 0 y = 3}
 						
-						artillery_brigade = { x = 3 y = 0 }
-						artillery_brigade = { x = 3 y = 1 }
-						artillery_brigade = { x = 3 y = 2 }
-						artillery_brigade = { x = 3 y = 3 }
+						mountaineers = { x = 1 y = 0 }
+						mountaineers = { x = 1 y = 1 }
+						mountaineers = { x = 1 y = 2 }
+						mountaineers = { x = 1 y = 3 }
 					}
 					
 					support = {
-	    	   		 	DIV_HQ = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						recon = { x = 0 y = 2 }
-						anti_tank = { x = 0 y = 3 }
-						field_hospital = { x = 0 y = 4 }
+	    	   		 	artillery = { x = 0 y = 0 }
+						anti_tank = { x = 0 y = 1 }
+						engineer = { x = 0 y = 0 }
+					
 					}
 				}
 	
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"6th SS-Gebirgs-Division Nord\" division_template = \"SS-Gebirgs-Division\" start_experience_factor = 0.5"
+						division = "name = \"6th SS Mountain Division Nord\" division_template = \"SS Division\" start_experience_factor = 0.5" 
 						owner = FIN
 					}	
 					create_unit = {
-						division = "name = \"169th Infanterie-Division\" division_template = \"Infanterie-Division G\" start_experience_factor = 0.5"
+						division = "name = \"169th Infantry Division\" division_template = \"Infantrie Division\" start_experience_factor = 0.5" 
+						owner = FIN
 					}
 					create_unit = {
-						division = "name = \"163rd Infanterie-Division\" division_template = \"Infanterie-Division G\" start_experience_factor = 0.5" 
+						division = "name = \"163rd Infantry Division\" division_template = \"Infantrie Division\" start_experience_factor = 0.5" 
 						owner = FIN
 					}	
 					create_unit = {
-						division = "name = \"71st Infanterie-Division\" division_template = \"Infanterie-Division G\" start_experience_factor = 0.5" 
+						division = "name = \"71st Infantry Division\" division_template = \"Infantrie Division\" start_experience_factor = 0.5" 
 						owner = FIN
 					}
 					create_unit = {
-						division = "name = \"212th Infanterie-Division\" division_template = \"Infanterie-Division G\" start_experience_factor = 0.5" 
+						division = "name = \"212th Infantry Division\" division_template = \"Infantrie Division\" start_experience_factor = 0.5" 
 						owner = FIN
 					}
 					
@@ -561,43 +542,43 @@ focus_tree = {
 		}	
 	}
 	
-	# focus = {
-		# id = fin_stabinthebackfoc
-		# text = fin_stabinthebackfoc
-		# icon = GFX_goal_generic_more_territorial_claims
-		# cost = 10
-		# prerequisite = {
-			# focus = fin_gerequipmentfoc
-		# }
-		# mutually_exclusive = {
-			# focus = fin_joinaxisfoc
-		# }
-		# available = {
-			# has_war_with = SOV
-			# surrender_progress > 0.25
-			# is_puppet = no
-			# is_in_faction = no
-		# }
-		# x = 2
-		# y = 6
+	focus = {
+		id = fin_stabinthebackfoc
+		text = fin_stabinthebackfoc
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10
+		prerequisite = {
+			focus = fin_gerequipmentfoc
+		}
+		mutually_exclusive = {
+			focus = fin_joinaxisfoc
+		}
+		available = {
+			has_war_with = SOV
+			surrender_progress > 0.25
+			is_puppet = no
+			is_in_faction = no
+		}
+		x = 2
+		y = 6
 		
-		# completion_reward = {
-			# custom_effect_tooltip = FIN_stabinthebackev
+		completion_reward = {
+			custom_effect_tooltip = FIN_stabinthebackev
 		
-			# hidden_effect = {
-				# remove_ideas = FIN_stopai
-				# set_rule = { can_join_factions = yes }
-					# SOV = {
-				# country_event = { id = finland.12 days = 1 }
-				# }
+			hidden_effect = {
+				remove_ideas = FIN_stopai
+				set_rule = { can_join_factions = yes }
+					SOV = {
+				country_event = { id = finland.12 days = 1 }
+				}
 
-			# }
+			}
 		
-		# }
+		}
 		
 
 
-	# }
+	}
 	
 	focus = {
 		id = fin_joinaxisfoc
@@ -605,11 +586,11 @@ focus_tree = {
 		icon = GFX_goal_molotov_ribbentrop_pact
 		cost = 10
 		prerequisite = {
-			focus = fin_germantreatyfoc
+			focus = fin_gerequipmentfoc
 		}
-		# mutually_exclusive = {
-			# focus = fin_stabinthebackfoc
-		# }
+		mutually_exclusive = {
+			focus = fin_stabinthebackfoc
+		}
 		available = {
 			is_puppet = no
 			GER = {
@@ -623,8 +604,8 @@ focus_tree = {
 			is_in_faction_with = GER
 			}
 		
-		x = 3
-		y = 5
+		x = 4
+		y = 6
 		
 		completion_reward = {
 		
@@ -2009,7 +1990,7 @@ focus_tree = {
 		y = 1
 		
 		completion_reward = {
-			149 = {
+			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -2018,7 +1999,12 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2040,10 +2026,15 @@ focus_tree = {
 		y = 2
 		
 		completion_reward = {
-			111 = {
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2069,7 +2060,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2169,7 +2160,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2193,7 +2184,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2214,10 +2205,10 @@ focus_tree = {
 		
 		completion_reward = {
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2246,25 +2237,25 @@ focus_tree = {
 		}
 	}
 	
-	# focus = {
-		# id = fin_greaterfoc
-		# text = fin_greaterfoc
-		# icon = GFX_goal_finnlebensraum
-		# cost = 10
-		# prerequisite = {
-			# focus = fin_gerequipmentfoc
-		# }
-		# x = 3
-		# y = 7
+	focus = {
+		id = fin_greaterfoc
+		text = fin_greaterfoc
+		icon = GFX_goal_finnlebensraum
+		cost = 10
+		prerequisite = {
+			focus = fin_joinaxisfoc
+		}
+		x = 3
+		y = 7
 		
-		# completion_reward = {
-					# 213 = { add_claim_by = FIN }
-					# 215 = { add_claim_by = FIN }
-					# 216 = { add_claim_by = FIN }
-					# add_ideas = fin_greaterfinland
-		# }
+		completion_reward = {
+					213 = { add_claim_by = FIN }
+					215 = { add_claim_by = FIN }
+					216 = { add_claim_by = FIN }
+					add_ideas = fin_greaterfinland
+		}
 
-	# }
+	}
 	
 	focus = {
 		id = fin_fortaland

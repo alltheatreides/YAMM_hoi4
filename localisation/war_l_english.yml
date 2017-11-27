@@ -11,6 +11,6 @@
  WAR_NAME_SOV_FIN:0 "Winter War"
  WAR_NAME_FIN_SOV:0 "Continuation War"
  WAR_NAME_GER_FIN:0 "Lapland War"
- WAR_NAME_GER_POL:0 "Second World War"
+ WAR_NAME_GER_POL:0 "World War II"
+ WAR_NAME_GER_SOV:0 "The Eastern Front"
  WAR_NAME_JAP_CHI:0 "Second Sino-Japanese War"
-

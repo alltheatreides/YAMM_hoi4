@@ -77,7 +77,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				threat > 0.10
+				threat > 0.2
 				NOT = { has_government = democratic }
 			}
 		}
@@ -86,8 +86,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		complete_tooltip = {
@@ -540,45 +540,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SAF_secure_interests_in_africa
-		icon = GFX_goal_tfv_saf_secure_interests_in_africa
-		prerequisite = { focus = SAF_suppress_the_stormjaers }
-		prerequisite = { focus = SAF_desert_equipment }
-		x = -3
-		y = 4
-		relative_position_id = SAF_support_the_policy_of_appeasement
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-			NOT = { has_war_with = ENG }
-			ENG = { is_puppet = no }
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		ENG = { custom_effect_tooltip = needs_approval 
-				country_event = tfv_south_africa.1
-				}
-		}
-	}
 
 	############################
 	## SHARED POLITICS SECTION #
@@ -1893,13 +1854,13 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SAF_soviet_military_thinking
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = cat_mass_assault
 			}
 			add_tech_bonus = {
 				name = SAF_soviet_military_thinking
-				bonus = 0.25
-				uses = 2
+				bonus = 0.5
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -2481,7 +2442,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SAF_establish_the_atomics_energy_board
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = nuclear
 			}
 		}
@@ -2684,12 +2645,9 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SAF_q_services_corps
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				technology = motorised_infantry
-				technology = tech_logistics_company
 				technology = tech_logistics_company2
-				technology = tech_logistics_company3
-				technology = tech_logistics_company4
 			}
 		}
 	}
@@ -2810,7 +2768,7 @@ focus_tree = {
 				name = SAF_sa_engineer_corps
 				bonus = 0.5
 				uses = 1
-				category = support_tech
+				technology = tech_engineers2
 			}
 		}
 	}
@@ -2891,7 +2849,7 @@ focus_tree = {
 				name = SAF_mechanization_effort
 				bonus = 0.5
 				uses = 1
-				category = cat_mechanized_equipment
+				technology = mechanised_infantry
 			}
 		}
 	}
@@ -2931,9 +2889,9 @@ focus_tree = {
 				name = SAF_south_african_special_forces
 				bonus = 0.5
 				uses = 1
-				category = para_tech
-				category = marine_tech
-				category = mountaineers_tech
+				technology = paratroopers2
+				technology = marines2
+				technology = tech_mountaineers2
 			}
 		}
 	}
@@ -2973,7 +2931,7 @@ focus_tree = {
 				name = SAF_armor_effort
 				bonus = 0.5
 				uses = 1
-				category = armor
+	            technology = improved_light_tank
 			}
 		}
 	}
@@ -3068,7 +3026,10 @@ focus_tree = {
 		}
 
 		available = {
-
+		    ENG = {
+				exists = yes
+				has_tech = fighter1
+			} 
 		}
 		
 		bypass = {
@@ -3088,9 +3049,7 @@ focus_tree = {
 				name = SAF_improve_the_hawker_hartbees
 				bonus = 0.5
 				uses = 1
-				technology = early_fighter
 				technology = fighter1
-				technology = fighter2
 			}
 		}
 	}
@@ -3110,9 +3069,7 @@ focus_tree = {
 			factor = 0.6
 		}
 
-		available = {
-
-		}
+		available = { date > 1939.1.1 }
 		
 		bypass = {
 
@@ -3131,11 +3088,9 @@ focus_tree = {
 				name = SAF_replace_the_blenheim
 				bonus = 0.5
 				uses = 1
-				technology = tactical_bomber1
 				technology = tactical_bomber2
 				technology = CAS1
-				technology = CAS2
-				category = naval_bomber
+				technology = naval_bomber1
 			}
 		}
 	}
@@ -3195,9 +3150,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
+		available = { date > 1939.1.1 }
 		
 		bypass = {
 
@@ -3216,7 +3169,6 @@ focus_tree = {
 				name = SAF_desert_air_force
 				bonus = 0.5
 				uses = 1
-				technology = CAS1
 				technology = CAS2
 			}
 		}
@@ -3236,9 +3188,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
+		available = { date > 1939.1.1 }
 		
 		bypass = {
 
@@ -3257,7 +3207,7 @@ focus_tree = {
 				name = SAF_secure_the_cape_sea_route
 				bonus = 0.5
 				uses = 1
-				category = naval_bomber
+				technology = naval_bomber2
 			}
 		}
 	}
@@ -3476,9 +3426,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
+		available = { date > 1939.1.1 }
 		
 		bypass = {
 
@@ -3582,9 +3530,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SAF_anti_submarine_tactics
 				bonus = 0.5
-				ahead_reduction = 1
 				uses = 1
-				technology = basic_destroyer
 				technology = improved_destroyer
 			}
 		}
@@ -3628,9 +3574,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SAF_submarine_warfare
 				bonus = 0.5
-				ahead_reduction = 1
 				uses = 1
-				technology = basic_submarine
 				technology = improved_submarine
 			}
 		}
@@ -3678,7 +3622,7 @@ focus_tree = {
 				name = SAF_prepare_overseas_offensive
 				bonus = 0.5
 				uses = 1
-				category = marine_tech
+				technology = marines2
 				category = tp_tech
 			}
 		}

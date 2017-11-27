@@ -217,41 +217,6 @@ country_event = {
 		}		
 		add_ideas = new_deal
 	}
-
-	option = { 
-		name = usa.6.b
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}		
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-		add_political_power = -75
-		if = {
-			limit = {
-				has_idea = standard_oil_california
-			}
-			add_political_power = 150
-		}
-		if = {
-			limit = {
-				NOT = { has_idea = standard_oil_california }
-			}
-			add_ideas = standard_oil_california
-		}
-		create_country_leader = {
-			name = "Alf Landon"
-			desc = "POLITICS_ALF_LANDON_DESC"
-			picture = "Portrait_USA_Generic_2.dds"
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				staunch_constitutionalist
-			}
-		}
-	}
 }
 
 # Election of 1940: Roosevelt vs Wendell Wilkie
@@ -282,70 +247,6 @@ country_event = {
 		remove_ideas = great_depression_1
 		remove_ideas = great_depression_2
 	}
-
-	option = {
-		name = usa.7.b
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}	
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-		remove_ideas = new_deal
-		add_ideas = wilkies_new_deal
-		create_country_leader = {
-			name = "Wendell Wilkie"
-			desc = "POLITICS_WENDELL_WILKIE_DESC"
-			picture = "Portrait_USA_Wendell_Willkie.dds"
-			expire = "1965.1.1"
-			ideology = liberalism
-			traits = {
-				
-			}
-		}
-		remove_ideas = great_depression
-		remove_ideas = great_depression_1
-		remove_ideas = great_depression_2
-	}
-}
-
-# Election of 1940: Roosevelt vs Landon (Incumbent)
-country_event = {
-	id = usa.8
-	title = usa.8.t
-	desc = usa.8.d
-	picture = GFX_report_event_usa_election_landon_roosevelt
-
-	is_triggered_only = yes
-
-	trigger = {
-		tag = USA
-		democratic > 0.5
-		date > 1940.1.1
-		date < 1941.1.1
-		NOT = { has_idea = new_deal }
-	}
-	
-	option = { 
-		name = usa.8.a
-		add_political_power = -40
-		add_national_unity = 0.1
-		remove_ideas = great_depression
-		remove_ideas = great_depression_1
-		remove_ideas = great_depression_2
-	}
-
-	option = { 
-		name = usa.8.b
-		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
-		add_ideas = new_deal
-		retire_country_leader = yes
-		remove_ideas = great_depression
-		remove_ideas = great_depression_1
-		remove_ideas = great_depression_2
-	}
 }
 
 # Election of 1944: Roosevelt vs Thomas E. Dewey
@@ -372,29 +273,6 @@ country_event = {
 			factor = 75
 		}
 		add_political_power = 10
-	}
-
-	option = { 
-		name = usa.9.b
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}		
-		remove_ideas = new_deal
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-		create_country_leader = {
-			name = "Thomas E. Dewey"
-			desc = "POLITICS_THOMAS_DEWEY_DESC"
-			picture = "Portrait_USA_Generic_2.dds"
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				
-			}
-		}
 	}
 }
 
@@ -459,30 +337,6 @@ country_event = {
 			factor = 25
 		}	
 		add_political_power = 10
-	}
-
-	option = { 
-		name = usa.11.b
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		remove_ideas = new_deal
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-		create_country_leader = {
-			name = "Douglas MacArthur"
-			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
-			picture = "Portrait_USA_Douglas_MacArthur.dds"
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				
-			}
-		}
-		remove_unit_leader = 57
 	}
 }
 

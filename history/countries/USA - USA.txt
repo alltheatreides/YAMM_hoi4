@@ -6,8 +6,6 @@ set_research_slots = 4
 
 # Starting tech
 set_technology = {
-	motorised_infantry = 1
-	marines  = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
@@ -15,7 +13,6 @@ set_technology = {
 	tech_engineers = 1
 	gw_artillery = 1
 	gwtank = 1
-	basic_light_tank = 1
 	early_fighter = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
@@ -37,13 +34,8 @@ set_technology = {
 	transport = 1
 	superior_firepower = 1
 	base_strike = 1
-	marines = 1
-	motorised_infantry = 1
 	basic_machine_tools = 1
 	concentrated_industry = 1
-	motorized_army = 1
-	
-	tech_field_hospital = 1
 	support_weapons = 1
 }
 
@@ -213,6 +205,10 @@ add_ideas = {
 # DIPLOMACY
 set_autonomy = {
 	target = PHI
+	autonomous_state =  autonomy_puppet
+}
+set_autonomy = {
+	target = LIB
 	autonomous_state =  autonomy_puppet
 }
 
@@ -617,6 +613,18 @@ create_equipment_variant = {
 			ship_reliability_upgrade = 2
 		}
 	}
+
+	create_equipment_variant = {
+		name = "F2A Buffalo"
+		type = cv_fighter_equipment_1
+		upgrades = {
+			cv_plane_gun_upgrade = 5
+			cv_plane_range_upgrade = 0
+			plane_engine_upgrade = 2
+			plane_reliability_upgrade = 5
+		}
+	}
+
 
 	# 1941
 	#create_equipment_variant = {

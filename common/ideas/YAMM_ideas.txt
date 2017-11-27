@@ -46,27 +46,6 @@ ideas = {
 		}
 	}
 	
-	country = {
-		no_volunteers = {
-			allowed = {
-				always = yes
-			}
-			
-			# allowed_civil_war = {
-				# has_government = democratic
-			# }
-			
-			removal_cost = -1
-
-			picture = generic_pp_unity_bonus
-			
-
-			modifier = {
-				send_volunteers_tension = 1
-			}
-		}
-	}
-	
 	#France
 	country = {
 		incompetent_aircraft_industry = {

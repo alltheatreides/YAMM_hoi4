@@ -207,7 +207,7 @@ equipments = {
 		reliability = 0.8
 
 		# Air vs Navy - high damage / medium hit chance / easy to hurt
-		naval_strike_attack = 9
+		naval_strike_attack = 15
 		naval_strike_targetting = 7.5
 		
 		build_cost_ic = 26
@@ -250,7 +250,7 @@ equipments = {
 		reliability = 0.8
 
 		# Air vs Navy - high damage / medium hit chance / easy to hurt
-		naval_strike_attack = 7.5
+		naval_strike_attack = 15
 		naval_strike_targetting = 7.5
 		
 		build_cost_ic = 26
@@ -703,7 +703,7 @@ equipments = {
 		air_agility = 35
 		air_attack = 10
 		air_defence = 14
-		naval_strike_attack = 13
+		naval_strike_attack = 20
 		naval_strike_targetting = 10
 		
 		build_cost_ic = 28
@@ -727,7 +727,7 @@ equipments = {
 		air_agility = 40
 		air_attack = 14
 		air_defence = 16
-		naval_strike_attack = 16
+		naval_strike_attack = 25
 		naval_strike_targetting = 12.5
 	
 		build_cost_ic = 30
@@ -768,7 +768,7 @@ equipments = {
 		air_agility = 35
 		air_attack = 10
 		air_defence = 15
-		naval_strike_attack = 12
+		naval_strike_attack = 20
 		naval_strike_targetting = 10
 		build_cost_ic = 33.2 # cv_version costs 20% more of base archetype
 		resources = {
@@ -791,7 +791,7 @@ equipments = {
 		air_agility = 40
 		air_attack = 14
 		air_defence = 17
-		naval_strike_attack = 15
+		naval_strike_attack = 25
 		naval_strike_targetting = 12.5
 		build_cost_ic = 35.2 # cv_version costs 20% more of base archetype
 		resources = {

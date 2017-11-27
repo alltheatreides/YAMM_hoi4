@@ -6,9 +6,8 @@ set_research_slots = 3
 
 add_ideas = {
 	en_svensk_tiger
-	real_neutrality
 	#neutrality_idea
-	#neutrality_idea_sweden
+	neutrality_idea_sweden
 	kungen_gustaf_v
 	
 }
@@ -217,7 +216,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ivar Holmquist"
 	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Ivar_Holmquist.dds"
-	traits = { ranger }
+	traits = { ranger bearer_of_artillery }
 	skill = 4
 
 }

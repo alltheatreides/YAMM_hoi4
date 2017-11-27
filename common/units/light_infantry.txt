@@ -30,7 +30,7 @@ sub_units = {
 
 		#Misc Abilities
 		training_time = 90
-		suppression = 1.25
+		suppression = 1
 		weight = 0.5
 
 		supply_consumption = 0.05 # less equipment, less supplies -0.02

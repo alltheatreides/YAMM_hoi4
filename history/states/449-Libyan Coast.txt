@@ -10,7 +10,6 @@ state={
 		owner = ITA
 		buildings = {
 			infrastructure = 0
-			anti_air_building = 1
 		}
 		add_core_of = LBA
 	}

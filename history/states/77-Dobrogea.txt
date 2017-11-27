@@ -3,9 +3,6 @@ state={
 	id=77
 	name="STATE_77"
 	manpower = 378000
-	resources={
-		oil=12
-	}
 	
 	state_category = rural
 
@@ -14,7 +11,6 @@ state={
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
-			anti_air_building = 1
 		}
 		add_core_of = ROM
 		add_claim_by = BUL

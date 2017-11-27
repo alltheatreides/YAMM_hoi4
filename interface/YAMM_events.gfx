@@ -81,14 +81,4 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_urals_industry.dds"
 	}
 	
-	spriteType = {
-		name = "GFX_report_event_hungry_mussolini"
-		texturefile = "gfx/event_pictures/report_event_hungry_mussolini.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_country_event_rom_romania.50"
-		texturefile = "gfx/event_pictures/country_event_rom_romania.50.dds"
-	}
-	
 }

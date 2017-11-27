@@ -159,31 +159,7 @@ ideas = {
 			}			
 		}
 
-		stiff_upper_lip_2 = {
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			modifier = {
-				drift_defence_factor = 0.5
-				army_defence_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
-				industrial_capacity_factory = 0.10
-				air_air_superiority_attack_factor = 0.03
-				industry_air_damage_factor = -0.15
-			}
-			
-			rule = {
-				can_create_factions = yes
-			}			
-		}
+		
 		
 		british_austerity_idea = {
 			
@@ -247,9 +223,6 @@ ideas = {
 					build_cost_ic = -0.1 instant = yes
 				}
 				heavy_fighter_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				tac_bomber_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -344,30 +317,6 @@ ideas = {
 	
 	
 	political_advisor = {
-		
-		harry_pollitt = {
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
 			
 		clement_attlee = {
 			
@@ -386,31 +335,6 @@ ideas = {
 			do_effect = {
 				NOT = {
 					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		
-		john_beckett = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = fascism
 				}
 			}
 			
@@ -760,7 +684,7 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 1
-			}
+	}
 	}		}
 	
 	
@@ -885,7 +809,7 @@ ideas = {
 			
 			cost = 75
 			removal_cost = 10
-						
+			
 			research_bonus = {
 				air_equipment = 0.10
 			}
@@ -978,7 +902,7 @@ ideas = {
 			
 			modifier = {
 			}
-		}
+		}			
 	}
 	
 	materiel_manufacturer = {
@@ -1135,7 +1059,7 @@ ideas = {
 				# }
 			# }
 		# }
-		
+			
 		nuffield = {
 			cost = 75
 			allowed = {
@@ -1160,7 +1084,7 @@ ideas = {
 				}
 			}
 		}
-		
+			
 		vauxhall_motors = {
 			cost = 75
 			allowed = {
@@ -1172,7 +1096,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.10
 			}
-						
+
 			equipment_bonus = {
 				heavy_tank_equipment = {
 					armor_value = 0.075
@@ -1198,7 +1122,7 @@ ideas = {
 				}
 			}
 		}
-		
+			
 		vickers_armstrong_eng = {
 			cost = 75
 			allowed = {
@@ -1207,7 +1131,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.10
 			}
-						
+			
 			equipment_bonus = {
 				heavy_tank_equipment = {
 					armor_value = 0.050

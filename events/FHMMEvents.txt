@@ -1,0 +1,27 @@
+﻿###########################
+# Fulmen's Historical MP Mod Events
+###########################
+
+add_namespace = fhmm
+
+country_event = {
+	id = fhmm.1
+	title = fhmm.1.t
+	desc = fhmm.1.d
+	picture = GFX_report_event_hitler_handshake
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = IRE
+		is_in_faction_with = ENG
+	}
+	
+	option = { 
+		name = fhmm.1.a
+		ai_chance = {
+			factor = 100
+		}
+		ENG = { set_autonomy = { target = IRE autonomy_state = autonomy_dominion } }
+	}
+}

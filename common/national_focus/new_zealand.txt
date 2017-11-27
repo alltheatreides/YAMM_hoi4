@@ -66,7 +66,7 @@ focus_tree = {
 	focus = {
 		id = NZL_transfer_the_new_zealand_division
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 15
+		x = 7
 		y = 0
 
 		cost = 10
@@ -163,9 +163,7 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
+		available = { date > 1939.1.1 }
 
 		bypass = {
 
@@ -330,9 +328,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NZL_destroyer_effort
 				bonus = 0.5
-				ahead_reduction = 1
 				uses = 1
-				category = dd_tech
+				technology = improved_destroyer
 			}
 		}
 	}
@@ -372,9 +369,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NZL_submarine_effort
 				bonus = 0.5
-				ahead_reduction = 1
 				uses = 1
-				category = ss_tech
+				technology = improved_submarine
 			}
 		}
 	}
@@ -413,51 +409,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NZL_light_cruiser_effort
 				bonus = 0.5
-				ahead_reduction = 1
 				uses = 1
-				category = cl_tech
-			}
-		}
-	}
-
-	focus = {
-		id = NZL_capital_ship_effort
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = NZL_destroyer_effort focus = NZL_submarine_effort }
-		x = 0
-		y = 4
-		relative_position_id = NZL_transfer_the_new_zealand_division
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = NZL_capital_ship_effort
-				bonus = 0.5
-				ahead_reduction = 1
-				uses = 1
-				category = bb_tech
-				category = cv_tech
+				technology = improved_light_cruiser
 			}
 		}
 	}
@@ -470,7 +423,7 @@ focus_tree = {
 	focus = {
 		id = NZL_expand_the_nzpaf
 		icon = GFX_goal_generic_air_doctrine
-		x = 20
+		x = 12
 		y = 0
 
 		cost = 10
@@ -608,7 +561,10 @@ focus_tree = {
 		}
 
 		available = {
-
+		    ENG = {
+				exists = yes
+				has_tech = fighter1
+			} 
 		}
 
 		bypass = {
@@ -629,7 +585,6 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				technology = fighter1
-				technology = fighter2
 			}
 		}
 	}
@@ -649,9 +604,7 @@ focus_tree = {
 			factor = 2
 		}
 
-		available = {
-
-		}
+		available = { date > 1939.1.1 }
 
 		bypass = {
 
@@ -668,12 +621,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_bomber_focus
-				bonus = 0.50
+				bonus = 0.5
 				uses = 1
-				technology = tactical_bomber1 
 				technology = tactical_bomber2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
 			}
 		}
 	}
@@ -692,9 +642,7 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
+		available = { date > 1939.1.1 }
 
 		bypass = {
 
@@ -711,9 +659,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_defend_our_islands
-				bonus = 0.50
-				uses = 2
-				category = naval_air
+				bonus = 0.5
+				uses = 1
+				technology = naval_bomber2
 			}
 		}
 	}
@@ -733,9 +681,7 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
+		available = { date > 1939.1.1 }
 
 		bypass = {
 
@@ -752,12 +698,10 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_modern_fighters
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
 				technology = fighter2
-				category = cat_heavy_fighter
+				technology = heavy_fighter2
 			}
 		}
 	}
@@ -777,9 +721,7 @@ focus_tree = {
 			factor = 2
 		}
 
-		available = {
-
-		}
+		available = { date > 1939.1.1 }
 
 		bypass = {
 
@@ -797,8 +739,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NZL_heavy_bombers
 				bonus = 0.5
-				uses = 2
-				technology = strategic_bomber1
+				uses = 1
 				technology = strategic_bomber2
 			}
 		}
@@ -812,7 +753,7 @@ focus_tree = {
 	focus = {
 		id = NZL_national_roads_board
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 24
+		x = 16
 		y = 0
 
 		cost = 10
@@ -1310,7 +1251,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NZL_project_seal
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = nuclear
 			}
 		}
@@ -1395,7 +1336,7 @@ focus_tree = {
 	focus = {
 		id = NZL_army_reforms
 		icon = GFX_goal_generic_army_doctrines
-		x = 29
+		x = 21
 		y = 0
 
 		cost = 10
@@ -1616,7 +1557,7 @@ focus_tree = {
 				name = NZL_schofield_tank
 				bonus = 0.5
 				uses = 1
-				category = cat_light_armor
+	            technology = improved_light_tank
 			}
 		}
 	}
@@ -1654,9 +1595,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_long_range_patrol
-				bonus = 0.50
-				uses = 2
-				category = marine_tech
+				bonus = 0.5
+				uses = 1
+				technology = marines2
 			}
 		}
 	}
@@ -1694,7 +1635,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_artillery_focus
-				bonus = 0.50
+				bonus = 0.5
 				uses = 1
 				category = artillery
 			}
@@ -1704,7 +1645,7 @@ focus_tree = {
 	focus = {
 		id = NZL_research_collaboration
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = NZL_big_bob_tank }
+		prerequisite = { focus = NZL_artillery_focus }
 		prerequisite = { focus = NZL_think_big }
 		x = -1
 		y = 5
@@ -1746,47 +1687,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = NZL_big_bob_tank
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = NZL_artillery_focus }
-		x = 1
-		y = 4
-		relative_position_id = NZL_army_reforms
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = NZL_big_bob_tank
-				ahead_reduction = 1
-				bonus = 0.5
-				uses = 1
-				technology = super_heavy_tank
-			}
-		}
-	}
-
 	############################
 	##### POLITICS SECTION #####
 	############################
@@ -1794,7 +1694,7 @@ focus_tree = {
 	focus = {
 		id = NZL_the_first_labor_government
 		icon = GFX_goal_generic_improve_relations
-		x = 3
+		x = 2
 		y = 0
 
 		cost = 10
@@ -1832,7 +1732,7 @@ focus_tree = {
 		id = NZL_ratana_alliance
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = NZL_the_first_labor_government }
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
@@ -2152,8 +2052,7 @@ focus_tree = {
 		id = NZL_strengthen_the_commonwealth
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = NZL_the_first_labor_government }
-		mutually_exclusive = { focus = NZL_statute_of_westminster }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
@@ -2187,46 +2086,6 @@ focus_tree = {
 			add_political_power = 100
 			add_opinion_modifier = { target = ENG modifier = NZL_strengthen_ties } 
 			ENG = { add_opinion_modifier = { target = NZL modifier = NZL_strengthen_ties } }
-		}
-	}
-
-	focus = {
-		id = NZL_statute_of_westminster
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = NZL_the_first_labor_government }
-		mutually_exclusive = { focus = NZL_strengthen_the_commonwealth }
-		x = 5
-		y = 1
-		relative_position_id = NZL_the_first_labor_government
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_political_power = 120
-			add_autonomy_ratio = {
-				value = 0.5
-				localization = NZL_statute_of_westminster
-			}
 		}
 	}
 
@@ -2342,442 +2201,4 @@ focus_tree = {
 			}
 		}
 	}
-
-	############################
-	### GO COMMUNIST SECTION ###
-	############################
-
-	focus = {
-		id = NZL_the_lee_affair
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = NZL_statute_of_westminster }
-		mutually_exclusive = { focus = NZL_in_the_darkness focus = NZL_constitution_amendment_act }
-		x = 1
-		y = 1
-		relative_position_id = NZL_statute_of_westminster
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = NZL_first_labor_government
-				add_idea = NZL_the_workers_party_1
-			}
-		}
-	}
-
-	focus = {
-		id = NZL_empower_the_working_class
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = NZL_the_lee_affair }
-		x = 0
-		y = 1
-		relative_position_id = NZL_the_lee_affair
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			is_subject = no
-			has_government = communism
-			NOT = { has_war_together_with = ENG }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ENG = { remove_from_faction = ROOT }
-			add_political_power = 100
-			
-			set_autonomy = {
-				target = NZL
-				autonomy_state = autonomy_free
-			}
-
-			swap_ideas = {
-				remove_idea = NZL_the_workers_party_1
-				add_idea = NZL_the_workers_party_2
-			}
-		}
-	}
-
-	focus = {
-		id = NZL_join_comintern
-		icon = GFX_goal_generic_alliance
-		prerequisite = { focus = NZL_empower_the_working_class }
-		x = 0
-		y = 2
-		relative_position_id = NZL_the_lee_affair
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			is_subject = no
-			has_government = communism
-			SOV = {
-				has_capitulated = no
-				is_subject = no
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			SOV = { country_event = { id = tfv_new_zealand.1 } }
-		}
-	}
-
-	focus = {
-		id = NZL_technology_sharing_with_soviet_union
-		icon = GFX_goal_tfv_generic_tech_sharing
-		prerequisite = { focus = NZL_join_comintern }
-		x = 0
-		y = 3
-		relative_position_id = NZL_the_lee_affair
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-			has_government = communism
-			is_subject = no
-			is_in_faction_with = SOV
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		
-			SOV = { add_to_tech_sharing_group = comintern_research }
-			add_to_tech_sharing_group = comintern_research
-		}
-	}
-
-
-	############################
-	#### GO FASCIST SECTION ####
-	############################
-
-	focus = {
-		id = NZL_in_the_darkness
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = NZL_statute_of_westminster }
-		mutually_exclusive = { focus = NZL_the_lee_affair focus = NZL_constitution_amendment_act }
-		x = -3
-		y = 1
-		relative_position_id = NZL_statute_of_westminster
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = NZL_first_labor_government
-				add_idea = NZL_in_the_darkness
-			}
-		}
-	}
-
-	focus = {
-		id = NZL_befriend_japan
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = NZL_in_the_darkness }
-		mutually_exclusive = { focus = NZL_rule_them_all }		
-		x = 0
-		y = 1
-		relative_position_id = NZL_in_the_darkness
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			NOT = { has_war_with = JAP }
-			JAP = { has_government = ROOT }
-			is_subject = no
-			has_government = fascism			
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			JAP = { country_event = { id = tfv_new_zealand.4 } }
-		}
-	}
-
-	focus = {
-		id = NZL_rule_them_all
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = NZL_in_the_darkness }
-		mutually_exclusive = { focus = NZL_befriend_japan }
-		x = 2
-		y = 1
-		relative_position_id = NZL_in_the_darkness
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			is_subject = no
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			if = {
-				limit = { AST = { NOT = { has_government = ROOT } } }
-				create_wargoal = {
-					type = annex_EVERYTHING#!!!!!
-					target = AST
-				}
-				else = {
-					add_political_power = 50
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = NZL_technology_sharing_with_japan
-		icon = GFX_goal_tfv_generic_tech_sharing
-		prerequisite = { focus = NZL_befriend_japan }
-		x = 0
-		y = 2
-		relative_position_id = NZL_in_the_darkness
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-			has_government = fascism
-			is_in_faction_with = JAP
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			JAP = { add_to_tech_sharing_group = japanese_research }
-			add_to_tech_sharing_group = japanese_research
-		}
-	}
-
-
-	############################
-	##### GO ALONE SECTION #####
-	############################
-
-	focus = {
-		id = NZL_constitution_amendment_act
-		icon = GFX_goal_tfv_sever_ties_with_uk
-		prerequisite = { focus = NZL_statute_of_westminster }
-		mutually_exclusive = { focus = NZL_the_lee_affair focus = NZL_in_the_darkness }
-		x = 3
-		y = 1
-		relative_position_id = NZL_statute_of_westminster
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			NOT = {
-				any_country = {
-					has_war_together_with = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_political_power = 70
-			add_autonomy_ratio = {
-				value = 1
-				localization = NZL_constitution_amendment_act
-			}
-		}
-	}
-
-	focus = {
-		id = NZL_independent_new_zealand
-		icon = GFX_focus_AST_never_gallipoli
-		prerequisite = { focus = NZL_constitution_amendment_act }
-		x = 0
-		y = 1
-		relative_position_id = NZL_constitution_amendment_act
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			is_subject = no
-			NOT = {
-				any_country = {
-					has_war_together_with = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			random_country = {
-				limit = {
-					NOT = { ROOT = { is_faction_leader = yes } }
-					is_faction_leader = yes
-					is_in_faction_with = ROOT
-				}
-				remove_from_faction = ROOT
-			}
-		}
-	}
-
-
-
 }		

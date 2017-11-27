@@ -5,7 +5,6 @@ state={
 	manpower = 941500
 	resources={
 		aluminium=6
-		chromium=6
 	}
 	
 	state_category = rural
@@ -15,7 +14,6 @@ state={
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
-			anti_air_building = 1
 		}
 		add_core_of = ROM
 	}

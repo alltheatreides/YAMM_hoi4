@@ -1,0 +1,81 @@
+﻿add_namespace = pfu
+
+country_event = {
+	id = pfu.1
+	title = pfu.1.t
+	desc = pfu.1.d
+	picture = GFX_report_event_generic_usa_treaty
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		DEN = { 			
+			controls_state = 100
+			controls_state = 101 
+			controls_state = 337
+			has_capitulated = yes
+		}
+	}
+	
+	option = {
+		name = pfu.1.a
+		USA = { 
+			transfer_state = 100 
+			transfer_state = 101 
+		}
+		ENG = {
+			transfer_state = 337
+		}
+		news_event = { hours = 6 id = pfunews.1 }
+	}
+}
+
+country_event = {
+	id = pfu.2
+	title = pfu.2.t
+	desc = pfu.2.d
+	picture = GFX_report_event_chinese_soldiers_01
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CHI
+		CHI = { 			
+			controls_state = 611
+			controls_state = 610
+			controls_state = 716
+			controls_state = 613
+			
+		}
+		NOT = { has_global_flag = sino_jap_peace }
+	}
+	
+		immediate = {
+		set_global_flag = sino_jap_peace
+	}
+			
+	option = {
+		name = pfu.2.a 
+        annex_country = { target = MEN }
+		annex_country = { target = MAN }
+		CHI = {
+			transfer_state = 609
+		}
+				
+			CHI = {
+				white_peace = JAP
+			}
+			
+			PRC = {
+				white_peace = JAP
+			}
+		CHI = {
+		diplomatic_relation = { country = JAP relation = non_aggression_pact }
+		}
+				
+		PRC = {
+	    diplomatic_relation = { country = JAP relation = non_aggression_pact }
+		}
+		}	
+	}

@@ -14,10 +14,25 @@ state={
 		owner = SWI
 		victory_points = { 9620 15 }
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 4
 			industrial_complex = 4
 			air_base = 4
+			9638 ={
+			bunker = 2
+			}
+			6683 ={
+			bunker = 2
+			}
+			9622 ={
+			bunker = 2
+			}
+	    	9620 ={
+			bunker = 5
+			}
+				6666 ={
+			bunker = 2
+			}
 		}
 		add_core_of = SWI
 	}

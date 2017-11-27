@@ -1,6 +1,6 @@
 ﻿##### Division Templates #####
 division_template = {
-	name = "Jalkaväkidivisioona"		# Infantry Division
+	name = "Divisioona"		# Infantry Division
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -64,7 +64,7 @@ units = {
 	division = {
 		name = "6. Divisioona"
 		location = 3137 # Tampere
-		division_template = "Jalkaväkidivisioona"
+		division_template = "Divisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
@@ -72,7 +72,7 @@ units = {
 	division = {
 		name = "9. Divisioona"
 		location = 158 # Oulu
-		division_template = "Jalkaväkidivisioona"
+		division_template = "Divisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
@@ -98,7 +98,7 @@ units = {
 	division = {
 		name = "12. Divisioona"
 		location = 9061 # Joensuu
-		division_template = "Jalkaväkidivisioona"
+		division_template = "Divisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
@@ -106,7 +106,7 @@ units = {
 	division = {
 		name = "13. Divisioona"
 		location = 11141 # Kuopio
-		division_template = "Jalkaväkidivisioona"
+		division_template = "Divisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
@@ -125,7 +125,7 @@ units = {
 	division = {
 		name = "1. Divisioona" 
 		location = 9206 # Viipuri
-		division_template = "Jalkaväkidivisioona"
+		division_template = "Divisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
@@ -133,7 +133,7 @@ units = {
 	division = {
 		name = "4. Divisioona"
 		location = 11105 # Helsinki
-		division_template = "Jalkaväkidivisioona"
+		division_template = "Divisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
@@ -141,7 +141,7 @@ units = {
 	division = {
 		name = "5. Divisioona"
 		location = 3083 # Turku
-		division_template = "Jalkaväkidivisioona"
+		division_template = "Divisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
@@ -149,7 +149,7 @@ units = {
 	division = {
 		name = "11. Divisioona" 
 		location = 3061 # Kotka
-		division_template = "Jalkaväkidivisioona"
+		division_template = "Divisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
@@ -190,7 +190,7 @@ units = {
 	division = {
 		name = "8. Divisioona" # Vaasa
 		location = 3122
-		division_template = "Jalkaväkidivisioona"
+		division_template = "Divisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
@@ -198,7 +198,7 @@ units = {
 	division = {
 		name = "10. Divisioona"
 		location = 9056 # Jyväskylä
-		division_template = "Jalkaväkidivisioona"
+		division_template = "Divisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
@@ -225,15 +225,54 @@ units = {
 		name = "Sukellusvenelaivue"				
 		base = 11105 
 		location =  11105 # Helsinki
-		ship = { name = "Vetehinen" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FIN } } }
-		ship = { name = "Vesihiisi" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FIN } } }
-		ship = { name = "Iku-Turso" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FIN } } }
-		ship = { name = "Vesikko" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FIN } } }
+		ship = { name = "Vetehinen" definition = submarine equipment = { submarine_2 = { amount = 1 owner = FIN } } }
+		ship = { name = "Vesihiisi" definition = submarine equipment = { submarine_2 = { amount = 1 owner = FIN } } }
+		ship = { name = "Iku-Turso" definition = submarine equipment = { submarine_2 = { amount = 1 owner = FIN } } }
+		ship = { name = "Vesikko" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FIN version_name = "Vesikko Class" } } }
+		ship = { name = "Saukko" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FIN } } }
 	}					
 
 }
 	
-### No air units (first formed Jan-1938) ###
+air_wings = {
+	### Tampere ###
+	111 = { 
+		### Bristol Bulldogs
+		fighter_equipment_0 = {
+			owner = "FIN" 
+			amount = 19
+		}
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+		modifier="fighter_genius"
+		name="Ilmari"
+		surname="Juutilainen"
+		callsign="Illu"
+		portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+		}
+		### Gloster Gamecock IIs
+		fighter_equipment_0 = {
+			owner = "FIN" 
+			amount = 17
+		}
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+		modifier="fighter_genius"
+		name="Hans"
+		surname="Wind"
+		callsign="Hasse"
+		portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+		}
+		### Fokker C.V.
+		CAS_equipment_1 = {
+			owner = "FIN" 
+			amount = 19
+		}
+		### VL Kotka II & Blackburn Ripon
+		nav_bomber_equipment_1 = {
+			owner = "FIN" 
+			amount = 33
+		}
+	}
+}
 
 ### Starting Production ###
 instant_effect = {

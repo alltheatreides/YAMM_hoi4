@@ -284,12 +284,12 @@ country_event = {
 		}
 	}
 
-	# option = {
-		# name = china.7.b
-		# ai_chance = { factor = 20 }
-		# CHI = { country_event = { id = china.8 days = 1 } }
-		# add_political_power = -50
-	# }
+	option = {
+		name = china.7.b
+		ai_chance = { factor = 20 }
+		CHI = { country_event = { id = china.8 days = 1 } }
+		add_political_power = -50
+	}
 }
 
 country_event = {
