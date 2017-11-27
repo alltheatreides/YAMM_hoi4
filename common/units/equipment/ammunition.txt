@@ -13,7 +13,7 @@ equipments = {
 		
 		active = yes
 		
-		reliability = 0.65
+		reliability = 1
 		
 		#Defensive Abilities
 		# defense = 10
@@ -57,7 +57,7 @@ equipments = {
 		
 		active = yes
 		
-		reliability = 0.65
+		reliability = 1
 		
 		#Defensive Abilities
 		# defense = 5
