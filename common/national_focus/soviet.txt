@@ -441,7 +441,7 @@ focus_tree = {
 		available = {
 			has_defensive_war_with = GER
 			SOV = { surrender_progress > 0.20 }
-			291 = { is_controlled_by = ENG }
+			291 = { is_controlled_by = IRQ }
 		}
 		completion_reward = {
 			SOV = {
