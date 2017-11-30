@@ -4,7 +4,9 @@ state={
 	name="STATE_6" # Flanders
 	manpower = 4747700
 	resources={
-		steel=48
+		# steel=48
+		coal=20
+		
 	}
 	
 	state_category = metropolis
@@ -19,6 +21,7 @@ state={
 			arms_factory = 5
 			industrial_complex = 7
 			air_base = 3
+			steel_refinery = 4
 			6560 = {
 				naval_base = 3
 			}

@@ -7,7 +7,7 @@ state={
 		tungsten=70
 		# steel= 80
 		chromium = 40
-		iron = 317
+		iron = 301
 	}
 	
 	state_category = rural

@@ -1,7 +1,9 @@
 state={
 	id=736
 	name="STATE_736"
-	
+	resources = {
+		bauxite=203
+	}
 	state_category = city
 
 	history={

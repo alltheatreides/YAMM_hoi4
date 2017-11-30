@@ -5,6 +5,7 @@ state={
 	manpower = 5592576
 	resources={
 		# steel=90
+		coal=313
 	}
 
 	state_category = metropolis
@@ -17,8 +18,8 @@ state={
 			arms_factory = 3
 			industrial_complex = 7
 			anti_air_building = 3
-			steel_refinery = 8
-			power_station_coal = 10
+			steel_refinery = 4
+			# power_station_coal = 10
 		}
 		victory_points = {
 			514 5 

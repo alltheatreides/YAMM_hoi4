@@ -3,6 +3,10 @@ state={
 	id=35
 	name="STATE_35" # Brabant
 	manpower = 1449000
+	resources = {
+		coal=142
+	}
+	
 	
 	state_category = city
 

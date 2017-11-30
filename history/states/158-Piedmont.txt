@@ -6,10 +6,11 @@ state={
 	
 	state_category = metropolis
 	resources={
-		steel=40
-		aluminium=28
+		# steel=40
+		# aluminium=28
 		chromium = 4
 		tungsten = 2
+		iron=23
 	}
 
 	history={
@@ -27,6 +28,7 @@ state={
 			dockyard = 2
 			air_base = 8
 			anti_air_building = 3
+			steel_refinery = 2
 			6788 = {
 				naval_base = 8
 			}
