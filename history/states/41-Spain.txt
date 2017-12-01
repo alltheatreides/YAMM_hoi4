@@ -20,6 +20,7 @@ state={
 			arms_factory = 2
 			industrial_complex = 3
 			air_base = 6
+			steel_refinery = 1
 		}
 		add_core_of = SPR
 	}

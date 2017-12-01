@@ -4,8 +4,11 @@ state={
 	name="STATE_43" # Northern Hungary
 	manpower = 3750752
 	resources={
-		steel=4
-		aluminium=194
+		# steel=4
+		# aluminium=194
+		bauxite=329
+		coal=79
+		iron=5
 	}
 	
 	state_category = large_city
@@ -18,6 +21,7 @@ state={
 			industrial_complex = 4
 			air_base = 4
 			anti_air_building = 2
+			steel_refinery = 1
 		}
 		victory_points = {
 			9660 20 

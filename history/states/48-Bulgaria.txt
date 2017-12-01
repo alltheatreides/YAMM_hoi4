@@ -4,8 +4,11 @@ state={
 	name="STATE_48"
 	manpower = 1891500
 	resources={
-		aluminium=6
-		steel=8
+		# aluminium=6
+		# steel=8
+		iron=8
+		bauxite=6
+		coal=19
 	}
 	
 	

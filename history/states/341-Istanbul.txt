@@ -4,7 +4,7 @@ state= {
 	manpower = 1404509
 	resources={
 		chromium=84
-		steel = 20
+		# steel = 20
 	}
 	
 	state_category = city
@@ -21,6 +21,7 @@ state= {
 			dockyard = 1
 			arms_factory = 2
 			air_base = 4
+			steel_refinery = 1
 			9833 = {
 				naval_base = 8
 			}
