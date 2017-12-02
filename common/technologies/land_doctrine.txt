@@ -777,10 +777,12 @@ technologies = {
 			dispersed_support
 		}
 
-	
 		category_support_battalions = {
 			max_organisation = 10
-			soft_attack = 0.25
+		}
+		artillery = {
+			max_organisation = 10
+			soft_attack = 0.20
 		}
 		
 		path = {
@@ -813,10 +815,12 @@ technologies = {
 	}
 	
 	regimental_combat_teams = {
-
+		
 		category_support_battalions = {
 			max_organisation = 10
-			soft_attack = 0.25
+		}		
+		artillery = {
+			soft_attack = 0.20
 		}
 		
 		enable_tactic = tactic_overwhelming_fire
