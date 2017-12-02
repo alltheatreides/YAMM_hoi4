@@ -3,8 +3,10 @@ state={
 	name="STATE_88"
 	manpower = 4392800
 	resources={
-		steel=18
+		# steel=18
 		oil=8
+		iron=15
+		coal=235
 	}
 	
 	state_category = large_city
@@ -19,6 +21,7 @@ state={
 			arms_factory = 1
 			industrial_complex = 4
 			air_base = 4
+			steel_refinery = 2
 		}
 		add_core_of = POL
 	}
