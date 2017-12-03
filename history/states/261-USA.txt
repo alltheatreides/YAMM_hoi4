@@ -2,8 +2,9 @@ state={
 	id=261
 	name="STATE_261"
 	resources={
-		steel=48.000
-		aluminium=16.000
+		# steel=48.000
+		# aluminium=16.000
+		coal=212
 	}
 	
 	state_category = metropolis
@@ -14,6 +15,7 @@ state={
 			infrastructure = 7
 			arms_factory = 1
 			industrial_complex = 6
+			steel_refinery = 23
 
 		}
 		add_core_of = USA

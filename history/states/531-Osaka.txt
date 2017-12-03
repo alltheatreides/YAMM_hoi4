@@ -5,7 +5,8 @@ state={
 	manpower = 11015000
 	state_category = metropolis
 	resources={
-		aluminium=6
+		# aluminium=6
+		coal=376
 	}
 
 	history={
@@ -16,6 +17,8 @@ state={
 			arms_factory = 2
 			industrial_complex = 4
 			dockyard = 2
+			steel_refinery = 6
+			aluminium_refinery = 1
 			1136 = {
 				naval_base = 6
 

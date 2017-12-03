@@ -8,7 +8,7 @@ state={
 	
 	resources={
 		oil=2
-		steel=2
+		# steel=2
 	}
 	history={
 		owner = URG

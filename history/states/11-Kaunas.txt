@@ -16,6 +16,7 @@ state={
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 4
+			small_steel_refinery = 1
 		}
 		add_core_of = LIT
 	}

@@ -7,7 +7,9 @@ state={
 	state_category = city
 	
 	resources={
-		steel=112
+		# steel=112
+		iron=1
+		coal=41
 	}
 
 
@@ -16,6 +18,7 @@ state={
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 3
+			aluminium_refinery = 3
 		}
 		add_core_of = USA
 		victory_points = {

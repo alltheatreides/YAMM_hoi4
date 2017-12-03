@@ -7,7 +7,9 @@ state={
 	state_category = megalopolis
 	
 	resources={
-		steel=80
+		# steel=80
+		iron=135
+		coal=914
 	}
 
 
@@ -18,6 +20,7 @@ state={
 			industrial_complex = 5
 			dockyard = 7
 			air_base = 2
+			steel_refinery = 28
 			6845 = {
 				naval_base = 8
 
