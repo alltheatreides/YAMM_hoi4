@@ -734,6 +734,18 @@ focus_tree = {
 					amount = 14
 				}
 			}
+			470 = {
+				add_resource = {
+					type = iron
+					amount = 14
+				}
+			}
+			464 = {
+				add_resource = {
+					type = coal
+					amount = 57
+				}
+			}
 		}
 	}
 
@@ -2617,6 +2629,7 @@ focus_tree = {
 			controls_state = 682
 			controls_state = 466
 			controls_state = 468
+			has_war = yes
 		}
 		
 		bypass = {
@@ -2650,7 +2663,7 @@ focus_tree = {
 				# }
 				add_building_construction = {
 					type = hydro_aluminium_refinery
-					level = 15
+					level = 30
 					instant_build = yes
 				}
 			}

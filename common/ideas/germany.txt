@@ -236,6 +236,11 @@ ideas = {
 			}
 			
 			traits = { fortification_engineer }
+			
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_synthetic_rubber_refinery_factor = 0.25
+			}
 
 			ai_will_do = {
 				factor = 0.5

@@ -241,7 +241,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.02
 				industrial_capacity_dockyard = 0.02
-				production_speed_hydro_aluminium_refinery_factor = 5
+				# production_speed_hydro_aluminium_refinery_factor = 10
 				conscription_factor = 0.05
 				unity_factor = -0.05
 			}
