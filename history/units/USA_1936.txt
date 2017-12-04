@@ -1037,7 +1037,7 @@ instant_effect = {
 			creator = "USA"
 			version_name = "Farragut Class"
 		}
-		requested_factories = 13
+		requested_factories = 5
 		progress = 0.80
 		amount = 13
 	}
