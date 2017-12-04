@@ -4,3 +4,15 @@
  PRODUCTION_MATERIALS_BAUXITE:0 "Bauxite"
  PRODUCTION_MATERIALS_COPPER:0 "Copper"
  PRODUCTION_MATERIALS_FOOD:0 "Food"
+ 
+ 
+ #Buildings
+ steel_refinery:0 "Steel Mill"
+ small_steel_refinery:0 "Small Steel Mill"
+ aluminium_refinery:0 "Aluminium Mill"
+ hydro_aluminium_refinery:0 "Hydro Powered Aluminium Mill"
+ synthetic_rubber_refinery:0 "Rubber Refinery"
+ 
+ production_speed_hydro_aluminium_refinery_factor:0 "Hydro Powered Aluminium Mill Construction Speed"
+ production_speed_steel_refinery_factor:0 "Steel Mill Construction Speed"
+ production_speed_aluminium_refinery_factor:0 "Aluminium Mill Construction Speed"

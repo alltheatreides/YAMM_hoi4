@@ -378,10 +378,17 @@ focus_tree = {
 				amount = 25
 				state = 602 #Hunan
 			}
-			add_resource = {
-				type = steel
-				amount = 16
-				state = 605 #Sichuan
+			# add_resource = {
+				# type = steel
+				# amount = 16
+				# state = 605 #Sichuan
+			# }
+			605 = {
+				add_building_construction = {
+					type = steel_refinery
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}

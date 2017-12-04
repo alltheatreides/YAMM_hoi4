@@ -16,7 +16,6 @@ state={
 			arms_factory = 1
 			industrial_complex = 6
 			steel_refinery = 23
-
 		}
 		add_core_of = USA
 		victory_points = {
