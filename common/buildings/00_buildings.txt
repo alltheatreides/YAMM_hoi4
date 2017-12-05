@@ -120,7 +120,7 @@ buildings = {
 
 	synthetic_refinery = {
 		show_on_map = 1
-		base_cost = 22000
+		base_cost = 13000
 		icon_frame = 10
 		local_resources_oil = 7 # May use local_resources_ + any resource name
 		local_resources_coal = -5
