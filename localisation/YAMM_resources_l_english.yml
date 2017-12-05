@@ -4,8 +4,7 @@
  PRODUCTION_MATERIALS_BAUXITE:0 "Bauxite"
  PRODUCTION_MATERIALS_COPPER:0 "Copper"
  PRODUCTION_MATERIALS_FOOD:0 "Food"
- 
- §YRefinery§!
+
  #Buildings
  steel_refinery:0 "Steel Mill"
  small_steel_refinery:0 "Small Steel Mill"
