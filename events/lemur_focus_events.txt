@@ -1,0 +1,166 @@
+﻿add_namespace = focus_event
+
+country_event = { ####setup
+	id = focus_event.0
+	title = focus_event.0.t
+	desc = focus_event.0.d
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	hidden = yes
+	trigger = {
+		AND = {
+			is_ai = no
+			NOT = { has_global_flag = focus_events }
+		}
+	}
+	
+	option = {
+		name = focus_event.0.a
+		set_global_flag = focus_events
+		set_global_flag = focus_events_enabled
+	}
+	
+	# option = {
+		# name = focus_event.0.b
+		# set_global_flag = focus_events
+		# clr_global_flag = focus_events_enabled
+	# }
+}
+
+country_event = { ###excavation effort 1
+	id = focus_event.7
+	title = focus_event.7.t
+	desc = focus_event.7.d
+	mean_time_to_happen = { days = 60 }
+	trigger = {
+		has_idea = idea_excavation_effort_i
+		any_owned_state = {
+			is_controlled_by = FROM
+		}
+		has_global_flag = focus_events_enabled
+	}
+	
+	option = {
+		trigger = {
+			NOT = { is_major = yes }
+		}
+		name = focus_event.7.a
+		random_owned_controlled_state {
+			limit = {
+				has_resources_amount = {
+					resource = iron 
+					amount > 5
+				}
+			}
+			add_resource = { type = iron amount = 25 }
+		}
+	}
+	
+	option = {
+		trigger = {
+			tag = USA
+		}
+		name = focus_event.7.a
+		random_owned_controlled_state {
+			limit = {
+				has_resources_amount = {
+					resource = iron 
+					amount > 5
+				}
+			}
+			add_resource = { type = iron amount = 250 }
+		}
+	}
+	
+	option = {
+		trigger = {
+			tag = GER
+		}
+		name = focus_event.7.a
+		random_owned_controlled_state {
+			limit = {
+				has_resources_amount = {
+					resource = iron 
+					amount > 5
+				}
+			}
+			add_resource = { type = iron amount = 50 }
+		}
+	}
+	
+	option = {
+		trigger = {
+			tag = SOV
+		}
+		name = focus_event.7.a
+		582 =  {
+			# limit = {
+				# has_resources_amount = {
+					# resource = iron 
+					# amount > 5
+				# }
+			# }
+			add_resource = { type = iron amount = 50 }
+		}
+	}
+	
+	option = {
+		trigger = {
+			is_major = yes
+			NOT = {
+				OR = {
+					tag = GER
+					tag = USA
+					tag = SOV
+				}
+			}
+		}
+		name = focus_event.7.a
+		random_owned_controlled_state {
+			limit = {
+				has_resources_amount = {
+					resource = iron 
+					amount > 5
+				}
+			}
+			add_resource = { type = iron amount = 50 }
+		}
+	}
+}
+
+country_event = { ###excavation effort 2
+	id = focus_event.8
+	title = focus_event.8.t
+	desc = focus_event.8.d
+	mean_time_to_happen = { days = 60 }
+	trigger = {
+		has_idea = idea_excavation_effort_ii
+		any_owned_state = {
+			is_controlled_by = FROM
+		}
+		has_global_flag = focus_events_enabled
+	}
+	
+	option = {
+		name = focus_event.7.a
+		random_owned_controlled_state {
+			limit = {
+				has_resources_amount = {
+					resource = iron 
+					amount > 5
+				}
+			}
+			add_resource = { type = iron amount = 15 }
+		}
+		# random_owned_controlled_state {
+			# random_list = {
+				# 15 = { add_resource = { type = steel amount = 4 } }
+				# 15 = { add_resource = { type = aluminium amount = 4 } }
+				# 20 = { add_resource = { type = oil amount = 4 } }
+				# 20 = { add_resource = { type = chromium amount = 4 } }
+				# 15 = { add_resource = { type = tungsten amount = 4 } }
+				# 15 = { add_resource = { type = rubber amount = 4 } }
+			# }
+		# }
+	}
+}
