@@ -303,9 +303,8 @@ head_of_state = {
 			}
 			available = {
 				OR = {
-				has_government = monarchism
-				has_government = neutrality
-				has_government = conservatism
+					has_government = neutrality
+					has_government = fascism
 				}
 			}
 			traits = {   }

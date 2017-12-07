@@ -601,29 +601,29 @@ ideas = {
 			traits = { great_leader }
 		}
 		
-		wilkie_hos = {
-			allowed = {
-					original_tag = USA
-					#has_government = conservatism
-			}
-			traits = { coalition_builder }
-		}
+		# wilkie_hos = {
+			# allowed = {
+					# original_tag = USA
+					# has_government = conservatism
+			# }
+			# traits = { coalition_builder }
+		# }
 		
-		landon_hos = {
-			allowed = {
-					original_tag = USA
-					#has_government = conservatism
-			}
-			traits = { business_tycoon }
-		}
+		# landon_hos = {
+			# allowed = {
+					# original_tag = USA
+					# has_government = conservatism
+			# }
+			# traits = { business_tycoon }
+		# }
 		
-		dewey_hos = {
-			allowed = {
-					original_tag = USA
-					#has_government = conservatism
-			}
-			traits = { tough_guy }
-		}
+		# dewey_hos = {
+			# allowed = {
+					# original_tag = USA
+					# has_government = conservatism
+			# }
+			# traits = { tough_guy }
+		# }
 		
 		truman_hos = {
 			allowed = {
@@ -997,35 +997,35 @@ ideas = {
 			traits = { intellectual }
 		}
 		
-		harry_truman = {
+		# harry_truman = {
 		
-			allowed = {
-				original_tag = USA	
-			}
-			available = {
-				has_government = democratic
-				date > 1943.1.1
-			}
+			# allowed = {
+				# original_tag = USA	
+			# }
+			# available = {
+				# has_government = democratic
+				# date > 1943.1.1
+			# }
 			
-			picture = idea_henry_truman
+			# picture = idea_henry_truman
 				
-			traits = { tough_guy }
-		}
+			# traits = { tough_guy }
+		# }
 		
-		frank_knox = {
+		# frank_knox = {
 		
-			allowed = {
-					original_tag = USA
-			}
+			# allowed = {
+					# original_tag = USA
+			# }
 			
-			available = {
-				has_government = democratic
-			}
+			# available = {
+				# has_government = democratic
+			# }
 			
-			picture = idea_frank_knox
+			# picture = idea_frank_knox
 				
-			traits = { coalition_builder }
-		}
+			# traits = { coalition_builder }
+		# }
 		
 		charles_mcnary = {
 		
@@ -1034,7 +1034,6 @@ ideas = {
 			}
 			
 			available = {
-				#has_government = conservatism
 				date < 1944.3.1
 			}
 			
@@ -1042,33 +1041,36 @@ ideas = {
 			
 			cancel_if_invalid = yes
 			
-			traits = { effective_leader }
+			traits = { 
+				# effective_leader
+				silent_workhorse
+			}
 		}
 		
-		john_bricker = {
-			allowed = {
-				original_tag = USA
-			}
+		# john_bricker = {
+			# allowed = {
+				# original_tag = USA
+			# }
 			
-			available = {
-				has_government = democratic
-			}
+			# available = {
+				# has_government = democratic
+			# }
 			
-			picture = idea_john_bricker
+			# picture = idea_john_bricker
 				
-			traits = { staunch_constitutionalist }
-		}	
+			# traits = { staunch_constitutionalist }
+		# }	
 	
-		USA_robert_taft = {
+		# USA_robert_taft = {
 			
-			picture = generic_political_advisor_europe_1
+			# picture = generic_political_advisor_europe_1
 			
-			allowed = {
-				original_tag = USA
-			}
+			# allowed = {
+				# original_tag = USA
+			# }
 			
-			traits = { silent_workhorse }
-		}
+			# traits = { silent_workhorse }
+		# }
 	}
 	
 	supreme_commander = {

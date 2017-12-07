@@ -464,6 +464,7 @@ ideas = {
 		pierre_laval_foreign = {
 			allowed = { 
 				original_tag = FRA
+				has_government = fascism
 			}
 			
 			available = {
@@ -726,22 +727,19 @@ ideas = {
 			# }
 		# }
 		
-		paul_faure = { #MOD
+		# paul_faure = { #MOD
 		
-			allowed = {
-				original_tag = FRA
-			}
-			# available = {
-				# has_completed_focus = FRA_exchange_rate_stabilisation
+			# allowed = {
+				# original_tag = FRA
 			# }
 			
-			cost = 50
+			# cost = 50
 			
-			traits = { committed_pacifist }
-			ai_will_do = {
-				factor = 1
-			}
-		}
+			# traits = { committed_pacifist }
+			# ai_will_do = {
+				# factor = 1
+			# }
+		# }
 		
 		
 		rene_pleven = {
@@ -773,21 +771,21 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		
-		raoul_dautry = {
+		# raoul_dautry = {
 		
-			allowed = {
-				original_tag = FRA
-			}
+			# allowed = {
+				# original_tag = FRA
+			# }
 			
-			available = {
-				OR = {
-					has_government = democratic
-				}
-			}
+			# available = {
+				# OR = {
+					# has_government = democratic
+				# }
+			# }
 			
-			traits = { public_works_focus }
-			cancel_if_invalid = no
-		}
+			# traits = { public_works_focus }
+			# cancel_if_invalid = no
+		# }
 		
 		jules_moch = {
 			allowed = {
@@ -938,6 +936,7 @@ ideas = {
 		philippe_henriot = {
 			allowed = { 
 				original_tag = FRA
+				has_government = fascism
 			}
 			
 			available = {

@@ -518,20 +518,20 @@ ideas = {
 			traits = { prince_of_terror }
 		}
 		
-		herbert_morrison = {
+		# herbert_morrison = {
 			
-			picture = idea_herbert_morrison
+			# picture = idea_herbert_morrison
 			
-			allowed = {
-				original_tag = ENG
-			}
+			# allowed = {
+				# original_tag = ENG
+			# }
 			
-			available = {
-				has_government = democratic
-			}
+			# available = {
+				# has_government = democratic
+			# }
 			
-			traits = { crime_fighter }
-		}
+			# traits = { crime_fighter }
+		# }
 	}
 
 	#Intelligence

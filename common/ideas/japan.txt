@@ -229,33 +229,31 @@ ideas = {
 			traits = { prince_of_terror }
 		}
 		
-		kingoro_hashimoto_interior = {
-			allowed = {
-				original_tag = JAP
-			}
-			available = {
-				OR = {
-					has_government = fascism
-					# has_government = monarchism
-				}
-			}
-			traits = { prince_of_terror }
-			cancel_if_invalid = no
-		}
+		# kingoro_hashimoto_interior = {
+			# allowed = {
+				# original_tag = JAP
+			# }
+			# available = {
+				# OR = {
+					# has_government = fascism
+				# }
+			# }
+			# traits = { prince_of_terror }
+			# cancel_if_invalid = no
+		# }
 		
-		sadao_araki_interior = {
-			allowed = {
-				original_tag = JAP
-			}
-			available = {
-				OR = {
-					has_government = fascism
-					# has_government = monarchism
-				}
-			}
-			traits = { efficient_sociopath }
-			cancel_if_invalid = no
-		}
+		# sadao_araki_interior = {
+			# allowed = {
+				# original_tag = JAP
+			# }
+			# available = {
+				# OR = {
+					# has_government = fascism
+				# }
+			# }
+			# traits = { efficient_sociopath }
+			# cancel_if_invalid = no
+		# }
 		
 	}
 
@@ -396,24 +394,23 @@ ideas = {
 
 	#Advisors
 	political_advisor = {	
-		sadao_araki = {
+		# sadao_araki = {
 			
-			picture = idea_sadao_araki
+			# picture = idea_sadao_araki
 			
-			allowed = {
-				original_tag = JAP
-			}
+			# allowed = {
+				# original_tag = JAP
+			# }
 			
-			traits = { fascist_demagogue }
+			# traits = { fascist_demagogue }
 			
-			ai_will_do = {
-				factor = 20
-				modifier = {
-					factor = 0
-					# democratic_govt = yes
-				}
-			}
-		}
+			# ai_will_do = {
+				# factor = 20
+				# modifier = {
+					# factor = 0
+				# }
+			# }
+		# }
 		
 		kingoro_hashimoto = {
 		

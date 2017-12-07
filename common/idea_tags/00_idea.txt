@@ -15,7 +15,7 @@ idea_categories = {
 	
 	government = {
 		slot = mobilization_laws
-		slot = age_laws
+		# slot = age_laws
 		slot = trade_laws
 		slot = economy
 		cost = 150

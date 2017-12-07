@@ -283,36 +283,36 @@ ideas = {
 
 			traits = { prince_of_terror }
 		}
-		reinhard_heydrich = {
+		# reinhard_heydrich = {
 				
-			allowed = {
-				original_tag = GER
-				NOT = { has_country_flag = heydrich_dead }
-			}
+			# allowed = {
+				# original_tag = GER
+				# NOT = { has_country_flag = heydrich_dead }
+			# }
 			
-			picture = idea_reinhard_heydrich
+			# picture = idea_reinhard_heydrich
 			
-			available = {
-				has_government = fascism
-			}			
+			# available = {
+				# has_government = fascism
+			# }			
 			
-			traits = { efficient_sociopath }
-		}
-		ernst_kaltenbrunner = {
+			# traits = { efficient_sociopath }
+		# }
+		# ernst_kaltenbrunner = {
 				
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_government = fascism
-			}
+			# allowed = {
+				# original_tag = GER
+			# }
+			# available = {
+				# has_government = fascism
+			# }
 			
-			traits = { efficient_sociopath }
+			# traits = { efficient_sociopath }
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
+			# ai_will_do = {
+				# factor = 1
+			# }
+		# }
 	}
 
 	#Intel Ministers	
@@ -325,7 +325,6 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_government = monarchism
 				}
 			}
 			

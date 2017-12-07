@@ -175,6 +175,7 @@
  demagogue:0 "Demagogue"
  military_yesman:0 " Military Yesman"
  reluctant_minister:0 "Reluctant Minister"
+ great_leader:0 "Great Leader"
  
   
  Manpower_draft:0 "Manpower Draft"
@@ -270,7 +271,7 @@
  wilkie_hos:0 "Wendell Willkie"
  landon_hos:0 "Alf M. Landon"
  dewey_hos:0 "Thomas E. Dewey"
- fdr_hos:0 "Franklin Delano Roosevelt"
+ roosevelt_hos:0 "Franklin Delano Roosevelt"
  arthur_vandenberg:0 "Arthur Vandenberg"
  malin_craig:0 "Malin Craig"
  william_leahy:0 "William D. Leahy"
@@ -795,6 +796,7 @@
  hitler_ai_desc:0 "Der GROFAZ"
  benito_mussolini:0 "Benito Mussolini"
  benito_mussolini_desc:0 ""
+ benito_mussolini_sc:0 "Benito Mussolini"
  hermann_goering:0 "Hermann Göring"
  hermann_goering_desc:0 "Hermann Göring was a Great War fighter ace who became one of Hitler's chief supporters. While not the best at this job, he is devotedly loyal."
  reinhard_heydrich:0 "Reinhard Heydrich"

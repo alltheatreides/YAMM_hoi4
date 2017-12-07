@@ -1130,6 +1130,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_alan_brooke.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_brooke_sc"
+		texturefile = "gfx/interface/ideas/idea_alan_brooke.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_ernle_chatfield"
 		texturefile = "gfx/interface/ideas/idea_ernle_chatfield.dds"
 	}
@@ -1684,6 +1688,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_pierre_costantini"
 		texturefile = "gfx/interface/ideas/ministers/idea_pierre_costantini.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_philippe_henriot"
+		texturefile = "gfx/interface/ideas/ministers/idea_philippe_henriot.tga"
 	}
 	
 	### RUSSIAN IDEAS
@@ -5620,7 +5628,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_sir_john_anderson_interior"
-		texturefile = "gfx/interface/ideas/ministers/idea_sir_john_anderson_interior.tga"
+		texturefile = "gfx/interface/ideas/ministers/idea_sir_john_anderson.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_sir_kingsley_wood"
