@@ -594,7 +594,7 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
-				# #has_government = liberalism
+				has_government = democratic
 				NOT = { has_country_flag = roosevelt_dead }
 			}
 			picture = "gfx/interface/ideas/ministers/idea_roosevelt.dds"
@@ -796,13 +796,8 @@ ideas = {
 			}
 			
 			available = {
-				OR = {
-					AND = {
-						has_government = democratic
-						date > 1940.1.1
-					}
-					has_government = democratic
-				}
+				has_government = democratic
+				date > 1940.1.1
 			}
 			
 			traits = { war_industrialist }
@@ -887,20 +882,20 @@ ideas = {
 			}
 		}
 		
-		harold_ickes_econ = {
+		# harold_ickes_econ = {
 		
-			allowed = {
-				original_tag = USA
-			}
+			# allowed = {
+				# original_tag = USA
+			# }
 				
-			available = {
-				has_government = democratic
-			}
+			# available = {
+				# has_government = democratic
+			# }
 			
-			traits = { public_works_focus }
+			# traits = { public_works_focus }
 			
-			cancel_if_invalid = no
-		}
+			# cancel_if_invalid = no
+		# }
 		
 		dean_acheson = {
 		
@@ -932,36 +927,36 @@ ideas = {
 			cancel_if_invalid = no
 		}
 			
-		raymond_e_baldwin = {
+		# raymond_e_baldwin = {
 			
-			allowed = {
-				original_tag = USA
-			}
+			# allowed = {
+				# original_tag = USA
+			# }
 			
-			available = {
-				has_government = democratic
-			}
+			# available = {
+				# has_government = democratic
+			# }
 			
-			traits = { industrial_planner }
+			# traits = { industrial_planner }
 			
-			cancel_if_invalid = no
-		}
+			# cancel_if_invalid = no
+		# }
 		
-		alf_m_landon = {
+		# alf_m_landon = {
 		
-			allowed = {
-				original_tag = USA 
-				date > 1940.11.1
-			}
+			# allowed = {
+				# original_tag = USA 
+				# date > 1940.11.1
+			# }
 				
-			available = {
-				has_government = democratic
-			}
+			# available = {
+				# has_government = democratic
+			# }
 			
-			traits = { public_works_focus }
+			# traits = { public_works_focus }
 			
-			cancel_if_invalid = no
-		}		
+			# cancel_if_invalid = no
+		# }		
 	}
 
 	#Advisors
@@ -1076,7 +1071,53 @@ ideas = {
 		}
 	}
 	
+	supreme_commander = {
+		dwight_eisenhower_sc = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
 
+			
+			traits = { supreme_com_organizer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		omar_bradley_sc = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { supreme_com_planner }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		william_leahy_sc = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { supreme_com_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 	army_chief = {
 		douglas_macarthur = {
 			

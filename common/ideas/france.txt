@@ -374,6 +374,7 @@ ideas = {
 		pierre_laval = { 
 			allowed = { 
 				original_tag = FRA
+				has_government = fascism
 			}
 			
 			available = {
@@ -390,6 +391,7 @@ ideas = {
 		paul_baudouin = {
 			allowed = {
 				original_tag = "FRA"
+				has_government = fascism
 			}
 			
 			available = {
@@ -500,26 +502,27 @@ ideas = {
 			}
 		}
 		
-		jacques_duclos_interior = {
+		# jacques_duclos_interior = {
 		
-			allowed = {
-				original_tag = "FRA"
-			}
+			# allowed = {
+				# original_tag = "FRA"
+			# }
 			
-			available = {
-				has_completed_focus = FRA_leftist_rhetoric
-			}
+			# available = {
+				# has_completed_focus = FRA_leftist_rhetoric
+			# }
 
-			traits = { backroom_backstabber }
+			# traits = { backroom_backstabber }
 
-			ai_will_do = {
-				factor = 0
-			}
-		}
+			# ai_will_do = {
+				# factor = 0
+			# }
+		# }
 				
 		marcel_bucard_interior = {
 			allowed = {
 				original_tag = FRA
+				has_government = fascism
 			}
 			
 			available = {
@@ -551,6 +554,7 @@ ideas = {
 		adrien_marquet = { 
 			allowed = { 
 				original_tag = FRA
+				has_government = fascism
 			}
 			
 			available = {
@@ -563,6 +567,7 @@ ideas = {
 		pierre_costantini = { 
 			allowed = { 
 				original_tag = FRA
+				has_government = fascism
 			}
 			
 			available = {
@@ -575,6 +580,7 @@ ideas = {
 		rene_bousquet = { 
 			allowed = { 
 				original_tag = FRA
+				has_government = fascism
 			}
 			
 			available = {
@@ -626,6 +632,7 @@ ideas = {
 		rene_bousquet_int = { 
 			allowed = { 
 				original_tag = FRA
+				has_government = fascism
 			}
 			
 			available = {
@@ -656,27 +663,26 @@ ideas = {
 			}
 		}
 
-		felix_gouin = {
+		# felix_gouin = {
 
-			allowed = {
-				original_tag = FRA
-			}
+			# allowed = {
+				# original_tag = FRA
+			# }
 			
-			available = {
-				OR = {
-					has_government = socialism
-					has_government = liberalism
-				}
-			}
+			# available = {
+				# OR = {
+					# has_government = democratic
+				# }
+			# }
 			
-			picture = generic_political_advisor_europe_3
+			# picture = generic_political_advisor_europe_3
 
-			traits = { public_works_focus }
+			# traits = { public_works_focus }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+			# ai_will_do = {
+				# factor = 1
+			# }
+		# }
 
 		FRA_paul_reynaud = {
 
@@ -699,26 +705,26 @@ ideas = {
 			}
 		}
 		
-		vincent_auriol = {
+		# vincent_auriol = {
 
-			allowed = {
-				original_tag = FRA
-			}
+			# allowed = {
+				# original_tag = FRA
+			# }
 			
-			available = {
-				OR = {
-					has_government = democratic
-				}
-			}
+			# available = {
+				# OR = {
+					# has_government = democratic
+				# }
+			# }
 			
-			picture = idea_vincent_auriol
+			# picture = idea_vincent_auriol
 
-			traits = { industrial_planner }
+			# traits = { industrial_planner }
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
+			# ai_will_do = {
+				# factor = 1
+			# }
+		# }
 		
 		paul_faure = { #MOD
 		
@@ -760,7 +766,7 @@ ideas = {
 			}
 			
 			available = {
-				has_government = socialism
+				has_government = democratic
 			}
 			
 			traits = { war_industrialist }
@@ -799,6 +805,7 @@ ideas = {
 		marcel_deat = {
 			allowed = { 
 				original_tag = FRA
+				has_government = fascism
 			}
 			
 			available = {
@@ -812,6 +819,7 @@ ideas = {
 		rene_belin = {
 			allowed = { 
 				original_tag = FRA
+				has_government = fascism
 			}
 			
 			available = {
@@ -825,6 +833,7 @@ ideas = {
 		eugene_schueller = { 
 			allowed = { 
 				original_tag = FRA
+				has_government = fascism
 			}
 			
 			available = {
@@ -835,53 +844,56 @@ ideas = {
 			
 		}
 		
-		jacques_correze = { 
-			allowed = { 
-				original_tag = FRA
-			}
+		# jacques_correze = { 
+			# allowed = { 
+				# original_tag = FRA
+				# has_government = fascism
+			# }
 			
-			available = {
-				has_government = fascism
-			}
+			# available = {
+				# has_government = fascism
+			# }
 			
-			traits = { financier }
+			# traits = { financier }
 			
-		}
+		# }
 		
-		eugene_deloncle = {
-			allowed = { 
-				original_tag = FRA
-			}
+		# eugene_deloncle = {
+			# allowed = { 
+				# original_tag = FRA
+				# has_government = fascism
+			# }
 			
-			available = {
-				has_government = fascism
-				NOT = { has_country_flag = free_france }
-			}
+			# available = {
+				# has_government = fascism
+				# NOT = { has_country_flag = free_france }
+			# }
 			
-			traits = { fortification_engineer}
+			# traits = { fortification_engineer}
 			
-		}
+		# }
 	}
 	
 	#Advisors
 	political_advisor = {
 		
-		leon_blum = {
-			allowed = {
-				original_tag = "FRA"
-			}
+		# leon_blum = {
+			# allowed = {
+				# original_tag = "FRA"
+			# }
 
-			traits = { silent_workhorse }
+			# traits = { silent_workhorse }
 
-			ai_will_do = {
-				factor = 0
-			}
-		}
+			# ai_will_do = {
+				# factor = 0
+			# }
+		# }
 		
 		marcel_bucard = {
 
 			allowed = {
 				original_tag = "FRA"
+				has_government = fascism
 			}
 			available ={
 				NOT = { has_country_flag = free_france }
@@ -1659,7 +1671,9 @@ ideas = {
 					original_tag = EFR
 				}
 			}
-						
+			
+			pitcure = generic_air_manufacturer_1
+			
 			research_bonus = {
 				air_equipment = 0.10
 			}

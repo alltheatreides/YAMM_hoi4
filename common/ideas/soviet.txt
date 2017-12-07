@@ -882,19 +882,19 @@ ideas = {
 			traits = { captain_of_industry }
 		}
 		
-		valery_mezhlauk = {
+		# valery_mezhlauk = {
 			
-			picture = idea_valery_mezhlauk
+			# picture = idea_valery_mezhlauk
 			
-			allowed = {
-				original_tag = SOV
-			}
-			available = {
-				has_government = communism
-			}
+			# allowed = {
+				# original_tag = SOV
+			# }
+			# available = {
+				# has_government = communism
+			# }
 			
-			traits = { industrial_planner }
-		}
+			# traits = { industrial_planner }
+		# }
 		
 		dimitry_ustinov = {
 			allowed = {
@@ -922,18 +922,18 @@ ideas = {
 			
 		}
 		
-		boris_vannikov = {
-			allowed = {
-				original_tag = SOV
+		# boris_vannikov = {
+			# allowed = {
+				# original_tag = SOV
 			
-			}
-			available = {
-				has_government = communism
-			}
+			# }
+			# available = {
+				# has_government = communism
+			# }
 			
-			traits = { theoretical_scientist }
+			# traits = { theoretical_scientist }
 			
-		}
+		# }
 	}
 
 	#Advisors

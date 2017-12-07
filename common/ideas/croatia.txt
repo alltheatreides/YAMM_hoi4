@@ -401,7 +401,7 @@ head_of_state = {
 
 #Foreign
 foreign_minister = {
-CRO_ivan_subasic = {
+	CRO_ivan_subasic = {
 
 			picture = generic_political_advisor_europe_1
 
@@ -519,9 +519,9 @@ CRO_gaspar_njegovan = {
 			}			
 			traits = { quartermaster_general }
 		}		
-		CRO_vladimir_nazor = {
+		# CRO_vladimir_nazor = {
 
-		
+		# }
 
 		
 	}

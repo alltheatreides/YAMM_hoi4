@@ -20,5 +20,169 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
+	######### Military Minister Traits#########
+	####Supreme Commander Traits####	
+	supreme_com_fritz = {
+		sprite = 9
+		army_defence_factor = 0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	supreme_com_hitler = {
+		sprite = 13
+		attrition = 0.01
+		army_defence_factor = -0.01
+		experience_gain_army_factor = -0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supreme_com_mussolini = {
+		sprite = 13
+		attrition = 0.01
+		army_defence_factor = -0.01
+		experience_gain_army_factor = -0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supreme_com_organizer = {
+		sprite = 13
+		army_org_factor = 0.03
+		navy_org_factor = 0.03
+		air_accidents_factor = -0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supreme_com_reformer = {
+		sprite = 13
+		political_power_factor = -0.10
+		experience_gain_army_factor = 0.03
+		experience_gain_air_factor = 0.03
+		experience_gain_navy_factor = 0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supreme_com_old_guard = {
+		sprite = 13
+		army_defence_factor = 0.05
+		navy_org_factor = 0.05
+		air_accidents_factor = -0.05
+		experience_gain_army_factor = -0.03
+		experience_gain_air_factor = -0.03
+		experience_gain_navy_factor = -0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supreme_com_aggressive = {
+		sprite = 13
+		attrition = 0.02
+		army_attack_factor = 0.03
+		army_defence_factor = -0.03
+		army_morale_factor = 0.03
+		navy_max_range_factor = 0.03
+		navy_org_factor = -0.03
+		air_ace_generation_chance_factor = 0.03
+		air_accidents_factor = 0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supreme_com_defensive = {
+		sprite = 13
+		attrition = -0.02
+		army_attack_factor = -0.03
+		army_defence_factor = 0.03
+		army_morale_factor = -0.03
+		navy_max_range_factor = -0.03
+		navy_org_factor = 0.03
+		air_ace_generation_chance_factor = -0.03
+		air_accidents_factor = -0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supreme_com_favors_army = {
+		sprite = 13
+		army_morale_factor = 0.03
+		experience_gain_army_factor = 0.03
+		experience_gain_air_factor = -0.02
+		experience_gain_navy_factor = -0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supreme_com_favors_navy = {
+		sprite = 13
+		navy_org_factor = 0.03
+		experience_gain_army_factor = -0.02
+		experience_gain_air_factor = -0.02
+		experience_gain_navy_factor = 0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supreme_com_favors_air = {
+		sprite = 13
+		air_ace_generation_chance_factor = 0.03
+		experience_gain_army_factor = -0.02
+		experience_gain_air_factor = 0.03
+		experience_gain_navy_factor = -0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supreme_com_political = {
+		sprite = 13
+		political_power_factor = 0.10
+		army_org_factor = -0.05
+		navy_org_factor = -0.05
+		air_ace_generation_chance_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supreme_com_compromiser = {
+		sprite = 13
+		political_power_factor = 0.05
+		army_org_factor = -0.01
+		navy_org_factor = -0.01
+		air_ace_generation_chance_factor = -0.01
+		# planning_speed = 0.05
+		# max_planning = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 }

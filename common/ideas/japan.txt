@@ -183,7 +183,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_government = monarchism
+					# has_government = monarchism
 				}
 			}
 			
@@ -201,7 +201,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_government = monarchism
+					# has_government = monarchism
 				}
 			}
 			
@@ -222,7 +222,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_government = monarchism
+					# has_government = monarchism
 				}
 			}
 			
@@ -236,7 +236,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_government = monarchism
+					# has_government = monarchism
 				}
 			}
 			traits = { prince_of_terror }
@@ -250,7 +250,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_government = monarchism
+					# has_government = monarchism
 				}
 			}
 			traits = { efficient_sociopath }
@@ -293,7 +293,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_government = monarchism
+					# has_government = monarchism
 				}
 			}
 			
@@ -309,7 +309,7 @@ ideas = {
 			# available = {
 				# OR = {
 					# has_government = fascism
-					# has_government = monarchism
+					# # has_government = monarchism
 					# has_government = conservatism
 					# has_government = liberalism
 				# }
@@ -328,7 +328,7 @@ ideas = {
 			available = {
 				OR = {
 				has_government = fascism
-				has_government = monarchism
+				# has_government = monarchism
 				}
 			}
 			
@@ -346,7 +346,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_government = monarchism
+					# has_government = monarchism
 				}
 			}
 			
@@ -364,7 +364,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_government = monarchism
+					# # has_government = monarchism
 				}
 			}
 			
@@ -381,7 +381,7 @@ ideas = {
 			# available = {
 			# OR = {
 				# has_government = fascism
-				# has_government = monarchism
+				# # has_government = monarchism
 				# }
 			# }
 			# traits = { military_entrepreneur }

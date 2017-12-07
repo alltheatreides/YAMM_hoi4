@@ -6,6 +6,12 @@ spriteTypes = {
 		noOfFrames = 14		
 	}
 	
+	spriteType = {
+		name = "GFX_idea_categories"
+		texturefile = "gfx/interface/idea_categories.dds"
+		noOfFrames = 7
+	}
+	
 	textSpriteType = {
 		name = "GFX_button_110x25"
 		texturefile = "gfx//interface//button_110x25.dds"
@@ -1192,6 +1198,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_harold_alexander.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_montgomery_sc"
+		texturefile = "gfx/interface/ideas/idea_bernard_montgomery.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_alexander_sc"
+		texturefile = "gfx/interface/ideas/idea_harold_alexander.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_james_somerville"
 		texturefile = "gfx/interface/ideas/idea_james_somerville.dds"
 	}
@@ -1504,6 +1518,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_maurice_gamelin.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_gamelin_sc"
+		texturefile = "gfx/interface/ideas/idea_maurice_gamelin.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_maxime_weygand"
 		texturefile = "gfx/interface/ideas/idea_maxime_weygand.dds"
 	}
@@ -1569,6 +1587,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_charles_de_gaulle"
+		texturefile = "gfx/interface/ideas/idea_charles_de_gaulle.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_de_gaulle_sc"
 		texturefile = "gfx/interface/ideas/idea_charles_de_gaulle.dds"
 	}
 	spriteType = {
@@ -1638,6 +1660,30 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_famh"
 		texturefile = "gfx/interface/ideas/idea_famh.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_pierre_laval"
+		texturefile = "gfx/interface/ideas/ministers/idea_pierre_laval.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_pierre_laval_foreign"
+		texturefile = "gfx/interface/ideas/ministers/idea_pierre_laval.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_adrien_marquet"
+		texturefile = "gfx/interface/ideas/ministers/idea_adrien_marquet.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_rene_bousquet_int"
+		texturefile = "gfx/interface/ideas/ministers/idea_rene_bousquet.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_rene_bousquet"
+		texturefile = "gfx/interface/ideas/ministers/idea_rene_bousquet.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_pierre_costantini"
+		texturefile = "gfx/interface/ideas/ministers/idea_pierre_costantini.tga"
 	}
 	
 	### RUSSIAN IDEAS
@@ -5570,11 +5616,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_sir_john_anderson"
-		texturefile = "gfx/interface/ideas/ministers/idea_sir_john_anderson.dds"
+		texturefile = "gfx/interface/ideas/ministers/idea_sir_john_anderson.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_sir_john_anderson_interior"
-		texturefile = "gfx/interface/ideas/ministers/idea_sir_john_anderson_interior.dds"
+		texturefile = "gfx/interface/ideas/ministers/idea_sir_john_anderson_interior.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_sir_kingsley_wood"
