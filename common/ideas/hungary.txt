@@ -426,8 +426,7 @@ head_of_state = {
 			}
 			available = {
 				OR = {
-					democratic_govt = yes
-					has_government = monarchism
+					has_government = democratic
 					has_government = neutrality
 					has_government = fascism
 				}

@@ -755,39 +755,36 @@ ideas = {
 	}
 
 
-##################
-####Politicians
-##################
-#HoS
-head_of_state = {
-	mikhail_kalinin = {
-		
-		
-		allowed = {
-			original_tag = "SOV"
+	##################
+	####Politicians
+	##################
+	#HoS
+	head_of_state = {
+		mikhail_kalinin = {
+			
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+				NOT = { has_country_flag = purged_kalinin }
+				NOT = { has_country_flag = counter_purge }
+			}
+			
+			traits = { popular_figurehead }
 		}
-		available = 
-		{
-			NOT = { has_country_flag = purged_kalinin }
-			NOT = { has_country_flag = counter_purge }
-		}
 		
-
-		
-		traits = { popular_figurehead }
+		# khrushchev_hos = {
+			# allowed = {
+				# original_tag = SOV
+				# has_government = communism
+			# }
+			# traits = { }
+		# }
 	}
-	khrushchev_hos = {
-		allowed = {
-				original_tag = SOV
-				has_government = communism
-		}
-		traits = { }
-	}
-}
-#Foreign
-foreign_minister = {
-
-
+	
+	#Foreign
+	foreign_minister = {
+	
 		SOV_vyacheslav_molotov = {
 			
 			picture = idea_vyacheslav_molotov
@@ -795,16 +792,17 @@ foreign_minister = {
 			allowed = {
 				original_tag = SOV
 			}
+			
 			available = {
 				has_government = communism
 			}
 			
 			traits = { smooth_talking_charmer }
+		}
 	}
-}
 
-#Propaganda/Security
-interior_minister = {
+	#Propaganda/Security
+	interior_minister = {
 		SOV_lavrentiy_beria = {
 			
 			picture = idea_lavrentiy_beria
@@ -814,8 +812,7 @@ interior_minister = {
 				date > 1938.1.1
 			}
 
-			available = 
-			{
+			available = {
 				custom_trigger_tooltip = {
 					tooltip =  SOV_beria_idea
 					has_country_flag = purge_2_group_a
@@ -828,6 +825,7 @@ interior_minister = {
 			
 			traits = { prince_of_terror }
 		}
+		
 		SOV_nikolai_yezhov = {
 			
 			picture = idea_nikolai_yezhov
@@ -848,10 +846,10 @@ interior_minister = {
 			traits = { prince_of_terror }
 		}
 		
-}
+	}
 
-#Intelligence
-intel_minister = {
+	#Intelligence
+	intel_minister = {
 		viktor_abakumov = {
 			
 			picture = idea_viktor_abakumov
@@ -859,16 +857,17 @@ intel_minister = {
 			allowed = {
 				original_tag = SOV
 			}
+			
 			available = {
 				has_government = communism
 			}
 			
 			traits = { dismal_enigma }
 		}
-}
+	}
 
-#Economic
-economic_minister = {
+	#Economic
+	economic_minister = {
 		SOV_nikolai_voznesensky = {
 			
 			picture = generic_political_advisor_europe_2
@@ -882,6 +881,7 @@ economic_minister = {
 			
 			traits = { captain_of_industry }
 		}
+		
 		valery_mezhlauk = {
 			
 			picture = idea_valery_mezhlauk
@@ -895,88 +895,79 @@ economic_minister = {
 			
 			traits = { industrial_planner }
 		}
-		dimitry_ustinov = { 
+		
+		dimitry_ustinov = {
 			allowed = {
 				original_tag = SOV
-				}
+			}
+			
 			available = {
 				has_government = communism
 			}
+			
 			traits = { armaments_organizer }
-			cancel_if_invalid = no
+			
 		}
 
 		lazar_kaganovich = {
 			allowed = {
 				original_tag = SOV
-				}
+			}
+			
 			available = {
 				has_government = communism
 			}
+			
 			traits = { resource_industrialist }
-			cancel_if_invalid = no
+			
 		}
-		boris_vannikov = { 
+		
+		boris_vannikov = {
 			allowed = {
 				original_tag = SOV
-				}
+			
+			}
 			available = {
 				has_government = communism
 			}
+			
 			traits = { theoretical_scientist }
-			cancel_if_invalid = no
+			
 		}
-}
+	}
 
-#Advisors
-political_advisor = {
+	#Advisors
+	political_advisor = {
 		
 		nikita_khrushchev = {
-			
 			
 			allowed = {
 				original_tag = "SOV"
 			}
-			available = 
-			{
+			
+			available = {
 				NOT = { has_country_flag = purged_khrushchev }
 				NOT = { has_country_flag = counter_purge }
 			}
 			
+			traits = { communist_revolutionary }
 
-			
-			traits = {_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
 		}
 		
-		SOV_corrupt_judge = {
-			allowed = {
-				original_tag = "SOV"
-			}
-			traits = { sympathetic_judge }
-			picture = generic_political_advisor_europe_2
-			on_add = {
-				custom_effect_tooltip = judge_TT
-				increase_corruption = yes
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-		
+		# SOV_corrupt_judge = {
+			# allowed = {
+				# original_tag = "SOV"
+			# }
+			# traits = { sympathetic_judge }
+			# picture = generic_political_advisor_europe_2
+			# on_add = {
+				# custom_effect_tooltip = judge_TT
+				# increase_corruption = yes
+			# }
+			# ai_will_do = {
+				# factor = 10
+			# }
+		# }
 	}
 		
 	army_chief = {
@@ -988,8 +979,7 @@ political_advisor = {
 			allowed = {
 				original_tag = SOV
 			}
-			available = 
-			{
+			available = {
 				NOT = { has_country_flag = purge_1_group_b }
 				hidden_trigger = {
 					NOT = { 
@@ -1124,7 +1114,18 @@ political_advisor = {
 				original_tag = SOV
 			}
 			
-
+			available = {
+				NOT = { has_country_flag = purge_1_group_b }
+				hidden_trigger = {
+					NOT = { 
+						any_other_country = {
+							has_war_with = SOV
+							original_tag = SOV
+							has_unit_leader = 404
+						} 
+					}
+				}
+			}
 			
 			traits = { supreme_com_reformer }
 			

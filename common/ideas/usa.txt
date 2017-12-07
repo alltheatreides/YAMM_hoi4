@@ -584,80 +584,61 @@ ideas = {
 	
 	}
 	
-	
-	
-	
 ##################
 ####Politicians
 ##################
-#HoS
-head_of_state = {
-	roosevelt_hos = {
-		allowed = {
+	#HoS
+	head_of_state = {
+		roosevelt_hos = {
+			allowed = {
 				original_tag = USA
+			}
+			available = {
+				# #has_government = liberalism
+				NOT = { has_country_flag = roosevelt_dead }
+			}
+			picture = "gfx/interface/ideas/ministers/idea_roosevelt.dds"
+			traits = { great_leader }
 		}
-		available = {
-			# #has_government = liberalism
-			NOT = { has_country_flag = roosevelt_dead }
+		
+		wilkie_hos = {
+			allowed = {
+					original_tag = USA
+					#has_government = conservatism
+			}
+			traits = { coalition_builder }
 		}
-		picture = "gfx/interface/ideas/ministers/idea_roosevelt.dds"
-		traits = {   great_leader }
+		
+		landon_hos = {
+			allowed = {
+					original_tag = USA
+					#has_government = conservatism
+			}
+			traits = { business_tycoon }
+		}
+		
+		dewey_hos = {
+			allowed = {
+					original_tag = USA
+					#has_government = conservatism
+			}
+			traits = { tough_guy }
+		}
+		
+		truman_hos = {
+			allowed = {
+					original_tag = USA
+					#has_government = liberalism
+					date > 1944.1.1
+			}
+			traits = { tough_guy }
+		}
+		
 	}
-	wilkie_hos = {
-		allowed = {
-				original_tag = USA
-				#has_government = conservatism
-		}
-		traits = {   coalition_builder }
-	}
-	landon_hos = {
-		allowed = {
-				original_tag = USA
-				#has_government = conservatism
-		}
-		traits = {   business_tycoon }
-	}
-	dewey_hos = {
-		allowed = {
-				original_tag = USA
-				#has_government = conservatism
-		}
-		traits = {   tough_guy }
-	}
-	truman_hos = {
-		allowed = {
-				original_tag = USA
-				#has_government = liberalism
-				date > 1944.1.1
-		}
-		traits = {   tough_guy }
-	}
-	browder_hos = {
-		allowed = {
-				original_tag = USA
-				has_government = communism
-		}
-		traits = { communist demagogue }
-	}
-	foster_hos = {
-		allowed = {
-				original_tag = USA
-				has_government = communism
-		}
-		traits = { communist tough_guy }
-	}
-	coughlin_hos = {
-		allowed = {
-				original_tag = USA
-				has_government = fascism
-		}
-		traits = {   demagogue }
-	}
-}
 
-#Foreign
-foreign_minister = {
-	USA_john_winant = {
+	#Foreign
+	foreign_minister = {
+		USA_john_winant = {
 			
 			picture = generic_political_advisor_europe_2
 			
@@ -668,99 +649,116 @@ foreign_minister = {
 			traits = { compassionate_gentleman }
 		}
 
-	USA_cordell_hull = {
+		USA_cordell_hull = {
 			
 			picture = generic_political_advisor_europe_3
 			
 			allowed = {
 				original_tag = USA
 			}
+			
 			available = {
-				#has_government = liberalism
+				has_government = democratic
 			}
-			traits = {   smooth_talking_charmer }
+			traits = { smooth_talking_charmer }
 		}
-		john_foster_dulles = { #RE-DO TRAIT
-			allowed = {
-				original_tag = USA
-				}
-			available = {
-				#has_government = conservatism
-			}
-			traits = {   compassionate_gentleman }
-			cancel_if_invalid = no
-		}
+		
+		# john_foster_dulles = { #RE-DO TRAIT
+			# allowed = {
+				# original_tag = USA
+			# }
+			# available = {
+				# has_government = democratic
+			# }
+			
+			# traits = { compassionate_gentleman }
+			# cancel_if_invalid = no
+		# }
+		
 		gerald_nye = { 
 			allowed = {
 				original_tag = USA
-				}
-			available = {
-				#has_government = conservatism
 			}
-			traits = {   naive_appeaser }
+			
+			available = {
+				has_government = democratic
+			}
+			
+			traits = { naive_appeaser }
+			
 			cancel_if_invalid = no
 		}
+		
 		arthur_vandenberg = {
 			allowed = {
 				original_tag = USA
-				}
-			available = {
-				#has_government = conservatism
 			}
-			traits = {   ideological_crusader }
+			
+			available = {
+				has_government = democratic
+			}
+			
+			traits = { ideological_crusader }
+			
 			cancel_if_invalid = no
 		}
-}
+	}
 
-#Propaganda/Security
-interior_minister = {
+	#Propaganda/Security
+	interior_minister = {
 		j_edgar_hoover = {
 			
 			allowed = {
 				original_tag = USA
 			}
-			available = {
-				#has_government = liberalism
-			}
-			removal_cost = 150
-			traits = { efficient_sociopath anti_communist powerful}
-		}
-		gerald_winrod = { 
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-				has_government = fascism
-			}
-			traits = {   efficient_sociopath}
-			cancel_if_invalid = no
-		}
-		ray_wilbur = { 
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-				#has_government = conservatism
-			}
-			traits = {   crime_fighter }
-			cancel_if_invalid = no
-		}
 			
-}
+			available = {
+				has_government = democratic
+			}
+			
+			removal_cost = 150
+			
+			traits = { efficient_sociopath }
+		}
+		
+		# gerald_winrod = { 
+			# allowed = {
+				# original_tag = USA
+			# }
+			# available = {
+				# has_government = fascism
+			# }
+			# traits = { efficient_sociopath}
+			# cancel_if_invalid = no
+		# }
+		
+		ray_wilbur = {
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = { crime_fighter }
+			cancel_if_invalid = no
+		}
+	}
 
-#Intelligence
-intel_minister = {
+	#Intelligence
+	intel_minister = {
 		frank_rowlett = {
 			
 			allowed = {
 				original_tag = USA
 			}
+			
 			available = {
-				#has_government = liberalism
+				has_government = democratic
 			}
 			
-			traits = {   codebreaker }
-			}
+			traits = { codebreaker }
+		}
+		
 		william_j_donovan = {
 			
 			allowed = {
@@ -770,39 +768,46 @@ intel_minister = {
 			available = {
 				date > 1940.1.1
 			}
-			traits = { apolitical dismal_enigma organizer}
+			traits = { dismal_enigma }
 		}
-		hoyt_s_vandenberg = { 
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-				#has_government = conservatism
-			}
-			traits = {   dismal_enigma}
-			cancel_if_invalid = no
-		}
-}
+		
+		# hoyt_s_vandenberg = { 
+		
+			# allowed = {
+				# original_tag = USA
+			# }
+			
+			# available = {
+				# has_government = democratic
+			# }
+			
+			# traits = { dismal_enigma}
+			
+			# cancel_if_invalid = no
+		# }
+	}
 
-#Economic
-economic_minister = {
+	#Economic
+	economic_minister = {
 		USA_henry_stimson = {
 			
 			allowed = {
 				original_tag = USA
 			}
+			
 			available = {
-			OR = {
-				AND = {
-					#has_government = liberalism
-					date > 1940.1.1
+				OR = {
+					AND = {
+						has_government = democratic
+						date > 1940.1.1
 					}
-				#has_government = conservatism
+					has_government = democratic
 				}
 			}
 			
-			traits = {   war_industrialist }
+			traits = { war_industrialist }
 		}
+		
 		USA_donald_nelson = {
 			
 			picture = generic_political_advisor_europe_3
@@ -812,11 +817,12 @@ economic_minister = {
 			}
 			
 			available = {
-				#has_government = liberalism
+				has_government = democratic
 			}
 			
-			traits = {   armaments_organizer }
+			traits = { armaments_organizer }
 		}
+		
 		henry_morgenthau = {
 			
 			picture = "gfx/interface/ideas/ministers/idea_henry_morgenthau"
@@ -826,10 +832,10 @@ economic_minister = {
 			}
 			
 			available = {
-				#has_government = liberalism
+				has_government = democratic
 			}
 			
-			traits = { capitalist   }
+			traits = { capitalist }
 		}
 		
 		warren_g_hooper = { 
@@ -839,13 +845,14 @@ economic_minister = {
 			}
 			
 			available = {
-				#has_government = conservatism
+				has_government = democratic
 			}
 			
-			traits = {   corrupt_kleptocrat }
+			traits = { corrupt_kleptocrat }
 			
 			cancel_if_invalid = no
 		}
+		
 		louis_johnson = { 
 		
 			allowed = {
@@ -853,41 +860,44 @@ economic_minister = {
 			}
 			
 			available = {
-				#has_government = liberalism
+				has_government = democratic
 			}
 	
-			traits = {   quartermaster_general }
+			traits = { quartermaster_general }
 			
 			cancel_if_invalid = no
-			}
+		}
+		
 		harry_hopkins = {
 	
 			allowed = {
 				original_tag = USA
-				}
+			}
 				
 			available = {
-				#has_government = liberalism
+				has_government = democratic
 			}
 			
-			traits = {   war_industrialist }
+			traits = { war_industrialist }
 			
 			cancel_if_invalid = no
+			
 			ai_will_do = {
 				factor = 20
 			}
 		}
+		
 		harold_ickes_econ = {
 		
 			allowed = {
 				original_tag = USA
-				}
+			}
 				
 			available = {
-				#has_government = liberalism
+				has_government = democratic
 			}
 			
-			traits = {   public_works_focus }
+			traits = { public_works_focus }
 			
 			cancel_if_invalid = no
 		}
@@ -900,9 +910,9 @@ economic_minister = {
 				
 			available = {
 				#has_government = liberalism
-		}
+			}
 		
-			traits = {   armaments_organizer }
+			traits = { armaments_organizer }
 			
 			cancel_if_invalid = no
 		}
@@ -914,10 +924,10 @@ economic_minister = {
 			}
 			
 			available = {
-				#has_government = conservatism
+				has_government = democratic
 			}
 			
-			traits = {   capitalist }
+			traits = { capitalist }
 			
 			cancel_if_invalid = no
 		}
@@ -929,139 +939,131 @@ economic_minister = {
 			}
 			
 			available = {
-				#has_government = conservatism
+				has_government = democratic
 			}
 			
-			traits = {   industrial_planner }
+			traits = { industrial_planner }
 			
 			cancel_if_invalid = no
 		}
-		alf_m_landon = { 
+		
+		alf_m_landon = {
 		
 			allowed = {
 				original_tag = USA 
 				date > 1940.11.1
-				}
+			}
 				
 			available = {
-				#has_government = conservatism
-		}
+				has_government = democratic
+			}
 			
-			traits = {   public_works_focus }
+			traits = { public_works_focus }
 			
 			cancel_if_invalid = no
 		}		
-}
+	}
 
-#Advisors
-political_advisor = {
+	#Advisors
+	political_advisor = {
 		john_nance_garner = {
-		allowed = {
-				original_tag = USA
-		}
-		available = {
-			OR = {
-				#has_government = liberalism
-				#has_government = conservatism
-			}
-			date < 1940.10.29
-		}
-		picture = idea_john_nance_garner
 		
-		traits = {   staunch_constitutionalist }
-	}
-	henry_wallace = {
-		allowed = {
-				original_tag = USA
-			
-		}
-		available = {
-			OR = {
-				#has_government = liberalism
-				has_government =  
-			}
-			date > 1940.10.29
-		}
-		picture = idea_henry_wallace
-		
-		traits = {   intellectual }
-	}
-	harry_truman = {
-		allowed = {
-			original_tag = USA	
-		}
-		available = {
-			#has_government = liberalism
-			date > 1943.1.1
-		}
-		picture = idea_henry_truman
-			
-		traits = {   tough_guy }
-	}
-	frank_knox = {
-		allowed = {
-				original_tag = USA
-		}
-		available = {
-			#has_government = conservatism
-		}
-		picture = idea_frank_knox
-			
-		traits = {   coalition_builder }
-	}
-	charles_mcnary = {
-		allowed = {
-			original_tag = USA
-		}
-		available = {
-			#has_government = conservatism
-			date < 1944.3.1
-		}
-		picture = idea_charles_mcnary
-		cancel_if_invalid = yes
-		traits = {   effective_leader }
-	}
-	john_bricker = {
 			allowed = {
-				original_tag = USA
+					original_tag = USA
 			}
-		available = {
-			#has_government = conservatism
-		}
-		picture = idea_john_bricker
 			
-		traits = {   staunch_constitutionalist }
-	}	
-			
-		harold_ickes = {
-			
-			
-			allowed = {
-				original_tag = "USA"
-		}
-			
-
-			
-			traits = { liberal_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
-			do_effect = {
-				NOT = {
-				#has_government = conservatism
-					# has_government =  
-					#has_government = liberalism
+			available = {
+				OR = {
+					has_government = democratic
 				}
+				date < 1940.10.29
 			}
 			
-			ai_will_do = {
-				factor = 0
-			}
+			picture = idea_john_nance_garner
+			
+			traits = { staunch_constitutionalist }
+			
 		}
 		
-
+		henry_wallace = {
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				OR = {
+					has_government = democratic
+				}
+				date > 1940.10.29
+			}
+			
+			picture = idea_henry_wallace
+			
+			traits = { intellectual }
+		}
+		
+		harry_truman = {
+		
+			allowed = {
+				original_tag = USA	
+			}
+			available = {
+				has_government = democratic
+				date > 1943.1.1
+			}
+			
+			picture = idea_henry_truman
+				
+			traits = { tough_guy }
+		}
+		
+		frank_knox = {
+		
+			allowed = {
+					original_tag = USA
+			}
+			
+			available = {
+				has_government = democratic
+			}
+			
+			picture = idea_frank_knox
+				
+			traits = { coalition_builder }
+		}
+		
+		charles_mcnary = {
+		
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				#has_government = conservatism
+				date < 1944.3.1
+			}
+			
+			picture = idea_charles_mcnary
+			
+			cancel_if_invalid = yes
+			
+			traits = { effective_leader }
+		}
+		
+		john_bricker = {
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				has_government = democratic
+			}
+			
+			picture = idea_john_bricker
+				
+			traits = { staunch_constitutionalist }
+		}	
+	
 		USA_robert_taft = {
 			
 			picture = generic_political_advisor_europe_1
@@ -1070,22 +1072,17 @@ political_advisor = {
 				original_tag = USA
 			}
 			
-			traits = { silent_workhorse   }
+			traits = { silent_workhorse }
 		}
-}
+	}
 	
 
 	army_chief = {
-		
-	
 		douglas_macarthur = {
-			
 			
 			allowed = {
 				original_tag = USA
 			}
-			
-
 			
 			traits = { army_chief_morale_2 }
 			

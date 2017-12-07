@@ -175,6 +175,15 @@ add_ideas = {
 	FRA_protected_by_the_maginot_line
 	limited_conscription
 	incompetent_aircraft_industry
+	#politicians
+		albert_lebrun
+		yvon_delbos
+		marx_dormoy
+		maurice_henri_gauche
+		vincent_auriol
+		francois_darlan
+		maurice_gamelin
+		philippe_fequant
 }
 
 #give_guarantee = CZE

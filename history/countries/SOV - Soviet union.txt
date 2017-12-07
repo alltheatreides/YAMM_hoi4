@@ -242,6 +242,15 @@ add_ideas = {
 	trotskyite_plot
 	home_of_revolution
 	# SOV_soviet_taylorism_fordism
+	#politicians
+		mikhail_kalinin
+		SOV_vyacheslav_molotov
+		valery_mezhlauk
+		SOV_nikolai_yezhov
+		viktor_abakumov
+		alexander_yegorov
+		nikolay_kuznetsov
+		aleksandr_loktionov
 }
 
 create_country_leader = {

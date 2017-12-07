@@ -55,7 +55,16 @@ set_technology = {
 add_ideas = {
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
-	george_v
+	
+	#politicians
+	George_v
+	anthony_eden
+	sir_samuel_hoare
+	stewart_menzies
+	neville_chamberlain
+	cyril_deverell
+	ernle_chatfield
+	edward_ellington
 	# ENG_airforce
 }
 

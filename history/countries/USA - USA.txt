@@ -207,6 +207,16 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
+	#politicians
+		john_nance_garner
+		cordell_hull
+		j_edgar_hoover
+		henry_morgenthau
+		frank_rowlett
+		malin_craig
+		oscar_westover
+		william_leahy
+		fdr_hos
 }
 
 

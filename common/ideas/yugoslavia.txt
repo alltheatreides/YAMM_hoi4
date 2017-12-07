@@ -584,7 +584,7 @@ head_of_state = {
 			original_tag = YUG
 		}
 		available = {
-			democratic_govt = yes
+			# democratic_govt = yes
 			has_government = monarchism
 		}
 		traits = {   intellectual }

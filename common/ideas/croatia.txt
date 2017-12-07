@@ -483,10 +483,9 @@ CRO_gaspar_njegovan = {
 			
 			traits = { technical_especialist }
 		}
-<<<<<<< HEAD
 }
 	political_advisor = {
-=======
+
 		CRO_milan_budak = {
 				
 			allowed = {
@@ -521,7 +520,6 @@ CRO_gaspar_njegovan = {
 			traits = { quartermaster_general }
 		}		
 		CRO_vladimir_nazor = {
->>>>>>> master
 
 		
 

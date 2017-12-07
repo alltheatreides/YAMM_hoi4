@@ -2,7 +2,6 @@ ideas = {
 
 	country = {
 	
-	
 		state_shintoism = {
 			allowed = {
 				always = no
@@ -160,26 +159,19 @@ ideas = {
 ##################
 ####Politicians
 ##################
-#HoS
-head_of_state = {
-	nosaka_hos = {
-		allowed = {
-			original_tag = "JAP"
-			has_government = communism
+	#HoS
+	head_of_state = {
+		hirohito_hos = {
+			allowed = {
+				original_tag = "JAP"
+			}
+			picture = "gfx/interface/ideas/ministers/idea_hirohito"
+			traits = { popular_figurehead }
 		}
-		traits = { communist }
 	}
-	hirohito_hos = {
-		allowed = {
-			original_tag = "JAP"
-		}
-		picture = "gfx/interface/ideas/ministers/idea_hirohito"
-		traits = {   popular_figurehead }
-	}
-}
 
-#Foreign
-foreign_minister = {
+	#Foreign
+	foreign_minister = {
 		JAP_chiune_sugihara = {
 			
 			picture = generic_political_advisor_asia_3
@@ -187,14 +179,17 @@ foreign_minister = {
 			allowed = {
 				original_tag = JAP
 			}
+			
 			available = {
-			OR = {
-				has_government = fascism
-				has_government = monarchism
+				OR = {
+					has_government = fascism
+					has_government = monarchism
 				}
-			}			
-			traits = {   compassionate_gentleman }
+			}
+			
+			traits = { compassionate_gentleman }
 		}
+		
 		hachiro_arita = {
 			
 			picture = idea_hachiro_arita
@@ -202,19 +197,20 @@ foreign_minister = {
 			allowed = {
 				original_tag = JAP
 			}
+			
 			available = {
-			OR = {
-				has_government = fascism
-				has_government = monarchism
+				OR = {
+					has_government = fascism
+					has_government = monarchism
 				}
 			}
 			
-			traits = {   smooth_talking_charmer }
+			traits = { smooth_talking_charmer }
 		}
-}
+	}
 
-#Propaganda/Security
-interior_minister = {
+	#Propaganda/Security
+	interior_minister = {
 		shizuichi_tanaka = {
 			
 			picture = idea_shizuichi_tanaka
@@ -222,46 +218,49 @@ interior_minister = {
 			allowed = {
 				original_tag = JAP
 			}
+			
 			available = {
-			OR = {
-				has_government = fascism
-				has_government = monarchism
+				OR = {
+					has_government = fascism
+					has_government = monarchism
 				}
 			}
 			
-			traits = {   prince_of_terror }
+			traits = { prince_of_terror }
 		}
+		
 		kingoro_hashimoto_interior = {
 			allowed = {
 				original_tag = JAP
 			}
 			available = {
-			OR = {
-				has_government = fascism
-				has_government = monarchism
+				OR = {
+					has_government = fascism
+					has_government = monarchism
 				}
 			}
-			traits = {schemer   prince_of_terror }
+			traits = { prince_of_terror }
 			cancel_if_invalid = no
 		}
+		
 		sadao_araki_interior = {
 			allowed = {
 				original_tag = JAP
 			}
 			available = {
-			OR = {
-				has_government = fascism
-				has_government = monarchism
+				OR = {
+					has_government = fascism
+					has_government = monarchism
 				}
 			}
-			traits = {   efficient_sociopath }
+			traits = { efficient_sociopath }
 			cancel_if_invalid = no
 		}
 		
-}
+	}
 
-#Intelligence
-intel_minister = {
+	#Intelligence
+	intel_minister = {
 		harukichi_hyakutake = {
 			
 			picture = idea_harukichi_hyakutake
@@ -270,7 +269,7 @@ intel_minister = {
 				original_tag = JAP
 			}
 			
-			traits = {   dismal_enigma }
+			traits = { dismal_enigma }
 		}
 		arisue_seizo = {
 			
@@ -278,13 +277,13 @@ intel_minister = {
 				original_tag = JAP
 			}
 			
-			traits = {   codebreaker }
+			traits = { codebreaker }
 		}
-}
+	}
 
-#Economic
-economic_minister = {
-		okinori_kaya = {			
+	#Economic
+	economic_minister = {
+		okinori_kaya = {
 			picture = idea_okinori_kaya
 			
 			allowed = {
@@ -292,103 +291,111 @@ economic_minister = {
 			}
 			
 			available = {
-			OR = {
-				has_government = fascism
-				has_government = monarchism
+				OR = {
+					has_government = fascism
+					has_government = monarchism
 				}
 			}
 			
-			traits = {   armaments_organizer }
+			traits = { armaments_organizer }
 			
 		}
-		nobusuke_kishi = { 
-			allowed = {
-				original_tag = JAP
-			}
+		
+		# nobusuke_kishi = {
+			# allowed = {
+				# original_tag = JAP
+			# }
 			
-			available = {
-			OR = {
-				has_government = fascism
-				has_government = monarchism
-				has_government = conservatism
-				has_government = liberalism
-				}
-			}
+			# available = {
+				# OR = {
+					# has_government = fascism
+					# has_government = monarchism
+					# has_government = conservatism
+					# has_government = liberalism
+				# }
+			# }
 			
-			traits = {   armaments_organizer }
+			# traits = { armaments_organizer }
 			
-			cancel_if_invalid = no
-		}
+			# cancel_if_invalid = no
+		# }
+		
 		teiichi_suzuki = {
 			allowed = {
 				original_tag = JAP
-				}
+			}
 				
 			available = {
-			OR = {
+				OR = {
 				has_government = fascism
 				has_government = monarchism
 				}
 			}
 			
-			traits = {   war_industrialist }
+			traits = { war_industrialist }
 			
 			cancel_if_invalid = no
 		}
-	tsukizo_akinaga = {
+		
+		tsukizo_akinaga = {
+		
+			allowed = {
+				original_tag = JAP
+			}
+				
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = monarchism
+				}
+			}
+			
+			traits = { armaments_organizer }
+			
+			cancel_if_invalid = no
+		}
+		
+		shozo_murata = {
+		
 			allowed = {
 				original_tag = JAP
 				}
 				
 			available = {
-			OR = {
-				has_government = fascism
-				has_government = monarchism
+				OR = {
+					has_government = fascism
+					has_government = monarchism
 				}
 			}
 			
-			traits = {   armaments_organizer }
+			traits = { resource_industrialist }
 			
 			cancel_if_invalid = no
 		}
-	shozo_murata = {
-			allowed = {
-				original_tag = JAP
-				}
-				
-			available = {
-			OR = {
-				has_government = fascism
-				has_government = monarchism
-				}
-			}
+		
+		# ryoichi_sasakawa = {
+			# allowed = {
+				# original_tag = JAP
+			# }
 			
-			traits = {   resource_industrialist }
+			# available = {
+			# OR = {
+				# has_government = fascism
+				# has_government = monarchism
+				# }
+			# }
+			# traits = { military_entrepreneur }
 			
-			cancel_if_invalid = no
-		}
-	ryoichi_sasakawa = {
-			allowed = {
-				original_tag = JAP
-				}
-			available = {
-			OR = {
-				has_government = fascism
-				has_government = monarchism
-				}
-			}
-			traits = {   military_entrepreneur }
+			# cancel_if_invalid = no
 			
-			cancel_if_invalid = no
-			
-			ai_will_do = {
-				factor = 100
-			}
+			# ai_will_do = {
+				# factor = 100
+			# }
+		# }
 	}
-}
 
-#Advisors
-political_advisor = {	
+	#Advisors
+	political_advisor = {	
 		sadao_araki = {
 			
 			picture = idea_sadao_araki
@@ -397,12 +404,8 @@ political_advisor = {
 				original_tag = JAP
 			}
 			
-			traits = { fascist_demagogue schemer powerful }
+			traits = { fascist_demagogue }
 			
-			on_add = {
-				custom_effect_tooltip = powerful_TT
-				set_country_flag = araki_powerful
-			}
 			ai_will_do = {
 				factor = 20
 				modifier = {
@@ -413,25 +416,12 @@ political_advisor = {
 		}
 		
 		kingoro_hashimoto = {
-			
-			
+		
 			allowed = {
 				original_tag = "JAP"
 			}
 			
-
-			
 			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
 			
 			ai_will_do = {
 				factor = 0
@@ -454,12 +444,9 @@ political_advisor = {
 	supreme_commander = {
 		tojo_sc = {
 			
-			
 			allowed = {
 				original_tag = JAP
 			}
-			
-
 			
 			traits = { supreme_com_political }
 			
@@ -469,12 +456,9 @@ political_advisor = {
 		}
 		sugiyama_sc = {
 			
-			
 			allowed = {
 				original_tag = JAP
 			}
-			
-
 			
 			traits = { supreme_com_aggressive }
 			
@@ -484,12 +468,9 @@ political_advisor = {
 		}
 		yamamoto_sc = {
 			
-			
 			allowed = {
 				original_tag = JAP
 			}
-			
-
 			
 			traits = { supreme_com_organizer }
 			

@@ -350,133 +350,549 @@ ideas = {
 		
 	}
 
-	# POLITICAL
-	political_advisor = {
-		maurice_thorez = {
-			
-			
+	##################
+	####Politicians
+	##################
+	#HoS
+	head_of_state = {
+		albert_lebrun = {
 			allowed = {
 				original_tag = "FRA"
-			}			
-			available = {
-				has_completed_focus = FRA_leftist_rhetoric
-				NOT = {has_country_flag = free_france}
-			}
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
 			}
 
-			ai_will_do = {
-				factor = 0
-			}
-		}	
-		andre_marty = { # France libre so De gaulle (et pas Thorez en exil)
-			
-			
-			allowed = {
-				original_tag = "FRA"
-			}			
 			available = {
-				has_completed_focus = FRA_leftist_rhetoric
-				has_country_flag = free_france
-			}
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-			
-			do_effect = {
-				NOT = {
-					has_government = communism
+				OR = {
+					has_government = democratic
 				}
+				NOT = { has_country_flag = free_france }
 			}
 
-			ai_will_do = {
-				factor = 0
+			traits = { elder_statesman }
+
+		}
+		
+		pierre_laval = { 
+			allowed = { 
+				original_tag = FRA
 			}
-		}			
-		leon_blum = {
 			
+			available = {
+				has_government = fascism
+			}
 			
+			traits = { elder_statesman }
+			
+		}
+	}
+	
+	#Foreign
+	foreign_minister = {
+		paul_baudouin = {
 			allowed = {
 				original_tag = "FRA"
 			}
 			
 			available = {
-				NOT = {has_country_flag = free_france}
+				OR = {
+					has_government = fascism
+				}
+			}
+			traits = { compassionate_gentleman }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		yvon_delbos = {
+			allowed = {
+				original_tag = "FRA"
 			}
 			
-			traits = { democratic_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
-			do_effect = {
-				NOT = {
+			available = {
+				OR = {
 					has_government = democratic
 				}
 			}
+
+			traits = { compassionate_gentleman }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		georges_bonnet = {
+
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			available = {
+				OR = {
+					has_government = democratic
+				}
+			}
+
+			traits = { smooth_talking_charmer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		henri_queuille = { #MOD
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			available = {
+				OR = {
+					has_government = democratic
+				}
+			}
+			
+			traits = { ideological_crusader }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		pierre_laval_foreign = {
+			allowed = { 
+				original_tag = FRA
+			}
+			
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { tough_negotiator }
+		}	
+	}
+	
+	#Propaganda/Security
+	interior_minister = {
+		marx_dormoy = {
+			allowed = {
+				original_tag = "FRA"
+				has_government = democratic
+			}
+
+			traits = { crime_fighter }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		albert_sarraut = {
+			allowed = {
+				original_tag = "FRA"
+				has_government = democratic
+			}
+
+			traits = { crime_fighter }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		jacques_duclos_interior = {
+		
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			available = {
+				has_completed_focus = FRA_leftist_rhetoric
+			}
+
+			traits = { backroom_backstabber }
 
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		FRA_FREE_rene_cassin = {
+				
+		marcel_bucard_interior = {
+			allowed = {
+				original_tag = FRA
+			}
 			
+			available = {
+				has_government = fascism
+			}
 			
+			traits = { prince_of_terror }
+		}
+		
+		jean_moulin = { #MOD
 			allowed = {
 				original_tag = "FRA"
+				OR = {
+					has_government = democratic
+				}
 			}
 			
 			available = {
 				has_country_flag = free_france
 			}
 			
-			traits = { democratic_reformer }
-	
-			on_add = {
-				country_event = political.13
+			traits = { backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
 			}
+		}
+		
+		adrien_marquet = { 
+			allowed = { 
+				original_tag = FRA
+			}
+			
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { hearts_and_minds }
+		}
+		
+		pierre_costantini = { 
+			allowed = { 
+				original_tag = FRA
+			}
+			
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { prince_of_terror }
+		}
+		
+		rene_bousquet = { 
+			allowed = { 
+				original_tag = FRA
+			}
+			
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { crime_fighter }
+		}
+	}
 	
-			do_effect = {
-				NOT = {
+	#Intelligence
+	intel_minister = {
+		maurice_henri_gauche = {
+		
+			allowed = {
+				original_tag = "FRA"
+			}
+		
+			available = {
+				NOT = { has_government = communism has_government = fascism }
+			}
+			
+			picture = idea_maurice_henri_gauche
+
+			traits = { dismal_enigma }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		zivony_peshkov_intel = {
+
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				NOT = { has_government = fascism has_government = communism }
+			}
+			picture = generic_army_europe_3
+
+			traits = { codebreaker }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		rene_bousquet_int = { 
+			allowed = { 
+				original_tag = FRA
+			}
+			
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { codebreaker }
+			
+		}
+}
+
+	#Economic
+	economic_minister = {
+		FRA_zivony_peshkov = {
+
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_country_flag = free_france
+			}
+			picture = generic_army_europe_3
+
+			traits = { armaments_organizer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		felix_gouin = {
+
+			allowed = {
+				original_tag = FRA
+			}
+			
+			available = {
+				OR = {
+					has_government = socialism
+					has_government = liberalism
+				}
+			}
+			
+			picture = generic_political_advisor_europe_3
+
+			traits = { public_works_focus }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		FRA_paul_reynaud = {
+
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = democratic
+				}
+				NOT = { has_country_flag = free_france }
+			}
+			
+			picture = generic_political_advisor_europe_3
+
+			traits = { quartermaster_general }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		vincent_auriol = {
+
+			allowed = {
+				original_tag = FRA
+			}
+			
+			available = {
+				OR = {
 					has_government = democratic
 				}
 			}
+			
+			picture = idea_vincent_auriol
+
+			traits = { industrial_planner }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		paul_faure = { #MOD
+		
+			allowed = {
+				original_tag = FRA
+			}
+			# available = {
+				# has_completed_focus = FRA_exchange_rate_stabilisation
+			# }
+			
+			cost = 50
+			
+			traits = { committed_pacifist }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		
+		rene_pleven = {
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = democratic
+				}
+			}
+			
+			traits = { armaments_organizer }
+			
+			cancel_if_invalid = no
+		}
+		
+		andre_le_troquer = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			
+			available = {
+				has_government = socialism
+			}
+			
+			traits = { war_industrialist }
+			cancel_if_invalid = no
+		}
+		
+		raoul_dautry = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			
+			available = {
+				OR = {
+					has_government = democratic
+				}
+			}
+			
+			traits = { public_works_focus }
+			cancel_if_invalid = no
+		}
+		
+		jules_moch = {
+			allowed = {
+				original_tag = FRA
+			}
+			
+			available = {
+				has_government = democratic
+			}
+			
+			traits = { quartermaster_general }
+			cancel_if_invalid = no
+		}
+		
+		marcel_deat = {
+			allowed = { 
+				original_tag = FRA
+			}
+			
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { war_industrialist }
+			
+		}
+		
+		rene_belin = {
+			allowed = { 
+				original_tag = FRA
+			}
+			
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { econ_interventionist }
+			
+		}
+		
+		eugene_schueller = { 
+			allowed = { 
+				original_tag = FRA
+			}
+			
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { captain_of_industry }
+			
+		}
+		
+		jacques_correze = { 
+			allowed = { 
+				original_tag = FRA
+			}
+			
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { financier }
+			
+		}
+		
+		eugene_deloncle = {
+			allowed = { 
+				original_tag = FRA
+			}
+			
+			available = {
+				has_government = fascism
+				NOT = { has_country_flag = free_france }
+			}
+			
+			traits = { fortification_engineer}
+			
+		}
+	}
+	
+	#Advisors
+	political_advisor = {
+		
+		leon_blum = {
+			allowed = {
+				original_tag = "FRA"
+			}
+
+			traits = { silent_workhorse }
 
 			ai_will_do = {
 				factor = 0
 			}
-		}		
+		}
+		
 		marcel_bucard = {
-			
-			
+
 			allowed = {
 				original_tag = "FRA"
 			}
 			available ={
-				has_completed_focus = FRA_right_wing_rhetoric
-				NOT = {has_completed_focus = free_france}
+				NOT = { has_country_flag = free_france }
 			}
-			
+
 			traits = { fascist_demagogue }
-	
+
 			on_add = {
 				country_event = political.7
 			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = fascism
@@ -489,155 +905,95 @@ ideas = {
 		}
 
 		FRA_gaston_henry_haye = {
-			
+
 			allowed = {
 				original_tag = "FRA"
 			}
+			
 			available = {
 				NOT = {has_country_flag = free_france}
 			}
 
-			
-			picture = generic_political_advisor_europe_5
-			
+			picture = generic_political_advisor_europe_3
+
 			traits = { silent_workhorse }
-	
-			on_add = {
-			}
-	
-			do_effect = {
-			}
-			
+
 			ai_will_do = {
 				factor = 1
 			}
-		}	
-
-		FRA_jacques_duclos = {
-			
-			allowed = {
-				original_tag = "FRA"
+		}
+		
+		philippe_henriot = {
+			allowed = { 
+				original_tag = FRA
 			}
+			
 			available = {
-				has_completed_focus = FRA_leftist_rhetoric
-			}			
-			picture = generic_political_advisor_europe_3
-			
-			traits = { backroom_backstabber }
-	
-			ai_will_do = {
-				factor = 0
+				has_government = fascism
+				NOT = { has_country_flag = free_france }
 			}
-		}	
+			
+			traits = { speechwriter}
+			
+		}
 
-		FRA_paul_baudouin = {
+	}
+	
+	# MILITARY
+	supreme_commander = {
+		de_gaulle_sc = {
+			
 			
 			allowed = {
-				original_tag = "FRA"
+				original_tag = FRA
 			}
 			
-			picture = generic_political_advisor_europe_3
-			
-			traits = { smooth_talking_charmer }
-	
-			on_add = {
-			}
-	
-			do_effect = {
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-
-		FRA_zivony_peshkov = {
-			
-			allowed = {
-				original_tag = "FRA"
-			}
 			available = {
 				has_country_flag = free_france
-			}			
-			picture = generic_army_europe_5
+			}
 			
-			traits = { war_industrialist }
-	
-			on_add = {
-			}
-	
-			do_effect = {
-			}
+			traits = { supreme_com_aggressive }
 			
 			ai_will_do = {
 				factor = 1
 			}
-		}	
-
-		FRA_felix_gouin = {
+		}
+		
+		de_tassigny_sc = {
+			
 			
 			allowed = {
-				original_tag = "FRA"
+				original_tag = FRA
 			}
 			
-			picture = generic_political_advisor_europe_3
-			
-			traits = { captain_of_industry }
-	
-			on_add = {
-			}
-	
-			do_effect = {
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-
-		FRA_charles_tillon = {
-			
-			allowed = {
-				original_tag = "FRA"
-			}
-			
-			picture = generic_political_advisor_europe_3
-			
-			traits = { armaments_organizer }
-	
-			on_add = {
-			}
-	
-			do_effect = {
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-
-		FRA_paul_reynaud = {
-			
-			allowed = {
-				original_tag = "FRA"
-			}
 			available = {
-				NOT = {has_country_flag = free_france}
+				has_country_flag = free_france
 			}
-			picture = generic_political_advisor_europe_3
 			
-			traits = { quartermaster_general }
-	
-			on_add = {
-			}
-	
-			do_effect = {
-			}
+			traits = { supreme_com_organizer }
 			
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
+		
+		gamelin_sc = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			available = {
+				NOT = { has_country_flag = free_france }
+			}
+			
+			traits = { supreme_com_defensive }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 		
 	# MILITARY

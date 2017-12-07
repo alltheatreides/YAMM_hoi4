@@ -93,20 +93,13 @@ ideas = {
 		}
 	}
 		
-##################
-####Politicians
-##################
-#HoS
-head_of_state = {
-	# bordiga_hos = {
-		# allowed = {
-				# original_tag = "ITA"
-				# has_government = communism
-			# }
-		# traits = { communist }
-	# }
-	victor_emmanuel = {
-			
+	##################
+	####Politicians
+	##################
+	#HoS
+	head_of_state = {
+		victor_emmanuel = {
+				
 			allowed = {
 				original_tag = "ITA"
 			}
@@ -114,52 +107,47 @@ head_of_state = {
 			allowed_civil_war = {
 				NOT = {
 					has_government = communism
-			}
+				}
 				NOT = {
 					any_other_country = {
 						original_tag = ITA
-					has_government = fascism
+						has_government = fascism
+					}
 				}
-			}
 			}
 			
 			traits = {
-				  popular_figurehead				
+				popular_figurehead				
 			}
-		}	
-}
+		}
+	}
 
-#Foreign
-foreign_minister = {
-ITA_gian_galeazzo_ciano = {
-			
-			
+	#Foreign
+	foreign_minister = {
+		ITA_gian_galeazzo_ciano = {
+
 			allowed = {
 				original_tag = "ITA"
 			}
 
 			picture = generic_political_advisor_europe_6
-						
-			traits = {   compassionate_gentleman }
-	
-			on_add = {				
-			}
-				
+			
+			traits = { compassionate_gentleman }
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-	
+		
 		ITA_roberto_farinacci = {
-			
 			
 			allowed = {
 				original_tag = "ITA"
 			}
 
 			picture = generic_army_europe_1
-						
-			traits = {   iron_fisted_brute }
+			
+			traits = { backroom_backstabber }
 
 			ai_will_do = {
 				factor = 0
@@ -168,18 +156,14 @@ ITA_gian_galeazzo_ciano = {
 		
 		ITA_dino_grandi = {
 			
-			
 			allowed = {
 				original_tag = "ITA"
 			}
 
 			picture = generic_political_advisor_europe_3
-						
-			traits = {   smooth_talking_charmer }
-	
-			on_add = {				
-			}
-				
+			
+			traits = { smooth_talking_charmer }
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -187,49 +171,42 @@ ITA_gian_galeazzo_ciano = {
 			
 		ITA_serafino_mazzolini = {
 			
-			
 			allowed = {
 				original_tag = "ITA"
 			}
 
 			picture = generic_political_advisor_europe_1
-						
-			traits = {   ideological_crusader }
-	
-			on_add = {				
-			}
-				
+			
+			traits = { ideological_crusader }
+			
 			ai_will_do = {
 				factor = 0.5
 			}
 		}
-}
+	}
 
-#Propaganda/Security
-interior_minister = {
-ITA_giovanni_marinelli = {
-						
+	#Propaganda/Security
+	interior_minister = {
+		ITA_giovanni_marinelli = {
+		
 			allowed = {
 				original_tag = "ITA"
 			}
 
 			picture = generic_political_advisor_europe_5
-						
+			
 			traits = { prince_of_terror }
-	
-			on_add = {				
-			}
-				
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-}
+	}
 
-#Intelligence
-intel_minister = {
-cesare_ame = {
-					
+	#Intelligence
+	intel_minister = {
+		cesare_ame = {
+		
 			picture = idea_cesare_ame
 			
 			allowed = {
@@ -238,125 +215,112 @@ cesare_ame = {
 			available = {
 				has_government = fascism
 			}
-			traits = {   dismal_enigma }
+			traits = { dismal_enigma }
 		}
-}
+	}
 
-#Economic
-economic_minister = {
-ITA_giacomo_acerbo = {
-			
+	#Economic
+	economic_minister = {
+		ITA_giacomo_acerbo = {
 			allowed = {
 				original_tag = ITA
-				}
+			}
 			available = {
 				has_government = fascism
 			}
 
 			picture = generic_political_advisor_europe_2
-						
-			traits = {   war_industrialist }
-	
-			on_add = {				
-			}
-				
+			
+			traits = { war_industrialist }
+			
 			ai_will_do = {
 				factor = 3
 			}
 		}
-					
+		
 		ITA_junio_valerio_borghese = {
 			
 			allowed = {
 				original_tag = ITA
-				}
+			}
 			available = {
 				has_government = fascism
 			}
 
 			picture = generic_army_europe_2
-						
-			traits = {   armaments_organizer }
-	
-			on_add = {				
-			}
-				
+			
+			traits = { armaments_organizer }
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-					
+		
 		ITA_paolo_thaon_di_revel = {
+		
 			allowed = {
 				original_tag = ITA
-				}
+			}
 			available = {
 				has_government = fascism
 			}
 
 			picture = generic_navy_europe_3
-						
-			traits = {   quartermaster_general }
-	
-			on_add = {				
-			}
-				
+			
+			traits = { quartermaster_general }
+
 			ai_will_do = {
 				factor = 0.3
 			}
 		}
-		alfredo_guzzoni_econ = { 
+		
+		alfredo_guzzoni_econ = {
+		
 			allowed = {
 				original_tag = ITA
-				}
-			available = {
-				has_government = fascism
-			}
-			traits = {  quartermaster_general }
-			cancel_if_invalid = no
-		}
-		antonio_sorice = { 
-			allowed = {
-				original_tag = ITA
-				}
-			available = {
-				has_government = fascism
-			}
-			traits = {   war_industrialist }
-			cancel_if_invalid = no
-		}
-}
-
-#Advisors
-political_advisor = {
-					
-		carlo_scorza = {
 			
+			}
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { quartermaster_general }
+			
+			cancel_if_invalid = no
+		}
+		
+		antonio_sorice = {
+			allowed = {
+				original_tag = ITA
+			}
+			
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { war_industrialist }
+			
+			cancel_if_invalid = no
+		}
+	}
+
+	#Advisors
+	political_advisor = {
+
+		carlo_scorza = {
 			
 			allowed = {
 				original_tag = "ITA"
 			}
 			
-
-						
 			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
 				
 			ai_will_do = {
 				factor = 0
 			}
-			}
 		}
-		
+	}
+
 	# MILITARY
 	army_chief = {
 		

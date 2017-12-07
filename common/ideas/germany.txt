@@ -224,7 +224,7 @@ ideas = {
 
 	}
 	
-	#######Politicians
+#######Politicians
 #HoS
 head_of_state = {
 	hitler_hos = {
@@ -236,44 +236,6 @@ head_of_state = {
 		
 		traits = {   }
 	}
-	# paul_von_lettow_vorbeck = {
-		# allowed = {
-			# original_tag = GER
-		# }
-		# available = {
-			# OR = {
-				# has_government = monarchism
-				# AND = {
-					# OR = {
-						# has_government = conservatism
-						# has_government = liberalism
-						# has_government =  
-					# }
-					# has_country_flag = const_kaiser
-				# }
-			# }
-		# }
-		# traits = {   war_hero }
-	# }
-	# hans_jurgen_von_blumenthal = {
-		# allowed = {
-			# original_tag = GER
-		# }
-		# available = {
-			# OR = {
-				# has_government = monarchism
-				# AND = {
-					# OR = {
-						# has_government = conservatism
-						# has_government = liberalism
-						# has_government =  
-					# }
-					# has_country_flag = const_kaiser
-				# }
-			# }
-		# }
-		# traits = {   rising_star }
-	# }
 }
 #Foreign Ministers
 foreign_minister = {
@@ -285,10 +247,8 @@ foreign_minister = {
 		available = {
 			has_government = fascism
 		}
-		traits = { 
-			#   
-			iron_fisted_brute 
-			loyal 
+		traits = {
+			backroom_backstabber
 		}
 
 		ai_will_do = {
@@ -307,62 +267,26 @@ foreign_minister = {
 		
 		traits = { smooth_talking_charmer }
 	}
-	# ulrich_von_hassell = {
-		# allowed = {
-			# original_tag = GER
-		# }
-		# available = {
-			# OR = {
-				# has_government = monarchism
-				# AND = {
-					# OR = {
-						# has_government = conservatism
-						# has_government = liberalism
-						# has_government =  
-					# }
-					# has_country_flag = const_kaiser
-				# }
-			# }
-		# }
-		# traits = {   ideological_crusader }
-	# }
 }
 
 #Security Ministers
 interior_minister = {
 	heinrich_himmler = {
-			
-			allowed = {
-				original_tag = GER
-				is_ai = no
-				NOT = { has_country_flag = himmler_dead }
-			}
-			
-			available = {
-				has_government = fascism
-			}			
-
-			on_add = {
-				custom_effect_tooltip = powerful_TT
-				set_country_flag = himmler_powerful
-			}
-			traits = { prince_of_terror powerful ambitious pet_projects }
-			
-<<<<<<< HEAD
-			#removal_cost = 250
-	}
-=======
-			traits = { armaments_organizer }
-			
-			modifier = {
-				# industrial_capacity_factory = 0.1
-				production_factory_max_efficiency_factor = 0.1
-			}
+		allowed = {
+			original_tag = GER
+			NOT = { has_country_flag = himmler_dead }
 		}
 		
-		hjalmar_schacht = {
->>>>>>> master
+		available = {
+			has_government = fascism
+		}			
 
+		# on_add = {
+			# custom_effect_tooltip = powerful_TT
+			# set_country_flag = himmler_powerful
+		# }
+		traits = { prince_of_terror }
+	}
 	reinhard_heydrich = {
 			
 		allowed = {
@@ -376,57 +300,38 @@ interior_minister = {
 			has_government = fascism
 		}			
 		
-		traits = { efficient_sociopath ambitious organizer powerful }
+		traits = { efficient_sociopath }
 	}
 	ernst_kaltenbrunner = {
 			
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_government = fascism
-			}
-			
-			traits = { efficient_sociopath }
-
-			ai_will_do = {
-				factor = 1
-			}
+		allowed = {
+			original_tag = GER
 		}
+		available = {
+			has_government = fascism
+		}
+		
+		traits = { efficient_sociopath }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	heinrich_muller = {
 			
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_government = fascism
-			}
-			
-			traits = { prince_of_terror anti_communist }
-
-			ai_will_do = {
-				factor = 1
-			}
+		allowed = {
+			original_tag = GER
 		}
-		# wilhelm_von_gayl = {
-			# allowed = {
-				# original_tag = GER
-			# }
-			# available = {
-				# OR = {
-					# has_government = monarchism
-					# AND = {
-						# OR = {
-							# has_government = conservatism
-							# has_government = liberalism
-							# has_government =  
-						# }
-						# has_country_flag = const_kaiser
-					# }
-				# }
-			# }
-			# traits = {   efficient_sociopath }
-		# }
+		available = {
+			has_government = fascism
+		}
+		
+		traits = { prince_of_terror }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
 
 #Intel Ministers	
@@ -438,12 +343,12 @@ intel_minister = {
 		}
 		available = {
 			OR = {
-			has_government = fascism
-			has_government = monarchism
+				has_government = fascism
+				has_government = monarchism
 			}
 		}
 		
-		traits = { codebreaker anti_communist schemer}
+		traits = { codebreaker }
 
 		ai_will_do = {
 			factor = 1
@@ -468,8 +373,38 @@ intel_minister = {
 	
 #Econ Ministers	
 economic_minister = {
+	walther_funk = {
 
-goering_e = {
+		allowed = {
+			original_tag = GER
+		}
+		
+		traits = { war_industrialist }
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	hjalmar_schacht = {
+		
+		allowed = {
+			original_tag = GER
+		}
+		
+		available = {
+			NOT = {
+				has_country_flag = schacht_fired
+			}
+		}
+		
+		traits = { sympathetic_judge }
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	goering_e = {
 		
 		allowed = {
 			original_tag = GER
@@ -478,7 +413,7 @@ goering_e = {
 			NOT = { has_country_flag = goering_dead }
 			has_government = fascism
 		}			
-		traits = { industrial_planner pet_projects }
+		traits = { industrial_planner }
 		
 		removal_cost = 50
 		
@@ -486,64 +421,7 @@ goering_e = {
 			factor = 1
 		}
 	}
-	hjalmar_schacht = {
-		
-		allowed = {
-			original_tag = GER
-		}
-		available = {
-			NOT = { has_government = communism has_government =   }
-		}
-		traits = { captain_of_industry }
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				has_country_flag = schacht_fired
-			}
-		}
-	}
-	walther_funk = {
-		
-		allowed = {
-			original_tag = GER
-		}
-		available = {
-			NOT = { has_government = communism has_government =   }
-		}
-		traits = { war_industrialist anti_communist }
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-	# fritz_schaeffer = { 
-		# allowed = {
-			# original_tag = GER
-		# }
-		# available = {
-			# OR = {
-				# has_government = conservatism
-				# has_government = liberalism
-			# }
-		# }
-		# traits = {   capitalist }
-	# }
-
-	# ludwig_erhard = { 
-		# allowed = {
-			# original_tag = GER
-		# }
-		# available = {
-			# OR = {
-				# has_government = conservatism
-				# has_government = liberalism
-				# has_government =  
-			# }
-		# }
-		# traits = {   captain_of_industry administrative_genius }
-		# cancel_if_invalid = no
-	# }
+	
 	todt = {
 		
 		allowed = {
@@ -562,6 +440,7 @@ goering_e = {
 			factor = 0.5
 		}
 	}
+	
 	speer = {
 		
 		allowed = {
@@ -577,45 +456,20 @@ goering_e = {
 			factor = 2
 		}
 	}
-	# otto_gessler = { 
-		# allowed = {
-			# original_tag = GER
-		# }
-		# available = {
-		# OR = {
-			# has_government = conservatism
-			# has_government = monarchism
-			# }
-		# }
-		# traits = {   war_industrialist }
-	# }
-	# adam_stegerwald = { 
-		# allowed = {
-			# original_tag = GER
-		# }
-		# available = {
-		# OR = {
-			# has_government = conservatism
-			# has_government = monarchism
-			# has_government = liberalism
-			# }
-		# }
-		# traits = {   public_works_focus }
-	# }
-	alfried_krupp = { 
+	
+	alfried_krupp = {
 		allowed = {
 			original_tag = GER
 		}
 		available = {
-		OR = {
-			has_government = fascism
-			has_government = monarchism
-			has_government = conservatism
+			OR = {
+				has_government = fascism
 			}
 		}
 		traits = { captain_of_industry }
 	}
-	konstantin_hierl = { 
+	
+	konstantin_hierl = {
 		allowed = {
 			original_tag = GER
 		}
@@ -635,49 +489,41 @@ political_advisor = {
 			
 		}
 		available = {
-			#has_government = fascism
+			has_government = fascism
 			NOT = { has_country_flag = goebbels_dead }
 		}
-		traits = { fascist_demagogue loyal}
+		traits = { fascist_demagogue }
 
-		on_add = {
-			country_event = political.7
-		}
-
-		do_effect = {
-			NOT = {
-				has_government = fascism
-			}
-		}
 		removal_cost = -1
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	hermann_goering = {
+	
+	# hermann_goering = {
 		
-		allowed = {
-			original_tag = GER
+		# allowed = {
+			# original_tag = GER
 
-			NOT = { has_country_flag = goering_dead }				
-		}
-		available = {
+			# NOT = { has_country_flag = goering_dead }				
+		# }
+		# available = {
 
-			is_ai = no
+			# is_ai = no
 
-		}			
-		traits = { loyal corrupt_kleptocrat powerful }
+		# }			
+		# traits = { loyal corrupt_kleptocrat powerful }
 
 
 
-		on_add = {
-			custom_effect_tooltip = powerful_TT
-			set_country_flag = goering_powerful
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+		# on_add = {
+			# custom_effect_tooltip = powerful_TT
+			# set_country_flag = goering_powerful
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 	
 	rudolf_hess = {
 		
@@ -688,7 +534,7 @@ political_advisor = {
 			NOT = { has_country_flag = flight_of_hess }
 		}
 		
-		traits = { r_hess loyal }
+		traits = { silent_workhorse }
 	}
 	
 	martin_bormann = {
@@ -702,22 +548,22 @@ political_advisor = {
 			has_government = fascism
 			date > 1939.1.1
 		}
-		traits = { silent_workhorse loyal }
+		traits = { silent_workhorse }
 	}
 	
-	roland_freisler = {
-		allowed = {
-			original_tag = GER
-		}
-		available = {
-			has_government = fascism
-		}
-		on_add = {
-			custom_effect_tooltip = judge_TT
-			increase_corruption = yes
-		}
-		traits = { sympathetic_judge }
-	}
+	# roland_freisler = {
+		# allowed = {
+			# original_tag = GER
+		# }
+		# available = {
+			# has_government = fascism
+		# }
+		# on_add = {
+			# custom_effect_tooltip = judge_TT
+			# increase_corruption = yes
+		# }
+		# traits = { sympathetic_judge }
+	# }
 }
 
 	
@@ -1387,28 +1233,13 @@ political_advisor = {
 			available = {
 				NOT = { is_ai = yes }
 			}
-			traits = { supreme_com_fritz reluctant_minister   }
+			traits = { supreme_com_fritz reluctant_minister }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		# fritsch_ai = {
-			
-			# allowed = {
-				# original_tag = GER
-				# is_ai = yes
-				# NOT = { has_country_flag = fritsch_fired }
-			# }
-			# available = {
-				# is_ai = yes
-			# }
-			# traits = { supreme_com_fritz   }
-			# picture = idea_werner_von_fritsch
-			# ai_will_do = {
-				# factor = 1
-			# }
-		# }
+	
 		adolf_hitler = {
 			
 			allowed = {

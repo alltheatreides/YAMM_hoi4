@@ -11,6 +11,16 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+#politicians
+	hirohito_hos
+	hachiro_arita
+	okinori_kaya
+	sadao_araki
+	harukichi_hyakutake
+	shizuichi_tanaka
+	hata_air
+	fushimi_hiroyasu
+	kanin_kotohito
 }
 
 set_technology = {

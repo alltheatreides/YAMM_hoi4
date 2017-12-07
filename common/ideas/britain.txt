@@ -346,23 +346,9 @@ ideas = {
 ##################
 ####Politicians
 ##################
-#HoS
-head_of_state = {
-	mosley_hos = {
-		allowed = {
-			original_tag = ENG
-			has_government = fascism
-		}
-		traits = {   }
-	}
-	pollitt_hos = {
-		allowed = {
-			original_tag = ENG
-			has_government = communism
-		}
-		traits = { communist }
-	}
-	george_v = {
+	#HoS
+	head_of_state = {
+		george_v = {
 		
 			allowed = {
 				original_tag = ENG
@@ -370,17 +356,13 @@ head_of_state = {
 			}
 
 			allowed_civil_war = {
-				NOT ={
+				NOT = {
 					has_government = communism
 				}
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						# OR = {
-							# has_government = conservatism
-							# has_government = liberalism
-							# has_government =  
-						# } 
+						has_government = democratic
 						NOT = {
 							tag = ROOT
 						}
@@ -390,10 +372,10 @@ head_of_state = {
 			
 			removal_cost = -1
 			
-			traits = {   popular_figurehead }
-			
-
+			traits = { popular_figurehead }
+	
 		}
+		
 		ENG_king_edward = {
 			
 			allowed = {
@@ -401,7 +383,8 @@ head_of_state = {
 			}
 
 			allowed_civil_war = {
-				NOT ={
+			
+				NOT = {
 					has_government = communism
 				}
 				NOT = {
@@ -422,7 +405,6 @@ head_of_state = {
 			modifier = {
 				unity_weekly = -0.001
 			}
-			
 
 		}
 		
@@ -440,46 +422,40 @@ head_of_state = {
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						# OR = {
-							# has_government = conservatism
-							# has_government = liberalism
-							# has_government =  
-						# } 
+						has_government = democratic
 						NOT = {
 							tag = ROOT
 						}
 					}
-			}
+				}
 			}
 
 			picture = george_vi
 			
 			removal_cost = -1
 			
-			traits = {   popular_figurehead }
+			traits = { popular_figurehead }
 			
-
 		}
-}
+	}
 
-#Foreign
-foreign_minister = {
-	ENG_nevile_henderson = {
+	#Foreign
+	foreign_minister = {
+		ENG_nevile_henderson = {
 			
 			picture = generic_political_advisor_europe_2
 			
 			allowed = {
 				original_tag = ENG
 			}
+			
 			available = {
-				# OR = {
-				# has_government = monarchism
-				# has_government = conservatism
-				# has_government = liberalism
-					# }
-				}
-			traits = {   naive_appeaser }
+				has_government = democratic
+			}
+			
+			traits = { naive_appeaser }
 		}
+		
 		anthony_eden = {
 			
 			picture = idea_anthony_eden
@@ -487,15 +463,14 @@ foreign_minister = {
 			allowed = {
 				original_tag = ENG
 			}
+			
 			available = {
-				# OR = {
-				# has_government = monarchism
-				# has_government = conservatism
-				# has_government = liberalism
-					# }
-				}
-			traits = {   smooth_talking_charmer }
+				has_government = democratic
 			}
+			
+			traits = { smooth_talking_charmer }
+		}
+		
 		lord_halifax = {
 			
 			picture = idea_lord_halifax
@@ -503,19 +478,17 @@ foreign_minister = {
 			allowed = {
 				original_tag = ENG
 			}
+			
 			available = {
-				# OR = {
-				# has_government = monarchism
-				# has_government = conservatism
-				# has_government = liberalism
-					# }
-				}
-			traits = {   compassionate_gentleman }
+				has_government = democratic
+			}
+			
+			traits = { compassionate_gentleman }
 		}
-}
+	}
 
-#Propaganda/Security
-interior_minister = {
+	#Propaganda/Security
+	interior_minister = {
 		sir_samuel_hoare = {
 			
 			picture = idea_sir_samuel_hoare
@@ -523,15 +496,13 @@ interior_minister = {
 			allowed = {
 				original_tag = ENG
 			}
+			
 			available = {
-				# OR = {
-				# has_government = monarchism
-				# has_government = conservatism
-				# has_government = liberalism
-					# }
+				has_government = democratic
 			}
-			traits = {   crime_fighter }
+			traits = { crime_fighter }
 		}
+		
 		sir_john_anderson_interior = {
 		
 			picture = idea_sir_john_anderson
@@ -539,55 +510,50 @@ interior_minister = {
 			allowed = {
 				original_tag = ENG
 			}
+			
 			available = {
-				# OR = {
-				# has_government = monarchism
-				# has_government = conservatism
-				# has_government = liberalism
-					# }
-				}
-			traits = {   prince_of_terror }
+				has_government = democratic
+			}
+			
+			traits = { prince_of_terror }
 		}
+		
 		herbert_morrison = {
 			
 			picture = idea_herbert_morrison
+			
 			allowed = {
 				original_tag = ENG
 			}
+			
 			available = {
-				# OR = {
-				# has_government = monarchism
-				# has_government = conservatism
-				# has_government = liberalism
-				# has_government =  
-					# }
-				}
-			traits = {   crime_fighter }
+				has_government = democratic
+			}
+			
+			traits = { crime_fighter }
 		}
-}
+	}
 
-#Intelligence
-intel_minister = {
+	#Intelligence
+	intel_minister = {
 		stewart_menzies = {
 			
 			picture = idea_stewart_menzies
+			
 			allowed = {
 				original_tag = ENG
 			}
+			
 			available = {
-				# OR = {
-				# has_government = monarchism
-				# has_government = conservatism
-				# has_government = liberalism
-				# has_government =  
-					# }
-				}
-			traits = {   codebreaker }
+				has_government = democratic
+			}
+			
+			traits = { codebreaker }
 		}
-}
+	}
 
-#Economic
-economic_minister = {
+	#Economic
+	economic_minister = {
 		ENG_maxwell_aitken = {
 			
 			picture = generic_political_advisor_europe_1
@@ -595,14 +561,12 @@ economic_minister = {
 			allowed = {
 				original_tag = ENG
 			}
+			
 			available = {
-				# OR = {
-				# has_government = monarchism
-				# has_government = conservatism
-				# has_government = liberalism
-					# }
-				}
-			traits = {   war_industrialist }
+				has_government = democratic
+			}
+			
+			traits = { war_industrialist }
 		}
 
 		ENG_leslie_hore_belisha = {
@@ -612,14 +576,13 @@ economic_minister = {
 			allowed = {
 				original_tag = ENG
 			}
+			
 			available = {
-				# OR = {
-				# has_government = conservatism
-				# has_government = liberalism
-				# has_government =  
-					# }
-				}
-			traits = {   quartermaster_general }
+				has_government = democratic
+			}
+			
+			traits = { quartermaster_general }
+			
 			ai_will_do = {
 				factor = 0
 			}
@@ -632,14 +595,14 @@ economic_minister = {
 			allowed = {
 				original_tag = ENG
 			}
+			
 			available = {
-				# OR = {
-				# has_government =  
-				# has_government = liberalism
-					# }
-				}
-			traits = { anti_fascist   public_works_focus }
+				has_government = democratic
+			}
+			
+			traits = { public_works_focus }
 		}
+		
 		sir_john_anderson = {
 			
 			picture = idea_sir_john_anderson
@@ -648,14 +611,12 @@ economic_minister = {
 				original_tag = ENG
 			}
 			available = {
-				# OR = {
-				# has_government = monarchism
-				# has_government = conservatism
-				# has_government = liberalism
-					# }
-				}
-			traits = {   captain_of_industry }
+				has_government = democratic
+			}
+			
+			traits = { captain_of_industry }
 		}
+		
 		sir_john_simon = {
 			
 			picture = idea_sir_john_simon
@@ -663,15 +624,14 @@ economic_minister = {
 			allowed = {
 				original_tag = ENG
 			}
+			
 			available = {
-				# OR = {
-				# has_government = monarchism
-				# has_government = conservatism
-				# has_government = liberalism
-					# }
-				}
-			traits = {   industrial_planner }
+				has_government = democratic
+			}
+			
+			traits = { industrial_planner }
 		}
+		
 		sir_kingsley_wood = {
 			
 			picture = idea_sir_kingsley_wood
@@ -679,15 +639,14 @@ economic_minister = {
 			allowed = {
 				original_tag = ENG
 			}
+			
 			available = {
-				# OR = {
-				# has_government = monarchism
-				# has_government = conservatism
-				# has_government = liberalism
-					# }
-				}
-			traits = {   armaments_organizer }
+				has_government = democratic
+			}
+			
+			traits = { armaments_organizer }
 		}
+		
 		neville_chamberlain = {
 			
 			picture = idea_neville_chamberlain
@@ -695,46 +654,40 @@ economic_minister = {
 			allowed = {
 				original_tag = ENG
 			}
+			
 			available = {
-				# OR = {
-				# has_government = monarchism
-				# has_government = conservatism
-				# has_government = liberalism
-					# }
-				}
-			traits = {   public_works_focus }
-		}
-}
-
-#Advisors
-political_advisor = {
-			
-		clement_attlee = {
-			
-			allowed = {
-				original_tag = ENG
+				has_government = democratic
 			}
+			
+			traits = { public_works_focus }
+		}
+	}
 
-			traits = { socialist_reformer }
+	#Advisors
+	political_advisor = {
+			
+		# clement_attlee = {
+			
+			# allowed = {
+				# original_tag = ENG
+			# }
+
+			# traits = { socialist_reformer }
 	
-			on_add = {
-				country_event = political.13
-			}
+			# on_add = {
+				# country_event = political.13
+			# }
 			
-			do_effect = {
-				NOT = {
-					# OR = {
-						# has_government = conservatism
-						# has_government = liberalism
-						# has_government =  
-					# }
-				}
-			}
+			# do_effect = {
+				# NOT = {
+					# has_government = democratic
+				# }
+			# }
 			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+			# ai_will_do = {
+				# factor = 0
+			# }
+		# }
 
 		ENG_philip_kerr = {
 			
@@ -745,26 +698,21 @@ political_advisor = {
 			}
 			
 			traits = { silent_workhorse }
+			
 			ai_will_do = {
 				factor = 100
+			}
 		}
-	}
 
-		
-
-		
 	}
 		
 	# MILITARY
 	supreme_commander = {
 		montgomery_sc = {
 			
-			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
 			
 			traits = { supreme_com_planner }
 			
@@ -772,14 +720,12 @@ political_advisor = {
 				factor = 1
 			}
 		}
+		
 		brooke_sc = {
-			
 			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
 			
 			traits = { supreme_com_organizer }
 			
@@ -787,14 +733,12 @@ political_advisor = {
 				factor = 1
 			}
 		}
+		
 		alexander_sc = {
-			
 			
 			allowed = {
 				original_tag = ENG
 			}
-			
-
 			
 			traits = { supreme_com_compromiser }
 			
@@ -803,14 +747,12 @@ political_advisor = {
 			}
 		}
 	}
+	
 	army_chief = {
 		john_vereker = {
 			allowed = {
 				original_tag = ENG
 			}
-			
-
-			
 			traits = { army_chief_offensive_2 }
 			
 			ai_will_do = {

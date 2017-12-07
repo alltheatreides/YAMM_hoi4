@@ -6,6 +6,14 @@ set_research_slots = 4
 
 add_ideas = {
 	victor_emmanuel
+	ITA_paolo_thaon_di_revel
+	cesare_ame
+	ITA_giovanni_marinelli
+	ITA_gian_galeazzo_ciano
+	alberto_pariani
+	domenico_cavagnari
+	italo_balbo
+	pietro_badoglio
 	vittoria_mutilata
 	limited_exports
 	limited_conscription
