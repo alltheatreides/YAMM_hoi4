@@ -217,7 +217,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ivar Holmquist"
 	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Ivar_Holmquist.dds"
-	traits = { ranger bearer_of_artillery }
+	traits = { ranger }
 	skill = 4
 
 }

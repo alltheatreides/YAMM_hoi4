@@ -716,7 +716,7 @@ ideas = {
 				conscription = 0.015
 				unity_factor = 0.05
 				fascism_drift = 0.05
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.05
 				consumer_goods_factor = -0.03
 			}
 		}
@@ -732,7 +732,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = idea_rom_iron_guard
+			picture = generic_fascism_drift_bonus
 			
 			removal_cost = -1
 

@@ -67,3 +67,29 @@ EFR_area_priority = {
 		value = 0
 	}
 }
+
+EFR_trust_the_axis = {
+	enable = {
+		tag = EFR
+	}
+	ai_strategy = {
+		type = befriend
+		id = "GER"			
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = "ITA"			
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = "SPR"			
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = "SWI"			
+		value = 200
+	}
+}

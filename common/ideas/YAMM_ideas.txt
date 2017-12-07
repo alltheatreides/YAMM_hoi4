@@ -46,6 +46,27 @@ ideas = {
 		}
 	}
 	
+	country = {
+		no_volunteers = {
+			allowed = {
+				always = yes
+			}
+			
+			# allowed_civil_war = {
+				# has_government = democratic
+			# }
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+
+			modifier = {
+				send_volunteers_tension = 1
+			}
+		}
+	}
+	
 	#France
 	country = {
 		incompetent_aircraft_industry = {
@@ -99,9 +120,41 @@ ideas = {
 				political_power_gain = -0.5
 			}
 		}
+		GER_airforce = {
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_LW
+		
+			modifier = {
+				air_ace_generation_chance_factor = 0.15
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					air_agility = 0.05
+					air_attack =  0.05
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = 0.05
+					air_ground_attack = 0.10
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					reliability = 0.05
+					air_ground_attack = 0.05
+					instant = yes
+				}
+			} 
+		}
 	}
 	
-	#Germany
 	country = {
 		idea_GER_STO = {
 
@@ -156,6 +209,40 @@ ideas = {
 			modifier = {
 				decryption_factor = 0.3
 			}
+		}
+		
+		ENG_airforce = {
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ENG_RAF
+		
+			modifier = {
+				air_ace_generation_chance_factor = 0.10
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					air_agility = 0.05
+					air_attack =  0.05
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = 0.05
+					air_ground_attack = 0.05
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					reliability = 0.05
+					air_ground_attack = 0.05
+					instant = yes
+				}
+			} 
 		}
 	}
 }

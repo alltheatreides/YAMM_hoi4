@@ -1042,7 +1042,7 @@ country_event = {
 	trigger = {
 		original_tag = ENG
 		has_capitulated = no
-		has_war_with = GER
+		ENG = { has_war_with = GER }
 		CZE = {
 			OR = {
 				has_capitulated = yes

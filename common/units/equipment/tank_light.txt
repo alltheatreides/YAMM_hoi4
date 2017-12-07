@@ -27,7 +27,7 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 4
-		breakthrough = 36
+		breakthrough = 40
 		hardness = 0.8
 		armor_value = 10
 
@@ -101,7 +101,7 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 5
-		breakthrough = 46
+		breakthrough = 54
 		armor_value = 15
 
 		#Offensive Abilities
@@ -131,7 +131,7 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 6
-		breakthrough = 56
+		breakthrough = 69
 		armor_value = 30
 
 		#Offensive Abilities
@@ -225,7 +225,7 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 5
-		breakthrough = 3.5
+		breakthrough = 4
 		armor_value = 10
 
 		#Offensive Abilities
@@ -258,7 +258,7 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 7
-		breakthrough = 4.5
+		breakthrough = 5
 		armor_value = 25
 
 		#Offensive Abilities
@@ -386,7 +386,7 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 7
-		breakthrough = 2.8
+		breakthrough = 3
 		armor_value = 30
 
 		#Offensive Abilities
@@ -440,7 +440,7 @@ equipments = {
 		soft_attack = 4
 		hard_attack = 1
 		ap_attack = 5
-		air_attack = 15
+		air_attack = 10
 		
 		build_cost_ic = 10
 		resources = {
@@ -487,7 +487,7 @@ equipments = {
 		soft_attack = 5
 		hard_attack = 1.5
 		ap_attack = 20
-		air_attack = 17	
+		air_attack = 12	
 		
 		build_cost_ic = 11
 		resources = {
@@ -521,7 +521,7 @@ equipments = {
 		soft_attack = 6.5
 		hard_attack = 4
 		ap_attack = 35
-		air_attack = 32
+		air_attack = 22
 		
 		build_cost_ic = 12
 		resources = {

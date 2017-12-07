@@ -1430,6 +1430,12 @@ focus_tree = {
 				technology = fighter2
 			}
 			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
+				technology = heavy_fighter2
+			}
+			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 0.5
 				uses = 1

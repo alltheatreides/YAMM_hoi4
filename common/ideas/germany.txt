@@ -211,13 +211,13 @@ ideas = {
 			
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 				heavy_infantry_equipment = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 				artillery = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
 			}
 		}
@@ -348,8 +348,20 @@ interior_minister = {
 			}
 			traits = { prince_of_terror powerful ambitious pet_projects }
 			
+<<<<<<< HEAD
 			#removal_cost = 250
 	}
+=======
+			traits = { armaments_organizer }
+			
+			modifier = {
+				# industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		
+		hjalmar_schacht = {
+>>>>>>> master
 
 	reinhard_heydrich = {
 			

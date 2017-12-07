@@ -1850,6 +1850,8 @@ country_event = {
 	desc = yamm.90.d
 	picture = GFX_report_event_urals_industry
 	
+	fire_only_once = yes
+	
 	trigger = {
 		219 = {
 			is_owned_and_controlled_by = SOV
@@ -1870,7 +1872,8 @@ country_event = {
 			arms_factory > 2
 			industrial_complex > 0
 		}
-		has_defensive_war = yes
+		SOV = { has_defensive_war = yes }
+		tag = SOV
 		573 = {
 			is_owned_and_controlled_by = SOV
 		}
@@ -2104,6 +2107,26 @@ country_event = {
 						instant_build = yes
 					}
 				}
+				random_owned_state = {
+					limit = {
+						# ROOT = { has_full_control_of_state = PREV }
+						is_on_continent = europe
+						free_building_slots = {
+							building = arms_factory
+							size > 5
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+			USA = {
+				set_technology = { mass_production = 1 }
 			}
 		}
 	}
@@ -2138,5 +2161,30 @@ country_event = {
 	option = {
 		name = yamm.92.b
 		add_political_power = -300
+	}
+}
+
+# China lose corrupt army
+country_event = {
+	id = yamm.93
+	title = yamm.93.t
+	desc = yamm.93.d
+	# picture = GFX_report_event_hungry_mussolini
+	
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CHI
+		has_army_experience > 250
+	}
+	
+	immediate = {
+		remove_ideas = army_corruption
+	}
+	
+	
+	option = {
+		name = yamm.93
 	}
 }
