@@ -1094,6 +1094,9 @@ news_event = {
 	option = {
 		name = newsevent.63.a
 		set_country_flag = wever_dead
+		hidden_effect = {
+			remove_ideas = walther_wever
+		}
 	}
 }
 

@@ -490,7 +490,7 @@ ideas = {
 			}
 		}
 	
-		pietro_badoglio = { #36-40
+		pietro_badoglio_sc = { #36-40
 			
 			
 			allowed = {
@@ -506,7 +506,7 @@ ideas = {
 			}
 		}
 		
-		ugo_cavallero = { #40-43
+		ugo_cavallero_sc = { #40-43
 	
 			
 			allowed = {

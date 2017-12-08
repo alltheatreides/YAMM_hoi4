@@ -75,7 +75,7 @@ set_technology = {
 	#adding ministers
 	add_ideas = {
 		ITA_giovanni_marinelli
-		ITA_giacomo_acerbo
+		# ITA_giacomo_acerbo
 		emilio_de_bono
 		vittorio_ambrosio
 		fiat

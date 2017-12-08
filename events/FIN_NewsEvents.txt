@@ -180,7 +180,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = FIN
-				TAG = SCA
+				# TAG = SCA
 			}
 		}
 	}
@@ -189,7 +189,7 @@ news_event = {
 			name = fin_news.5.b
 			trigger = {
 					TAG = FIN
-					TAG = SCA
+					# TAG = SCA
 					}
 				}
 		

@@ -1170,17 +1170,32 @@ ideas = {
 	# MILITARY
 	supreme_commander = {
 		
-		werner_von_fritsch = {
+		werner_von_fritsch_sc = {
 			
 			allowed = {
 				original_tag = GER
-				NOT = { is_ai = yes }
 				NOT = { has_country_flag = fritsch_fired }
 			}
-			available = {
-				NOT = { is_ai = yes }
-			}
 			traits = { supreme_com_fritz reluctant_minister }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		walther_von_brauchitsch_sc = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_army_innovation
+				has_country_flag = fritsch_fired
+			}
+
+					
+			traits = { supreme_com_political }
 			
 			ai_will_do = {
 				factor = 1

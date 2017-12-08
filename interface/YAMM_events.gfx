@@ -51,6 +51,8 @@ spriteTypes = {
 		# texturefile = "gfx/event_pictures/event_enigma_code_found.dds"
 	# }
 	
+	
+	# German Soviet War
 	spriteType = {
 		name = "GFX_report_event_soviet_generic"
 		texturefile = "gfx/event_pictures/report_event_voronezh.dds"
@@ -89,6 +91,13 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_country_event_rom_romania.50"
 		texturefile = "gfx/event_pictures/country_event_rom_romania.50.dds"
+	}
+	
+	
+	#Todt Dead
+	spriteType = {
+		name = "GFX_report_event_todt_funerals"
+		texturefile = "gfx/event_pictures/report_event_todt_funerals.dds"
 	}
 	
 }

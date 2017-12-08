@@ -621,113 +621,113 @@ country_event = {
 }
 
 #Create Nordic Union
-country_event = {
-		id = finland.99
-		title = finland.99.t
-		desc = finland.99.d
+# country_event = {
+		# id = finland.99
+		# title = finland.99.t
+		# desc = finland.99.d
 		
 		
-		is_triggered_only = yes
+		# is_triggered_only = yes
 		
-		option = {
-				name = finland.99.a
-				SCA = {
-				annex_country = { target = FIN transfer_troops = yes }
-				annex_country = { target = SWE transfer_troops = yes }
-				annex_country = { target = DEN transfer_troops = yes }
-				annex_country = { target = NOR transfer_troops = yes }
-				change_tag_from = FIN
-				country_event = { hours = 10 id = finland.100 }
+		# option = {
+				# name = finland.99.a
+				# SCA = {
+				# annex_country = { target = FIN transfer_troops = yes }
+				# annex_country = { target = SWE transfer_troops = yes }
+				# annex_country = { target = DEN transfer_troops = yes }
+				# annex_country = { target = NOR transfer_troops = yes }
+				# change_tag_from = FIN
+				# country_event = { hours = 10 id = finland.100 }
                
                 
                         
                
-		}
-	}
-}
+		# }
+	# }
+# }
 		
 		
 #add cores to Nordic Union
-country_event = { 
-		id = finland.100
-		title = finland.100.t
-		desc = finland.100.d
+# country_event = { 
+		# id = finland.100
+		# title = finland.100.t
+		# desc = finland.100.d
 		
-		is_triggered_only = yes
+		# is_triggered_only = yes
 	
 		
-		option = {
-				name = finland.100.a
-			140 = {
-			add_core_of = FIN
-			}
-			138 = {
-				add_core_of = FIN
-			}
-			139 = {
-				add_core_of = FIN
-			}
-			124 = {
-				add_core_of = FIN
-			}
-			141 = {
-				add_core_of = FIN
-			}
-			38 = {
-				add_core_of = FIN
-			}
-			666 = {
-				add_core_of = FIN
-			}
-			110 = {
-				add_core_of = FIN
-			}
-			142 = {
-				add_core_of = FIN
-			}
-			143 = {
-				add_core_of = FIN
-			}
-			144 = {
-				add_core_of = FIN
-			}
-			37 = {
-				add_core_of = FIN
-				}
-			99 = {
-				add_core_of = FIN
-			}
-			100 = {
-				add_core_of = FIN
-			}
-			101 = {
-				add_core_of = FIN
-			}
-			111 = {
-				add_core_of = FIN
-			}
-			145 = {
-				add_core_of = FIN
-			}
-			146 = {
-				add_core_of = FIN
-			}
-			147 = {
-				add_core_of = FIN
-			}
-			148 = {
-				add_core_of = FIN
-			}
-			150 = {
-				add_core_of = FIN
-			}
-			722 = {
-				add_core_of = FIN
-			}
-			SCA = { add_ideas = SCA_united }
-			}
+		# option = {
+				# name = finland.100.a
+			# 140 = {
+			# add_core_of = FIN
+			# }
+			# 138 = {
+				# add_core_of = FIN
+			# }
+			# 139 = {
+				# add_core_of = FIN
+			# }
+			# 124 = {
+				# add_core_of = FIN
+			# }
+			# 141 = {
+				# add_core_of = FIN
+			# }
+			# 38 = {
+				# add_core_of = FIN
+			# }
+			# 666 = {
+				# add_core_of = FIN
+			# }
+			# 110 = {
+				# add_core_of = FIN
+			# }
+			# 142 = {
+				# add_core_of = FIN
+			# }
+			# 143 = {
+				# add_core_of = FIN
+			# }
+			# 144 = {
+				# add_core_of = FIN
+			# }
+			# 37 = {
+				# add_core_of = FIN
+				# }
+			# 99 = {
+				# add_core_of = FIN
+			# }
+			# 100 = {
+				# add_core_of = FIN
+			# }
+			# 101 = {
+				# add_core_of = FIN
+			# }
+			# 111 = {
+				# add_core_of = FIN
+			# }
+			# 145 = {
+				# add_core_of = FIN
+			# }
+			# 146 = {
+				# add_core_of = FIN
+			# }
+			# 147 = {
+				# add_core_of = FIN
+			# }
+			# 148 = {
+				# add_core_of = FIN
+			# }
+			# 150 = {
+				# add_core_of = FIN
+			# }
+			# 722 = {
+				# add_core_of = FIN
+			# }
+			# SCA = { add_ideas = SCA_united }
+			# }
 		
-		}
+		# }
 		
 #Ask Soviets to remove claims in Karjala
 country_event = {
@@ -1834,7 +1834,7 @@ country_event = {
 			owns_state = 213
 			owns_state = 215
 			NOT = {
-			has_cosmetic_tag = SCA
+			# has_cosmetic_tag = SCA
 			}
 		}
 		
@@ -1867,7 +1867,7 @@ country_event = {
 			owns_state = 144
 			owns_state = 666
 			NOT = {
-			has_cosmetic_tag = SCA
+			# has_cosmetic_tag = SCA
 			}
 		}
 		
@@ -2141,7 +2141,7 @@ country_event = {
 		is_in_faction_with = GER
 		has_government = fascism
 		NOT = {
-		has_cosmetic_tag = SCA
+		# has_cosmetic_tag = SCA
 		}
 		}
 			
@@ -2178,7 +2178,7 @@ country_event = {
 		
 		trigger = {
 		tag = FIN
-		has_cosmetic_tag = SCA
+		# has_cosmetic_tag = SCA
 		owns_state = 110
 		owns_state = 37
 		owns_state = 141

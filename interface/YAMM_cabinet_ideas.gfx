@@ -9,7 +9,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_categories"
 		texturefile = "gfx/interface/idea_categories.dds"
-		noOfFrames = 7
+		noOfFrames = 8
 	}
 	
 	textSpriteType = {
@@ -448,6 +448,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_europe_3.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_generic_interior_minister_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_europe_4.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_AST_3"
 		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_western_european_3.dds"
 	}
@@ -587,7 +591,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_NOR_tandbergs_radiofabrikk"
 		texturefile = "gfx/interface/ideas/idea_NOR_tandbergs_radiofabrikk.dds"
-	}		
+	}
 	### GERMAN IDEAS
 	SpriteType = {
 		name = "GFX_idea_general_staff"
@@ -857,6 +861,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_walther_von_brauchitsch"
 		texturefile = "gfx/interface/ideas/idea_walther_von_brauchitsch.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_walther_von_brauchitsch_sc"
+		texturefile = "gfx/interface/ideas/idea_walther_von_brauchitsch.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_werner_von_fritsch_sc"
+		texturefile = "gfx/interface/ideas/idea_werner_von_fritsch.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_hugo_sperrle"
@@ -1169,7 +1181,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_POL_stocznia_gdynia"
 		texturefile = "gfx/interface/ideas/idea_stocznia_gdynia.dds"
-	}	
+	}
+	spriteType = {
+		name = "GFX_idea_mieczyslaw_michalowicz"
+		texturefile = "gfx/interface/ideas/ministers/idea_mieczyslaw_michalowicz.tga"
+	}
 	spriteType = {
 		name = "GFX_idea_LWS"
 		texturefile = "gfx/interface/ideas/idea_LWS.dds"
@@ -1467,7 +1483,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_pietro_badoglio.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_pietro_badoglio_sc"
+		texturefile = "gfx/interface/ideas/idea_pietro_badoglio.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_ugo_cavallero"
+		texturefile = "gfx/interface/ideas/idea_ugo_cavallero.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ugo_cavallero_sc"
 		texturefile = "gfx/interface/ideas/idea_ugo_cavallero.dds"
 	}
 	spriteType = {

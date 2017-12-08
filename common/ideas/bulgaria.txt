@@ -215,6 +215,14 @@ ideas = {
 			traits = { compassionate_gentleman }
 		}
 		
+		
+	}
+	
+	intel_minister = {
+	
+	}
+	
+	interior_minister = {
 		BUL_georgi_ivanov_kyoseivanov = {
 
 			picture = generic_political_advisor_europe_3
@@ -229,14 +237,6 @@ ideas = {
 				factor = 0
 			}
 		}
-	}
-	
-	intel_minister = {
-	
-	}
-	
-	interior_minister = {
-	
 	}
 	
 	economic_minister = {

@@ -429,43 +429,44 @@ country_event = {
 }
 
 # Albert Sarraut Resigns
-# country_event = {
-	# id = leaderevent.10
-	# title = leaderevent.10.t
-	# desc = leaderevent.10.d
-	# picture = GFX_report_event_sarraut
+country_event = {
+	id = leaderevent.10
+	title = leaderevent.10.t
+	desc = leaderevent.10.d
+	picture = GFX_report_event_sarraut
 	
-	# fire_only_once = yes
+	fire_only_once = yes
 	
-	# trigger = {
-		# original_tag = FRA
-		# has_country_leader = { name = "Albert Sarraut" }
-		# has_government = democratic
-		# date > 1936.06.04
-		# has_start_date < 1936.01.02
-		# has_global_flag = spanish_civil_war
-		# NOT = { has_country_flag = sarraut_resigned }
-	# }
+	trigger = {
+		original_tag = FRA
+		has_country_leader = { name = "Albert Sarraut" }
+		has_government = democratic
+		date > 1936.06.04
+		has_start_date < 1936.01.02
+		has_global_flag = spanish_civil_war
+		NOT = { has_country_flag = sarraut_resigned }
+	}
 
-	# mean_time_to_happen = {
-		# days = 7
-	# }
+	mean_time_to_happen = {
+		days = 7
+	}
 
-	# option = {
-		# name = leaderevent.10.a
-		# retire_country_leader = yes
-		# create_country_leader = {
-		# name = "Édouard Daladier"
-		# desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-		# picture = "Portrait_France_Edouard_Daladier.dds"
-		# expire = "1965.1.1"
-		# ideology = liberalism
-		# traits = {
-	   		# }
-    		# }
-		# set_country_flag = sarraut_resigned
-  	# }
-# }
+	option = {
+		name = leaderevent.10.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Édouard Daladier"
+			desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+			picture = "Portrait_France_Edouard_Daladier.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+				stout_defender
+			}
+		}
+		set_country_flag = sarraut_resigned
+  	}
+}
 
 # The Assassination of François Darlan
 # country_event = {
@@ -1040,8 +1041,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		original_tag = ENG
-		has_capitulated = no
+		tag = ENG
+		NOT = { ENG = { has_capitulated = yes } }
 		ENG = { has_war_with = GER }
 		CZE = {
 			OR = {

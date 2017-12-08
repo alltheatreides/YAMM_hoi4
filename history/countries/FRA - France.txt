@@ -184,6 +184,7 @@ add_ideas = {
 		francois_darlan
 		maurice_gamelin
 		philippe_fequant
+		gamelin_sc
 }
 
 #give_guarantee = CZE
@@ -201,14 +202,24 @@ create_country_leader = {
 	}
 }
 
+# create_country_leader = {
+	# name = "Édouard Daladier"
+	# desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+	# picture = "Portrait_France_Edouard_Daladier.dds"
+	# expire = "1965.1.1"
+	# ideology = socialism
+	# traits = {
+		# stout_defender
+	# }
+# }
+
 create_country_leader = {
-	name = "Édouard Daladier"
-	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = "Portrait_France_Edouard_Daladier.dds"
+	name = "Albert Sarraut"
+	desc = "POLITICS_ALBERT_SARRAUT_DESC"
+	picture = "Portrait_France_Albert_Sarraut.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberalism
 	traits = {
-		stout_defender
 	}
 }
 

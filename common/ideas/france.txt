@@ -1018,13 +1018,13 @@ ideas = {
 				original_tag = FRA
 			}
 			available = {
-				has_completed_focus = FRA_aggressive_focus
+				has_completed_focus = FRA_defensive_focus
 				NOT = {has_country_flag = free_france}
 			}
 
 			cost = 50
 			
-			traits = { army_chief_offensive_2 }
+			traits = { army_chief_defensive_2}
 			
 			ai_will_do = {
 				factor = 1
@@ -1045,7 +1045,7 @@ ideas = {
 				OR = {
 					AND = {	
 						original_tag = FRA
-				has_completed_focus = FRA_defensive_focus
+				has_completed_focus = FRA_aggressive_focus
 						NOT = {has_country_flag = free_france}
 					}	
 					original_tag = EFR
@@ -1055,7 +1055,7 @@ ideas = {
 
 			cost = 50
 			
-			traits = { army_chief_defensive_2 }
+			traits = { army_chief_offensive_2 }
 			
 			ai_will_do = {
 				factor = 1

@@ -2188,3 +2188,143 @@ country_event = {
 		name = yamm.93
 	}
 }
+
+# Todt ded
+country_event = {
+	id = yamm.94
+	title = yamm.94.t
+	desc = yamm.94.d
+	picture = GFX_report_event_todt_funerals
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		date > 1942.1.10
+		NOT = {
+			has_country_flag = todt_dead
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = { 
+		name = yamm.94.a
+		remove_ideas = todt
+		hidden_effect = {
+			set_country_flag = todt_dead
+		}
+	}
+}
+
+#Beck Fired
+country_event = {
+	id = yamm.95
+	title = yamm.95.t
+	desc  = yamm.95.d
+	picture = GFX_report_event_fascists_posing
+	
+	trigger = {
+		tag = GER
+		date > 1938.7.10
+		has_idea = ludwig_beck
+		is_historical_focus_on = yes
+		NOT = { has_country_flag = beck_question }
+	}
+	
+	immediate = { set_country_flag = beck_question }
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = { 
+		name = yamm.95.a
+		remove_ideas = ludwig_beck
+		set_country_flag = beck_fired
+	}
+	
+	option = { 
+		name = yamm.95.b
+		add_political_power = -150
+	}
+}
+
+#Schacht Fired
+country_event = {
+	id = yamm.96
+	title = yamm.96.t
+	desc  = yamm.96.d
+	picture = GFX_report_event_fascists_posing
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		date > 1937.10.20
+		has_idea = hjalmar_schacht
+		NOT = { 
+			has_country_flag = schacht_fired
+			has_country_flag = schacht_kept
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = {
+		name = yamm.96.a
+		remove_ideas = hjalmar_schacht
+		set_country_flag = schacht_fired
+		add_political_power = 150
+	}
+	
+	option = {
+		name = yamm.96.b
+		add_political_power = -150
+		set_country_flag = schacht_kept
+	}
+}
+
+#Fritsch Affair
+country_event = {
+	id = yamm.97
+	title = yamm.97.t
+	desc = yamm.97.desc
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1938.2.1
+		date < 1938.2.10
+		has_government = fascist
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	option = { #Fire Fritsch
+		name = yamm.97.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 25
+		# add_national_unity = 0.01
+		remove_ideas = werner_von_fritsch
+		add_ideas = walther_von_brauchitsch
+		set_country_flag = fritsch_fired	
+	}
+	option = { #Keep Fritsch
+		name = yamm.97.b
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -50
+		set_country_flag = fritsch_kept	
+	}
+}

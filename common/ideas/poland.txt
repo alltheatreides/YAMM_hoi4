@@ -286,6 +286,8 @@ head_of_state = {
 			has_government = democratic
 		}
 		picture = idea_mieczyslaw_michalowicz
+		
+		traits = { indomitable_perseverance }
 	}
 }
 

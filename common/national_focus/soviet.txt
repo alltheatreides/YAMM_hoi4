@@ -715,13 +715,13 @@ focus_tree = {
 				}				
 			}
 			651 = {
-				limit = {
+				# limit = {
 					# free_building_slots = {
 						# building = infrastructure
 						# size < 5
 					# }
-					infrastructure < 5
-				}
+					# infrastructure < 5
+				# }
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -765,7 +765,7 @@ focus_tree = {
 						# building = infrastructure
 						# size < 5
 					# }
-					infrastructure < 5
+					# infrastructure < 5
 				# }
 				add_building_construction = {
 					type = infrastructure

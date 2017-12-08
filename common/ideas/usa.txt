@@ -1061,16 +1061,16 @@ ideas = {
 			# traits = { staunch_constitutionalist }
 		# }	
 	
-		# USA_robert_taft = {
+		USA_robert_taft = {
 			
-			# picture = generic_political_advisor_europe_1
+			picture = generic_political_advisor_europe_1
 			
-			# allowed = {
-				# original_tag = USA
-			# }
+			allowed = {
+				original_tag = USA
+			}
 			
-			# traits = { silent_workhorse }
-		# }
+			traits = { silent_workhorse }
+		}
 	}
 	
 	supreme_commander = {

@@ -249,7 +249,7 @@ add_ideas = {
 	# hjalmar_schacht      #econ
 	# hermann_goering      #poli
 	rudolf_hess          #poli
-	werner_von_fritsch   #SC
+	werner_von_fritsch_sc   #SC
 	ludwig_beck
 	goering
 	raeder

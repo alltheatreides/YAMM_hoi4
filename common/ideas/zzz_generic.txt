@@ -933,7 +933,7 @@ ideas = {
 		generic_democratic_reformer = {
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = EFR } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = EFR tag = HUN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
 				}
@@ -1378,6 +1378,9 @@ ideas = {
 					tag = JAP
 					tag = SOV
 					tag = USA
+				}
+				NOT = {
+					has_available_idea_with_traits = { idea = supreme_com_political limit = 1 }
 				}
 			}
 			

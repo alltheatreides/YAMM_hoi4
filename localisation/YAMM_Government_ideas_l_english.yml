@@ -176,6 +176,7 @@
  military_yesman:0 " Military Yesman"
  reluctant_minister:0 "Reluctant Minister"
  great_leader:0 "Great Leader"
+ ww_one_trauma:0 "WW1 Trauma"
  
   
  Manpower_draft:0 "Manpower Draft"
@@ -250,6 +251,8 @@
  heinrich_muller:0 "Heinrich Müller"
  kurt_zeitzler:0 "Kurt Zeitzler"
  zeitzler_fired:0 "Kurt Zeitzler fired"
+ walther_von_brauchitsch_sc:0 "W.von Brauchitsch"
+ werner_von_fritsch_sc:0 "Werner Von Fritsch"
 
  #USA
  john_foster_dulles:0 "John Foster Dulles"
@@ -324,6 +327,8 @@
  paolo_berardi:0 "Paolo Berardi"
  graziani_coa:0 "Rodolfo Graziani"
  roatta_coa:0 "Mario Roatta"
+ ugo_cavallero_sc:0 "Ugo Cavallero"
+ pietro_badoglio_sc:0 "Pietro Badoglio"
 
  #JAPAN
  yoshida_shigeru:0 "Shigeru Yoshida"

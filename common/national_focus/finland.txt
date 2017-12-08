@@ -1253,7 +1253,7 @@ focus_tree = {
 			focus = fin_mannherimline
 		}
 		bypass = {
-				AHV = { exists = yes }
+				# AHV = { exists = yes }
 		}
 		
 		x = 15
