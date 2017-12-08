@@ -573,37 +573,37 @@ ideas = {
 			}
 			picture = generic_army_europe_2
 				
-			traits = { apolitical quartermaster_general }
+			traits = { quartermaster_general }
 		}
 	}
 	#Political Advisors
 	political_advisor = {
-		CZE_gustav_husak = {
-			allowed = {
-				original_tag = CZE
-			}
+		# CZE_gustav_husak = {
+			# allowed = {
+				# original_tag = CZE
+			# }
 			
-			picture = generic_communist_europe
+			# picture = generic_communist_europe
 			
-			traits = { communist_revolutionary }
+			# traits = { communist_revolutionary }
 
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		CZE_konrad_henlein = {
-			allowed = {
-				original_tag = CZE
-		}
+			# ai_will_do = {
+				# factor = 0
+			# }
+		# }
+		# CZE_konrad_henlein = {
+			# allowed = {
+				# original_tag = CZE
+		# }
 		
-			picture = generic_fascist_europe
+			# picture = generic_fascist_europe
 		
-			traits = { fascist_demagogue }
+			# traits = { fascist_demagogue }
 
-			ai_will_do = {
-				factor = 0
-			}
-		}	
+			# ai_will_do = {
+				# factor = 0
+			# }
+		# }	
 	}
 
 

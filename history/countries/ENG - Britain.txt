@@ -61,8 +61,8 @@ add_ideas = {
 	anthony_eden
 	sir_samuel_hoare
 	stewart_menzies
-	neville_chamberlain
-	cyril_deverell
+	# neville_chamberlain
+	# cyril_deverell
 	ernle_chatfield
 	edward_ellington
 	# ENG_airforce
@@ -157,12 +157,12 @@ if = {
 	
 	#adding ministers
 	add_ideas = {
-		ENG_ernest_bevin
-		bernard_montgomery
-		rsaf_enfield
-		archibald_wavell
-		charles_portal
-		english_electric		
+		# ENG_ernest_bevin
+		# bernard_montgomery
+		# rsaf_enfield
+		# archibald_wavell
+		# charles_portal
+		# english_electric		
 
 		#laws
 		partial_economic_mobilisation

@@ -576,63 +576,32 @@ ideas = {
 	}
 
 head_of_state = {
-	YUG_slobodan_jovanovic = {
+	# YUG_slobodan_jovanovic = {
 
-		picture = generic_political_advisor_europe_1
+		# picture = generic_political_advisor_europe_1
 		
-		allowed = {
-			original_tag = YUG
-		}
-		available = {
-			# democratic_govt = yes
-			has_government = monarchism
-		}
-		traits = {   intellectual }
-	}
-	YUG_prince_paul = {
-		
-		allowed = {
-			original_tag = YUG
-		}
-		
-		available = {
-			OR = {
-				has_government = monarchism
-				AND = {
-					democratic_govt = yes
-					has_country_flag = const_mon
+		# allowed = {
+			# original_tag = YUG
+		# }
+		# available = {
+			# has_government = neutrality
+		# }
+		# traits = {   intellectual }
+	# }
+		YUG_prince_paul = {
+			
+			allowed = {
+				original_tag = YUG
+			}
+			
+			available = {
+				OR = {
+					has_government = neutrality
 				}
 			}
+			traits = {   popular_figurehead }
 		}
-		traits = {   popular_figurehead }
-	}
-		YUG_tito_hos = {
-			picture = generic_political_advisor_europe_1
-			
-			allowed = {
-				original_tag = YUG
-			}
-			
-			available = {
-				has_government = communism
-			}
-			
-			traits = { communist }
-		}
-		YUG_milan_grol = {
-			picture = generic_political_advisor_europe_1
-			
-			allowed = {
-				original_tag = YUG
-			}
-			
-			available = {
-				democratic_govt = yes
-				has_government = monarchism
-			}
-			
-			traits = {   silent_workhorse }
-		}
+		
 		YUG_milan_stojadinovic = {
 			
 			allowed = {
@@ -642,8 +611,7 @@ head_of_state = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_government = monarchism
-					democratic_govt = yes
+					has_government = neutrality
 				}
 			}
 			
@@ -681,24 +649,15 @@ head_of_state = {
 		}
 	}
 	political_advisor = {
-		YUG_ivo_lola_ribar = {
-			picture = generic_communist_europe
+		# YUG_ivo_lola_ribar = {
+			# picture = generic_communist_europe
 		
-			allowed = {
-				original_tag = YUG
-			}
+			# allowed = {
+				# original_tag = YUG
+			# }
 		
-			traits = { communist_revolutionary }
-		}
-	YUG_milovan_djilas = {
-			picture = generic_democratic_europe
-			
-			allowed = {
-				original_tag = YUG
-			}
-			
-			traits = { socialist_reformer }
-		}
+			# traits = { communist_revolutionary }
+		# }
 		YUG_dimitrije_ljotic = {
 			picture = generic_fascist_europe
 			

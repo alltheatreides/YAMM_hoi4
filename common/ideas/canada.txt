@@ -610,15 +610,15 @@ head_of_state = {
 			
 			picture = generic_democratic_reformer_commonwealth_2d
 			
-			traits = { conservative_reformer }
+			traits = { staunch_constitutionalist }
 			
-			on_add = {
-				country_event = political.13
-			}
+			# on_add = {
+				# country_event = political.13
+			# }
 			
 			do_effect = {
 				NOT = {
-					has_government = conservatism
+					has_government = democratic
 				}
 			}
 			
@@ -721,24 +721,24 @@ political_advisor = {
 			
 			traits = { silent_workhorse   }
 	}
-	CAN_vincent_massey = {
-		picture = generic_political_advisor_europe_2
+	# CAN_vincent_massey = {
+		# picture = generic_political_advisor_europe_2
 		
-		allowed = {
-			original_tag = CAN
-		}
+		# allowed = {
+			# original_tag = CAN
+		# }
 		
-		traits = { liberal_reformer }
-	}
-	CAN_john_horne_blackmore = {
-		picture = generic_political_advisor_europe_3
+		# traits = { liberal_reformer }
+	# }
+	# CAN_john_horne_blackmore = {
+		# picture = generic_political_advisor_europe_3
 		
-		allowed = {
-			original_tag = CAN
-		}
+		# allowed = {
+			# original_tag = CAN
+		# }
 		
-		traits = { socialist_reformer }
-	}
+		# traits = { socialist_reformer }
+	# }
 }
 	
 

@@ -192,9 +192,18 @@ ideas = {
 			}
 		}
 	}
-
-	political_advisor = {
-
+	
+	head_of_state = {
+		BUL_boris_iii_hos = {
+			allowed = {
+				original_tag = BUL
+			}
+				
+			traits = { intellectual smooth_talking_charmer }
+		}
+	}
+	
+	foreign_minister = {
 		BUL_konstantin_muraviev = {
 
 			picture = generic_political_advisor_europe_1
@@ -205,18 +214,7 @@ ideas = {
 			
 			traits = { compassionate_gentleman }
 		}
-
-		BUL_dobri_bozhilov = {
-
-			picture = generic_political_advisor_europe_2
-				
-			allowed = {
-				original_tag = BUL
-			}
-			
-			traits = { captain_of_industry }
-		}
-
+		
 		BUL_georgi_ivanov_kyoseivanov = {
 
 			picture = generic_political_advisor_europe_3
@@ -231,7 +229,31 @@ ideas = {
 				factor = 0
 			}
 		}
+	}
+	
+	intel_minister = {
+	
+	}
+	
+	interior_minister = {
+	
+	}
+	
+	economic_minister = {
+		BUL_dobri_bozhilov = {
 
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = BUL
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
+	
+	political_advisor = {
+	
 		BUL_bogdan_filov = {
 
 			picture = generic_political_advisor_europe_1

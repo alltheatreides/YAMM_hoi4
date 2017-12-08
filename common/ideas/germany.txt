@@ -234,7 +234,7 @@ ideas = {
 				NOT = { has_country_flag = hitler_dead }
 			}
 			
-			traits = {   }
+			traits = { dictator }
 		}
 	}
 	#Foreign Ministers

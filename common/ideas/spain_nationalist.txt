@@ -462,7 +462,7 @@ head_of_state = {
 			has_government = fascism
 		}
 		
-		traits = {   }
+		traits = { dictator }
 	}
 }
 

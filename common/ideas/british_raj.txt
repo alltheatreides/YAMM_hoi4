@@ -307,11 +307,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				#democratic_drift = -0.02
-				conservatism_drift = -0.02
-				liberalism_drift = -0.02
-				socialism_drift = -0.02
-				neutrality_drift = -0.02
+				democratic_drift = -0.02
 			}
 		}
 
@@ -330,10 +326,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				#democratic_drift = -0.02
-				conservatism_drift = -0.02
-				liberalism_drift = -0.02
-				socialism_drift = -0.02
+				democratic_drift = -0.02
 				neutrality_drift = -0.02
 				fascism_drift = 0.03
 				autonomy_gain = 0.5
@@ -355,10 +348,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				#democratic_drift = -0.02
-				conservatism_drift = -0.02
-				liberalism_drift = -0.02
-				socialism_drift = -0.02
+				democratic_drift = -0.02
 				neutrality_drift = -0.02
 				communism_drift = 0.03
 				autonomy_gain = 0.5
@@ -501,51 +491,48 @@ RAJ_john_mathai = {
 			traits = { resource_industrialist }
 		}
 		
-		RAJ_3 = {
+		# RAJ_3 = {
 
-			picture = generic_political_advisor_arab_3
+			# picture = generic_political_advisor_arab_3
 			
-			allowed = {
-				original_tag = RAJ
-			}
+			# allowed = {
+				# original_tag = RAJ
+			# }
 			
-			traits = { administrative_genius }
-		}
+			# traits = { administrative_genius }
+		# }
 }
 	political_advisor = {
 
-		RAJ_bhimrao_ramji_ambedkar = {
+		# RAJ_bhimrao_ramji_ambedkar = {
 			
-			allowed = {
-				original_tag = RAJ
-			}
+			# allowed = {
+				# original_tag = RAJ
+			# }
 
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = RAJ_indian_national_congress				
-				}
-			}
+			# available = {
+				# if = {
+					# limit = { has_dlc = "Together for Victory" }
+					# has_completed_focus = RAJ_indian_national_congress				
+				# }
+			# }
 			
-			picture = generic_political_advisor_india_1
+			# picture = generic_political_advisor_india_1
 			
-			traits = { socialist_reformer }
+			# traits = { socialist_reformer }
 		
-			do_effect = {
-				NOT = {
-					OR = {
-					##has_government = democratic
-					has_government = conservatism
-					has_government = liberalism
-					has_government = socialism
-					}
-				}
-			}
+			# do_effect = {
+				# NOT = {
+					# OR = {
+					# has_government = democratic
+					# }
+				# }
+			# }
 		
-			ai_will_do = {
-				factor = 0
-			}
-		}
+			# ai_will_do = {
+				# factor = 0
+			# }
+		# }
 
 
 		RAJ_karam_singh_mann = {

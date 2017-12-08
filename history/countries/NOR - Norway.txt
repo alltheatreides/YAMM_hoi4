@@ -6,7 +6,7 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
-	NOR_haakon
+	NOR_haakon_vii
 	NOR_policy_of_disarmament
 	NOR_aftermath_of_the_depression
 }

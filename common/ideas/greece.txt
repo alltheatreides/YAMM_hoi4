@@ -53,34 +53,6 @@ political_advisor = {
 		
 		traits = { silent_workhorse }
 	}
-	GRE_r_b_bennett = {
-
-			picture = generic_political_advisor_europe_2
-				
-			allowed = {
-				original_tag = GRE
-			}
-			
-			traits = { conservative_reformer }
-	}
-	GRE_vincent_massey = {
-		picture = generic_political_advisor_europe_2
-		
-		allowed = {
-			original_tag = GRE
-		}
-		
-		traits = { liberal_reformer }
-	}
-	GRE_john_horne_blackmore = {
-		picture = generic_political_advisor_europe_3
-		
-		allowed = {
-			original_tag = GRE
-		}
-		
-		traits = { socialist_reformer }
-	}
 }
 
 theorist = {

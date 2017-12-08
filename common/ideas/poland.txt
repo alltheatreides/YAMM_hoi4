@@ -52,9 +52,7 @@ country = {
 
 		allowed_civil_war = {
 			NOT = {
-				has_government = conservatism
-				has_government = liberalism
-				has_government = socialism
+				has_government = democratic
 			}
 		}
 			
@@ -63,14 +61,8 @@ country = {
 		picture = generic_intel_bonus
 		
 		modifier = {
-			#democratic_drift = -0.05
-			#democratic_acceptance = -100
-			liberalism_drift = -0.05
-			liberalism_acceptance = -100
-			socialism_drift = -0.05
-			socialism_acceptance = -100
-			conservatism_drift = -0.05
-			conservatism_acceptance = -100
+			democratic_drift = -0.05
+			democratic_acceptance = -100
 		}
 	}
 
@@ -278,7 +270,6 @@ country = {
 			removal_cost = -1
 			picture = generic_production_bonus
 			modifier = {
-			    production_speed_synthetic_rubber_refinery_factor = 0.06
 				production_speed_synthetic_refinery_factor = 0.03
 			}
  }
@@ -289,26 +280,10 @@ country = {
 ##################
 #HoS
 head_of_state = {
-	dmowski_hos = {
-		allowed = {
-			original_tag = POL
-			has_government = fascism
-		}
-		picture = idea_roman_dmowksi
-	}
-	radkiewicz_hos = {
-		allowed = {
-			original_tag = POL
-			has_government = communism
-		}
-		picture = idea_stanislaw_radkiewicz
-	}
 	michalowicz_hos = {
 		allowed = {
 			original_tag = POL
-			has_government = liberalism
-			has_government = conservatism
-			has_government = socialism
+			has_government = democratic
 		}
 		picture = idea_mieczyslaw_michalowicz
 	}
@@ -364,50 +339,50 @@ POL_jozef_haller = {
 #Advisors
 political_advisor = {
 
-	POL_roman_dmowski = {
+	# POL_roman_dmowski = {
 
-		picture = idea_roman_dmowksi
+		# picture = idea_roman_dmowksi
 
-		allowed = {
-			original_tag = POL
-		}
+		# allowed = {
+			# original_tag = POL
+		# }
 		
-		traits = { fascist_demagogue }
+		# traits = { fascist_demagogue }
 
-		ai_will_do = {
-			factor = 0
-		}
-	}
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 
-	POL_stanislaw_radkiewicz = {
+	# POL_stanislaw_radkiewicz = {
 	
-		picture = idea_stanislaw_radkiewicz
+		# picture = idea_stanislaw_radkiewicz
 
-		allowed = {
-			original_tag = POL
-		}
+		# allowed = {
+			# original_tag = POL
+		# }
 		
-		traits = { communist_revolutionary }
+		# traits = { communist_revolutionary }
 
-		ai_will_do = {
-			factor = 0
-		}
-	}
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 
-	POL_mieczyslaw_michalowicz = {
+	# POL_mieczyslaw_michalowicz = {
 
-		picture = idea_mieczyslaw_michalowicz
+		# picture = idea_mieczyslaw_michalowicz
 
-		allowed = {
-			original_tag = POL
-		}
+		# allowed = {
+			# original_tag = POL
+		# }
 		
-		traits = { socialist_reformer }
+		# traits = { socialist_reformer }
 
-		ai_will_do = {
-			factor = 0
-		}
-	}
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
 }
 
 theorist = {

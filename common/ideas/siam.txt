@@ -1,7 +1,13 @@
 ideas = {
 head_of_state = {
-	
+	SIA_ananda_mahidol_hos = {
+		allowed = {
+			original_tag = SIA
+		}
+		traits = { exiled }
 	}
+}
+
 	foreign_minister = {
 	
 	}

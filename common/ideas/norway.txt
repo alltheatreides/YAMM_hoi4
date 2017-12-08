@@ -67,34 +67,56 @@ NOR_adolf_indrebo = {
 		}
 }
 political_advisor = {
-	NOR_r_b_bennett = {
-
-			picture = generic_political_advisor_europe_2
-				
+		NOR_soensteby = {
 			allowed = {
 				original_tag = NOR
 			}
 			
-			traits = { conservative_reformer }
-	}
-	NOR_vincent_massey = {
-		picture = generic_political_advisor_europe_2
-		
-		allowed = {
-			original_tag = NOR
+			picture = generic_political_advisor_europe_3
+			
+			available = {
+				if = {
+					has_completed_focus = NOR_gutta_paa_skauen
+				}
+				has_government = democratic
+			}
+			
+			cost = 50
+			
+			traits = { partisan_leader }
+			
+			ai_will_do = {
+				factor = 1
+			}
 		}
+	# NOR_r_b_bennett = {
+
+			# picture = generic_political_advisor_europe_2
+				
+			# allowed = {
+				# original_tag = NOR
+			# }
+			
+			# traits = { conservative_reformer }
+	# }
+	# NOR_vincent_massey = {
+		# picture = generic_political_advisor_europe_2
 		
-		traits = { liberal_reformer }
-	}
-	NOR_john_horne_blackmore = {
-		picture = generic_political_advisor_europe_3
+		# allowed = {
+			# original_tag = NOR
+		# }
 		
-		allowed = {
-			original_tag = NOR
-		}
+		# traits = { liberal_reformer }
+	# }
+	# NOR_john_horne_blackmore = {
+		# picture = generic_political_advisor_europe_3
 		
-		traits = { socialist_reformer }
-	}
+		# allowed = {
+			# original_tag = NOR
+		# }
+		
+		# traits = { socialist_reformer }
+	# }
 	
 }
 

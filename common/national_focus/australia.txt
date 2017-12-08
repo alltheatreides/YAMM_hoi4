@@ -3172,8 +3172,8 @@ focus_tree = {
 				value = 0.1
 				localization = AST_adopt_westminster
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = AST_arthur_calwell
+			# custom_effect_tooltip = available_political_advisor
+			# show_ideas_tooltip = AST_arthur_calwell
 		}
 	}
 
@@ -3685,7 +3685,7 @@ focus_tree = {
 			}
 			ENG = { remove_from_faction = ROOT }
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = AST_arthur_calwell
+			# show_ideas_tooltip = AST_arthur_calwell
 			hidden_effect = {
 				news_event = { id = news.286 hours = 6}
 			}
@@ -4050,8 +4050,8 @@ focus_tree = {
 				remove_idea = AST_abandon_the_westminster_system
 				add_idea = AST_abandon_the_westminster_system_fascism
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = AST_generic_fascist_demagogue
+			# custom_effect_tooltip = available_political_advisor
+			# show_ideas_tooltip = AST_generic_fascist_demagogue
 		}
 	}
 
@@ -4489,8 +4489,8 @@ focus_tree = {
 				remove_idea = AST_abandon_the_westminster_system
 				add_idea = AST_abandon_the_westminster_system_communism			
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = AST_lance_sharkey
+			# custom_effect_tooltip = available_political_advisor
+			# show_ideas_tooltip = AST_lance_sharkey
 		}
 	}
 

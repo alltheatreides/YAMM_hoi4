@@ -4,6 +4,7 @@ oob = "SIA_1936"
 
 add_ideas = {
 	real_neutrality
+	SIA_ananda_mahidol_hos
 }
 
 # Starting tech

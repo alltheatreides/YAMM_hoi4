@@ -15,10 +15,10 @@ add_ideas = {
 	hirohito_hos
 	hachiro_arita
 	okinori_kaya
-	sadao_araki
+	# sadao_araki
 	harukichi_hyakutake
 	shizuichi_tanaka
-	hata_air
+	# hata_air
 	fushimi_hiroyasu
 	kanin_kotohito
 }

@@ -11,6 +11,7 @@ add_ideas = {
 	BUL_great_depression
 	BUL_revisionism
 	BUL_bulgarian_tsardom
+	BUL_boris_iii_hos
 }
 
 set_technology = {

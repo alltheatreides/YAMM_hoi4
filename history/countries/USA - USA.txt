@@ -76,7 +76,7 @@ give_guarantee = URG
 	
 	#adding ministers
 	add_ideas = {
-		USA_robert_taft
+		# USA_robert_taft
 		carl_spaatz
 		jimmy_doolittle
 		army_ordnance_department
@@ -211,11 +211,11 @@ add_ideas = {
 	#politicians
 	
 	john_nance_garner
-	cordell_hull
+	# cordell_hull
 	j_edgar_hoover
-	henry_morgenthau
+	# henry_morgenthau
 	frank_rowlett
-	malin_craig
+	# malin_craig
 	# oscar_westover
 	william_leahy_sc
 	roosevelt_hos

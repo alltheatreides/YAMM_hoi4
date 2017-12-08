@@ -1671,7 +1671,7 @@ ideas = {
 				}
 			}
 			
-			pitcure = generic_air_manufacturer_1
+			picture = generic_air_manufacturer_1
 			
 			research_bonus = {
 				air_equipment = 0.10

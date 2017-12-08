@@ -1,172 +1,11 @@
 ideas = {
 
-country = {
-
-	TUR_ideological_fanaticism_focus = {
-
-
-		allowed = {
-			always = no
-		}
-
-		allowed_civil_war = {
-			has_government = neutrality
-		}
-
-		removal_cost = -1
-
-		picture = generic_pp_unity_bonus
-
-		modifier = {
-			unity_factor = 0.05
-		}
-	}
-
-	TUR_militarism_focus = {
-
-		allowed = {
-			original_tag = TUR
-			always = no
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		removal_cost = -1
-
-		picture = generic_manpower_bonus
-
-		modifier = {
-			conscription = 0.025
-			enemy_partisan_effect = -0.1
-		}
-	}
-
-	TUR_authoritarianism_focus = {
-
-		allowed = {
-			original_tag = TUR
-			always = no
-		}
-
-		allowed_civil_war = {
-			NOT = {
-				has_government = conservatism
-				has_government = socialism
-				has_government = liberalism
-			}
-		}
-
-		removal_cost = -1
-
-		picture = generic_intel_bonus
-
-		modifier = {
-			#democratic_drift = -0.05
-			#democratic_acceptance = -100
-			liberalism_drift = -0.05
-			liberalism_acceptance = -100
-			socialism_drift = -0.05
-			socialism_acceptance = -100
-			conservatism_drift = -0.05
-			conservatism_acceptance = -100
-		}
-	}
-
-	TUR_revanchism_focus = {
-
-		allowed = {
-			original_tag = TUR
-			always = no
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		removal_cost = -1
-
-		picture = generic_intel_bonus
-
-		modifier = {
-			justify_war_goal_time = -0.25
-			generate_wargoal_tension = -0.4
-		}
-	}
-
-	TUR_internationalism_focus = {
-
-		allowed = {
-			original_tag = TUR
-			always = no
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		removal_cost = -1
-
-		picture = generic_goods_red_bonus
-
-		modifier = {
-			trade_opinion_factor = 0.2
-		}
-	}
-}
-
 ##################
 ####Politicians
 ##################
 #HoS
 head_of_state = {
-abdulmejid_ii = {	
-			allowed = {
-				original_tag = TUR
 
-			}
-			available = {
-			NOT = { has_country_flag = abdulmejid_dead }
-				original_tag = TUR
-				OR = { 
-				has_government = monarchism
-				AND = {
-					OR = {
-					has_government = conservatism
-					has_government = socialism
-					has_government = liberalism
-						}
-					has_country_flag = const_sultan
-					}
-				}
-			}
-
-			traits = { monarchist popular_figurehead }
-		}
-ahmed_iv = {	
-			allowed = {
-				original_tag = TUR
-
-			}
-			available = {
-			has_country_flag = abdulmejid_dead
-				original_tag = TUR
-				OR = { 
-				has_government = monarchism
-				AND = {
-					OR = {
-					has_government = conservatism
-					has_government = socialism
-					has_government = liberalism
-						}
-					has_country_flag = const_sultan
-					}
-				}
-			}
-
-			traits = { monarchist popular_figurehead }
-		}
 }
 
 #Foreign
@@ -229,7 +68,7 @@ TUR_mumtaz_okmen = {
 				original_tag = TUR
 			}
 
-			traits = { staunch_traditionalist }
+			traits = { staunch_monarchist }
 		}
 	}
 

@@ -730,13 +730,13 @@ focus_tree = {
 				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
 			652 = {
-				limit = {
+				# limit = {
 					# free_building_slots = {
 						# building = infrastructure
 						# size < 5
 					# }
-					infrastructure < 5
-				}
+					# infrastructure < 5
+				# }
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -745,13 +745,13 @@ focus_tree = {
 				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
 			405 = {
-				limit = {
+				# limit = {
 					# free_building_slots = {
 						# building = infrastructure
 						# size < 5
 					# }
-					infrastructure < 5
-				}
+					# infrastructure < 5
+				# }
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -760,13 +760,13 @@ focus_tree = {
 				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
 			586 = {
-				limit = {
+				# limit = {
 					# free_building_slots = {
 						# building = infrastructure
 						# size < 5
 					# }
 					infrastructure < 5
-				}
+				# }
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -1117,14 +1117,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			252 = {
-				limit = { 
+				# limit = { 
 					# free_building_slots = {
 						# building = infrastructure
 						# size > 2
 					# }
-					infrastructure > 2
-					state_population > 500000
-				}
+					# infrastructure > 2
+					# state_population > 500000
+				# }
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -1133,14 +1133,14 @@ focus_tree = {
 				set_state_flag = SOV_improve_railway_3Inf
 			}
 			653 = {
-				limit = { 
+				# limit = { 
 					# free_building_slots = {
 						# building = infrastructure
 						# size > 2
 					# }
-					infrastructure > 2
-					state_population > 500000
-				}
+					# infrastructure > 2
+					# state_population > 500000
+				# }
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -1149,14 +1149,14 @@ focus_tree = {
 				set_state_flag = SOV_improve_railway_3Inf
 			}
 			227 = {
-				limit = { 
+				# limit = { 
 					# free_building_slots = {
 						# building = infrastructure
 						# size > 2
 					# }
-					infrastructure > 2
-					state_population > 500000
-				}
+					# infrastructure > 2
+					# state_population > 500000
+				# }
 				add_building_construction = {
 					type = infrastructure
 					level = 3

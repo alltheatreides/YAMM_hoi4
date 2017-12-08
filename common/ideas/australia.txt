@@ -583,7 +583,7 @@ AST_alexander_hore_ruthven = {
 		}
 		AST_1 = {
 
-			picture = generic_political_advisor_western_european_1
+			picture = generic_political_advisor_europe_2
 			
 			allowed = {
 				original_tag = AST
@@ -592,16 +592,16 @@ AST_alexander_hore_ruthven = {
 			traits = { resource_industrialist }
 		}
 		
-		AST_2 = {
+		# AST_2 = {
 
-			picture = generic_political_advisor_western_european_2
+			# picture = generic_political_advisor_western_european_2
 			
-			allowed = {
-				original_tag = AST
-			}
+			# allowed = {
+				# original_tag = AST
+			# }
 			
-			traits = { military_entrepreneur }
-		}
+			# traits = { military_entrepreneur }
+		# }
 		
 		
 }
@@ -619,46 +619,46 @@ political_advisor = {
 			traits = { silent_workhorse }
 		}
 		
-		AST_arthur_calwell = {
-			picture = generic_democratic_reformer_western_european_2d
+		# AST_arthur_calwell = {
+			# picture = generic_democratic_reformer_western_european_2d
 			
-			allowed = {
-				original_tag = AST
-			}
-			available = {
+			# allowed = {
+				# original_tag = AST
+			# }
+			# available = {
 				
-			}
+			# }
 			
-			traits = { socialist_reformer }
+			# traits = { socialist_reformer }
 		
 			# on_add = {
 				# country_event = political.13
 			# }
 		
-			ai_will_do = {
-				factor = 0
-			}
-		}
+			# ai_will_do = {
+				# factor = 0
+			# }
+		# }
 		
-		AST_vincent_massey = {
-			picture = generic_political_advisor_europe_2
+		# AST_vincent_massey = {
+			# picture = generic_political_advisor_europe_2
 			
-			allowed = {
-				original_tag = AST
-			}
+			# allowed = {
+				# original_tag = AST
+			# }
 			
-			traits = { liberal_reformer }
-		}
+			# traits = { liberal_reformer }
+		# }
 		
-		AST_r_b_bennett = {
-			picture = generic_political_advisor_europe_1
+		# AST_r_b_bennett = {
+			# picture = generic_political_advisor_europe_1
 			
-			allowed = {
-				original_tag = AST
-			}
+			# allowed = {
+				# original_tag = AST
+			# }
 			
-			traits = { conservative_reformer }
-		}		
+			# traits = { conservative_reformer }
+		# }		
 		
 	}
 

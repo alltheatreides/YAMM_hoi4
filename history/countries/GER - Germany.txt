@@ -244,10 +244,10 @@ add_ideas = {
 	#Politicians
 	hitler_hos
 	konstantin_von_neurath #FM
-	heinrich_himmler     #interior
+	# heinrich_himmler     #interior
 	wilhelm_canaris      #intel
-	hjalmar_schacht      #econ
-	hermann_goering      #poli
+	# hjalmar_schacht      #econ
+	# hermann_goering      #poli
 	rudolf_hess          #poli
 	werner_von_fritsch   #SC
 	ludwig_beck
@@ -269,7 +269,7 @@ create_country_leader = {
 	ideology = nazism
 	traits = {
 		# a_hitler
-		dictator
+		# dictator
 		# charismatic
 	}
 }

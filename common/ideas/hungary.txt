@@ -322,8 +322,6 @@ head_of_state = {
 			available = {
 				date < 1945.3.1
 				OR = {
-					has_government = conservatism
-					has_government = monarchism
 					has_government = neutrality
 					has_government = fascism
 				}
@@ -340,13 +338,11 @@ head_of_state = {
 			}
 			available = {
 				OR = {
-					has_government = conservatism
-					has_government = monarchism
 					has_government = neutrality
 					has_government = fascism
 				}
 			}
-			traits = { apolitical iron_fisted_brute }
+			traits = { iron_fisted_brute }
 		}
 	}
 	intel_minister = {
@@ -365,8 +361,6 @@ head_of_state = {
 			}
 			available = {
 				OR = {
-					has_government = conservatism
-					has_government = monarchism
 					has_government = neutrality
 					has_government = fascism
 				}
@@ -384,37 +378,35 @@ head_of_state = {
 			traits = {   war_industrialist }
 
 			}
-	HUN_tihamer_fabinyi = {
+	# HUN_tihamer_fabinyi = {
 
-			picture = generic_political_advisor_europe_2
+			# picture = generic_political_advisor_europe_2
 				
-			allowed = {
-				original_tag = HUN
-			}
-			available = {
-				OR = {
-					has_government = conservatism
-					has_government = monarchism
-					has_government = neutrality
-					has_government = fascism
-				}
-			}
-			traits = { apolitical capitalist }
-		}
+			# allowed = {
+				# original_tag = HUN
+			# }
+			# available = {
+				# OR = {
+					# has_government = neutrality
+					# has_government = fascism
+				# }
+			# }
+			# traits = { capitalist }
+		# }
 		}
 	political_advisor = {
 
-		HUN_gusztav_gratz = {
+		# HUN_gusztav_gratz = {
 
-			picture = generic_political_advisor_europe_1
+			# picture = generic_political_advisor_europe_1
 
-			allowed = {
-				original_tag = HUN
-				has_dlc = "Death or Dishonor"
-			}
+			# allowed = {
+				# original_tag = HUN
+				# has_dlc = "Death or Dishonor"
+			# }
 			
-			traits = { royalist_reformer }
-		}
+			# traits = { royalist_reformer }
+		# }
 
 		HUN_zoltan_tildy = {
 
@@ -433,27 +425,27 @@ head_of_state = {
 			traits = {   silent_workhorse }
 		}
 
-		HUN_laszlo_rajk = {
+		# HUN_laszlo_rajk = {
 
-			picture = generic_communist_europe
+			# picture = generic_communist_europe
 			
-			allowed = {
-				original_tag = HUN
-			}
+			# allowed = {
+				# original_tag = HUN
+			# }
 			
-			traits = { communist_revolutionary }
-		}
+			# traits = { communist_revolutionary }
+		# }
 
-		HUN_jozsef_szell = {
+		# HUN_jozsef_szell = {
 
-			picture = generic_democratic_europe
+			# picture = generic_democratic_europe
 			
-			allowed = {
-				original_tag = HUN
-			}
+			# allowed = {
+				# original_tag = HUN
+			# }
 			
-			traits = { conservative_reformer }
-		}
+			# traits = { conservative_reformer }
+		# }
 
 		HUN_gyula_gombos_de_jakfa = {
 

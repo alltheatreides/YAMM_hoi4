@@ -10,7 +10,7 @@ add_ideas = {
 	cesare_ame
 	ITA_giovanni_marinelli
 	ITA_gian_galeazzo_ciano
-	alberto_pariani
+	# alberto_pariani
 	domenico_cavagnari
 	italo_balbo
 	pietro_badoglio

@@ -245,12 +245,12 @@ add_ideas = {
 	#politicians
 		mikhail_kalinin
 		SOV_vyacheslav_molotov
-		valery_mezhlauk
+		# valery_mezhlauk
 		SOV_nikolai_yezhov
 		viktor_abakumov
-		alexander_yegorov
+		# alexander_yegorov
 		nikolay_kuznetsov
-		aleksandr_loktionov
+		# aleksandr_loktionov
 }
 
 create_country_leader = {

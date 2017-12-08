@@ -6,6 +6,7 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
+	GRE_george_ii_hos
 }
 
 set_technology = {

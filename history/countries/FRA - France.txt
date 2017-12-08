@@ -56,7 +56,7 @@ set_technology = {
 
 	#adding ministers
 	add_ideas = {
-		FRA_charles_tillon
+		# FRA_charles_tillon
 		francois_darlan
 		philippe_fequant
 		famh
@@ -180,7 +180,7 @@ add_ideas = {
 		yvon_delbos
 		marx_dormoy
 		maurice_henri_gauche
-		vincent_auriol
+		# vincent_auriol
 		francois_darlan
 		maurice_gamelin
 		philippe_fequant

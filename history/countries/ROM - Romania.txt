@@ -29,6 +29,7 @@ if = {
 	}
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
+		ROM_carol_ii_hos
 	}
 	give_guarantee = CZE
 	give_guarantee = GRE

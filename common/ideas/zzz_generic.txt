@@ -872,63 +872,63 @@ ideas = {
 	
 	political_advisor = {
 		# POLITICAL	
-		generic_communist_revolutionary = {
+		# generic_communist_revolutionary = {
 			
-			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = AST tag = RAJ tag = CAN tag = SAF tag = EFR tag = NOR } }
-				NOT = {
-					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
-				}
+			# allowed = {
+				# NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = AST tag = RAJ tag = CAN tag = SAF tag = EFR tag = NOR tag = ROM tag = BUL tag = GRE tag = SWE tag = FIN } }
+				# NOT = {
+					# has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
+				# }
 				
-			}
+			# }
 
-			available = {
+			# available = {
 
-                                if = {   
-                                    OR = { 
-                                        AND = { 
-                                             OR = {  original_tag = FIN
-                                                     original_tag = MON
-                                                  }
+                                # if = {   
+                                    # OR = { 
+                                        # AND = { 
+                                             # OR = {  original_tag = FIN
+                                                     # original_tag = MON
+                                                  # }
 
-                                                  date > 1937.1.1 
-                                              }
-                                        date > 1939.1.1
-                                        }
-                                     }
+                                                  # date > 1937.1.1 
+                                              # }
+                                        # date > 1939.1.1
+                                        # }
+                                     # }
 
-				if = {
-					limit = { 
-						original_tag = NZL
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = NZL_the_lee_affair
-				}
-				if = {
-					limit = { 
-						original_tag = CZE
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus = CZE_go_left
-				}
-			}
+				# if = {
+					# limit = { 
+						# original_tag = NZL
+						# has_dlc = "Together for Victory"
+					# }
+					# has_completed_focus = NZL_the_lee_affair
+				# }
+				# if = {
+					# limit = { 
+						# original_tag = CZE
+						# has_dlc = "Death or Dishonor"
+					# }
+					# has_completed_focus = CZE_go_left
+				# }
+			# }
 			
-			traits = { communist_revolutionary }
+			# traits = { communist_revolutionary }
 	
-			on_add = {
-				country_event = political.1
-			}
+			# on_add = {
+				# country_event = political.1
+			# }
 	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
+			# do_effect = {
+				# NOT = {
+					# has_government = communism
+				# }
+			# }
 	
-			ai_will_do = {
-				factor = 0
-			}
-		}
+			# ai_will_do = {
+				# factor = 0
+			# }
+		# }
 			
 		generic_democratic_reformer = {
 			
@@ -974,7 +974,7 @@ ideas = {
 		generic_fascist_demagogue = {
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = EFR tag = NOR } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = EFR tag = NOR tag = GRE tag = FIN tag = CHI tag = IRE tag = PHI } }
 				NOT = {
 					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
 				}
@@ -1336,7 +1336,7 @@ ideas = {
 			traits = { supreme_com_organizer }
 		}
 		
-		generic_supreme_commander_2 = {
+		generic_supreme_commander2 = {
 			allowed = {
 				NOT = {
 					tag = GER
@@ -1352,7 +1352,7 @@ ideas = {
 			traits = { supreme_com_reformer }
 		}
 		
-		generic_supreme_commander_3 = {
+		generic_supreme_commander3 = {
 			allowed = {
 				NOT = {
 					tag = GER
@@ -1368,7 +1368,7 @@ ideas = {
 			traits = { supreme_com_old_guard }
 		}
 		
-		generic_supreme_commander_4 = {
+		generic_supreme_commander4 = {
 			allowed = {
 				NOT = {
 					tag = GER
@@ -1384,21 +1384,6 @@ ideas = {
 			traits = { supreme_com_political }
 		}
 		
-		generic_supreme_commander_5 = {
-			allowed = {
-				NOT = {
-					tag = GER
-					tag = ENG
-					tag = FRA
-					tag = ITA
-					tag = JAP
-					tag = SOV
-					tag = USA
-				}
-			}
-			
-			traits = { supreme_com_old_guard }
-		}
 	}
 	
 	# political_advisor = {

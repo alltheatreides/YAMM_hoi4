@@ -818,35 +818,35 @@ ideas = {
 			traits = { armaments_organizer }
 		}
 		
-		henry_morgenthau = {
+		# henry_morgenthau = {
 			
-			picture = "gfx/interface/ideas/ministers/idea_henry_morgenthau"
+			# picture = "gfx/interface/ideas/ministers/idea_henry_morgenthau"
 			
-			allowed = {
-				original_tag = USA
-			}
+			# allowed = {
+				# original_tag = USA
+			# }
 			
-			available = {
-				has_government = democratic
-			}
+			# available = {
+				# has_government = democratic
+			# }
 			
-			traits = { capitalist }
-		}
+			# traits = { capitalist }
+		# }
 		
-		warren_g_hooper = { 
+		# warren_g_hooper = { 
 		
-			allowed = {
-				original_tag = USA
-			}
+			# allowed = {
+				# original_tag = USA
+			# }
 			
-			available = {
-				has_government = democratic
-			}
+			# available = {
+				# has_government = democratic
+			# }
 			
-			traits = { corrupt_kleptocrat }
+			# traits = { corrupt_kleptocrat }
 			
-			cancel_if_invalid = no
-		}
+			# cancel_if_invalid = no
+		# }
 		
 		louis_johnson = { 
 		
@@ -863,24 +863,24 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		
-		harry_hopkins = {
+		# harry_hopkins = {
 	
-			allowed = {
-				original_tag = USA
-			}
+			# allowed = {
+				# original_tag = USA
+			# }
 				
-			available = {
-				has_government = democratic
-			}
+			# available = {
+				# has_government = democratic
+			# }
 			
-			traits = { war_industrialist }
+			# traits = { war_industrialist }
 			
-			cancel_if_invalid = no
+			# cancel_if_invalid = no
 			
-			ai_will_do = {
-				factor = 20
-			}
-		}
+			# ai_will_do = {
+				# factor = 20
+			# }
+		# }
 		
 		# harold_ickes_econ = {
 		
@@ -912,20 +912,20 @@ ideas = {
 			cancel_if_invalid = no
 		}
 			
-		john_d_rockefeller_jr = {
+		# john_d_rockefeller_jr = {
 			
-			allowed = {
-				original_tag = USA
-			}
+			# allowed = {
+				# original_tag = USA
+			# }
 			
-			available = {
-				has_government = democratic
-			}
+			# available = {
+				# has_government = democratic
+			# }
 			
-			traits = { capitalist }
+			# traits = { capitalist }
 			
-			cancel_if_invalid = no
-		}
+			# cancel_if_invalid = no
+		# }
 			
 		# raymond_e_baldwin = {
 			

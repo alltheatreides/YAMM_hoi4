@@ -1,318 +1,5 @@
 ideas = {
-# country = {
-# tblra_leopold3_captive = {
-			
-			# allowed = {
-				# NOT = {
-					# has_government = communism
-				# }
-			# }
 
-			# allowed_civil_war = {
-				# NOT = {
-					# has_government = communism
-				# }
-			# }
-
-			# removal_cost = -1
-		# }		
-		# tblra_leopold3 = {
-			
-			# allowed = {
-				# NOT = {
-					# OR= {
-						# has_government = communism
-						# }
-					# }
-				# }
-
-			# allowed_civil_war = {
-				# NOT = {
-					# has_government = communism
-				# }
-			# }
-
-			# removal_cost = -1
-		# }
-		# tblra_charles_regent = {
-			
-			# allowed = {
-				# NOT = {
-					# has_government = communism
-				# }
-			# }
-
-			# allowed_civil_war = {
-				# NOT = {
-					# has_government = communism
-				# }
-			# }
-
-			# removal_cost = -1
-		# }			
-		# tblra_factory_strikes = {
-			# picture = generic_production_bonus
-			# allowed = {
-				# always = no
-			# }
-
-			# allowed_civil_war = {
-				# NOT = {
-					# has_government = communism
-				# }
-			# }
-
-			# modifier = {
-				# industrial_capacity_factory =  -0.9
-				# unity_factor = -0.1
-			# }
-		# }
-		
-		# tblra_coalition_vs_fascism = {
-			# allowed = {
-				# always = no
-			# }
-
-			# allowed_civil_war = {
-				 # OR = {
-				# has_government = conservatism
-				# has_government = socialism
-				# has_government = liberalism
-				# }
-			# }
-
-			# removal_cost = -1
-
-			# picture = generic_democratic_drift_bonus
-
-			# modifier = {
-				# conservatism_drift = 0.05
-				# liberalism_drift = 0.05
-				# socialism_drift = 0.05
-				# fascism_drift = -0.07
-			# }
-		# }	
-	
-		# tblra_british_ship_designs_idea = {
-			
-			# allowed = {
-				# always = no
-			# }
-			# removal_cost = -1
-			
-			# picture = tblra_british_ship_designs
-			
-			# equipment_bonus = {
-				# destroyer = {
-					# build_cost_ic = -0.1 instant = yes
-				# }
-			# }
-		# }
-		# tblra_armed_neutrality_idea = {
-			
-			# allowed = {
-				# always = no
-			# }
-
-			# allowed_civil_war = {
-				# always = yes
-			# }
-
-			# removal_cost = -1
-			
-			# modifier = {
-				# conscription = 0.03
-
-			# }
-		# }
-		# tblra_aerial_interest = {
-			
-			# allowed = {
-				# always = no
-			# }
-
-			# allowed_civil_war = {
-				# always = yes
-			# }
-
-			# removal_cost = -1
-			
-			# research_bonus = {
-				# jet_technology = 0.10
-			# }
-		# }	
-		# tblra_communist_police = {
-			
-			# allowed = {
-				# always = no
-			# }
-
-			# allowed_civil_war = {
-				# always = yes
-			# }
-
-			# removal_cost = -1
-			
-			# modifier = {
-				# subversive_activites_upkeep = -0.8
-				# land_reinforce_rate = 0.3
-			# }
-		# }
-		# tblra_reserve_mobilization = {
-			
-			# allowed = {
-				# always = no
-			# }
-
-			# allowed_civil_war = {
-				# always = yes
-			# }
-
-			# removal_cost = -1
-			
-			# modifier = {
-				# conscription = 0.01
-
-			# }
-		# }
-		# tblra_union_agreements = {
-			
-			# allowed = {
-				# always = no
-			# }
-
-			# allowed_civil_war = {
-				# always = yes
-			# }
-
-			# removal_cost = -1
-
-			# picture = generic_disjointed_gov
-			
-			# modifier = {
-				# consumer_goods_factor = -0.05
-
-			# }
-		# }
-		# tblra_pillarized_society2 = {
-			
-			# allowed = {
-				# always = no
-			# }
-
-			# allowed_civil_war = {
-				# always = yes
-			# }
-
-			# removal_cost = -1
-			
-			# modifier = {
-				# unity_factor = -0.05
-			# }
-		# }	
-		# tblra_pillarized_society = {
-			
-			# allowed = {
-				# always = no
-			# }
-
-			# allowed_civil_war = {
-				# always = yes
-			# }
-
-			# removal_cost = -1
-			
-			# modifier = {
-				# political_power_cost = 0.1
-				# unity_factor = -0.10
-				# drift_defence_factor = 0.20
-			# }
-		# }
-		# tblra_national_union = {
-			
-			# allowed = {
-				# always = no
-			# }
-
-			# allowed_civil_war = {
-				# always = yes
-			# }
-
-			# removal_cost = -1
-			
-			# modifier = {
-				# political_power_cost = -0.1
-				# unity_factor = 0.10
-			# }
-		# }
-		# tblra_peacetime_national_union = {
-			
-			# allowed = {
-				# always = no
-			# }
-
-			# allowed_civil_war = {
-				# always = yes
-			# }
-
-			# removal_cost = -1
-			
-			# modifier = {
-				# political_power_cost = -0.08
-			# }
-		# }		
-		# tblra_linguistic_question_in_military = {
-			
-			# allowed = {
-				# always = no
-			# }
-
-			# allowed_civil_war = {
-				# always = yes
-			# }
-
-			# removal_cost = -1
-			
-			# picture = tblra_linguistic_military_question
-			
-			# modifier = {
-				# unity_factor = -0.05
-				# planning_speed = -0.1
-				# army_org_Factor = -0.10
-				# political_power_cost = 0.1
-			# }
-		# }
-		# tblra_centralized_communist_government = {
-			
-			# allowed = {
-				# always = no
-			# }
-			# removal_cost = -1
-			# picture = trotskyite_plot_purged
-			# allowed_civil_war = {
-				# has_government = communism
-			# }
-			
-			# modifier = {
-				# political_power_gain = 0.5
-				# drift_defence_factor = 0.2
-			# }
-		# }
-		# tblra_congo_uranium = {
-			# removal_cost = -1
-			
-			# allowed = {
-				# always = no # Added via focus
-			# }
-			# allowed_civil_war = {
-				# always = yes
-			# }
-			
-			# research_bonus = {
-				# nuclear = 0.10
-			# }
-		# }
-	# }
 	##################
 	####Politicians
 	##################
@@ -328,7 +15,7 @@ ideas = {
 			allowed = {
 			OR = {
 				original_tag = BEL
-				original_tag = WLL
+				# original_tag = WLL
 				}
 			}		
 			available = {
@@ -336,82 +23,8 @@ ideas = {
 			}
 			traits = { ideological_crusader }
 		}		
-		BEL_henri_glineur = {
-			allowed = {
-			OR ={
-				original_tag = BEL
-				original_tag = WLL
-				}
-			}
-			available = {
-			OR ={	
-				has_government = communism
-				has_completed_focus = tblra_go_left		
-				}
-			}
-			traits = { backroom_backstabber }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		BEL_Jose_Streel = {
-
-			allowed = {
-			OR = {
-				original_tag = BEL
-				original_tag = WLL
-				}
-			}
-			available = {
-			NOT = {has_completed_focus = tblra_choose_Verdinaso}
-			OR ={
-			has_completed_focus = tblra_choose_Rex 
-			has_government = fascism
-				}
-			}	
-			traits = { backroom_backstabber }
-			ai_will_do = {
-				factor = 1
-			}
-		}		
-		VLA_jef_francois = {
-			
-			allowed = {
-			OR = {
-				original_tag = BEL
-				original_tag = VLA
-				}
-				
-			}
-			available = { 
-				has_government = fascism 
-			OR ={has_completed_focus = tblra_choose_Verdinaso
-				original_tag = VLA}	
-				}
-			traits = { ideological_crusader }
-		}
-		BEL_gustaaf_sap = {
-
-			allowed = {
-			OR = {
-				original_tag = BEL
-				original_tag = VLA
-				}
-			}
-			available = {
-			NOT = { 
-				OR = {
-					has_government = communism
-					has_completed_focus = tblra_go_left
-					}
-				}
-			}	
-			traits = { smooth_talking_charmer }
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	
+		
 	}
 
 	#Propaganda/Security
@@ -422,38 +35,10 @@ ideas = {
 			
 			allowed = {
 				original_tag = BEL
-				original_tag = VLA
+				# original_tag = VLA
 			}
 			
 			traits = { backroom_backstabber }
-		}
-		BEL_xavier_relecom = {
-			
-			allowed = {
-			OR = {
-				original_tag = BEL
-				original_tag = WLL
-				}
-			}		
-			available = {
-				has_government = communism
-			}
-			traits = { prince_of_terror }
-		}
-		VLA_Robert_Jan_Verbelen = {
-			
-			allowed = {
-			OR = {
-				original_tag = BEL
-				original_tag = VLA
-				}
-			}
-			available = { has_government = fascism
-						OR = {original_tag = VLA
-							has_completed_focus = tblra_choose_Verdinaso
-							}
-			}
-			traits = { prince_of_terror }
 		}
 	}
 
@@ -470,60 +55,54 @@ ideas = {
 				
 			allowed = {
 				OR = {
-					has_government = conservatism
-					has_government = liberalism
-					has_government = socialism
+					has_government = democratic
 				}
 				original_tag = BEL
 			}
 			
 			traits = { captain_of_industry }
 		}
+		
 		BEL_alexandre_galopin = {
 			
 			allowed = {
-			OR = {
-				original_tag = BEL
+				OR = {
+					original_tag = BEL
 				}				
 			}
-			available = { 
-			OR = {
-				has_government = conservatism
-				has_government = socialism
-				has_government = liberalism
+			available = {
+				OR = {
+					has_government = democratic
 				}
 				OR = {
-				controls_state = 6
-				controls_state = 34
-				}
-			NOT = {has_global_flag = alexandre_galopin_killed}	
-			}			
-			traits = { captain_of_industry }
-			ai_will_do = {
-				factor = 1
+					controls_state = 6
+					controls_state = 34
+				}		
+				
 			}
-		}		
-		BEL_henri_denis = {
 			
-			allowed = {
-			OR = {
-				original_tag = BEL
-				original_tag = WLL
-				}			
-			}		
-			available = { 
-				OR = {
-					has_government = conservatism
-					has_government = socialism
-					has_government = liberalism
-					has_government = neutrality
-				}
-			}				
-			traits = { fortification_engineer }
+			traits = { captain_of_industry }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+		
+		BEL_henri_denis = {
+			
+			allowed = {
+				OR = {
+					original_tag = BEL
+				}			
+			}
+					
+			traits = { fortification_engineer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
 		BEL_Fernand_Frenay = {
 			
 			picture = generic_political_advisor_europe_1		
@@ -531,68 +110,21 @@ ideas = {
 			allowed = {
 			OR = {
 				original_tag = BEL
-				original_tag = WLL
+				# original_tag = WLL
 				}			
 			}
 			available = { 
-			OR = {
-			has_completed_focus = tblra_invest_in_FN_Herstal
-			has_completed_focus = production_effort_2
-			}
+			# OR = {
+			# has_completed_focus = tblra_invest_in_FN_Herstal
+			# has_completed_focus = production_effort_2
+			# }
 			threat > 0.25
 				OR = {
-					has_government = conservatism
-					has_government = socialism
-					has_government = liberalism
+					has_government = democratic
 					has_government = neutrality
 				} 
 			}
 			traits = { war_industrialist }
-		}
-		VLA_paul_le_roy = {
-			
-			allowed = {
-			OR = {
-				original_tag = BEL
-				original_tag = VLA
-				}	
-			}
-			available = { has_government = fascism }
-			traits = { armaments_organizer }
-		}		
-		BEL_Charles_Someville = {
-
-			picture = generic_political_advisor_europe_3
-				
-			allowed = {
-				original_tag = BEL
-			}
-			available = { has_government = fascism
-			}
-			traits = { captain_of_industry }
-			ai_will_do = {
-				factor = 1
-			}
-		}
-				
-		BEL_edgar_lalmand = {
-			allowed = {
-			OR = {
-				original_tag = BEL
-				original_tag = VLA
-				}
-			}		
-			available = {
-			OR ={	
-				has_government = communism
-				has_completed_focus = tblra_go_left		
-				}
-			}
-			traits = { captain_of_industry }
-			
-			ai_will_do = {
-				factor = 1
-			}
 		}
 	}
 
@@ -605,136 +137,10 @@ ideas = {
 
 			allowed = {
 				original_tag = BEL
-				original_tag = WLL
+				# original_tag = WLL
 			}
 			
 			traits = { silent_workhorse }
-		}
-		BEL_julien_lahaut = {
-			allowed = {
-			OR = {
-				original_tag = BEL
-				original_tag = WLL
-				}
-				
-			}		
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-	
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		BEL_achille_van_acker = {
-			allowed = {
-			OR = {
-				original_tag = BEL
-				original_tag = VLA
-				}
-				
-			}		
-			traits = { conservative_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = conservatism
-					has_government = socialism
-					has_government = liberalism
-				}
-			}
-	
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		BEL_joris_van_severen = {
-			
-			allowed = {
-				original_tag = BEL	
-			}
-			available = { 
-			NOT = {has_global_flag = van_severen_killed}	
-			}			
-			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-	
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		BEL_Victor_Matthys = {
-			
-			allowed = {
-			OR = {
-				original_tag = BEL
-				original_tag = WLL
-				}
-			}
-			available = { 
-			OR = {
-				has_global_flag = van_severen_killed
-				original_tag = WLL
-				}	
-			}			
-			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-	
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		
-				
-		BEL_Pierre_Daye = {
-
-			allowed = {
-			OR = {
-				original_tag = BEL
-				original_tag = WLL
-				}
-			}
-			available = {
-			NOT = {has_completed_focus = tblra_choose_Verdinaso}
-			OR ={
-			has_completed_focus = tblra_choose_Rex 
-			has_government = fascism
-				}
-			}	
-			traits = { silent_workhorse }
-			ai_will_do = {
-				factor = 1
-			}
 		}
 		
 	}
@@ -820,14 +226,14 @@ ideas = {
 			allowed = {
 			OR = {
 				original_tag = BEL
-				original_tag = WLL
+				# original_tag = WLL
 				}
 			}
 			available = { 
 				OR = {
 					has_completed_focus = tblra_recreate_the_navy
 					has_completed_focus = tblra_belgian_navy_in_exile
-					original_tag = WLL
+					# original_tag = WLL
 				}
 			}
 
@@ -842,13 +248,13 @@ ideas = {
 			allowed = {
 			OR = {
 				original_tag = BEL
-				original_tag = VLA
+				# original_tag = VLA
 				}	 
 			}
 			available = { 
 				OR = {
 				has_completed_focus = tblra_recreate_the_navy
-				original_tag = VLA
+				# original_tag = VLA
 				}
 			}
 
@@ -1001,7 +407,7 @@ ideas = {
 			allowed = {
 			OR = {
 				original_tag = BEL
-				original_tag = VLA
+				# original_tag = VLA
 				}
 			}
 			
@@ -1020,7 +426,7 @@ ideas = {
 			
 			allowed = {
 			OR = {
-				original_tag = WLL
+				# original_tag = WLL
 				}
 			}
 			
@@ -1039,7 +445,7 @@ ideas = {
 			allowed = {
 			OR = {
 				original_tag = BEL
-				original_tag = WLL
+				# original_tag = WLL
 				}
 			}
 			
@@ -1058,7 +464,7 @@ ideas = {
 			allowed = {
 			OR = {
 				original_tag = BEL
-				original_tag = VLA
+				# original_tag = VLA
 				}
 			}
 			
@@ -1072,7 +478,7 @@ ideas = {
 			
 			allowed = {
 			OR = {
-				original_tag = WLL
+				# original_tag = WLL
 				}
 			}
 			
@@ -1087,13 +493,13 @@ ideas = {
 			allowed = {
 			OR = {
 				original_tag = BEL
-				original_tag = VLA
+				# original_tag = VLA
 				}
 			}
 			available = { 			
 			OR ={has_completed_focus = tblra_recreate_the_navy
 				has_completed_focus = tblra_belgian_navy_in_exile
-				original_tag = VLA
+				# original_tag = VLA
 				}	
 			}
 			research_bonus = {
@@ -1266,7 +672,7 @@ ideas = {
 			allowed = {
 			OR = {
 				original_tag = BEL
-				original_tag = WLL
+				# original_tag = WLL
 				}
 			}
 			research_bonus = {
@@ -1284,7 +690,7 @@ ideas = {
 			allowed = {
 			OR = {
 				original_tag = BEL
-				original_tag = WLL
+				# original_tag = WLL
 				}
 			}
 			
@@ -1306,7 +712,7 @@ ideas = {
 			allowed = {
 			OR = {
 				original_tag = BEL
-				original_tag = WLL
+				# original_tag = WLL
 				}
 			}
 			
@@ -1341,7 +747,7 @@ ideas = {
 		allowed = { 
 			OR = {
 				original_tag = BEL
-				original_tag = VLA
+				# original_tag = VLA
 				}
 			}
 			
@@ -1355,119 +761,6 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}			
-		}		
-	}
-	country = {
-		tblra_economic_cooperation_within_benelux4 = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-			
-			modifier = {
-				consumer_goods_factor = -0.05
-
-			}
-		}
-	}
-	country = {
-		tblra_economic_cooperation_within_benelux3 = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-			
-			modifier = {
-				consumer_goods_factor = -0.01
-
-			}
-		}
-	}	
-
-	country = {
-		tblra_economic_cooperation_within_benelux2 = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-			
-			modifier = {
-				consumer_goods_factor = -0.02
-
-			}
-		}
-	}	
-
-	country = {
-		tblra_economic_cooperation_within_benelux = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-			
-			modifier = {
-				consumer_goods_factor = -0.02
-
-			}
-		}
-		tblra_volunteer_corps = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				OR = { 
-					has_government = communism
-					has_government = fascism
-					}
-			}
-
-			removal_cost = -1
-
-			picture = generic_volunteer_expedition_bonus
-
-			rule = {
-				can_send_volunteers = yes
-			}
-			
-			modifier = {
-				send_volunteers_tension = -0.5
-				send_volunteer_size = 1
-			}
-
 		}		
 	}
 }

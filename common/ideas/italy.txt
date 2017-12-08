@@ -221,22 +221,22 @@ ideas = {
 
 	#Economic
 	economic_minister = {
-		ITA_giacomo_acerbo = {
-			allowed = {
-				original_tag = ITA
-			}
-			available = {
-				has_government = fascism
-			}
+		# ITA_giacomo_acerbo = {
+			# allowed = {
+				# original_tag = ITA
+			# }
+			# available = {
+				# has_government = fascism
+			# }
 
-			picture = generic_political_advisor_europe_2
+			# picture = generic_political_advisor_europe_2
 			
-			traits = { war_industrialist }
+			# traits = { war_industrialist }
 			
-			ai_will_do = {
-				factor = 3
-			}
-		}
+			# ai_will_do = {
+				# factor = 3
+			# }
+		# }
 		
 		ITA_junio_valerio_borghese = {
 			
@@ -274,20 +274,20 @@ ideas = {
 			}
 		}
 		
-		alfredo_guzzoni_econ = {
+		# alfredo_guzzoni_econ = {
 		
-			allowed = {
-				original_tag = ITA
+			# allowed = {
+				# original_tag = ITA
 			
-			}
-			available = {
-				has_government = fascism
-			}
+			# }
+			# available = {
+				# has_government = fascism
+			# }
 			
-			traits = { quartermaster_general }
+			# traits = { quartermaster_general }
 			
-			cancel_if_invalid = no
-		}
+			# cancel_if_invalid = no
+		# }
 		
 		antonio_sorice = {
 			allowed = {

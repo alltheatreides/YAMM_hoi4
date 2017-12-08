@@ -101,12 +101,7 @@ ideas = {
 				original_tag = NZL
 			}
 			allowed_civil_war = {
-				OR = {
-					##has_government = democratic
-					has_government = conservatism
-					has_government = liberalism
-					has_government = socialism
-					}
+				has_government = democratic
 			}
 
 			removal_cost = -1
