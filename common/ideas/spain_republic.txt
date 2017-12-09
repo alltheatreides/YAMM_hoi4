@@ -5,7 +5,40 @@ ideas = {
 ##################
 #HoS
 head_of_state = {
+	SPR_niceto_alcala_zamora = {
 	
+		allowed = {
+			original_tag = SPR
+			NOT = { has_government = fascism }
+		}
+		
+		removal_cost = -1
+		
+		traits = { elder_statesman }
+	}
+	
+	# SPR_diego_martinez_barrio = {
+	
+		# allowed = {
+			# original_tag = SPR
+			# NOT = { has_government = fascism }
+			# has_country_flag = zamora_resigned
+		# }
+		
+		# traits = { }
+	# }
+	
+	SPR_manuel_azana = {
+	
+		allowed = {
+			original_tag = SPR
+			NOT = { has_government = fascism }
+		}
+		
+		removal_cost = -1
+		
+		traits = { anti_fascist }
+	}
 }
 
 #Foreign

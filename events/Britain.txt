@@ -546,6 +546,41 @@ country_event = {
 			set_country_flag = ENG_king_died
 			remove_ideas = george_v
 			add_ideas = ENG_king_edward
+			CAN = {
+				set_country_flag = ENG_king_died
+				remove_ideas = george_v
+				add_ideas = ENG_king_edward
+			}
+			RAJ = {
+				set_country_flag = ENG_king_died
+				remove_ideas = george_v
+				add_ideas = ENG_king_edward
+			}
+			SAF = {
+				set_country_flag = ENG_king_died
+				remove_ideas = george_v
+				add_ideas = ENG_king_edward
+			}
+			AST = {
+				set_country_flag = ENG_king_died
+				remove_ideas = george_v
+				add_ideas = ENG_king_edward
+			}
+			MAL = {
+				set_country_flag = ENG_king_died
+				remove_ideas = george_v
+				add_ideas = ENG_king_edward
+			}
+			IRQ = {
+				set_country_flag = ENG_king_died
+				remove_ideas = george_v
+				add_ideas = ENG_king_edward
+			}
+			NEP = {
+				set_country_flag = ENG_king_died
+				remove_ideas = george_v
+				add_ideas = ENG_king_edward
+			}
 		}		
 	}
 	
@@ -578,7 +613,35 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			remove_ideas = ENG_king_edward
-			add_ideas = ENG_george_vi		
+			add_ideas = ENG_george_vi
+			CAN = {
+				remove_ideas = ENG_king_edward
+				add_ideas = ENG_george_vi
+			}
+			RAJ = {
+				remove_ideas = ENG_king_edward
+				add_ideas = ENG_george_vi
+			}
+			SAF = {
+				remove_ideas = ENG_king_edward
+				add_ideas = ENG_george_vi
+			}
+			AST = {
+				remove_ideas = ENG_king_edward
+				add_ideas = ENG_george_vi
+			}
+			MAL = {
+				remove_ideas = ENG_king_edward
+				add_ideas = ENG_george_vi
+			}
+			IRQ = {
+				remove_ideas = ENG_king_edward
+				add_ideas = ENG_george_vi
+			}
+			NEP = {
+				remove_ideas = ENG_king_edward
+				add_ideas = ENG_george_vi
+			}
 		}
 	}
 

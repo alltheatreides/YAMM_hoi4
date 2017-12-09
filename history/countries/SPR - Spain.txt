@@ -54,8 +54,9 @@ set_politics = {
 }
 
 add_ideas = { 
-SPR_riots 
-SPR_old_guard
+	SPR_riots 
+	SPR_old_guard
+	SPR_niceto_alcala_zamora
 }
 set_convoys = 150
 set_national_unity = 0.5

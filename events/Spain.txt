@@ -1170,10 +1170,11 @@ country_event = {
 		    ideology = communism
 			popularity = 0.05
 		}
-		remove_ideas = SPR_zamora
+		remove_ideas = SPR_niceto_alcala_zamora
+		add_ideas = SPR_manuel_azana
 		add_political_power = 25
 		hidden_effect = {
-		set_country_flag = casares
+			set_country_flag = casares
 		}
 		if = {
 		    limit = {

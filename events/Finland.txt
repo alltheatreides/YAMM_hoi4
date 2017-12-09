@@ -1790,7 +1790,7 @@ country_event = {
 			trigger = {
 			tag = FIN
 			has_government = democratic
-			has_completed_focus = fin_stabinthebackfoc
+			# has_completed_focus = fin_stabinthebackfoc
 			}
 			
 			option ={
@@ -1814,6 +1814,7 @@ country_event = {
 				remove_unit_leader = 999 #Mannerheim
 				hidden_effect = {
 						set_country_flag = president_mannerheim
+						add_ideas = FIN_carl_mannerheim_hos
 				}
 				
 			}

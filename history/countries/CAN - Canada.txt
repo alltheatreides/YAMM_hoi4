@@ -39,7 +39,7 @@ if = {
 	add_ideas = CAN_great_depression_1
 	add_ideas = CAN_conscription_crisis
 	set_cosmetic_tag = CAN_UK
-	add_ideas = CAN_leo_richer_lafleche
+	add_ideas = George_v
 	
 	add_to_tech_sharing_group = commonwealth_research
 }

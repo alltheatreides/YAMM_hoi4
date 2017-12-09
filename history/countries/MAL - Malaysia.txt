@@ -46,6 +46,10 @@ set_technology = {
 }
 set_convoys = 25
 
+add_ideas = {
+	George_v
+}
+
 if = {
 	limit = { has_dlc = "Together for Victory" }
 

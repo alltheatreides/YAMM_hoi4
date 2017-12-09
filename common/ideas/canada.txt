@@ -580,52 +580,52 @@ ideas = {
 ##################
 #HoS
 head_of_state = {
-		CAN_leo_richer_lafleche = {
+		# CAN_leo_richer_lafleche = {
 
-			picture = generic_political_advisor_europe_3
+			# picture = generic_political_advisor_europe_3
 			
-			allowed = {
-				original_tag = CAN
-				has_dlc = "Together for Victory"
-			}
+			# allowed = {
+				# original_tag = CAN
+				# has_dlc = "Together for Victory"
+			# }
 			
-			traits = { popular_figurehead }
-		}
+			# traits = { popular_figurehead }
+		# }
 	
-		CAN_robert_manion = {
+		# CAN_robert_manion = {
 
-			allowed = {
-				original_tag = CAN
+			# allowed = {
+				# original_tag = CAN
 				
-			}
+			# }
 
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					OR = {
-						has_completed_focus = CAN_strengthen_the_commonwealth_ties
-					}
-				}
-			}
+			# available = {
+				# if = {
+					# limit = { has_dlc = "Together for Victory" }
+					# OR = {
+						# has_completed_focus = CAN_strengthen_the_commonwealth_ties
+					# }
+				# }
+			# }
 			
-			picture = generic_democratic_reformer_commonwealth_2d
+			# picture = generic_democratic_reformer_commonwealth_2d
 			
-			traits = { staunch_constitutionalist }
+			# traits = { staunch_constitutionalist }
 			
 			# on_add = {
 				# country_event = political.13
 			# }
 			
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
+			# do_effect = {
+				# NOT = {
+					# has_government = democratic
+				# }
+			# }
 			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+			# ai_will_do = {
+				# factor = 0
+			# }
+		# }
 }
 
 #Foreign

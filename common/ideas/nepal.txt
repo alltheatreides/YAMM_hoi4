@@ -1,18 +1,19 @@
 ideas = {
-head_of_state = {
-	NEP_sidney_r_planter = {
+	head_of_state = {
+		# NEP_sidney_r_planter = {
 
-			picture = generic_political_advisor_asia_1
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { popular_figurehead }
-		}
+				# picture = generic_political_advisor_asia_1
+				
+				# allowed = {
+					# original_tag = NEP
+				# }
+				
+				# traits = { popular_figurehead }
+			# }
 	}
 	foreign_minister = {
-	NEP_w_r_parker_gill = {
+	
+		NEP_w_r_parker_gill = {
 
 			picture = generic_political_advisor_asia_2
 				
@@ -48,9 +49,6 @@ head_of_state = {
 	}
 	political_advisor = {
 
-		
-
-		
 	}
 
 	theorist = {

@@ -1,7 +1,14 @@
 ideas = {
-	# MILITARY
-head_of_state = {
-	
+
+	head_of_state = {
+		shah_pahlavi = {
+		
+			allowed = {
+				original_tag = PER
+			}
+			
+			traits = { popular_figurehead }
+		}
 	}
 	foreign_minister = {
 	

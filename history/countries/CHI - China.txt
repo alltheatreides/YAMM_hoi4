@@ -25,6 +25,7 @@ add_ideas = {
 	german_advisors
 	incompetent_industry
 	army_corruption
+	CHI_chiang_hos
 }
 
 set_convoys = 80

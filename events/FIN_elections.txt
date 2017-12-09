@@ -38,6 +38,8 @@ country_event = {
 			ideology = neutrality
 			popularity = 0.05
 		}
+		remove_ideas = FIN_evind_svinhufvud
+		add_ideas = idea_FIN_kyosti_kallio
 		
 	}
 }
@@ -56,12 +58,12 @@ country_event = {
 		date > 1940.12.1
 		date < 1940.12.21
 		has_government = neutrality
-		NOT = {
-		has_cosmetic_tag = SCA
-		}
+		# NOT = {
+		# has_cosmetic_tag = SCA
+		# }
 		}
 	
-	option = { 	
+	option = {
 		name = FIN_elections.2.a
 		kill_country_leader = yes
 		set_party_name = { ideology = democratic long_name = FIN_edistyspuolue_long name = FIN_edistyspuolue }
@@ -74,14 +76,16 @@ country_event = {
 			popularity = 0.1
 		}
 		create_country_leader = {
-		name = "Risto Heikki Ryti"
-		desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
-		picture = "gfx/leaders/FIN/Portrait_Finland_Risto_Heikki_Ryti.dds"
-		expire = "1965.1.1"
-		ideology = liberalism
-		traits = {
-			}
+			name = "Risto Heikki Ryti"
+			desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
+			picture = "gfx/leaders/FIN/Portrait_Finland_Risto_Heikki_Ryti.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+				}
 		}
+		remove_ideas = idea_FIN_kyosti_kallio
+		add_ideas = FIN_risto_ryti
 	}
 }
 
@@ -121,30 +125,30 @@ country_event = {
 		
 	}
 	
-	option = { 	
+	# option = { 	
 	
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = -25
-				is_historical_focus_on = yes
-			}
-		}
-		name = FIN_elections.3.b
-		set_party_name = { ideology = neutrality long_name = FIN_independent_long name = FIN_independent }
-		set_politics = {
-			ruling_party = neutrality
-			elections_allowed = yes
-		}
-		create_country_leader = {
-		name = "Väinö Kotilainen"
-		desc = "POLITICS_VAINO_KOTILAINEN_DESC"
-		picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-		expire = "1965.1.1"
-		ideology = centrism
-		traits = {
-			}
-		}
-	}
+		# ai_chance = {
+			# factor = 25
+			# modifier = {
+				# factor = -25
+				# is_historical_focus_on = yes
+			# }
+		# }
+		# name = FIN_elections.3.b
+		# set_party_name = { ideology = neutrality long_name = FIN_independent_long name = FIN_independent }
+		# set_politics = {
+			# ruling_party = neutrality
+			# elections_allowed = yes
+		# }
+		# create_country_leader = {
+		# name = "Väinö Kotilainen"
+		# desc = "POLITICS_VAINO_KOTILAINEN_DESC"
+		# picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+		# expire = "1965.1.1"
+		# ideology = centrism
+		# traits = {
+			# }
+		# }
+	# }
 	
 }

@@ -725,6 +725,13 @@ spriteTypes = {
 		name = "GFX_idea_GER_MAN"
 		texturefile = "gfx/interface/ideas/idea_MAN.tga"
 	}
+	
+	SpriteType = {
+		name = "GFX_idea_wilhelm_frick"
+		texturefile = "gfx/interface/ideas/ministers/idea_wilhelm_frick.dds"
+	}
+	
+	
 	############################## BICE
 	SpriteType = {
 		name = "GFX_idea_Alkett"
@@ -1183,7 +1190,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_stocznia_gdynia.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_mieczyslaw_michalowicz"
+		name = "GFX_idea_michalowicz_hos"
 		texturefile = "gfx/interface/ideas/ministers/idea_mieczyslaw_michalowicz.tga"
 	}
 	spriteType = {
@@ -1734,7 +1741,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_rene_emile_godfroy.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_charles_de_gaulle"
+		name = "GFX_idea_charle_de_gaulle_hos"
 		texturefile = "gfx/interface/ideas/idea_charles_de_gaulle.dds"
 	}
 	spriteType = {
@@ -1841,6 +1848,11 @@ spriteTypes = {
 		name = "GFX_idea_de_tassigny_sc"
 		texturefile = "gfx/interface/ideas/ministers/idea_de_tassigny_sc.dds"
 	}
+	spriteType ={
+		name = "GFX_idea_charle_de_gaulle_hos"
+		texturefile = "gfx/interface/ideas/idea_charles_de_gaulle.dds"
+	}
+	
 	
 	### RUSSIAN IDEAS
 	spriteType = {
@@ -2890,6 +2902,14 @@ spriteTypes = {
 		name = "GFX_idea_SPR_francisco_franco_hos"
 		texturefile = "gfx/interface/ideas/idea_francisco_franco.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SPR_niceto_alcala_zamora"
+		texturefile = "gfx/interface/ideas/ministers/idea_niceto_alcala_zamora.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SPR_manuel_azana"
+		texturefile = "gfx/interface/ideas/ministers/idea_manuel_azana.dds"
+	}
 	
 	#HUNGARIAN/HUNGARY IDEAS
 	spriteType = {
@@ -2940,7 +2960,31 @@ spriteTypes = {
 		name = "GFX_idea_NOR_haakon_vii"
 		texturefile = "gfx/interface/ideas/ministers/idea_NOR_haakon_vii.dds"
 	}
-			
+	
+	#IRAN IDEAS
+	spriteType = {
+		name = "GFX_idea_shah_pahlavi"
+		texturefile = "gfx/interface/ideas/ministers/idea_PER_shah_pahlavi.dds"
+	}
+	
+	#FINLAND IDEAS
+	spriteType = {
+		name = "GFX_idea_FIN_evind_svinhufvud"
+		texturefile = "gfx/interface/ideas/ministers/idea_FIN_evind_svinhufvud.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FIN_kyosti_kallio"
+		texturefile = "gfx/interface/ideas/ministers/idea_FIN_kyosti_kallio.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FIN_risto_ryti"
+		texturefile = "gfx/interface/ideas/ministers/idea_FIN_risto_ryti.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FIN_carl_mannerheim_hos"
+		texturefile = "gfx/interface/ideas/ministers/idea_FIN_carl_mannerheim_hos.dds"
+	}
+	
 	### Age-law
 	spriteType = {
         name = "GFX_idea_age_10"

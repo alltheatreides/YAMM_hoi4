@@ -404,12 +404,13 @@ ideas = {
 ##################
 #HoS
 head_of_state = {
-RAJ_chakravarti_rajagopalachari = {
+		RAJ_chakravarti_rajagopalachari = {
 
 			picture = generic_political_advisor_arab_3
 				
 			allowed = {
 				original_tag = RAJ
+				NOT = { is_puppet = yes }
 			}
 			
 			traits = { popular_figurehead }

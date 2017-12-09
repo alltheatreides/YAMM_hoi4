@@ -537,40 +537,38 @@ ideas = {
 ####Politicians
 ##################
 #HoS
-head_of_state = {
-	SAF_sir_patrick_duncan = {
-			
-			allowed = {
-				original_tag = SAF
+	head_of_state = {
+		# SAF_sir_patrick_duncan = {
 				
-			}
+				# allowed = {
+					# original_tag = SAF
+					
+				# }
 
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory"}
-					has_completed_focus = SAF_support_the_policy_of_appeasement
-				}
-			}
+				# available = {
+					# if = {
+						# limit = { has_dlc = "Together for Victory"}
+						# has_completed_focus = SAF_support_the_policy_of_appeasement
+					# }
+				# }
+				
+				# picture = generic_democratic_reformer_western_european_2d
+				
+				# traits = { staunch_constitutionalist }
 			
-			picture = generic_democratic_reformer_western_european_2d
 			
-			traits = { staunch_constitutionalist }
-		
-			# on_add = {
-				# country_event = political.13
+				# do_effect = {
+					# NOT = {
+						# has_government = democratic
+					# }
+				# }
+			
+				# ai_will_do = {
+					# factor = 0
+				# }
 			# }
 		
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-		
-			ai_will_do = {
-				factor = 0
-			}
-		}
-}
+	}
 
 #Foreign
 foreign_minister = {

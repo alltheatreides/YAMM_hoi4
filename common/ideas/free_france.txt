@@ -22,6 +22,26 @@ ideas = {
 			}
 		}
 	}
+	
+	head_of_state = {
+	
+		charle_de_gaulle_hos = {
+			allowed = {
+				original_tag = FRA
+			}
+				
+			available = {
+				original_tag = FRA
+				has_country_flag = free_france
+			}
+			
+			traits = { indomitable_perseverance }
+			
+			removal_cost = -1
+		}
+		
+	}
+	
 	political_advisor = {
 		FRA_FREE_felix_eboue = { ##gave Free France  first lands
 			

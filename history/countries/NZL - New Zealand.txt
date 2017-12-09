@@ -27,6 +27,8 @@ set_technology = {
 	tech_logistics_company = 1
 }
 
+add_ideas = George_v
+
 if = {
 	limit = { has_dlc = "Together for Victory" }
 

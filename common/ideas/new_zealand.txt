@@ -318,7 +318,7 @@ ideas = {
 ##################
 #HoS
 head_of_state = {
-
+	
 }
 
 #Foreign

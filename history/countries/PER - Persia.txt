@@ -17,6 +17,7 @@ set_technology = {
 add_ideas = {
 	limited_conscription
 	real_neutrality
+	shah_pahlavi
 }
 
 1939.1.1 = {

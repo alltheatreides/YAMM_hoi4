@@ -17,6 +17,10 @@ set_technology = {
 }
 
 set_convoys = 5
+add_ideas = {
+	George_v
+}
+
 
 1939.1.1 = {
 

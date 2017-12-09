@@ -14,7 +14,8 @@ add_ideas = {
 
 add_ideas = {
 	sisu
-FIN_communism_banned
+	FIN_communism_banned
+	FIN_evind_svinhufvud
 }
 
 set_technology = {

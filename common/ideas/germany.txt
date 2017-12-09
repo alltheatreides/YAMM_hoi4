@@ -235,6 +235,8 @@ ideas = {
 			}
 			
 			traits = { dictator }
+			
+			removal_cost = -1
 		}
 	}
 	#Foreign Ministers
@@ -271,6 +273,19 @@ ideas = {
 
 	#Security Ministers
 	interior_minister = {
+		wilhelm_frick = {
+		
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { backroom_backstabber }
+		}
+		
 		heinrich_himmler = {
 			allowed = {
 				original_tag = GER

@@ -657,14 +657,59 @@ ideas = {
 ##################
 ####Politicians
 ##################
-#HoS
-head_of_state = {
-
-}
+	#HoS
+	head_of_state = {
+		FIN_evind_svinhufvud = {
+		
+			allowed = {
+				original_tag = FIN
+			}
+			
+			traits = { staunch_constitutionalist }
+			
+			removal_cost = 1000
+		}
+		
+		FIN_kyosti_kallio = {
+		
+			allowed = {
+				original_tag = FIN
+			}
+			
+			traits = { 
+				# coalition_builder 
+				ineffective_politician
+			}
+			
+			removal_cost = 1000
+		}
+		
+		FIN_risto_ryti = {
+		
+			allowed = {
+				original_tag = FIN
+			}
+			
+			traits = { effective_leader }
+			
+			removal_cost = 1000
+		}
+		
+		FIN_carl_mannerheim_hos = {
+		
+			allowed = {
+				original_tag = FIN
+			}
+			
+			traits = { indomitable_perseverance }
+			
+			removal_cost = 1000
+		}
+	}
 
 #Foreign
-foreign_minister = {
-FIN_ralf_torngren = {
+	foreign_minister = {
+		FIN_ralf_torngren = {
 
 			picture = generic_political_advisor_europe_1
 
@@ -674,31 +719,31 @@ FIN_ralf_torngren = {
 			
 			traits = { ideological_crusader }
 		}
-}
-
-#Propaganda/Security
-interior_minister = {
-
-}
-
-#Intelligence
-intel_minister = {
-
-}
-
-#Economic
-economic_minister = {
-	FIN_ake_henrik_gartz = {
-
-		picture = generic_political_advisor_europe_2
-			
-		allowed = {
-			original_tag = FIN
-		}
-		
-		traits = { captain_of_industry }
 	}
-}
+
+	#Propaganda/Security
+	interior_minister = {
+
+	}
+
+	#Intelligence
+	intel_minister = {
+
+	}
+
+	#Economic
+	economic_minister = {
+		FIN_ake_henrik_gartz = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = FIN
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
 
 political_advisor = {
 	FIN_antti_hackzell = {
@@ -711,15 +756,15 @@ political_advisor = {
 		
 		traits = { silent_workhorse }
 	}
-	FIN_john_horne_blackmore = {
-		picture = generic_political_advisor_europe_3
+	# FIN_john_horne_blackmore = {
+		# picture = generic_political_advisor_europe_3
 		
-		allowed = {
-			original_tag = FIN
-		}
+		# allowed = {
+			# original_tag = FIN
+		# }
 		
-		traits = { fascist_demagogue }
-	}
+		# traits = { fascist_demagogue }
+	# }
 }
 	theorist = {
 

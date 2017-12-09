@@ -12,6 +12,10 @@ set_technology = {
 	motorised_infantry = 1
 }
 
+add_ideas = {
+	George_v
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198

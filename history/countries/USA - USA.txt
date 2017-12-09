@@ -42,7 +42,7 @@ set_technology = {
 	basic_machine_tools = 1
 	concentrated_industry = 1
 	motorized_army = 1
-	
+	mass_production = 1
 	tech_field_hospital = 1
 	support_weapons = 1
 }

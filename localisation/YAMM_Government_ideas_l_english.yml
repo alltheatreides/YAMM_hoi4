@@ -177,6 +177,7 @@
  reluctant_minister:0 "Reluctant Minister"
  great_leader:0 "Great Leader"
  ww_one_trauma:0 "WW1 Trauma"
+ ineffective_politician:0 "Ineffective Politician"
  
   
  Manpower_draft:0 "Manpower Draft"
@@ -216,6 +217,7 @@
  andre_le_troquer:0 "Andre Le Troquer"
  raoul_dautry:0 "Raoul Dautry"
  jules_moch:0 "Jules Moch"
+ charle_de_gaulle_hos:0 "Charles De Gaulle"
 
  #UK
  william_joyce:0 "William Joyce"
@@ -253,6 +255,7 @@
  zeitzler_fired:0 "Kurt Zeitzler fired"
  walther_von_brauchitsch_sc:0 "W.von Brauchitsch"
  werner_von_fritsch_sc:0 "Werner Von Fritsch"
+ wilhelm_frick:0 "Wilhelm Frick"
 
  #USA
  john_foster_dulles:0 "John Foster Dulles"
@@ -358,6 +361,19 @@
  
  #NORWAY
  NOR_haakon_vii:0 "Haakon VII"
+ 
+ #SPAIN
+ SPR_niceto_alcala_zamora:0 "Niceto Alcala Zamora"
+ SPR_manuel_azana:0 "Manuel Azana"
+ 
+ #IRAN
+ shah_pahlavi:0 "Reza Shah Pahlavi"
+ 
+ #FINLAND
+ FIN_evind_svinhufvud:0 "Pehr Evind Svinhufvud"
+ FIN_kyosti_kallio:0 "Kyösti Kallio"
+ FIN_risto_ryti:0 "Risto Ryti"
+ FIN_carl_mannerheim_hos:0 "Carl Gustaf Emil Mannerheim"
  
  # NICE PILE UP
  louis_ferdinand:0 "Ferdinand I"

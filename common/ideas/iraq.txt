@@ -1,6 +1,6 @@
 ideas = {
 	# MILITARY
-head_of_state = {
+	head_of_state = {
 	
 	}
 	foreign_minister = {

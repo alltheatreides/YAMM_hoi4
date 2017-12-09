@@ -601,6 +601,13 @@ ideas = {
 			allowed = {
 				NOT = {
 					tag = GER
+					tag = CAN
+					tag = SAF
+					tag = RAJ
+					tag = AST
+					tag = IRQ
+					tag = NEP
+					tag = MAL
 					has_available_idea_with_traits = { idea = political_dancer limit = 1 }
 					has_available_idea_with_traits = { idea = staunch_constitutionalist limit = 1 }
 					has_available_idea_with_traits = { idea = ineffective_politician limit = 1 }
@@ -635,6 +642,13 @@ ideas = {
 			allowed = {
 				NOT = {
 					tag = GER
+					tag = CAN
+					tag = SAF
+					tag = RAJ
+					tag = AST
+					tag = IRQ
+					tag = NEP
+					tag = MAL
 					has_available_idea_with_traits = { idea = political_dancer limit = 1 }
 					has_available_idea_with_traits = { idea = staunch_constitutionalist limit = 1 }
 					has_available_idea_with_traits = { idea = ineffective_politician limit = 1 }
@@ -669,6 +683,13 @@ ideas = {
 			allowed = {
 				NOT = {
 					tag = GER
+					tag = CAN
+					tag = SAF
+					tag = RAJ
+					tag = AST
+					tag = IRQ
+					tag = NEP
+					tag = MAL
 					has_available_idea_with_traits = { idea = political_dancer limit = 1 }
 					has_available_idea_with_traits = { idea = staunch_constitutionalist limit = 1 }
 					has_available_idea_with_traits = { idea = ineffective_politician limit = 1 }

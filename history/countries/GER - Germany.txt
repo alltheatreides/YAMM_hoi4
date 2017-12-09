@@ -244,6 +244,7 @@ add_ideas = {
 	#Politicians
 	hitler_hos
 	konstantin_von_neurath #FM
+	wilhelm_frick
 	# heinrich_himmler     #interior
 	wilhelm_canaris      #intel
 	# hjalmar_schacht      #econ

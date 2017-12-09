@@ -1,0 +1,35 @@
+ideas = {
+
+	##################
+	####Politicians
+	##################
+	
+	head_of_state = {
+
+	}
+
+	#Foreign
+	foreign_minister = {
+		
+	}
+
+	#Propaganda/Security
+	interior_minister = {
+		
+	}
+
+	#Intelligence
+	intel_minister = {
+
+	}
+
+	#Economic
+	economic_minister = {
+
+	}
+	
+	political_advisor = {
+	
+	}	
+
+}
