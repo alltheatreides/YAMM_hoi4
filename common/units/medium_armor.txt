@@ -25,7 +25,7 @@ sub_units = {
 		
 		
 		need = {
-			medium_tank_equipment = 100
+			medium_tank_equipment = 50
 			
 		}
 		manpower = 500

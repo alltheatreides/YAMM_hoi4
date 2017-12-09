@@ -60,7 +60,7 @@ sub_units = {
 		
 		
 		need = {
-			heavy_tank_equipment = 80
+			heavy_tank_equipment = 40
 			
 			
 		}
