@@ -608,6 +608,7 @@ ideas = {
 					tag = IRQ
 					tag = NEP
 					tag = MAL
+					tag = POL
 					has_available_idea_with_traits = { idea = political_dancer limit = 1 }
 					has_available_idea_with_traits = { idea = staunch_constitutionalist limit = 1 }
 					has_available_idea_with_traits = { idea = ineffective_politician limit = 1 }
@@ -649,6 +650,7 @@ ideas = {
 					tag = IRQ
 					tag = NEP
 					tag = MAL
+					tag = POL
 					has_available_idea_with_traits = { idea = political_dancer limit = 1 }
 					has_available_idea_with_traits = { idea = staunch_constitutionalist limit = 1 }
 					has_available_idea_with_traits = { idea = ineffective_politician limit = 1 }
@@ -690,6 +692,7 @@ ideas = {
 					tag = IRQ
 					tag = NEP
 					tag = MAL
+					tag = POL
 					has_available_idea_with_traits = { idea = political_dancer limit = 1 }
 					has_available_idea_with_traits = { idea = staunch_constitutionalist limit = 1 }
 					has_available_idea_with_traits = { idea = ineffective_politician limit = 1 }

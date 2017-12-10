@@ -26,7 +26,7 @@ set_technology = {
 }
 
 add_ideas = {
-	michalowicz_hos
+	ignacy_moscicki_hos
 }
 
 1939.1.1 = {
@@ -200,16 +200,30 @@ create_country_leader = {
 	}
 }
 
+# create_country_leader = {
+	# name = "Ignacy Mościcki"
+	# desc = "POLITICS_IGNACY_MOSCICKI_DESC"
+	# picture = "Portrait_Poland_Ignacy_Moscicki.dds"
+	# expire = "1965.1.1"
+	# ideology = oligarchism
+	# traits = {
+		
+	# }
+# }
+
+
+
 create_country_leader = {
-	name = "Ignacy Mościcki"
-	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
-	picture = "Portrait_Poland_Ignacy_Moscicki.dds"
+	name = "Marian Kościałkowski"
+	desc = "POLITICS_ZYNDRAM_DESC"
+	picture = "Portrait_Poland_Marian_Zyndram_Koscialkowski.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
 		#
 	}
 }
+
 
 create_country_leader = {
 	name = "Władysław Gomułka"

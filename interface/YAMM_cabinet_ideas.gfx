@@ -1194,6 +1194,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ministers/idea_mieczyslaw_michalowicz.tga"
 	}
 	spriteType = {
+		name = "GFX_idea_ignacy_moscicki_hos"
+		texturefile = "gfx/interface/ideas/ministers/idea_ignacy_moscicki_hos.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_LWS"
 		texturefile = "gfx/interface/ideas/idea_LWS.dds"
 	}	
