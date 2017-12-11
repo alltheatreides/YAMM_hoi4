@@ -47,6 +47,8 @@ set_technology = {
 	tech_field_hospital = 1
 	tech_military_police = 1
 	Auftragstaktik = 1
+	the_15_65_bracket = 1
+	female_do_not_fight = 1
 }
 
 
@@ -259,6 +261,8 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	
+	women_auxillary
 	# GER_airforce
 }
 

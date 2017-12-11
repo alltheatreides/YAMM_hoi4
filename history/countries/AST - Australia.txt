@@ -34,6 +34,8 @@ set_technology = {
 	tech_field_hospital = 1
 	support_weapons = 1
 	tech_logistics_company = 1
+	the_15_65_bracket = 1
+	female_do_not_fight = 1
 }
 
 if = {

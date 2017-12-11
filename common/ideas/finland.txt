@@ -64,7 +64,7 @@ ideas = {
 			picture = generic_manpower_bonus
 	
 			modifier = {
-				conscription = 0.05
+				conscription_factor = 0.1
 			}
 		}
 	
@@ -220,7 +220,7 @@ ideas = {
 			
 			
 					modifier = {
-					conscription = 0.02
+					conscription_factor = 0.05
 					training_time_army_factor = -0.05
 			}
 
@@ -667,7 +667,8 @@ ideas = {
 			
 			traits = { staunch_constitutionalist }
 			
-			removal_cost = 1000
+			removal_cost = -1
+			cost = -1
 		}
 		
 		FIN_kyosti_kallio = {
@@ -681,7 +682,8 @@ ideas = {
 				ineffective_politician
 			}
 			
-			removal_cost = 1000
+			removal_cost = -1
+			cost = -1
 		}
 		
 		FIN_risto_ryti = {
@@ -692,7 +694,8 @@ ideas = {
 			
 			traits = { effective_leader }
 			
-			removal_cost = 1000
+			removal_cost = -1
+			cost = -1
 		}
 		
 		FIN_carl_mannerheim_hos = {
@@ -703,7 +706,8 @@ ideas = {
 			
 			traits = { indomitable_perseverance }
 			
-			removal_cost = 1000
+			removal_cost = -1
+			cost = -1
 		}
 	}
 

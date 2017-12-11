@@ -82,11 +82,11 @@ ideas = {
 			}
 			
 			modifier = {
-				production_speed_arms_factory_factor = -0.25
+				production_speed_arms_factory_factor = -0.10
 				production_speed_dockyard_factor = -0.25
 				conversion_cost_civ_to_mil_factor = 0.5
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.2
+				# industrial_capacity_factory = -0.15
+				# industrial_capacity_dockyard = -0.2
 				production_factory_max_efficiency_factor = -0.1
 				# consumer_goods_factor = 0.05
 			}

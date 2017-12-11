@@ -104,6 +104,9 @@ set_research_slots = 3
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
+		
+	the_15_65_bracket = 1
+	female_do_not_fight = 1
 	}
 
 1939.1.1 = {

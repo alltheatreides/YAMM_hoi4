@@ -1,5 +1,13 @@
 technologies = {
-
+	
+	the_15_65_bracket = {
+		conscription_factor = -0.4
+	}
+	
+	female_do_not_fight = {
+		conscription_factor = -0.3
+	}
+	
 	partisans = {
 	
 		enable_subunits = {

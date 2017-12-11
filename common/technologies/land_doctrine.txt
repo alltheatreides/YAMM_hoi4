@@ -444,9 +444,9 @@ technologies = {
 	
 	firebrigades = { #Branch focused on mobile warfares
 	
-		xor={
-			volkssturm
-		}
+		# xor={
+			# volkssturm
+		# }
 		
 		category_all_infantry = {
 			max_organisation = 10
@@ -473,7 +473,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 2 y = 14 }
+			position = { x = 0 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -507,7 +507,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 2 y = 16 }
+			position = { x = 0 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -541,7 +541,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 2 y = 18 }
+			position = { x = 0 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -553,108 +553,108 @@ technologies = {
 		}
 	}
 	
-	volkssturm = {
+	# volkssturm = {
 	
-		xor={
-			firebrigades
-		}
+		# xor={
+			# firebrigades
+		# }
 
 		
-		conscription = 0.02
+		# conscription = 0.02
 		
-		path = {
-			leads_to_tech = nd_conscription 
-			research_cost_coeff = 1
-		}
+		# path = {
+			# leads_to_tech = nd_conscription 
+			# research_cost_coeff = 1
+		# }
 
 		
-		doctrine = yes	
-		research_cost = 3
+		# doctrine = yes	
+		# research_cost = 3
 		
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-		}
+		# categories = {
+			# land_doctrine
+			# cat_mobile_warfare
+		# }
 
 		
-		folder = {
-			name = land_doctrine_folder
-			position = { x = -2 y = 14 }
-		}
+		# folder = {
+			# name = land_doctrine_folder
+			# position = { x = -2 y = 14 }
+		# }
 		
-		ai_will_do = {
-			factor = 20
-		}
+		# ai_will_do = {
+			# factor = 20
+		# }
 		
-		ai_research_weights = {
-			armor = 2.0
-		}
-	}
+		# ai_research_weights = {
+			# armor = 2.0
+		# }
+	# }
 	
-	nd_conscription = {
+	# nd_conscription = {
 
-		conscription = 0.03
+		# conscription = 0.03
 
-		path = {
-			leads_to_tech = werwolf_guerillas 
-			research_cost_coeff = 1
-		}
-
-		
-		doctrine = yes	
-		research_cost = 3
-		
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-		}
+		# path = {
+			# leads_to_tech = werwolf_guerillas 
+			# research_cost_coeff = 1
+		# }
 
 		
-		folder = {
-			name = land_doctrine_folder
-			position = { x = -2 y = 16 }
-		}
+		# doctrine = yes	
+		# research_cost = 3
 		
-		ai_will_do = {
-			factor = 20
-		}
+		# categories = {
+			# land_doctrine
+			# cat_mobile_warfare
+		# }
+
 		
-		ai_research_weights = {
-			armor = 2.0
-		}
-	}
+		# folder = {
+			# name = land_doctrine_folder
+			# position = { x = -2 y = 16 }
+		# }
+		
+		# ai_will_do = {
+			# factor = 20
+		# }
+		
+		# ai_research_weights = {
+			# armor = 2.0
+		# }
+	# }
 	
-	werwolf_guerillas = {
+	# werwolf_guerillas = {
 
 		
-		#Increased Partisan effect on your land occupied by others
-		partisan_effect = 0.1 #10% more partisan effects
+		# Increased Partisan effect on your land occupied by others
+		# partisan_effect = 0.1 #10% more partisan effects
 		
-		enable_tactic = tactic_guerrilla_tactics
-		enable_tactic = tactic_default_guerrilla_tactics
+		# enable_tactic = tactic_guerrilla_tactics
+		# enable_tactic = tactic_default_guerrilla_tactics
 		
-		doctrine = yes	
-		research_cost = 3
+		# doctrine = yes	
+		# research_cost = 3
 		
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-		}
+		# categories = {
+			# land_doctrine
+			# cat_mobile_warfare
+		# }
 
 		
-		folder = {
-			name = land_doctrine_folder
-			position = { x = -2 y = 18 }
-		}
+		# folder = {
+			# name = land_doctrine_folder
+			# position = { x = -2 y = 18 }
+		# }
 		
-		ai_will_do = {
-			factor = 20
-		}
+		# ai_will_do = {
+			# factor = 20
+		# }
 		
-		ai_research_weights = {
-			armor = 2.0
-		}
-	}
+		# ai_research_weights = {
+			# armor = 2.0
+		# }
+	# }
 	
 	superior_firepower = {
 
@@ -2383,7 +2383,7 @@ technologies = {
 	human_wave_offensive = {
 
 
-		conscription = 0.05
+		# conscription = 0.05
 				
 		infantry = {
 			combat_width = -1

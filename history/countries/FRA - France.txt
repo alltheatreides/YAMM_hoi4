@@ -48,6 +48,8 @@ set_technology = {
 	support_weapons = 1
 	tech_field_hospital = 1
 	interwar_antitank = 1
+	the_15_65_bracket = 1
+	female_do_not_fight = 1
 }
 
 1939.1.1 = {
@@ -175,6 +177,7 @@ add_ideas = {
 	FRA_protected_by_the_maginot_line
 	limited_conscription
 	incompetent_aircraft_industry
+	extensive_conscription
 	#politicians
 		albert_lebrun
 		yvon_delbos

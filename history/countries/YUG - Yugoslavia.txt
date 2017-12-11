@@ -36,6 +36,8 @@ set_technology = {
 	superior_firepower = 1
 	motorised_infantry = 1
 	support_weapons = 1
+	the_15_65_bracket = 1
+	female_do_not_fight = 1
 }
 
 1939.1.1 = {

@@ -17,7 +17,7 @@ ideas = {
 			modifier = {
 				political_power_cost = 1
 				consumer_goods_factor = 0.3
-				conscription_factor = -0.5
+				conscription_factor = -0.1
 				join_faction_tension = 0.20
 			}
 		}
@@ -38,7 +38,7 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.5
 				consumer_goods_factor = 0.3
-				conscription_factor = -0.5
+				conscription_factor = -0.1
 				join_faction_tension = 0.20
 			}
 		}
@@ -58,7 +58,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.3
-				conscription_factor = -0.5
+				conscription_factor = -0.1
 				join_faction_tension = 0.20
 			}
 		}
@@ -1083,7 +1083,7 @@ ideas = {
 			
 
 			
-			traits = { supreme_com_organizer }
+			traits = { supreme_com_planner }
 			
 			ai_will_do = {
 				factor = 1
@@ -1098,7 +1098,7 @@ ideas = {
 			
 
 			
-			traits = { supreme_com_planner }
+			traits = { supreme_com_organizer }
 			
 			ai_will_do = {
 				factor = 1

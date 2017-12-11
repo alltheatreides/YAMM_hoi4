@@ -1,8 +1,7 @@
-﻿# l_english:
+﻿l_english:
  # volunteer_only:0 "Volunteer Only"
- # limited_conscription:0 "One Year Draft"
- # extensive_conscription:0 "Three Year Draft"
+ limited_conscription:0 "One Year Draft"
+ extensive_conscription:0 "Two Year Draft"
  # service_by_requirement:0 "Expanded Draft"
  # all_adults_serve:0 "Extensive Draft"
  # scraping_the_barrel:0 "Scraping the Barrel"
- 

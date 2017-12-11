@@ -39,7 +39,17 @@ country_event = {
 			popularity = 0.05
 		}
 		remove_ideas = FIN_evind_svinhufvud
-		add_ideas = idea_FIN_kyosti_kallio
+		add_ideas = FIN_kyosti_kallio
+		create_country_leader = {
+			name = "Aimo Cajander"
+			desc = "POLITICS_AIMO_CAJENDER_DESC"
+			picture = "Portrait_Aimo_Cajander.dds"
+			expire = "1965.1.1"
+			ideology = neutrality
+			traits = {
+				#
+			}
+		}
 		
 	}
 }
@@ -84,7 +94,7 @@ country_event = {
 			traits = {
 				}
 		}
-		remove_ideas = idea_FIN_kyosti_kallio
+		remove_ideas = FIN_kyosti_kallio
 		add_ideas = FIN_risto_ryti
 	}
 }

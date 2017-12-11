@@ -132,10 +132,10 @@ ideas = {
 				land_doctrine = -0.10
 			}
 			
-			modifier = {
-				conscription_factor = -0.25
-				#conscription = -0.006
-			}
+			# modifier = {
+				# conscription_factor = -0.25
+				# conscription = -0.006
+			# }
 		}
 		
 		stiff_upper_lip = {

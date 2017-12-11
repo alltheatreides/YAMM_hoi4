@@ -72,7 +72,7 @@ ideas = {
 
 			modifier = {
 				unity_factor = -0.1
-				conscription_factor = -0.2
+				conscription_factor = -0.1
 			}
 		}
 
@@ -92,7 +92,7 @@ ideas = {
 
 			modifier = {
 				unity_factor = -0.1
-				conscription_factor = -0.2
+				conscription_factor = -0.1
 				autonomy_gain = -0.4
 			}
 		}
@@ -113,7 +113,7 @@ ideas = {
 
 			modifier = {
 				unity_factor = -0.02
-				conscription_factor = -0.1
+				conscription_factor = -0.05
 				autonomy_gain = 0.6
 			}
 		}
@@ -160,7 +160,7 @@ ideas = {
 				unity_factor = -0.15
 				industrial_capacity_factory = -0.25
 				industrial_capacity_dockyard = -0.25
-				conscription_factor = -0.1
+				conscription_factor = -0.05
 				consumer_goods_factor = 0.05
 			}
 		}
@@ -370,7 +370,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.69
+				conscription_factor = -0.15
 			}
 		}
 

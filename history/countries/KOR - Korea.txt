@@ -8,6 +8,8 @@ set_technology = {
 	mass_assault = 1
 	motorised_infantry = 1
 	support_weapons = 1
+	the_15_65_bracket = 1
+	female_do_not_fight = 1
 }
 
 set_convoys = 5

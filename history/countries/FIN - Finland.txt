@@ -36,6 +36,8 @@ set_technology = {
 	early_fighter = 1
 	cas1 = 1
 	naval_bomber1 = 1
+	the_15_65_bracket = 1
+	female_do_not_fight = 1
 }
 
 set_convoys = 20
@@ -157,16 +159,8 @@ set_politics = {
 		elections_allowed = yes
 	}
 }
-create_country_leader = {
-	name = "Pehr Evind Svinhufvud"
-	desc = "POLITICS_PE_SVINHUFVUD_DESC"
-	picture = "Portrait_PE_Svinhufvud.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
+
+
 
 create_country_leader = {
 	name = "Aimo Aaltonen"
@@ -195,7 +189,7 @@ create_country_leader = {
 	desc = "POLITICS_KYÖSTI_KALLIO_DESC"
 	picture = "gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = liberalism
 	traits = {
 		#
 	}
