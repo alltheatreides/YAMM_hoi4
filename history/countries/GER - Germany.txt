@@ -249,7 +249,7 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
-	GER_airforce
+	# GER_airforce
 }
 
 create_country_leader = {

@@ -2518,6 +2518,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CAN_the_plan
+			ENG = {
+				add_ideas = CAN_the_plan
+			}
 		}
 	}
 
