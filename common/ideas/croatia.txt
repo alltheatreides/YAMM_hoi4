@@ -553,17 +553,17 @@ ideas = {
 			}			
 			traits = { prince_of_terror }
 		}		
-		CRO_slavko_kvaternik = {
+		# CRO_slavko_kvaternik = {
 				
-			allowed = {
-				original_tag = CRO
-			}
-			available = { 
-				has_government = fascism
+			# allowed = {
+				# original_tag = CRO
+			# }
+			# available = { 
+				# has_government = fascism
 				
-			}			
-			traits = { quartermaster_general }
-		}		
+			# }			
+			# traits = { quartermaster_general }
+		# }		
 		CRO_vladimir_nazor = {
 
 			allowed = {
@@ -722,18 +722,18 @@ ideas = {
 
 	high_command = {
 
-		CRO_slavko_stancer = { #theorist instead?
+		# CRO_slavko_stancer = { #theorist instead?
 			
-			allowed = {
-				original_tag = CRO
-			}
+			# allowed = {
+				# original_tag = CRO
+			# }
 			
-			traits = { army_artillery_2 }
+			# traits = { army_artillery_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+			# ai_will_do = {
+				# factor = 1
+			# }
+		# }
 		
 		CRO_vilko_begic = {
 			
