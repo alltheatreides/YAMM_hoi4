@@ -1197,6 +1197,9 @@ focus_tree = {
 				}
 			}
 			add_timed_idea = { idea = blitzkrieg_idea days = 100 }
+			# hidden_effect = {
+				# set_technology = { barbarossa = 1 }
+			# }
 		}
 	}
 

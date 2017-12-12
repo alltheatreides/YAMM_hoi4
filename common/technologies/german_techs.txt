@@ -47,4 +47,14 @@ technologies = {
 		# }
 	}
 	
+	# Barbarossa = {
+	
+		# category_army = {
+			# river = {
+				# attack = 0.04
+			# }
+		# }
+		
+	# }
+	
 }
