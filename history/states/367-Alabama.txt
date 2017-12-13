@@ -3,7 +3,11 @@ state={
 	id=367
 	name="STATE_367"
 	manpower = 2646247
-	
+	resources = {
+		iron=85
+		bauxite=44
+		coal=85
+	}
 	state_category = city
 
 	history={

@@ -8,8 +8,9 @@ state={
 	state_category = town
 	
 	resources={
-		steel=136
-		aluminium=96
+		# steel=136
+		# aluminium=96
+		bauxite=51
 	}
 
 	history={

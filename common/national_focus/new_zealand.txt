@@ -924,9 +924,14 @@ focus_tree = {
 
 		completion_reward = {
 			284 = {
-				add_resource = {
-					type = steel
-					amount = 10
+				# add_resource = {
+					# type = steel
+					# amount = 10
+				# }
+				add_building_construction = {
+					type = steel_refinery
+					level = 1
+					instant_build = yes
 				}
 			}
 		}

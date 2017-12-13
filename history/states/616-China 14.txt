@@ -4,8 +4,9 @@ state={
 	name="STATE_616" # Ningxia
 	manpower = 4077600
 	resources={
-		steel=2
+		# steel=2
 		tungsten=4
+		iron=2
 	}
 
 	state_category = pastoral

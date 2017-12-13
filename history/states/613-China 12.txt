@@ -4,8 +4,10 @@ state={
 	name="STATE_613" # Shanghai
 	manpower = 17305100
 	resources={
-		steel=20
-		aluminium=22
+		# steel=20
+		# aluminium=22
+		iron=23
+		bauxite=22
 	}
 	
 	state_category = large_city
@@ -19,6 +21,7 @@ state={
 			industrial_complex = 1
 			air_base = 6
 			dockyard = 1
+			steel_refinery = 1
 			7014 = {
 				naval_base = 6
 				coastal_bunker = 1

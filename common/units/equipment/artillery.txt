@@ -37,6 +37,8 @@ equipments = {
 		resources = {
 			tungsten = 1
 			steel = 2
+			iron = 1
+			coal = 1
 		}
 	}
 
@@ -64,6 +66,8 @@ equipments = {
 		resources = {
 			tungsten = 1
 			steel = 2
+			iron = 1
+			coal = 1
 		}
 	}
 	
@@ -83,6 +87,8 @@ equipments = {
 		resources = {
 			tungsten = 1
 			steel = 3
+			iron = 1
+			coal = 1
 		}
 	}
 
@@ -121,6 +127,8 @@ equipments = {
 		resources = {
 			tungsten = 2
 			steel = 1
+			iron = 1
+			coal = 1
 		}
 	}
 	
@@ -148,6 +156,8 @@ equipments = {
 		resources = {
 			tungsten = 2
 			steel = 1
+			iron = 1
+			coal = 1
 		}
 	}
 	
@@ -187,6 +197,8 @@ equipments = {
 			oil = 1
 			rubber = 1
 			steel = 1
+			iron = 1
+			coal = 1
 		}
 	}
 	

@@ -2,7 +2,7 @@ state={
 	id=357
 	name="STATE_357"
 	resources={
-		steel=20.000
+		# steel=20.000
 	}
 
 	state_category = metropolis
@@ -16,6 +16,7 @@ state={
 			industrial_complex = 5
 			dockyard = 4
 			air_base = 10
+			steel_refinery = 1
 			6732 = {
 				naval_base = 8
 

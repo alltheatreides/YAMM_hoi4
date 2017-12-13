@@ -3,6 +3,10 @@ state={
 	id=26
 	name="STATE_26" # Auveregne
 	manpower = 877800
+	resources = {
+		coal=91
+	}
+	
 	
 	state_category = town
 

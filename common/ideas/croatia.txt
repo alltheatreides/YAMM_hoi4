@@ -519,7 +519,9 @@ CRO_gaspar_njegovan = {
 			# }			
 			# traits = { quartermaster_general }
 		# }		
+
 		# CRO_vladimir_nazor = {
+
 
 		# }
 

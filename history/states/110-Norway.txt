@@ -7,7 +7,7 @@ state={
 	state_category = city
 	
 	resources={
-		aluminium=8
+		# aluminium=8
 	}
 
 	history={
@@ -26,6 +26,8 @@ state={
 				naval_base = 6
 				coastal_bunker = 3
 			}
+			aluminium_refinery = 2
+			small_steel_refinery = 1
 		}
 		add_core_of = NOR
 	}

@@ -92,7 +92,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_FRA_ADL"
-		texturefile = "gfx/interface/ideas/FRA_ADL.dds"
+		texturefile = "gfx/interface/ideas/FRA_armeedelair.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_SOV_VVS"

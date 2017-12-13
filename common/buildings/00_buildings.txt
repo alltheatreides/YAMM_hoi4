@@ -11,6 +11,7 @@ buildings = {
 		infrastructure = yes
 		max_level = 10
 		value = 1
+		# local_resources_factor = 0.05
 	}
 
 	arms_factory = {
@@ -27,10 +28,12 @@ buildings = {
 
 	industrial_complex = {
 		show_on_map = 6
-		base_cost = 10800
-		base_cost_conversion = 9000
+		base_cost = 21600
+		base_cost_conversion = 10800
 		general_production = 1
 		icon_frame = 1
+		local_resources_coal = -2
+		local_resources_iron = -2
 		max_level = 20
 		shares_slots = yes
 		value = 5
@@ -120,10 +123,11 @@ buildings = {
 		base_cost = 13000
 		icon_frame = 10
 		local_resources_oil = 7 # May use local_resources_ + any resource name
-		local_resources_rubber = 4 # May use local_resources_ + any resource name
+		local_resources_coal = -5
+		#local_resources_rubber = 2 # May use local_resources_ + any resource name
 		refinery = yes
 		#max_level = 0 # max: 5
-		max_level = 4 # This is the max unlock level
+		max_level = 5 # This is the max unlock level
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes

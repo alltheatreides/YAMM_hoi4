@@ -7,8 +7,9 @@ state={
 	state_category = rural
 	
 	resources={
-		steel=72
+		# steel=72
 		oil=12
+		iron=190
 	}
 
 	history={

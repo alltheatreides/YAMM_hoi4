@@ -8,9 +8,11 @@ state={
 	
 	resources={
 		rubber=848
-		steel=32
+		# steel=32
 		tungsten=308
-		aluminium = 25
+		# aluminium = 25
+		iron=34
+		coal=5
 	}
 
 	history={

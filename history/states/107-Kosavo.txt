@@ -3,7 +3,9 @@ state={
 	id=107
 	name="STATE_107" # Serbia
 	manpower = 1864700
-	
+	resources = {
+		coal=44
+	}
 	state_category = large_city
 	history={
 		owner = YUG
@@ -12,6 +14,8 @@ state={
 			arms_factory = 3
 			industrial_complex = 4
 			air_base = 5
+			steel_refinery = 1
+			aluminium_refinery = 1
 		}
 		victory_points = {
 			11586 15 

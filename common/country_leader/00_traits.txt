@@ -693,6 +693,9 @@ leader_traits = {
 		production_speed_industrial_complex_factor = 0.1
 		production_speed_infrastructure_factor = 0.1
 		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_steel_refinery_factor = 0.1
+		production_speed_small_steel_refinery_factor = 0.1
+		production_speed_aluminium_refinery_factor = 0.1
 		
 		ai_will_do = {
 			factor = 1

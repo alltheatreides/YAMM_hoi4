@@ -4,7 +4,7 @@ state={
 	name="STATE_52"
 	manpower = 2679413
 	resources={
-		aluminium=30
+		# aluminium=30
 	}
 	
 	state_category = city
@@ -20,6 +20,7 @@ state={
 			industrial_complex = 1
 			air_base = 6
 			anti_air_building = 3
+			aluminium_refinery = 1
 		}
 		add_core_of = GER
 

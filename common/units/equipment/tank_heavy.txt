@@ -44,6 +44,8 @@ equipments = {
 			oil = 1
 			steel = 3
 			chromium = 3
+			iron = 1
+			coal = 1
 		}
 		
 	}
@@ -86,6 +88,8 @@ equipments = {
 			oil = 1
 			steel = 3
 			chromium = 3
+			iron = 1
+			coal = 1
 		}
 	}
 
@@ -117,6 +121,8 @@ equipments = {
 			oil = 1
 			steel = 4
 			chromium = 3
+			iron = 2
+			coal = 2
 		}
 	}
 
@@ -164,6 +170,8 @@ equipments = {
 			oil = 1
 			steel = 3
 			chromium = 3
+			iron = 1
+			coal = 1
 		}
 		
 	}
@@ -210,6 +218,8 @@ equipments = {
 			oil = 1
 			steel = 4
 			chromium = 3
+			iron = 2
+			coal = 2
 		}
 	}
 
@@ -243,6 +253,8 @@ equipments = {
 			oil = 1
 			steel = 5
 			chromium = 3
+			iron = 2
+			coal = 2
 		}
 	}
 
@@ -290,6 +302,8 @@ equipments = {
 			oil = 1
 			steel = 3
 			chromium = 3
+			iron = 2
+			coal = 2
 		}
 	}
 
@@ -337,6 +351,8 @@ equipments = {
 			oil = 1
 			steel = 4
 			chromium = 3
+			iron = 2
+			coal = 2
 		}
 	}
 
@@ -372,6 +388,8 @@ equipments = {
 			oil = 2
 			steel = 4
 			chromium = 4
+			iron = 2
+			coal = 2
 		}
 	}
 
@@ -419,6 +437,8 @@ equipments = {
 			oil = 1
 			steel = 3
 			chromium = 3
+			iron = 1
+			coal = 1
 		}
 		
 	}
@@ -467,6 +487,8 @@ equipments = {
 			oil = 1
 			steel = 3
 			chromium = 3
+			iron = 1
+			coal = 1
 		}
 	}
 
@@ -504,6 +526,8 @@ equipments = {
 			oil = 1
 			steel = 4
 			chromium = 3
+			iron = 2
+			coal = 2
 		}
 		
 	}

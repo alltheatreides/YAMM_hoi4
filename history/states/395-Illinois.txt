@@ -3,6 +3,9 @@ state={
 	id=395
 	name="STATE_395"
 	manpower = 7630651
+	resources={
+		coal=445
+	}
 	state_category = megalopolis
 
 	history={
@@ -12,6 +15,7 @@ state={
 			arms_factory = 1
 			industrial_complex = 11
 			air_base = 3
+			steel_refinery = 9
 		}
 		add_core_of = USA
 		victory_points = {

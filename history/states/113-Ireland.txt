@@ -4,8 +4,10 @@ state={
 	name="STATE_113" # Leinster
 	manpower = 1357600
 	resources={
-		aluminium=2
-		steel=3
+		# aluminium=2
+		# steel=3
+		coal=5
+		bauxite=2
 	}
 	
 	state_category = city

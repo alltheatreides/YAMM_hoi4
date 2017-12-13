@@ -1455,16 +1455,21 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			143 = {
-				add_resource = {
-				type = steel
-				amount = 3
-				}
-			}
+			# 143 = {
+				# add_resource = {
+				# type = steel
+				# amount = 3
+				# }
+			# }
 			144 = {
-				add_resource = {
-				type = steel
-				amount = 10
+				# add_resource = {
+					# type = steel
+					# amount = 10
+				# }
+				add_building_construction = {
+					type = steel_refinery
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -1740,28 +1745,48 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			110 = {
-				add_resource = {
-				type = aluminium
-				amount = 4
-				}
-			}
-			142 = {
-				add_resource = {
-				type = aluminium
-				amount = 10
-				}
-			}
+			# 110 = {
+				# add_resource = {
+				# type = aluminium
+				# amount = 4
+				# }
+				# add_building_construction = {
+					# type = hydro_aluminium_refinery
+					# level = 1
+					# instant_build = yes
+				# }
+			# }
+			# 142 = {
+				# add_resource = {
+				# type = aluminium
+				# amount = 10
+				# }
+				# add_building_construction = {
+					# type = hydro_aluminium_refinery
+					# level = 1
+					# instant_build = yes
+				# }
+			# }
 			143 = {
-				add_resource = {
-				type = aluminium
-				amount = 2
+				# add_resource = {
+				# type = aluminium
+				# amount = 2
+				# }
+				add_building_construction = {
+					type = hydro_aluminium_refinery
+					level = 1
+					instant_build = yes
 				}
 			}
 			144 = {
-				add_resource = {
-				type = aluminium
-				amount = 5
+				# add_resource = {
+				# type = aluminium
+				# amount = 5
+				# }
+				add_building_construction = {
+					type = hydro_aluminium_refinery
+					level = 1
+					instant_build = yes
 				}
 			}
 		}

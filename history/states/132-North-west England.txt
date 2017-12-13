@@ -6,8 +6,8 @@ state= {
 	state_category = metropolis
 	
 	resources={
-		steel=56
-		aluminium=4
+		# steel=56
+		# aluminium=4
 	}
 
 	history= {
@@ -25,6 +25,7 @@ state= {
 			industrial_complex = 1
 			dockyard = 3
 			air_base = 3
+			steel_refinery = 5
 			6384 = {
 				naval_base = 5
 			}

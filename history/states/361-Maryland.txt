@@ -3,7 +3,9 @@ state={
 	id=361
 	name="STATE_361"
 	manpower = 2118394
-	
+	resources={
+		coal=17
+	}
 	state_category = city
 
 	history={
@@ -19,6 +21,7 @@ state={
 			industrial_complex = 5
 			dockyard = 1
 			air_base = 6
+			steel_refinery = 3
 			6984 = {
 				naval_base = 2
 

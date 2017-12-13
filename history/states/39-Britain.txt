@@ -7,7 +7,7 @@ state={
 	state_category = town
 	
 	resources={
-		aluminium=22
+		# aluminium=22
 	}
 
 	history={
@@ -15,6 +15,7 @@ state={
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
+			aluminium_refinery = 1
 		}
 		add_core_of = ITA
 		add_core_of = AUS

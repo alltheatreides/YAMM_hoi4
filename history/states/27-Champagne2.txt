@@ -7,7 +7,7 @@ state={
 	state_category = city
 	
 	resources={
-		aluminium=18
+		# aluminium=18
 	}
 
 	history={
@@ -20,6 +20,7 @@ state={
 			industrial_complex = 2
 			air_base = 2
 			anti_air_building = 1
+			steel_refinery = 1
 		}
 		add_core_of = FRA
 		1939.1.1 = {

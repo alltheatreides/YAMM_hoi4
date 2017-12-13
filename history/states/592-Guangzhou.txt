@@ -5,8 +5,9 @@ state={
 	state_category = city
 	resources={
 		tungsten=22
-		steel= 20
+		# steel= 20
 		chromium = 4
+		iron=20
 	}
 
 	history={
@@ -20,6 +21,7 @@ state={
 			arms_factory = 2
 			industrial_complex = 2
 			air_base = 3
+			steel_refinery = 1
 			1047 = {
 				naval_base = 5
 				coastal_bunker = 1
