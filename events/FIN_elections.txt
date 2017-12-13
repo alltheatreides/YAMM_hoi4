@@ -30,7 +30,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-			set_politics = {
+		set_politics = {
 			ruling_party = neutrality
 			elections_allowed = yes
 		}
@@ -45,7 +45,7 @@ country_event = {
 			desc = "POLITICS_AIMO_CAJENDER_DESC"
 			picture = "Portrait_Aimo_Cajander.dds"
 			expire = "1965.1.1"
-			ideology = neutrality
+			ideology = oligarchism
 			traits = {
 				#
 			}
