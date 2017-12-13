@@ -44,6 +44,8 @@ sub_units = {
 		need = {
 			infantry_equipment = 100
 			heavy_infantry_equipment = 18
+			small_arms_ammunition = 150
+			shells_ammunition = 20
 		}
 	}
 	
@@ -89,6 +91,8 @@ sub_units = {
 		need = {
 			infantry_equipment = 300
 			heavy_infantry_equipment = 54
+			small_arms_ammunition = 300
+			shells_ammunition = 20
 		}
 
 		marsh = {
@@ -145,6 +149,8 @@ sub_units = {
 		need = {
 			infantry_equipment = 250
 			heavy_infantry_equipment = 44
+			small_arms_ammunition = 300
+			shells_ammunition = 20
 		}
 
 		hills = {
@@ -201,6 +207,8 @@ sub_units = {
 		need = {
 			infantry_equipment = 160
 			heavy_infantry_equipment = 28
+			small_arms_ammunition = 300
+			shells_ammunition = 20
 		}
 	}
 	
@@ -453,7 +461,8 @@ sub_units = {
 			infantry_equipment = 100
 			motorized_equipment = 50
 			heavy_infantry_equipment = 18
-			
+			small_arms_ammunition = 300
+			shells_ammunition = 20
 		}
 
 		forest = {
@@ -539,7 +548,8 @@ sub_units = {
 			mechanized_equipment = 50
 			infantry_equipment = 100
 			heavy_infantry_equipment = 18
-			
+			small_arms_ammunition = 300
+			shells_ammunition = 20
 		}
 
 		forest = {
