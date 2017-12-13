@@ -12,24 +12,24 @@ spriteTypes = {
 		noOfFrames = 8
 	}
 	
-	textSpriteType = {
-		name = "GFX_button_110x25"
-		texturefile = "gfx//interface//button_110x25.dds"
-		noOfFrames = 1
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	textSpriteType = {
-		name = "GFX_button_160x20"
-		texturefile = "gfx//interface//button_160x20.dds"
-		noOfFrames = 1
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	textSpriteType = {
-		name = "GFX_button_205x25"
-		texturefile = "gfx//interface//button_205x25.dds"
-		noOfFrames = 1
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
+	# textSpriteType = {
+		# name = "GFX_button_110x25"
+		# texturefile = "gfx//interface//button_110x25.dds"
+		# noOfFrames = 1
+		# effectFile = "gfx/FX/buttonstate.lua"
+	# }
+	# textSpriteType = {
+		# name = "GFX_button_160x20"
+		# texturefile = "gfx//interface//button_160x20.dds"
+		# noOfFrames = 1
+		# effectFile = "gfx/FX/buttonstate.lua"
+	# }
+	# textSpriteType = {
+		# name = "GFX_button_205x25"
+		# texturefile = "gfx//interface//button_205x25.dds"
+		# noOfFrames = 1
+		# effectFile = "gfx/FX/buttonstate.lua"
+	# }
 	
 	### GENERIC PORTRAITS EUROPE
 	### suffix from graphicalculturetype

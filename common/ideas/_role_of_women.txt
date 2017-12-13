@@ -79,7 +79,10 @@ ideas = {
 			level = 2
 			
 			available = {
-				has_war = yes
+				OR = { 
+					has_war = yes
+					has_government = communism
+				}
 			}
 			
 			ai_will_do = {
