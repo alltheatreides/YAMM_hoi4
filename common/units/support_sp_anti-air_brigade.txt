@@ -31,7 +31,8 @@ sub_units = {
 		
 		need = {
 			light_tank_aa_equipment = 15
-			 
+			shells_ammunition = 60
+			gasoline_equipment = 10
 		}
 		
 		# can_be_parachuted = yes
@@ -84,7 +85,8 @@ sub_units = {
 
 		need = {
 			medium_tank_aa_equipment = 12
-			 
+			shells_ammunition = 120
+			gasoline_equipment = 12
 		}
 		manpower = 300
 		max_organisation = 0
@@ -236,7 +238,8 @@ sub_units = {
 		
 		need = {
 			modern_tank_aa_equipment = 12
-			
+			shells_ammunition = 120
+			gasoline_equipment = 26
 		}
 		manpower = 300
 		max_organisation = 0

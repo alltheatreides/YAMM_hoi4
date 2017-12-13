@@ -32,7 +32,6 @@ equipments = {
 		build_cost_ic = 10
 		resources = {
 			steel = 2
-			oil = 1
 			rubber = 1
 			iron = 1
 			coal = 1
@@ -68,7 +67,6 @@ equipments = {
 		resources = {
 			steel = 3
 			rubber = 1
-			oil = 1
 			iron = 1
 			coal = 1
 		}
@@ -96,7 +94,6 @@ equipments = {
 		resources = {
 			steel = 4
 			rubber = 1
-			oil = 2
 			iron = 2
 			coal = 2
 		}

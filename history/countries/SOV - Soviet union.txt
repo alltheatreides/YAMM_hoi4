@@ -253,6 +253,7 @@ add_ideas = {
 		# alexander_yegorov
 		nikolay_kuznetsov
 		# aleksandr_loktionov
+		limited_female_service
 }
 
 create_country_leader = {

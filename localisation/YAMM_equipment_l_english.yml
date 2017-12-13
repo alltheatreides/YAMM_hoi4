@@ -18,3 +18,9 @@
  heavy_infantry_equipment_0:0 "Heavy Infantry Equipment"
  heavy_infantry_equipment_0_desc:0 "Heavy Infantry Equipment"
  flamethrower_tt:0 "Increases Engineer Battalion Efficiency. Click on the technology for details"
+ 
+ shells_ammunition_0:0 "Shells"
+ shells_ammunition:0 "Shells"
+ small_arms_ammunition_0: "Small Arms Ammunition"
+ small_arms_ammunition:0 "Small Arms Ammunition"
+ gasoline_equipment_0:0 "Gasoline"

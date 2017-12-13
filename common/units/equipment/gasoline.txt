@@ -1,0 +1,43 @@
+# Gasoline equipment.
+
+equipments = {
+	
+	gasoline_equipment = {
+		year = 1936
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			motorized
+			mechanized
+			#armor
+		}
+		group_by = archetype
+
+		interface_category = interface_category_land
+		
+		active = yes
+		
+		#Misc Abilities
+		reliability = 0.1
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 2.5
+		resources = {
+			oil = 3
+		}
+	}
+
+	gasoline_equipment_0 = {
+		year = 1936
+		
+		active = yes
+		
+		archetype = gasoline_equipment
+		priority = 05
+		visual_level = 0
+	}
+}

@@ -30,9 +30,9 @@ equipments = {
 		##Space taken in convoy
 		lend_lease_cost = 0.10
 		
-		build_cost_ic = 4
+		build_cost_ic = 1
 		resources = {
-			steel = 2
+			steel = 3
 		}
 		
 	}
@@ -74,9 +74,9 @@ equipments = {
 		##Space taken in convoy
 		lend_lease_cost = 0.10
 		
-		build_cost_ic = 2
+		build_cost_ic = 1.25
 		resources = {
-			steel = 3
+			steel = 4
 		}
 		
 	}

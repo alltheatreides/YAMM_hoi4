@@ -24,12 +24,8 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-<<<<<<< HEAD
 			artillery_equipment = 6
-			shells_ammunition = 60
-=======
-			artillery_equipment = 12
->>>>>>> master
+			shells_ammunition = 100
 		}
 		manpower = 300
 		training_time = 120

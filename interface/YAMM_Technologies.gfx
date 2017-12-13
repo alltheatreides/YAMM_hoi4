@@ -290,4 +290,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/shells_ammunition_0.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_gasoline_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/gasoline_equipment_0.dds"
+	}
 }

@@ -1588,13 +1588,13 @@ country_event = {
 		add_equipment_to_stockpile = {
 			type = light_tank_equipment_2
 			version_name = "LT-35"
-			amount = 750 
+			amount = 360 
 			producer = CZE 
 		}
 		add_equipment_to_stockpile = {
 			type = medium_tank_equipment_1
 			version_name = "LT-38 E"
-			amount = 500 
+			amount = 300 
 			producer = CZE 
 		}
 		add_ideas = { GER_czech_factories }

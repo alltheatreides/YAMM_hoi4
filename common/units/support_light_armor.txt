@@ -33,6 +33,7 @@ sub_units = {
 			light_tank_equipment = 40
 			motorized_equipment = 4
 			shells_ammunition = 120
+gasoline_equipment = 40
 		}
 
 		can_be_parachuted = no
