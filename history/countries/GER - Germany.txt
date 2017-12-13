@@ -60,11 +60,11 @@ set_convoys = 200
 set_national_unity = 0.9
 
 #Trade
-create_import = {
-		resource = tungsten
-		factories = 1
-		exporter = SWE
-}
+# create_import = {
+		# resource = tungsten
+		# factories = 1
+		# exporter = SWE
+# }
 
 1939.1.1 = {
 	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
@@ -262,7 +262,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	
-	women_auxillary
+	# women_auxillary
 	# GER_airforce
 }
 
