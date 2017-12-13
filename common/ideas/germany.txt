@@ -184,9 +184,9 @@ ideas = {
 			
 			modifier = {
 				army_speed_factor = 0.05
-				army_attack_factor = 0.10
-				army_org_factor = 0.10
-				army_morale_factor = 0.10
+				army_attack_factor = 0.15
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
 				army_bonus_air_superiority_factor = 0.10
 				air_interception_attack_factor = 0.10
 				air_air_superiority_attack_factor = 0.10
@@ -211,13 +211,13 @@ ideas = {
 			
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 				heavy_infantry_equipment = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 				artillery = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
 			}
 		}
@@ -256,7 +256,7 @@ ideas = {
 			traits = { armaments_organizer }
 			
 			modifier = {
-				industrial_capacity_factory = 0.1
+				# industrial_capacity_factory = 0.1
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}

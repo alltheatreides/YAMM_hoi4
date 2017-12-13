@@ -59,7 +59,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Ustaška Vojnica"		# Infantry Division
+	name = "Ustaska Vojnica"		# Infantry Division
 
 	regiments = {
 		light_infantry = { x = 0 y = 0 }

@@ -29,18 +29,32 @@ technologies = {
 			always = no
 		}
 		
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.15
+		recon = {
+			recon = 1
 		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.15
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.15
-		}
+		
+		# infantry = {
+			# defense = 0.05
+			# breakthrough = 0.15
+		# }
+		# motorized = {
+			# defense = 0.05
+			# breakthrough = 0.15
+		# }
+		# mechanized = {
+			# defense = 0.05
+			# breakthrough = 0.15
+		# }
 	}
+	
+	# Barbarossa = {
+	
+		# category_army = {
+			# river = {
+				# attack = 0.04
+			# }
+		# }
+		
+	# }
 	
 }

@@ -2715,13 +2715,13 @@ focus_tree = {
 					}
 				}
 				43 = {
-					add_extra_state_shared_building_slots = 6
+					add_extra_state_shared_building_slots = 3
 				}
 				155 = {
-					add_extra_state_shared_building_slots = 6
+					add_extra_state_shared_building_slots = 3
 				}
 				154 = {
-					add_extra_state_shared_building_slots = 6
+					add_extra_state_shared_building_slots = 3
 				}
 			}
 		}

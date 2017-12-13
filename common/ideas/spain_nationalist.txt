@@ -23,6 +23,26 @@ ideas = {
 			}
 		}
 		
+		SPA_recovering_from_civil_war_2 = {
+
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				original_tag = SPR
+				has_government = fascism
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				ai_get_ally_desire_factor = -70
+				join_faction_tension = 4
+				justify_war_goal_time = 10.0
+			}
+		}
+		
 		SPR_postwar1 = {
 
 			picture = great_depression

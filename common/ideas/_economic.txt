@@ -345,6 +345,14 @@ ideas = {
 						}
 					}
 				}
+				NOT = {
+					tag = POR
+					tag = VEN
+					tag = BRA
+					tag = ARG
+					tag = MEX
+					tag = BOL
+				}
 			}
 		
 			cost = 150
@@ -389,6 +397,14 @@ ideas = {
 				OR = {
 					NOT = {	tag = SOV }
 					NOT = { has_opinion_modifier = MR_pact }
+				}
+				NOT = {
+					tag = POR
+					tag = VEN
+					tag = BRA
+					tag = ARG
+					tag = MEX
+					tag = BOL
 				}
 			}
 			

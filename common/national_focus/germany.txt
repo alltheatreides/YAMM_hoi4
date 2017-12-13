@@ -1197,6 +1197,9 @@ focus_tree = {
 				}
 			}
 			add_timed_idea = { idea = blitzkrieg_idea days = 100 }
+			# hidden_effect = {
+				# set_technology = { barbarossa = 1 }
+			# }
 		}
 	}
 
@@ -2330,6 +2333,7 @@ focus_tree = {
 					has_government = fascism
 				}
 				remove_ideas = SPA_recovering_from_civil_war
+				swap_ideas = { remove_idea = SPA_recovering_from_civil_war add_idea = SPA_recovering_from_civil_war_2 }
 				add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
 			}
 		}

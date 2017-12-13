@@ -441,7 +441,7 @@ focus_tree = {
 		available = {
 			has_defensive_war_with = GER
 			SOV = { surrender_progress > 0.20 }
-			291 = { is_controlled_by = ENG }
+			291 = { is_controlled_by = IRQ }
 		}
 		completion_reward = {
 			SOV = {
@@ -2931,7 +2931,16 @@ focus_tree = {
 				name = armor_bonus
 				bonus = 0.5
 				uses = 1
-				category = armor
+				technology = basic_medium_tank
+				technology = basic_medium_td
+				technology = basic_medium_art
+				technology = basic_medium_spaa
+				technology = improved_medium_tank
+				technology = improved_medium_art
+				technology = improved_medium_td
+				technology = improved_heavy_tank
+				technology = improved_heavy_art
+				technology = improved_heavy_td
 			}
 			add_tech_bonus = {
 				name = armor_bonus
