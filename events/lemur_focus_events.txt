@@ -31,7 +31,7 @@ country_event = { ###excavation effort 1
 	id = focus_event.7
 	title = focus_event.7.t
 	desc = focus_event.7.d
-	mean_time_to_happen = { days = 60 }
+	mean_time_to_happen = { days = 180 }
 	trigger = {
 		has_idea = idea_excavation_effort_i
 		any_owned_state = {
