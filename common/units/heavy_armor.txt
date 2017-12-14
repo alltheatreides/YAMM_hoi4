@@ -61,8 +61,8 @@ sub_units = {
 		
 		need = {
 			heavy_tank_equipment = 40
-			shells_ammunition = 120
-gasoline_equipment = 80
+			# shells_ammunition = 120
+# gasoline_equipment = 80
 		}
 
 		manpower = 500

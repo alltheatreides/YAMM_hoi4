@@ -68,7 +68,7 @@ set_national_unity = 0.9
 
 create_import = {
 		resource = iron
-		factories = 1
+		factories = 2
 		exporter = SWE
 }
 

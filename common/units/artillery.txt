@@ -25,7 +25,7 @@ sub_units = {
 
 		need = {
 			artillery_equipment = 6
-			shells_ammunition = 100
+			# shells_ammunition = 100
 		}
 		manpower = 300
 		training_time = 120

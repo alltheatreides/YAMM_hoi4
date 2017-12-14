@@ -30,7 +30,7 @@ sub_units = {
 		
 		need = {
 			modern_tank_equipment = 40
-gasoline_equipment = 110
+# gasoline_equipment = 110
 			
 			
 		}

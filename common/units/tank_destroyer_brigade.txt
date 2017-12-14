@@ -26,8 +26,8 @@ sub_units = {
 		
 		need = {
 			light_tank_destroyer_equipment = 30
-			shells_ammunition = 120
-			gasoline_equipment = 20
+			# shells_ammunition = 120
+			# gasoline_equipment = 20
 		}
 		manpower = 500
 		max_organisation = 0
@@ -95,8 +95,8 @@ sub_units = {
 		
 		need = {
 			medium_tank_destroyer_equipment = 24
-			shells_ammunition = 120
-			gasoline_equipment = 24
+			# shells_ammunition = 120
+			# gasoline_equipment = 24
 		}
 		manpower = 500
 		max_organisation = 0
@@ -168,8 +168,8 @@ sub_units = {
 		
 		need = {
 			heavy_tank_destroyer_equipment = 20
-			shells_ammunition = 120
-gasoline_equipment = 40
+			# shells_ammunition = 120
+# gasoline_equipment = 40
 		}
 		manpower = 500
 		max_organisation = 0
@@ -241,8 +241,8 @@ gasoline_equipment = 40
 		
 		need = {
 			super_heavy_tank_destroyer_equipment = 7
-			shells_ammunition = 120
-gasoline_equipment = 112
+			# shells_ammunition = 120
+# gasoline_equipment = 112
 		}
 		manpower = 500
 		max_organisation = 0
@@ -316,8 +316,8 @@ gasoline_equipment = 112
 		
 		need = {
 			modern_tank_destroyer_equipment = 24
-			shells_ammunition = 120
-			gasoline_equipment = 53
+			# shells_ammunition = 120
+			# gasoline_equipment = 53
 		}
 		manpower = 500
 		max_organisation = 0

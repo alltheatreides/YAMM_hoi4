@@ -43,7 +43,7 @@ sub_units = {
 
 		need = {
 			infantry_equipment = 100 	# less equipment also gives less combat power
-			small_arms_ammunition = 150
+			# small_arms_ammunition = 150
 		}
 
 		## better handling of rough terrain due to lack of heavy stuff to carry

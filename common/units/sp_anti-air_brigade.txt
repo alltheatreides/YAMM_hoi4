@@ -23,8 +23,8 @@ sub_units = {
 
 		need = {
 			light_tank_aa_equipment = 15
-			shells_ammunition = 60
-			gasoline_equipment = 10
+			# shells_ammunition = 60
+			# gasoline_equipment = 10
 		}
 		manpower = 500
 		max_organisation = 0
@@ -89,8 +89,8 @@ sub_units = {
 
 		need = {
 			medium_tank_aa_equipment = 12
-			shells_ammunition = 120
-			gasoline_equipment = 12
+			# shells_ammunition = 120
+			# gasoline_equipment = 12
 		}
 		manpower = 500
 		max_organisation = 0
@@ -158,8 +158,8 @@ sub_units = {
 
 		need = {
 			heavy_tank_aa_equipment = 8
-			shells_ammunition = 120
-			gasoline_equipment = 16
+			# shells_ammunition = 120
+			# gasoline_equipment = 16
 		}
 		manpower = 500
 		max_organisation = 0
@@ -224,8 +224,8 @@ sub_units = {
 
 		need = {
 			super_heavy_tank_aa_equipment = 4
-			shells_ammunition = 120
-gasoline_equipment = 64
+			# shells_ammunition = 120
+# gasoline_equipment = 64
 		}
 		manpower = 500
 		max_organisation = 0
@@ -292,8 +292,8 @@ gasoline_equipment = 64
 
 		need = {
 			modern_tank_aa_equipment = 12
-			shells_ammunition = 120
-			gasoline_equipment = 26
+			# shells_ammunition = 120
+			# gasoline_equipment = 26
 		}
 		manpower = 500
 		max_organisation = 0

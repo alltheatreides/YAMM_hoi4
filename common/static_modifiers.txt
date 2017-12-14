@@ -57,7 +57,7 @@ weather_sandstorm = { # on Region
 }
 weather_mud = { # on Province
 	local_supplies = -0.2
-	attrition = 0.35
+	attrition = 0.7
 	army_speed_factor = -1.0
 	army_attack_factor = -0.6
 }

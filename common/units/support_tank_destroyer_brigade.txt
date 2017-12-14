@@ -31,8 +31,8 @@ sub_units = {
 		
 		need = {
 			light_tank_destroyer_equipment = 30
-			shells_ammunition = 120
-			gasoline_equipment = 20
+			# shells_ammunition = 120
+			# gasoline_equipment = 20
 		}
 		manpower = 500
 		max_organisation = 0
@@ -86,8 +86,8 @@ sub_units = {
 		
 		need = {
 			medium_tank_destroyer_equipment = 24
-			shells_ammunition = 120
-			gasoline_equipment = 24
+			# shells_ammunition = 120
+			# gasoline_equipment = 24
 		}
 		manpower = 500
 		max_organisation = 0
@@ -241,8 +241,8 @@ sub_units = {
 		
 		need = {
 			modern_tank_destroyer_equipment = 12
-				shells_ammunition = 120
-			gasoline_equipment = 53
+				# shells_ammunition = 120
+			# gasoline_equipment = 53
 		}
 		manpower = 300
 		max_organisation = 0

@@ -551,25 +551,25 @@ instant_effect = {
 		efficiency = 50
 	}
 	
-	add_equipment_production = {
-		equipment = {
-			type = small_arms_ammunition_0
-			creator = "GER"
-		}
-		requested_factories = 2
-		progress = 0.1
-		efficiency = 50
-	}
+	# add_equipment_production = {
+		# equipment = {
+			# type = small_arms_ammunition_0
+			# creator = "GER"
+		# }
+		# requested_factories = 2
+		# progress = 0.1
+		# efficiency = 50
+	# }
 	
-	add_equipment_production = {
-		equipment = {
-			type = shells_ammunition_0
-			creator = "GER"
-		}
-		requested_factories = 2
-		progress = 0.1
-		efficiency = 50
-	}
+	# add_equipment_production = {
+		# equipment = {
+			# type = shells_ammunition_0
+			# creator = "GER"
+		# }
+		# requested_factories = 2
+		# progress = 0.1
+		# efficiency = 50
+	# }
 	
 	add_equipment_production = {
 		equipment = {
