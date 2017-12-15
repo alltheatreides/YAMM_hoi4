@@ -1,5 +1,15 @@
 leader_traits = {
-
+	
+	#Germany
+	kept_schacht = {
+		random = no
+		production_speed_arms_factory_factor = -0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#Soviet
 	hero_worker = {
 		random = yes
 		sprite = 10
@@ -9,7 +19,8 @@ leader_traits = {
 			factor = 1
 		}
 	}
-
+	
+	# Norway
 	partisan_leader = {
 		sprite = 10
 		random = yes

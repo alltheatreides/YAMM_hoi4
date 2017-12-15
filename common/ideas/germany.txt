@@ -399,6 +399,28 @@ ideas = {
 			}
 		}
 		
+		# hjalmar_schacht_kept = {
+			
+			# allowed = {
+				# original_tag = GER
+			# }
+			
+			# available = {
+				# NOT = {
+					# has_country_flag = schacht_fired
+				# }
+			# }
+			
+			# traits = { sympathetic_judge }
+			
+			# modifier = {
+				# production_speed_arms_factory_factor = -0.15
+			# }
+			# ai_will_do = {
+				# factor = 2
+			# }
+		# }
+		
 		# goering_e = {
 			
 			# allowed = {
@@ -1196,6 +1218,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+			
+			removal_cost = 150
 		}
 		
 		walther_von_brauchitsch_sc = {
