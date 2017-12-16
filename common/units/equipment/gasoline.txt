@@ -17,7 +17,7 @@ equipments = {
 
 		interface_category = interface_category_land
 		
-		active = yes
+		# active = yes
 		
 		#Misc Abilities
 		reliability = 0.1
@@ -34,7 +34,7 @@ equipments = {
 	gasoline_equipment_0 = {
 		year = 1936
 		
-		active = yes
+		# active = yes
 		
 		archetype = gasoline_equipment
 		priority = 05

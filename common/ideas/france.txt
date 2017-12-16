@@ -21,7 +21,7 @@ ideas = {
 				land_doctrine = -0.75
 			}
 			modifier = {
-				conscription = -0.003
+				conscription_factor = -0.1
 			}
 		}
 

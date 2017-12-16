@@ -1,0 +1,36 @@
+add_namespace = fraser
+
+country_event = {
+	id = fraser.1
+	title = fraser.1.t
+	desc = fraser.1.desc
+	picture = GFX_report_event_europe_funeral
+	
+	fire_only_once = yes
+
+	trigger = {
+			tag = NZL
+			NZL = { has_government = democratic } 
+			date > 1940.3.1
+			has_country_leader = { ruling_only = yes name = "Michael Joseph Savage" } 
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = fraser.1.a
+		
+	kill_country_leader = yes
+	create_country_leader = {
+		name = "Peter Fraser"
+		desc = "POLITICS_PETER_FRASER_DESC"
+		picture = "Portrait_NewZealand_Peter_Fraser.dds"
+		expire = "1965.1.1"
+		ideology = socialism
+		traits = {
+			#
+		}
+	}
+	}
+}
+}
