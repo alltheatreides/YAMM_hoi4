@@ -12,7 +12,8 @@ leader_traits = {
 	#Japan
 	emperor_showa = {
 		random = no
-		political_power_factor = 0.05
+		unity_factor = 0.15
+		political_power_factor = 0.1
 	}
 	
 	#Soviet

@@ -1,7 +1,8 @@
 ﻿l_english:
  USA_industrial_bonus:0 "USA Mass Production System Bonus"
  USA_industrial_bonus_desc:0 "USA Mass Production System"
- wartime_industry_focus_us:0 "Wartime Industry"
+ wartime_industry_focus_us:0 "War Production Board"
+ USA_wartime_industry:0 "War Production Board"
  SOV_the_great_patriotic_war_focus:0 "The Great Patriotic War"
  SOV_the_great_patriotic_war_focus_desc:0 "Enemy throws to battle new forces and doesn’t encounter its heavy losses, crawls to into Soviet lands, capturing new regions, havocs and destroys our cities and villages, rapes and kills Soviet population. The Nazi invasion of the Motherland has sent us reeling and we are are at risk of losing this war. We must rally the people behind Russian nationalism and independence against German aggression."
  SOV_the_great_patriotic_war_focus_tt:0 "Fight for Mother Russia!"

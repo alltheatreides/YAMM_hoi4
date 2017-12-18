@@ -20,6 +20,7 @@ focus_tree = {
 	focus = {
 		id = USA_issue_war_bonds
 		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_wartime_industry }
 		available = {
 			OR = {
 				has_war_with = GER
@@ -37,8 +38,8 @@ focus_tree = {
 				}
 			}
 		}
-		x = 1
-		y = 0
+		x = 2
+		y = 1
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -66,7 +67,7 @@ focus_tree = {
 	focus = {
 		id = USA_office_of_strategic_services
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = USA_issue_war_bonds }
+		prerequisite = { focus = USA_wartime_industry }
 		available = {
 			OR = {
 				has_war_with = GER
@@ -94,14 +95,21 @@ focus_tree = {
 	focus = {
 		id = USA_wartime_industry
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = USA_issue_war_bonds }
-		x = 2
-		y = 1
-		cost = 5
+		# prerequisite = { focus = USA_issue_war_bonds }
+		x = 1
+		y = 0
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
-
+		
+		available = {
+			GER = { has_war_with = POL }
+			GER = { has_war_with = ENG }
+			GER = { has_war_with = FRA }
+			POL = { has_capitulated = yes }
+		}
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -157,7 +165,7 @@ focus_tree = {
 	focus = {
 		id = USA_rubber_reserve_company
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = USA_wartime_industry }
+		prerequisite = { focus = USA_issue_war_bonds }
 		available = {
 			has_government = democratic
 			controls_state = 369
@@ -926,7 +934,7 @@ focus_tree = {
 
 		x = 8
 		y = 2
-		cost = 10
+		cost = 2
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -954,7 +962,7 @@ focus_tree = {
 
 		x = 8
 		y = 3
-		cost = 10
+		cost = 4.3
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -989,7 +997,7 @@ focus_tree = {
 
 		x = 8
 		y = 4
-		cost = 10
+		cost = 4.3
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1026,7 +1034,7 @@ focus_tree = {
 		}
 		x = 10
 		y = 2
-		cost = 10
+		cost = 2
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1055,7 +1063,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		x = 10
 		y = 3
-		cost = 10
+		cost = 4.3
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1173,7 +1181,7 @@ focus_tree = {
 
 		x = 14
 		y = 2
-		cost = 10
+		cost = 2
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1203,7 +1211,7 @@ focus_tree = {
 
 		x = 14
 		y = 3
-		cost = 10
+		cost = 4.3
 		#ai_will_do = {
 		#	factor = 1
 		#}

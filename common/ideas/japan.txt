@@ -166,7 +166,7 @@ ideas = {
 				original_tag = "JAP"
 			}
 			picture = "gfx/interface/ideas/ministers/idea_hirohito"
-			traits = { popular_figurehead emperor_showa }
+			traits = { emperor_showa }
 		}
 	}
 

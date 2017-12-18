@@ -43,7 +43,7 @@ equipments = {
 		build_cost_ic = 3100
 		resources = {
 			oil = 1
-			steel = 2
+			steel = 2 iron = 1 coal = 1
 		}
 		
 		manpower = 600
@@ -113,7 +113,7 @@ equipments = {
 		build_cost_ic = 3400
 		resources = {
 			oil = 1
-			steel = 3
+			steel = 3 iron = 1 coal = 1
 		}
 		manpower = 800
 	}
@@ -154,7 +154,7 @@ equipments = {
 		build_cost_ic = 3700
 		resources = {
 			oil = 2
-			steel = 3
+			steel = 3 iron = 1 coal = 1
 		}
 		manpower = 960
 	}
@@ -195,7 +195,7 @@ equipments = {
 		build_cost_ic = 4000
 		resources = {
 			oil = 2
-			steel = 4
+			steel = 4 iron = 2 coal = 2
 			chromium = 1
 		}
 		manpower = 1140
@@ -237,7 +237,7 @@ equipments = {
 		build_cost_ic = 3000
 		resources = {
 			oil = 1
-			steel = 3
+			steel = 3 iron = 1 coal = 1
 		}
 		manpower = 600
 	}
@@ -277,7 +277,7 @@ equipments = {
 		build_cost_ic = 3200
 		resources = {
 			oil = 2
-			steel = 3
+			steel = 3 iron = 1 coal = 1
 		}
 		manpower = 660
 	}
@@ -318,7 +318,7 @@ equipments = {
 		build_cost_ic = 3300
 		resources = {
 			oil = 2
-			steel = 3
+			steel = 3 iron = 1 coal = 1
 		}
 		manpower = 740
 	}

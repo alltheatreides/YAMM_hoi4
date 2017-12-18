@@ -67,6 +67,7 @@ ideas = {
 				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
 				NOT = { has_idea = undisturbed_isolation }
 				NOT = { has_idea = isolation }
+				NOT = { has_idea = ENG_the_war_to_end_all_wars }
 				if = {
 					limit = {
 						original_tag = AST
@@ -118,6 +119,7 @@ ideas = {
 			
 			available = {
 				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
+				NOT = { has_idea = ENG_the_war_to_end_all_wars }
 				OR = {
 					has_government = fascism
 					has_government = communism

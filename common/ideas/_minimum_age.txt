@@ -3,27 +3,27 @@ ideas = {
 	minimum_age_laws = { 
 		law = yes
 
-		age_21 = {
+		# age_21 = {
 						
-			cost = 75
-			removal_cost = -1
-			level = 7
+			# cost = 75
+			# removal_cost = -1
+			# level = 7
 			
-			available = {
-			}
+			# available = {
+			# }
 			
-			ai_will_do = {
-				factor = 1
-			}
+			# ai_will_do = {
+				# factor = 1
+			# }
 
-			modifier = {
-				conscription = 0.015
-				army_morale_factor = 0.05
-			}
+			# modifier = {
+				# conscription = 0.015
+				# army_morale_factor = 0.05
+			# }
 			
-			cancel_if_invalid = no
-			default = yes
-		}
+			# cancel_if_invalid = no
+			# default = yes
+		# }
 		age_20 = {
 						
 			cost = 75
@@ -38,19 +38,52 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.025
+				# conscription = 0.025
+				army_morale_factor = 0.05
+				conscription = 0.015
 			}
 			
 			cancel_if_invalid = no
+			default = yes
 		}
-		age_19 = {
+		# age_19 = {
+						
+			# cost = 75
+			# removal_cost = -1
+			# level = 5
+			
+			# available = {
+
+			# }
+			
+			# ai_will_do = {
+				# factor = 1
+			# }
+
+			# modifier = {
+				# conscription = 0.035
+				# training_time_factor = 0.05
+			# }
+			
+			# cancel_if_invalid = no
+		# }
+		age_18 = {
 						
 			cost = 75
 			removal_cost = -1
-			level = 5
+			level = 4
 			
 			available = {
-
+				OR = {
+					AND = {
+						NOT = { has_government = democratic }
+						threat > 0.50
+					}
+					AND = {
+						has_war = yes
+						enemies_strength_ratio > 1.0
+					}
+				}
 			}
 			
 			ai_will_do = {
@@ -59,16 +92,19 @@ ideas = {
 
 			modifier = {
 				conscription = 0.035
-				training_time_factor = 0.05
+				# army_morale_factor = -0.1
+				# training_time_factor = 0.1
+				# need war support to unlock
 			}
 			
 			cancel_if_invalid = no
 		}
-		age_18 = {
-						
+		
+		age_16 = {
+		
 			cost = 75
 			removal_cost = -1
-			level = 4
+			level = 3
 			
 			available = {
 				OR = {
@@ -95,11 +131,12 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
+		
 		all_must_serve_young = {
 						
 			cost = 75
 			removal_cost = -1
-			level = 3
+			level = 2
 			
 			available = {
 				AND = {
@@ -113,7 +150,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.55
+				conscription = 0.055
 				army_morale_factor = -0.50
 				training_time_factor = 0.2
 			}

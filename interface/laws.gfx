@@ -80,7 +80,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_age_21"
+		name = "GFX_idea_age_35"
 		texturefile = "gfx/interface/ideas/manpower/idea_mp_21.dds"
 	}
 	
@@ -100,7 +100,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_age_17"
+		name = "GFX_idea_age_16"
 		texturefile = "gfx/interface/ideas/manpower/idea_mp_17.dds"
 	}
 	
