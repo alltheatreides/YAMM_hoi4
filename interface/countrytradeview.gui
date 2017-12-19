@@ -7,7 +7,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300	
-		size = { width=1010 height=100%% }
+		size = { width=800 height=100%% }
 		
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window
@@ -18,8 +18,8 @@ guiTypes = {
 		}
 
 		iconType ={
-			name ="production_header_bg"
-			spriteType = "GFX_header_bg"
+			name ="trade_header_bg"
+			spriteType = "GFX_trade_header_bg"
 			position = { x= 5 y = 07 }
 			Orientation = "UPPER_LEFT"
 		}
@@ -100,7 +100,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "resources"
 			position = { x = 11 y = 75 }	
-			size = { width = 1036 height = 156 }
+			size = { width = 800 height = 156 }
 			verticalScrollbar = "right_vertical_slider"
 
 			iconType = {
@@ -560,7 +560,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "resources_info_entry"
 		position = { x = 0 y = 0 }	
-		size = { width = 150 height = 100 }
+		size = { width = 200 height = 100 }
 		clipping = no
 		
 		buttonType ={

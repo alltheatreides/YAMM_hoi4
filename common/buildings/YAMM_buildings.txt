@@ -39,8 +39,8 @@ buildings = {
 		# local_resources_energy = -2
 		refinery = yes
 		#max_level = 0 # max: 5
-		max_level = 30 # This is the max unlock level
-		# shares_slots = yes
+		# max_level = 30 # This is the max unlock level
+		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
 	}
