@@ -20,7 +20,7 @@ technologies = {
 		production_factory_max_efficiency_factor = 0.1
 		production_factory_efficiency_gain_factor = 0.1
 		industrial_capacity_dockyard = 0.15
-		local_resources_factor = 0.25
+		# local_resources_factor = 0.25
 	}
 	
 	motorized_army = {

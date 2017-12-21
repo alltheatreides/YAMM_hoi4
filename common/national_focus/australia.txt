@@ -1723,6 +1723,11 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = steel_refinery
+					level = 1
+					instant_build = yes
+				}
 				set_state_flag = AST_standard_gauge_railway_Inf1
 			}
 

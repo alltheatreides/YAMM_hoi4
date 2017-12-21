@@ -274,20 +274,22 @@ ideas = {
 			}
 		}
 		
-		# alfredo_guzzoni_econ = {
+		giuseppe_cobolli_gigli = {
 		
-			# allowed = {
-				# original_tag = ITA
+			allowed = {
+				original_tag = ITA
 			
-			# }
-			# available = {
-				# has_government = fascism
-			# }
+			}
+			available = {
+				has_government = fascism
+			}
 			
-			# traits = { quartermaster_general }
+			picture = generic_political_advisor_europe_2
 			
-			# cancel_if_invalid = no
-		# }
+			traits = { captain_of_industry }
+			
+			cancel_if_invalid = no
+		}
 		
 		antonio_sorice = {
 			allowed = {

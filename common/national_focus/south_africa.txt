@@ -2116,6 +2116,12 @@ focus_tree = {
 				technology = excavation4
 				technology = excavation5
 			}
+			275 = {
+				add_resource = {
+					type = iron
+					amount = 16
+				}
+			}
 		}
 	}
 
@@ -2314,7 +2320,7 @@ focus_tree = {
 				# }
 				add_building_construction = {
 					type = steel_refinery
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}

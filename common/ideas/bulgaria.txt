@@ -103,7 +103,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = 0.20
+				production_factory_max_efficiency_factor = -0.1
 				industrial_capacity_factory = -0.30
 				conscription_factor = 0.05
 				unity_factor = -0.05
@@ -121,7 +121,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = 0.10
+				production_factory_max_efficiency_factor = -0.1
 				industrial_capacity_factory = -0.10
 			}
 		}
@@ -137,8 +137,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.10
+				production_factory_max_efficiency_factor = -0.1
 				industrial_capacity_factory = -0.20
+				production_speed_buildings_factor = -0.1
 			}
 		}
 

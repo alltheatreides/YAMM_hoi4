@@ -152,6 +152,7 @@ country_event = {
 	}
 	
 }
+
 # Danish Islands transfer
 country_event = {
 	id = yamm.35
@@ -186,6 +187,7 @@ country_event = {
 		news_event = { hours = 6 id = yamm.36 }
 	}
 }
+
 # News Event Danish Islands transfer
 news_event = {
 	id = yamm.36
@@ -201,7 +203,6 @@ news_event = {
 		name = yamm.36.a
 	}
 }
-
 
 # Fuck paradox math
 country_event = {

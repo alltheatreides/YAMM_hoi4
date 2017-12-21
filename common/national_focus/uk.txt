@@ -2641,6 +2641,9 @@ focus_tree = {
 			CHI = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
 				country_event = britain.4
+				hidden_effect = {
+					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = ENG }
+				}
 			}
 			YUN = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
