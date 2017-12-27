@@ -247,16 +247,49 @@ set_politics = {
 	}
 }
 
-# create_country_leader = {
-	# name = "Hirohito"
-	# desc = "POLITICS_Hirohito_DESC"
-	# picture = "Portrait_Japan_Hirohito.dds"
-	# expire = "1989.1.1"
-	# ideology = fascism_ideology
-	# traits = {
-		# warrior_code
-	# }
-# }
+create_country_leader = {
+	name = "Hirohito"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "Portrait_Japan_Hirohito.dds"
+	expire = "1989.1.1"
+	ideology = fascism_ideology
+	traits = {
+		warrior_code
+	}
+}
+
+create_country_leader = {
+	name = "Kōki Hirota"
+	desc = "POLITICS_Koki_Hirota_DESC"
+	picture = "Portrait_Koki_Hirota.dds"
+	expire = "1989.1.1"
+	ideology = fascism_ideology
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Senjūrō Hayashi"
+	desc = "POLITICS_Senjuro_Hayashi_DESC"
+	picture = "Portrait_Senjuro_Hayashi.dds"
+	expire = "1989.1.1"
+	ideology = fascism_ideology
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "Fumimaro Konoe"
+	desc = "POLITICS_Fumimaro_Konoe_DESC"
+	picture = "Portrait_Fumimaro_Konoe.dds"
+	expire = "1989.1.1"
+	ideology = fascism_ideology
+	traits = {
+	
+	}
+}
 
 create_country_leader = {
 	name = "Keisuke Okada"
@@ -268,39 +301,6 @@ create_country_leader = {
 	
 	}
 }
-
-# create_country_leader = {
-	# name = "Kōki Hirota"
-	# desc = "POLITICS_Kōki_Hirota_DESC"
-	# picture = "Portrait_Kōki_Hirota.dds"
-	# expire = "1989.1.1"
-	# ideology = fascism_ideology
-	# traits = {
-	
-	# }
-# }
-
-# create_country_leader = {
-	# name = "Senjūrō Hayashi"
-	# desc = "POLITICS_Senjūrō_Hayashi_DESC"
-	# picture = "Portrait_Senjūrō_Hayashi.dds"
-	# expire = "1989.1.1"
-	# ideology = fascism_ideology
-	# traits = {
-	
-	# }
-# }
-
-# create_country_leader = {
-	# name = "Fumimaro Konoe"
-	# desc = "POLITICS_Fumimaro_Konoe_DESC"
-	# picture = "Portrait_Fumimaro_Konoe.dds"
-	# expire = "1989.1.1"
-	# ideology = fascism_ideology
-	# traits = {
-	
-	# }
-# }
 
 create_corps_commander = {
 	name = "Tomoyuki Yamashita"

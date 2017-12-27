@@ -252,6 +252,29 @@ focus_tree = {
 					tank_reliability_upgrade = 3
 				}
 			}
+			custom_effect_tooltip = english_armor_tt
+			division_template = {
+				name = "Armored Division"
+				priority = 2
+
+				regiments = {
+					light_armor = { x = 0 y = 0 }
+					light_armor = { x = 0 y = 1 }
+					light_armor = { x = 0 y = 2 }
+					
+					heavy_armor = { x = 1 y = 0 }
+					heavy_armor = { x = 1 y = 1 }
+					heavy_armor = { x = 1 y = 2 }
+				}
+				support = {
+					DIV_HQ = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+					anti_air = { x = 0 y = 2 }
+					engineer = { x = 0 y = 3 }
+					field_hospital = { x = 0 y = 4 }
+					logistics_company = { x = 1 y = 0 }
+				}
+			}
 		}
 	}
 	
@@ -599,6 +622,16 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
+					add_building_construction = {
+						type = steel_refinery
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = aluminium_refinery
+						level = 1
+						instant_build = yes
+					}
 					set_state_flag = ENG_limited_rearmament_focus_2IC
 				}
 				random_owned_controlled_state = {
@@ -614,6 +647,16 @@ focus_tree = {
 					add_building_construction = {
 						type = industrial_complex
 						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = steel_refinery
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = aluminium_refinery
+						level = 1
 						instant_build = yes
 					}
 					set_state_flag = ENG_limited_rearmament_focus_2IC

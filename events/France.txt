@@ -608,9 +608,9 @@ country_event = {
 			set_capital = 26
 			add_ideas = idea_EFR_neutrality
 			hidden_effect = {
-				add_resource = { type = aluminium amount = 72 state = 52 }
+				# add_resource = { type = aluminium amount = 72 state = 52 }
 				# add_resource = { type = aluminium amount = -72 state = 20 }
-				add_resource = { type = steel amount = 56 state = 158 }
+				# add_resource = { type = steel amount = 56 state = 158 }
 				# add_resource = { type = steel amount = -56 state = 32 }
 			}
 			diplomatic_relation = { country = ENG relation = non_aggression_pact }

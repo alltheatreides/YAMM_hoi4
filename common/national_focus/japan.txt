@@ -1993,6 +1993,11 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = steel_refinery
+					level = 1
+					instant_build = yes
+				}
 				set_state_flag = JAP_industrial_effort_focus2_1IC
 			}
 			random_owned_controlled_state = {

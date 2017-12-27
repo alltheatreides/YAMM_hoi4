@@ -8,7 +8,7 @@ state={
 	
 	resources={
 		# aluminium=20
-		bauxite=911
+		bauxite=386
 		coal=11
 	}
 

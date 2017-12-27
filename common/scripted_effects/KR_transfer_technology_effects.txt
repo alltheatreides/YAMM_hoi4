@@ -2683,38 +2683,38 @@ transfer_technology = {
 			}
 		}
 
-		if = {
-			limit = {
-				PREV = {
-					has_tech = volkssturm
-				}
-			}
-			set_technology = {
-				volkssturm = 1
-			}
-		}
+		# if = {
+			# limit = {
+				# PREV = {
+					# has_tech = volkssturm
+				# }
+			# }
+			# set_technology = {
+				# volkssturm = 1
+			# }
+		# }
 
-		if = {
-			limit = {
-				PREV = {
-					has_tech = nd_conscription
-				}
-			}
-			set_technology = {
-				nd_conscription = 1
-			}
-		}
+		# if = {
+			# limit = {
+				# PREV = {
+					# has_tech = nd_conscription
+				# }
+			# }
+			# set_technology = {
+				# nd_conscription = 1
+			# }
+		# }
 
-		if = {
-			limit = {
-				PREV = {
-					has_tech = werwolf_guerillas
-				}
-			}
-			set_technology = {
-				werwolf_guerillas = 1
-			}
-		}
+		# if = {
+			# limit = {
+				# PREV = {
+					# has_tech = werwolf_guerillas
+				# }
+			# }
+			# set_technology = {
+				# werwolf_guerillas = 1
+			# }
+		# }
 
 		if = {
 			limit = {

@@ -332,7 +332,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.5
+				army_org_factor = -0.25
 				experience_gain_factor = -0.5
 			}
 		}
@@ -356,7 +356,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.5
+				army_org_factor = -0.25
 				experience_gain_factor = -0.5
 			}
 		}
@@ -380,7 +380,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.5
+				army_org_factor = -0.25
 				experience_gain_factor = -0.5
 			}
 		}
@@ -404,7 +404,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.45
+				army_org_factor = -0.25
 				experience_gain_factor = -0.5
 			}
 		}
@@ -428,7 +428,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.45
+				army_org_factor = -0.25
 				experience_gain_factor = -0.25
 			}
 		}
@@ -452,7 +452,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.45
+				army_org_factor = -0.25
 				experience_gain_factor = -0.25
 			}
 		}
@@ -476,7 +476,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.45
+				army_org_factor = -0.25
 				experience_gain_factor = -0.25
 			}
 		}
@@ -691,6 +691,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
+				production_factory_max_efficiency_factor = 0.05
 				consumer_goods_factor = -0.05
 			}
 		}
@@ -953,7 +954,33 @@ ideas = {
 			traits = { communist_revolutionary }
 
 		}
-		
+			alexey_stakhanov = {
+			
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				has_completed_focus = SOV_positive_heroism
+			}
+			
+			traits = { hero_worker }
+			# modifier = {
+				# industrial_capacity_factory = 0.05
+			# }
+		}
+leonid_serebryakov = {
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			 available = 
+			 {
+				 NOT = { has_country_flag = purged_party_members }
+			 }
+			
+			traits = { silent_workhorse }
+		}
 		# SOV_corrupt_judge = {
 			# allowed = {
 				# original_tag = "SOV"

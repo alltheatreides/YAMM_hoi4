@@ -862,6 +862,11 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = steel_refinery
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -1744,8 +1749,8 @@ focus_tree = {
 			OR = {
 				has_idea = extensive_conscription
 				has_idea = service_by_requirement
-				has_idea = all_adults_serve
-				has_idea = scraping_the_barrel
+				# has_idea = all_adults_serve
+				# has_idea = scraping_the_barrel
 			}
 		}
 

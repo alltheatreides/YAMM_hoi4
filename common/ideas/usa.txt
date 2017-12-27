@@ -895,20 +895,20 @@ ideas = {
 			# }
 		# }
 		
-		# harold_ickes_econ = {
+		harold_ickes_econ = {
 		
-			# allowed = {
-				# original_tag = USA
-			# }
+			allowed = {
+				original_tag = USA
+			}
 				
-			# available = {
-				# has_government = democratic
-			# }
+			available = {
+				has_government = democratic
+			}
 			
-			# traits = { public_works_focus }
+			traits = { captain_of_industry }
 			
-			# cancel_if_invalid = no
-		# }
+			cancel_if_invalid = no
+		}
 		
 		dean_acheson = {
 		
@@ -1799,6 +1799,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = USA
+			}
+			available = {
+				date > 1939.1.1
 			}
 			cost = 50
 			removal_cost = 10

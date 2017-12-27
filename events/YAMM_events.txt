@@ -2296,6 +2296,8 @@ country_event = {
 	id = yamm.97
 	title = yamm.97.t
 	desc = yamm.97.desc
+	picture = GFX_report_event_fascists_posing
+	
 	
 	fire_only_once = yes
 
@@ -2308,6 +2310,10 @@ country_event = {
 	mean_time_to_happen = {
 		days = 3
 	}
+	
+	immediate = {
+		set_country_flag = fritsch_fired
+	}
 
 	option = { #Fire Fritsch
 		name = yamm.97.a
@@ -2316,9 +2322,8 @@ country_event = {
 		}
 		add_political_power = 25
 		# add_national_unity = 0.01
-		remove_ideas = werner_von_fritsch
-		add_ideas = walther_von_brauchitsch
-		set_country_flag = fritsch_fired	
+		remove_ideas = werner_von_fritsch_sc
+		add_ideas = walther_von_brauchitsch_sc
 	}
 	option = { #Keep Fritsch
 		name = yamm.97.b

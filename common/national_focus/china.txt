@@ -546,6 +546,11 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
+					add_building_construction = {
+						type = steel_refinery
+						level = 4
+						instant_build = yes
+					}
 				}
 			}
 			if = {
@@ -641,6 +646,10 @@ focus_tree = {
 				}
 			}
 			add_ideas = rear
+			hidden_effect = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = CHI }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1000 producer = CHI }
+			}
 		}
 	}
 	focus = {

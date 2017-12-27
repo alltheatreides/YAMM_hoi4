@@ -46,7 +46,7 @@
  nuffield:0 "Nuffield"
  vauxhall_motors:0 "Vauxhall Motors"
  #French tank designers
- somua:0 "SOMUA"
+ somua_tank:0 "SOMUA"
  #Japanese tank designers
  mitsubishi_tank:0 "Mitsubishi"
  army_technical_bureau:0 "Army Technical Bureau"

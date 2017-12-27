@@ -1476,7 +1476,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = industrial_complex
-						size < 2
+						size < 3
 						include_locked = yes
 					}
 				}
@@ -1484,10 +1484,15 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = industrial_complex
 				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = small_steel_refinery
+				level = 1
 				instant_build = yes
 			}
 		}

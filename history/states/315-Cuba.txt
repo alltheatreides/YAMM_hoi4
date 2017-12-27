@@ -5,9 +5,9 @@ state= {
 	resources={
 		# steel=4
 		chromium=160
-		iron=55
+		iron=10
 		bauxite=8
-		coal=144
+		# coal=144
 	}
 	
 	state_category = town
