@@ -271,6 +271,15 @@ add_ideas = {
 	
 	# women_auxillary
 	# GER_airforce
+	
+	#ECO
+	gdp_4
+	debt_20
+	medium_corruption
+	police_03
+	reserves_20
+	edu_04
+	bud_neg_24
 }
 
 create_country_leader = {

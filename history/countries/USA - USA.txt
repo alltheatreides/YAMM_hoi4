@@ -221,6 +221,10 @@ add_ideas = {
 	# oscar_westover
 	william_leahy_sc
 	roosevelt_hos
+	
+	#ECO
+	gdp_6
+	depression
 }
 
 

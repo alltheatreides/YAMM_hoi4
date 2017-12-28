@@ -188,6 +188,9 @@ add_ideas = {
 		maurice_gamelin
 		philippe_fequant
 		gamelin_sc
+		
+	#ECO
+	gdp_3
 }
 
 #give_guarantee = CZE

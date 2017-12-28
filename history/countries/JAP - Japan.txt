@@ -21,6 +21,9 @@ add_ideas = {
 	# hata_air
 	fushimi_hiroyasu
 	kanin_kotohito
+	
+	#ECO
+	gdp_2
 }
 
 set_technology = {

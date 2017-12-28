@@ -12,7 +12,29 @@ idea_categories = {
 		cost = 0
 		removal_cost = -1
 	}
+	national_status = {
+		slot = gdp_capita
+		slot = economic_cycles
+		slot = debt
+		slot = corruption
+		# slot = internal_factions
+		# slot = internal_factions
+		# slot = internal_factions
+		removal_cost = -1
+	}
 	
+	government_budget = {
+		slot = Budget_Balance
+		slot = bureaucracy
+		# slot = Military_Spending
+		slot = economy
+		slot = crime_fighting
+		slot = education_budget
+		# slot = health_budget
+		slot = social_budget
+		cost = 150
+		removal_cost = 0
+	}
 	government = {
 		slot = mobilization_laws
 		# slot = age_laws
@@ -22,7 +44,7 @@ idea_categories = {
 		# slot = role_of_women_laws
 		# slot = officer_training_standards
 		slot = trade_laws
-		slot = economy
+		
 		cost = 150
 		removal_cost = 0
 	}

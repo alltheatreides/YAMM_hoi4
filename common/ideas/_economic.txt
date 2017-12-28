@@ -11,9 +11,8 @@ ideas = {
 			removal_cost = -1
 		
 			modifier = {
-				consumer_goods_factor = 0.40
-				production_speed_industrial_complex_factor = -0.5
-				production_speed_arms_factory_factor = -0.5
+				# production_speed_industrial_complex_factor = -0.5
+				# production_speed_arms_factory_factor = -0.5
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
 				generate_wargoal_tension = 1.00
@@ -42,9 +41,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.35
-				production_speed_industrial_complex_factor = -0.4
-				production_speed_arms_factory_factor = -0.4
+				# production_speed_industrial_complex_factor = -0.4
+				# production_speed_arms_factory_factor = -0.4
 				conversion_cost_civ_to_mil_factor= 0.4
 				conversion_cost_mil_to_civ_factor = 0.4
 				generate_wargoal_tension = 1.00
@@ -68,9 +66,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.30
-				production_speed_industrial_complex_factor = -0.3
-				production_speed_arms_factory_factor = -0.4
+				consumer_goods_factor = 0.04
+				# production_speed_industrial_complex_factor = -0.3
+				# production_speed_arms_factory_factor = -0.4
 				conversion_cost_civ_to_mil_factor= 0.3
 				conversion_cost_mil_to_civ_factor = 0.3
 			}
@@ -103,10 +101,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.25
-
-				production_speed_industrial_complex_factor = -0.1
-				production_speed_arms_factory_factor = -0.2
+				consumer_goods_factor = 0.09
+				# production_speed_industrial_complex_factor = -0.1
+				# production_speed_arms_factory_factor = -0.2
 			}
 			
 			cancel_if_invalid = no
@@ -148,8 +145,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.20
-				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = 0.12
+				# production_speed_arms_factory_factor = 0.1
 				conversion_cost_civ_to_mil_factor= -0.1
 				conversion_cost_mil_to_civ_factor = -0.1
 			}
@@ -200,8 +197,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.15
-				production_speed_arms_factory_factor = 0.2
+				consumer_goods_factor = 0.16
+				# production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
 				conversion_cost_mil_to_civ_factor = -0.2
 			}
@@ -271,9 +268,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.20
 				conscription = -0.06
-				production_speed_arms_factory_factor = 0.3
+				# production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
 			}

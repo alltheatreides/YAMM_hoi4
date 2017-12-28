@@ -254,6 +254,11 @@ add_ideas = {
 		nikolay_kuznetsov
 		# aleksandr_loktionov
 		# women_auxillary
+		
+	#ECO
+	forced_industrialization
+	gdp_2
+	bureau_05
 }
 
 create_country_leader = {

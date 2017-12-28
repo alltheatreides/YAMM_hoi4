@@ -68,6 +68,9 @@ add_ideas = {
 	ernle_chatfield
 	edward_ellington
 	# ENG_airforce
+	
+	#ECO
+	gdp_6
 }
 
 give_guarantee = HOL
