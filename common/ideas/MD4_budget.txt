@@ -530,7 +530,7 @@ ideas = {
 				unity_factor = 0.01
 				foreign_subversive_activites = -0.15
 				decryption = 1
-				planning_speed = 0.10
+				# planning_speed = 0.10
 			}
 			
 			cancel_if_invalid = no
@@ -553,7 +553,7 @@ ideas = {
 				foreign_subversive_activites = -0.35
 				decryption = 1
 				encryption = 1
-				planning_speed = 0.15
+				# planning_speed = 0.15
 			}
 			
 			cancel_if_invalid = no
@@ -576,7 +576,7 @@ ideas = {
 				foreign_subversive_activites = -0.50
 				decryption = 2
 				encryption = 1
-				planning_speed = 0.20
+				# planning_speed = 0.20
 			}
 			
 			cancel_if_invalid = no
@@ -599,7 +599,7 @@ ideas = {
 				foreign_subversive_activites = -0.90
 				decryption = 2
 				encryption = 2
-				planning_speed = 0.20
+				# planning_speed = 0.20
 			}
 			
 			cancel_if_invalid = no

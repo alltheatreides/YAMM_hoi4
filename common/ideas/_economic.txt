@@ -68,7 +68,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.04
 				# production_speed_industrial_complex_factor = -0.3
-				# production_speed_arms_factory_factor = -0.4
+				production_speed_arms_factory_factor = -0.4
 				conversion_cost_civ_to_mil_factor= 0.3
 				conversion_cost_mil_to_civ_factor = 0.3
 			}
@@ -102,8 +102,9 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.09
+				production_speed_arms_factory_factor = 0.05
 				# production_speed_industrial_complex_factor = -0.1
-				# production_speed_arms_factory_factor = -0.2
+				production_speed_arms_factory_factor = -0.2
 			}
 			
 			cancel_if_invalid = no
@@ -146,7 +147,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.12
-				# production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
 				conversion_cost_civ_to_mil_factor= -0.1
 				conversion_cost_mil_to_civ_factor = -0.1
 			}
@@ -198,7 +199,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.16
-				# production_speed_arms_factory_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
 				conversion_cost_mil_to_civ_factor = -0.2
 			}
@@ -270,7 +271,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.20
 				conscription = -0.06
-				# production_speed_arms_factory_factor = 0.3
+				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
 			}
