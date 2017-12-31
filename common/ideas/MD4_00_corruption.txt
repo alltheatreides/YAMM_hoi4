@@ -110,7 +110,7 @@ ideas = {
 				}
 			}
 			
-			default = yes #Most countries are around this
+			
 			
 			on_add = {
 				custom_effect_tooltip = law_enforcement_TT
@@ -271,6 +271,8 @@ ideas = {
 				industrial_capacity_factory = -0.10 		#Decreases equipment prod efficiency
 				research_time_factor = 0.10 				#Research is more inefficient
 			}
+			
+			default = yes #Most countries are around this
 			
 			cancel_if_invalid = no
 		}

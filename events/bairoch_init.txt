@@ -1,0 +1,82 @@
+﻿add_namespace = init
+
+#PUT ANY EFFECTS YOU WANT TO HAPPEN ON INIT, in init.1 not init.0
+#For whatever reason, anything outside of triggering an event doesn't actually work in init.0
+#USE INIT.1
+country_event = {
+	id = init.0
+	title = init.0.t
+	desc = init.0.d
+	
+	#major = yes
+	hidden = yes
+	#fire_only_once = yes
+	is_triggered_only = yes
+	
+	immediate  = {
+		country_event = {id = init.1} #Initial Pop up at the start of the game
+		###DON't PUT ANY OTHER EFFECTS HERE###
+	}
+	option = {
+		name = init.0.a
+	}
+	
+	
+}
+
+#Creates the pop up at the start of the game that explains things
+country_event = {
+	id = init.1
+	title = init.1.t
+	
+	hidden = yes
+	
+	
+	is_triggered_only = yes
+	
+	
+	immediate  = {
+		hidden_effect = {
+			#Executes PP & NU system just incase they don't click both option A & B
+			set_country_flag = { flag = debt_counting value = 25 }
+			country_event = { id = debt_count.1 days = 75 }
+			country_event = { id = state_update.2 } #states debuff 			
+		}
+	}
+	
+	option = {
+		name = init.1.e
+	}
+	
+	
+}
+
+#This is only fired for newly countries created mid game e.g released nations. There is no reason to trigger this for every country
+country_event = {
+	id = init.2
+	title = init.2.t
+	desc = init.2.d
+	
+	hidden = yes
+	#fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate  = {
+		set_pp_gain = yes
+		set_NU_gain = yes	
+		
+		
+		
+		set_country_flag = { flag = debt_counting value = 25 }
+		country_event = { id = debt_count.1 days = 75 }
+		country_event = { id = state_update.2 } #states debuff 
+		
+	}
+	option = {
+		name = init.2.a
+		#this = {gearz_test = yes}
+	}
+	
+	
+}

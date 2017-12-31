@@ -15,35 +15,30 @@ idea_categories = {
 	national_status = {
 		slot = gdp_capita
 		slot = economic_cycles
+		slot = employment
+		slot = inflation
 		slot = debt
-		slot = corruption
-		# slot = internal_factions
-		# slot = internal_factions
-		# slot = internal_factions
+		slot = trade_laws
 		removal_cost = -1
 	}
 	
 	government_budget = {
+		slot = monetary_policy
 		slot = Budget_Balance
 		slot = bureaucracy
-		# slot = Military_Spending
 		slot = economy
-		slot = crime_fighting
-		slot = education_budget
-		# slot = health_budget
 		slot = social_budget
+		slot = tariffs
+		slot = export_quota
+		
 		cost = 150
 		removal_cost = 0
 	}
 	government = {
 		slot = mobilization_laws
-		# slot = age_laws
 		slot = recruitment_standard_laws
 		slot = minimum_age_laws
 		slot = maximum_age_laws
-		# slot = role_of_women_laws
-		# slot = officer_training_standards
-		slot = trade_laws
 		
 		cost = 150
 		removal_cost = 0

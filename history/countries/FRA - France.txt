@@ -175,7 +175,7 @@ add_ideas = {
 	FRA_victors_of_wwi
 	FRA_disjointed_government
 	FRA_protected_by_the_maginot_line
-	limited_conscription
+	# limited_conscription
 	incompetent_aircraft_industry
 	extensive_conscription
 	#politicians
@@ -190,7 +190,19 @@ add_ideas = {
 		gamelin_sc
 		
 	#ECO
-	gdp_3
+	gdp_4
+	stable_growth
+	employment_4
+	inflation_3
+	reserves_100
+	# export_focus
+	
+	monetary_policy_3
+	# bud_neg_24
+	bureau_03
+	# partial_economic_mobilisation
+	social_04
+	export_quota_1
 }
 
 #give_guarantee = CZE

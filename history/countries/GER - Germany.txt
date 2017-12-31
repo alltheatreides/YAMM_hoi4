@@ -265,21 +265,27 @@ add_ideas = {
 	raeder
 	
 	#Laws
-	limited_exports
+	
 	limited_conscription
-	partial_economic_mobilisation
+	
 	
 	# women_auxillary
 	# GER_airforce
 	
 	#ECO
 	gdp_4
-	debt_20
-	medium_corruption
-	police_03
+	stable_growth
+	employment_3
+	inflation_3
 	reserves_20
-	edu_04
+	limited_exports
+	
+	monetary_policy_3
 	bud_neg_24
+	bureau_03
+	partial_economic_mobilisation
+	social_04
+	# export_quota_1
 }
 
 create_country_leader = {

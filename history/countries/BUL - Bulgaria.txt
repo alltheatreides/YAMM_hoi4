@@ -8,10 +8,24 @@ add_ideas = {
 	limited_conscription
 	BUL_imro
 	BUL_second_national_catastrophe
-	BUL_great_depression
+	# BUL_great_depression
 	BUL_revisionism
 	BUL_bulgarian_tsardom
 	BUL_boris_iii_hos
+	
+	#ECO
+	gdp_1
+	recession
+	employment_2
+	inflation_3
+	# reserves_20
+	limited_exports
+	
+	monetary_policy_1
+	# bud_neg_24
+	bureau_01
+	# partial_economic_mobilisation
+	# social_04
 }
 
 set_technology = {

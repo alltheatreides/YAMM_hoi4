@@ -286,11 +286,11 @@ ideas = {
 		free_trade = {
 			
 			
-			cost = 150
+			cost = -1
 			removal_cost = -1
 			
 			modifier = {
-				min_export = 0.8
+				# min_export = 0.8
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
@@ -303,11 +303,11 @@ ideas = {
 		export_focus = {
 			
 			
-			cost = 150
+			cost = -1
 			removal_cost = -1
 			
 			modifier = {
-				min_export = 0.5
+				# min_export = 0.5
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 				production_speed_buildings_factor = 0.1
@@ -353,11 +353,11 @@ ideas = {
 				}
 			}
 		
-			cost = 150
+			cost = -1
 			removal_cost = -1
 			
 			modifier = {
-				min_export = 0.25
+				# min_export = 0.25
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				production_speed_buildings_factor = 0.05
@@ -406,12 +406,12 @@ ideas = {
 				}
 			}
 			
-			cost = 150
+			cost = -1
 			removal_cost = -1
 			
 			
 			modifier = {
-				min_export = 0
+				# min_export = 0
 			}
 			
 			on_add = {

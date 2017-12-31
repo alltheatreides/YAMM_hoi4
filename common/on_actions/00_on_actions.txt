@@ -671,6 +671,14 @@ on_actions = {
 				country_event = spain.12
 			}
 		}
+		effect = {
+			every_country = {
+				country_event = { id = init.0 }
+			}
+			random_country = {
+				country_event = { id = init_relations.0 }
+			}
+		}
 	}
 #ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {

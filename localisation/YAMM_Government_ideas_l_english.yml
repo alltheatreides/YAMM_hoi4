@@ -3,7 +3,7 @@
  limited_conscription:0 "One Year Draft"
  extensive_conscription:0 "Two Year Draft"
  service_by_requirement:0 "Expanded Draft"
- government:1 "Laws"
+ government:1 "Conscription Laws"
  minimum_age_laws:0 "Recruitement Minimum Age"
  age_20:0 "20 years old"
  age_21:0 "21 years old"

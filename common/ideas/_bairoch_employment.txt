@@ -1,0 +1,75 @@
+ideas = {
+
+	employment = {
+		law = yes
+		
+		#Highest unemployment ~20%
+		employment_1 = {
+			
+			cost = -1 removal_cost = -1
+		
+			modifier = {
+				political_power_cost = 1
+				consumer_goods_factor = 0.3
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		# 15% Unemployment
+		employment_2 = {
+			
+			cost = -1 removal_cost = -1
+		
+			modifier = {
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		# "Natural rate" of unemployment of around 10%
+		employment_3 = {
+			
+			cost = -1 removal_cost = -1
+		
+			modifier = {
+				political_power_cost = 0.1
+				consumer_goods_factor = 0.03
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		# 5% unemployment
+		employment_4 = {
+			
+			cost = -1 removal_cost = -1
+		
+			modifier = {
+				political_power_cost = 0.05
+				consumer_goods_factor = -0.02
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		#Lowest unemployment ~2%
+		employment_5 = {
+			
+			cost = -1 removal_cost = -1
+		
+			modifier = {
+				political_power_cost = 0.15
+				consumer_goods_factor = -0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		
+	}
+}

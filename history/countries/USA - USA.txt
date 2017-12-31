@@ -225,6 +225,7 @@ add_ideas = {
 	#ECO
 	gdp_6
 	depression
+	employment_1
 }
 
 

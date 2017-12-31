@@ -1,0 +1,117 @@
+spriteTypes = {   
+
+   ### Must have _idea_ written in the name to work.
+   
+   
+	#Employment
+    spriteType = {
+		name = "GFX_idea_employment_1"
+		textureFile = "gfx/interface/ideas/employment/employment_1.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_employment_2"
+		textureFile = "gfx/interface/ideas/employment/employment_2.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_employment_3"
+		textureFile = "gfx/interface/ideas/employment/employment_3.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_employment_4"
+		textureFile = "gfx/interface/ideas/employment/employment_4.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_employment_5"
+		textureFile = "gfx/interface/ideas/employment/employment_5.dds"		
+	}
+	
+	
+	#inflation
+    spriteType = {
+		name = "GFX_idea_inflation_1"
+		textureFile = "gfx/interface/ideas/inflation/inflation_1.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_inflation_2"
+		textureFile = "gfx/interface/ideas/inflation/inflation_2.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_inflation_3"
+		textureFile = "gfx/interface/ideas/inflation/inflation_3.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_inflation_4"
+		textureFile = "gfx/interface/ideas/inflation/inflation_4.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_inflation_5"
+		textureFile = "gfx/interface/ideas/inflation/inflation_5.dds"		
+	}
+	
+	#export_quota
+    spriteType = {
+		name = "GFX_idea_export_quota_1"
+		textureFile = "gfx/interface/ideas/export_quota/export_quota_1.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_export_quota_2"
+		textureFile = "gfx/interface/ideas/export_quota/export_quota_2.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_export_quota_3"
+		textureFile = "gfx/interface/ideas/export_quota/export_quota_3.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_export_quota_4"
+		textureFile = "gfx/interface/ideas/export_quota/export_quota_4.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_export_quota_5"
+		textureFile = "gfx/interface/ideas/export_quota/export_quota_5.dds"		
+	}
+	
+	#tariffs
+    spriteType = {
+		name = "GFX_idea_tariffs_1"
+		textureFile = "gfx/interface/ideas/tariffs/tariffs_1.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_tariffs_2"
+		textureFile = "gfx/interface/ideas/tariffs/tariffs_2.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_tariffs_3"
+		textureFile = "gfx/interface/ideas/tariffs/tariffs_3.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_tariffs_4"
+		textureFile = "gfx/interface/ideas/tariffs/tariffs_4.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_tariffs_5"
+		textureFile = "gfx/interface/ideas/tariffs/tariffs_5.dds"		
+	}
+	
+	#monetary_policy
+    spriteType = {
+		name = "GFX_idea_monetary_policy_1"
+		textureFile = "gfx/interface/ideas/monetary_policy/monetary_policy_1.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_monetary_policy_2"
+		textureFile = "gfx/interface/ideas/monetary_policy/monetary_policy_2.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_monetary_policy_3"
+		textureFile = "gfx/interface/ideas/monetary_policy/monetary_policy_3.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_monetary_policy_4"
+		textureFile = "gfx/interface/ideas/monetary_policy/monetary_policy_4.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_monetary_policy_5"
+		textureFile = "gfx/interface/ideas/monetary_policy/monetary_policy_5.dds"		
+	}
+	
+}

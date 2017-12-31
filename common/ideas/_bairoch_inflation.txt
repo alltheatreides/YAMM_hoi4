@@ -1,0 +1,76 @@
+ideas = {
+
+	#Affected by monetary policies
+	inflation = {
+		law = yes
+		
+		# Deflation
+		inflation_1 = {
+			
+			cost = -1 removal_cost = -1
+		
+			modifier = {
+				political_power_gain = -0.15
+				consumer_goods_factor = -0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		#
+		inflation_2 = {
+			
+			cost = -1 removal_cost = -1
+		
+			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = -0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		#
+		inflation_3 = {
+			
+			cost = -1 removal_cost = -1
+		
+			modifier = {
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.05
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		#
+		inflation_4 = {
+			
+			cost = -1 removal_cost = -1
+		
+			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		# Hyperinflation
+		inflation_5 = {
+			
+			cost = -1 removal_cost = -1
+		
+			modifier = {
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.3
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		
+	}
+}
