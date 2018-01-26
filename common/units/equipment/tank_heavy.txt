@@ -41,6 +41,7 @@ equipments = {
 		
 		build_cost_ic = 50 
 		resources = {
+			oil = 1
 			steel = 3
 			chromium = 3
 			iron = 1
@@ -84,6 +85,7 @@ equipments = {
 		
 		build_cost_ic = 54 
 		resources = {
+			oil = 1
 			steel = 3
 			chromium = 3
 			iron = 1
@@ -116,6 +118,7 @@ equipments = {
 		
 		build_cost_ic = 60
 		resources = {
+			oil = 1
 			steel = 4
 			chromium = 3
 			iron = 2
@@ -164,6 +167,7 @@ equipments = {
 		
 		build_cost_ic = 50
 		resources = {
+			oil = 1
 			steel = 3
 			chromium = 3
 			iron = 1
@@ -211,6 +215,7 @@ equipments = {
 		
 		build_cost_ic = 54
 		resources = {
+			oil = 1
 			steel = 4
 			chromium = 3
 			iron = 2
@@ -245,6 +250,7 @@ equipments = {
 		
 		build_cost_ic = 60
 		resources = {
+			oil = 1
 			steel = 5
 			chromium = 3
 			iron = 2
@@ -293,6 +299,7 @@ equipments = {
 		
 		build_cost_ic = 50
 		resources = {
+			oil = 1
 			steel = 3
 			chromium = 3
 			iron = 2
@@ -341,6 +348,7 @@ equipments = {
 		
 		build_cost_ic = 54
 		resources = {
+			oil = 1
 			steel = 4
 			chromium = 3
 			iron = 2
@@ -377,6 +385,7 @@ equipments = {
 		
 		build_cost_ic = 60
 		resources = {
+			oil = 2
 			steel = 4
 			chromium = 4
 			iron = 2
@@ -425,6 +434,7 @@ equipments = {
 		
 		build_cost_ic = 50
 		resources = {
+			oil = 1
 			steel = 3
 			chromium = 3
 			iron = 1
@@ -474,6 +484,7 @@ equipments = {
 		
 		build_cost_ic = 54
 		resources = {
+			oil = 1
 			steel = 3
 			chromium = 3
 			iron = 1
@@ -512,6 +523,7 @@ equipments = {
 		
 		build_cost_ic = 60
 		resources = {
+			oil = 1
 			steel = 4
 			chromium = 3
 			iron = 2
