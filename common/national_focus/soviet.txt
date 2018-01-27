@@ -1805,7 +1805,10 @@ focus_tree = {
 				date < 1939.1.1
 			}	
 		}
-
+		available = {
+			date > 1945.1.1
+		}
+		
 		bypass = {
 			OR = {
 				has_idea = SOV_molotov_ribbentrop_pact
