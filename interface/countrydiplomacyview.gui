@@ -403,16 +403,16 @@ guiTypes = {
 				}
 			}
 			
-			containerWindowType = {
-				name = "trade_info"
-				position = { x = 272 y = 347 }
-				size = { width = 263 height = 84 }
-				verticalScrollbar = "right_vertical_slider"
+			# containerWindowType = {
+				# name = "trade_info"
+				# position = { x = 272 y = 347 }
+				# size = { width = 263 height = 84 }
+				# verticalScrollbar = "right_vertical_slider"
 				
-				background = {
-					name = "Background"
-					spriteType ="GFX_tiled_plain_bg"
-				}
+				# background = {
+					# name = "Background"
+					# spriteType ="GFX_tiled_plain_bg"
+				# }
 
 #				iconType = {
 #					name = "diplo_details_header"
@@ -420,15 +420,15 @@ guiTypes = {
 #					position = { x = 13 y = 1 }
 #				}
 				
-				gridboxtype = {
-					name = "trade_grid"
-					position = { x = 10 y = 5 }
-					size = { width = 255 height = 100%% }
-					slotsize = { width = 30 height = 76 }
-					max_slots = { x = 9s y = 1 }
-					format = "UPPER_LEFT"
-				}
-			}
+				# gridboxtype = {
+					# name = "trade_grid"
+					# position = { x = 10 y = 5 }
+					# size = { width = 255 height = 100%% }
+					# slotsize = { width = 30 height = 76 }
+					# max_slots = { x = 9s y = 1 }
+					# format = "UPPER_LEFT"
+				# }
+			# }
 			
 			containerWindowType = {
 				name = "estimated_enemy_force_info"
