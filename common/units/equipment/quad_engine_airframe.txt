@@ -28,7 +28,7 @@ equipments = {
 		reliability = 0.8
 
 		# Air vs Navy - high damage / low hit chance / hard to hurt
-		naval_strike_attack = 1.5
+		naval_strike_attack = 2.5
 		naval_strike_targetting = 0.6
 
 		#Space taken in convoy
@@ -100,7 +100,7 @@ equipments = {
 		air_defence = 30
 		air_bombing = 15
 		
-		# build_cost_ic = 36
+		# build_cost_ic = 56
 	}
 
 	# Improved strat_bomber
@@ -144,7 +144,7 @@ equipments = {
 		build_cost_ic = 64
 		resources = {
 			oil = 1
-			aluminium = 5
+			aluminium = 5 bauxite = 2
 			bauxite = 2
 			rubber = 2
 		}

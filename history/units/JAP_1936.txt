@@ -927,7 +927,7 @@ units = {
 			air_wings = { 
 				cv_fighter_equipment_0 =  { owner = "JAP" amount = 12 } # historical 16
 				cv_CAS_equipment_1 = { owner = "JAP" amount = 12 } # historical 16
-				cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 21 } # historical 28
+				nav_bomber_equipment_1 =  { owner = "JAP" amount = 21 } # historical 28
 			}
 		}
 	}
@@ -983,7 +983,7 @@ units = {
 			air_wings = { 
 				cv_fighter_equipment_0 =  { owner = "JAP" amount = 9 } 	# historical 12
 				cv_CAS_equipment_1 = { owner = "JAP" amount = 12 } 			# historical 18
-				cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 24 } 	# historical 36
+				nav_bomber_equipment_1 =  { owner = "JAP" amount = 24 } 	# historical 36
 			}
 		}	
 		ship = { name = "Natori" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class"} } }
@@ -1177,7 +1177,7 @@ air_wings = {
 			amount = 72
 		}
 		# 13 Kokutai -- Mitsubishi B2M2
-		cv_nav_bomber_equipment_1 = {
+		nav_bomber_equipment_1 = {
 			owner = "JAP" 
 			amount = 48
 		}
@@ -1193,7 +1193,7 @@ air_wings = {
 			owner = "JAP" 
 			amount = 9
 		}
-		cv_nav_bomber_equipment_1 =  {
+		nav_bomber_equipment_1 =  {
 			owner = "JAP" 
 			amount = 9
 		}
@@ -1259,7 +1259,7 @@ instant_effect =
 
 	add_equipment_production = {
 		equipment = {
-			type = cv_nav_bomber_equipment_1
+			type = nav_bomber_equipment_1
 			creator = "JAP" 
 		}
 		requested_factories = 1

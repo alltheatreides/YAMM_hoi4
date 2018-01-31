@@ -5,6 +5,9 @@ technology_categories = {
 	light_air
 	medium_air
 	heavy_air
+	maritime
+	fighter_bomber
+	hfighter_bomber
 	armor
 	cat_light_armor
 	cat_medium_armor

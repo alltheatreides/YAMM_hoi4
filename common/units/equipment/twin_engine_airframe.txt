@@ -162,7 +162,7 @@ equipments = {
 		
 		air_range = 2400
 		maximum_speed = 430
-		air_agility =20
+		air_agility = 20
 		air_attack = 8
 		air_defence = 18
 		air_bombing = 9
@@ -175,7 +175,7 @@ equipments = {
 			rubber = 1
 		}
 		naval_strike_attack = 8
-		naval_strike_targetting = 6
+		naval_strike_targetting = 5
 	}
 
 	# Improved tac_bomber
@@ -188,7 +188,7 @@ equipments = {
 		
 		air_range = 2500
 		maximum_speed = 440
-		air_agility =25
+		air_agility = 25
 		air_attack = 13
 		air_defence = 21
 		air_bombing = 11
@@ -200,8 +200,8 @@ equipments = {
 			aluminium = 4 bauxite = 2
 			rubber = 1
 		}
-		naval_strike_attack = 12
-		naval_strike_targetting = 6
+		naval_strike_attack = 10
+		naval_strike_targetting = 5
 	}
 
 	# Advanced tac_bomber
@@ -226,8 +226,8 @@ equipments = {
 			aluminium = 5
 			rubber = 1
 		}
-		naval_strike_attack = 15
-		naval_strike_targetting = 6
+		naval_strike_attack = 12
+		naval_strike_targetting = 5
 	}
 	
 	# Basic Jet tac_bomber
@@ -244,6 +244,8 @@ equipments = {
 		air_defence = 24
 		air_bombing = 12
 		air_ground_attack = 15
+        naval_strike_attack = 20
+		naval_strike_targetting = 10
 		
 		# build_cost_ic = 26
 	}
@@ -263,6 +265,8 @@ equipments = {
 		air_defence = 28
 		air_bombing = 15
 		air_ground_attack = 20
+        naval_strike_attack = 25
+		naval_strike_targetting = 10
 		
 		build_cost_ic = 48
 		resources = {
@@ -313,7 +317,7 @@ equipments = {
 			rubber = 1
 		}
 		naval_strike_attack = 6
-		naval_strike_targetting = 10
+		naval_strike_targetting = 6
 	}
 	
 	heavy_fighter_equipment_3 = {

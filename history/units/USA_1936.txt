@@ -430,7 +430,7 @@ units = {
 
 	### U.S. Army Forces in the Far East ###		
 	division = {										
-		name = "Philippine Division"			
+		name = "Phillippine Division"			
 		location = 10265
 		division_template = "Infantry Division"			# older equipment, less training than NG division
 		start_experience_factor = 0.2
@@ -473,14 +473,14 @@ units = {
 			air_wings = {
 				cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 16
 				cv_CAS_equipment_1 =  { owner = "USA" amount = 14 } # historical: 30
-				cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
+				nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
 			}
 		}
 		ship = { name = "USS Saratoga" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } } 
 			air_wings = {
 				cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 16
 				cv_CAS_equipment_1 =  { owner = "USA" amount = 14 } # historical: 30
-				cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
+				nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
 			}
 		}
 	}					
@@ -702,7 +702,7 @@ units = {
 			air_wings = {
 				cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 36
 				cv_CAS_equipment_1 =  { owner = "USA" amount = 14 } # historical: 15
-				cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
+				nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
 			}
 		}
 	}					
@@ -970,6 +970,10 @@ air_wings = {
 		nav_bomber_equipment_1 =  {
 			owner = "USA" 
 			amount = 72
+		}
+		flying_boat_equipment_0 = {
+		    owner = "USA"
+			amount = 3
 		}
 	}
 }
