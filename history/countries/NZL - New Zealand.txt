@@ -27,6 +27,27 @@ set_technology = {
 	tech_logistics_company = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	late_ww1_destroyer = 1 #DNM
+	protected_cruiser = 1 #DNM
+	scout_cruiser = 1 #DNM
+	ww1_light_cruiser = 1 #DNM
+	basic_light_cruiser = 1 #DNM
+	armoured_cruiser = 1 #DNM
+	advanced_armoured_cruiser = 1 #DNM
+	ww1_heavy_cruiser = 1 #DNM
+	early_heavy_cruiser = 1 #DNM
+	early_ww1_battlecruiser = 1 #DNM
+	late_ww1_battlecruiser = 1 #DNM
+	ww1_carrier = 1 #DNM
+	ww1_submarine = 1 #DNM
+	early_submarine = 1 #DNM
+	pre_dreadnought_battleship = 1 #DNM
+	dreadnought_battleship = 1 #DNM
+	advanced_dreadnought_battleship = 1 #DNM
+
 }
 
 add_ideas = George_v
@@ -142,7 +163,7 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Michael Joseph Savage"
+	name = "Michael Savage" #DNM - removed his middle name as it's a bit of a mouthful when doing [NZL.GetLeader]
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
@@ -262,13 +283,114 @@ create_navy_leader = {
 
 ### Ship Variants ###
 
+#############################################################################################
+## DNM - Remember to delete vanilla Leander                                                ##
+#############################################################################################
+
 create_equipment_variant = {
 	name = "Leander Class"
-	type = light_cruiser_1
+	type = light_cruiser_2
+	parent_version = 0
 	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_gun_upgrade = 2
+		ship_engine_upgrade = 5
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 4
+		ship_armor_upgrade = 3
+		ship_torpedo_upgrade = 3
+	}
+}
+create_equipment_variant = {
+	name = "A/B Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 5
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 2
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 9
+	}
+}
+create_equipment_variant = {
+	name = "Oberon Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		sub_stealth_upgrade = 0
+		sub_torpedo_upgrade = 10
+	}
+}
+create_equipment_variant = {
+	name = "Kent Class"
+	type = heavy_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 4
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 8
+		ship_armor_upgrade = 4
+		ship_torpedo_upgrade = 3
+	}
+}
+create_equipment_variant = {
+	name = "Renown Class"
+	type = battle_cruiser_late_ww1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 5
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 5
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 0
+	}
+}
+create_equipment_variant = {
+	name = "Queen Elizabeth Class"
+	type = battleship_adv_dn
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 8
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 5
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 5
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 6
+	}
+}
+create_equipment_variant = {
+	name = "Eagle Class"
+	type = carrier_ww1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 6
+		ship_barrels_upgrade = 7
+		ship_calibre_upgrade = 7
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 10
 		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 0
+		ship_deckspace_upgrade = 4
+		carrier_armor_upgrade = 6
 	}
 }

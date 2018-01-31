@@ -19,6 +19,11 @@ set_technology = {
 	gw_artillery = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+	basic_submarine = 1 #DNM, for Kalev subs, which are already under production.
+
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	ww1_submarine = 1 #DNM
 }
 
 set_convoys = 5
@@ -146,5 +151,22 @@ create_country_leader = {
 	ideology = despotism
 	traits = {
 		#
+	}
+}
+#########################################################################################
+# DNM Variants Start (remember to delete vanilla variants) ##############################
+#########################################################################################
+
+create_equipment_variant = {
+	name = "Kalev Class"
+	type = submarine_2
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 2
 	}
 }

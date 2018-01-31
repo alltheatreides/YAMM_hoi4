@@ -14,15 +14,22 @@ set_technology = {
 	early_fighter = 1
 	CAS1 = 1
 	early_submarine = 1
-	early_destroyer = 1
+	#early_destroyer = 1 #DNM removed
 	early_light_cruiser = 1
-	early_heavy_cruiser = 1
+	#early_heavy_cruiser = 1 #DNM removed
+
 	motorised_infantry = 1
 	support_weapons = 1
 	tech_support = 1
 	gw_artillery = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	ww1_submarine = 1 #DNM
+	protected_cruiser = 1 #DNM
+	scout_cruiser = 1 #DNM
+	ww1_light_cruiser = 1 #DNM
 }
 
 set_convoys = 15
@@ -151,4 +158,23 @@ create_country_leader = {
 			#
 		}
 	}
+}#########################################################################################
+# DNM Variants                                             ##############################
+#########################################################################################
+create_equipment_variant = {
+	name = "Phra Ruang Class"
+	type = destroyer_early_ww1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 14
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 13
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 6
+		ship_torpedo_upgrade = 6
+	}
+	obsolete = yes
 }

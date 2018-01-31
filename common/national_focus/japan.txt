@@ -1621,7 +1621,7 @@ focus_tree = {
 				name = bb_bonus
 				bonus = 0.5
 				uses = 1
-				category = shbb_tech
+				category = bb_tech #DNM - changed from shbb_tech, as shbb_tech not a thing in DNM.
 			}
 		}
 	}

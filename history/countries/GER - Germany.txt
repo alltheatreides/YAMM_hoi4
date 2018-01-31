@@ -35,8 +35,9 @@ set_technology = {
 	early_light_cruiser = 1
 	basic_light_cruiser = 1
 	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1 #DNM
 	early_battleship = 1
-	basic_battleship = 1
+	#basic_battleship = 1 #DNM removed, Bismarck not laid down until July '36.
 	early_battlecruiser = 1
 	mobile_warfare = 1
 	trade_interdiction = 1
@@ -50,9 +51,26 @@ set_technology = {
 	Auftragstaktik = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+	
+	early_carrier = 1 #DNM (Obren's suggestion)
+
+	pre_dreadnought_battleship = 1 #DNM
+	dreadnought_battleship = 1 #DNM
+	advanced_dreadnought_battleship = 1 #DNM
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	late_ww1_destroyer = 1 #DNM
+	protected_cruiser = 1 #DNM
+	scout_cruiser = 1 #DNM
+	ww1_light_cruiser = 1 #DNM
+	armoured_cruiser = 1 #DNM
+	advanced_armoured_cruiser = 1 #DNM
+	ww1_heavy_cruiser = 1 #DNM
+	early_ww1_battlecruiser = 1 #DNM
+	late_ww1_battlecruiser = 1 #DNM
+	ww1_carrier = 1 #DNM
+	ww1_submarine = 1 #DNM
 }
-
-
 
 
 
@@ -170,7 +188,6 @@ create_import = {
 		paratroopers = 1
 		basic_heavy_cruiser = 1
 		improved_heavy_cruiser = 1
-		basic_battleship = 1
 		improved_battleship = 1
 		early_carrier = 1
 		basic_carrier = 1
@@ -605,33 +622,326 @@ create_navy_leader = {
 	id = 31
 }
 
+create_navy_leader = { #DNM - Portrait by Radetzky
+	name = "Rolf Carls"
+	gfx = GFX_GER_Rolf_Carls
+	#traits = { spotter }
+	skill = 2
+}
 
 ### Ship Variants ###
 ## 1936 Start ##
-# Light Cruisers #
+###############################################################################
+## DNM variants
+###############################################################################
+create_equipment_variant = {
+	name = "Type IIA"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		sub_stealth_upgrade = 6
+		sub_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Type IIB"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		sub_stealth_upgrade = 6
+		sub_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Type IA"
+	type = submarine_2
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 5
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 6
+		sub_stealth_upgrade = 0
+		sub_torpedo_upgrade = 2
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Type VIIA"
+	type = submarine_2
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 3
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		sub_stealth_upgrade = 6
+		sub_torpedo_upgrade = 2
+	}
+}
+create_equipment_variant = {
+	name = "G192 Type"
+	type = destroyer_early_ww1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 8
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 5
+		ship_quality_upgrade = 2
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 4
+		ship_torpedo_upgrade = 5
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "G7 Type"
+	type = destroyer_early_ww1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 5
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 5
+		ship_quality_upgrade = 6
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "V180 Type"
+	type = destroyer_early_ww1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 8
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 5
+		ship_quality_upgrade = 2
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 5
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "1923 Type"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 2
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "1924 Type"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 2
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "1934 Type"
+	type = destroyer_2
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 14
+		ship_barrels_upgrade = 16
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 4
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "1934A Type"
+	type = destroyer_2
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 14
+		ship_barrels_upgrade = 16
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 4
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 3
+	}
+}
+create_equipment_variant = {
+	name = "Emden Class"
+	type = light_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 2
+		ship_barrels_upgrade = 1
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 2
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Königsberg Class"
 	type = light_cruiser_1
 	parent_version = 0
 	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_gun_upgrade = 2
-		ship_anti_air_upgrade = 2
+		ship_engine_upgrade = 8
+		ship_barrels_upgrade = 6
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 5
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_armor_upgrade = 2
+		ship_torpedo_upgrade = 19
 	}
 	obsolete = yes
 }
-# Heavy Cruisers #
+create_equipment_variant = {
+	name = "Leipzig Class"
+	type = light_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 7
+		ship_barrels_upgrade = 6
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 6
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 19
+	}
+	obsolete = yes
+}
+#Light Cruisers #
+create_equipment_variant = {
+	name = "Nürnberg Class"
+	type = light_cruiser_2
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 6
+		ship_barrels_upgrade = 7
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 10
+	}
+}
 create_equipment_variant = {
 	name = "Deutschland Class"
 	type = heavy_cruiser_1
 	parent_version = 0
 	upgrades = {
-		ship_reliability_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_armor_upgrade = 1
-		ship_gun_upgrade = 2
+		ship_engine_upgrade = 13
+		ship_barrels_upgrade = 10
+		ship_calibre_upgrade = 5
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 4
+		ship_armor_upgrade = 32
+		ship_torpedo_upgrade = 3
 	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Hipper Class"
+	type = heavy_cruiser_2
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 4
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 1
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 5
+		ship_torpedo_upgrade = 10
+	}
+}
+create_equipment_variant = {
+	name = "Scharnhorst Class"
+	type = battle_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 3
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 3
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 3
+	}
+}
+create_equipment_variant = {
+	name = "Deutschland Class"
+	type = battleship_pdn
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 4
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 0
+	}
+	obsolete = yes
 }
 
 create_equipment_variant = {
@@ -704,7 +1014,7 @@ create_equipment_variant = {
 		type = submarine_2
 		parent_version = 0
 		upgrades = {
-			ship_reliability_upgrade = 1
+			ship_quality_upgrade = 1
 			sub_engine_upgrade = 1
 			sub_stealth_upgrade = 1
 			sub_torpedo_upgrade = 1
@@ -749,10 +1059,10 @@ create_equipment_variant = {
 	#	type = heavy_cruiser_1
 	#	parent_version = 0
 	#	upgrades = {
-	#		ship_reliability_upgrade = 1
+	#		ship_quality_upgrade = 1
 	#		ship_engine_upgrade = 1
 	#		ship_armor_upgrade = 1
-	#		ship_gun_upgrade = 2
+	#		ship_barrels_upgrade = 2
 	#	}
 	#	obsolete = yes
 	#}

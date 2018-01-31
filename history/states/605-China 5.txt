@@ -20,7 +20,8 @@ state=
 		
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 3
+			industrial_complex = 4 #DNM, vanilla 3
+			arms_factory = 1 #DNM, added
 			air_base = 2
 		}
 		victory_points = { 

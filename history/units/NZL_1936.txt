@@ -90,7 +90,17 @@ units = {
 
 	}
 
-	##### No Naval OOB (receives first RN ships in 1941) #####
+######################################################################################
+## NZ Division of the Royal Navy (VBNM - Vanilla has these ships still with the UK) ##
+######################################################################################
+# DNM assumes all DLC, although we should try and make this more flexible in the future, so these ships covered by transfer event in NZ's NF tree.
+#	navy = {				
+#		name = "New Zealand Division"
+#		base = 13056
+#		location = 13056 # Fongfale	
+#		ship = { name = "HMS Achilles" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = NZL 	version_name = "Leander Class" } } }		# to RNZN 1941#	
+#		ship = { name = "HMS Leander" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = NZL 	version_name = "Leander Class" } } }		# to RNZN 1941
+#	}
 }
 
 air_wings = {

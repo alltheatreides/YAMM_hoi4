@@ -111,6 +111,13 @@ create_corps_commander = {
 	skill = 3
 }
 
+create_navy_leader = { #DNM - Portrait by Radetzky
+	name = "Karel Palava"
+	gfx = GFX_CZE_Karel_Pavala
+	#traits = { spotter }
+	skill = 2
+}
+
 if = {
 	limit = {
 		has_dlc = "Death or Dishonor"

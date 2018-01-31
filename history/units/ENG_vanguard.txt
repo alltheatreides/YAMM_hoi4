@@ -1,0 +1,13 @@
+﻿instant_effect = {
+	#Vanguard
+	add_equipment_production = {
+		equipment = {
+			type = battleship_3
+			creator = "ENG"
+			version_name="Vanguard Class"
+		}
+		requested_factories = 1
+		progress = 0.3
+		amount = 1
+	}
+}

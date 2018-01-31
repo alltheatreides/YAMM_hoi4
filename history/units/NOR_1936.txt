@@ -147,34 +147,35 @@ units = {
 		name = "1. Sjøforsvarsdistrikt"				
 		base = 9296
 		location =  9296 # Kristiansand
-		ship = { name = "HNoMS Harald Haarfagre" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = NOR } } }				
-		ship = { name = "HNoMS Tordenskjold" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = NOR } } }				
+		ship = { name = "HNoMS Harald Haarfagre" definition = heavy_cruiser equipment = { armoured_cruiser_1 = { amount = 1 owner = NOR version_name="Tordenskjold Class" } } }				
+		ship = { name = "HNoMS Tordenskjold" definition = heavy_cruiser equipment = { armoured_cruiser_1 = { amount = 1 owner = NOR version_name="Tordenskjold Class" } } }				
 		# 1st Submarine Detachment
-		ship = { name = "HNoMS A2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
-		ship = { name = "HNoMS A3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
-		ship = { name = "HNoMS A4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
+		ship = { name = "HNoMS A2" definition = submarine equipment = { submarine_ww1 = { amount = 1 owner = NOR version_name="A Class" } } }
+		ship = { name = "HNoMS A3" definition = submarine equipment = { submarine_ww1 = { amount = 1 owner = NOR version_name="A Class" } } }
+		ship = { name = "HNoMS A4" definition = submarine equipment = { submarine_ww1 = { amount = 1 owner = NOR version_name="A Class" } } }
 		# 2nd Submarine Detachment
-		ship = { name = "HNoMS B2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
-		ship = { name = "HNoMS B4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
-		ship = { name = "HNoMS B5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
+		ship = { name = "HNoMS B2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR version_name="B Class" } } }
+		ship = { name = "HNoMS B4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR version_name="B Class" } } }
+		ship = { name = "HNoMS B5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR version_name="B Class" } } }
 	}					
 	navy = {					
 		name = "2. Sjøforsvarsdistrikt"				
 		base = 122
 		location =  122 # Bergen
-		ship = { name = "HNoMS Draug" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NOR } } }
-		ship = { name = "HNoMS Troll" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NOR } } }
-		ship = { name = "HNoMS Garm" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NOR } } }
+		ship = { name = "HNoMS B6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR version_name="B Class" } } }
+		ship = { name = "HNoMS Draug" definition = destroyer equipment = { destroyer_tb = { amount = 1 owner = NOR version_name="Draug Class" } } }
+		ship = { name = "HNoMS Troll" definition = destroyer equipment = { destroyer_tb = { amount = 1 owner = NOR version_name="Draug Class" } } }
+		ship = { name = "HNoMS Garm" definition = destroyer equipment = { destroyer_tb = { amount = 1 owner = NOR version_name="Draug Class" } } }
 	}					
 	navy = {					
 		name = "3. Sjøforsvarsdistrikt"				
 		base = 11050
 		location =  11050 # Tromso
-		ship = { name = "HNoMS Eidsvold" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = NOR } } }				
-		ship = { name = "HNoMS Norge" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = NOR } } }				
+		ship = { name = "HNoMS Eidsvold" definition = heavy_cruiser equipment = { armoured_cruiser_1 = { amount = 1 owner = NOR version_name="Norge Class" } } }							
+		ship = { name = "HNoMS Norge" definition = heavy_cruiser equipment = { armoured_cruiser_1 = { amount = 1 owner = NOR version_name="Norge Class" } } }			
 		# Submarine Detachment
-		ship = { name = "HNoMS B1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
-		ship = { name = "HNoMS B3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
+		ship = { name = "HNoMS B1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR version_name="B Class" } } }
+		ship = { name = "HNoMS B3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR version_name="B Class" } } }
 	}					
 
 }

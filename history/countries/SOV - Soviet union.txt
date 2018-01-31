@@ -31,7 +31,7 @@ set_technology = {
 	early_submarine = 1
 	basic_submarine = 1
 	early_destroyer = 1
-	early_light_cruiser = 1
+	#early_light_cruiser = 1 DNM removed
 	early_heavy_cruiser = 1
 	early_battleship = 1
 	early_battlecruiser = 1
@@ -44,6 +44,23 @@ set_technology = {
 	interwar_antitank = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+
+	basic_destroyer = 1 #DNM
+	pre_dreadnought_battleship = 1 #DNM
+	dreadnought_battleship = 1 #DNM
+	advanced_dreadnought_battleship = 1 #DNM
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	late_ww1_destroyer = 1 #DNM
+	protected_cruiser = 1 #DNM
+	scout_cruiser = 1 #DNM
+	ww1_light_cruiser = 1 #DNM
+	armoured_cruiser = 1 #DNM
+	advanced_armoured_cruiser = 1 #DNM
+	ww1_heavy_cruiser = 1 #DNM
+	early_ww1_battlecruiser = 1 #DNM
+	late_ww1_battlecruiser = 1 #DNM
+	ww1_submarine = 1 #DNM
 }
 
 1939.1.1 = {
@@ -635,67 +652,485 @@ create_navy_leader = {
 	skill = 2
 }
 
+create_navy_leader = { #DNM - Portrait by Radetzky
+	name = "Nikolay Egipko"
+	gfx = GFX_SOV_Nikolay_Egipko
+	#traits = { spotter }
+	skill = 2
+}
 
 ### Ship Variants ###
 
+
+
+#################################################################################################
+# DNM Classes - remember to delete all vanilla variants
+#################################################################################################
 create_equipment_variant = {
-	name = "Series I Debakrist"
-	type = submarine_1
+	name = "Bars Class"
+	type = submarine_ww1
+	parent_version = 0
 	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
+		sub_engine_upgrade = 13
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 0
 	}
 	obsolete = yes
 }
-
 create_equipment_variant = {
-	name = "Series IX Srednyaya"
-	type = submarine_2
+	name = "AG Class"
+	type = submarine_ww1
+	parent_version = 0
 	upgrades = {
-		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		sub_stealth_upgrade = 6
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "L-55 Class"
+	type = submarine_ww1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 13
+		ship_quality_upgrade = 35
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 12
+		sub_stealth_upgrade = 7
+		sub_torpedo_upgrade = 24
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Series I Dekabrist"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 10
+		sub_stealth_upgrade = 7
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Series II Leninets"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 7
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Series III Shchuka"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 7
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Series IV Pravda"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 9
+		ship_quality_upgrade = 6
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 6
+		sub_stealth_upgrade = 3
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Series V Shchuka-A"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 3
+		ship_quality_upgrade = 2
+		ship_anti_air_upgrade = 8
+		ship_range_upgrade = 6
+		sub_stealth_upgrade = 8
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Series V-bis Sterlyad"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
 		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
+		ship_quality_upgrade = 6
+		ship_anti_air_upgrade = 8
+		ship_range_upgrade = 13
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 3
 	}
+	obsolete = yes
 }
-
 create_equipment_variant = {
-	name = "Leningrad & Minsk Class"
-	type = destroyer_1
+	name = "Series V-bis-2 Saida"
+	type = submarine_1
+	parent_version = 0
 	upgrades = {
-		ship_torpedo_upgrade = 3
-		destroyer_engine_upgrade = 3
-		ship_ASW_upgrade = 3
-		ship_anti_air_upgrade = 3
+		sub_engine_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 7
+		ship_range_upgrade = 9
+		sub_stealth_upgrade = 0
+		sub_torpedo_upgrade = 3
 	}
+	obsolete = yes
 }
-
-1939.1.1 = {
-
-	create_equipment_variant = {
-		name = "Series X Shchuka"
-		type = submarine_2
+create_equipment_variant = {
+	name = "Series IX S Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 11
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 10
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Series IX-bis S Class"
+	type = submarine_1
 		upgrades = {
-			ship_reliability_upgrade = 3
-			sub_engine_upgrade = 3
-			sub_stealth_upgrade = 3
+		sub_engine_upgrade = 11
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 10
+		sub_stealth_upgrade = 4
 			sub_torpedo_upgrade = 3
 		}
-	}
-
-	create_equipment_variant = {
-		name = "Maxim Gorky Class"
-		type = heavy_cruiser_2
-		upgrades = {
-			ship_reliability_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 2
-			ship_gun_upgrade = 2
-		}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Series X Shch Class"
+	type = submarine_2
+	upgrades = {
+		sub_engine_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 4
+		sub_stealth_upgrade = 9
+		sub_torpedo_upgrade = 2
 	}
 }
+create_equipment_variant = {
+	name = "Series XI Voroshilovets"
+	type = submarine_2
+		upgrades = {
+		sub_engine_upgrade = 1
+		ship_quality_upgrade = 15
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 8
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Series XIII L Class"
+	type = submarine_2
+	upgrades = {
+		sub_engine_upgrade = 6
+		ship_quality_upgrade = 16
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 8
+		sub_stealth_upgrade = 5
+		sub_torpedo_upgrade = 8
+		}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "General Kondratenko Class"
+	type = destroyer_tb
+	upgrades = {
+		destroyer_engine_upgrade = 17
+		ship_barrels_upgrade = 20
+		ship_calibre_upgrade = 23
+		ship_gunquality_upgrade = 12
+		ship_quality_upgrade = 8
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 6
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Novik Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 11
+		ship_barrels_upgrade = 7
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 3
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 11
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Schastlivyy Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 9
+		ship_barrels_upgrade = 7
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 11
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Izyaslav Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 10
+		ship_barrels_upgrade = 11
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 4
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 11
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Orfey Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 7
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 3
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 18
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kapitan Izylmetyev Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 7
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 3
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 11
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Fidonisy Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 8
+		ship_barrels_upgrade = 7
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 4
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 18
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Leningrad Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 15
+		ship_barrels_upgrade = 16
+		ship_calibre_upgrade = 8
+		ship_gunquality_upgrade = 8
+		ship_quality_upgrade = 14
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 9
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Minsk Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 15
+		ship_barrels_upgrade = 16
+		ship_calibre_upgrade = 8
+		ship_gunquality_upgrade = 8
+		ship_quality_upgrade = 14
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 9
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Project 45 Opytnyi Class"
+	type = destroyer_2
+	upgrades = {
+		destroyer_engine_upgrade = 1
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 7
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Project 7 Gnevny Class"
+	type = destroyer_2
+	upgrades = {
+		destroyer_engine_upgrade = 6
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 6
+		ship_gunquality_upgrade = 6
+		ship_quality_upgrade = 8
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+}
+create_equipment_variant = {
+	name = "Bogatyr Class"
+	type = light_cruiser_protected
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 0
+		ship_barrels_upgrade = 9
+		ship_calibre_upgrade = 8
+		ship_gunquality_upgrade = 9
+		ship_quality_upgrade = 9
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		ship_armor_upgrade = 10
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Krasnyi Krym Class"
+	type = light_cruiser_ww1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 2
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 6
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 11
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 2
+		ship_torpedo_upgrade = 0
+	}
+}
+create_equipment_variant = {
+	name = "Krasnyi Kavkaz Class"
+	type = heavy_cruiser_ww1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 0
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 10
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 2
+		ship_torpedo_upgrade = 50
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kirov Class"
+	type = heavy_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 8
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 11
+		ship_torpedo_upgrade = 0
+	}
+}
+create_equipment_variant = {
+	name = "Marat Class"
+	type = battleship_adv_dn
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 2
+		ship_barrels_upgrade = 1
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 0
+	}
+	obsolete = yes
+}
+##################################################
+##  End DNM Variants
+##################################################
 ################ Tank Versions #######################################
 
 create_equipment_variant = {
@@ -879,3 +1314,27 @@ create_equipment_variant = {
 		# tank_armor_upgrade = 1
 	# }
 # }
+1939.1.1 = {
+
+	create_equipment_variant = {
+		name = "Series X Shchuka"
+		type = submarine_2
+		upgrades = {
+			ship_quality_upgrade = 3
+			sub_engine_upgrade = 3
+			sub_stealth_upgrade = 3
+			sub_torpedo_upgrade = 3
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Maxim Gorky Class"
+		type = heavy_cruiser_2
+		upgrades = {
+			ship_quality_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 2
+			ship_barrels_upgrade = 2
+		}
+	}
+}

@@ -23,6 +23,8 @@ state=
 		
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 1 #DNM, added
+			arms_factory = 1 #DNM, added
 
 			7191 = {
 				naval_base = 1

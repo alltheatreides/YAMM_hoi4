@@ -1213,7 +1213,7 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				technology = basic_battleship
-				technology = heavy_battleship
+#				technology = heavy_battleship #tech removed in DNM
 			}
 		}
 	}

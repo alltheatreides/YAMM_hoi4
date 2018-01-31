@@ -1129,9 +1129,9 @@ focus_tree = {
 				uses = 2
 				technology = basic_battleship
 				technology = improved_battleship
-				technology = advanced_battleship
-				technology = heavy_battleship
-				technology = heavy_battleship2
+#				technology = advanced_battleship #tech removed in DNM
+#				technology = heavy_battleship #tech removed in DNM
+#				technology = heavy_battleship2 #tech removed in DNM
 			}
 			add_tech_bonus = {
 				name = cr_bonus

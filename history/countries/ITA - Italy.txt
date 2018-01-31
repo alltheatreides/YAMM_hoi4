@@ -39,17 +39,13 @@ set_technology = {
 	strategic_bomber1 = 1
 	naval_bomber1 = 1
 	CAS1 = 1
-	flying_boat = 1
 	early_submarine = 1
-	basic_submarine = 1
 	early_destroyer = 1
 	early_light_cruiser = 1
-	basic_light_cruiser = 1
 	early_heavy_cruiser = 1
 	early_battleship = 1
 	basic_battleship = 1
-	early_battlecruiser = 1
-	early_carrier = 1
+	#early_battlecruiser = 1 #DNM removed
 	transport = 1
 	trench_warfare = 1
 	fleet_in_being = 1
@@ -60,6 +56,28 @@ set_technology = {
 	force_rotation = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+	#early_carrier = 1 #DNM In VBNM, but removed for DNM
+	basic_heavy_cruiser = 1 #DNM
+	basic_light_cruiser = 1 #DNM
+	#basic_destroyer = 1 #DNM In VBNM, but removed for DNM
+	basic_submarine = 1 #DNM
+
+	pre_dreadnought_battleship = 1 #DNM
+	dreadnought_battleship = 1 #DNM
+	advanced_dreadnought_battleship = 1 #DNM
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	late_ww1_destroyer = 1 #DNM
+	protected_cruiser = 1 #DNM
+	scout_cruiser = 1 #DNM
+	ww1_light_cruiser = 1 #DNM
+	armoured_cruiser = 1 #DNM
+	advanced_armoured_cruiser = 1 #DNM
+	ww1_heavy_cruiser = 1 #DNM
+	early_ww1_battlecruiser = 1 #DNM
+	late_ww1_battlecruiser = 1 #DNM
+	ww1_carrier = 1 #DNM
+	ww1_submarine = 1 #DNM
 }
 
 # DIPLOMACY / WAR 36
@@ -367,87 +385,789 @@ create_navy_leader = {
 }
 
 ### Ship Variants ###
-
+### Ship Variants ###
+#################################################################################################################
+# DNM variants ##################################################################################################
+#################################################################################################################
+create_equipment_variant = {
+	name = "H Class"
+	type = submarine_ww1
+	upgrades = {
+		sub_engine_upgrade = 6
+		ship_quality_upgrade = 10
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		sub_stealth_upgrade = 6
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "X Class"
+	type = submarine_ww1
+	upgrades = {
+		sub_engine_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		sub_stealth_upgrade = 3
+		sub_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Ballila Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 6
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 20
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Fieramosca Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 2
+		ship_anti_air_upgrade = 12
+		ship_range_upgrade = 5
+		sub_stealth_upgrade = 0
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Bandiera Class"
 	type = submarine_1
 	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 3
 	}
 	obsolete = yes
 }
-
+create_equipment_variant = {
+	name = "Mameli Class "
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Pisani Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Settembrini Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 8
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 13
+		sub_stealth_upgrade = 8
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Squalo Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 6
+		sub_stealth_upgrade = 5
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Bragadin Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 13
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Argonauta Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 3
+		ship_quality_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Archimede Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 7
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 15
+		sub_stealth_upgrade = 8
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Sirena Class"
 	type = submarine_1
 	upgrades = {
-		ship_reliability_upgrade = 2
+		sub_engine_upgrade = 3
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 12
+		ship_range_upgrade = 0
+		sub_stealth_upgrade = 3
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Micca Class"
+	type = submarine_2
+	upgrades = {
 		sub_engine_upgrade = 2
-		sub_stealth_upgrade = 2
+		ship_quality_upgrade = 4
+		ship_anti_air_upgrade = 12
+		ship_range_upgrade = 11
+		sub_stealth_upgrade = 3
+		sub_torpedo_upgrade = 2
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Calvi Class"
+	type = submarine_2
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 4
+		ship_anti_air_upgrade = 12
+		ship_range_upgrade = 13
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 2
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Glauco Class"
+	type = submarine_2
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 4
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 8
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 2
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Perla Class"
+	type = submarine_2
+	upgrades = {
+		sub_engine_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 12
+		ship_range_upgrade = 0
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 2
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Argo Class"
+	type = submarine_2
+	upgrades = {
+		sub_engine_upgrade = 0
+		ship_quality_upgrade = 4
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		sub_stealth_upgrade = 4
 		sub_torpedo_upgrade = 2
 	}
 }
-
+create_equipment_variant = {
+	name = "Indomito Class"
+	type = destroyer_early_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 2
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 3
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Pilo Class"
+	type = destroyer_early_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 5
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 6
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Sirtori Class"
+	type = destroyer_early_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 8
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 8
+		ship_quality_upgrade = 7
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "La Masa Class"
+	type = destroyer_early_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 8
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 8
+		ship_quality_upgrade = 7
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Palestro Class"
+	type = destroyer_early_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 6
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 8
+		ship_quality_upgrade = 7
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Generale Class"
+	type = destroyer_early_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 7
+		ship_quality_upgrade = 7
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Aquila Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 12
+		ship_barrels_upgrade = 6
+		ship_calibre_upgrade = 8
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 9
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Poerio Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 3
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Mirabello Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 6
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 12
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Curtatone Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 4
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Leone Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 4
+		ship_barrels_upgrade = 10
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Sauro Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 4
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Sella Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 2
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Turbine Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 5
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Navigatori Class"
 	type = destroyer_1
 	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 1
+		destroyer_engine_upgrade = 10
+		ship_barrels_upgrade = 6
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 4
 	}
 	obsolete = yes
 }
-
+create_equipment_variant = {
+	name = "Freccia Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Folgore Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Maestrale Class"
 	type = destroyer_1
 	upgrades = {
-		ship_torpedo_upgrade = 3
-		destroyer_engine_upgrade = 3
-		ship_ASW_upgrade = 3
-		ship_anti_air_upgrade = 3
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 6
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 4
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Oriani Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 7
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 4
 	}
 }
-
 create_equipment_variant = {
-	name = "Giussano Class"
-	type = light_cruiser_1
+	name = "Taranto Class"
+	type = light_cruiser_scout
 	upgrades = {
-		ship_reliability_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_gun_upgrade = 1
-		ship_anti_air_upgrade = 1
+		ship_engine_upgrade = 12
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 7
+		ship_armor_upgrade = 3
+		ship_torpedo_upgrade = 11
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Quarto Class"
+	type = light_cruiser_scout
+	upgrades = {
+		ship_engine_upgrade = 12
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 2
+		ship_torpedo_upgrade = 0
 	}
 	obsolete = yes
 }
 
 create_equipment_variant = {
-	name = "Montecuccoli Class"
+	name = "Bari Class"
+	type = light_cruiser_ww1
+	upgrades = {
+		ship_engine_upgrade = 3
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 11
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Giussano Class"
 	type = light_cruiser_1
 	upgrades = {
-		ship_reliability_upgrade = 3
-		ship_engine_upgrade = 3
-		ship_gun_upgrade = 3
-		ship_anti_air_upgrade = 3
+		ship_engine_upgrade = 13
+		ship_barrels_upgrade = 6
+		ship_calibre_upgrade = 7
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 1
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Cadorna Class"
+	type = light_cruiser_1
+	upgrades = {
+		ship_engine_upgrade = 15
+		ship_barrels_upgrade = 11
+		ship_calibre_upgrade = 7
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 1
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Montecuccoli Class"
+	type = light_cruiser_2
+	upgrades = {
+		ship_engine_upgrade = 8
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 2
+		ship_asw_upgrade = 54
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Duca d'Aosta Class"
+	type = light_cruiser_2
+	upgrades = {
+		ship_engine_upgrade = 12
+		ship_barrels_upgrade = 7
+		ship_calibre_upgrade = 7
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 3
+		ship_asw_upgrade = 54
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 3
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Abruzzi Class"
+	type = light_cruiser_2
+	upgrades = {
+		ship_engine_upgrade = 10
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 6
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 54
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 9
+		ship_torpedo_upgrade = 0
 	}
 }
-
 create_equipment_variant = {
-	name = "Zara Class"
+	name = "San Giorgio Class"
+	type = armoured_cruiser_2
+	upgrades = {
+		ship_engine_upgrade = 11
+		ship_barrels_upgrade = 15
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 6
+		ship_quality_upgrade = 3
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 4
+		ship_armor_upgrade = 4
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Trento Class"
 	type = heavy_cruiser_1
 	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_gun_upgrade = 2
+		ship_engine_upgrade = 12
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 16
+		ship_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Zara Class"
+	type = heavy_cruiser_2
+	upgrades = {
+		ship_engine_upgrade = 4
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 10
+		ship_torpedo_upgrade = 0
 	}
 }
-
+create_equipment_variant = {
+	name = "Bolzano Class"
+	type = heavy_cruiser_2
+	upgrades = {
+		ship_engine_upgrade = 5
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Conte di Cavour Class"
+	type = battleship_adv_dn
+	upgrades = {
+		ship_engine_upgrade = 12
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 5
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 4
+		ship_range_upgrade = 2
+		ship_armor_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Caio Duilio Class"
+	type = battleship_adv_dn
+	upgrades = {
+		ship_engine_upgrade = 12
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 5
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 8
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Littorio Class"
+	type = battleship_2
+	upgrades = {
+		ship_engine_upgrade = 3
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 1
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 0
+	}
+}
 #plane variants
 create_equipment_variant = {
 		name = "CR.42"
@@ -465,7 +1185,7 @@ create_equipment_variant = {
 		name = "Marcello Class"
 		type = submarine_2
 		upgrades = {
-			ship_reliability_upgrade = 1
+			ship_quality_upgrade = 1
 			sub_engine_upgrade = 1
 			sub_stealth_upgrade = 1
 			sub_torpedo_upgrade = 1

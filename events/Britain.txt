@@ -651,6 +651,9 @@ country_event = {
 			remove_ideas = ENG_king_edward
 			add_ideas = ENG_george_vi		
 		}
+		hidden_effect = {
+			country_event = { id = dnmflava.2 days = 182 random = 15 } #DNM - added to trigger Spithead 
+		}
 	}
 }
 
@@ -692,6 +695,7 @@ country_event = {
 				inexperienced_imperialist				
 			}
 		}
+		ENG = { country_event = { id = dnmflava.4 } }
 	}
 
 	option = {

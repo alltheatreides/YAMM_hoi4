@@ -140,3 +140,16 @@ create_country_leader = {
 		elections_allowed = no
 	}
 }
+create_navy_leader = { #TPOV - Portrait by Radetzky
+	name = "Felipe Larrazábal"
+	gfx = GFX_VEN_Felipe_Larrazabal
+	#traits = { spotter }
+	skill = 2
+}
+
+create_navy_leader = { #TPOV - Portrait by Radetzky
+	name = "Antonio Picardi"
+	gfx = GFX_VEN_Antonio_Picardi
+	#traits = { spotter }
+	skill = 2
+}

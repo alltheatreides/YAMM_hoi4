@@ -14,13 +14,23 @@ set_technology = {
 	CAS1 = 1
 	early_submarine = 1
 	early_destroyer = 1
-	early_light_cruiser = 1
-	early_battleship = 1
+	#early_light_cruiser = 1 #DNM, removed
+	#early_battleship = 1 #DNM, removed
 	transport = 1
 	motorised_infantry = 1
 	support_weapons = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+
+	ww1_submarine = 1 #DNM
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	late_ww1_destroyer = 1 #DNM
+	protected_cruiser = 1 #DNM
+	scout_cruiser = 1 #DNM
+	pre_dreadnought_battleship = 1 #DNM
+	dreadnought_battleship = 1 #DNM
+
 }
 set_country_flag = monroe_doctrine
 

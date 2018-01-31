@@ -23,6 +23,7 @@ set_technology = {
 	naval_bomber1 = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
+	cv_CAS1 = 1 #DNM
 	early_bomber = 1
 	tactical_bomber1 = 1
 	CAS1 = 1
@@ -36,7 +37,7 @@ set_technology = {
 	basic_heavy_cruiser = 1
 	early_battleship = 1
 	early_battlecruiser = 1
-	basic_battlecruiser = 1
+	#basic_battlecruiser = 1 #DNM - removed as Dunkerque is now a BC_1
 	early_carrier = 1
 	transport = 1
 	trench_warfare = 1
@@ -50,6 +51,24 @@ set_technology = {
 	interwar_antitank = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+	basic_battleship = 1 #VBNM
+
+	pre_dreadnought_battleship = 1 #DNM
+	dreadnought_battleship = 1 #DNM
+	advanced_dreadnought_battleship = 1 #DNM
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	late_ww1_destroyer = 1 #DNM
+	protected_cruiser = 1 #DNM
+	scout_cruiser = 1 #DNM
+	ww1_light_cruiser = 1 #DNM
+	armoured_cruiser = 1 #DNM
+	advanced_armoured_cruiser = 1 #DNM
+	ww1_heavy_cruiser = 1 #DNM
+	early_ww1_battlecruiser = 1 #DNM
+	late_ww1_battlecruiser = 1 #DNM
+	ww1_carrier = 1 #DNM
+	ww1_submarine = 1 #DNM
 }
 
 1939.1.1 = {
@@ -364,65 +383,547 @@ create_navy_leader = {
 	skill = 1
 }
 
+create_navy_leader = { #TPOV - Portrait by Radetzky
+	name = "Marcel Gensoul"
+	gfx = GFX_FRA_Marcel_Gensoul
+	#traits = { spotter }
+	skill = 2
+}
+
+create_navy_leader = { #TPOV - Portrait by Radetzky
+	name = "Émile Muselier"
+	gfx = GFX_FRA_Emile_Muselier
+	#traits = { spotter }
+	skill = 2
+}
+
+create_navy_leader = { #TPOV - Portrait by Radetzky
+	name = "Maurice de Carpentier"
+	gfx = GFX_FRA_Maurice_de_Carpentier
+	#traits = { spotter }
+	skill = 2
+}
+
+create_navy_leader = { #TPOV - Portrait by Radetzky
+	name = "Jean Decoux"
+	gfx = GFX_FRA_Jean_Decoux
+	#traits = { spotter }
+	skill = 2
+}
+
+create_navy_leader = { #TPOV - Portrait by Radetzky
+	name = "Raoul Castex"
+	gfx = GFX_FRA_Raoul_Castex
+	#traits = { spotter }
+	skill = 2
+}
+
+create_navy_leader = { #TPOV - Portrait by Radetzky
+	name = "Georges Robert"
+	gfx = GFX_FRA_Georges_Robert
+	#traits = { spotter }
+	skill = 2
+}
+
+create_navy_leader = { #TPOV - Portrait by Radetzky
+	name = "Emmanuel Ollive"
+	gfx = GFX_FRA_Emmanuel_Ollive
+	#traits = { spotter }
+	skill = 2
+}
+
 ### Ship Variants ###
 
+#################################################################################################
+# DNM classes (remember to delete the vanilla entries for all ships #############################
+#################################################################################################
 create_equipment_variant = {
-	name = "630 Series"
+	name = "Requin Class"
 	type = submarine_1
 	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
+		sub_engine_upgrade = 7
+		ship_quality_upgrade = 6
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 10
+		sub_stealth_upgrade = 9
+		sub_torpedo_upgrade = 17
 	}
 	obsolete = yes
 }
-
+create_equipment_variant = {
+	name = "Ariane Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 6
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		sub_stealth_upgrade = 5
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Circé Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 2
+		sub_stealth_upgrade = 5
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Sirène Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 2
+		sub_stealth_upgrade = 5
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Redoutable Class"
 	type = submarine_1
 	upgrades = {
-		ship_reliability_upgrade = 2
-		sub_engine_upgrade = 2
-		sub_stealth_upgrade = 2
+		sub_engine_upgrade = 8
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 14
+		sub_stealth_upgrade = 5
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Saphir Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 12
+		ship_range_upgrade = 9
+		sub_stealth_upgrade = 3
+		sub_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Surcouf Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 11
+		ship_quality_upgrade = 20
+		ship_anti_air_upgrade = 27
+		ship_range_upgrade = 14
+		sub_stealth_upgrade = 5
+		sub_torpedo_upgrade = 17
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Argonaute Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 8
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 3
+		sub_stealth_upgrade = 5
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Diane Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 3
+		sub_stealth_upgrade = 9
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Orion Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 3
+		sub_stealth_upgrade = 9
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Minerve Class"
+	type = submarine_2
+	upgrades = {
+		sub_engine_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		sub_stealth_upgrade = 5
 		sub_torpedo_upgrade = 2
 	}
 	obsolete = yes
 }
-
+create_equipment_variant = {
+	name = "Aurore Class"
+	type = submarine_2
+	upgrades = {
+		sub_engine_upgrade = 3
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		sub_stealth_upgrade = 7
+		sub_torpedo_upgrade = 12
+	}
+}
 create_equipment_variant = {
 	name = "Chacal Class"
 	type = destroyer_1
 	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 1
+		destroyer_engine_upgrade = 8
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 8
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 18
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_torpedo_upgrade = 5
 	}
 	obsolete = yes
 }
-
 create_equipment_variant = {
-	name = "Aigle & Vauquelin Class"
+	name = "Bourrasque Class"
 	type = destroyer_1
 	upgrades = {
-		ship_torpedo_upgrade = 2
-		destroyer_engine_upgrade = 2
-		ship_ASW_upgrade = 2
-		ship_anti_air_upgrade = 2
+		destroyer_engine_upgrade = 5
+		ship_barrels_upgrade = 6
+		ship_calibre_upgrade = 8
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 1
+		ship_ASW_upgrade = 7
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 5
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Adroit Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 8
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 2
+		ship_ASW_upgrade = 7
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 5
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Guépard Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 15
+		ship_barrels_upgrade = 16
+		ship_calibre_upgrade = 11
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 21
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_torpedo_upgrade = 5
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Aigle Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 26
+		ship_barrels_upgrade = 32
+		ship_calibre_upgrade = 11
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 18
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_torpedo_upgrade = 5
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Vauquelin Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 26
+		ship_barrels_upgrade = 32
+		ship_calibre_upgrade = 11
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 18
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_torpedo_upgrade = 7
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Le Fantasque Class"
+	type = destroyer_2
+	upgrades = {
+		destroyer_engine_upgrade = 17
+		ship_barrels_upgrade = 20
+		ship_calibre_upgrade = 9
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 5
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Mogador Class"
+	type = destroyer_2
+	upgrades = {
+		destroyer_engine_upgrade = 21
+		ship_barrels_upgrade = 24
+		ship_calibre_upgrade = 9
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 7
 	}
 }
-
+create_equipment_variant = {
+	name = "Duguay Troin Class"
+	type = light_cruiser_1
+	upgrades = {
+		ship_engine_upgrade = 8
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 6
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 9
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 19
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Pluton Class"
+	type = light_cruiser_1
+	upgrades = {
+		ship_engine_upgrade = 2
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Émile Bertin Class"
+	type = light_cruiser_1
+	upgrades = {
+		ship_engine_upgrade = 9
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 5
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 3
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 5
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Jeanne d'Arc Class"
+	type = light_cruiser_1
+	upgrades = {
+		ship_engine_upgrade = 1
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 6
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 6
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "La Galissonnière Class"
+	type = light_cruiser_2
+	upgrades = {
+		ship_engine_upgrade = 5
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 5
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 3
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 7
+		ship_torpedo_upgrade = 0
+	}
+}
+create_equipment_variant = {
+	name = "Suffren Class"
+	type = heavy_cruiser_1
+	upgrades = {
+		ship_engine_upgrade = 5
+		ship_barrels_upgrade = 6
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 4
+		ship_torpedo_upgrade = 11
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Duquesne Class "
+	type = heavy_cruiser_1
+	upgrades = {
+		ship_engine_upgrade = 5
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 4
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Algérie Class"
+	type = heavy_cruiser_2
+	upgrades = {
+		ship_engine_upgrade = 2
+		ship_barrels_upgrade = 1
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_armor_upgrade = 6
+		ship_torpedo_upgrade = 0
+	}
+}
+create_equipment_variant = {
+	name = "Dunkerque Class"
+	type = battle_cruiser_1
+	upgrades = {
+		ship_engine_upgrade = 4
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 5
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 1
+		ship_range_upgrade = 6
+		ship_armor_upgrade = 2
+	}
+}
+create_equipment_variant = {
+	name = "Courbet Class"
+	type = battleship_dn
+	upgrades = {
+		ship_engine_upgrade = 4
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 5
+		ship_quality_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 3
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Bretagne Class"
-	type = battleship_1
+	type = battleship_adv_dn
 	upgrades = {
-		ship_reliability_upgrade = 1
-        ship_armor_upgrade = 1
-        ship_gun_upgrade = 1
+		ship_engine_upgrade = 3
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 5
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Richelieu Class"
+	type = battleship_2
+	upgrades = {
+		ship_engine_upgrade = 6
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 3
 	}
 }
-
+create_equipment_variant = {
+	name = "Béarn Class"
+	type = carrier_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 2
+		ship_barrels_upgrade = 6
+		ship_calibre_upgrade = 15
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_deckspace_upgrade = 0
+		carrier_armor_upgrade = 2
+	}
+}
 ### Tank variants ###############################################
 
 create_equipment_variant = {	# Renault FT
@@ -468,42 +969,5 @@ create_equipment_variant = {
 		tank_armor_upgrade = 2
 		tank_engine_upgrade = 3
 		tank_reliability_upgrade = 2
-	}
-}
-
-
-1939.1.1 = {
-	
-	create_equipment_variant = {
-		name = "Aurore Class"
-		type = submarine_2
-		upgrades = {
-			ship_reliability_upgrade = 3
-			sub_engine_upgrade = 3
-			sub_stealth_upgrade = 3
-			sub_torpedo_upgrade = 3
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Le Hardi Class"
-		type = destroyer_2
-		upgrades = {
-			ship_torpedo_upgrade = 1
-			destroyer_engine_upgrade = 1
-			ship_ASW_upgrade = 1
-			ship_anti_air_upgrade = 1
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Mogador Class"
-		type = destroyer_2
-		upgrades = {
-			ship_torpedo_upgrade = 2
-			destroyer_engine_upgrade = 2
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 2
-		}
 	}
 }

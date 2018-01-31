@@ -11,9 +11,9 @@ set_technology = {
 	CAS1 = 1
 	early_submarine = 1
 	early_destroyer = 1
-	early_light_cruiser = 1
-	early_heavy_cruiser = 1
-	early_battleship = 1
+#	early_light_cruiser = 1 #DNM
+	early_heavy_cruiser = 1 
+#	early_battleship = 1 #DNM
 	transport = 1
 	motorised_infantry = 1
 	support_weapons = 1
@@ -21,6 +21,21 @@ set_technology = {
 	gw_artillery = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+
+	ww1_submarine = 1 #DNM
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	late_ww1_destroyer = 1 #DNM
+	protected_cruiser = 1 #DNM
+	scout_cruiser = 1 #DNM
+	ww1_light_cruiser = 1 #DNM
+	armoured_cruiser = 1 #DNM
+	advanced_armoured_cruiser = 1 #DNM
+	ww1_heavy_cruiser = 1 #DNM
+	pre_dreadnought_battleship = 1 #DNM
+	dreadnought_battleship = 1 #DNM
+	advanced_dreadnought_battleship = 1 #DNM
+
 }
 set_country_flag = monroe_doctrine
 
@@ -213,26 +228,152 @@ create_navy_leader = {
 	skill = 3
 }
 
-### Ship Variants ###
-
+#####################################################################################
+## DNM Ship Variants
+#####################################################################################
+create_equipment_variant = {
+	name = "Santa Fe Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 8
+		ship_quality_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 9
+		sub_stealth_upgrade = 7
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Catamarca Class"
+	type = destroyer_early_ww1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 1
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 7
+		ship_quality_upgrade = 14
+		ship_ASW_upgrade = 11
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		ship_torpedo_upgrade = 6
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "La Plata Class"
+	type = destroyer_early_ww1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 6
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 7
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 11
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 4
+		ship_torpedo_upgrade = 6
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Cervantes Class"
 	type = destroyer_1
+	parent_version = 0
 	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 1
+		destroyer_engine_upgrade = 9
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 4
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Mendoza Class"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 9
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 5
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 4
 	}
 }
-
+create_equipment_variant = {
+	name = "Garibaldi Class"
+	type = armoured_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 16
+		ship_barrels_upgrade = 11
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 6
+		ship_armor_upgrade = 2
+		ship_torpedo_upgrade = 31
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Libertad Class"
+	type = armoured_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 1
+		ship_barrels_upgrade = 1
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 6
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Veinticinco de Mayo Class"
 	type = heavy_cruiser_1
+	parent_version = 0
 	upgrades = {
-		ship_reliability_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_armor_upgrade = 1
-		ship_gun_upgrade = 1
+		ship_engine_upgrade = 3
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_armor_upgrade = 7
+		ship_torpedo_upgrade = 0
+	}
+}
+create_equipment_variant = {
+	name = "Rivadavia Class"
+	type = battleship_adv_dn
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 6
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_armor_upgrade = 4
 	}
 }

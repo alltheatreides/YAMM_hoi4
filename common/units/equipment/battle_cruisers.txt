@@ -11,50 +11,131 @@ equipments = {
 		interface_category = interface_category_capital_ships
 		
 		upgrades = {
-			ship_reliability_upgrade
+			ship_barrels_upgrade #DNM
 			ship_engine_upgrade
+			ship_calibre_upgrade #DNM
+			ship_gunquality_upgrade #DNM
+			ship_quality_upgrade #DNM
+			ship_anti_air_upgrade #DNM
+			ship_range_upgrade #DNM
 			ship_armor_upgrade
-			ship_gun_upgrade
-		}
+			}
 
-		ap_attack = 30
-		attack = 16
-		fire_range = 32
+		ap_attack = 7 #DNM
+		attack = 90 #DNM - original 16
+		fire_range = 22 #DNM
 		torpedo_attack = 0
 		shore_bombardment = 8
 
-		anti_air_attack = 5
+		anti_air_attack = 1 #DNM
 		
-		armor_value = 23
+		armor_value = 7.9 #DNM
 		evasion = 15
 		
 		surface_detection = 12
-		sub_detection = 5
+		sub_detection = 0.5 #DNM, vanilla 5
 		surface_visibility = 25
-		naval_speed = 28
-		reliability = 0.80
+		naval_speed = 27 #DNM
+		reliability = 0.70 #DNM
 
-		naval_range = 3000
+		naval_range = 2000 #DNM
 		
-		max_strength = 350
+		max_strength = 2750 #DNM - original 350
 		
-		port_capacity_usage = 1.5
+		port_capacity_usage = 2 #DNM - original 1.5
 		
-		build_cost_ic = 7500
+		build_cost_ic = 12000 #TPOV
 		resources = {
 			oil = 1
 			steel = 3
 			chromium = 1
 		}
 		
-		manpower = 3500
+		manpower = 1300
 	}
-	
+
+	battle_cruiser_early_ww1 = {
+		archetype = battle_cruiser
+		priority = 0
+	}
+
+	battle_cruiser_late_ww1 = { #DNM
+		archetype = battle_cruiser
+		parent = battle_cruiser_early_ww1
+		priority = 50
+
+		ap_attack = 9 #DNM
+		attack = 120 #DNM - original 16
+		fire_range = 26 #DNM
+		torpedo_attack = 15 #TPOV
+		shore_bombardment = 10 #DNM
+
+		anti_air_attack = 2 #DNM
+		
+		armor_value = 8.7 #DNM
+		evasion = 15
+		
+		surface_detection = 12
+		sub_detection = 0.5 #DNM, vanilla 5
+		surface_visibility = 25
+		naval_speed = 28
+		reliability = 0.75 #DNM
+
+		naval_range = 2000 #DNM
+		
+		max_strength = 3000 #DNM - original 350
+		
+		port_capacity_usage = 2 #DNM - original 1.5
+		
+		build_cost_ic = 12000 #DNM
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 1
+		}
+		
+		manpower = 1300 #DNM
+	}
+
 	battle_cruiser_1 = {
 		year = 1922
 
 		archetype = battle_cruiser
-		priority = 50
+		parent = battle_cruiser_late_ww1
+
+		priority = 50 #DNM, original value 50, selected to try and tone down AI preferences for building BCs
+
+		ap_attack = 10.5 #DNM
+		attack = 120 #DNM - original 16
+		fire_range = 35 #DNM
+		torpedo_attack = 0 #DNM
+		shore_bombardment = 10 #DNM
+
+		anti_air_attack = 3 #DNM
+		
+		armor_value = 9.5 #DNM
+		evasion = 15
+		
+		surface_detection = 12
+		sub_detection = 0.5 #DNM, vanilla 5
+		surface_visibility = 25
+		naval_speed = 29.5 #DNM
+		reliability = 0.80 #DNM
+
+		naval_range = 3000 #DNM
+		
+		max_strength = 3200 #DNM - original 350
+		
+		port_capacity_usage = 2 #DNM - original 1.5
+		
+		build_cost_ic = 12400 #DNM
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 1
+		}
+		
+		manpower = 1400
 	}
 	
 	battle_cruiser_2 = {
@@ -62,38 +143,38 @@ equipments = {
 
 		archetype = battle_cruiser
 		parent = battle_cruiser_1
-		priority = 50
+		priority = 50 #DNM, original 50, reduced to tone down AI's fondness for BCs.
 	
-		ap_attack = 37
-		attack = 21
-		fire_range = 33
+		ap_attack = 11.6 #DNM
+		attack = 122.5 #DNM - original 21
+		fire_range = 35.3 #DNM
 		torpedo_attack = 0
-		shore_bombardment = 10
+		shore_bombardment = 12 #DNM
 
-		anti_air_attack = 10
+		anti_air_attack = 4.5 #DNM
 		
-		armor_value = 30
+		armor_value = 9.5 #DNM
 		evasion = 20
 		
 		surface_detection = 25
-		sub_detection = 5
+		sub_detection = 0.5 #DNM, vanilla 5
 		surface_visibility = 25
-		naval_speed = 32
+		naval_speed = 33
 		reliability = 0.90
 
-		naval_range = 5000
+		naval_range = 4000 #DNM
 		
-		max_strength = 400
+		max_strength = 3500 #DNM - original 400
 		
-		port_capacity_usage = 1.5
+		port_capacity_usage = 2
 
-		build_cost_ic = 8000
+		build_cost_ic = 12400 #High price to deter AI from building more.
 		resources = {
 			oil = 1
 			steel = 4
 			chromium = 1
 		}
-		manpower = 4000
+		manpower = 1500 #DNM
 	}
 	
 

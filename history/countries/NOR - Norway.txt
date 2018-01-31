@@ -23,7 +23,7 @@ set_technology = {
 	early_bomber = 1
 	early_destroyer = 1
 	early_submarine = 1
-	early_heavy_cruiser = 1
+	#early_heavy_cruiser = 1 DNM removed
 	tech_recon = 1
 	motorised_infantry = 1
 	motorised_infantry = 1
@@ -34,6 +34,13 @@ set_technology = {
 	gwtank = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	late_ww1_destroyer = 1 #DNM
+	ww1_submarine = 1 #DNM
+	protected_cruiser = 1 #DNM
+	armoured_cruiser = 1 #DNM
 }
 
 1939.1.1 = {
@@ -230,4 +237,83 @@ create_navy_leader = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 	traits = { spotter }
 	skill = 2
+############################################################################
+## DNM Variants
+############################################################################
+create_equipment_variant = {
+	name = "A Class"
+	type = submarine_ww1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 7
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		sub_stealth_upgrade = 3
+		sub_torpedo_upgrade = 0
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "B Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 3
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		sub_stealth_upgrade = 3
+		sub_torpedo_upgrade = 1
+	}
+}
+create_equipment_variant = {
+	name = "Draug Class"
+	type = destroyer_tb
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 2
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 7
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 9
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Norge Class"
+	type = armoured_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 10
+		ship_barrels_upgrade = 10
+		ship_calibre_upgrade = 6
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 7
+		ship_armor_upgrade = 5
+		ship_torpedo_upgrade = 10
+	}
+}
+create_equipment_variant = {
+	name = "Tordenskjold Class"
+	type = armoured_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 9
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 6
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		ship_armor_upgrade = 6
+		ship_torpedo_upgrade = 10
+	}
+	obsolete=yes
 }

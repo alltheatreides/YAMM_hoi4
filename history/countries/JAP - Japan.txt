@@ -54,7 +54,7 @@ set_technology = {
 	early_heavy_cruiser = 1
 	basic_heavy_cruiser = 1
 	early_battleship = 1
-	basic_battleship = 1
+	#basic_battleship = 1 #DNM - removed now that Yamato is a BB rather than SHBB
 	early_battlecruiser = 1
 	early_carrier = 1
 	basic_carrier = 1
@@ -67,6 +67,26 @@ set_technology = {
 	support_weapons = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+
+	basic_destroyer = 1 #VBNM
+	improved_heavy_cruiser = 1 #VBNM
+
+	pre_dreadnought_battleship = 1 #DNM
+	dreadnought_battleship = 1 #DNM
+	advanced_dreadnought_battleship = 1 #DNM
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	late_ww1_destroyer = 1 #DNM
+	protected_cruiser = 1 #DNM
+	scout_cruiser = 1 #DNM
+	ww1_light_cruiser = 1 #DNM
+	armoured_cruiser = 1 #DNM
+	advanced_armoured_cruiser = 1 #DNM
+	ww1_heavy_cruiser = 1 #DNM
+	early_ww1_battlecruiser = 1 #DNM
+	late_ww1_battlecruiser = 1 #DNM
+	ww1_carrier = 1 #DNM
+	ww1_submarine = 1 #DNM
 }
 
 create_import = {
@@ -129,7 +149,7 @@ create_import = {
 		improved_destroyer = 1
 		improved_heavy_cruiser = 1
 		improved_carrier = 1
-		heavy_battleship = 1
+#		heavy_battleship = 1 #tech removed from DNM
 		cv_fighter1 = 1
 		fighter1 = 1
 		tactical_bomber1 = 1
@@ -394,12 +414,13 @@ create_corps_commander = {
 	skill = 1 
 }
 
-create_corps_commander = {
-	name = "Nobuyushi Muto"
-		picture = "Portrait_Japan_Nobuyoshi_Muto.dds"
-	traits = {  }
-	skill = 3
-}
+#TPOV - removed as died in 1933 - as advised by the good Sleight of Hand
+#create_corps_commander = {
+#	name = "Nobuyushi Muto"
+#		picture = "Portrait_Japan_Nobuyoshi_Muto.dds"
+#	traits = {  }
+#	skill = 3
+#}
 
 create_corps_commander = {
 	name = "Kenkichi Ueda"
@@ -592,109 +613,789 @@ create_navy_leader = {
 
 ### VARIANTS ###
 	# 1936 Start #
-		### Carrier Variants
+
+########################################################################################################
+## DNM variants - 1936 start - remember to delete vanilla variants  ####################################
+########################################################################################################
+create_equipment_variant = {
+	name = "L-1 Class"
+	type = submarine_ww1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 12
+		ship_quality_upgrade = 10
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 16
+		sub_stealth_upgrade = 0
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kaichu IV Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 7
+		ship_quality_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 7
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 2
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "L-2 Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 7
+		ship_quality_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 6
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 2
+	}
+	obsolete = yes
+}
 		create_equipment_variant = {
-			name = "Akagi Class"
-			type = carrier_1
+	name = "Kai-Toku-Chu Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 2
+		ship_quality_upgrade = 4
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 11
+		sub_stealth_upgrade = 5
+		sub_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kaidai I Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 6
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 33
+		sub_stealth_upgrade = 3
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kaidai II Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 16
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 14
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "L-3 Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 7
+		ship_quality_upgrade = 3
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 9
+		sub_stealth_upgrade = 3
+		sub_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "L-4 Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 7
+		ship_quality_upgrade = 6
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 6
+		sub_stealth_upgrade = 3
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Junsen I Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 8
+		ship_quality_upgrade = 3
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 41
+		sub_stealth_upgrade = 9
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kaidai III Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 12
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 14
+		sub_stealth_upgrade = 3
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kirai Sen Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 4
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 15
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kaidai IV Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 11
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 16
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kaidai V Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 13
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 16
+		sub_stealth_upgrade = 8
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kaidai VI Class"
+	type = submarine_1
 			parent_version = 0
 			upgrades = {
-				ship_deckspace_upgrade = 5
-				carrier_armor_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_reliability_upgrade = 3
+		sub_engine_upgrade = 15
+		ship_quality_upgrade = 6
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 14
+		sub_stealth_upgrade = 7
+		sub_torpedo_upgrade = 3
 			}
 			obsolete = yes
+}
+create_equipment_variant = {
+	name = "Junsen II Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 11
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 8
+		ship_range_upgrade = 33
+		sub_stealth_upgrade = 9
+		sub_torpedo_upgrade = 3
 		}
-		### Battleship Variants	
-		create_equipment_variant = {
-			name = "Ise Class"
-			type = battleship_1
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kaichu V Class"
+	type = submarine_1
 			parent_version = 0
 			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 3
-				ship_armor_upgrade = 1
-				ship_gun_upgrade = 1
+		sub_engine_upgrade = 10
+		ship_quality_upgrade = 4
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 11
+		sub_stealth_upgrade = 8
+		sub_torpedo_upgrade = 3
 			}
 			obsolete = yes
+}
+create_equipment_variant = {
+	name = "Junsen III Class"
+	type = submarine_2
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 12
+		ship_quality_upgrade = 10
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 13
+		sub_stealth_upgrade = 9
+		sub_torpedo_upgrade = 8
+	}
+}
+create_equipment_variant = {
+	name = "Momo Class"
+	type = destroyer_early_ww1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 8
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 8
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 11
 		}
-		create_equipment_variant = {
-			name = "Nagato Class"
-			type = battleship_1
-			parent_version = 1
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Momi Class"
+	type = destroyer_early_ww1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 11
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 8
+		ship_quality_upgrade = 9
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		ship_torpedo_upgrade = 6
+	}
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Minekaze Class"
+	type = destroyer_late_ww1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 10
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 4
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 6
+	}
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kamikaze Class"
+	type = destroyer_late_ww1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 8
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 5
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 6
+	}
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Wakatake Class"
+	type = destroyer_late_ww1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 6
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 5
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 1
+	}
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Mutsuki Class"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 4
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 1
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 6
+	}
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Fubuki Class"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 10
+		ship_barrels_upgrade = 12
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 3
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 14
+	}
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Akatsuki Class"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 10
+		ship_barrels_upgrade = 12
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 1
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 15
+	}
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Hatsuharu Class"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 9
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 7
+		ship_ASW_upgrade = 1
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		ship_torpedo_upgrade = 6
+	}
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Shiratsuyu Class"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 8
+		ship_barrels_upgrade = 9
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 7
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		ship_torpedo_upgrade = 12
+	}
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Asashio Class"
+	type = destroyer_2
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 4
+		ship_barrels_upgrade = 6
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 9
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_torpedo_upgrade = 5
+	}
+}
+create_equipment_variant = {
+	name = "Chikuma Class"
+	type = light_cruiser_scout
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 13
+		ship_barrels_upgrade = 7
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 14
+		ship_armor_upgrade = 6
+		ship_torpedo_upgrade = 12
+	}
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Tenryu Class"
+	type = light_cruiser_ww1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 7
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 23
+	}
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kuma Class"
+	type = light_cruiser_ww1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 8
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 7
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 2
+		ship_torpedo_upgrade = 34
+	}
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Nagara Class"
+	type = light_cruiser_ww1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 8
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 7
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_armor_upgrade = 2
+		ship_torpedo_upgrade = 34
+	}
+obsolete = yes
+}
+create_equipment_variant = {
+	name = "Sendai Class"
+	type = light_cruiser_1
+	parent_version = 0
 			upgrades = {
-				ship_reliability_upgrade = 3
 				ship_engine_upgrade = 4
-				ship_armor_upgrade = 3
-				ship_gun_upgrade = 4
+		ship_barrels_upgrade = 1
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 4
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 12
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Yubari Class"
+	type = light_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 8
+		ship_barrels_upgrade = 1
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 12
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Mogami Class"
+	type = light_cruiser_2
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 19
+		ship_barrels_upgrade = 16
+		ship_calibre_upgrade = 10
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 5
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 8
+		ship_torpedo_upgrade = 13
+	}
+}
+create_equipment_variant = {
+	name = "Yakumo Class"
+	type = armoured_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 16
+		ship_barrels_upgrade = 21
+		ship_calibre_upgrade = 10
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 10
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 9
+		ship_armor_upgrade = 5
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Idzumo Class"
+	type = armoured_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 16
+		ship_barrels_upgrade = 21
+		ship_calibre_upgrade = 10
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 10
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 9
+		ship_armor_upgrade = 5
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Furutaka Class"
+	type = heavy_cruiser_ww1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 5
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 1
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 58
 			}
 			obsolete = yes
+}
+create_equipment_variant = {
+	name = "Aoba Class"
+	type = heavy_cruiser_ww1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 10
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 58
 		}
-		### Heavy Cruiser Variants	
-		create_equipment_variant = {
+	obsolete = yes
+}
+create_equipment_variant = {
 			name = "Myoko Class"
 			type = heavy_cruiser_1
 			parent_version = 0
 			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_armor_upgrade = 2
-				ship_gun_upgrade = 3
+		ship_engine_upgrade = 14
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_armor_upgrade = 22
+		ship_torpedo_upgrade = 5
 			}
 			obsolete = yes
+}
+create_equipment_variant = {
+	name = "Takao Class"
+	type = heavy_cruiser_2
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 7
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_armor_upgrade = 4
+		ship_torpedo_upgrade = 5
 		}
-		### Light Cruiser Variants	
-		create_equipment_variant = {
-			name = "Kuma Class"
-			type = light_cruiser_1
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Tone Class"
+	type = heavy_cruiser_3
 			parent_version = 0
 			upgrades = {
-				ship_reliability_upgrade = 2
 				ship_engine_upgrade = 2
-				ship_gun_upgrade = 1
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 13
+	}
+}
+create_equipment_variant = {
+name = "Kongo Class"
+	type = battle_cruiser_late_ww1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 3
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 3
 				ship_anti_air_upgrade = 1
+		ship_range_upgrade = 5
+		ship_armor_upgrade = 2
+	}
+}
+create_equipment_variant = {
+name = "Fuso Class"
+	type = battleship_adv_dn
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 6
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 6
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_armor_upgrade = 5
 			}
 			obsolete = yes
+}
+create_equipment_variant = {
+	name = "Ise Class"
+	type = battleship_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 9
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 1
+		ship_anti_air_upgrade = 8
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Nagato Class"
+	type = battleship_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 14
+		ship_barrels_upgrade = 9
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 5
 		}
-		create_equipment_variant = {
-			name = "Sendai Class"
-			type = light_cruiser_1
-			parent_version = 1
+}
+create_equipment_variant = {
+	name = "Akagi Class"
+	type = carrier_1
+	parent_version = 0
 			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 3
-				ship_gun_upgrade = 1
-				ship_anti_air_upgrade = 2
+		ship_engine_upgrade = 29
+		ship_barrels_upgrade = 28
+		ship_calibre_upgrade = 33
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 8
+		ship_anti_air_upgrade = 5
+		ship_range_upgrade = 2
+		ship_deckspace_upgrade = 9
+		carrier_armor_upgrade = 3
 			}
 			obsolete = yes
-		}
-		### Destroyer Variants
-		create_equipment_variant = {
-			name = "Fubuki Class"
-			type = destroyer_1
+}
+create_equipment_variant = {
+	name = "Kaga Class"
+	type = carrier_1
 			parent_version = 0
 			upgrades = {
-				ship_torpedo_upgrade = 2
-				destroyer_engine_upgrade = 4
-				ship_ASW_upgrade = 2
+		ship_engine_upgrade = 30
+		ship_barrels_upgrade = 35
+		ship_calibre_upgrade = 33
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 8
 				ship_anti_air_upgrade = 2
+		ship_range_upgrade = 2
+		ship_deckspace_upgrade = 12
+		carrier_armor_upgrade = 4
 			}
-		}	
-		### Submarine Variants	
-		create_equipment_variant = {
-			name = "Kaidai III Class"
-			type = submarine_1
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Soryu Class"
+	type = carrier_2
 			parent_version = 0
 			upgrades = {
-				ship_reliability_upgrade = 3
-				sub_engine_upgrade = 3
-				sub_stealth_upgrade = 1
-				sub_torpedo_upgrade = 2
+		ship_engine_upgrade = 10
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_deckspace_upgrade = 5
+		carrier_armor_upgrade = 11
 			}
-			obsolete = yes
-		}	
-
-	# 1939 Start #			
+}
+# 1939 Start #			
 	1939.1.1 = {
 		### Carrier Variants
 		create_equipment_variant = {
@@ -705,7 +1406,7 @@ create_navy_leader = {
 				ship_deckspace_upgrade = 1
 				carrier_armor_upgrade = 0
 				ship_engine_upgrade = 0
-				ship_reliability_upgrade = 1
+				ship_quality_upgrade = 1
 			}
 		}
 		### Destroyer Variants

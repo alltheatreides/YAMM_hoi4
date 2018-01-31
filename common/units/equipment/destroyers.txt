@@ -14,49 +14,177 @@ equipments = {
 			destroyer_engine_upgrade
 			ship_ASW_upgrade
 			ship_anti_air_upgrade
+			#destroyer_gun_upgrade
+			ship_barrels_upgrade
+			ship_calibre_upgrade
+			ship_gunquality_upgrade
+			ship_quality_upgrade
+			ship_range_upgrade
 		}
 
-		ap_attack = 1
-		attack = 1
-		fire_range = 14
-		torpedo_attack = 3
-		sub_attack = 10
+		ap_attack = 0.5
+		attack = 2  #DNM - original 1
+		fire_range = 6
+		torpedo_attack = 15 #DNM - original 3
+		sub_attack = 3.8
+		shore_bombardment = 1
 		
-		anti_air_attack = 1.5
+		anti_air_attack = 0.5
+		
+		armor_value = 0
+		evasion = 60 #DNM, vanilla 55
+		
+		surface_detection = 20
+		sub_detection = 2 #DNM - vanilla 20
+		surface_visibility = 10
+		naval_speed = 25
+		reliability = 0.50
+		
+		naval_range = 400
+		
+		max_strength = 63 #DNM - original 25		
+		
+		port_capacity_usage = 0.5
+		
+		build_cost_ic = 600 #TPOV - set high to get AI to not be silly
+		resources = {
+			oil = 1 #DNM, original 1, 0.5 is a test
+			steel = 2
+		}
+		
+		manpower = 54
+	}
+
+	destroyer_tb = {
+		archetype = destroyer
+		priority = 100
+		type = { 
+			screen_ship
+		}
+
+	}
+	destroyer_early_ww1 = {
+		archetype = destroyer
+		parent = destroyer_tb
+		priority = 100
+		type = { 
+			screen_ship
+		}
+		ap_attack = 1.6
+		attack = 3  #DNM - original 1
+		fire_range = 8
+		torpedo_attack = 20 #DNM - original 3
+		sub_attack = 5.6
+		shore_bombardment = 1.5
+		
+		anti_air_attack = 0.5
 		
 		armor_value = 0
 		evasion = 70
 		
 		surface_detection = 20
-		sub_detection = 50
+		sub_detection = 4 #DNM - vanilla 30
 		surface_visibility = 10
-		naval_speed = 33
-		reliability = 0.80
+		naval_speed = 27
+		reliability = 0.60
 		
-		naval_range = 1500
+		naval_range = 600
 		
-		max_strength = 25		
+		max_strength = 88 #DNM - original 25		
 		
-		port_capacity_usage = 1
+		port_capacity_usage = 0.5
 		
-		build_cost_ic = 900
+		build_cost_ic = 600 #TPOV - set high to get AI to not be silly
 		resources = {
 			oil = 1
 			steel = 2
 		}
 		
-		manpower = 250
+		manpower = 80
 	}
+	destroyer_late_ww1 = {
+		archetype = destroyer
+		parent = destroyer_early_ww1
+		priority = 80
+		type = { 
+			screen_ship
+			anti_air
+		}
+		ap_attack = 1.6
+		attack = 4  #DNM - original 1
+		fire_range = 11
+		torpedo_attack = 30 #DNM - original 3
+		sub_attack = 15
+		shore_bombardment = 1.5
+		
+		anti_air_attack = 0.75
+		
+		armor_value = 0
+		evasion = 77
+		
+		surface_detection = 20
+		sub_detection = 5 #DNM - vanilla 40
+		surface_visibility = 10
+		naval_speed = 30
+		reliability = 0.70
+		
+		naval_range = 1000
+		
+		max_strength = 163 #DNM - original 25		
+		
+		port_capacity_usage = 0.5
+		
+		build_cost_ic = 600 #TPOV - set high to get AI to not be silly
+		resources = {
+			oil = 1
+			steel = 2
+		}
+		
+		manpower = 130
 
+	}
 	destroyer_1 = {
 		year = 1922
 
+
 		archetype = destroyer
+		parent = destroyer_late_ww1
 		priority = 20
 		type = { 
 			screen_ship
 			anti_air
 		}
+		ap_attack = 2.2
+		attack = 6  #DNM - original 1
+		fire_range = 13
+		torpedo_attack = 35 #DNM - original 3
+		sub_attack = 22.5 #DNM, vanilla 10
+		shore_bombardment = 2
+		
+		anti_air_attack = 1
+		
+		armor_value = 0
+		evasion = 77 #DNM, vanilla 70
+		
+		surface_detection = 20
+		sub_detection = 7 #DNM - vanilla 50
+		surface_visibility = 10
+		naval_speed = 33
+		reliability = 0.80
+		
+		naval_range = 1250
+		
+		max_strength = 188 #DNM - original 25		
+		
+		port_capacity_usage = 0.5
+		
+		build_cost_ic = 600
+		resources = {
+			oil = 1
+			steel = 2
+		}
+		
+		manpower = 150
 
 	}
 	
@@ -67,40 +195,41 @@ equipments = {
 		parent = destroyer_1
 		priority = 20
 		
-		ap_attack = 2
-		attack = 2.5
+		ap_attack = 2.4
+		attack = 9 #DNM - original 2.5
 		fire_range = 15
-		torpedo_attack = 6
-		sub_attack = 13
+		torpedo_attack = 50 #DNM - original 6
+		sub_attack = 30 #DNM, vanilla 13
+		shore_bombardment = 2
 		
-		anti_air_attack = 2
+		anti_air_attack = 1.25
 		
 		armor_value = 0
-		evasion = 80
+		evasion = 82 #DNM, vanilla 80
 		
 		surface_detection = 25
-		sub_detection = 60
+		sub_detection = 8 #DNM - vanilla 60
 		surface_visibility = 10
-		naval_speed = 36
+		naval_speed = 35
 		reliability = 0.85
 
-		naval_range = 1800
+		naval_range = 2000
 		
-		max_strength = 40
+		max_strength = 200 #DNM - original 40
 		
-		port_capacity_usage = 1
+		port_capacity_usage = 0.5
 		
 		type = { 
 			screen_ship
 			anti_air
 		}
 
-		build_cost_ic = 990
+		build_cost_ic = 625 #TPOV, prior 650
 		resources = {
 			oil = 1
 			steel = 3
 		}		
-		manpower = 325
+		manpower = 180
 	}
 	
 	destroyer_3 = {
@@ -110,39 +239,40 @@ equipments = {
 		parent = destroyer_2
 		priority = 20
 		
-		ap_attack = 2.5
-		attack = 3.5
+		ap_attack = 2.4
+		attack = 9 #DNM - original 3.5
 		fire_range = 16
-		torpedo_attack = 7
-		sub_attack = 16
+		torpedo_attack = 65 #DNM - original 7
+		sub_attack = 37.5 #DNM, vanilla 16
+		shore_bombardment = 2.5
 		
-		anti_air_attack = 4.5
+		anti_air_attack = 1.5
 		
 		armor_value = 0
-		evasion = 88
+		evasion = 80 #DNM, vanilla 88
 		
 		surface_detection = 45
-		sub_detection = 100
+		sub_detection = 10 #DNM - vanilla 100
 		surface_visibility = 10
-		naval_speed = 38
-		reliability = 0.90
+		naval_speed = 35
+		reliability = 0.85
 
 		naval_range = 2000
 		
-		max_strength = 50
+		max_strength = 250 #DNM - original 50
 		
-		port_capacity_usage = 1
+		port_capacity_usage = 0.5
 		
 		type = { 
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 1080
+		build_cost_ic = 650 #TPOV, prior 750
 		resources = {
 			oil = 2
 			steel = 3
 		}
-		manpower = 400
+		manpower = 200
 	}
 	
 	destroyer_4 = {
@@ -152,40 +282,41 @@ equipments = {
 		parent = destroyer_3
 		priority = 20
 		
-		ap_attack = 2.5
-		attack = 4
-		fire_range = 17
-		torpedo_attack = 8
-		sub_attack = 20
+		ap_attack = 2.4
+		attack = 14 #DNM - original 4
+		fire_range = 16
+		torpedo_attack = 65 #DNM - original 8
+		sub_attack = 45 #DNM, vanilla 20
+		shore_bombardment = 3
 		
-		anti_air_attack = 5
+		anti_air_attack = 2
 		
 		armor_value = 0
-		evasion = 95
+		evasion = 85 #DNM, vanilla 95
 		
 		surface_detection = 55
-		sub_detection = 140
+		sub_detection = 12 #DNM - vanilla 140
 		surface_visibility = 10
-		naval_speed = 38
-		reliability = 0.92
+		naval_speed = 36
+		reliability = 0.90
 
-		naval_range = 2500
+		naval_range = 2000
 		
-		max_strength = 60
+		max_strength = 288 #DNM - original 60
 		
-		port_capacity_usage = 1
+		port_capacity_usage = 0.5
 		
 		type = { 
 			screen_ship
 			anti_air
 		}
 
-		build_cost_ic = 1200
+		build_cost_ic = 675 #TPOV, prior 800
 		resources = {
 			oil = 2
 			steel = 4
 			chromium = 1
 		}		
-		manpower = 500
+		manpower = 220
 	}
 }

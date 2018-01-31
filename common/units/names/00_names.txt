@@ -4554,15 +4554,15 @@ SIA = {
 	light_cruiser = {
 		prefix = "HTMS"
 		generic = { "Fi Reuxrb" }
-		unique = {
-			"Taksin" "Naresuan" "Chon Buri" "Samut Phrakan" "Si Racha" "Rayong" "Chanthaburi" "Khao Saming" "Ratanakosin" "Sukhothai" 
-		}
+		unique = { #DNM - note Sri Ayuthia and Dhonburi moved from heavy_cruiser to light_cruiser, spelling of Sri Ayuthia adjusted.
+			"Sri Ayudhaya" "Dhonburi" "Taksin" "Naresuan" "Chon Buri" "Samut Phrakan" "Si Racha" "Rayong" "Chanthaburi" "Khao Saming" "Ratanakosin" "Sukhothai" 
+		} 
 	}
 	heavy_cruiser = {
 		prefix = "HTMS"
 		generic = { "Reux Ladtrawen Hnak" }
-		unique = {
-			"Sri Ayuthia" "Dhonburi" "Chon Buri" "Samut Phrakan" "Si Racha" "Rayong" "Chanthaburi" "Khao Saming" "Ratanakosin" "Sukhothai" 
+		unique = { #DNM - note Sri Ayuthia and Dhonburi moved from heavy_cruiser to light_cruiser, spelling of Sri Ayuthia adjusted.
+			"Chon Buri" "Samut Phrakan" "Si Racha" "Rayong" "Chanthaburi" "Khao Saming" "Ratanakosin" "Sukhothai" 
 		}
 	}
 	battle_cruiser = {

@@ -18,16 +18,31 @@ set_technology = {
 	naval_bomber1 = 1
 	early_submarine = 1
 	early_destroyer = 1
-	basic_destroyer = 1
+	#basic_destroyer = 1 #DNM removed
 	early_light_cruiser = 1
 	early_heavy_cruiser = 1
-	basic_heavy_cruiser = 1
-	early_battleship = 1
+	#basic_heavy_cruiser = 1 #DNM Removed
+	#early_battleship = 1 #DNM removed
 	transport = 1
 	motorised_infantry = 1
 	support_weapons = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+
+	basic_submarine = 1 #DNM
+
+	ww1_submarine = 1 #DNM
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	late_ww1_destroyer = 1 #DNM
+	protected_cruiser = 1 #DNM
+	scout_cruiser = 1 #DNM
+	ww1_light_cruiser = 1 #DNM
+	armoured_cruiser = 1 #DNM
+	advanced_armoured_cruiser = 1 #DNM
+	ww1_heavy_cruiser = 1 #DNM
+	pre_dreadnought_battleship = 1 #DNM
+	dreadnought_battleship = 1 #DNM
 }
 
 set_politics = {
@@ -228,24 +243,177 @@ create_country_leader = {
 
 ### Ship Variants ###
 
+
+#########################################################################
+## DNM Variants
+#########################################################################
+create_equipment_variant = {
+	name = "B Class"
+	type = submarine_ww1
+	upgrades = {
+		sub_engine_upgrade = 10
+		ship_quality_upgrade = 6
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 26
+		sub_stealth_upgrade = 15
+		sub_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "C Class"
 	type = submarine_1
 	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
+		sub_engine_upgrade = 6
+		ship_quality_upgrade = 4
+		ship_anti_air_upgrade = 4
+		ship_range_upgrade = 8
+		sub_stealth_upgrade = 6
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "D Class"
+	type = submarine_2
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 8
+		ship_quality_upgrade = 1
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 7
 		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
+		sub_torpedo_upgrade = 2
 	}
 }
-
+create_equipment_variant = {
+	name = "Alsedo Class"
+	type = destroyer_late_ww1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 1
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_torpedo_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Churruca Class"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 8
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 4
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Almirante Antequera Class"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 9
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 5
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 4
+	}
+}
+create_equipment_variant = {
+	name = "República Class"
+	type = light_cruiser_ww1
+	upgrades = {
+		ship_engine_upgrade = 6
+		ship_barrels_upgrade = 6
+		ship_calibre_upgrade = 5
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 11
+		ship_torpedo_upgrade = 12
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Méndez Núñes Class"
+	type = light_cruiser_1
+	upgrades = {
+		ship_engine_upgrade = 1
+		ship_barrels_upgrade = 1
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 18
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Príncipe Alfonso Class"
 	type = light_cruiser_1
 	upgrades = {
-		ship_reliability_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_gun_upgrade = 1
-		ship_anti_air_upgrade = 1
+		ship_engine_upgrade = 7
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 10
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 18
+	}
+}
+create_equipment_variant = {
+	name = "Canarias Class"
+	type = heavy_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 8
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_armor_upgrade = 11
+		ship_torpedo_upgrade = 10
+	}
+}
+create_equipment_variant = {
+	name = "España Class"
+	type = battleship_dn
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 0
+		ship_barrels_upgrade = 1
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_armor_upgrade = 0
 	}
 }

@@ -15,50 +15,96 @@ equipments = {
 			ship_deckspace_upgrade
 			carrier_armor_upgrade
 			ship_engine_upgrade
-			ship_reliability_upgrade			
+			ship_barrels_upgrade
+			ship_gunquality_upgrade
+			ship_calibre_upgrade
+			ship_quality_upgrade
+			ship_anti_air_upgrade
+			ship_range_upgrade
 		}
 		
-		ap_attack = 0
-		attack = 1
-		fire_range = 14
+		ap_attack = 2.0
+		attack = 17.3 #DNM - original 1
+		fire_range = 14.8
 		torpedo_attack = 0
-		carrier_size = 45
+		carrier_size = 20
 		
-		anti_air_attack = 8
+		anti_air_attack = 1
 		
-		armor_value = 7
+		armor_value = 2
 		evasion = 8
 		
 		surface_detection = 10
-		sub_detection = 5
+		sub_detection = 0.5 #DNM, vanilla 5
 		surface_visibility = 30
-		naval_speed = 26
+		naval_speed = 22.5
 		reliability = 0.70
 		
-		naval_range = 3000
+		naval_range = 1850
 		
-		max_strength = 250
+		max_strength = 1300 #DNM - original 250
 		
-		port_capacity_usage = 2
+		port_capacity_usage = 1.5
 
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
 		
-		build_cost_ic = 8750
+		build_cost_ic = 8000
 		resources = {
 			oil = 1
-			steel = 3
+			steel = 2
 			chromium = 1
 		}
 		
-		manpower = 4500
+		manpower = 800
+	}
+
+	carrier_ww1 = {
+		archetype = carrier
+		priority = 50
 	}
 
 	carrier_1 = {
 		year = 1922
 
 		archetype = carrier
+		parent = carrier_ww1
 		priority = 70
+
+		ap_attack = 2.0
+		attack = 22 #DNM - original 1
+		fire_range = 14.8
+		torpedo_attack = 0
+		carrier_size = 40
+		
+		anti_air_attack = 1.5
+		
+		armor_value = 4
+		evasion = 8
+		
+		surface_detection = 10
+		sub_detection = 0.5 #DNM, vanilla 5
+		surface_visibility = 30
+		naval_speed = 25
+		reliability = 0.75
+		
+		naval_range = 2500
+		
+		max_strength = 2700 #DNM - original 250
+		
+		port_capacity_usage = 2
+
+		# (Describes combat behaviour - hidden stat)
+		offensive_weapons = no
+		
+		build_cost_ic = 12000
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 1
+		}
+		
+		manpower = 1200
 	}
 
 	carrier_2 = {
@@ -68,36 +114,36 @@ equipments = {
 		parent = carrier_1
 		priority = 70
 		
-		ap_attack = 0
-		attack = 1
-		fire_range = 15
+		ap_attack = 2.2
+		attack = 15 #DNM - original 1
+		fire_range = 14.8
 		torpedo_attack = 0
-		carrier_size = 55
+		carrier_size = 50
 		
-		anti_air_attack = 10
+		anti_air_attack = 3
 		
-		armor_value = 9
+		armor_value = 2.2
 		evasion = 10
 		
 		surface_detection = 10
-		sub_detection = 5
+		sub_detection = 0.5 #DNM, vanilla 5
 		surface_visibility = 30
-		naval_speed = 28
+		naval_speed = 29
 		reliability = 0.80
 
-		naval_range = 4000
+		naval_range = 3250
 		
-		max_strength = 325
+		max_strength = 1800 #DNM - original 325
 		
 		port_capacity_usage = 2
 
-		build_cost_ic = 9500
+		build_cost_ic = 6500
 		resources = {
 			oil = 1
-			steel = 4
+			steel = 3
 			chromium = 1
 		}
-		manpower = 5000
+		manpower = 1200
 	}
 
 	carrier_3 = {
@@ -107,36 +153,36 @@ equipments = {
 		parent = carrier_2
 		priority = 70
 		
-		ap_attack = 0
-		attack = 2
-		fire_range = 16
+		ap_attack = 2.2
+		attack = 15 #DNM - original 2
+		fire_range = 14.8
 		torpedo_attack = 0
-		carrier_size = 70
+		carrier_size = 60
 		
-		anti_air_attack = 12
+		anti_air_attack = 3.5
 		
-		armor_value = 11
+		armor_value = 4.4
 		evasion = 12
 		
 		surface_detection = 20
-		sub_detection = 5
+		sub_detection = 0.5 #DNM, vanilla 5
 		surface_visibility = 30
-		naval_speed = 30
+		naval_speed = 31
 		reliability = 0.85
 
-		naval_range = 5000
+		naval_range = 3700
 		
-		max_strength = 350
+		max_strength = 2500 #DNM - original 350
 		
 		port_capacity_usage = 2
 
-		build_cost_ic = 10250
+		build_cost_ic = 7000 # DNM
 		resources = {
 			oil = 2
 			steel = 4
 			chromium = 2
 		}
-		manpower = 5500
+		manpower = 1800
 	}
 
 	carrier_4 = {
@@ -146,36 +192,36 @@ equipments = {
 		parent = carrier_3
 		priority = 70
 		
-		ap_attack = 0
-		attack = 2
-		fire_range = 17
+		ap_attack = 2.6
+		attack = 40 #DNM - original 2
+		fire_range = 19
 		torpedo_attack = 0
-		carrier_size = 85
+		carrier_size = 83
 		
-		anti_air_attack = 14
+		anti_air_attack = 4
 		
-		armor_value = 13
+		armor_value = 6
 		evasion = 14
 		
 		surface_detection = 30
-		sub_detection = 5
+		sub_detection = 0.5 #DNM, vanilla 5
 		surface_visibility = 30
-		naval_speed = 32
+		naval_speed = 33
 		reliability = 0.90
 
-		naval_range = 6000
+		naval_range = 5500
 		
-		max_strength = 400
+		max_strength = 5500 #DNM - original 400
 		
 		port_capacity_usage = 2
 
-		build_cost_ic = 11000
+		build_cost_ic = 8000 #TPOV (prior 12000, but suspect this'll be too pricey for the AI)
 		resources = {
 			oil = 2
 			steel = 5
 			chromium = 2
 		}		
-		manpower = 6000
+		manpower = 3800
 	}
 
 }

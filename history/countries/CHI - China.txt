@@ -10,7 +10,7 @@ set_technology = {
 	early_bomber = 1
 	mass_assault = 1
 	fleet_in_being = 1
-	early_destroyer = 1
+	#early_destroyer = 1 #removed in DNM
 	early_light_cruiser = 1
 	tech_recon = 1
 	tech_support = 1
@@ -19,6 +19,12 @@ set_technology = {
 	motorised_infantry = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+
+	torpedo_boat_destroyer = 1 #DNM
+	protected_cruiser = 1 #DNM
+	scout_cruiser = 1 #DNM
+	ww1_light_cruiser = 1 #DNM
+	armoured_cruiser = 1 #DNM
 }
 
 add_ideas = {
@@ -238,4 +244,93 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
 	traits = { defensive_doctrine }
 	skill = 2
+}
+
+########################################################################
+## DNM variants
+########################################################################
+create_equipment_variant = {
+	name = "Hai Yung Class"
+	type = light_cruiser_protected
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 5
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 2
+		ship_torpedo_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Chao Ho Class"
+	type = light_cruiser_protected
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 3
+		ship_barrels_upgrade = 0
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 2
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Hai Chi Class"
+	type = armoured_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 24
+		ship_barrels_upgrade = 10
+		ship_calibre_upgrade = 10
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 11
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 41
+	}
+}
+create_equipment_variant = {
+	name = "Ning Hai Class"
+	type = light_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 0
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 0
+	}
+}
+create_equipment_variant = {
+	name = "Tse Chiang Class"
+	type = destroyer_tb
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 17
+		ship_barrels_upgrade = 42
+		ship_calibre_upgrade = 40
+		ship_gunquality_upgrade = 6
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 0
+	}
 }

@@ -77,4 +77,24 @@ instant_effect = {
 		progress = 0.88
 		efficiency = 100
 	}
+	add_equipment_production = {
+		equipment = {
+			type = submarine_2
+			creator = "EST"
+			version_name="Kalev Class"
+		}
+		requested_factories = 1
+		progress = 0.35
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = submarine_2
+			creator = "EST"
+			version_name="Kalev Class"
+		}
+		requested_factories = 1
+		progress = 0.35
+		amount = 1
+	}
 }

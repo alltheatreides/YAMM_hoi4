@@ -1167,7 +1167,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1922"
+					text = "1924" #DNM, original 1922.
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -1243,7 +1243,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_battlecruiser"
-					position = { x = 30 y = 465 }
+					position = { x = 530 y = 465 } #DNM
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1285,7 +1285,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_sub"
-					position = { x = 30 y = 1181 }
+					position = { x = 30 y = 1032 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1299,11 +1299,59 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_transport"
-					position = { x = 30 y = 1321 }
+					position = { x = 30 y = 1177 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
 					text = "NAVAL_TITLE_TRANSPORTS"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "naval_subtitle_AA_tech"
+					position = { x = 30 y = 1314 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_AA_TECHNOLOGY"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "naval_subtitle_Radar_tech"
+					position = { x = 530 y = 1454 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_RADAR_TECHNOLOGY"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "naval_subtitle_ASW_tech"
+					position = { x = 30 y = 1584 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_ASW_TECHNOLOGY"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "naval_subtitle_torpedo_tech"
+					position = { x = 30 y = 1724 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_TORPEDO_TECHNOLOGY"
 					maxWidth = 600
 					maxHeight = 62
 					format = left
@@ -1350,8 +1398,16 @@ guiTypes = {
 			}
 
 			gridboxtype = {
+				name = "transport_tree"
+				position = { x = 150 y = 1180 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
 				name = "early_battlecruiser_tree"
-				position = { x = 150 y = 540 }
+				position = { x = 150 y = 540 } #DNM - Was 570, changed to 150 (and y values in tech file changed) so linkages with bbs work.
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1375,21 +1431,279 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "early_submarine_tree"
-				position = { x = 150 y = 1188 }
+				position = { x = 150 y = 1040 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-			
-			
 			gridboxtype = {
-				name = "transport_tree"
-				position = { x = 150 y = 1329 }
+				name = "Interwar_AA_tech_tree"
+				position = { x = 150 y = 1320 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "Surface_search_radar_tree"
+				position = { x = 570 y = 1460 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "early_sonar_tree"
+				position = { x = 150 y = 1600 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "interwar_torpedoes_tree"
+				position = { x = 150 y = 1740 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 		}
+
+#DNM Start legacy_ships_folder
+
+		containerWindowType = {
+			name = "legacy_ships_folder"
+			position = { x=0 y=47 }
+			size = { width = 100%% height = 100%% }
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_2b_border"
+			}
+
+#			containerWindowType = {
+#				name = "size_filler"
+#				position = { x=0 y=0 }
+#				size = { width = 1700 height = 1200 }
+#	
+#			}
+
+			iconType = {
+				name ="naval_techtree_bg"
+				spriteType = "GFX_legacy_ships_techtree_bg"
+				position = { x=0 y=0 }
+			}
+
+				instantTextBoxType = {
+					name = "legacy_ships_year1"
+					position = { x = 224 y = 20 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1896"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "legacy_ships_year2"
+					position = { x = 644 y = 20 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1908"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+	
+				instantTextBoxType = {
+					name = "legacy_ships_year3"
+					position = { x = 1064 y = 20 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1916"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+			
+#				instantTextBoxType = {
+#					name = "legacy_ships_year4"
+#					position = { x = 1484 y = 20 }
+#					textureFile = ""
+#					font = "hoi_36header"
+#					borderSize = {x = 0 y = 4}
+#					text = "1924"
+#					maxWidth = 170
+#					maxHeight = 32
+#					format = left
+#					Orientation = "UPPER_LEFT"
+#				}
+			
+				instantTextBoxType = {
+					name = "legacy_ships_subtitle_destroyer"
+					position = { x = 30 y = 55 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_DESTROYERS"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "destroyer_desc"
+				}				
+
+				instantTextBoxType = {
+					name = "legacy_ships_subtitle_cruiser"
+					position = { x = 30 y = 185 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_CRUISERS"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "both_cruisers_desc"
+				}
+
+				instantTextBoxType = {
+					name = "legacy_ships_subtitle_battlecruiser"
+					position = { x = 470 y = 465 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_BATTLECRUISERS"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "battle_cruiser_desc"
+				}	
+
+				instantTextBoxType = {
+					name = "legacy_ships_subtitle_battleship"
+					position = { x = 30 y = 605 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_BATTLESHIPS"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "battleship_desc"
+				}				
+
+				instantTextBoxType = {
+					name = "legacy_ships_subtitle_carrier"
+					position = { x = 910 y = 735 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_CARRIERS"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "carrier_desc"
+				}	
+
+				instantTextBoxType = {
+					name = "legacy_ships_subtitle_sub"
+					position = { x = 910 y = 865 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_SUBMARINES"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "submarine_desc"
+				}	
+		
+			containerWindowType = {
+				name = "tiled_window_transparent_transparent"
+				position = { x= 0 y= 0 }
+				size = { 
+					width=1700 height=1300 
+					min = { width=100%% height=100%% }
+				}
+				clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_window_transparent_transparent"
+				}
+			}			
+			
+			gridboxtype = {
+				name = "torpedo_boat_destroyer_tree"
+				position = { x = 150 y = 60}
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "protected_cruiser_tree"
+				position = { x = 150 y = 260 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "armoured_cruiser_tree"
+				position = { x = 150 y = 260 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "early_ww1_battlecruiser_tree"
+				position = { x = 150 y = 540 } #X originally 570, changed to 150 due to issues with linkages
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "pre_dreadnought_battleship_tree"
+				position = { x = 150 y = 540 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "ww1_carrier_tree"
+				position = { x = 990 y = 740 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "ww1_submarine_tree"
+				position = { x = 990 y = 870 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+		}
+#DNM End legacy_ships_folder
 
 		containerWindowType = {
 			name = "air_techs_folder"
@@ -2728,6 +3042,138 @@ guiTypes = {
 			}
 		}
 
+#		containerWindowType = {
+#			name = "naval_equipment_folder"
+#			position = { x=0 y=47 }
+#			size = { width = 100%% height = 100%% }
+#			margin = { top = 13 left = 13 bottom = 24 right = 25}
+#			drag_scroll = { left middle }
+#			verticalScrollbar = "right_vertical_slider"
+#			horizontalScrollbar = "bottom_horizontal_slider"
+#
+#			background = {
+#				name = "Background"
+#				quadTextureSprite ="GFX_tiled_window_2b_border"
+#			}
+#
+#			containerWindowType = {
+#				name = "size_filler"
+#				position = { x=0 y=0 }
+#				size = { width = 1565 height = 100% }
+#			}
+#
+#			iconType = {
+#				name ="fleet_in_being_bg"
+#				spriteType = "GFX_fleet_in_being_bg"
+#				position = { x=85 y=33 }
+#			}			
+#				
+#			iconType = {
+#				name ="trade_interdiction_bg"
+#				spriteType = "GFX_trade_interdiction_bg"
+#				position = { x=575 y=33 }
+#			}	
+#	
+#			iconType = {
+#				name ="base_strike_bg"
+#				spriteType = "GFX_base_strike_bg"
+#				position = { x=1052 y=33 }
+#			}			
+#			
+#			instantTextBoxType = {
+#				name = "fleet_in_being_title"
+#				position = { x = 120 y = 35 }
+#				textureFile = ""
+#				font = "hoi_22tech"
+#				borderSize = {x = 0 y = 4}
+#				text = "TITLE_FLEET_IN_BEING"
+#				maxWidth = 400
+#				maxHeight = 122
+#				format = center
+#				Orientation = "UPPER_LEFT"
+#			}
+#
+#			instantTextBoxType = {
+#				name = "fleet_in_being_desc"
+#				position = { x = 130 y = 70 }
+#				textureFile = ""
+#				font = "hoi_20b"
+#				borderSize = {x = 0 y = 4}
+#				text = "FLEET_IN_BEING_DESC"
+#				maxWidth = 380
+#				maxHeight = 122
+#				format = center
+#				Orientation = "UPPER_LEFT"
+#			}
+#			
+#			instantTextBoxType = {
+#				name = "trade_interdiction_title"
+#				position = { x = 610 y = 35 }
+#				textureFile = ""
+#				font = "hoi_22tech"
+#				borderSize = {x = 0 y = 4}
+#				text = "TITLE_TRADE_INTERDICTION"
+#				maxWidth = 400
+#				maxHeight = 122
+#				format = center
+#				Orientation = "UPPER_LEFT"
+#			}
+#
+#			instantTextBoxType = {
+#				name = "trade_interdiction_desc"
+#				position = { x = 610 y = 70 }
+#				textureFile = ""
+#				font = "hoi_20b"
+#				borderSize = {x = 0 y = 4}
+#				text = "TRADE_INTERDICTION_DESC"
+#				maxWidth = 380
+#				maxHeight = 122
+#				format = center
+#				Orientation = "UPPER_LEFT"
+#			}
+#
+#			instantTextBoxType = {
+#				name = "base_strike_title"
+#				position = { x = 1085 y = 35 }
+#				textureFile = ""
+#				font = "hoi_22tech"
+#				borderSize = {x = 0 y = 4}
+#				text = "TITLE_BASE_STRIKE"
+#				maxWidth = 400
+#				maxHeight = 122
+#				format = center
+#				Orientation = "UPPER_LEFT"
+#			}
+#
+#			instantTextBoxType = {
+#				name = "base_strike_desc"
+#				position = { x = 1095 y = 70 }
+#				textureFile = ""
+#				font = "hoi_20b"
+#				borderSize = {x = 0 y = 4}
+#				text = "BASE_STRIKE_DESC"
+#				maxWidth = 380
+#				maxHeight = 122
+#				format = center
+#				Orientation = "UPPER_LEFT"
+#			}
+#			#XXX
+#			gridboxtype = {
+#				name = "ship_design_tree"
+#				position = { x=80 y=172 }
+#				size = { width = 478 height = 1000 }
+#				slotsize = { width=60 height= 60 }
+#				format = "UP"
+#
+#				background = {
+#					name = "Background"
+#					quadTextureSprite ="GFX_fullborder_tiled"
+#					position = { x=0 y=-150 }					
+#				}					
+#				
+#			}
+#		}
+#
 		containerWindowType = {
 			name = "air_doctrine_folder"
 			position = { x=0 y=47 }
@@ -3336,9 +3782,17 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 
+			buttonType = { #DNM New button for legacy ships
+				name = "legacy_ships_folder_tab"
+				position = { x = 497 y = 0 }
+				quadTextureSprite = "GFX_legacy_ships_folder_tab"
+				frame = 1
+				clicksound = click_default
+			}
+
 			buttonType = {
 				name = "naval_folder_tab"
-				position = { x = 497 y = 0 }
+				position = { x = 586 y = 0 } #DNM x was 497
 				quadTextureSprite = "GFX_naval_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -3346,14 +3800,14 @@ guiTypes = {
 
 			buttonType = {
 				name = "naval_doctrine_folder_tab"
-				position = { x = 586 y = 0 }
+				position = { x = 675 y = 0 } #DNM x was 586
 				quadTextureSprite = "GFX_naval_doctrine_folder_tab"
 				frame = 1
 				clicksound = click_default
 			}
 			buttonType = {
 				name = "air_techs_folder_tab"
-				position = { x = 705 y = 0 }
+				position = { x = 794 y = 0 } #DNM x was 705
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -3361,14 +3815,14 @@ guiTypes = {
 
 			buttonType = {
 				name = "air_doctrine_folder_tab"
-				position = { x = 794 y = 0 }
+				position = { x = 883 y = 0 } #DNM x was 794
 				quadTextureSprite = "GFX_air_doctrine_folder_tab"
 				frame = 1
 				clicksound = click_default
 			}
 
 			buttonType = {
-				position = { x = 913 y = 0 }
+				position = { x = 1002 y = 0 }
 				name = "electronics_folder_tab"
 				quadTextureSprite = "GFX_techtree_engineering_tab"
 				frame = 1
@@ -3378,13 +3832,13 @@ guiTypes = {
 			iconType = {
 				name = "highlight_engineering_folder"
 				spriteType = "GFX_tutorial_research_folder_icon_glow"
-				position = { x=913 y=0}
+				position = { x= 1002 y = 0 } #DNM was 913
 				hide = yes
 				alwaystransparent = yes
 			}			
 				
 			buttonType = {
-				position = { x = 1002 y = 0 }
+				position = { x = 1091 y = 0 } #DNM x was 1002
 				name = "industry_folder_tab"
 				quadTextureSprite = "GFX_industry_folder_tab"
 				frame = 1
@@ -3395,10 +3849,18 @@ guiTypes = {
 			iconType = {
 				name = "highlight_industry_folder"
 				spriteType = "GFX_tutorial_research_folder_icon_glow"
-				position = { x=1002 y=0}
+				position = { x = 1091 y = 0 } #DNM x was 1002
 				hide = yes
 				alwaystransparent = yes
 			}
+
+#			buttonType = {
+#				name = "naval_equipment_folder_tab"
+#				position = { x = 1191 y = -10 } #DNM - new folder
+#				quadTextureSprite = "GFX_naval_doctrine_folder_tab"
+#				frame = 1
+#				clicksound = click_default
+#			}
 
 			
 
@@ -4160,6 +4622,58 @@ guiTypes = {
 				spriteType = "GFX_subtech_claa"
 				alwaystransparent = yes
 			}
+		}
+	}
+######################################################################
+#DNM
+######################################################################
+	containerWindowType = {
+		name = "techtree_legacy_ships_folder_item"
+		position = { x=-131 y=1 }
+		size = { width = 204 height = 72 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+
+
+		iconType = {
+			name = "Icon"
+			position = { x=167 y=34 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes		
+			alwaystransparent = yes
+		}		
+		
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -1 }
+			textureFile = ""
+			font = "hoi_20bs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 270
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+		iconType = {
+			name = "bonus_icon"
+			position = { x=261 y=-18 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 275 y = -18 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
 		}
 	}
 

@@ -48,6 +48,26 @@ set_technology = {
 	support_weapons = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+
+	basic_destroyer = 1 #DNM
+	basic_heavy_cruiser = 1 #DNM
+
+	pre_dreadnought_battleship = 1 #DNM
+	dreadnought_battleship = 1 #DNM
+	advanced_dreadnought_battleship = 1 #DNM
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	late_ww1_destroyer = 1 #DNM
+	protected_cruiser = 1 #DNM
+	scout_cruiser = 1 #DNM
+	ww1_light_cruiser = 1 #DNM
+	armoured_cruiser = 1 #DNM
+	advanced_armoured_cruiser = 1 #DNM
+	ww1_heavy_cruiser = 1 #DNM
+	early_ww1_battlecruiser = 1 #DNM
+	late_ww1_battlecruiser = 1 #DNM
+	ww1_carrier = 1 #DNM
+	ww1_submarine = 1 #DNM
 }
 
 #Monroe Doctrine
@@ -517,94 +537,632 @@ create_navy_leader = {
 	skill = 2
 }
 
-### Ship Variants ###
-
+#######################################################################################################################
+### Start of DNM variants
+#######################################################################################################################
+create_equipment_variant = {
+	name = "O Class"
+	type = submarine_ww1
+	upgrades = {
+		sub_engine_upgrade = 6
+		ship_quality_upgrade = 10
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		sub_stealth_upgrade = 5
+		sub_torpedo_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "R Class"
+	type = submarine_ww1
+	upgrades = {
+		sub_engine_upgrade = 6
+		ship_quality_upgrade = 16
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 12
+		sub_stealth_upgrade = 8
+		sub_torpedo_upgrade = 12
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "S Class - Electric Boat Type"
+	type = submarine_ww1
+	upgrades = {
+		sub_engine_upgrade = 7
+		ship_quality_upgrade = 16
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 8
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 12
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "S Class - Navy Yard Type"
+	type = submarine_ww1
+	upgrades = {
+		sub_engine_upgrade = 9
+		ship_quality_upgrade = 16
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 14
+		sub_stealth_upgrade = 5
+		sub_torpedo_upgrade = 12
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "S Class - Second Lake Type"
+	type = submarine_ww1
+	upgrades = {
+		sub_engine_upgrade = 10
+		ship_quality_upgrade = 28
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 26
+		sub_stealth_upgrade = 8
+		sub_torpedo_upgrade = 14
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "S Class - Second Group"
+	type = submarine_ww1
+	upgrades = {
+		sub_engine_upgrade = 10
+		ship_quality_upgrade = 28
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		sub_stealth_upgrade = 3
+		sub_torpedo_upgrade = 14
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Barracuda Class"
 	type = submarine_1
 	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
+		sub_engine_upgrade = 9
+		ship_quality_upgrade = 3
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 18
 		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
+		sub_torpedo_upgrade = 3
 	}
 	obsolete = yes
 }
-
+create_equipment_variant = {
+	name = "Narwhal Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 8
+		ship_quality_upgrade = 2
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 29
+		sub_stealth_upgrade = 6
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Argonaut Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 2
+		ship_quality_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 29
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Dolphin Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 7
+		ship_quality_upgrade = 6
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 7
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Cachalot Class"
+	type = submarine_1
+	upgrades = {
+		sub_engine_upgrade = 7
+		ship_quality_upgrade = 4
+		ship_anti_air_upgrade = 10
+		ship_range_upgrade = 16
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Porpoise Class"
+	type = submarine_2
+	upgrades = {
+		sub_engine_upgrade = 6
+		ship_quality_upgrade = 4
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 9
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 2
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Shark Class"
+	type = submarine_2
+	upgrades = {
+		sub_engine_upgrade = 6
+		ship_quality_upgrade = 4
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 9
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 2
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Perch Class"
+	type = submarine_2
+	upgrades = {
+		sub_engine_upgrade = 6
+		ship_quality_upgrade = 4
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 9
+		sub_stealth_upgrade = 4
+		sub_torpedo_upgrade = 2
+	}
+}
+create_equipment_variant = {
+	name = "Sampson Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 1
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 4
+		ship_torpedo_upgrade = 23
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Caldwell Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 2
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		ship_torpedo_upgrade = 23
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Wickes Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 23
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Clemson Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 2
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		ship_torpedo_upgrade = 23
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Farragut Class"
-	type = destroyer_1
+	type = destroyer_2
 	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 10
+		ship_range_upgrade = 2
 		ship_torpedo_upgrade = 3
-		destroyer_engine_upgrade = 3
-		ship_ASW_upgrade = 3
-		ship_anti_air_upgrade = 3
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Mahan Class"
+	type = destroyer_2
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 2
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 10
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 10
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Porter Class"
+	type = destroyer_2
+	upgrades = {
+		destroyer_engine_upgrade = 15
+		ship_barrels_upgrade = 19
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 7
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 16
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Bagley Class"
+	type = destroyer_2
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 5
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 9
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 17
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Gridley Class"
+	type = destroyer_2
+	upgrades = {
+		destroyer_engine_upgrade = 11
+		ship_barrels_upgrade = 11
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 4
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 10
+		ship_range_upgrade = 2
+		ship_torpedo_upgrade = 17
+	}
+}
+create_equipment_variant = {
+	name = "Somers Class"
+	type = destroyer_2
+	upgrades = {
+		destroyer_engine_upgrade = 15
+		ship_barrels_upgrade = 19
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 10
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_torpedo_upgrade = 10
 	}
 }
 
+
+create_equipment_variant = {
+	name = "Omaha Class"
+	type = light_cruiser_ww1
+	upgrades = {
+		ship_engine_upgrade = 16
+		ship_barrels_upgrade = 12
+		ship_calibre_upgrade = 8
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 14
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 6
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 23
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Brooklyn Class"
+	type = light_cruiser_2
+	upgrades = {
+		ship_engine_upgrade = 23
+		ship_barrels_upgrade = 26
+		ship_calibre_upgrade = 6
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_asw_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_armor_upgrade = 16
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Pensacola Class"
+	type = heavy_cruiser_1
+	upgrades = {
+		ship_engine_upgrade = 10
+		ship_barrels_upgrade = 7
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		ship_armor_upgrade = 17
+		ship_torpedo_upgrade = 0
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Northampton Class"
+	type = heavy_cruiser_1
+	upgrades = {
+		ship_engine_upgrade = 10
+		ship_barrels_upgrade = 6
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		ship_armor_upgrade = 17
+		ship_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Portland Class"
 	type = heavy_cruiser_1
 	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_gun_upgrade = 2
+		ship_engine_upgrade = 14
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		ship_armor_upgrade = 26
+		ship_torpedo_upgrade = 0
 	}
+	obsolete=yes
 }
-
 create_equipment_variant = {
-	name = "Pennsylvania Class"
-	type = battleship_1
+	name = "New Orleans Class" #Note called Astoria class in VBNM
+	type = heavy_cruiser_2
 	upgrades = {
-		ship_reliability_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_armor_upgrade = 1
-		ship_gun_upgrade = 1
+		ship_engine_upgrade = 7
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_armor_upgrade = 11
+		ship_torpedo_upgrade = 0
 	}
 	obsolete = yes
 }
-
+create_equipment_variant = {
+	name = "Wichita Class"
+	type = heavy_cruiser_2
+	upgrades = {
+		ship_engine_upgrade = 8
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 5
+		ship_range_upgrade = 3
+		ship_armor_upgrade = 0
+		ship_torpedo_upgrade = 12
+	}
+}
+create_equipment_variant = {
+	name = "Wyoming Class"
+	type = battleship_adv_dn
+	upgrades = {
+		ship_engine_upgrade = 4
+		ship_barrels_upgrade = 3
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 9
+		ship_armor_upgrade = 5
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "New York Class"
+	type = battleship_adv_dn
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 6
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 10
+		ship_armor_upgrade = 7
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Nevada Class"
+	type = battleship_adv_dn
+	upgrades = {
+		ship_engine_upgrade = 4
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 10
+		ship_armor_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Pennsylvania Class"
+	type = battleship_adv_dn
+	upgrades = {
+		ship_engine_upgrade = 6
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 4
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 14
+		ship_armor_upgrade = 10
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "New Mexico Class"
+	type = battleship_adv_dn
+	upgrades = {
+		ship_engine_upgrade = 8
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 5
+		ship_gunquality_upgrade = 5
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 20
+		ship_armor_upgrade = 11
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Tennessee Class"
+	type = battleship_adv_dn
+	upgrades = {
+		ship_engine_upgrade = 6
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 5
+		ship_gunquality_upgrade = 5
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 15
+		ship_armor_upgrade = 9
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Colorado Class"
 	type = battleship_1
 	upgrades = {
-		ship_reliability_upgrade = 3
-		ship_engine_upgrade = 3
+		ship_engine_upgrade = 4
+		ship_barrels_upgrade = 4
+		ship_calibre_upgrade = 4
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 7
 		ship_armor_upgrade = 3
-		ship_gun_upgrade = 4
 	}
 }
 create_equipment_variant = {
-	name = "New Mexico Class"
-	type = battleship_1
+	name = "Lexington Class"
+	type = carrier_1
+	parent_version = 0
 	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_gun_upgrade = 2
+		ship_engine_upgrade = 39
+		ship_barrels_upgrade = 41
+		ship_calibre_upgrade = 33
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 7
+		ship_anti_air_upgrade = 5
+		ship_range_upgrade = 4
+		ship_deckspace_upgrade = 10
+		carrier_armor_upgrade = 3
 	}
+	obsolete = yes
 }
-
+create_equipment_variant = {
+	name = "Ranger Class"
+	type = carrier_2
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 2
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_deckspace_upgrade = 5
+		carrier_armor_upgrade = 0
+	}
+	obsolete = yes
+}
 create_equipment_variant = {
 	name = "Yorktown Class"
 	type = carrier_2
+	parent_version = 0
 	upgrades = {
-		ship_deckspace_upgrade = 1
-		carrier_armor_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 6
+		ship_barrels_upgrade = 1
+		ship_calibre_upgrade = 1
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 3
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 3
+		ship_deckspace_upgrade = 11
+		carrier_armor_upgrade = 6
 	}
-
 }
 
+
+
+
+####################################
+## End of VBNM classes
+####################################
 1939.1.1 = {
 	
 	create_equipment_variant = {
 		name = "Salmon Class"
 		type = submarine_2
 		upgrades = {
-			ship_reliability_upgrade = 1
+			ship_quality_upgrade = 1
 			sub_engine_upgrade = 1
 			sub_stealth_upgrade = 1
 			sub_torpedo_upgrade = 1
@@ -629,19 +1187,31 @@ create_equipment_variant = {
 			ship_deckspace_upgrade = 2
 			carrier_armor_upgrade = 2
 			ship_engine_upgrade = 2
-			ship_reliability_upgrade = 2
+			ship_quality_upgrade = 2
 		}
 	}
+
+	create_equipment_variant = {
+		name = "F2A Buffalo"
+		type = cv_fighter_equipment_1
+		upgrades = {
+			cv_plane_gun_upgrade = 5
+			cv_plane_range_upgrade = 0
+			plane_engine_upgrade = 2
+			plane_reliability_upgrade = 5
+		}
+	}
+
 
 	# 1941
 	#create_equipment_variant = {
 	#	name = "South Dakota Class"
 	#	type = battleship_2
 	#	upgrades = {
-	#		ship_reliability_upgrade = 3
+	#		ship_quality_upgrade = 3
 	#		ship_engine_upgrade = 3
 	#		ship_armor_upgrade = 3
-	#		ship_gun_upgrade = 3
+	#		ship_barrels_upgrade = 3
 	#	}
 	#}
 }

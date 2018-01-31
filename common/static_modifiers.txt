@@ -7,7 +7,7 @@ weather_rain_light = { # on Region
 	naval_detection = -0.2
 	naval_hit_chance = -0.10
 	naval_speed_factor = -0.10
-	naval_strike = -0.4
+	naval_strike = -0.5
 	air_accidents = 0.1
 	air_mission_efficiency = -0.2
 
@@ -108,20 +108,20 @@ occupation_policy_1 = { # Gentlest
 	resistance_tick = -0.6
 	local_resources = -0.3
 	local_manpower = -0.7
-	local_factories = -0.6
+	local_factories = -0.7
 }
 occupation_policy_2 = { # Gentle
 	resistance_tick = -0.4
 	local_resources = -0.2
 	local_manpower = -0.8
-	local_factories = -0.4
+	local_factories = -0.5
 	occupation_cost = 0.01
 }
 occupation_policy_3 = { # Harsh
 	resistance_tick = -0.2
 	local_resources = -0.1
 	local_manpower = -0.9
-	local_factories = -0.2
+	local_factories = -0.3
 	occupation_cost = 0.02
 	industrial_capacity_factory = 0.025
 }
@@ -129,7 +129,7 @@ occupation_policy_4 = { # Harshest
 	resistance_tick = 0.1
 	local_resources = 0.0
 	local_manpower = -1.0
-	local_factories = -0.10
+	local_factories = -0.20
 	occupation_cost = 0.06
 	industrial_capacity_factory = 0.05
 }

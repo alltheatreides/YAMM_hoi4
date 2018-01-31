@@ -25,6 +25,12 @@ set_technology = {
 	interwar_antitank = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+	basic_destroyer = 1 #DNM
+
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	late_ww1_destroyer = 1 #DNM
+	ww1_submarine = 1 #DNM
 }
 
 add_ideas = {
@@ -310,5 +316,55 @@ create_equipment_variant = {
 		plane_range_upgrade = 0  
 		plane_engine_upgrade = 1
 		plane_reliability_upgrade = 3
+	}
+}
+##############################################################################
+### DNM variants
+##############################################################################
+
+create_equipment_variant = {
+	name = "Wilk Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 4
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		sub_stealth_upgrade = 5
+		sub_torpedo_upgrade = 10
+	}
+}
+create_equipment_variant = {
+	name = "Wicher Class"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 7
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 8
+		ship_gunquality_upgrade = 3
+		ship_quality_upgrade = 5
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 5
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Grom Class"
+	type = destroyer_2
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 10
+		ship_barrels_upgrade = 8
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 2
+		ship_quality_upgrade = 10
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_torpedo_upgrade = 0
 	}
 }

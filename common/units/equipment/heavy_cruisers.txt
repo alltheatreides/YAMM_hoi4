@@ -11,52 +11,170 @@ equipments = {
 		interface_category = interface_category_capital_ships
 
 		upgrades = {
-			ship_reliability_upgrade
+			ship_quality_upgrade
 			ship_engine_upgrade
 			ship_armor_upgrade
-			ship_gun_upgrade
+			ship_barrels_upgrade
+			ship_calibre_upgrade
+			ship_gunquality_upgrade
+			ship_anti_air_upgrade
+			ship_range_upgrade
+			ship_torpedo_upgrade
 		}
 
-		ap_attack = 11
-		attack = 10
-		fire_range = 24
-		torpedo_attack = 0
-		shore_bombardment = 3
+		ap_attack = 3.5
+		attack = 8 #DNM - original 8
+		fire_range = 13
+		torpedo_attack = 5
+		shore_bombardment = 2
 		
-		anti_air_attack = 6
+		anti_air_attack = 1
 		
-		armor_value = 9
+		armor_value = 4.2
 		evasion = 20
 		
 		surface_detection = 12
-		sub_detection = 5
+		sub_detection = 0.5 #DNM - vanilla 5
 		surface_visibility = 20
-		naval_speed = 24
-		reliability = 0.80
+		naval_speed = 15
+		reliability = 0.60
 		
-		naval_range = 3000
+		naval_range = 1000
 		
-		max_strength = 150
+		max_strength = 600 #DNM - original 150
 		
 		port_capacity_usage = 1
 		
-		build_cost_ic = 4200
+		build_cost_ic = 6000 #TPOV - set high to get AI to not be silly
 		resources = {
 			oil = 1
 			steel = 3
 		}
 		
-		manpower = 1500
+		manpower = 200
+	}
+
+	armoured_cruiser_1 = {
+		archetype = heavy_cruiser
+		priority = 0
+		
+	}
+
+	armoured_cruiser_2 = {
+		archetype = heavy_cruiser
+		parent = armoured_cruiser_1
+		priority = 0
+
+		ap_attack = 4.3
+		attack = 11 #DNM - original 8
+		fire_range = 10
+		torpedo_attack = 14.4
+		shore_bombardment = 2.5
+		
+		anti_air_attack = 1.5
+		
+		armor_value = 4.6
+		evasion = 20
+		
+		surface_detection = 12
+		sub_detection = 0.5 #DNM - vanilla 5
+		surface_visibility = 20
+		naval_speed = 22
+		reliability = 0.65
+		
+		naval_range = 1500
+		
+		max_strength = 900 #DNM - original 150
+		
+		port_capacity_usage = 1
+		
+		build_cost_ic = 6000  #TPOV - set high to get AI to not be silly
+		resources = {
+			oil = 1
+			steel = 3
+		}
+		
+		manpower = 350
+		
+	}
+
+	heavy_cruiser_ww1 = {
+		archetype = heavy_cruiser
+		parent = armoured_cruiser_2
+		priority = 0
+
+		ap_attack = 6.9
+		attack = 18 #DNM - original 8
+		fire_range = 19.3 #TPOV
+		torpedo_attack = 10 #TPOV
+		shore_bombardment = 3
+		
+		anti_air_attack = 2
+		
+		armor_value = 2.3
+		evasion = 20
+		
+		surface_detection = 12
+		sub_detection = 0.5 #DNM - vanilla 5
+		surface_visibility = 20
+		naval_speed = 29
+		reliability = 0.70
+		
+		naval_range = 2000
+		
+		max_strength = 900 #DNM - original 150
+		
+		port_capacity_usage = 1
+		
+		build_cost_ic = 6000 #TPOV - set high to get AI to not be silly
+		resources = {
+			oil = 1
+			steel = 3
+		}
+		
+		manpower = 500
+		
 	}
 
 	heavy_cruiser_1 = {
 		year = 1922
 
 		archetype = heavy_cruiser
+		parent = heavy_cruiser_ww1
 		priority = 40
+
+		ap_attack = 7.9
+		attack = 31 #DNM - original 8
+		fire_range = 27.3
+		torpedo_attack = 20 #TPOV
+		shore_bombardment = 3.5
+		
+		anti_air_attack = 2.5
+		
+		armor_value = 1.5
+		evasion = 20
+		
+		surface_detection = 12
+		sub_detection = 0.5 #DNM - vanilla 5
+		surface_visibility = 20
+		naval_speed = 31
+		reliability = 0.80
+		
+		naval_range = 2000
+		
+		max_strength = 1000 #DNM - original 150
+		
+		port_capacity_usage = 1
+		
+		build_cost_ic = 6000 #TPOV
+		resources = {
+			oil = 1
+			steel = 3
+		}
+		
+		manpower = 710
 		
 	}
-	
 	heavy_cruiser_2 = {
 		year = 1936
 
@@ -64,35 +182,35 @@ equipments = {
 		parent = heavy_cruiser_1
 		priority = 40
 
-		ap_attack = 12
-		attack = 14
-		fire_range = 25
-		torpedo_attack = 0
-		shore_bombardment = 4
+		ap_attack = 8.1 #TPOV
+		attack = 50 #DNM - original 11
+		fire_range = 28 #TPOV
+		torpedo_attack = 25 #TPOV
+		shore_bombardment = 4 #TPOV
 		
-		anti_air_attack = 8
+		anti_air_attack = 3
 		
-		armor_value = 11
+		armor_value = 3.3 #TPOV
 		evasion = 25
 		
 		surface_detection = 15
-		sub_detection = 5
+		sub_detection = 0.5 #DNM - vanilla 5
 		surface_visibility = 20
-		naval_speed = 30
+		naval_speed = 31 #TPOV
 		reliability = 0.85
 
-		naval_range = 4000
+		naval_range = 2500
 		
-		max_strength = 175
+		max_strength = 1300 #DNM - original 175
 		
 		port_capacity_usage = 1
 
-		build_cost_ic = 4600
+		build_cost_ic = 6250 #TPOV
 		resources = {
 			oil = 1
 			steel = 4
 		}		
-		manpower = 1700
+		manpower = 750 #TPOV
 	}
 	
 	heavy_cruiser_3 = {
@@ -102,35 +220,35 @@ equipments = {
 		parent = heavy_cruiser_2
 		priority = 40
 
-		ap_attack = 13
-		attack = 17
-		fire_range = 26
-		torpedo_attack = 0
+		ap_attack = 8.6 #TPOV
+		attack = 50 #DNM - original 13
+		fire_range = 28 #TPOV
+		torpedo_attack = 25 #TPOV
 		shore_bombardment = 5
 		
-		anti_air_attack = 12
+		anti_air_attack = 3.5 #TPOV
 		
-		armor_value = 12
+		armor_value = 4 #TPOV
 		evasion = 28
 		
 		surface_detection = 25
-		sub_detection = 5
+		sub_detection = 0.5 #DNM - vanilla 5
 		surface_visibility = 20
-		naval_speed = 33
-		reliability = 0.90
+		naval_speed = 32.5 #TPOV
+		reliability = 0.85
 
-		naval_range = 4500
+		naval_range = 2500 #TPOV
 		
-		max_strength = 200
+		max_strength = 1600 #DNM - original 200
 		
 		port_capacity_usage = 1
 
-		build_cost_ic = 5000
+		build_cost_ic = 6500 #TPOV
 		resources = {
 			oil = 2
 			steel = 4
 		}		
-		manpower = 1900
+		manpower = 1000 #TPOV
 	}
 	
 	heavy_cruiser_4 = {
@@ -140,35 +258,35 @@ equipments = {
 		parent = heavy_cruiser_3
 		priority = 40
 
-		ap_attack = 14
-		attack = 20
-		fire_range = 27
-		torpedo_attack = 0
+		ap_attack = 9.3 #TPOV
+		attack = 150 #DNM - original 15
+		fire_range = 28 #TPOV
+		torpedo_attack = 25 #TPOV
 		shore_bombardment = 6
 		
-		anti_air_attack = 18
+		anti_air_attack = 4.5 #TPOV
 		
-		armor_value = 13
+		armor_value = 6.0 #TPOV
 		evasion = 30
 		
 		surface_detection = 40
-		sub_detection = 5
+		sub_detection = 0.5 #DNM - vanilla 5
 		surface_visibility = 20
-		naval_speed = 33
-		reliability = 0.92
+		naval_speed = 33 #TPOV
+		reliability = 0.90
 
-		naval_range = 5000
+		naval_range = 3000 #TPOV
 		
-		max_strength = 225
+		max_strength = 1900 #DNM - original 225
 		
 		port_capacity_usage = 1
 
-		build_cost_ic = 5400
+		build_cost_ic = 6750 #DNM
 		resources = {
 			oil = 2
 			steel = 5
 			chromium = 1
 		}		
-		manpower = 2200
+		manpower = 1500 #TPOV
 	}
 }

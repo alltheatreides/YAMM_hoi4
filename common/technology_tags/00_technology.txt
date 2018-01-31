@@ -82,7 +82,8 @@ technology_categories = {
 	logistics_tech
 	signal_company_tech
 	maintenance_company_tech
-
+	asw_tech #DNM
+	torpedo_equipment #DNM
 }
 
 technology_folders = {
@@ -91,12 +92,14 @@ technology_folders = {
 	armour_folder
 	artillery_folder
 	air_techs_folder
+	legacy_ships_folder #DNM
 	naval_folder
 	industry_folder
 	land_doctrine_folder
 	naval_doctrine_folder
 	air_doctrine_folder
 	electronics_folder
+	#naval_equipment_folder #TPOV
 	#secret_weapons_folder
 }
 

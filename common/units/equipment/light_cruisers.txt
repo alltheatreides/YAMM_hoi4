@@ -8,72 +8,189 @@ equipments = {
 		type = screen_ship
 		
 		upgrades = {
-			ship_reliability_upgrade
+			ship_quality_upgrade
 			ship_engine_upgrade
-			ship_gun_upgrade
+			ship_barrels_upgrade
+			ship_calibre_upgrade
+			ship_gunquality_upgrade
 			ship_anti_air_upgrade
+			ship_ASW_upgrade
+			ship_range_upgrade
+			ship_armor_upgrade
+			ship_torpedo_upgrade
 		}
 		
 		interface_category = interface_category_screen_ships
 
-		ap_attack = 5.5
-		attack = 6
-		fire_range = 18
-		torpedo_attack = 5
-		sub_attack = 2
-		shore_bombardment = 1
+		ap_attack = 2
+		attack = 9 #DNM - original 6
+		fire_range = 11
+		torpedo_attack = 5 #DNM - original 5
+		sub_attack = 0.4
+		shore_bombardment = 2
 		
-		anti_air_attack = 3
+		anti_air_attack = 1
 		
-		armor_value = 5
-		evasion = 50
+		armor_value = 2
+		evasion = 40
 		
 		surface_detection = 15
-		sub_detection = 20
+		sub_detection = 1 #DNM - vanilla 20
 		surface_visibility = 15
-		naval_speed = 28
-		reliability = 0.8
+		naval_speed = 18
+		reliability = 0.6
 		
-		naval_range = 2400
+		naval_range = 1000
 		
-		max_strength = 100		
+		max_strength = 410	 #DNM - original 100	
 		
 		port_capacity_usage = 1
 		
-		build_cost_ic = 3100
+		build_cost_ic = 5250 #TPOV - set high to get AI to not be silly
 		resources = {
 			oil = 1
 			steel = 2
 		}
 		
-		manpower = 600
+		manpower = 250
 	}
-	
-	light_cruiser_aa = {
-		is_archetype = yes
-		is_buildable = no
-		type = screen_ship
+
+	light_cruiser_protected = {
+		archetype = light_cruiser
+		priority = 100
+
+		type = { 
+			screen_ship
+		}
+
+	}
+
+	light_cruiser_scout = {
+		archetype = light_cruiser
+		parent = light_cruiser_protected
+		priority = 100
+
+		type = { 
+			screen_ship
+			anti_air
+		}
+		ap_attack = 2
+		attack = 9 #DNM - original 6
+		fire_range = 15
+		torpedo_attack = 10 #DNM - original 5
+		sub_attack = 1.1
+		shore_bombardment = 2
 		
-		upgrades = {
-			ship_reliability_upgrade
-			ship_engine_upgrade
-			ship_gun_upgrade
-			ship_anti_air_upgrade
+		anti_air_attack = 1.5
+		
+		armor_value = 2
+		evasion = 50
+		
+		surface_detection = 15
+		sub_detection = 1.5 #DNM - vanilla 20
+		surface_visibility = 15
+		naval_speed = 21
+		reliability = 0.65
+		
+		naval_range = 1000
+		
+		max_strength = 430	 #DNM - original 100	
+		
+		port_capacity_usage = 1
+		
+		build_cost_ic = 5250 #TPOV - set high to get AI to not be silly
+		resources = {
+			oil = 1
+			steel = 2
 		}
 		
-		interface_category = interface_category_screen_ships
+		manpower = 300
+	}
+
+	light_cruiser_ww1 = {
+		archetype = light_cruiser
+		parent = light_cruiser_scout
+		priority = 80
+
+		type = { 
+			screen_ship
+			anti_air
+		}
+		ap_attack = 2.3
+		attack = 16 #DNM - original 6
+		fire_range = 18
+		torpedo_attack = 10 #DNM - original 5
+		sub_attack = 1.9
+		shore_bombardment = 3.5
+		
+		anti_air_attack = 2
+		
+		armor_value = 2
+		evasion = 50
+		
+		surface_detection = 15
+		sub_detection = 2 #DNM - vanilla 20
+		surface_visibility = 15
+		naval_speed = 26
+		reliability = 0.75
+		
+		naval_range = 1500
+		
+		max_strength = 500	 #DNM - original 100	
+		
+		port_capacity_usage = 1
+		
+		build_cost_ic = 5250 #TPOV - set high to get AI to not be silly
+		resources = {
+			oil = 1
+			steel = 2
+		}
+		
+		manpower = 400
 	}
 
 	light_cruiser_1 = {
 		year = 1922
 
 		archetype = light_cruiser
+		parent = light_cruiser_ww1
 		priority = 30
 
 		type = { 
 			screen_ship
 			anti_air
 		}
+		ap_attack = 3.1
+		attack = 20 #DNM - original 6
+		fire_range = 19
+		torpedo_attack = 20 #DNM - original 5
+		sub_attack = 3.8 #DNM, vanilla 2 
+		shore_bombardment = 4
+		
+		anti_air_attack = 2.5
+		
+		armor_value = 2
+		evasion = 50
+		
+		surface_detection = 15
+		sub_detection = 2 #DNM - vanilla 20
+		surface_visibility = 15
+		naval_speed = 28
+		reliability = 0.8 
+		
+		naval_range = 2000
+		
+		max_strength = 600	 #DNM - original 100	
+		
+		port_capacity_usage = 1
+		
+		build_cost_ic = 5400 #TPOV
+		resources = {
+			oil = 1
+			steel = 2
+		}
+		
+		manpower = 500
 
 	}
 	
@@ -84,25 +201,26 @@ equipments = {
 		parent = light_cruiser_1
 		priority = 30
 		
-		ap_attack = 7
-		attack = 8
-		fire_range = 19
-		torpedo_attack = 8
-		sub_attack = 5
+		ap_attack = 3.1
+		attack = 30 #DNM - original 9
+		fire_range = 23
+		torpedo_attack = 25  #DNM - original 8
+		sub_attack = 3.8 #DNM, vanilla 5
+		shore_bombardment = 4
 		
-		anti_air_attack = 9
+		anti_air_attack = 3
 		
-		armor_value = 6
+		armor_value = 2.4
 		evasion = 60
 		
 		surface_detection = 20
-		sub_detection = 25
+		sub_detection = 2.5 #DNM - vanilla 25
 		naval_speed = 30
 		reliability = 0.85
 
-		naval_range = 3000
+		naval_range = 2500
 		
-		max_strength = 120
+		max_strength = 800 #DNM - original 140
 		
 		port_capacity_usage = 1
 		
@@ -110,12 +228,12 @@ equipments = {
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 3400
+		build_cost_ic = 5600 #TPOV
 		resources = {
 			oil = 1
 			steel = 3
 		}
-		manpower = 800
+		manpower = 600
 	}
 	
 	light_cruiser_3 = {
@@ -125,25 +243,26 @@ equipments = {
 		parent = light_cruiser_2
 		priority = 30
 		
-		ap_attack = 8
-		attack = 9
-		fire_range = 20
-		torpedo_attack = 9
-		sub_attack = 6
+		ap_attack = 3.1 #TPOV
+		attack = 55 #DNM - original 11
+		fire_range = 23 #TPOV
+		torpedo_attack = 25 #DNM - original 9
+		sub_attack = 7.5 #DNM, vanilla 6
+		shore_bombardment = 4.5 #TPOV
 		
-		anti_air_attack = 14
+		anti_air_attack = 4 #TPOV
 		
-		armor_value = 7
+		armor_value = 2.7 #TPOV
 		evasion = 68
 		
 		surface_detection = 50
-		sub_detection = 50
-		naval_speed = 32
-		reliability = 0.90
+		sub_detection = 5 #DNM - vanilla 50
+		naval_speed = 31.5 #TPOV
+		reliability = 0.85
 
-		naval_range = 4000
+		naval_range = 3000
 		
-		max_strength = 140
+		max_strength = 900 #DNM - original 165
 		
 		port_capacity_usage = 1
 		
@@ -151,12 +270,12 @@ equipments = {
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 3700
+		build_cost_ic = 5850 #TPOV
 		resources = {
 			oil = 2
 			steel = 3
 		}
-		manpower = 960
+		manpower = 700
 	}
 	
 	light_cruiser_4 = {
@@ -166,25 +285,26 @@ equipments = {
 		parent = light_cruiser_3
 		priority = 30
 		
-		ap_attack = 9
-		attack = 11
-		fire_range = 21
-		torpedo_attack = 10
-		sub_attack = 8
+		ap_attack = 4.9 #TPOV
+		attack = 101 #DNM - original 13
+		fire_range = 23 #TPOV
+		torpedo_attack = 25 #DNM - original 10
+		sub_attack = 11.3 #DNM, vanilla 8
+		shore_bombardment = 5 #TPOV
 		
-		anti_air_attack = 17
+		anti_air_attack = 6 #TPOV
 		
-		armor_value = 8
-		evasion = 75
+		armor_value = 3.7 #TPOV
+		evasion = 75 #TPOV
 		
 		surface_detection = 70
-		sub_detection = 60
-		naval_speed = 34
-		reliability = 0.92
+		sub_detection = 6 #DNM - vanilla 60
+		naval_speed = 32 #TPOV
+		reliability = 0.90
 
-		naval_range = 4500
+		naval_range = 3750
 		
-		max_strength = 160
+		max_strength = 1400 #DNM - original 190
 		
 		port_capacity_usage = 1
 		
@@ -192,135 +312,13 @@ equipments = {
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 4000
+		build_cost_ic = 6100 #TPOV
 		resources = {
 			oil = 2
 			steel = 4
 			chromium = 1
 		}
-		manpower = 1140
-	}
-	
-	### ANTI-AIRCRAFT LIGHT CRUISERS ###
-	light_cruiser_aa_1 = {
-		archetype = light_cruiser_aa
-		priority = 30
-		type = { 
-			screen_ship
-			anti_air
-		}
-
-		ap_attack = 6.5
-		attack = 5
-		fire_range = 18
-		torpedo_attack = 5
-		sub_attack = 5		
-		shore_bombardment = 2
-		
-		anti_air_attack = 18
-		
-		armor_value = 6
-		evasion = 65
-		
-		surface_detection = 33.33
-		sub_detection = 26.92
-		surface_visibility = 15
-		naval_speed = 32
-		reliability = 0.88
-
-		naval_range = 2400
-		
-		max_strength = 110
-		
-		port_capacity_usage = 1
-		
-		build_cost_ic = 3000
-		resources = {
-			oil = 1
-			steel = 3
-		}
-		manpower = 600
-	}
-	
-	light_cruiser_aa_2 = {
-		archetype = light_cruiser_aa
-		parent = light_cruiser_aa_1
-		priority = 30
-		type = { 
-			screen_ship
-			anti_air
-		}
-
-		ap_attack = 7
-		attack = 5.5
-		fire_range = 18
-		torpedo_attack = 5
-		sub_attack = 5
-		shore_bombardment = 2
-		
-		anti_air_attack = 21
-		
-		armor_value = 6
-		evasion = 68
-		
-		surface_detection = 35.71
-		sub_detection = 28.13
-		naval_speed = 33
-		reliability = 0.88
-
-		naval_range = 2700
-		
-		max_strength = 120
-		
-		port_capacity_usage = 1
-		
-		build_cost_ic = 3200
-		resources = {
-			oil = 2
-			steel = 3
-		}
-		manpower = 660
-	}
-	
-	light_cruiser_aa_3 = {
-		archetype = light_cruiser_aa
-		parent = light_cruiser_aa_2
-		priority = 30
-		type = { 
-			screen_ship
-			anti_air
-		}
-
-		ap_attack = 7.5
-		attack = 6
-		fire_range = 19
-		torpedo_attack = 5
-		sub_attack = 5
-		shore_bombardment = 2
-		
-		anti_air_attack = 24
-		
-		armor_value = 7
-		evasion = 70
-		
-		surface_detection = 37.5
-		sub_detection = 28.95
-		surface_visibility = 15
-		naval_speed = 34
-		reliability = 0.90
-
-		naval_range = 3000
-		
-		max_strength = 135
-		
-		port_capacity_usage = 1
-		
-		build_cost_ic = 3300
-		resources = {
-			oil = 2
-			steel = 3
-		}
-		manpower = 740
+		manpower = 1100 #TPOV
 	}
 	
 }

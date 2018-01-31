@@ -1,0 +1,192 @@
+﻿###########################
+#  Variant Events (and intro to mod)
+###########################
+
+add_namespace = tpov_welcome
+
+country_event = {
+	id = tpov_welcome.1
+	title = tpov_welcome.1.t
+	desc = tpov_welcome.1.d
+	picture = GFX_report_event_tpov_welcome_1
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		set_country_flag = dnmstarted
+		set_country_flag = historic_ship_variants
+	}
+
+	option = { #Get into the mod
+	ai_chance = { factor = 100 }
+		name = tpov_welcome.1.a
+		custom_effect_tooltip = tpov_welcome.1.a.tt
+		# hidden_effect = {
+			# ROOT = {
+				# country_event = { id = tpov_welcome.3 }
+			# }
+		# }
+	}
+#	option = { #Eventually, I want to have a series of events that briefly descripe the mod features, that players can choose to look at, when they load up.  That's for the future though, but it should come before the credits options, so it's still in here as option b.
+#		trigger = {
+#			is_ai = no
+#		}
+#		name = tpov_welcome.1.b
+#		custom_effect_tooltip = tpov_welcome.1.b.tt
+#		hidden_effect = {
+#			ROOT = {
+#				country_event = { id = tpov_welcome.X }
+#			}
+#		}
+#	}
+	# option = { # Check the credits
+		# trigger = {
+			# is_ai = no
+		# }
+		# name = tpov_welcome.1.c
+		# custom_effect_tooltip = tpov_welcome.1.c.tt
+		# hidden_effect = {
+			# ROOT = {
+				# country_event = { id = tpov_welcome.4 }
+			# }
+		# }
+	# }
+}
+country_event = { #Event for choosing historic ship variants or not.
+	id = tpov_welcome.2
+	title = tpov_welcome.2.t
+	desc = tpov_welcome.2.d
+	picture = GFX_welcome_to_dnm
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = { # Historic ships plus events
+	ai_chance = { factor = 100 }
+		name = tpov_welcome.2.a
+		custom_effect_tooltip = tpov_welcome.2.a.tt
+		hidden_effect = {
+			ROOT = { 
+				set_country_flag = historic_ship_variants
+			}
+			ROOT = {
+				country_event = { id = tpov_welcome.5 } #Takes players to the next event, to choose flavour events or not.
+			}
+		}
+	}
+	# option = { # Design your own ships but with events
+		# trigger = {
+			# is_ai = no
+		# }
+		# name = tpov_welcome.2.b
+		# custom_effect_tooltip = tpov_welcome.2.b.tt
+		# hidden_effect = {
+			# ROOT = { 
+			# set_country_flag = ship_design_companies
+			# }
+			# ROOT = {
+				# country_event = { id = tpov_welcome.5 }
+				# country_event = { id = tpov_navaldesign.1 }
+			# }
+		# }
+	# }
+	# option = { # Design your own ships but no events
+		# trigger = {
+			# is_ai = no
+		# }
+		# name = tpov_welcome.2.c
+		# custom_effect_tooltip = tpov_welcome.2.c.tt
+		# hidden_effect = {
+			# ROOT = { 
+			# set_country_flag = ship_design_companies
+			# set_country_flag = no_ship_events
+			# }
+			# ROOT = {
+				# country_event = { id = tpov_welcome.5 }
+				# country_event = { id = tpov_navaldesign.1 }
+			# }
+		# }
+	# }
+}
+country_event = { #First event in options chain - gives option to select individually or select 'as modders intended'
+	id = tpov_welcome.3
+	title = tpov_welcome.3.t
+	desc = tpov_welcome.3.d
+	picture = GFX_report_event_tpov_welcome_3
+
+	is_triggered_only = yes
+
+	option = {# Option for historic ships plus favour events
+		name = tpov_welcome.3.a
+		custom_effect_tooltip = tpov_welcome.3.a.tt
+		hidden_effect = {
+			ROOT = { 
+				set_country_flag = historic_ship_variants
+			}
+		}
+	}
+	# option = {# Option for design-your-own ships plus flavour events
+		# name = tpov_welcome.3.c
+		# trigger = {
+			# is_ai = no
+		# }
+		# custom_effect_tooltip = tpov_welcome.3.c.tt
+		# hidden_effect = {
+			# ROOT = { 
+				# set_country_flag = ship_design_companies
+				# country_event = { id = tpov_navaldesign.1 }
+			# }
+		# }
+	# }
+	# option = {#Option for "select options individually"
+		# name = tpov_welcome.3.b
+		# trigger = {
+			# is_ai = no
+		# }
+		# custom_effect_tooltip = tpov_welcome.3.b.tt
+		# hidden_effect = {
+			# ROOT = { 
+			# country_event = { id = tpov_welcome.2 }
+			# }
+		# }
+	# }
+}
+country_event = { #Credits page
+	id = tpov_welcome.4
+	title = tpov_welcome.4.t
+	desc = tpov_welcome.4.d
+	picture = GFX_report_event_tpov_welcome_4
+
+	is_triggered_only = yes
+
+	option = {# Return to first introduction event
+		name = tpov_welcome.4.a
+		custom_effect_tooltip = tpov_welcome.4.a.tt
+		hidden_effect = {
+			ROOT = { 
+			country_event = { id = tpov_welcome.1 }
+			}
+		}
+	}
+}
+country_event = { #Second event in options chain - flavour events on or off
+	id = tpov_welcome.5
+	title = tpov_welcome.5.t
+	desc = tpov_welcome.5.d
+	picture = GFX_report_event_tpov_welcome_5
+
+	is_triggered_only = yes
+
+	option = {#Flavour events enabled
+		name = tpov_welcome.5.a
+	}
+	option = {#Flavour events disabled
+		name = tpov_welcome.5.b
+		hidden_effect = {
+			ROOT = { 
+			set_country_flag = no_flavour_events_dnm
+			}
+		}
+	}
+}

@@ -150,6 +150,52 @@ create_country_leader = {
 			#
 		}
 	}
+}
 
+#DNM - Portrait by Radetzky
+create_navy_leader = {
+	name = "Nestor Martinez"
+	gfx = GFX_PAR_Nestor_Martinez
+	traits = {  }
+	skill = 2
+}
 
+#DNM - Portrait by Radetzky
+create_navy_leader = {
+	name = "Nolberto Jara"
+	gfx = GFX_PAR_Nolberto_Jara
+	traits = {  }
+	skill = 2
+}
+
+#DNM - Portrait by Radetzky
+create_navy_leader = {
+	name = "Pedro Morinigo"
+	gfx = GFX_PAR_Pedro_Morinigo
+	traits = {  }
+	skill = 2
+}
+
+#DNM - Portrait by Radetzky
+create_navy_leader = {
+	name = "Porfirio Machuca"
+	gfx = GFX_PAR_Porfirio_Machuca
+	traits = {  }
+	skill = 2
+}
+
+#DNM - Portrait by Radetzky
+create_navy_leader = {
+	name = "Ramon Martino"
+	gfx = GFX_PAR_Ramon_Martino
+	traits = {  }
+	skill = 2
+}
+
+#DNM - Portrait by Radetzky
+create_navy_leader = {
+	name = "Rufino Martinez"
+	gfx = GFX_PAR_Rufino_Martinez
+	traits = {  }
+	skill = 2
 }

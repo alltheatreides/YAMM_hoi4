@@ -28,9 +28,7 @@ set_technology = {
 	tech_recon = 1
 	tech_engineers = 1
 	early_submarine = 1
-	basic_submarine = 1
 	early_heavy_cruiser = 1
-    early_destroyer = 1
 	support_weapons = 1
 	motorised_infantry = 1
 	early_fighter = 1
@@ -38,6 +36,15 @@ set_technology = {
 	naval_bomber1 = 1
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
+
+	ww1_submarine = 1 #DNM
+	armoured_cruiser = 1 #DNM
+	advanced_armoured_cruiser = 1 #DNM
+	ww1_heavy_cruiser = 1 #DNM
+	torpedo_boat_destroyer = 1 #DNM
+	early_ww1_destroyer = 1 #DNM
+	protected_cruiser = 1 #DNM
+	scout_cruiser = 1 #DNM
 }
 
 set_convoys = 20
@@ -232,15 +239,51 @@ create_corps_commander = {
 	skill = 3
 }
 
-### Ship Variants ###
-
+###################################################
+## DNM Variants
+###################################################
 create_equipment_variant = {
 	name = "Vesikko Class"
 	type = submarine_1
+	parent_version = 0
 	upgrades = {
-		ship_reliability_upgrade = 1
 		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 0
+		sub_stealth_upgrade = 6
+		sub_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Vetehinen Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 0
+		ship_quality_upgrade = 5
+		ship_anti_air_upgrade = 2
+		ship_range_upgrade = 0
+		sub_stealth_upgrade = 7
+		sub_torpedo_upgrade = 10
+	}
+
+}
+create_equipment_variant = {
+	name = "Väinämöinen Class"
+	type = heavy_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 0
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 3
+		ship_gunquality_upgrade = 1
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 0
+		ship_armor_upgrade = 10
+		ship_torpedo_upgrade = 0
 	}
 }

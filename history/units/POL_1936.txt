@@ -419,16 +419,16 @@ units = {
 		name = "Polska Flota Niszczycieli"
 		base = 362 
 		location = 362 # Danzig
-		ship = { name = "ORP Burza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }	
-		ship = { name = "ORP Wicher" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }		
+		ship = { name = "ORP Burza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL version_name = "Wicher Class" } } }	
+		ship = { name = "ORP Wicher" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL version_name = "Wicher Class" } } }		
 	}	
 	navy = {
 		name = "Dywizjon Okretów Podwodnych"
 		base = 362 
 		location = 362 # Danzig
-		ship = { name = "ORP Rys" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }					
-		ship = { name = "ORP Wilk" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }					
-		ship = { name = "ORP Zbik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }			
+		ship = { name = "ORP Rys" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL version_name = "Wilk Class" } } }					
+		ship = { name = "ORP Wilk" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL version_name = "Wilk Class" } } }					
+		ship = { name = "ORP Zbik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL version_name = "Wilk Class" } } }		
 	}
 }
 
@@ -483,5 +483,27 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.20
 		efficiency = 100
+	}
+	#DD Grom
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "POL"
+			version_name = "Grom Class"
+		}
+		requested_factories = 1
+		progress = 0.25
+		amount = 1
+	}
+	#DD Blyskawica
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "POL" 
+			version_name = "Grom Class"
+		}
+		requested_factories = 1
+		progress = 0.05
+		amount = 1
 	}
 }
