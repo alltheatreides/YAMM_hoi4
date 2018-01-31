@@ -672,17 +672,17 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 50
-			create_equipment_variant = {
-				name = "BF 109 F"
-				type = fighter_equipment_1
-				#parent_version = 0
-				upgrades = {
-					plane_gun_upgrade = 4
-					plane_range_upgrade = 5
-					plane_engine_upgrade = 10
-					plane_reliability_upgrade = 12
-				}
-			}
+			# create_equipment_variant = {
+				# name = "BF 109 F"
+				# type = fighter_equipment_1
+				# parent_version = 0
+				# upgrades = {
+					# plane_gun_upgrade = 4
+					# plane_range_upgrade = 5
+					# plane_engine_upgrade = 10
+					# plane_reliability_upgrade = 12
+				# }
+			# }
 			add_ideas = GER_air_innovations_2_idea
 			# Balance research bonus to next tech among radio, radio_detection, decimetric_radar, improved_decimetric_radar, centimetric_radar, improved_centimetric_radar, advanced_centimetric_radar
 			add_tech_bonus = {
