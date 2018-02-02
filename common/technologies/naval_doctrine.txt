@@ -34,7 +34,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -80,7 +80,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -123,7 +123,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -170,7 +170,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -212,7 +212,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -254,7 +254,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -298,7 +298,7 @@ technologies = {
 		navy_anti_air_attack_factor = 0.10
 		navy_capital_ship_attack_factor = 0.1
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -338,7 +338,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -385,7 +385,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -428,7 +428,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -474,7 +474,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -520,7 +520,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -561,7 +561,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -601,7 +601,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -636,7 +636,7 @@ technologies = {
 		}
 		#######
 	
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -700,7 +700,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -742,7 +742,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -788,7 +788,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -834,7 +834,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -881,7 +881,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -938,7 +938,7 @@ technologies = {
 			surface_detection = 0.25
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1007,7 +1007,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1056,7 +1056,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1104,7 +1104,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1143,7 +1143,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1180,7 +1180,7 @@ technologies = {
 		sortie_efficiency = 0.1
 		########
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1225,7 +1225,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1266,7 +1266,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1310,7 +1310,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1355,7 +1355,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1409,7 +1409,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1457,7 +1457,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1513,7 +1513,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1566,7 +1566,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1622,7 +1622,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1672,7 +1672,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1723,7 +1723,7 @@ technologies = {
 
 		###########
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1773,7 +1773,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1811,7 +1811,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1850,7 +1850,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1883,7 +1883,7 @@ technologies = {
 		}
 		#######
 
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1922,7 +1922,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -1968,7 +1968,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -2009,7 +2009,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {
@@ -2044,7 +2044,7 @@ technologies = {
 		convoy_escort_efficiency = 0.25
 		#####
 	
-		allow = { has_navy_experience> 24 } on_research_complete = { has_navy_experience= -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
+		allow = { has_navy_experience> 24 } on_research_complete = { navy_experience = -25 } on_research_complete = { custom_effect_tooltip = naval_xp_cost }	
 		research_cost = 2
 		
 		categories = {

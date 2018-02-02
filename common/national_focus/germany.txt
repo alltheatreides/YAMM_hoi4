@@ -585,8 +585,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
 				bonus = 0.5
-				uses = 2
-				category = infantry_weapons
+				uses = 1
+				technology = support_weapons3
 			}
 			add_tech_bonus = {
 				name = land_doc_bonus
@@ -2712,7 +2712,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			navy_experience = 25
+			navy_experience = 50
 			every_state = {
 				limit = { has_state_flag = GER_u_boat_effort_2dockyards }
 				add_extra_state_shared_building_slots = 2
@@ -2734,7 +2734,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -2778,6 +2778,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			navy_experience = 50
 			add_tech_bonus = {
 				name = ti_bonus
 				name = GER_trade_interdiction

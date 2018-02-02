@@ -18,7 +18,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 1.5
 		
 		categories = {
@@ -54,7 +54,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -90,7 +90,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -130,7 +130,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -169,7 +169,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -208,7 +208,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -250,7 +250,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -291,7 +291,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -331,7 +331,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -371,7 +371,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -408,7 +408,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -444,7 +444,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -485,7 +485,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -517,7 +517,7 @@ technologies = {
 		###########
 
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -547,7 +547,7 @@ technologies = {
 		air_strategic_bomber_bombing_factor = 0.2
 		###########
 			
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -589,7 +589,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 1.5
 		
 		categories = {
@@ -629,7 +629,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -670,7 +670,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -710,7 +710,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -749,7 +749,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -784,7 +784,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -833,7 +833,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -870,7 +870,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -909,7 +909,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -946,7 +946,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 			
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -982,7 +982,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 			
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1019,7 +1019,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1050,7 +1050,7 @@ technologies = {
 		air_interception_detect_factor = 0.15
 		###########
 				
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1091,7 +1091,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 1.5
 		
 		categories = {
@@ -1127,7 +1127,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1163,7 +1163,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1199,7 +1199,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1239,7 +1239,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1280,7 +1280,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1316,7 +1316,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 			
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1353,7 +1353,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1391,7 +1391,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1427,7 +1427,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1464,7 +1464,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1495,7 +1495,7 @@ technologies = {
 		###########
 		
 		
-		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 		research_cost = 2
 		
 		categories = {
@@ -1533,7 +1533,7 @@ technologies = {
 #			research_cost_coeff = 1
 #		}
 #		
-#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 #		research_cost = 1.5
 #		
 #		categories = {
@@ -1567,7 +1567,7 @@ technologies = {
 #			research_cost_coeff = 1
 #		}
 #		
-#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 #		research_cost = 2
 #		
 #		categories = {
@@ -1597,7 +1597,7 @@ technologies = {
 #		cas_ace_chance = 1.0
 #		###########
 #		
-#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 #		research_cost = 2
 #		
 #		categories = {
@@ -1632,7 +1632,7 @@ technologies = {
 #			research_cost_coeff = 1
 #		}
 #		
-#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 #		research_cost = 2
 #		
 #		categories = {
@@ -1662,7 +1662,7 @@ technologies = {
 #		bomber_ace_chance = 1.0
 #		###########
 #		
-#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 #		research_cost = 2
 #		
 #		categories = {
@@ -1697,7 +1697,7 @@ technologies = {
 #			research_cost_coeff = 1
 #		}
 #		
-#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 #		research_cost = 2
 #		
 #		categories = {
@@ -1729,7 +1729,7 @@ technologies = {
 #		air_strategic_bomber_night_penalty = -0.9
 #		###########
 #			
-#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 #		research_cost = 2
 #		
 #		categories = {
@@ -1764,7 +1764,7 @@ technologies = {
 #			research_cost_coeff = 1
 #		}
 #		
-#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { has_air_experience= -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
+#		doctrine = yes allow = { has_air_experience> 24 } on_research_complete = { air_experience = -25 } on_research_complete = { custom_effect_tooltip = air_xp_cost }
 #		research_cost = 2
 #		
 #		categories = {

@@ -333,6 +333,7 @@ add_to_faction = IRQ
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
 add_to_faction = MAL
+add_to_faction = NEP
 
 #give_guarantee = CZE
 give_guarantee = YUG

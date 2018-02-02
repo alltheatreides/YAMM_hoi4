@@ -128,9 +128,9 @@ ideas = {
 			
 			removal_cost = -1
 						
-			research_bonus = {
-				land_doctrine = -0.10
-			}
+			# research_bonus = {
+				# land_doctrine = -0.05
+			# }
 			
 			# modifier = {
 				# conscription_factor = -0.25

@@ -21,9 +21,9 @@ ideas = {
 				join_faction_tension = 0.20
 			}
 			
-			research_bonus = {
-				land_doctrine = -0.5
-			}
+			# research_bonus = {
+				# land_doctrine = -0.5
+			# }
 		}
 		
 		great_depression_1 = {

@@ -1,0 +1,3 @@
+MOR = "countries/Morocco.txt"
+TUN = "countries/Tunis.txt"
+FRI = "countries/French Indochina.txt"
