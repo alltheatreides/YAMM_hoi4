@@ -11,19 +11,20 @@
         infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
-		
+
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
 		artillery_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 3 y = 4 }
 	}
-	
+
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
         engineer = { x = 0 y = 1 }
 		recon = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
-		field_hospital = { x = 0 y = 4 }
+		# anti_tank = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 3 }
 	}
 }
 division_template = {
@@ -33,26 +34,27 @@ division_template = {
 		motorized = { x = 0 y = 0 }
 	    motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
-	    
+
         light_armor = { x = 1 y = 0 }
 		light_armor = { x = 1 y = 1 }
 		light_armor = { x = 1 y = 2 }
-		
+
 		light_armor = { x = 2 y = 0 }
 		light_armor = { x = 2 y = 1 }
 		light_armor = { x = 2 y = 2 }
-		
+
 		motorized_artillery_brigade = { x = 3 y = 0 }
 		motorized_artillery_brigade = { x = 3 y = 1 }
 		motorized_artillery_brigade = { x = 3 y = 2 }
 		motorized_artillery_brigade = { x = 3 y = 3 }
+		motorized_anti_tank_brigade = { x = 3 y = 4 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
         recon = { x = 0 y = 1 }
         engineer = { x = 0 y = 2 }
-        artillery = { x = 0 y = 3 }
-		anti_air = { x = 0 y = 4 }
+        # artillery = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 3 }
 	}
 }
 division_template = {
@@ -62,27 +64,28 @@ division_template = {
 		motorized = { x = 0 y = 0 }
 	    motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
-		
+
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
-		
+
 		motorized = { x = 2 y = 0 }
 	    motorized = { x = 2 y = 1 }
 		motorized = { x = 2 y = 2 }
-				
+
 		motorized_artillery_brigade = { x = 3 y = 0 }
 		motorized_artillery_brigade = { x = 3 y = 1 }
 		motorized_artillery_brigade = { x = 3 y = 2 }
 		motorized_artillery_brigade = { x = 3 y = 3 }
+		motorized_anti_tank_brigade = { x = 3 y = 4 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
         recon = { x = 0 y = 1 }
 	 	engineer = { x = 0 y = 2 }
-        artillery = { x = 0 y = 3 }
-		anti_tank = { x = 0 y = 4 }
-		anti_air = { x = 1 y = 0 }
+        # artillery = { x = 0 y = 3 }
+		# anti_tank = { x = 0 y = 4 }
+		anti_air = { x = 1 y = 3 }
 	}
 	priority = 2
 }
@@ -104,7 +107,7 @@ division_template = {
 		field_hospital = { x = 0 y = 3 }
 	}
 
-  
+
 }
 division_template = {
 	name = "Kavallerie-Brigade"
@@ -114,11 +117,13 @@ division_template = {
         cavalry = { x = 0 y = 1 }
         cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
+		
+		artillery_brigade = { x = 2 y = 0 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 	    recon = { x = 0 y = 1 }
-	    artillery = { x = 0 y = 2 }
+	    # artillery = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -141,47 +146,47 @@ units = {
 	##### Oberkommando des Heeres #####
 	### 1. Armee (Wehrmacht-Gruppenkommando) ###
 	# II. Armeekorps
-	division= {	
+	division= {
 		name = "2. Infanterie-Division"
 		location = 6334
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division= {
 		name = "12. Infanterie-Division"
 		location = 537
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
 	# III. Armeekorps
-	division= {	
+	division= {
 		name = "3. Infanterie-Division"
 		location = 478
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division= {
 		name = "23. Infanterie-Division"
 		location = 478
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
 	# Panzertruppenkommando
-	division= {	
+	division= {
 		name = "1. Panzer-Division"
 		location = 6521
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" version_name = "PzKpfw.I Ausf.B" } }
 	}
-	division= {	
+	division= {
 		name = "2. Panzer-Division"
 		location = 6521
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" version_name = "PzKpfw.I Ausf.B" } }
 	}
-	division= {	
+	division= {
 		name = "3. Panzer-Division"
 		location = 6521
 		division_template = "Panzer-Division"
@@ -189,8 +194,8 @@ units = {
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" version_name = "PzKpfw.I Ausf.B" } }
 	}
 
-	division= {	
-		name = "SS-Verfügungstruppe" 
+	division= {
+		name = "SS-Verfügungstruppe"
 		location = 11505
 		division_template = "Motorized-Division"
 		start_experience_factor = 0.3
@@ -198,32 +203,32 @@ units = {
 
 	### 3. Armee (Wehrmacht-Gruppenkommando) ###
 	# IV. Armeekorps
-	division= {	
+	division= {
 		name = "4. Infanterie-Division"
 		location = 6462
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division= {
 		name = "14. Infanterie-Division"
 		location = 6462
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division= {
 		name = "24. Infanterie-Division"
 		location = 6462
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
 	# VIII. Armeekorps
-	division= {	
+	division= {
 		name = "8. Infanterie-Division"
 		location = 11467
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division= {
 		name = "18. Infanterie-Division"
 		location = 11467
 		division_template = "Infanterie-Division"
@@ -231,26 +236,26 @@ units = {
 	}
 
 	# I. Armeekorps
-	division= {	
+	division= {
 		name = "1. Infanterie-Division"
 		location = 6402
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division= {
 		name = "11. Infanterie-Division"
 		location = 266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division= {
 		name = "21. Infanterie-Division"
 		location = 3384
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
-		name = "Kavallerie-Kommando Insterburg" 
+	division= {
+		name = "Kavallerie-Kommando Insterburg"
 		location = 281
 		division_template = "Kavallerie-Brigade"
 		start_experience_factor = 0.3
@@ -258,52 +263,52 @@ units = {
 
 
 	### 2. Armee (Wehrmacht-Gruppenkommando) ###
-	division= {	
+	division= {
 		name = "13. Infanterie-Division"
 		location = 6257
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
 	# VI. Armeekorps
-	division= {	
+	division= {
 		name = "6. Infanterie-Division"
 		location = 11264
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division= {
 		name = "16. Infanterie-Division"
 		location = 11264
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
 	# IX. Armeekorps
-	division= {	
+	division= {
 		name = "9. Infanterie-Division"
 		location = 11388
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division= {
 		name = "15. Infanterie-Division"
 		location = 241
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
 	# X. Armeekorps
-	division= {	
+	division= {
 		name = "19. Infanterie-Division"
 		location = 6488
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division= {
 		name = "20. Infanterie-Division"
 		location = 9572
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division= {
 		name = "22. Infanterie-Division"
 		location = 9572
 		division_template = "Infanterie-Division"
@@ -311,7 +316,7 @@ units = {
 	}
 
 	# V. Armeekorps
-	division= {	
+	division= {
 		name = "5. Infanterie-Division"
 		location = 9517
 		division_template = "Infanterie-Division"
@@ -319,28 +324,28 @@ units = {
 	}
 
 	# VII. Armeekorps
-	division= {	
+	division= {
 		name = "7. Infanterie-Division"
 		location = 11544
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division= {
 		name = "10. Infanterie-Division"
 		location = 11497
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division= {
 		name = "17. Infanterie-Division"
 		location = 586
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-	}			
-	division= {	
-		name = "Gebirgs-Brigade" 
+	}
+	division= {
+		name = "Gebirgs-Brigade"
 		location = 692
-		division_template = "Gebirgs-Brigade" 
+		division_template = "Gebirgs-Brigade"
 		start_experience_factor = 0.3
 	}
 
@@ -350,13 +355,13 @@ units = {
 		name = "Kriegsmarine"
 		base = 241
 		location = 241  # Wilhemshaven
-		ship = { name = "Deutschland" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class"} } } # 	
-		ship = { name = "Admiral Scheer" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class"} } } # 
-		ship = { name = "Nürnberg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Nürnberg Class" } } } 		
-		ship = { name = "Leipzig" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }		
-		ship = { name = "Königsberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
-		ship = { name = "Karlsruhe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }	
-		ship = { name = "Köln" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
+		ship = { name = "Deutschland" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class"} } } #
+		ship = { name = "Admiral Scheer" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class"} } } #
+		ship = { name = "Nürnberg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Nürnberg Class" } } }
+		ship = { name = "Leipzig" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }
+		ship = { name = "Königsberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }
+		ship = { name = "Karlsruhe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }
+		ship = { name = "Köln" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }
 		ship = { name = "Emden" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
 		# 1. Torpedobootflottille
 		ship = { name = "Jaguar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "1924 Type" } } }
@@ -370,7 +375,7 @@ units = {
 		base = 6332
 		location = 6332  # Konigsberg
 		ship = { name = "Schleswig-Holstein" definition = battleship equipment = { battleship_pdn = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
-		ship = { name = "Schlesien" definition = battleship equipment = { battleship_pdn = { amount = 1 owner = GER version_name = "Deutschland Class" } } }		
+		ship = { name = "Schlesien" definition = battleship equipment = { battleship_pdn = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
 		# 2. Torpedobootflottille
 		ship = { name = "Möwe" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "1923 Type" } } }
 		ship = { name = "Albatros" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "1923 Type" } } }
@@ -387,7 +392,7 @@ units = {
 		ship = { name = "Claus von Bevern" definition = destroyer equipment = { destroyer_early_ww1 = { amount = 1 owner = GER version_name = "V180 Type" } } }
 		# There were also four G7s, but they were converted to training ships in 1936 so not included.
 	}
-	
+
 	navy = {
 		name = "Unterseebootsflotte Weddigen"
 		base = 6389
@@ -422,20 +427,20 @@ units = {
 ### Air oob
 air_wings = {
 	### I. Luftkreiskommando -- Konigsberg ###
-	5 = { 
-		# Jagdgeschwader 232 	
+	5 = {
+		# Jagdgeschwader 232
 		fighter_equipment_0 =  {		# He 51
-			owner = "GER" 
+			owner = "GER"
 			amount = 40
 		}
 		name = "Jagdgeschwader 232"
 	}
 
 	### II. Luftkreiskommando -- Berlin ###
-	64 = { 
-		# Jagdgeschwader 132 'Richtofen'		
+	64 = {
+		# Jagdgeschwader 132 'Richtofen'
 		fighter_equipment_0 =  {		# Ar 68
-			owner = "GER" 
+			owner = "GER"
 			amount = 80
 		}
 		name = "Jagdgeschwader 132"
@@ -446,83 +451,83 @@ air_wings = {
 			callsign="Bubi"
 			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
 		}
-		# Kampfgeschwader 153		
+		# Kampfgeschwader 153
 		tac_bomber_equipment_0 = {		# Do 23
-			owner = "GER" 
+			owner = "GER"
 			amount = 80
 		}
 		tac_bomber_equipment_0 = {		# Ju 86
-			owner = "GER" 
+			owner = "GER"
 			amount = 40
 			version_name = "Ju 86"
 		}
 		name = "Kampfgeschwader 153"
 		# TODO: REMOVE THIS LATER ???
 		transport_plane_equipment_1 = {
-			owner = "GER" 
+			owner = "GER"
 			amount = 4
 		}
 	}
 
 	### III. Luftkreiskommando -- Breslau ###
-	66 = { 
-		# Kampfgeschwader 253 'General Wever'		
+	66 = {
+		# Kampfgeschwader 253 'General Wever'
 		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
-			owner = "GER" 
+			owner = "GER"
 			amount = 120
 		}
 		name = "Kampfgeschwader 253"
-		# Sturzkampfgeschwader 162		
+		# Sturzkampfgeschwader 162
 		CAS_equipment_1 =  {			# Hs 123
-			owner = "GER" 
+			owner = "GER"
 			amount = 80
 		}
-		name = "Sturzkampfgeschwader 162"	
+		name = "Sturzkampfgeschwader 162"
 	}
 
 	### IV. Luftkreiskommando -- Kassel ###
-	57 = { 
-		# Jagdgeschwader 134 'Horst Wessel'		
+	57 = {
+		# Jagdgeschwader 134 'Horst Wessel'
 		fighter_equipment_0 =  {		# He 51 # Ar 68
-			owner = "GER" 
+			owner = "GER"
 			amount = 120
 		}
 		name = "Jagdgeschwader 134"
-		# Kampfgeschwader 152 'Hindenburg'	
+		# Kampfgeschwader 152 'Hindenburg'
 		tac_bomber_equipment_1 = {		# Do 23
-			owner = "GER" 
+			owner = "GER"
 			amount = 80
 		}
 		name = "Kampfgeschwader 152"
-		# Kampfgeschwader 155	
+		# Kampfgeschwader 155
 		tac_bomber_equipment_0 = {		# He 45 or Do 23 ? (light bomber)
-			owner = "GER" 
+			owner = "GER"
 			amount = 80
 		}
 		name = "Kampfgeschwader 155"
 	}
 
 	### V. Luftkreiskommando -- Munich ###
-	52 = { 
-		# Jagdgeschwader 136		
+	52 = {
+		# Jagdgeschwader 136
 		fighter_equipment_0 =  {		# He 51
-			owner = "GER" 
+			owner = "GER"
 			amount = 40
 		}
 		name = "Jagdgeschwader 136"
-		# Kampfgeschwader 154	
+		# Kampfgeschwader 154
 		tac_bomber_equipment_0 = {		# Do 23
-			owner = "GER" 
+			owner = "GER"
 			amount = 80
 		}
 		name = "Kampfgeschwader 154"
 	}
 
 	### VI. Luftkreiskommando -- Kiel ###
-	58 = { 
-		# Küstenfliegergruppe 106		
+	58 = {
+		# Küstenfliegergruppe 106
 		nav_bomber_equipment_1 =  {		# He 59, Do 18
-			owner = "GER" 
+			owner = "GER"
 			amount = 72
 		}
 		name = "Küstenfliegergruppe 106"
@@ -545,7 +550,7 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
 			type = heavy_infantry_equipment_1
@@ -555,7 +560,7 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-	
+
 	# add_equipment_production = {
 		# equipment = {
 			# type = small_arms_ammunition_0
@@ -565,7 +570,7 @@ instant_effect = {
 		# progress = 0.1
 		# efficiency = 50
 	# }
-	
+
 	# add_equipment_production = {
 		# equipment = {
 			# type = shells_ammunition_0
@@ -575,11 +580,11 @@ instant_effect = {
 		# progress = 0.1
 		# efficiency = 50
 	# }
-	
+
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "GER" 
+			creator = "GER"
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -589,7 +594,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
-			creator = "GER" 
+			creator = "GER"
 		}
 		requested_factories = 1
 		progress = 0.3
@@ -600,7 +605,7 @@ instant_effect = {
 		equipment = {
 			type = light_tank_equipment_2
 			version_name = "PzKpfw II Ausf.A"
-			creator = "GER" 
+			creator = "GER"
 		}
 		requested_factories = 2
 		progress = 0.4
@@ -610,7 +615,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = "GER" 
+			creator = "GER"
 		}
 		requested_factories = 2
 		progress = 0.4
@@ -620,7 +625,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_1
-			creator = "GER" 
+			creator = "GER"
 		}
 		requested_factories = 1
 		progress = 0.15
@@ -630,7 +635,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = CAS_equipment_1
-			creator = "GER" 
+			creator = "GER"
 		}
 		requested_factories = 1
 		progress = 0.2
@@ -640,7 +645,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = tac_bomber_equipment_1
-			creator = "GER" 
+			creator = "GER"
 		}
 		requested_factories = 1
 		progress = 0.1

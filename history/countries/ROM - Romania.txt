@@ -39,7 +39,7 @@ if = {
 		ROM_carol_ii_hos
 	}
 	give_guarantee = CZE
-	give_guarantee = GRE
+	# give_guarantee = GRE
 	give_guarantee = TUR
 }
 add_ideas = neutrality_idea

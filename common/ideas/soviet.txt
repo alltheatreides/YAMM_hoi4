@@ -382,7 +382,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.25
+				army_org_factor = -0.15
 				experience_gain_factor = -0.5
 			}
 		}
@@ -406,7 +406,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.25
+				army_org_factor = -0.10
 				experience_gain_factor = -0.5
 			}
 		}
@@ -430,7 +430,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.25
+				army_org_factor = -0.10
 				experience_gain_factor = -0.25
 			}
 		}
@@ -454,7 +454,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.25
+				army_org_factor = -0.10
 				experience_gain_factor = -0.25
 			}
 		}
@@ -478,7 +478,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.25
+				army_org_factor = -0.10
 				experience_gain_factor = -0.25
 			}
 		}

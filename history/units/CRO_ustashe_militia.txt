@@ -5,7 +5,7 @@ units = {
 	division= {	
 		name = "1. Ustaska Vojnica"
 		location = 11581  # zagreb
-		division_template = "Ustaška Vojnica"
+		division_template = "Ustaska Vojnica"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "YUG" } }
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
@@ -15,7 +15,7 @@ units = {
 	division= {	
 		name = "2. Ustaska Vojnica"
 		location = 11581  # zagreb
-		division_template = "Ustaška Vojnica"
+		division_template = "Ustaska Vojnica"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "YUG" } }
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8

@@ -242,7 +242,7 @@ ideas = {
 				industrial_capacity_factory = 0.02
 				industrial_capacity_dockyard = 0.02
 				# production_speed_hydro_aluminium_refinery_factor = 10
-				conscription_factor = 0.05
+				# conscription_factor = 0.05
 				unity_factor = -0.05
 			}
 		}
@@ -304,7 +304,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription_factor = 0.05
+				conscription_factor = 0.025
 			}
 
 		}
@@ -324,7 +324,7 @@ ideas = {
 			picture = can_send_in_the_zombies
 			
 			modifier = {
-				conscription_factor = 0.15
+				conscription_factor = 0.025
 				conscription = 0.01
 			}
 		}
@@ -703,7 +703,7 @@ economic_minister = {
 			}
 
 			available = {
-				has_completed_focus = CAN_crown_corporations
+				has_completed_focus = CAN_rowell_sirois_commission
 			}
 			
 			traits = { captain_of_industry }

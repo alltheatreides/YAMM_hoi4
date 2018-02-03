@@ -1,5 +1,28 @@
 ideas = {
 	
+	country = {
+		CAN_aluminium_company_of_canada  = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				production_speed_aluminium_refinery_factor = 3
+				production_speed_hydro_aluminium_refinery_factor = 3
+			}
+		}
+	}
+	
+	
 	hidden_ideas = {
 		
 		idea_excavation_effort_i = {

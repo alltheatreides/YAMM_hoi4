@@ -35,12 +35,13 @@ division_template = {
 		artillery_brigade = { x = 2 y = 0 }
 		artillery_brigade = { x = 2 y = 1 }
 		artillery_brigade = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
 		
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
+		# artillery = { x = 0 y = 2 }
 	}
 	priority = 2
 }
@@ -54,13 +55,14 @@ division_template = {
 		motorized = { x = 2 y = 0 }		# (elite) Bersaglieri Regiment
 		motorized = { x = 2 y = 1 }
 		motorized = { x = 2 y = 2 }
+		motorized_artillery_brigade = { x = 2 y = 3 }
 		light_armor = { x = 3 y = 0 }	# L3/35 Tankette Battaltion
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		recon = { x = 0 y = 3 }
+		# artillery = { x = 0 y = 2 }
+		recon = { x = 0 y = 2 }
 	}
 	
 	priority = 2
@@ -98,12 +100,14 @@ division_template = {
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
+		
+		artillery_brigade = { x = 2 y = 0 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		# artillery = { x = 0 y = 2 }
 		logistics_company = { x = 0 y = 3 }
 	}
 	

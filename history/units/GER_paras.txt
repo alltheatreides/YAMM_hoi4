@@ -16,7 +16,7 @@ division_template = {
 	
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		# artillery = { x = 0 y = 3 }
+		# # artillery = { x = 0 y = 3 }
 	}
 	priority = 2
 }
