@@ -780,10 +780,10 @@ technologies = {
 		category_support_battalions = {
 			max_organisation = 10
 		}
-		artillery = {
-			max_organisation = 10
-			soft_attack = 0.20
-		}
+		# artillery = {
+			# max_organisation = 10
+			# soft_attack = 0.20
+		# }
 		
 		path = {
 			leads_to_tech = regimental_combat_teams 
@@ -819,9 +819,9 @@ technologies = {
 		category_support_battalions = {
 			max_organisation = 10
 		}		
-		artillery = {
-			soft_attack = 0.20
-		}
+		# artillery = {
+			# soft_attack = 0.20
+		# }
 		
 		enable_tactic = tactic_overwhelming_fire
 		enable_tactic = tactic_default_overwhelming_fire

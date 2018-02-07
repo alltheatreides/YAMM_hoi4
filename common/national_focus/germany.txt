@@ -253,6 +253,17 @@ focus_tree = {
 				uses = 1
 				category = construction_tech
 			}
+			add_timed_idea = { idea = GER_goering_four_year_plan days = 1460 }
+			if = {
+				limit = {
+					has_idea = alfried_krupp
+				}
+				remove_ideas = alfried_krupp
+				add_ideas = goering_e
+				else = {
+					add_ideas = goering_e
+				}
+			}
 		}
 	}
 
@@ -345,7 +356,29 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = GER_atlantic_wall
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = GER_industrial_effort_2 }
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
 
+		available = {
+			has_war_with = ENG
+			has_war_with = SOV
+			has_war_with = USA
+		}
+		
+		completion_reward = {
+			add_timed_idea = { idea = GER_atlantic_wall days = 100 }
+		}
+	}
+	
 	focus = {
 		id = GER_air_innovation
 		text = air_innovation
@@ -484,7 +517,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.25
 		}
-
+		
+		available = {
+			has_idea = ernst_udet
+		}
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -503,7 +540,6 @@ focus_tree = {
 			}
 		}
 	}
-
 
 	focus = {
 		id = GER_naval_air_effort
@@ -540,7 +576,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		
+		available = {
+			has_idea = walther_wever
+		}
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -2354,8 +2394,6 @@ focus_tree = {
 		}
 	}
 
-
-
 	focus = {
 		id = GER_danzig_vs_slovakia
 		icon = GFX_goal_generic_intelligence_exchange
@@ -3586,7 +3624,120 @@ focus_tree = {
 			add_timed_idea = { idea = blitzkrieg_idea days = 90 }
 		}
 	}
+	
+	focus = {
+		id = GER_endsieg
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GER_fall_blau }
+		x = 9
+		y = 9
+		available = {
+			has_war_with = SOV
+			has_war_with = USA
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_ideas = endsieg
+		}
+	}
+	
+	focus = {
+		id = GER_volkssturm
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = GER_endsieg }
+		available = {
+			has_war = yes
+			surrender_progress > 0.10
+		}
+		x = 9
+		y = 10
+		cost = 4.3
+		
+		ai_will_do = {factor = 10}
+		
+		completion_reward = {
+			add_ideas = GER_volkssturm_idea
+			add_ideas = service_by_requirement
+			add_ideas = age_16
+			add_ideas = all_must_serve_old
+		}
+	}
+	
+	### WAFFEN-SS
+	focus = {
+        id = GER_invest_waffen_ss
+        icon = GFX_goal_waffen_ss
+        available = {
+            has_government = fascism
+        }
+        x = 25
+        y = 0
+        cost = 3
+        ai_will_do = {
+            factor = 1
+        }
 
+        completion_reward = {
+            # army_experience = 100
+			add_ideas = GER_waffen_ss
+			custom_effect_tooltip = GER_ss_divisions_tt
+			hidden_effect = {
+				set_technology = { faction_fascist_paramilitary = 1 }
+                load_oob = "GER_ss_divisions"
+            }
+        }
+    }
 
+    ### WAFFEN-SS SPECIALISTS
+	focus = {
+        id = GER_invest_waffen_ss_specialists
+        icon = GFX_goal_waffen_ss_specialists
+        prerequisite = { focus = GER_invest_waffen_ss }
+        available = {
+            has_tech = marines
+            has_tech = paratroopers
+            has_tech = tech_mountaineers
+        }
+        x = 24
+        y = 1
+        cost = 3
+        ai_will_do = {
+            factor = 1
+        }
+
+        completion_reward = {
+            army_experience = 25
+			set_technology = { faction_fascist_paramilitary_specialist = 1 }
+        }
+    }
+
+    ### WAFFEN-SS HEAVY
+	focus = {
+        id = GER_invest_waffen_ss_heavy
+        icon = GFX_goal_waffen_ss_heavy
+        prerequisite = { focus = GER_invest_waffen_ss }
+        available = {
+            has_tech = mechanised_infantry
+            has_tech = basic_medium_tank
+        }
+        x = 26
+        y = 1
+        cost = 3
+        ai_will_do = {
+            factor = 1
+        }
+
+        completion_reward = {
+            army_experience = 25
+			set_technology = { faction_fascist_paramilitary_heavy = 1 }
+
+			hidden_effect = {
+				load_oob = "GER_ss_panzer_division"
+			}
+        }
+    }
 
 }

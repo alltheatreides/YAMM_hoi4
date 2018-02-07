@@ -19,7 +19,7 @@
 		DIV_HQ = { x = 0 y = 0 }
 	}
 
-	priority = 0 # garrison
+	priority = 2
 }
 division_template = {
 	name = "Sanjiao Jun"			# Represents three-division infantry corps (generally poorly-equipped militias)
@@ -34,6 +34,7 @@ division_template = {
 		light_infantry = { x = 2 y = 0 }
 		light_infantry = { x = 2 y = 1 }
 		light_infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }

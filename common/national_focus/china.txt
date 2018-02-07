@@ -787,7 +787,7 @@ focus_tree = {
 		prerequisite = { focus = CHI_increase_funding_of_german_weaponary }
 		x = 10
 		y = 2
-		cost = 10
+		cost = 4
 		
 		completion_reward = {
 			add_tech_bonus = {
@@ -799,31 +799,65 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
-		id = CHI_special_force_training
-		icon = GFX_goal_generic_special_forces
+		id = CHI_american_help
+		icon = GFX_focus_generic_the_giant_wakes
 		x = 10
 		y = 3
 		cost = 10
 		prerequisite = { focus = CHI_modernize_army }
 		
+		available = {
+			is_puppet = no
+			CHI = { has_war_with = JAP } 
+			OR = {
+				JAP = { has_added_tension_amount > 30 }
+				threat > 0.6
+			}
+			JAP = { has_completed_focus = demand_indochina_focus }
+			640 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						tag = RAJ
+						is_puppet_of = ENG
+					}
+				}
+			}
+			288 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						tag = RAJ
+						is_puppet_of = ENG
+					}
+				}
+			}
+		}
+		
 		completion_reward = {
-			add_tech_bonus = {
-				name = CHI_special_forces_bonus
-				bonus = 0.5
-				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
-				technology = paratroopers3
-				technology = marines
-				technology = marines2
-				technology = marines3
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
-				technology = tech_mountaineers3
+			if = {
+				limit = {
+					USA = { has_tech = improved_infantry_weapons }
+				}
+				CHI = { add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 10000 producer = USA } }
+				else = {
+					CHI = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = USA } }
+				}
+			}
+			if = {
+				limit = {
+					USA = { has_tech = fighter1 }
+				}
+				CHI = { add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 300 producer = USA } }
+				else = {
+					CHI = { add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 300 producer = USA } }
+				}
 			}
 		}
 	}
+	
  	focus = {
 		id = CHI_air_base_expansion
 		icon = GFX_goal_generic_air_production

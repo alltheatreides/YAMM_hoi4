@@ -97,7 +97,7 @@ ideas = {
 			research_bonus = {
 				air_doctrine = 0.10
 				jet_technology = 0.10
-				production_speed_anti_air_building_factor = 0.50
+				production_speed_anti_air_building_factor = 0.25
 			}
 
 		}	
@@ -219,6 +219,26 @@ ideas = {
 				artillery = {
 					build_cost_ic = -0.05 instant = yes
 				}
+			}
+		}
+		
+		GER_atlantic_wall = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = protected_by_the_maginot_line
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_anti_air_building_factor = 0.2
 			}
 		}
 
@@ -421,23 +441,25 @@ ideas = {
 			# }
 		# }
 		
-		# goering_e = {
+		goering_e = {
 			
-			# allowed = {
-				# original_tag = GER
-			# }
-			# available = {
+			allowed = {
+				original_tag = GER
+			}
+			available = {
 				# NOT = { has_country_flag = goering_dead }
-				# has_government = fascism
-			# }			
-			# traits = { industrial_planner }
+				has_government = fascism
+				has_completed_focus = GER_industrial_effort
+			}
 			
-			# removal_cost = 50
+			traits = { industrial_planner pet_projects }
 			
-			# ai_will_do = {
-				# factor = 1
-			# }
-		# }
+			removal_cost = 150
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 		todt = {
 			

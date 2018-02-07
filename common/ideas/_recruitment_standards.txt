@@ -44,7 +44,7 @@ ideas = {
 			modifier = {
 				conscription = 0.03
 				training_time_factor = 0.1
-				industrial_capacity_factory = -0.05
+				industrial_capacity_factory = -0.025
 			}
 			
 			cancel_if_invalid = no

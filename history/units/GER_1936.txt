@@ -85,7 +85,7 @@ division_template = {
 	 	engineer = { x = 0 y = 2 }
         # artillery = { x = 0 y = 3 }
 		# anti_tank = { x = 0 y = 4 }
-		anti_air = { x = 1 y = 3 }
+		anti_air = { x = 0 y = 3 }
 	}
 	priority = 2
 }
@@ -118,7 +118,7 @@ division_template = {
         cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
 		
-		artillery_brigade = { x = 2 y = 0 }
+		motorized_artillery_brigade = { x = 2 y = 0 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }

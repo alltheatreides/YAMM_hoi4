@@ -2300,7 +2300,7 @@ focus_tree = {
 				technology = basic_battlecruiser
 				technology = basic_battleship
 				technology = improved_battleship
-				technology = heavy_battleship
+				# technology = heavy_battleship
 			}
 		}
 	}

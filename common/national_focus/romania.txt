@@ -3637,10 +3637,12 @@ focus_tree = {
 	    	   		 	mountaineers = { x = 2 y = 0 }
 						mountaineers = { x = 2 y = 1 }
 						mountaineers = { x = 2 y = 2 }
+						
+						artillery_brigade = { x = 3 y = 0 }
 					}
 					support = {
 						DIV_HQ = { x = 0 y = 0 }
-						artillery = { x = 0 y = 1 }
+						# artillery = { x = 0 y = 1 }
 					}
 				}
 				random_owned_controlled_state = {
@@ -4019,7 +4021,7 @@ focus_tree = {
 								support = {
 									DIV_HQ = { x = 0 y = 0 }
 									engineer = { x = 0 y = 1 }
-									artillery = { x = 0 y = 2 }
+									# artillery = { x = 0 y = 2 }
 								}
 							}
 							else = {
@@ -4051,7 +4053,7 @@ focus_tree = {
 										support = {
 											DIV_HQ = { x = 0 y = 0 }
 											engineer = { x = 0 y = 1 }
-											artillery = { x = 0 y = 2 }
+											# artillery = { x = 0 y = 2 }
 											recon = { x = 0 y = 3 }
 										}
 									}
@@ -4080,7 +4082,7 @@ focus_tree = {
 											support = {
 												DIV_HQ = { x = 0 y = 0 }
 												engineer = { x = 0 y = 1 }
-												artillery = { x = 0 y = 2 }
+												# artillery = { x = 0 y = 2 }
 											}
 										}
 									}

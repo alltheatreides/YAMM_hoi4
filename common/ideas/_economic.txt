@@ -14,6 +14,8 @@ ideas = {
 				consumer_goods_factor = 0.40
 				production_speed_industrial_complex_factor = -0.5
 				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				industrial_capacity_dockyard = -0.5
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
 				generate_wargoal_tension = 1.00
@@ -45,6 +47,8 @@ ideas = {
 				consumer_goods_factor = 0.35
 				production_speed_industrial_complex_factor = -0.4
 				production_speed_arms_factory_factor = -0.4
+				production_speed_dockyard_factor = -0.4
+				industrial_capacity_dockyard = -0.4
 				conversion_cost_civ_to_mil_factor= 0.4
 				conversion_cost_mil_to_civ_factor = 0.4
 				generate_wargoal_tension = 1.00
@@ -225,6 +229,7 @@ ideas = {
 			available = {
 				has_war = yes
 				threat > 0.2
+				# NOT = { tag = USA }
 				any_enemy_country = {
 					ic_ratio = { 
 						tag = ROOT 

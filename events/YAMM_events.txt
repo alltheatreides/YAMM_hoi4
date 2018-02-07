@@ -2304,26 +2304,35 @@ country_event = {
 	trigger = {
 		tag = GER
 		date > 1938.2.1
-		has_government = fascist
+		has_government = fascism
+		has_idea = werner_von_fritsch_sc
+		# GER = { has_idea_with_trait = reluctant_minister }
+		NOT = {
+			has_country_flag = fritsch_fired
+			has_country_flag = fritsch_kept
+		}
 	}
 	
 	mean_time_to_happen = {
-		days = 3
+		days = 1
 	}
 	
-	immediate = {
-		set_country_flag = fritsch_fired
-	}
+	# immediate = {
+		
+	# }
 
 	option = { #Fire Fritsch
 		name = yamm.97.a
 		ai_chance = {
 			factor = 100
 		}
-		add_political_power = 25
+		add_political_power = 50
 		# add_national_unity = 0.01
 		remove_ideas = werner_von_fritsch_sc
 		add_ideas = walther_von_brauchitsch_sc
+		hidden_effect = {
+			set_country_flag = fritsch_fired
+		}
 	}
 	option = { #Keep Fritsch
 		name = yamm.97.b
@@ -2334,3 +2343,19 @@ country_event = {
 		set_country_flag = fritsch_kept	
 	}
 }
+
+# country_event = {
+	# id = yamm.98
+	# title = yamm.98.t
+	# desc = yamm.98.desc
+	# picture = GFX_report_event_fascists_posing
+	
+	# trigger = {
+	
+	# }
+	
+	# option = {
+	
+	# }
+	
+# }

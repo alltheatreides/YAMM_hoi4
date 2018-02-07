@@ -1010,7 +1010,13 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-
+			
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
+				technology = fighter2
+			}			
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 0.5
@@ -1427,13 +1433,31 @@ focus_tree = {
 				name = fighter_bonus
 				bonus = 0.5
 				uses = 1
-				technology = fighter2
+				technology = cv_fighter2
 			}
 			add_tech_bonus = {
-				name = fighter_bonus
+				name = bomber_bonus
+				bonus = 0.25
+				uses = 1
+				technology = tactical_bomber1
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.25
+				uses = 1
+				technology = tactical_bomber2
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
 				bonus = 0.5
 				uses = 1
-				technology = heavy_fighter2
+				technology = med_maritime1
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 1
+				technology = med_maritime2
 			}
 			add_tech_bonus = {
 				name = bomber_bonus

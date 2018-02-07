@@ -1,0 +1,54 @@
+spriteTypes = {
+
+	##################################
+	### Large images for Groups    ###
+
+    spriteType = {      name = "GFX_group_communist_units_icon"	                textureFile = "gfx/interface/group_communist_icon.dds"  noOfFrames = 2 }
+    spriteType = {      name = "GFX_group_fascist_units_icon"		            textureFile = "gfx/interface/group_fascist_icon.dds"    noOfFrames = 2 }
+    spriteType = {      name = "GFX_group_allies_units_icon"		            textureFile = "gfx/interface/group_allies_icon.dds"     noOfFrames = 2 }
+
+	###########################################
+	### Focus gfx ###
+
+	spriteType = {	name = "GFX_goal_soviet_guard"	                            texturefile = "gfx/interface/goals/goal_soviet_guard.dds"	}
+	spriteType = {	name = "GFX_goal_soviet_guard_shine"	                    texturefile = "gfx/interface/goals/goal_soviet_guard.dds"	}
+	spriteType = {	name = "GFX_goal_soviet_guard_specialists"	                texturefile = "gfx/interface/goals/goal_soviet_guard_specialists.dds"	}
+	spriteType = {	name = "GFX_goal_soviet_guard_specialists_shine"	        texturefile = "gfx/interface/goals/goal_soviet_guard_specialists.dds"	}
+	spriteType = {	name = "GFX_goal_volkssturm"	                            texturefile = "gfx/interface/goals/goal_volkssturm.dds"	}
+	spriteType = {	name = "GFX_goal_volkssturm_shine"	                        texturefile = "gfx/interface/goals/goal_volkssturm.dds"	}
+	spriteType = {	name = "GFX_goal_waffen_ss"	                                texturefile = "gfx/interface/goals/goal_waffen_ss.dds"	}
+	spriteType = {	name = "GFX_goal_waffen_ss_shine"	                        texturefile = "gfx/interface/goals/goal_waffen_ss.dds"	}
+	spriteType = {	name = "GFX_goal_waffen_ss_specialists"	                    texturefile = "gfx/interface/goals/goal_waffen_ss_specialists.dds"	}
+	spriteType = {	name = "GFX_goal_waffen_ss_specialists_shine"	            texturefile = "gfx/interface/goals/goal_waffen_ss_specialists.dds"	}
+	spriteType = {	name = "GFX_goal_waffen_ss_heavy"	                        texturefile = "gfx/interface/goals/goal_waffen_ss_heavy.dds"	}
+	spriteType = {	name = "GFX_goal_waffen_ss_heavy_shine"	                    texturefile = "gfx/interface/goals/goal_waffen_ss_heavy.dds"	}
+    spriteType = {	name = "GFX_goal_ccnn"	                                    texturefile = "gfx/interface/goals/goal_ccnn.dds"	}
+	spriteType = {	name = "GFX_goal_ccnn_shine"	                            texturefile = "gfx/interface/goals/goal_ccnn.dds"	}
+    spriteType = {	name = "GFX_goal_ccnn_specialists"	                        texturefile = "gfx/interface/goals/goal_ccnn_specialists.dds"	}
+	spriteType = {	name = "GFX_goal_ccnn_specialists_shine"	                texturefile = "gfx/interface/goals/goal_ccnn_specialists.dds"	}
+    spriteType = {	name = "GFX_goal_ccnn_heavy"	                            texturefile = "gfx/interface/goals/goal_ccnn_heavy.dds"	}
+	spriteType = {	name = "GFX_goal_ccnn_heavy_shine"	                        texturefile = "gfx/interface/goals/goal_ccnn_heavy.dds"	}
+    spriteType = {	name = "GFX_goal_commando_operations"	                    texturefile = "gfx/interface/goals/goal_commando_operations.dds"	}
+	spriteType = {	name = "GFX_goal_commando_operations_shine"	                texturefile = "gfx/interface/goals/goal_commando_operations.dds"	}
+    spriteType = {	name = "GFX_goal_hobarts_funnies"	                        texturefile = "gfx/interface/goals/goal_hobarts_funnies.dds"	}
+	spriteType = {	name = "GFX_goal_hobarts_funnies_shine"	                    texturefile = "gfx/interface/goals/goal_hobarts_funnies.dds"	}
+
+	###########################################
+	### Units categories ###
+
+    # SpriteType = {  name = "GFX_idea_idea_waffen_ss"    		                        texturefile = "gfx/interface/ideas/idea_waffen_ss.dds"    }
+    SpriteType = {  name = "GFX_idea_idea_volkssturm"    		                        texturefile = "gfx/interface/ideas/idea_volkssturm.dds"    }
+
+
+	###########################################
+	### Units categories ###
+
+	spriteType = {		name = "GFX_unit_category_faction_infantry"		        texturefile = "gfx/interface/category_faction_infantry.dds"		        legacy_lazy_load = no	}
+	spriteType = {		name = "GFX_unit_category_faction_mobile_infantry"		texturefile = "gfx/interface/category_faction_mobile_infantry.dds"		legacy_lazy_load = no	}
+	spriteType = {		name = "GFX_unit_category_faction_mechanized_infantry"	texturefile = "gfx/interface/category_faction_mechanized_infantry.dds"	legacy_lazy_load = no	}
+	spriteType = {		name = "GFX_unit_category_faction_tanks"		        texturefile = "gfx/interface/category_faction_tanks.dds"		        legacy_lazy_load = no	}
+	spriteType = {		name = "GFX_unit_category_faction_paratrooper"		    texturefile = "gfx/interface/category_faction_paratrooper.dds"		    legacy_lazy_load = no	}
+	spriteType = {		name = "GFX_unit_category_faction_mountaineers"		    texturefile = "gfx/interface/category_faction_mountaineers.dds"		    legacy_lazy_load = no	}
+	spriteType = {		name = "GFX_unit_category_faction_marine"		        texturefile = "gfx/interface/category_faction_marine.dds"		        legacy_lazy_load = no	}
+
+}

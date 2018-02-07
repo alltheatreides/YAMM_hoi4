@@ -1154,7 +1154,9 @@ ideas = {
 				original_tag = USA
 			}
 			
-
+			available = {
+				has_completed_focus = USA_army_maneuvers
+			}
 			
 			traits = { army_chief_drill_2 }
 			

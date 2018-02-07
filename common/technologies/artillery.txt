@@ -54,9 +54,9 @@ technologies = {
 	
 	interwar_artillery = {
 
-		artillery = {
-			soft_attack = 0.1
-		}
+		# artillery = {
+			# soft_attack = 0.1
+		# }
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
@@ -155,9 +155,9 @@ technologies = {
 	
 	artillery2 = {
 
-		artillery = {
-			soft_attack = 0.1
-		}
+		# artillery = {
+			# soft_attack = 0.1
+		# }
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
@@ -210,9 +210,9 @@ technologies = {
 	
 	artillery3 = {
 
-		artillery = {
-			soft_attack = 0.1
-		}
+		# artillery = {
+			# soft_attack = 0.1
+		# }
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
@@ -306,9 +306,9 @@ technologies = {
 	
 	artillery5 = {
 
-		artillery = {
-			soft_attack = 0.1
-		}
+		# artillery = {
+			# soft_attack = 0.1
+		# }
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
@@ -806,10 +806,10 @@ technologies = {
 	
 	antitank1 = {
 
-		anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.2
-		}
+		# anti_tank = {
+			# hard_attack = 0.1
+			# ap_attack = 0.2
+		# }
 		anti_tank_brigade = {
 			hard_attack = 0.1
 			ap_attack = 0.2
@@ -931,10 +931,10 @@ technologies = {
 	
 	antitank3 = {
 
-		anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
+		# anti_tank = {
+			# hard_attack = 0.1
+			# ap_attack = 0.1
+		# }
 		anti_tank_brigade = {
 			hard_attack = 0.1
 			ap_attack = 0.1
@@ -996,10 +996,10 @@ technologies = {
 	
 	antitank4 = {
 
-		anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
+		# anti_tank = {
+			# hard_attack = 0.1
+			# ap_attack = 0.1
+		# }
 		anti_tank_brigade = {
 			hard_attack = 0.1
 			ap_attack = 0.1

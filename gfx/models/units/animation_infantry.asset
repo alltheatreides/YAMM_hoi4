@@ -1,0 +1,8 @@
+##################
+# FRA_special_infantry
+##################
+
+animation = {
+	name = "FRA_special_infantry_idle_animation"
+	file = "FRA_special_infantry_idle.anim"
+}

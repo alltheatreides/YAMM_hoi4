@@ -1,0 +1,665 @@
+## fascist_militia
+## fascist_infantry
+## fascist_marine
+## fascist_mountaineers
+## fascist_paratrooper
+## fascist_cavalry
+## fascist_motorized
+## fascist_mechanized
+## fascist_light_armor
+## fascist_medium_armor
+## fascist_heavy_armor
+
+sub_units = {
+
+
+	fascist_infantry = {
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 1200
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = fascist_units
+
+		categories = {
+		    category_faction_infantry
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 4
+
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 0.6 # fanatics +0.3
+		manpower = 1000
+
+		#Misc Abilities
+		maximum_speed = -0.5
+		training_time = 100
+		suppression = 2 # fanatics +1
+		weight = 0.5
+
+		supply_consumption = 0.10 # internal struggle, bad allocation +0.03
+
+		need = {
+			infantry_equipment = 300
+			heavy_infantry_equipment = 36
+			# small_arms_ammunition = 150
+			# shells_ammunition = 20
+		}
+		
+		urban = {
+			attack = 0.2
+			defence = 0.2
+		}
+		
+		forest = {
+			attack = 0.2
+			defence = 0.2
+		}
+	}
+
+	fascist_marine = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+		marines = yes
+
+		priority = 601
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = fascist_units
+
+		categories = {
+		    category_faction_marine
+		    category_faction_infantry
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 4
+
+		#Size Definitions
+		max_strength = 20
+		max_organisation = 70
+		default_morale = 0.7 # fanatics +0.3
+		manpower = 1000
+
+		#Misc Abilities
+		maximum_speed = -0.5
+		training_time = 180
+		suppression = 2 # fanatics +1
+		weight = 0.5
+		supply_consumption = 0.09 # internal struggle, bad allocation +0.03
+		breakthrough = 0.3
+
+		need = {
+			infantry_equipment = 350
+			heavy_infantry_equipment = 54
+			# small_arms_ammunition = 300
+			# shells_ammunition = 20
+		}
+
+		marsh = {
+			attack = 0.3
+		}
+		river = {
+			attack = 0.4
+		}
+		amphibious = {
+			attack = 0.5
+		}
+	}
+
+	fascist_mountaineers = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+		mountaineers = yes
+
+		priority = 601
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = fascist_units
+
+		categories = {
+		    category_faction_mountaineers
+		    category_faction_infantry
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 4
+
+		#Size Definitions
+		max_strength = 20
+		max_organisation = 70
+		default_morale = 0.7 # fanatics +0.3
+		manpower = 1000
+
+		#Misc Abilities
+		maximum_speed = -0.5
+		training_time = 180
+		suppression = 2 # fanatics +1
+		weight = 0.5
+
+		supply_consumption = 0.1 # internal struggle, bad allocation +0.03
+		breakthrough = 0.3
+
+		need = {
+			infantry_equipment = 320
+			heavy_infantry_equipment = 44
+			# small_arms_ammunition = 300
+			# shells_ammunition = 20
+		}
+
+		hills = {
+			attack = 0.2
+			defence = 0.05
+			movement = 0.1
+		}
+		mountain = {
+			attack = 0.35
+			defence = 0.1
+			movement = 0.2
+		}
+	}
+
+	fascist_paratrooper = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+
+		priority = 2
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = fascist_units
+
+		categories = {
+		    category_faction_paratrooper
+		    category_faction_infantry
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 4
+
+		#Size Definitions
+		max_strength = 22
+		max_organisation = 70
+		default_morale = 0.7 # fanatics +0.3
+		manpower = 1000
+
+		#Misc Abilities
+		maximum_speed = -0.5
+		training_time = 180
+		suppression = 2 # fanatics +1
+		weight = 0.5
+		supply_consumption = 0.09 # internal struggle, bad allocation +0.03
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 300
+			heavy_infantry_equipment = 28
+			# small_arms_ammunition = 300
+			# shells_ammunition = 20
+		}
+	}
+
+	fascist_cavalry = {
+		sprite = cavalry
+		map_icon_category = other
+		priority = 599
+		active = no
+		cavalry = yes
+
+		type = { infantry }
+
+		group = fascist_units
+
+		categories = {
+            category_faction_infantry
+            category_faction_mobile_infantry
+			category_front_line
+			category_army
+		}
+
+
+		combat_width = 4
+
+		#Size Definitions
+		max_organisation = 70
+		max_strength = 25
+		default_morale = 0.6 # fanatics +0.3
+		manpower = 1000
+
+		#Misc Abilities
+		maximum_speed = 0.6
+		training_time = 120
+		weight = 0.5
+
+		supply_consumption = 0.17 # internal struggle, bad allocation +0.05
+
+		#Offensive Abilities
+		suppression = 3  # fanatics +1
+
+		need = {
+			infantry_equipment = 240
+		}
+
+		forest = {
+			attack = -0.05
+		}
+
+		hills = {
+			attack = -0.05
+		}
+
+		mountain = {
+			attack = -0.1
+			movement = -0.05
+		}
+
+		jungle = {
+			attack = -0.1
+		}
+
+		urban = {
+			attack = -0.05
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	fascist_motorized = {
+		sprite = motorized
+		map_icon_category = infantry
+
+		priority = 599
+		active = no
+
+		type = {
+			motorized
+		}
+
+		group = fascist_units
+
+		categories = {
+            category_faction_infantry
+            category_faction_mobile_infantry
+			category_front_line
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 4
+
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 0.60 # fanatics +0.3
+		manpower = 1200
+
+		#Misc Abilities
+		training_time = 100
+		suppression = 2 # fanatics +1
+		weight = 0.75
+		supply_consumption = 0.16 # internal struggle, bad allocation +0.05
+
+		# this is what moves us and sets speed
+		transport = motorized_equipment
+
+		need = {
+			infantry_equipment = 300
+			motorized_equipment = 50
+			heavy_infantry_equipment = 36
+			# small_arms_ammunition = 300
+			# shells_ammunition = 20
+			# gasoline_equipment = 10
+		}
+
+		forest = {
+			# attack = -0.1
+			movement = -0.5
+		}
+		mountain = {
+			attack = -0.05
+		}
+		jungle = {
+			attack = -0.2
+			movement = -0.5
+		}
+		marsh = {
+			attack = -0.1
+			movement = -0.3
+		}
+		# urban = {
+			# attack = -0.1
+		# }
+		river = {
+			attack = -0.1
+			movement = -0.1
+		}
+		amphibious = {
+			attack = -0.2
+		}
+	}
+
+	fascist_mechanized = {
+		sprite = mechanized
+		map_icon_category = infantry
+
+		priority = 610
+		active = no
+
+		type = {
+			mechanized
+		}
+
+		group = fascist_units
+
+		categories = {
+            category_faction_infantry
+            category_faction_mobile_infantry
+            category_faction_mechanized_infantry
+			category_front_line
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 4
+
+		#Offensive Abilities
+		soft_attack = 0.1
+		hard_attack = 4.0
+
+		#Size Definitions
+		max_strength = 30
+		max_organisation = 60
+		default_morale = 0.6 # fanatics +0.3
+		manpower = 1200
+
+		#Misc Abilities
+		training_time = 120
+		suppression = 2 # fanatics +1
+		weight = 1
+
+		supply_consumption = 0.20 # internal struggle, bad allocation +0.06
+
+		# needed since we give so much bonus to infantry even with no mech equipment
+		essential = {
+			infantry_equipment
+			mechanized_equipment
+		}
+
+		# this is what moves us and sets speed
+		transport = mechanized_equipment
+
+		need = {
+			mechanized_equipment = 50
+			infantry_equipment = 300
+			heavy_infantry_equipment = 36
+			# small_arms_ammunition = 300
+			# shells_ammunition = 20
+			# gasoline_equipment = 20
+		}
+
+		forest = {
+			attack = -0.2
+		}
+		mountain = {
+			attack = -0.05
+		}
+		jungle = {
+			attack = -0.3
+		}
+		marsh = {
+			attack = -0.1
+		}
+		# urban = {
+			# attack = -0.2
+			# defence = -0.05
+		# }
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+
+		hardness = 0.2
+	}
+
+	fascist_light_armor = {
+		sprite = light_armor
+		map_icon_category = armored
+		priority = 2501
+		active = no
+
+		type = {
+			armor
+		}
+
+		group = fascist_units
+
+		categories = {
+            category_faction_tanks
+			category_tanks
+			category_front_line
+			category_all_armor
+			category_army
+		}
+
+
+		combat_width = 4
+
+		need = {
+			light_tank_equipment = 60
+		}
+		manpower = 500
+		max_organisation = 10
+		default_morale = 0.6 # fanatics +0.3
+		training_time = 180
+		max_strength = 2
+		weight = 1
+		supply_consumption = 0.25 # internal struggle, bad allocation +0.05
+
+		#Tanks are awesome
+		soft_attack = 0.5
+
+		forest = {
+		    attack = -0.2
+			movement = -0.4
+		}
+		mountain = 	{
+		    attack = -0.1
+		}
+		jungle = {
+		    attack = -0.3
+			movement = -0.4
+		}
+		marsh = {
+		    attack = -0.1
+			movement = -0.1
+		}
+		urban = {
+			attack = -0.4
+			defence = -0.1
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	fascist_medium_armor = {
+		sprite = "medium_armor"
+		map_icon_category = armored
+		priority = 2502
+		active = no
+
+		type = {
+			armor
+		}
+
+		group = fascist_units
+
+		categories = {
+            category_faction_tanks
+			category_tanks
+			category_front_line
+			category_all_armor
+			category_army
+		}
+
+		combat_width = 4
+
+		need = {
+			medium_tank_equipment = 50
+		}
+		manpower = 500
+		max_organisation = 10
+		max_strength = 2
+		default_morale = 0.6 # fanatics +0.3
+		training_time = 180
+		weight = 1.25
+		supply_consumption = 0.28 # internal struggle, bad allocation +0.06
+
+		#Tanks are awesome
+		soft_attack = 0.5
+
+		forest = {
+		    attack = -0.3
+			movement = -0.4
+		}
+		hills = 	{
+		    attack = -0.1
+		}
+		mountain = 	{
+		    attack = -0.2
+		}
+		jungle = {
+		    attack = -0.4
+			movement = -0.4
+		}
+		marsh = {
+		    attack = -0.1
+			movement = -0.1
+		}
+		urban = {
+			attack = -0.4
+			defence = -0.1
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.7
+		}
+	}
+
+	fascist_heavy_armor = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 2503
+		active = no
+		training_time = 180
+
+		type = {
+			armor
+		}
+
+		group = fascist_units
+
+		categories = {
+            category_faction_tanks
+			category_tanks
+			category_front_line
+			category_all_armor
+			category_army
+		}
+
+
+		forest = {
+		    attack = -0.40
+			movement = -0.40
+		}
+		hills = {
+		    attack = -0.20
+		}
+		mountain = 	{
+		    attack = -0.3
+		}
+		jungle = {
+		    attack = -0.6
+			movement = -0.4
+		}
+		marsh = {
+		    attack = -0.4
+			movement = -0.2
+		}
+		urban = {
+			attack = -0.5
+			defence = -0.2
+		}
+		river = {
+			attack = -0.4
+			movement = -0.4
+		}
+		amphibious = {
+			attack = -0.8
+		}
+
+		combat_width = 4
+
+		need = {
+			heavy_tank_equipment = 40
+		}
+
+		manpower = 500
+		max_organisation = 10
+		default_morale = 0.6 # fanatics +0.3
+		max_strength = 2
+		weight = 1.5
+
+		supply_consumption = 0.4 # internal struggle, bad allocation +0.10
+
+		#Tanks are awesome
+		soft_attack = 0.5
+	}
+}

@@ -31,6 +31,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/great_depression.dds"
 	}
 	
+	#GER
+	
 	spriteType = {
 		name = "GFX_idea_hitler_rage"
 		texturefile = "gfx/interface/ideas/GER_idea_hitler_rage.dds"
@@ -46,6 +48,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/GER_enigma.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_endsieg"
+		texturefile = "gfx/interface/ideas/idea_endsieg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GER_waffen_ss"
+		texturefile = "gfx/interface/ideas/idea_waffen_ss.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GER_volkssturm_idea"
+		texturefile = "gfx/interface/ideas/idea_volkssturm.dds"
+	}
+	
+	#ENG
 	spriteType = {
 		name = "GFX_idea_Bletchley_Park"
 		texturefile = "gfx/interface/ideas/ENG_bletchley_park.dds"
@@ -79,6 +97,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_GER_czech_factories"
 		texturefile = "gfx/interface/ideas/GER_czech_factories.dds"
+	}
+	
+	#CHI
+	SpriteType = {
+		name = "GFX_idea_incompetent_industry"
+		texturefile = "gfx/interface/ideas/incompetent_heavy_industry.dds"
 	}
 	
 	#Air Force Ideas

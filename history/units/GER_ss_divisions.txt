@@ -1,0 +1,45 @@
+﻿division_template = {
+	name = "SS-Infanterie-Division"
+
+	regiments = {
+		fascist_infantry = { x = 0 y = 0 }
+		fascist_infantry = { x = 0 y = 1 }
+		fascist_infantry = { x = 0 y = 2 }
+        fascist_infantry = { x = 1 y = 0 }
+		fascist_infantry = { x = 1 y = 1 }
+		fascist_infantry = { x = 1 y = 2 }
+        fascist_infantry = { x = 2 y = 0 }
+		fascist_infantry = { x = 2 y = 1 }
+		fascist_infantry = { x = 2 y = 2 }
+		
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 3 y = 4 }
+	}
+	support = {
+       DIV_HQ = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "SS-Kavallerie-Kommando"
+
+	regiments = {
+		fascist_cavalry = { x = 0 y = 0 }
+		fascist_cavalry = { x = 0 y = 1 }
+		fascist_cavalry = { x = 0 y = 2 }
+		fascist_cavalry = { x = 1 y = 0 }
+		fascist_cavalry = { x = 1 y = 1 }
+		fascist_cavalry = { x = 1 y = 2 }
+		
+		motorized_artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+        military_police = { x = 0 y = 1 }
+	}
+}

@@ -28,7 +28,7 @@ country_event = {
 	option = {
 		name = tpov_leaders1.1.a
 		ai_chance = { factor = 85 }
-		add_ideas = { ENG_terror_of_tobermory }
+		# add_ideas = { ENG_terror_of_tobermory }
 	}
 
 	option = {

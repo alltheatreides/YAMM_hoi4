@@ -9,7 +9,7 @@
  PRODUCTION_MATERIALS_FOOD:0 "Food"
 
  #Buildings
- industrial_complex_desc:0 "This building provides the state with industry for production of civilian goods or construction of new buildings. Can be converted to military industry if needed. §Y(CONSUMES §!§R2 COAL!§Y AND §!§R2 STEEL!§Y)§!"
+ industrial_complex_desc:0 "This building provides the state with industry for production of civilian goods or construction of new buildings. Can be converted to military industry if needed. §Y(CONSUMES §!§R1 COAL!§Y AND §!§R1 STEEL!§Y)§!"
  steel_refinery:0 "Steel Mill"
  steel_refinery_desc:0 "A steel mill or steelworks is an industrial plant for the manufacture of steel providing the state with"
  small_steel_refinery:0 "Small Steel Mill"
@@ -20,7 +20,7 @@
  hydro_aluminium_refinery_desc:0 "Aluminium smelting made cheaper through an hydro powered facility providing the state with"
  synthetic_rubber_refinery:0 "Rubber Refinery"
  synthetic_rubber_refinery_desc:0 "Artificial rubber synthesized from petroleum byproducts providing the state with"
- 
+
  modifier_production_speed_hydro_aluminium_refinery_factor:0 "§YHydro Powered Aluminium Mill§! construction speed"
  modifier_production_speed_steel_refinery_factor:0 "§YSteel Mill§! construction speed"
  modifier_production_speed_small_steel_refinery_factor:0 "§YSmall Steel Mill§! construction speed"

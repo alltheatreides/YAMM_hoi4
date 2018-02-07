@@ -71,7 +71,7 @@ ideas = {
 		
 		incompetent_industry = {
 			removal_cost = -1
-			picture = FRA_factory_strikes
+			# picture = FRA_factory_strikes
 			
 			allowed = {
 				original_tag = CHI
