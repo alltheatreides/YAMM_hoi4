@@ -930,6 +930,7 @@ focus_tree = {
 		#	factor = 1
 		#}
 		available = {
+			has_army_experience = 100
 			GER = { has_war_with = POL }
 			GER = { has_war_with = ENG }
 			GER = { has_war_with = FRA }
@@ -2036,6 +2037,15 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				category = convoy_defense_tree
+			}
+			add_tech_bonus = {
+				name = additional_naval_tech
+				bonus = 0.50
+				use = 3
+				technology = early_sonar
+				technology = depth_charge_throwers
+				technology = basic_sonar
+				technology = asw_mortars
 			}
 		}
 	}

@@ -1233,6 +1233,15 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 50
+			add_tech_bonus = {
+				name = additional_naval_tech
+				bonus = 0.50
+				use = 3
+				technology = Surface_search_radar
+				technology = Interwar_AA_tech
+				technology = Late_1930s_AA_tech
+				technology = air_warning_radar
+			}
 			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes
@@ -1324,6 +1333,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = british_convoy_discount
+			add_tech_bonus = {
+				name = additional_naval_tech
+				bonus = 0.50
+				use = 3
+				technology = early_sonar
+				technology = depth_charge_throwers
+				technology = basic_sonar
+				technology = asw_mortars
+			}
 		}
 	}
 	focus = {

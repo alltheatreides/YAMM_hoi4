@@ -79,7 +79,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_wall_line
+			# picture = generic_wall_line
 
 			modifier = {
 				max_planning = 0.25

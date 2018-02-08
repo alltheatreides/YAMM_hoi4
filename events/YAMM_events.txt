@@ -2350,12 +2350,31 @@ country_event = {
 	# desc = yamm.98.desc
 	# picture = GFX_report_event_fascists_posing
 	
-	# trigger = {
+	# fire_only_once = yes
 	
+	# hidden = yes
+	
+	# trigger = {
+		# tag = GER
+		# date > 1942.1.1
+		# GER = { has_war_with = SOV }
+		# SOV = { surrender_progress < 0.5 }
+	# }
+	
+	# immediate = {
+		# kill_country_leader = yes
+		# create_country_leader = { 
+			# name = "Adolf Hitler"
+			# desc = "POLITICS_ADOLF_HITLER_DESC"
+			# picture = "Portrait_Hitler_Fear.dds"
+			# expire = "1965.1.1"
+			# ideology = nazism
+		# }
+		
 	# }
 	
 	# option = {
-	
+		# name = yamm.98.b
 	# }
 	
 # }

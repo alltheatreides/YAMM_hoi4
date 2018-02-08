@@ -105,6 +105,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/incompetent_heavy_industry.dds"
 	}
 	
+	#FRA
+	SpriteType = {
+		name = "GFX_idea_FRA_protected_by_the_maginot_line"
+		texturefile = "gfx/interface/ideas/FRA_protected_by_the_maginot_line.dds"
+	}
+	
 	#Air Force Ideas
 	spriteType = {
 		name = "GFX_idea_ENG_RAF"
