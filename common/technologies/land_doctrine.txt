@@ -1,9 +1,40 @@
 technologies = {
-
+	
 	mobile_warfare = {
 		
 		xor = { superior_firepower trench_warfare mass_assault } 
 
+		path = {
+			leads_to_tech = ww1_lesson_maneuver_warfare 
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		research_cost = 3
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 0 }
+		}
+		
+		categories = {
+			land_doctrine
+			cat_mobile_warfare
+		}
+		
+		ai_will_do = {
+			factor = 20 
+		}
+		
+		ai_research_weights = {
+			armor = 4.0
+		}
+	}
+	
+	ww1_lesson_maneuver_warfare = {
+	
+		# xor = { ww1_lesson_overwhelming_firepower ww1_lesson_positional_warfare ww1_lesson_attack_in_depth }
+		
 		path = {
 			leads_to_tech = delay 
 			research_cost_coeff = 1
@@ -18,10 +49,11 @@ technologies = {
 		enable_tactic = tactic_unexpected_thrust
 		enable_tactic = tactic_default_unexpected_thrust
 		org_loss_when_moving = -0.1
-
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		
+		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }
+		
 		research_cost = 3
-
+		
 		folder = {
 			name = land_doctrine_folder
 			position = { x = 0 y = 0 }
@@ -661,6 +693,44 @@ technologies = {
 		xor = { mobile_warfare trench_warfare mass_assault } 
 
 		path = {
+			leads_to_tech = ww1_lesson_overwhelming_firepower 
+			research_cost_coeff = 1
+		}
+		
+		# category_front_line = {
+			 # soft_attack = 0.2
+		# }
+		
+		# enable_tactic = tactic_barrage
+		# enable_tactic = tactic_default_barrage	
+		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			cat_superior_firepower
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			artillery = 4.0
+		}
+	}
+	
+	ww1_lesson_overwhelming_firepower = {
+	
+		# xor = { mobile_warfare trench_warfare mass_assault } 
+
+		path = {
 			leads_to_tech = sup_delay 
 			research_cost_coeff = 1
 		}
@@ -1275,6 +1345,43 @@ technologies = {
 
 		xor = { mobile_warfare superior_firepower mass_assault } 
 	
+		# max_dig_in = 10
+		# dig_in_speed_factor = 0.25 #25% bonus
+		
+		
+		path = {
+			leads_to_tech = ww1_lesson_positional_warfare 
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+	
+	ww1_lesson_positional_warfare = {
+		
+		# xor = { mobile_warfare superior_firepower mass_assault } 
+	
 		max_dig_in = 10
 		dig_in_speed_factor = 0.25 #25% bonus
 		
@@ -1306,6 +1413,7 @@ technologies = {
 			infantry_weapons = 1.5
 			motorized_equipment = 1.0
 		}
+		
 	}
 	
 	grand_battle_plan = {
@@ -1888,6 +1996,41 @@ technologies = {
 		xor = { mobile_warfare superior_firepower trench_warfare } 
 
 		path = {
+			leads_to_tech = ww1_lesson_attack_in_depth 
+			research_cost_coeff = 1
+		}
+		
+		# land_reinforce_rate = 0.02
+		# minimum_training_level = -0.1		
+
+		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			cat_mass_assault
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+	
+	ww1_lesson_attack_in_depth = {
+		
+		# xor = { mobile_warfare superior_firepower trench_warfare } 
+
+		path = {
 			leads_to_tech = pocket_defence 
 			research_cost_coeff = 1
 		}
@@ -1916,6 +2059,7 @@ technologies = {
 		ai_research_weights = {
 			industry = 2.0
 		}
+		
 	}
 	
 	pocket_defence = {

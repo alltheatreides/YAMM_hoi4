@@ -463,7 +463,7 @@ sub_units = {
 			heavy_infantry_equipment = 18
 			# small_arms_ammunition = 300
 			# shells_ammunition = 20
-# gasoline_equipment = 10
+			# gasoline_equipment = 10
 		}
 
 		forest = {

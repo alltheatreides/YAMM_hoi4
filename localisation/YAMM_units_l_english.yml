@@ -40,4 +40,16 @@
  category_faction_paratrooper:0 "Faction Paratroopers"
  category_faction_mountaineers:0 "Faction Mountaineers"
  category_faction_marine:0 "Faction Marines"
+ ITA_special_infantry:0 "Bersaglieri"
+ # techs
+ JAP_faction_fascist_paramilitary_heavy:0 "Imperial Guard Heavy Battalions"
+ JAP_faction_fascist_paramilitary_heavy_desc:0 "Active Imperial Guard Heavy Battalions."
+ # units
+ JAP_fascist_infantry:0 "Imperial Guard Infantry"
+ JAP_fascist_cavalry:0 "Imperial Guard Cavalry"
+ JAP_fascist_motorized:0 "Imperial Guard Mot. Infantry"
+ JAP_fascist_mechanized:0 "Imperial Guard Mech. Infantry"
+ JAP_fascist_light_armor:0 "Imperial Guard Light Armor"
+ JAP_fascist_medium_armor:0 "Imperial Guard Medium Armor"
+ JAP_fascist_heavy_armor:0 "Imperial Guard Heavy Armor"
  

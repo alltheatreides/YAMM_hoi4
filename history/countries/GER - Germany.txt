@@ -39,6 +39,7 @@ set_technology = {
 	early_battleship = 1
 	#basic_battleship = 1 #DNM removed, Bismarck not laid down until July '36.
 	early_battlecruiser = 1
+	ww1_lesson_maneuver_warfare = 1
 	mobile_warfare = 1
 	trade_interdiction = 1
 	formation_flying = 1

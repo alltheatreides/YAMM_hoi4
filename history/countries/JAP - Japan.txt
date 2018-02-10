@@ -24,6 +24,7 @@ add_ideas = {
 }
 
 set_technology = {
+	faction_fascist_paramilitary = 1 ## DD'S ADDITION Imperial Guard
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1		
@@ -59,7 +60,7 @@ set_technology = {
 	early_carrier = 1
 	basic_carrier = 1
 	transport = 1
-	trench_warfare = 1
+	trench_warfare = 1 ww1_lesson_positional_warfare = 1
 	base_strike = 1
 	synth_oil_experiments = 1
 	

@@ -38,7 +38,7 @@ set_technology = {
 	early_battleship = 1
 #	early_battlecruiser = 1 #DNM removed, now that this is a 1936 tech.
 	early_carrier = 1
-	trench_warfare = 1
+	trench_warfare = 1 ww1_lesson_positional_warfare = 1
 	motorized_army = 1
 
 	basic_heavy_cruiser = 1 #DNM

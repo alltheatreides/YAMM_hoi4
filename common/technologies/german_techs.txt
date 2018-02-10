@@ -33,18 +33,18 @@ technologies = {
 		}
 		
 		
-		# infantry = {
-			# defense = 0.05
-			# breakthrough = 0.15
-		# }
-		# motorized = {
-			# defense = 0.05
-			# breakthrough = 0.15
-		# }
-		# mechanized = {
-			# defense = 0.05
-			# breakthrough = 0.15
-		# }
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.15
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.15
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.15
+		}
 	}
 	
 	# Barbarossa = {

@@ -20,7 +20,7 @@ set_technology = {
 	transport = 1
 	motorised_infantry = 1
 	early_fighter = 1
-	trench_warfare = 1
+	trench_warfare = 1 ww1_lesson_positional_warfare = 1
 	
 	
 	tech_field_hospital = 1
@@ -63,7 +63,7 @@ diplomatic_relation = { country = FRA relation = non_aggression_pact }
 		#doctrines
 		air_superiority = 1
 		grand_battle_plan = 1
-		trench_warfare = 1
+		trench_warfare = 1 ww1_lesson_positional_warfare = 1
 		fleet_in_being = 1
 		battlefleet_concentration = 1
 		convoy_sailing = 1

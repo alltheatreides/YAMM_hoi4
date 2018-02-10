@@ -63,6 +63,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_volkssturm.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_GER_goering_four_year_plan"
+		texturefile = "gfx/interface/ideas/GER_goering_four_year_plan.dds"
+	}
+	
 	#ENG
 	spriteType = {
 		name = "GFX_idea_Bletchley_Park"

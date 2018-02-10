@@ -33,7 +33,7 @@ set_technology = {
 	early_destroyer = 1
 	#early_light_cruiser = 1 #DNM, removed
 	early_submarine = 1
-	superior_firepower = 1
+	superior_firepower = 1 ww1_lesson_overwhelming_firepower = 1
 	motorised_infantry = 1
 	support_weapons = 1
 	the_15_65_bracket = 1

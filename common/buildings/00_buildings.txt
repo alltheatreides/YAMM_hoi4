@@ -27,8 +27,8 @@ buildings = {
 
 	industrial_complex = {
 		show_on_map = 6
-		base_cost = 16200
-		base_cost_conversion = 13500
+		base_cost = 10800
+		base_cost_conversion = 9000
 		general_production = 1
 		icon_frame = 1
 		local_resources_coal = -1
@@ -85,7 +85,7 @@ buildings = {
 		only_costal = yes
 		icon_frame = 8
 		naval_fort = 1
-		max_level = 5
+		max_level = 10
 		value = 1
 	}
 

@@ -5,3 +5,7 @@
  SPR_democratic_DEF:0 "The Spanish Republic"
  FRA_protected_by_the_maginot_line:0 "Rigid Top-Down Command Hierarchy"
  FRA_protected_by_the_maginot_line_desc:0 "French military hierarchy is highly scripted with a top-down control, that offers little latitude for initiative by subordinate commanders."
+ ENG_democratic:0 "British Empire"
+ ITA_fascism:0 "Kingdom of Italy"
+ 
+ 

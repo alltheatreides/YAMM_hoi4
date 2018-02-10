@@ -1,0 +1,45 @@
+sub_units = {
+
+    special_infantry = {
+        sprite = infantry
+        map_icon_category = infantry
+
+        priority = 700
+        active = no
+
+        type = {
+            infantry
+        }
+
+        group = infantry
+
+        categories = {
+            category_faction_infantry
+            category_front_line
+            category_light_infantry
+            category_all_infantry
+            category_army
+        }
+
+        combat_width = 4
+
+        #Size Definitions
+        max_strength = 25
+        max_organisation = 60
+        default_morale = 0.3
+        manpower = 1000
+
+        #Misc Abilities
+        training_time = 90
+        suppression = 1
+        weight = 0.5
+
+        supply_consumption = 0.07
+
+        need = {
+            infantry_equipment = 100
+			heavy_infantry_equipment = 18
+        }
+    }
+
+}

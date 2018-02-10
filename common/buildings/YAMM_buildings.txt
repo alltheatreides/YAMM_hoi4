@@ -16,7 +16,7 @@ buildings = {
 	}
 	steel_refinery = {
 		show_on_map = 1
-		base_cost = 16200
+		base_cost = 10800
 		icon_frame = 15
 		local_resources_steel = 10
 		local_resources_iron = -4
@@ -31,7 +31,7 @@ buildings = {
 	}
 	small_steel_refinery = {
 		show_on_map = 1
-		base_cost = 10800
+		base_cost = 7200
 		icon_frame = 17
 		local_resources_steel = 4
 		local_resources_iron = -2
@@ -46,7 +46,7 @@ buildings = {
 	}
 	aluminium_refinery = {
 		show_on_map = 1
-		base_cost = 16200
+		base_cost = 10800
 		icon_frame = 16
 		local_resources_aluminium = 10
 		local_resources_bauxite = -4

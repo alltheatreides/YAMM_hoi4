@@ -36,7 +36,7 @@ set_technology = {
 	basic_carrier = 1
 	# escort_carrier = 1
 	transport = 1
-	superior_firepower = 1
+	superior_firepower = 1 ww1_lesson_overwhelming_firepower = 1
 	base_strike = 1
 	marines = 1
 	motorised_infantry = 1

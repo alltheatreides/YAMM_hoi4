@@ -1139,4 +1139,27 @@ spriteTypes = {
 		name = "GFX_AST_flying_boat3_medium"
 		texturefile = "gfx/interface/technologies/1944_RAAF Mariner.dds"
 	}
+	
+	
+	#DOCTRINES
+	SpriteType = {
+		name = "GFX_ww1_lesson_maneuver_warfare_medium"
+		texturefile = "gfx/interface/technologies/ww1_lesson_maneuver_warfare.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_lesson_overwhelming_firepower_medium"
+		texturefile = "gfx/interface/technologies/ww1_lesson_overwhelming_firepower.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_lesson_positional_warfare_medium"
+		texturefile = "gfx/interface/technologies/ww1_lesson_positional_warfare.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_lesson_attack_in_depth_medium"
+		texturefile = "gfx/interface/technologies/ww1_lesson_attack_in_depth.dds"
+	}
+	
 }

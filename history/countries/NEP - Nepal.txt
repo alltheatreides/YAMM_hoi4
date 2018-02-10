@@ -45,7 +45,7 @@ add_ideas = {
 		#doctrines
 		air_superiority = 1
 
-		mass_assault = 1
+		mass_assault = 1 ww1_lesson_attack_in_depth = 1
 		pocket_defence = 1
 		defence_in_depth = 1
 

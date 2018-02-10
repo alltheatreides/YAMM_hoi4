@@ -254,16 +254,17 @@ focus_tree = {
 				category = construction_tech
 			}
 			add_timed_idea = { idea = GER_goering_four_year_plan days = 1460 }
-			if = {
-				limit = {
-					has_idea = alfried_krupp
-				}
-				remove_ideas = alfried_krupp
-				add_ideas = goering_e
-				else = {
-					add_ideas = goering_e
-				}
-			}
+			add_ideas = goering_e
+			# if = {
+				# limit = {
+					# has_idea = alfried_krupp
+				# }
+				# remove_ideas = alfried_krupp
+				# add_ideas = goering_e
+				# else = {
+					# add_ideas = goering_e
+				# }
+			# }
 		}
 	}
 
@@ -370,8 +371,9 @@ focus_tree = {
 
 		available = {
 			has_war_with = ENG
-			has_war_with = SOV
-			has_war_with = USA
+			FRA = { has_capitulated = yes }
+			# has_war_with = SOV
+			# has_war_with = USA
 		}
 		
 		completion_reward = {
@@ -2531,7 +2533,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 22
 		y = 0
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2619,7 +2621,7 @@ focus_tree = {
 		prerequisite = { focus = GER_naval_rearmament }
 		x = 22
 		y = 3
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}
@@ -3610,6 +3612,13 @@ focus_tree = {
 		id = GER_fall_blau
 		prerequisite = { focus = GER_ussr_war_goal }
 		icon = GFX_goal_generic_occupy_states_ongoing_war
+		bypass = {
+			date > 1942.7.1
+			NOT = {
+				GER = { controls_state = 206 }
+			}
+			SOV = { controls_state = 206 }
+		}
 		available = {
 			date > 1942.5.28
 			SOV = { has_completed_focus = SOV_the_great_patriotic_war_focus }

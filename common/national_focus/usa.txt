@@ -930,7 +930,7 @@ focus_tree = {
 		#	factor = 1
 		#}
 		available = {
-			has_army_experience = 100
+			has_army_experience = 50
 			GER = { has_war_with = POL }
 			GER = { has_war_with = ENG }
 			GER = { has_war_with = FRA }
