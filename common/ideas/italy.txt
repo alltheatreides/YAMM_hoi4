@@ -48,6 +48,8 @@ ideas = {
 				fascism_acceptance = 10
 				# ai_focus_aggressive_factor = 0.5
 				justify_war_goal_time = -0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -525,7 +527,21 @@ ideas = {
 		}
 	}
 	high_command = {
-	
+		
+		giovanni_messe_hc = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+			
+			
+			available = { 
+				has_completed_focus = ITA_Appoint_Messe
+			}
+			
+			traits = { army_armored_2 }
+		}
+		
 		mario_roatta = {
 			
 			
@@ -549,7 +565,9 @@ ideas = {
 				original_tag = ITA
 			}
 			
-
+			available = { 
+				has_completed_focus = ITA_Legacy_of_the_Arditi
+			}
 			
 			traits = { army_cavalry_1 }
 			
@@ -712,6 +730,9 @@ ideas = {
 				original_tag = ITA
 			}
 			
+			available = {
+				has_completed_focus = ITA_Armor_Effort
+			}
 			
 			research_bonus = {
 				armor = 0.10
@@ -1000,6 +1021,10 @@ ideas = {
 				original_tag = ITA
 			}
 			
+			available = { 
+				has_completed_focus = ITA_Innovative_theories
+			}
+			
 			cost = 250
 			
 			research_bonus = {
@@ -1013,6 +1038,10 @@ ideas = {
 						
 			allowed = {
 				original_tag = ITA
+			}
+			
+			available = { 
+				has_completed_focus = ITA_The_Old_guard
 			}
 			
 			cost = 250

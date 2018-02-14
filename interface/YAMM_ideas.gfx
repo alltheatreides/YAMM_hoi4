@@ -116,6 +116,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/FRA_protected_by_the_maginot_line.dds"
 	}
 	
+	#ITA
+	spriteType = {
+		name = "GFX_idea_italian_leadership"
+		texturefile = "gfx/interface/ideas/italian_leadership.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mare_nostrum"
+		texturefile = "gfx/interface/ideas/mare_nostrum.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_giovanni_messe_hc"
+		texturefile = "gfx/interface/ideas/idea_giovanni_messe.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_chemical_weapons"
+		texturefile = "gfx/interface/ideas/ITA_chemical_weapons.dds"
+	}
+	
 	#Air Force Ideas
 	spriteType = {
 		name = "GFX_idea_ENG_RAF"

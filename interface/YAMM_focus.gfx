@@ -1,0 +1,109 @@
+
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_goal_generic_large_fleet"
+		texturefile = "gfx/interface/goals/goal_generic_large_fleet.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_generic_doctrine_tank_warfare"
+		texturefile = "gfx/interface/goals/focus_generic_doctrine_tank_warfare.dds"			
+	}
+	
+	#ITA
+	SpriteType = {
+		name = "GFX_ITA_tank"
+		texturefile = "gfx/interface/goals/ITA_tank.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_Impero"
+		texturefile = "gfx/interface/goals/focus_ITA_Impero.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_Regia_Marina"
+		texturefile = "gfx/interface/goals/focus_ITA_Regia_Marina.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_Regio_Esercito"
+		texturefile = "gfx/interface/goals/focus_ITA_Regio_Esercito.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_Regia_Aeronautica"
+		texturefile = "gfx/interface/goals/focus_ITA_Regia_Aeronautica.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_armir"
+		texturefile = "gfx/interface/goals/focus_ITA_ARMIR.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_X_Flottiglia_MAS"
+		texturefile = "gfx/interface/goals/focus_ITA_ITA_X_Flottiglia_MAS.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_Picchiatello"
+		texturefile = "gfx/interface/goals/focus_ITA_Picchiatello.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_Mare_Nostrum"
+		texturefile = "gfx/interface/goals/focus_ITA_Mare_Nostrum.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_Arditi_Legacy"
+		texturefile = "gfx/interface/goals/focus_ITA_Ardity_Legacy.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_Innovative_Theories"
+		texturefile = "gfx/interface/goals/focus_ITA_Innovative_Theories.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_Autarchia"
+		texturefile = "gfx/interface/goals/focus_ITA_Autarchia.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_ILVA_IRI"
+		texturefile = "gfx/interface/goals/focus_ITA_ILVA_IRI.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_oil_autarchy"
+		texturefile = "gfx/interface/goals/focus_ITA_oil_autarchy.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_rubber_autarchy"
+		texturefile = "gfx/interface/goals/focus_ITA_rubber_autarchy.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_hitler_visit"
+		texturefile = "gfx/interface/goals/focus_ITA_hitler_visit.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_CTV"
+		texturefile = "gfx/interface/goals/focus_ITA_CTV.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_Istituto_LUCE"
+		texturefile = "gfx/interface/goals/focus_ITA_Istituto_LUCE.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_Pact_of_Steel"
+		texturefile = "gfx/interface/goals/focus_ITA_Pact_of_Steel.dds"			
+	}
+	
+}

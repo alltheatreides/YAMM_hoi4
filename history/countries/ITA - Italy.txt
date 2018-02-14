@@ -18,6 +18,8 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	italian_leadership
+	poor_coordination_between_sea_and_air
 }
 
 
@@ -306,13 +308,13 @@ create_corps_commander = {
 	skill = 4
 }
 
-create_corps_commander = {
-	name = "Giovanni Messe"
-	picture = "Portrait_Italy_Giovanni_Messe.dds"
-	traits = {  panzer_leader }
-	skill = 4
-	rank = 1
-}
+# create_corps_commander = {
+	# name = "Giovanni Messe"
+	# picture = "Portrait_Italy_Giovanni_Messe.dds"
+	# traits = {  panzer_leader }
+	# skill = 4
+	# rank = 1
+# }
 
 create_corps_commander = {
 	name = "Sebastiano Visconti Prasca"

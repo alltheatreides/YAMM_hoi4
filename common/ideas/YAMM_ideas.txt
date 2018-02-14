@@ -184,6 +184,40 @@ ideas = {
 			}
 		}
 		
+		idea_GER_STO = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		idea_GER_STO2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
 		endsieg = {
 			
 			allowed = {
@@ -304,41 +338,306 @@ ideas = {
 		}
 	}
 	
+	#ITALY
 	country = {
-		idea_GER_STO = {
-
-			allowed = {
-				always = no
+		ITA_chemical_weapons = {
+			available = {
+				original_tag = ITA
 			}
-
-			allowed_civil_war = {
-
-			}
-
+			
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = 0.05
-				production_factory_efficiency_gain_factor = -0.05
+				army_attack_factor = 0.25
+			}	
+		}
+		
+		autarchia = {
+			available = {
+				original_tag = ITA
+			}
+			
+			removal_cost = -1
+			
+			picture = ast_all_in
+			
+			modifier = {
+				local_resources_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.10
+				production_speed_synthetic_rubber_refinery_factor = 0.10
+				production_speed_steel_refinery_factor = 0.10
+				production_speed_aluminium_refinery_factor = 0.10
 			}
 		}
-		idea_GER_STO2 = {
+		istituto_luce = {  
 
-			allowed = {
-				always = no
-			}
+			picture = generic_morale_bonus
 
-			allowed_civil_war = {
-
+			available = {
+				original_tag = ITA
 			}
 
 			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.05
+				# conscription_factor = 0.05
+			}				
+		}
+		ITA_rocketry_idea = {
+			removal_cost = -1
+			
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			research_bonus = {
+				rocketry = 0.05
+				jet_technology = 0.05
+			}
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				production_speed_rocket_site_factor = 0.10
+			}
+		}
+		ITA_german_scientist_cooperation = {
+			removal_cost = -1
+			
+
+			allowed_civil_war = {
+				always = yes
+			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.05
+				research_time_factor = -0.02
+			}
+
+			picture = generic_research_bonus
+	
+		
+		}
+		navy_prioritised = {  
+
+			picture = generic_coastal_defense_ships
+
+			available = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+				production_speed_dockyard_factor = 0.05
+				production_speed_arms_factory_factor = -0.1				
+			}				
+		}
+		
+		
+		mare_nostrum = {
+
+			# picture = generic_coastal_defense_ships
+
+			available = {
+			original_tag = ITA
+				
+				
+			}
+		
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_dockyard = 0.1
+				political_power_gain = 0.25			
+			}				
+		}
+		
+		german_dive_bombing = {  
+
+			picture = air_support_focus
+
+			available = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_cas_present_factor = 0.05		
+			}
+		}
+		
+		ARMIR = {  
+
+			picture = armir
+
+			available = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				winter_attrition_factor = -0.1
+				
+			}
+		}
+		
+		poor_coordination_between_sea_and_air = {  #starting
+
+			picture = generic_navy_bonus
+
+			available = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_nav_efficiency = -0.1
+				sortie_efficiency = -0.1
+			}
+		}
+		
+		fiat_tank_development = {  #starting
+
+			picture = generic_acquire_tanks
+
+
+			available = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			research_bonus = { armor = 0.1 }
+				
+			equipment_bonus = {
+				armor = {
+                    build_cost_ic = 0.1 instant = yes
+                }
+			}				
+		}
+		
+		italian_leadership = {  #starting
+
+			# picture = italian_leadership
+
+			available = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = -0.15
+				max_planning = 0.1
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+			}				
+		}
+		
+		italian_leadership_improved = { 
+
+			# picture = italian_leadership
+
+			available = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = -0.05
+				max_planning = 0.1
+				army_defence_factor = 0.05
+				conscription = 0.005
+			}				
+		}
+		
+		ITA_Corpo_truppe_volontarie_focus = {
+			
+			
+			available = {
+				original_tag = ITA
+				SPR = { has_civil_war = yes }
+			}
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+			}
+		}
+		
+		X_Flottiglia_MAS = {
+
+			picture = generic_coastal_defense_ships
+
+			available = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_torpedo_range_factor = 0.3
+				amphibious_invasion = 0.15
+			}				
+		}
+		
+		impero_di_argilla = {
+
+			picture = generic_fascism_drift_2
+
+			available = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+            
+			modifier = {
+				consumer_goods_factor = 0.02
+				political_power_factor = 0.1
+			}				
+		    
+		
+		}
+		
+		colonial_empire_lost = {
+		
+		picture = generic_fascism_banned
+
+			available = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.15
+			}				
+	    }
+		
+		ITA_idea_license = {
+			allowed = {
+				always = no
+			}
+			picture = generic_constitutional_guarantees
+			
+			modifier = {
+			license_production_speed = 0.2
+			license_tech_difference_speed = 0.25
 			}
 		}
 	}
+	
+	
 	
 	#Allies
 	country = {
