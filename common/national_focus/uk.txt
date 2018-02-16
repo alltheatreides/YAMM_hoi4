@@ -212,15 +212,14 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = ENG_mot_focus_tooltip
-
+			add_tech_bonus = {
+				name = mech_bonus
+				bonus = 0.5
+				uses = 1
+				technology = mechanised_infantry
+			}
 			hidden_effect = {
 				load_oob = "ENG_Motorized"
-				add_tech_bonus = {
-					name = mech_bonus
-					bonus = 0.5
-					uses = 1
-					technology = mechanised_infantry
-				}
 			}
 		}
 	}
@@ -2712,9 +2711,7 @@ focus_tree = {
 			CHI = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
 				country_event = britain.4
-				hidden_effect = {
-					add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 producer = ENG }
-				}
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 producer = ENG }
 			}
 			YUN = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
