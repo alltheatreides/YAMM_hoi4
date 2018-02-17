@@ -677,6 +677,12 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.10
 				production_speed_arms_factory_factor = 0.1
 			}
+			
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
 		}
 		
 		SOV_production_targets_idea = {
@@ -1613,7 +1619,7 @@ leonid_serebryakov = {
 			
 			equipment_bonus = {
 				medium_tank_equipment = {
-					build_cost_ic = -0.15
+					# build_cost_ic = -0.15
 					armor_value = 0.05
 				}
 				medium_tank_destroyer_equipment = {

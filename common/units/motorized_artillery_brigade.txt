@@ -41,6 +41,7 @@ sub_units = {
 
         #Line artillery bonuses
         soft_attack = 0.25
+		breakthrough = 0.15
 
         forest = {
             attack = -0.2

@@ -9,7 +9,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 
 		folder = {
@@ -50,7 +50,7 @@ technologies = {
 		enable_tactic = tactic_default_unexpected_thrust
 		org_loss_when_moving = -0.1
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }
 		
 		research_cost = 3
 		
@@ -89,7 +89,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 
 		categories = {
@@ -137,7 +137,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 
 		categories = {
@@ -180,7 +180,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 
 		categories = {
@@ -217,7 +217,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -265,7 +265,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -311,7 +311,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -354,7 +354,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 
 		categories = {
@@ -405,7 +405,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 
 		categories = {
@@ -451,7 +451,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -494,7 +494,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -528,7 +528,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -562,7 +562,7 @@ technologies = {
 			default_morale = 0.2
 		}
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -600,7 +600,7 @@ technologies = {
 		# }
 
 		
-		# doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		# doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		# research_cost = 3
 		
 		# categories = {
@@ -633,7 +633,7 @@ technologies = {
 		# }
 
 		
-		# doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		# doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		# research_cost = 3
 		
 		# categories = {
@@ -665,7 +665,7 @@ technologies = {
 		# enable_tactic = tactic_guerrilla_tactics
 		# enable_tactic = tactic_default_guerrilla_tactics
 		
-		# doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		# doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		# research_cost = 3
 		
 		# categories = {
@@ -703,7 +703,7 @@ technologies = {
 		
 		# enable_tactic = tactic_barrage
 		# enable_tactic = tactic_default_barrage	
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -741,7 +741,7 @@ technologies = {
 		
 		enable_tactic = tactic_barrage
 		enable_tactic = tactic_default_barrage	
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -777,7 +777,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 
 		categories = {
@@ -818,7 +818,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -861,7 +861,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -900,7 +900,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -939,7 +939,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -976,7 +976,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1019,7 +1019,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1058,7 +1058,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1097,7 +1097,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1132,7 +1132,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1164,7 +1164,7 @@ technologies = {
 		#combat advantage when air superior
 		army_bonus_air_superiority_factor = 0.20
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1203,7 +1203,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1240,7 +1240,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1285,7 +1285,7 @@ technologies = {
 		}
 
 		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1317,7 +1317,7 @@ technologies = {
 		
 		enable_tactic = tactic_breakthrough
 		enable_tactic = tactic_default_breakthrough		
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1354,7 +1354,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1391,7 +1391,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1427,7 +1427,7 @@ technologies = {
 		#planning max bonus increase
 		max_planning = 0.20
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1470,7 +1470,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1512,7 +1512,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1559,7 +1559,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1595,7 +1595,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1634,7 +1634,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1673,7 +1673,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1709,7 +1709,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1743,7 +1743,7 @@ technologies = {
 			max_organisation = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1784,7 +1784,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1827,7 +1827,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1861,7 +1861,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1898,7 +1898,7 @@ technologies = {
 		
 		
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1935,7 +1935,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -1967,7 +1967,7 @@ technologies = {
 			recon = 1 
 		} 
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2003,7 +2003,7 @@ technologies = {
 		# land_reinforce_rate = 0.02
 		# minimum_training_level = -0.1		
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2038,7 +2038,7 @@ technologies = {
 		land_reinforce_rate = 0.02
 		minimum_training_level = -0.1		
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2074,7 +2074,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2115,7 +2115,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2155,7 +2155,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2191,7 +2191,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2225,7 +2225,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2264,7 +2264,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2305,7 +2305,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2351,7 +2351,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2382,7 +2382,7 @@ technologies = {
 		enable_tactic = tactic_backhand_blow
 		enable_tactic = tactic_default_backhand_blow
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2427,7 +2427,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2463,7 +2463,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2501,7 +2501,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2540,7 +2540,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {
@@ -2575,7 +2575,7 @@ technologies = {
 		
 		enable_tactic = tactic_guerrilla_tactics
 		enable_tactic = tactic_default_guerrilla_tactics
-		doctrine = yes allow = { has_army_experience > 24 } on_research_complete = { army_experience = -25 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
+		doctrine = yes allow = { has_army_experience > 14 } on_research_complete = { army_experience = -15 } on_research_complete = { custom_effect_tooltip = army_xp_cost }	
 		research_cost = 3
 		
 		categories = {

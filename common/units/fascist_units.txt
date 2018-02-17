@@ -493,7 +493,7 @@ sub_units = {
 		max_organisation = 20
 		default_morale = 0.6 # fanatics +0.3
 		training_time = 180
-		max_strength = 2
+		max_strength = 15
 		weight = 1
 		supply_consumption = 0.25 # internal struggle, bad allocation +0.05
 
@@ -555,7 +555,7 @@ sub_units = {
 		}
 		manpower = 500
 		max_organisation = 20
-		max_strength = 2
+		max_strength = 15
 		default_morale = 0.6 # fanatics +0.3
 		training_time = 180
 		weight = 1.25
@@ -656,7 +656,7 @@ sub_units = {
 		manpower = 500
 		max_organisation = 20
 		default_morale = 0.6 # fanatics +0.3
-		max_strength = 2
+		max_strength = 15
 		weight = 1.5
 
 		supply_consumption = 0.4 # internal struggle, bad allocation +0.10

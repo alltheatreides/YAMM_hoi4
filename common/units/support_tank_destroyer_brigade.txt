@@ -43,7 +43,7 @@ sub_units = {
 		supply_consumption = 0.2
 		
 		#TD are awesome
-		hard_attack = 0.25
+		#hard_attack = 0.25
 		
 		#support unit nerf
 		# soft_attack = -0.5
@@ -98,7 +98,7 @@ sub_units = {
 		supply_consumption = 0.22
 		
 		#TD are awesome
-		hard_attack = 0.25
+		#hard_attack = 0.25
 		
 		#support unit nerf
 		# hard_attack = -0.4

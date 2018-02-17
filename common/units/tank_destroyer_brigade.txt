@@ -38,7 +38,7 @@ sub_units = {
 		supply_consumption = 0.2
 		
 		#TD are awesome
-		hard_attack = 0.25
+		# #hard_attack = 0.25
 		
 		forest = {
 		    attack = -0.2
@@ -107,7 +107,7 @@ sub_units = {
 		supply_consumption = 0.22
 		
 		#TD are awesome
-		hard_attack = 0.25
+		#hard_attack = 0.25
 		
 		forest = {
 		    attack = -0.3
@@ -179,7 +179,7 @@ sub_units = {
 		supply_consumption = 0.3
 		
 		#TD are awesome
-		hard_attack = 0.25
+		#hard_attack = 0.25
 		
 		forest = {
 		    attack = -0.40
@@ -253,7 +253,7 @@ sub_units = {
 		supply_consumption = 0.4
 		
 		#TD are awesome
-		hard_attack = 0.25
+		#hard_attack = 0.25
 		
 		forest = {
 		    attack = -0.5
@@ -328,7 +328,7 @@ sub_units = {
 		supply_consumption = 0.25
 		
 		#TD are awesome
-		hard_attack = 0.25
+		#hard_attack = 0.25
 		
 		forest = {
 		    attack = -0.3

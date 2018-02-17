@@ -9,7 +9,7 @@ state={
 	}
 
 
-	state_category = metropolis
+	state_category = megalopolis
 	
 	history={
 		owner = GER
@@ -20,7 +20,7 @@ state={
 			587 5 
 		}
 		buildings = {
-			infrastructure = 8
+			infrastructure = 9
 			arms_factory = 4
 			industrial_complex = 2
 			air_base = 3

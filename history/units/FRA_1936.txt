@@ -1259,62 +1259,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.92
-		amount = 1
-	}
-	# CL: Jean de Vienne (Comm. 10-Feb, 1937)
-	add_equipment_production = {
-		equipment = {
-			type = light_cruiser_2
-			creator = "FRA"
-			version_name = "La Galissonnière Class"
-		}
-		requested_factories = 1
-		progress = 0.75
-		amount = 1
-	}
-	# CL: Marseillaise (Comm. 10-Oct, 1937)
-	add_equipment_production = {
-		equipment = {
-			type = light_cruiser_2
-			creator = "FRA"
-			version_name = "La Galissonnière Class"
-		}
-		requested_factories = 1
-		progress = 0.53
-		amount = 1
-	}
-	# CL: Gloire (Comm. 15-Nov, 1937)
-	add_equipment_production = {
-		equipment = {
-			type = light_cruiser_2
-			creator = "FRA"
-			version_name = "La Galissonnière Class"
-		}
-		requested_factories = 1
-		progress = 0.51
-		amount = 1
-	}
-	# CL: Montcalm (Comm. 15-Nov, 1937)
-	add_equipment_production = {
-		equipment = {
-			type = light_cruiser_2
-			creator = "FRA"
-			version_name = "La Galissonnière Class"
-		}
-		requested_factories = 1
-		progress = 0.51
-		amount = 1
-	}
-	# CL: Georges Leygues (Comm. 15-Nov, 1937)
-	add_equipment_production = {
-		equipment = {
-			type = light_cruiser_2
-			creator = "FRA"
-			version_name = "La Galissonnière Class"
-		}
-		requested_factories = 1
-		progress = 0.53
-		amount = 1
+		amount = 6
 	}
 	# DD: Le Fantasque Class (x4) ("Le Malin" "L'Indomptable" "Le Fantasque" "Le Triomphant")
 	# Le Malin
@@ -1326,63 +1271,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.96
-		amount = 1
-	}
-	#L'Indomptable
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "FRA"
-			version_name = "Le Fantasque Class"
-		}
-		requested_factories = 1
-		progress = 0.96
-		amount = 1
-	}
-	#Le Fantasque
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "FRA"
-			version_name = "Le Fantasque Class"
-		}
-		requested_factories = 1
-		progress = 0.94
-		amount = 1
-	}
-	#Le Triomphant
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "FRA"
-			version_name = "Le Fantasque Class"
-		}
-		requested_factories = 1
-		progress = 0.91
-		amount = 1
-	}
-	# Mogador class (x2)
-	#Volta
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "FRA"
-			version_name = "Mogador Class"
-		}
-		requested_factories = 1
-		progress = 0.2
-		amount = 1
-	}
-	#Mogador
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "FRA"
-			version_name = "Mogador Class"
-		}
-		requested_factories = 1
-		progress = 0.3
-		amount = 1
+		amount = 6
 	}
 	#Nine Redoubtable class subs, at various stages of production.
 	add_equipment_production = {
@@ -1393,110 +1282,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.80
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "FRA"
-			version_name = "Redoutable Class"
-		}
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "FRA"
-			version_name = "Redoutable Class"
-		}
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "FRA"
-			version_name = "Redoutable Class"
-		}
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "FRA"
-			version_name = "Redoutable Class"
-		}
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "FRA"
-			version_name = "Redoutable Class"
-		}
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "FRA"
-			version_name = "Redoutable Class"
-		}
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "FRA"
-			version_name = "Redoutable Class"
-		}
-		requested_factories = 1
-		progress = 0.50
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "FRA"
-			version_name = "Redoutable Class"
-	}
-		requested_factories = 1
-		progress = 0.50
-		amount = 1
-	}
-	#SM Saphir class x2
-	#Nautilus
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "FRA"
-			version_name = "Saphir Class"
-		}
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-	}
-	#Perle
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "FRA"
-			version_name = "Saphir Class"
-		}
-		requested_factories = 1
-		progress = 0.70
-		amount = 1
+		amount = 11
 	}
 	# SS: Minerve class (x4) ("Iris" "Minerve" "Vénus" "Junon")
 	#Iris
@@ -1508,52 +1294,9 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.80
-		amount = 1
+		amount = 5
 	}
-	#Minerve
-	add_equipment_production = {
-		equipment = {
-			type = submarine_2
-			creator = "FRA"
-			version_name = "Minerve Class"
-		}
-		requested_factories = 1
-		progress = 0.85
-		amount = 1
-	}
-	#Venus
-	add_equipment_production = {
-		equipment = {
-			type = submarine_2
-			creator = "FRA"
-			version_name = "Minerve Class"
-		}
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-	}
-	#Junon
-	add_equipment_production = {
-		equipment = {
-			type = submarine_2
-			creator = "FRA"
-			version_name = "Minerve Class"
-		}
-		requested_factories = 1
-		progress = 0.67
-		amount = 1
-	}
-	# SS: Aurore class ("Aurore")
-	add_equipment_production = {
-		equipment = {
-			type = submarine_2
-			creator = "FRA"
-			version_name = "Aurore Class"
-		}
-		requested_factories = 1
-		progress = 0.02
-		amount = 1
-	}
+	
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_0
 			amount = 5000

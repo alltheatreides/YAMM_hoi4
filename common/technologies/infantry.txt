@@ -34,7 +34,7 @@ technologies = {
 		
 		enable_building = {
 			building = coastal_bunker
-			level = 10
+			level = 5
 		}
 		
 		path = {

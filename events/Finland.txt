@@ -1790,7 +1790,7 @@ country_event = {
 			trigger = {
 			tag = FIN
 			has_government = democratic
-			# has_completed_focus = fin_stabinthebackfoc
+			has_completed_focus = fin_stabinthebackfoc
 			}
 			
 			option ={

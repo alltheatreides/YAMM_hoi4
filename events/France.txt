@@ -2406,8 +2406,8 @@ country_event = {
 			ENG = {
 				add_tech_bonus = {
 					name = land_doc_bonus
-					bonus = 0.5
-					uses = 2
+					bonus = 0.75
+					uses = 3
 					category = land_doctrine
 				}
 			}

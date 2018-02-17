@@ -2692,6 +2692,12 @@ focus_tree = {
 					# instant_build = yes
 				# }
 			# }
+			470 = {
+				add_resource = {
+					type = bauxite
+					amount = 150
+				}
+			}
 		}
 	}
 

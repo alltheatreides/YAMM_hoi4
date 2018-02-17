@@ -1349,97 +1349,7 @@ instant_effect =
 			}
 			requested_factories = 1
 			progress = 0.7
-			amount = 1
-		}
-		add_equipment_production = {				# Shiratsuyu Class "Shigure"
-			equipment = {
-				type = destroyer_1
-				creator = "JAP" 
-				version_name = "Shiratsuyu Class"
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 1
-		}
-		add_equipment_production = {				# Shiratsuyu Class "Murasame"
-			equipment = {
-				type = destroyer_1
-				creator = "JAP" 
-				version_name = "Shiratsuyu Class"
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 1
-		}
-		add_equipment_production = {				# Shiratsuyu Class "Yudachi"
-			equipment = {
-				type = destroyer_1
-				creator = "JAP" 
-				version_name = "Shiratsuyu Class"
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 1
-		}
-		add_equipment_production = {				# Shiratsuyu Class "Samidare"
-			equipment = {
-				type = destroyer_1
-				creator = "JAP" 
-				version_name = "Shiratsuyu Class"
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 1
-		}
-		add_equipment_production = {				# Shiratsuyu Class "Harusame"
-			equipment = {
-				type = destroyer_1
-				creator = "JAP" 
-				version_name = "Shiratsuyu Class"
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 1
-		}
-		add_equipment_production = {				# Shiratsuyu Class "Yamakaze"
-			equipment = {
-				type = destroyer_1
-				creator = "JAP" 
-				version_name = "Shiratsuyu Class"
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 1
-		}
-		add_equipment_production = {				# Shiratsuyu Class "Kawakaze"
-			equipment = {
-				type = destroyer_1
-				creator = "JAP" 
-				version_name = "Shiratsuyu Class"
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 1
-		}
-		add_equipment_production = {				# Shiratsuyu Class "Umikaze"
-			equipment = {
-				type = destroyer_1
-				creator = "JAP" 
-				version_name = "Shiratsuyu Class"
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 1
-		}
-		add_equipment_production = {				# Shiratsuyu Class "Suzukaze"
-			equipment = {
-				type = destroyer_1
-				creator = "JAP" 
-				version_name = "Shiratsuyu Class"
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 1
+			amount = 10
 		}
 		# Asashio Class (x3) "Asashio" "Arashio" "Michishio"
 		add_equipment_production = {				
@@ -1450,28 +1360,8 @@ instant_effect =
 			}
 			requested_factories = 1
 			progress = 0.17
-			amount = 1
+			amount = 3
 		}
-		add_equipment_production = {				
-			equipment = {
-				type = destroyer_2
-				creator = "JAP"
-				version_name = "Asashio Class"
-			}
-			requested_factories = 1
-			progress = 0.14
-			amount = 1
-		}
-		add_equipment_production = {				
-			equipment = {
-				type = destroyer_2
-				creator = "JAP"
-				version_name = "Asashio Class"
-			}
-			requested_factories = 1
-			progress = 0.09
-			amount = 1
-		}		
 		# "I-172" "I-73" "I-174" "I-175"
 		add_equipment_production = {	#I-172	
 			equipment = {
@@ -1481,37 +1371,7 @@ instant_effect =
 			}
 			requested_factories = 1
 			progress = 0.66
-			amount = 1
-		}
-		add_equipment_production = {	#I-173
-			equipment = {
-				type = submarine_1
-				creator = "JAP"
-				version_name = "Kaidai VI Class"
-			}
-			requested_factories = 1
-			progress = 0.63
-			amount = 1
-		}
-		add_equipment_production = {	#I-174 (Kaidai VIb)	
-			equipment = {
-				type = submarine_1
-				creator = "JAP"
-				version_name = "Kaidai VI Class"
-			}
-			requested_factories = 1
-			progress = 0.33
-			amount = 1
-		}
-		add_equipment_production = {	#I-175 (Kaidai VIb)	
-			equipment = {
-				type = submarine_1
-				creator = "JAP"
-				version_name = "Kaidai VI Class"
-			}
-			requested_factories = 1
-			progress = 0.39
-			amount = 1
+			amount = 5
 		}
 		# "I-7"
 		add_equipment_production = {				
@@ -1522,26 +1382,6 @@ instant_effect =
 			}
 			requested_factories = 1
 			progress = 0.7
-			amount = 1
-		}
-		add_equipment_production = {				# "I-8"
-			equipment = {
-				type = submarine_2
-				creator = "JAP" 
-				version_name = "Junsen III Class"
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 1
-		}
-		add_equipment_production = {				# "Ro-34"
-			equipment = {
-				type = submarine_1
-				creator = "JAP"
-				version_name = "Kaichu V Class"
-			}
-			requested_factories = 1
-			progress = 0.6
-			amount = 1
+			amount = 2
 		}
 }

@@ -121,7 +121,7 @@ add_relation_modifier = {
 }
 
 
-set_convoys = 4000
+set_convoys = 2000
 
 # DIPLOMACY
 if = {

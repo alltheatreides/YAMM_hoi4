@@ -430,6 +430,9 @@ country_event = {
 		SOV = { has_defensive_war = yes }
 		date > 1941.12.1
 		SOV = { controls_state = 219 }
+		SOV = {
+			has_idea = SOV_The_Great_Patriotic_War_idea
+		}
 		NOT { has_country_flag = soviet_winter_offensive_1 }
 	}
 	
