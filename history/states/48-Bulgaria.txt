@@ -24,7 +24,8 @@ state={
 			industrial_complex = 6
 			air_base = 3
 			anti_air_building = 1
-			# small_steel_refinery = 1
+			steel_refinery = 1
+			# #small_steel_refinery = 1
 		}
 		add_core_of = BUL
 	}

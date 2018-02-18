@@ -13,7 +13,8 @@ state={
 			arms_factory = 1
 			industrial_complex = 2
 			air_base = 3
-			small_steel_refinery = 1
+			steel_refinery = 1
+			#small_steel_refinery = 1
 		}
 		victory_points = {
 			10837 10 

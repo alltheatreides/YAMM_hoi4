@@ -1,15 +1,15 @@
 focus_tree = {
 	id = SLO_generic_focus
-	
+
     country = {
         factor = 0
-        
+
         modifier = {
             add = 10
             tag = SLO
         }
     }
-	
+
 	default = no
 	reset_on_civilwar = no
 
@@ -48,8 +48,8 @@ focus_tree = {
 					bonus = 0.5
 					uses = 1
 					category = industry
-				}				
-			}			
+				}
+			}
 		}
 	}
 
@@ -132,7 +132,7 @@ focus_tree = {
 				category = recon_tech
 			}
 		}
-	}	
+	}
 	focus = {
 		id = SLO_support_bonus
 		icon = GFX_goal_machine_gun
@@ -180,7 +180,7 @@ focus_tree = {
 			technology = support_weapons3
 			}
 		}
-	}	
+	}
 	focus = {
 		id = SLO_motorization_effort
 		icon = GFX_goal_generic_army_motorized
@@ -247,7 +247,7 @@ focus_tree = {
 				uses = 1
 				technology = basic_light_tank
 				technology = improved_light_tank
-			}			
+			}
 		}
 	}
 	focus = {
@@ -302,7 +302,7 @@ focus_tree = {
 				bonus = 0.25
 				uses = 1
 				category = armor
-			}			
+			}
 		}
 	}
 	focus = {
@@ -321,12 +321,12 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {	
+			NOT = {
 				OR = {
 					SLO = {is_subject_of = GER}
 					is_in_faction_with = GER
 				}
-			}	
+			}
 			has_tech = mobile_warfare
 		}
 
@@ -348,9 +348,9 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				category = cat_mobile_warfare
-			}			
+			}
 		}
-	}	
+	}
 	focus = {
 		id = SLO_mechanization_effort
 		icon = GFX_goal_mechanized_offensive
@@ -374,10 +374,10 @@ focus_tree = {
 				name = cze_army_upgrades2
 				bonus = 0.5
 				uses = 1
-				category = maintenance_company_tech	
-			}			
+				category = maintenance_company_tech
+			}
 		}
-	}	
+	}
 	focus = {
 		id = SLO_firepower_focus
 		icon = GFX_goal_generic_army_artillery2
@@ -451,7 +451,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = YUG_artillery_regiments
 		}
-	}	
+	}
 	focus = {
 		id = SLO_planning_focus
 		icon = GFX_goal_generic_position_armies
@@ -491,7 +491,7 @@ focus_tree = {
 				category = cat_grand_battle_plan
 			}
 		}
-	}	
+	}
 	focus = {
 		id = SLO_planning_focus_2
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -526,9 +526,9 @@ focus_tree = {
                 bonus = 0.5
                 uses = 1
                 category = signal_company_tech
-            }	
+            }
 		}
-	}	
+	}
 	focus = {
 		id = SLO_mass_assault_focus
 		icon = GFX_goal_infantry_offensive
@@ -657,12 +657,12 @@ focus_tree = {
 		prerequisite = { focus = SLO_special_forces }
 		prerequisite = { focus = SLO_modern_artillery }
 		prerequisite = { focus = SLO_planning_focus_2  focus = SLO_artillery_regiments focus = SLO_mechanization_effort focus = SLO_rapid_deployment_focus}
-		relative_position_id = SLO_army_effort 
+		relative_position_id = SLO_army_effort
         x = 7
         y = 4
         cost = 10
 		ai_will_do = {
-			factor = 40			
+			factor = 40
 			}
 		available = {
 			is_in_faction = yes
@@ -673,7 +673,7 @@ focus_tree = {
 					num_of_factories > 50
 				}
 			}
-		}			
+		}
 		available_if_capitulated = yes
         completion_reward = {
             add_research_slot = 1
@@ -683,7 +683,7 @@ focus_tree = {
 		id = SLO_aviation_effort
 		icon = GFX_goal_SLO_air_force
 		prerequisite = { focus = SLO_army_effort}
-		relative_position_id = SLO_army_effort 
+		relative_position_id = SLO_army_effort
 		x = 15
 		y = 1
 		cost = 10
@@ -699,13 +699,13 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}			
+			}
 			add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 0.5
 				uses = 1
 				category = air_doctrine
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -847,7 +847,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = CRO_idea_trained_mechanics 
+			add_ideas = CRO_idea_trained_mechanics
 		}
 	}
 	focus = {
@@ -924,7 +924,7 @@ focus_tree = {
 						type = air_base
 						level = 2
 						instant_build = yes
-					}				
+					}
 					ROOT = { set_country_flag = aviation_effort_2_AB }
 				}
 			}
@@ -993,7 +993,7 @@ focus_tree = {
 				technology = tactical_bomber2
 			}
 		}
-	}	
+	}
 	focus = {
 		id = SLO_CAS_effort
 		icon = GFX_goal_generic_CAS
@@ -1046,7 +1046,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-		
+
 		completion_reward = {
 			navy_experience = 25
 			if = {
@@ -1142,7 +1142,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-			}			
+			}
 		}
 	}
 
@@ -1423,7 +1423,7 @@ focus_tree = {
 				70 = {
 					add_extra_state_shared_building_slots = 4
 				}
-			}			
+			}
 		}
 
 		ai_will_do = {
@@ -1446,16 +1446,16 @@ focus_tree = {
                 add_building_construction = {
                     type = infrastructure
                     level = 1
-                    instant_build = yes 
-                }    
+                    instant_build = yes
+                }
             }
             71 = {
                 add_building_construction = {
                     type = infrastructure
                     level = 1
-                    instant_build = yes 
-                }    
-            }			
+                    instant_build = yes
+                }
+            }
 		}
 
 		ai_will_do = {
@@ -1517,11 +1517,11 @@ focus_tree = {
 				controls_state = 70
 			}
 		70 = { is_owned_by = SLO }
-        }		
+        }
         cost = 10
 		ai_will_do = {
-			factor = 5		
-			}		
+			factor = 5
+			}
 		available_if_capitulated = yes
         completion_reward = {
             70 = {
@@ -1531,7 +1531,7 @@ focus_tree = {
                     level = 2
                     instant_build = yes
                 }
-            }			
+            }
         }
     }
     focus = {
@@ -1547,11 +1547,11 @@ focus_tree = {
 			}
 		70 = { is_owned_by = SLO }
         has_tech = synth_oil_experiments
-        }		
+        }
         cost = 10
 		ai_will_do = {
-			factor = 5			
-			}		
+			factor = 5
+			}
         completion_reward = {
             70 = {
                 add_extra_state_shared_building_slots = 1
@@ -1572,13 +1572,13 @@ focus_tree = {
         prerequisite = { focus = SLO_transslovak_railways }
         cost = 10
 		ai_will_do = {
-			factor = 15		
-			}		
+			factor = 15
+			}
         available = {
 			SLO ={
 				controls_state = 70
 			}
-        }		
+        }
         completion_reward = {
 
             70 = {
@@ -1588,7 +1588,7 @@ focus_tree = {
                     level = 3
                     instant_build = yes
                 }
-            }			
+            }
         }
     }
     focus = {
@@ -1600,13 +1600,13 @@ focus_tree = {
         prerequisite = { focus = SLO_small_arms_manufacturing }
         cost = 10
 		ai_will_do = {
-			factor = 15		
-			}		
+			factor = 15
+			}
         available = {
 			SLO ={
 				controls_state = 70
 			}
-        }		
+        }
         completion_reward = {
 
             70 = {
@@ -1619,8 +1619,8 @@ focus_tree = {
                 add_building_construction = {
                     type = infrastructure
                     level = 1
-                    instant_build = yes 
-                }				
+                    instant_build = yes
+                }
             }
         }
     }
@@ -1634,8 +1634,8 @@ focus_tree = {
         y = 3
         cost = 10
 		ai_will_do = {
-			factor = 30			
-			}		
+			factor = 30
+			}
 		available_if_capitulated = yes
         completion_reward = {
             add_research_slot = 1
@@ -1656,11 +1656,11 @@ focus_tree = {
 			}
 		70 = { is_owned_by = SLO }
 		71 = { is_owned_by = SLO }
-        }		
+        }
         cost = 10
 		ai_will_do = {
-			factor = 5		
-			}		
+			factor = 5
+			}
 		available_if_capitulated = yes
         completion_reward = {
             70 = {
@@ -1678,7 +1678,7 @@ focus_tree = {
                     level = 1
                     instant_build = yes
                 }
-            }			
+            }
         }
     }
     focus = {
@@ -1691,14 +1691,14 @@ focus_tree = {
 		prerequisite = { focus = SLO_continue_industrialization }
         available = {
 
-        }		
+        }
         cost = 10
 		ai_will_do = {
-			factor = 5		
-			}		
+			factor = 5
+			}
 		available_if_capitulated = yes
         completion_reward = {
-            add_ideas = SLO_civilian_production			
+            add_ideas = SLO_civilian_production
         }
     }
     focus = {
@@ -1711,16 +1711,16 @@ focus_tree = {
 		prerequisite = { focus = SLO_continue_industrialization }
         available = {
 
-        }		
+        }
         cost = 10
 		ai_will_do = {
-			factor = 5		
-			}		
+			factor = 5
+			}
 		available_if_capitulated = yes
         completion_reward = {
-            add_ideas = SLO_military_production			
+            add_ideas = SLO_military_production
         }
-    }	
+    }
 	focus = {
 		id = SLO_uranium_mining
 		icon = GFX_focus_wonderweapons
@@ -1740,7 +1740,7 @@ focus_tree = {
 			has_tech = excavation3
 			date > 1939.06.01
 		}
-		
+
 		bypass = {
 
 		}
@@ -1759,9 +1759,9 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				category = nuclear
-			}	
+			}
 		}
-	}	
+	}
 	focus = {
 		id = SLO_found_the_nation
 		icon = GFX_goal_SLO_slovak_freedom
@@ -1793,8 +1793,8 @@ focus_tree = {
 					bonus = 0.5
 					uses = 1
 					category = industry
-				}				
-			}			
+				}
+			}
 		}
 	}
 	focus = {
@@ -1820,7 +1820,7 @@ focus_tree = {
 			add_political_power = 50
 			SLO = { add_state_core = 664}
 		}
-	}	
+	}
 	focus = {
 		id = SLO_purge_fascists
 		icon = GFX_goal_fascism_banned
@@ -1836,24 +1836,24 @@ focus_tree = {
 				is_faction_leader = yes
 				is_in_faction_with = SLO
 				NOT = {has_government = fascism}
-			}		
+			}
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
-				SLO = { 
-					OVERLORD = { 
+				SLO = {
+					OVERLORD = {
 						OR = {
 							has_government = democratic
 							has_government = neutrality
 							has_government = communism
-						} 
-					} 
+						}
+					}
 				}
-			}			
+			}
 		}
-		
+
 		x = -4
 		y = 1
 		cost = 10
@@ -1870,7 +1870,7 @@ focus_tree = {
 			remove_ideas = SLO_nationalism
 			remove_ideas = SLO_fascist_repression
 			remove_ideas = military_youth_focus
-			remove_ideas = SLO_militarism_focus			
+			remove_ideas = SLO_militarism_focus
 		}
 	}
 	focus = {
@@ -1885,20 +1885,20 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
-				SLO = { 
-					OVERLORD = { 
+				SLO = {
+					OVERLORD = {
 						OR = {
 							has_government = democratic
 							has_government = neutrality
-						} 
-					} 
+						}
+					}
 				}
-			}			
+			}
 		}
-		
+
 		x = 2
 		y = 1
 		cost = 10
@@ -1931,20 +1931,20 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
-				SLO = { 
-					OVERLORD = { 
+				SLO = {
+					OVERLORD = {
 						OR = {
 							has_government = democratic
 							has_government = neutrality
-						} 
-					} 
+						}
+					}
 				}
-			}			
+			}
 		}
-		
+
 		x = 2
 		y = 1
 		cost = 10
@@ -1964,10 +1964,10 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SLO_defensive_preparation }
 		relative_position_id = SLO_defensive_preparation
-		available = { 
-			OR = { 
-				threat > 0.75 
-				has_defensive_war = yes 
+		available = {
+			OR = {
+				threat > 0.75
+				has_defensive_war = yes
 			}
 		}
 
@@ -1980,8 +1980,8 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 3
-		}		
-		
+		}
+
 		completion_reward = {
 			add_ideas = why_we_fight_focus
 			custom_effect_tooltip = why_we_fight_effect
@@ -1989,10 +1989,10 @@ focus_tree = {
 				if = {
 					limit = { NOT = { has_idea = neutrality_idea } }
 					set_rule = { can_create_factions = yes }
-				}			
+				}
 			}
 		}
-	}	
+	}
 	focus = {
 		id = SLO_seek_trading_partners
 		icon = GFX_goal_generic_positive_trade_relations
@@ -2005,20 +2005,20 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
-				SLO = { 
-					OVERLORD = { 
+				SLO = {
+					OVERLORD = {
 						OR = {
 							has_government = democratic
 							has_government = neutrality
-						} 
-					} 
+						}
+					}
 				}
-			}			
+			}
 		}
-		
+
 		x = 0
 		y = 1
 		cost = 10
@@ -2036,9 +2036,9 @@ focus_tree = {
                 add_building_construction = {
                     type = infrastructure
                     level = 1
-                    instant_build = yes 
-                }    
-            }			
+                    instant_build = yes
+                }
+            }
 		}
 	}
 	focus = {
@@ -2053,20 +2053,20 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
-				SLO = { 
-					OVERLORD = { 
+				SLO = {
+					OVERLORD = {
 						OR = {
 							has_government = democratic
 							has_government = neutrality
-						} 
-					} 
+						}
+					}
 				}
-			}			
+			}
 		}
-		
+
 		x = -1
 		y = 1
 		cost = 10
@@ -2094,20 +2094,20 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
-				SLO = { 
-					OVERLORD = { 
+				SLO = {
+					OVERLORD = {
 						OR = {
 							has_government = democratic
 							has_government = neutrality
-						} 
-					} 
+						}
+					}
 				}
-			}			
+			}
 		}
-		
+
 		x = 1
 		y = 1
 		cost = 10
@@ -2122,16 +2122,16 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = HUN_invite_foreign_investors
 		}
-	}	
+	}
 	focus = {
 		id = SLO_agrarian_reforms
 		icon = GFX_goal_agrarian_reform
 		prerequisite = { focus = SLO_purge_fascists focus = SLO_reinforce_hlinka_guard}
 		relative_position_id = SLO_found_the_nation
 		available = {
-			
+
 		}
-		
+
 		x = 0
 		y = 2
 		cost = 10
@@ -2146,7 +2146,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = SLO_agrarian_reform
 		}
-	}	
+	}
 	focus = {
 		id = SLO_communist_influence
 		icon = GFX_focus_generic_soviet_politics
@@ -2163,21 +2163,21 @@ focus_tree = {
 							is_major = yes
 							has_government = communism
 						}
-					}		
+					}
 				}
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
-				SLO = { 
-					OVERLORD = {	
+				SLO = {
+					OVERLORD = {
 						has_government = communism
-					} 
+					}
 				}
-			}			
+			}
 		}
-		
+
 		x = -2
 		y = 1
 		cost = 10
@@ -2209,17 +2209,17 @@ focus_tree = {
 			has_government = communism
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
-				SLO = { 
-					OVERLORD = {	
+				SLO = {
+					OVERLORD = {
 						has_government = communism
-					} 
+					}
 				}
-			}			
+			}
 		}
-		
+
 		x = 1
 		y = 1
 		cost = 10
@@ -2238,9 +2238,9 @@ focus_tree = {
                 bonus = 0.5
                 uses = 1
 				category = military_police_tech
-            }			
+            }
 		}
-	}	
+	}
 	focus = {
 		id = SLO_purge_the_army
 		icon = GFX_goal_support_communism
@@ -2250,17 +2250,17 @@ focus_tree = {
 			has_government = communism
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
-				SLO = { 
-					OVERLORD = {	
+				SLO = {
+					OVERLORD = {
 						has_government = communism
-					} 
+					}
 				}
-			}			
+			}
 		}
-		
+
 		x = 0
 		y = 1
 		cost = 10
@@ -2285,17 +2285,17 @@ focus_tree = {
 			has_government = communism
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
-				SLO = { 
-					OVERLORD = {	
+				SLO = {
+					OVERLORD = {
 						has_government = communism
-					} 
+					}
 				}
-			}			
+			}
 		}
-		
+
 		x = 0
 		y = 1
 		cost = 10
@@ -2308,7 +2308,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = { remove_idea = SLO_purge_the_army add_idea = SLO_communist_army } 
+			swap_ideas = { remove_idea = SLO_purge_the_army add_idea = SLO_communist_army }
 		}
 	}
 	focus = {
@@ -2320,17 +2320,17 @@ focus_tree = {
 			has_government = communism
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
-				SLO = { 
-					OVERLORD = {	
+				SLO = {
+					OVERLORD = {
 						has_government = communism
-					} 
+					}
 				}
-			}			
+			}
 		}
-		
+
 		x = -1
 		y = 1
 		cost = 10
@@ -2346,7 +2346,7 @@ focus_tree = {
 			add_ideas = idea_communist_central_management
 			add_political_power = 100
 		}
-	}	
+	}
 	focus = {
 		id = SLO_indoctrinate_the_proletariat
 		icon = GFX_focus_propaganda_soviet
@@ -2356,17 +2356,17 @@ focus_tree = {
 			has_government = communism
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
-				SLO = { 
-					OVERLORD = {	
+				SLO = {
+					OVERLORD = {
 						has_government = communism
-					} 
+					}
 				}
-			}			
+			}
 		}
-		
+
 		x = 0
 		y = 1
 		cost = 10
@@ -2391,17 +2391,17 @@ focus_tree = {
 			has_government = communism
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
-				SLO = { 
-					OVERLORD = {	
+				SLO = {
+					OVERLORD = {
 						has_government = communism
-					} 
+					}
 				}
-			}			
+			}
 		}
-		
+
 		x = 0
 		y = 1
 		cost = 10
@@ -2426,14 +2426,10 @@ focus_tree = {
                     level = 1
                     instant_build = yes
                 }
-				add_building_construction = {
-					type = small_steel_refinery
-					level = 1
-					instant_build = yes
-				}
-            }			
+				
+            }
 		}
-	}	
+	}
 	focus = {
 		id = SLO_reinforce_hlinka_guard
 		icon = GFX_goal_SLO_slovak_blackshirts
@@ -2443,8 +2439,8 @@ focus_tree = {
 				has_government = fascism
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
 				SLO = { OVERLORD = { has_government = fascism } }
 			}
@@ -2478,7 +2474,7 @@ focus_tree = {
 			if = {
 				limit = { has_idea = neutrality_idea }
 				remove_ideas = neutrality_idea
-			}			
+			}
 			add_political_power = 40
 			add_ideas = SLO_fascist_repression
 			add_ideas = SLO_nationalism
@@ -2492,15 +2488,15 @@ focus_tree = {
 			remove_ideas = SLO_efficient_economy
 			remove_ideas = deterrence
 			remove_ideas = why_we_fight_focus
-			remove_ideas = HUN_invite_foreign_investors			
+			remove_ideas = HUN_invite_foreign_investors
 			add_tech_bonus = {
                 name = mp_focus
                 bonus = 0.5
                 uses = 1
 				category = military_police_tech
-            }			
+            }
 		}
-	}	
+	}
 	focus = {
 		id = SLO_catholic_dominance
 		icon = GFX_goal_SLO_slovak_birth
@@ -2513,8 +2509,8 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
 				SLO = { OVERLORD = { has_government = fascism } }
 			}
@@ -2547,7 +2543,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = CRO_catholic_dominance
 		}
-	}	
+	}
 	focus = {
 		id = SLO_militarize_the_hlinka_guard
 		icon = GFX_goal_SLO_slovak_hlinka_guard
@@ -2557,8 +2553,8 @@ focus_tree = {
 				has_government = fascism
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
-				
+					SLO = { is_subject = yes }
+
 				}
 				SLO = { OVERLORD = { has_government = fascism } }
 			}
@@ -2592,7 +2588,7 @@ focus_tree = {
 			if = {
 				limit = { has_idea = neutrality_idea }
 				remove_ideas = neutrality_idea
-			}			
+			}
 			add_ideas = SLO_militarism_focus
 			army_experience = 10
 			set_rule = { can_send_volunteers = yes }
@@ -2610,7 +2606,7 @@ focus_tree = {
 				has_government = fascism
 			if = {
 				limit = {
-					SLO = { is_subject = yes } 
+					SLO = { is_subject = yes }
 				}
 				SLO = { OVERLORD = { has_government = fascism } }
 			}
@@ -2632,10 +2628,10 @@ focus_tree = {
 		available = {
 			has_dlc = "Together for Victory"
 			has_government = fascism
-			SLO = { 
-				is_subject = yes 
+			SLO = {
+				is_subject = yes
 				OVERLORD = { has_government = fascism }
-				has_war = yes 
+				has_war = yes
 			}
 			has_army_manpower = { size > 90000 }
 		}
@@ -2647,7 +2643,7 @@ focus_tree = {
 				localization = slovak_autonomy
 			}
 		}
-	}	
+	}
 	focus = {
 		id = SLO_ideological_fanaticism
 		icon = GFX_goal_flag_fascist_slovakia
@@ -2669,7 +2665,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = kamikaze_focus_tooltip
 		}
-	}	
+	}
 	focus = {
 		id = SLO_technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
@@ -2685,7 +2681,7 @@ focus_tree = {
 					num_of_factories > 50
 				}
 			}
-		}		
+		}
 		x = 0
 		y = 2
 		cost = 10
@@ -2714,15 +2710,15 @@ focus_tree = {
 					bonus = 0.5
 					uses = 1
 					category = industry
-				}	
+				}
 				add_tech_bonus = {
 					name = infantry_weapons_bonus
 					bonus = 0.5
 					uses = 1
 					category = infantry_weapons
 					category = artillery
-				}				
-			}			
+				}
+			}
 		}
-	}	
+	}
 }
