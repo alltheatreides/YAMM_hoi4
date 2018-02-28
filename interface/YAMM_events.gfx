@@ -100,4 +100,17 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_todt_funerals.dds"
 	}
 	
+	#Hitler in Rome
+	spriteType = {
+		name = "GFX_news_event_hitler_in_rome"
+		texturefile = "gfx/event_pictures/news_event_hitler_in_rome.dds"
+	}
+	
+	#Greece
+	
+	spriteType = {
+		name = "GFX_news_event_4_of_august_regime"
+		texturefile = "gfx/event_pictures/news_event_4_of_august_regime.dds"
+	}
+	
 }

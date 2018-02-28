@@ -10,6 +10,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_generic_doctrine_tank_warfare.dds"			
 	}
 	
+	SpriteType = {
+		name = "GFX_goal_agrarian_reform"
+		texturefile = "gfx/interface/goals/focus_generic_agrarian_reform.dds"			
+	}
+	
+	
+	#CHI
+	SpriteType = {
+		name = "GFX_CHI_chiang"
+		texturefile = "gfx/interface/goals/focus_CHI_chiang.dds"			
+	}
+	
 	#ITA
 	SpriteType = {
 		name = "GFX_ITA_tank"
@@ -104,6 +116,52 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ITA_Pact_of_Steel"
 		texturefile = "gfx/interface/goals/focus_ITA_Pact_of_Steel.dds"			
+	}
+	
+	#GREECE
+	SpriteType = {
+		name = "GFX_new_regime"
+		texturefile = "gfx/interface/goals/focus_GRE_new_regime.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_GRE_EON"
+		texturefile = "gfx/interface/goals/focus_GRE_eon.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_GRE_consolidate_regime"
+		texturefile = "gfx/interface/goals/focus_GRE_consolidate_regime.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_GRE_new_greece"
+		texturefile = "gfx/interface/goals/focus_GRE_new_greece.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_GRE_third_hellenic_civilization"
+		texturefile = "gfx/interface/goals/focus_GRE_third_hellenic_civilization.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_GRE_SCW"
+		texturefile = "gfx/interface/goals/focus_GRE_SCW.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_GRE_SCW_2"
+		texturefile = "gfx/interface/goals/focus_GRE_SCW_2.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_GRE_greek_arts"
+		texturefile = "gfx/interface/goals/focus_GRE_greek_arts.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_GRE_demotic_greek"
+		texturefile = "gfx/interface/goals/focus_GRE_demotic_greek.dds"			
 	}
 	
 }

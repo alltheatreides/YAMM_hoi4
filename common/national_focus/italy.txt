@@ -1941,6 +1941,7 @@ focus_tree = {
 							instant_build = yes
 						}
 			}
+			country_event = { id = yamm.98 }
 		}
 	}
 	focus = {

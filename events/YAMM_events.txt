@@ -2347,37 +2347,173 @@ country_event = {
 	}
 }
 
-# country_event = {
-	# id = yamm.98
-	# title = yamm.98.t
-	# desc = yamm.98.desc
-	# picture = GFX_report_event_fascists_posing
+news_event = {
+	id = yamm.98
+	title = yamm.98.t
+	desc = yamm.98.desc
+	picture = GFX_news_event_hitler_in_rome
 	
-	# fire_only_once = yes
+	is_triggered_only = yes
 	
-	# hidden = yes
 	
 	# trigger = {
 		# tag = GER
-		# date > 1942.1.1
-		# GER = { has_war_with = SOV }
-		# SOV = { surrender_progress < 0.5 }
 	# }
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = yamm.98.a
+	}
+	
+}
+
+#Greek National Focus Events - Bloody May Unrest and strikes leading up to parliement dissolvment
+country_event = {
+	id = yamm.99
+	title = yamm.99.t
+	desc = yamm.99.desc
+	picture = GFX_report_event_worker_protests
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = GRE
+		has_idea = GRE_unstable_politics
+		GRE = { has_completed_focus = parliamentaryelections }
+	}
+	
+	mean_time_to_happen = {
+		days = 35
+	}
 	
 	# immediate = {
-		# kill_country_leader = yes
-		# create_country_leader = { 
-			# name = "Adolf Hitler"
-			# desc = "POLITICS_ADOLF_HITLER_DESC"
-			# picture = "Portrait_Hitler_Fear.dds"
-			# expire = "1965.1.1"
-			# ideology = nazism
-		# }
 		
 	# }
+
+	option = { 
+		name = yamm.99.a
+		
+		add_political_power = -50
+		
+		add_popularity = {
+		    ideology = democratic
+			popularity = 0.02
+		}
+		
+		add_popularity = {
+		    ideology = communist
+			popularity = 0.02
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+
+#Greek National Focus Events - Metaxas Regime World News
+news_event = {
+	id = yamm.100
+	title = yamm.100.t
+	desc = yamm.100.desc
+	picture = GFX_news_event_4_of_august_regime
 	
-	# option = {
-		# name = yamm.98.b
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			tag = GRE
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	# immediate = {
+		
 	# }
+
+	option = { 
+		name = yamm.100.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+
+}
+
+#Greek National Focus Events - Soviet Purge and dead greeks
+country_event = {
+	id = yamm.101
+	title = yamm.101.t
+	desc = yamm.101.desc
+	picture = GFX_report_event_soviet_purge_politicians
 	
-# }
+	fire_only_once = yes
+
+	trigger = {
+		tag = GRE
+		SOV = {
+			focus_progress = { focus = SOV_great_purge progress > 0.1 }
+		}
+		date > 1937.6.1
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	# immediate = {
+		
+	# }
+
+	option = {
+		name = yamm.101.a
+		add_opinion_modifier = { target = SOV modifier = hostile_status }
+		
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+
+#Greek National Focus Events - Hatay
+country_event = {
+	id = yamm.102
+	title = yamm.102.t
+	desc = yamm.102.desc
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = GRE
+		date > 1938.8.1
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	# immediate = {
+		
+	# }
+
+	option = {
+		name = yamm.102.a
+		
+		add_manpower = 100000
+		
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}

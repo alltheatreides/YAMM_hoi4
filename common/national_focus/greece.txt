@@ -1,0 +1,1199 @@
+focus_tree = {
+	id = greece_focus
+	
+	country = {
+		factor=0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	
+	default = no
+	
+	
+	########################################
+	###  GATHER ROUND IT ALL BEGINS HERE ###
+	########################################
+	
+	#Parliamentary Elections 
+	focus = {
+		id = parliamentaryelections 
+		icon = GFX_goal_support_democracy 
+		ai_will_do = { factor = 0 } 
+		x = 6
+		y = 0 
+		mutually_exclusive = { } 
+		prerequisite = { } 
+		cost = 10
+		available_if_capitulated = yes  
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	#Break the Political Deadlock
+	focus = {
+		id = breakthepoliticaldeadlock 
+		icon = GFX_goal_generic_intelligence_exchange 
+		ai_will_do = { factor = 0 } 
+		x = 6
+		y = 1 
+		mutually_exclusive = { } 
+		prerequisite = { focus = parliamentaryelections} 
+		cost = 4.3  
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			remove_ideas = GRE_unstable_politics
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Ioannis Metaxas"
+				desc = "POLITICS_IOANNIS_METAXAS_DESC"
+				picture = "Portrait_Greece_Ioannis_Metaxas.dds"
+				expire = "1941.1.30"
+				ideology = conservatism
+				traits = {
+					anti_communist
+				}
+			}
+		}
+	}
+	
+	#Clamp Down on Unrest
+	focus = {
+		id = clampdownonunrest 
+		icon = GFX_goal_demand_sudetenland
+		ai_will_do = { factor = 0 } 
+		x = 6
+		y = 2 
+		mutually_exclusive = { } 
+		prerequisite = { focus = breakthepoliticaldeadlock} 
+		cost = 8.6
+		available_if_capitulated = yes 
+		
+		completion_reward = {
+			set_politics = { ruling_party = neutrality elections_allowed = no }
+			# add_ideas = GRE_metaxas_regime
+			hidden_effect = {
+				kill_country_leader = yes
+			}
+			create_country_leader = {
+				name = "Ioannis Metaxas"
+				desc = "POLITICS_IOANNIS_METAXAS_DESC"
+				picture = "Portrait_Greece_Ioannis_Metaxas.dds"
+				expire = "1941.1.30"
+				ideology = despotism
+				traits = {
+					anti_communist
+				}
+			}
+			hidden_effect = {
+				add_ideas = GRE_political_agitation
+			}
+			#Do some tooltip
+		}
+	}
+	
+	
+	########################################
+	## BIRTH OF THE 4TH OF AUGUST REGIME  ##
+	########################################
+	
+	#Birth of a New Regime
+	focus = {
+		id = new_regime 
+		icon = GFX_goal_support_fascism
+		ai_will_do = { factor = 0 } 
+		x = 3
+		y = 3
+		mutually_exclusive = { } 
+		prerequisite = { focus = clampdownonunrest} 
+		cost = 8.6
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = GRE_metaxas_regime_1
+			hidden_effect = {
+				news_event = yamm.100
+			}
+		}
+	}
+	
+	
+	#SCW Opportunity	
+	#Danza de la Muerte 
+	focus = {
+		id = danzadelamuerte
+		icon = GFX_GRE_SCW 
+		ai_will_do = { factor = 0 } 
+		x = 1 
+		y = 4
+		mutually_exclusive = { } 
+		prerequisite = { focus = new_regime } 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		available = {
+			SPR = { has_civil_war = yes }
+		}
+		
+		completion_reward = {
+			47 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			SPR = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = GRE }
+			}
+			SPA = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = GRE }
+			}
+		}
+	}
+	
+	#Expand the GPCC
+	focus = {
+		id = danzadelamuerte2
+		icon = GFX_GRE_SCW_2 
+		ai_will_do = { factor = 0 } 
+		x = 1 
+		y = 5
+		mutually_exclusive = { } 
+		prerequisite = { focus = danzadelamuerte} 
+		cost = 8.6
+		available_if_capitulated = yes
+		
+		available = {
+			SPR = { has_civil_war = yes }
+		}
+		
+		completion_reward = {
+			add_timed_idea = { idea = GRE_war_profiteering days = 365 }
+			SPR = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = GRE }
+			}
+			SPA = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = GRE }
+			}
+			hidden_effect = {
+				47 = {
+					add_building_construction = {
+						type = steel_refinery
+						level = 1
+						instant_build = yes
+					}
+					add_resource = {
+						type = coal
+						amount = 10
+						state = 159
+					}
+					add_resource = {
+						type = iron
+						amount = 10
+						state = 159
+					}
+				}
+			}
+		}
+	}
+	
+	#Merchant of Death benefits
+	focus = {
+		id = danzadelamuerte3
+		icon = GFX_goal_generic_construct_mil_factory 
+		ai_will_do = { factor = 0 } 
+		x = 1
+		y = 6
+		mutually_exclusive = { } 
+		prerequisite = { focus = danzadelamuerte2} 
+		cost = 10
+		available_if_capitulated = yes
+		
+		available = {
+			SPR = { has_civil_war = yes }
+		}
+		
+		completion_reward = {
+			remove_ideas = GRE_war_profiteering
+			add_timed_idea = { idea = GRE_war_profiteering_2 days = 365 }
+			47 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			SPR = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = GRE }
+			}
+			SPA = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = GRE }
+			}
+		}
+	}
+	
+	#Lord of war
+	focus = {
+		id = danzadelamuerte4
+		icon = GFX_CHI_chiang 
+		ai_will_do = { factor = 0 } 
+		x = 3
+		y = 6
+		mutually_exclusive = { } 
+		prerequisite = { focus = danzadelamuerte2} 
+		cost = 10
+		available_if_capitulated = yes
+		
+		available = {
+			CHI = { has_defensive_war_with = JAP }
+		}
+		
+		completion_reward = {
+			add_timed_idea = { idea = GRE_war_profiteering_2 days = 90 }
+			47 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			CHI = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 15000 producer = GRE }
+			}
+		}
+	}
+	
+	#The Schacht Plan Opportunity 
+	focus = {
+		id = theschachtplanopportunity 
+		icon = GFX_goal_generic_consumer_goods 
+		ai_will_do = { factor = 0 } 
+		x = 3
+		y = 4 
+		mutually_exclusive = { } 
+		prerequisite = { focus = new_regime} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		available = {
+			GER = {
+				has_idea = hjalmar_schacht
+			}
+		}
+		
+		completion_reward = {
+			add_ideas = GRE_schacht_plan
+		}
+	}
+	
+	#Copy German Rifle Design
+	focus = {
+		id = german_weapon_deals 
+		icon = GFX_goal_generic_small_arms 
+		ai_will_do = { factor = 0 } 
+		x = 3
+		y = 5
+		mutually_exclusive = { } 
+		prerequisite = { focus = theschachtplanopportunity} 
+		cost = 10
+		available_if_capitulated = yes
+		
+		available = {
+			GER = {
+				has_idea = hjalmar_schacht
+			}
+		}
+		
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = GER }
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				technology = infantry_weapons2
+				technology = improved_infantry_weapons
+			}
+		}
+	}
+	
+	
+	#Wipe out Internal Opposition
+	#Book Burning
+	focus = {
+		id = book_burning 
+		icon = GFX_goal_generic_forceful_treaty 
+		ai_will_do = { factor = 0 } 
+		x = 5
+		y = 4
+		mutually_exclusive = { } 
+		prerequisite = { focus = new_regime} 
+		cost = 4.3  
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			#some reduction to counter communist/democratic drift
+			add_political_power = 150
+			add_popularity = { ideology = neutrality popularity = 0.05 }
+		}
+		
+	}
+	
+	#Censor the press
+	focus = {
+		id = press_censorship 
+		icon = GFX_goal_generic_propaganda 
+		ai_will_do = { factor = 0 } 
+		x = 7
+		y = 4
+		mutually_exclusive = { } 
+		prerequisite = { focus = new_regime} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			#some reduction to counter communist/democratic drift
+			add_political_power = -150
+			swap_ideas = { remove_idea = GRE_political_agitation add_idea = GRE_political_agitation_2 }
+			add_popularity = { ideology = neutrality popularity = 0.05 }
+		}
+		
+	}
+	
+	#Political Persecution
+	focus = {
+		id = political_persecution 
+		icon = GFX_goal_generic_secret_weapon 
+		ai_will_do = { factor = 0 } 
+		x = 6
+		y = 5
+		mutually_exclusive = { } 
+		prerequisite = { focus = press_censorship focus = book_burning } 
+		cost = 10  
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			#some reduction to counter communist/democratic drift
+			add_political_power = -150
+			swap_ideas = { remove_idea = GRE_political_agitation_2 add_idea = GRE_political_agitation_3 }
+			add_popularity = { ideology = neutrality popularity = 0.1 }
+		}
+		
+	}
+	
+	
+	###############################################
+	## CONSOLIDATION OF THE 4TH OF AUGUST REGIME ##
+	###############################################
+	
+	#Consolidation of the Regime
+	focus = {
+		id = GRE_regime_consolidation
+		icon = GFX_GRE_consolidate_regime
+		ai_will_do = { factor = 0 } 
+		x = 11
+		y = 3
+		mutually_exclusive = { } 
+		prerequisite = { focus = clampdownonunrest} 
+		cost = 4.3
+		available_if_capitulated = yes
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		
+		available = {
+			neutrality > 0.3
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			swap_ideas = { remove_idea = GRE_metaxas_regime_1 add_idea = GRE_metaxas_regime_2 }
+		}
+	}
+	
+	
+	#The Ideals of a New Greece
+	focus = {
+		id = GRE_new_greece
+		icon = GFX_GRE_new_greece
+		ai_will_do = { factor = 0 } 
+		x = 9
+		y = 4
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_regime_consolidation} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = 0.05 }
+			add_national_unity = 0.1
+		}
+	}
+	
+	#Third Hellenic Civilization
+	# focus = {
+		# id = GRE_third_hellenic_civilization
+		# icon = GFX_GRE_third_hellenic_civilization
+		# ai_will_do = { factor = 0 } 
+		# x = 9
+		# y = 5
+		# mutually_exclusive = { } 
+		# prerequisite = { focus = GRE_new_greece} 
+		# cost = 10
+		# available_if_capitulated = yes
+		
+		# available = {
+			
+		# }
+		
+		# completion_reward = {
+			
+		# }
+	# }
+	
+	#Promotion of Greek Arts
+	focus = {
+		id = GRE_greek_pop_art
+		icon = GFX_GRE_greek_arts
+		ai_will_do = { factor = 0 } 
+		x = 8
+		y = 5
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_new_greece} 
+		cost = 10
+		available_if_capitulated = yes
+		
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_national_unity = 0.1
+		}
+	}
+	
+	#New Education Funding
+	focus = {
+		id = GRE_education_funding
+		icon = GFX_focus_research
+		ai_will_do = { factor = 0 } 
+		x = 10
+		y = 5
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_new_greece} 
+		cost = 10
+		available_if_capitulated = yes
+		
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	#Demotic Language in Schools
+	focus = {
+		id = GRE_demotic_in_school
+		icon = GFX_GRE_demotic_greek
+		ai_will_do = { factor = 0 } 
+		x = 9
+		y = 6
+		mutually_exclusive = { } 
+		prerequisite = { 
+			focus = GRE_education_funding
+			focus = GRE_greek_pop_art
+		} 
+		cost = 8.6
+		available_if_capitulated = yes
+		
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_national_unity = 0.10
+			swap_ideas = { remove_idea = GRE_metaxas_regime_2 add_idea = GRE_metaxas_regime_3 }
+		}
+	}
+	
+	#Secret Services
+	focus = {
+		id = GRE_secret_services
+		icon = GFX_focus_generic_strike_at_democracy1
+		ai_will_do = { factor = 0 } 
+		x = 12
+		y = 4
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_regime_consolidation} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_ideas = GRE_konstantinos_maniadakis
+		}
+	}
+	
+	#National Youth Organization
+	focus = {
+		id = GRE_eon_creation
+		icon = GFX_GRE_EON
+		ai_will_do = { factor = 0 } 
+		x = 12
+		y = 5
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_secret_services} 
+		cost = 10
+		available_if_capitulated = yes
+		
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_ideas = GRE_EON
+		}
+	}
+	
+	#Labour Battalions
+	focus = {
+		id = GRE_labour_battalions
+		icon = GFX_goal_generic_construction2
+		ai_will_do = { factor = 0 } 
+		x = 12
+		y = 6
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_eon_creation} 
+		cost = 10
+		available_if_capitulated = yes
+		
+		available = {
+			
+		}
+		
+		completion_reward = {
+			#unlock special infantry
+			set_technology = { faction_fascist_paramilitary = 1 }
+		}
+	}
+	
+	
+	#The Practical of a New Greece - Economic Measures
+	focus = {
+		id = GRE_economic_revival
+		icon = GFX_goal_generic_demand_territory 
+		ai_will_do = { factor = 0 } 
+		x = 16
+		y = 4
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_regime_consolidation} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = HUN_interventionism
+		}
+		
+	}
+	
+	#Raise Wages
+	focus = {
+		id = GRE_raise_wages
+		icon = GFX_goal_generic_construct_civ_factory 
+		ai_will_do = { factor = 0 } 
+		x = 14
+		y = 5
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_economic_revival} 
+		cost = 8.6
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			47 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	
+	#Social Insurance Fund 
+	focus = {
+		id = GRE_social_insurance_fund 
+		icon = GFX_goal_generic_national_unity 
+		ai_will_do = { factor = 0 } 
+		x = 14
+		y = 6
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_raise_wages} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = GRE_IKA
+		}
+	}
+	
+	#Improve Working Conditions
+	focus = {
+		id = GRE_improve_working_conditions
+		icon = GFX_goal_generic_construct_civ_factory 
+		ai_will_do = { factor = 0 } 
+		x = 16
+		y = 5
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_economic_revival} 
+		cost = 8.6
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			47 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	
+	#Public Work Initiative 
+	focus = {
+		id = GRE_public_work_initiative 
+		icon = GFX_goal_generic_construct_infrastructure
+		ai_will_do = { factor = 0 } 
+		x = 16
+		y = 6
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_improve_working_conditions} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			47 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			185 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			186 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	
+	#Agricultural Reforms
+	focus = {
+		id = GRE_agricultural_reforms_2
+		icon = GFX_goal_agrarian_reform 
+		ai_will_do = { factor = 0 } 
+		x = 18
+		y = 5
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_economic_revival} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			185 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = GRE_KEPES
+		}
+		
+	}
+	
+	#Military Industry Subsidies
+	focus = {
+		id = GRE_military_subsidies
+		icon = GFX_goal_generic_construct_mil_factory 
+		ai_will_do = { factor = 0 } 
+		x = 18
+		y = 6
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_agricultural_reforms_2} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = GRE_military_budget
+			47 = {
+				add_building_construction = {
+					type = steel_refinery
+					level = 2
+					instant_build = yes
+				}
+				add_resource = {
+					type = coal
+					amount = 10
+					state = 47
+				}
+				add_resource = {
+					type = iron
+					amount = 10
+					state = 47
+				}
+			}
+		}
+		
+	}
+
+	# Stabilize the Drachma
+	focus = { 
+		id = GRE_stabilize_the_drachma 
+		icon = GFX_goal_generic_improve_relations 
+		ai_will_do = { factor = 0 } 
+		x = 20
+		y = 6
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_economic_revival} 
+		cost = 4.3
+		available_if_capitulated = yes  
+		
+		completion_reward = {
+			remove_ideas = GRE_inflation
+		}
+	}
+	
+	#Economic Victory
+	focus = {
+		id = GRE_revitalized_economy
+		icon = GFX_goal_generic_construct_civ_factory 
+		ai_will_do = { factor = 0 } 
+		x = 16
+		y = 7
+		mutually_exclusive = { } 
+		prerequisite = { 
+			# focus = GRE_agricultural_reforms_2
+			# focus = GRE_social_insurance_fund
+			# focus = GRE_stabilize_the_drachma
+			# focus = GRE_public_work_initiative
+			focus = GRE_economic_revival
+		} 
+		cost = 4.3
+		available_if_capitulated = yes
+		cancel_if_invalid = no
+		
+		available = {
+			num_of_factories > 25
+		}
+		
+		completion_reward = {
+			remove_ideas = GRE_precarious_economy
+			# add_ideas = GRE_revitalized_economy_idea
+		}
+		
+	}
+	
+	
+	###############################################
+	############# SURVIVAL OF THE REGIME ##########
+	###############################################
+	
+	#Armed Neutrality
+	focus = {
+		id = GRE_armed_neutrality_policy
+		icon = GFX_goal_generic_defence
+		ai_will_do = { factor = 0 } 
+		x = 23
+		y = 3
+		mutually_exclusive = { } 
+		prerequisite = { focus = clampdownonunrest} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		available = {
+			# neutrality > 0.4
+		}
+		
+		completion_reward = {
+			army_experience = 15
+			# add_political_power = 150
+		}
+	}
+	
+	#Czechoslovakia Annexation Reaction
+	focus = {
+		id = GRE_czech_no_more
+		icon = GFX_goal_generic_position_armies
+		ai_will_do = { factor = 0 } 
+		x = 22
+		y = 4
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_armed_neutrality_policy} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		available = {
+			GER = { has_completed_focus = GER_end_of_czechoslovakia }
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	#Realpolitik, align with Britain
+	focus = {
+		id = GRE_realpolitik
+		icon = GFX_goal_tripartite_pact
+		ai_will_do = { factor = 0 } 
+		x = 22
+		y = 5
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_czech_no_more} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		available = {
+		
+		}
+		
+		completion_reward = {
+			ENG = {
+				give_guarantee = GRE
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = offered_support
+				}
+			}
+		}
+	}
+	
+	#Expand the military budget
+	focus = {
+		id = GRE_expand_military_budget
+		icon = GFX_focus_generic_little_entente
+		ai_will_do = { factor = 0 } 
+		x = 25
+		y = 4
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_armed_neutrality_policy} 
+		cost = 10
+		available_if_capitulated = yes
+		
+		available = {
+		
+		}
+		
+		completion_reward = {
+			swap_ideas = { remove_idea = GRE_experienced_officer_corps add_idea = GRE_experienced_officer_corps_2 }
+			army_experience = 30
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	#The Bulgarian Threat
+	focus = {
+		id = GRE_bulgarian_threat
+		icon = GFX_goal_generic_territory_or_war
+		ai_will_do = { factor = 0 } 
+		x = 24
+		y = 5
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_expand_military_budget} 
+		cost = 8.6
+		available_if_capitulated = yes
+		
+		available = {
+		
+		}
+		
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	#The Metaxas Line
+	focus = {
+		id = GRE_metaxas_line
+		icon = GFX_goal_generic_defence
+		ai_will_do = { factor = 0 } 
+		x = 24
+		y = 6
+		# mutually_exclusive = { GRE_ib_plan } 
+		prerequisite = { focus = GRE_bulgarian_threat } 
+		cost = 20
+		available_if_capitulated = yes
+		
+		available = {
+		
+		}
+		
+		completion_reward = {
+			731 = {
+				add_building_construction = {
+					type = bunker
+					province = 3526
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 3936
+					level = 2
+					instant_build = yes
+				}
+			}
+			184 = {
+				add_building_construction = {
+					type = bunker
+					province = 9791
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 9930
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_timed_idea = { idea = GRE_fort_construction days = 90 }
+			custom_effect_tooltip = metaxas_line
+		}
+	}
+	
+	#Ahistorical The Metaxas Line Expanded
+	focus = {
+		id = GRE_metaxas_line_3
+		icon = GFX_goal_generic_construction2
+		ai_will_do = { factor = 0 } 
+		x = 23
+		y = 7
+		# mutually_exclusive = { GRE_ib_plan }
+		prerequisite = { focus = GRE_metaxas_line} 
+		cost = 30
+		available_if_capitulated = yes
+		
+		available = {
+		
+		}
+		
+		completion_reward = {
+			731 = {
+				add_building_construction = {
+					type = bunker
+					province = 936
+					level = 2
+					instant_build = yes
+				}
+			}
+			185 = {
+				add_building_construction = {
+					type = bunker
+					province = 9837
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 841
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 3914
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 9805
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_timed_idea = { idea = GRE_fort_construction days = 180 }
+			custom_effect_tooltip = metaxas_line_2
+		}
+	}
+	
+	#The Italian Menace
+	focus = {
+		id = GRE_italian_menace
+		icon = GFX_focus_generic_italy_first
+		ai_will_do = { factor = 0 } 
+		x = 26
+		y = 5
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_expand_military_budget} 
+		cost = 8.6
+		available_if_capitulated = yes
+		
+		available = {
+			ITA = { has_completed_focus = ITA_victoryinETH }
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				technology = support_weapons2
+			}
+			add_tech_bonus = {
+				name = FRA_artillery_focus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	#The IB Plan (Italy-Bulgaria)
+	focus = {
+		id = GRE_ib_plan
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		ai_will_do = { factor = 0 } 
+		x = 25
+		y = 7
+		# mutually_exclusive = { GRE_metaxas_line_3 } 
+		prerequisite = { 
+			focus = GRE_italian_menace 
+			focus = GRE_bulgarian_threat
+		} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		available = {
+			ITA = { has_completed_focus = ITA_albania_war_goal }
+		}
+		
+		completion_reward = {
+			add_ideas = ideological_fanaticism_focus
+		}
+	}
+	
+	#Invest in Mountain Guns
+	focus = {
+		id = GRE_mountain_guns
+		icon = GFX_goal_generic_army_artillery2
+		ai_will_do = { factor = 0 } 
+		x = 28
+		y = 5
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_expand_military_budget} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		available = {
+		
+		}
+		
+		completion_reward = {
+			set_technology = { real_mountain_gun = 1 }
+		}
+	}
+	
+	#Ski Battalion
+	focus = {
+		id = GRE_ski_battalion
+		icon = GFX_ITA_Regio_Esercito
+		ai_will_do = { factor = 0 } 
+		x = 28
+		y = 7
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_mountain_guns} 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		available = {
+		
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+		
+	#The Greek Royal Airforce
+	focus = {
+		id = GRE_greek_royal_airforce
+		icon = GFX_goal_generic_build_airforce
+		ai_will_do = { factor = 0 } 
+		x = 27
+		y = 6
+		mutually_exclusive = { } 
+		prerequisite = { focus = GRE_expand_military_budget } 
+		cost = 4.3
+		available_if_capitulated = yes
+		
+		available = {
+			
+		}
+		
+		completion_reward = {
+			hidden_effect = {
+				set_technology = { fighter1 = 1 }
+				set_technology = { tactical_bomber1 = 1 }
+			}
+			custom_effect_tooltip = greek_air_force
+			add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 40 producer = FRA }
+			add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 10 producer = ENG }
+			add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 10 producer = ENG }
+		}
+	}
+	
+	
+	#End of focuses 
+}

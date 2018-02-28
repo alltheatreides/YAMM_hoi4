@@ -134,6 +134,28 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ITA_chemical_weapons.dds"
 	}
 	
+	
+	#GRE
+	spriteType = {
+		name = "GFX_idea_GRE_metaxas_regime_1"
+		texturefile = "gfx/interface/ideas/GRE_4_of_august_regime.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GRE_metaxas_regime_2"
+		texturefile = "gfx/interface/ideas/GRE_4_of_august_regime.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GRE_metaxas_regime_3"
+		texturefile = "gfx/interface/ideas/GRE_4_of_august_regime.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GRE_ioannes_metaxas"
+		texturefile = "gfx/interface/ideas/GRE_ioannes_metaxas_military.dds"
+	}
+	
 	#Air Force Ideas
 	spriteType = {
 		name = "GFX_idea_ENG_RAF"

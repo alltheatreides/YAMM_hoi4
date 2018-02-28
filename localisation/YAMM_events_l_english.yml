@@ -168,12 +168,15 @@
  yamm.91.d:0 "With our victory over France nothing can oppose us ! The Fuhrer, hating the Swiss has asked the OKH for detailed invasion plans, but Swiss diplomats coupled with military deterrence, secured economic concessions that have delayed the nicknamed "Operation Tannenbaum". Attempts by Switzerland's small Nazi party to effect an Anschluss with Germany failed miserably, largely as a result of Switzerland's strong sense of national identity and long tradition of direct democracy and civil liberties."
  yamm.91.a:0 "Make them cower."
  
+ #ITA
  # Mussolini wants to be in the game
  yamm.92.t:0 "A few thousand dead..."
  yamm.92.d:0 "Mussolini just informed Marshals Pietro Badoglio, chief of the Supreme General Staff, and Italo Balbo that he intended to join the German war against Britain and France, so to be able to sit at the peace table "when the world is to be apportioned" following an Axis victory. The two marshals unsuccessfully attempted to persuade Mussolini that this was not a wise course of action, arguing that the Italian military was unprepared."
  yamm.92.a:0 "We can only accept this course of action..."
  yamm.92.b:0 "Rein the fool in !"
- 
+ yamm.98.t:0 "Hitler visits Rome"
+ yamm.98.desc:0 "Hitler arrived in Rome on May 3rd, accompanied by Goebbels and Ribbentrop as well as some five hundred party officials, diplomats, security guards and journalists in three trains. A special station had been built for the Germans, who were greeted by Mussolini and King Victor Emmanuel. Rome was adorned with decorations, including swastikas, and a new street, the Via Adolf Hitler, had been constructed, along which the German leader was driven to the Quirinal Palace, where he stayed as guest of the king. Victor Emmanuel and Hitler found each other tiresome. Hitler was uncomfortable at the court and felt with reason that he was treated with disdain."
+ yamm.98.a:0 "I see"
  
  #Tank Variants
  tankvariants.1.t:0 "The PzKpfw III Ausf.J"
@@ -201,3 +204,21 @@
  yamm.97.desc:0 "The 12 January 1938, the marriage of War Minister Werner von Blomberg has been derailed as a policeman reported that his young bride had previously posed for pornographic photos. Hitler ordered Blomberg to annul the marriage in order to avoid a scandal and to preserve the integrity of the army. Blomberg just refused to annul the marriage and Goering threatened to make his wife's past public knowledge. Blomberg finally resigned, but Goering used this affair to push his agenda against the army even further: in 1936, Reinhard Heydrich had prepared a file on Werner von Fritsch with allegations of homosexuality and had passed the information on to Hitler, but Hitler had rejected it and ordered Heydrich to destroy the file. However, he did not do so.Now following the Blomberg scandal, Heydrich resurrected the old file on Fritsch, who was again accused of being a homosexual by Himmler and his SS. It was reported that Fritsch had been encouraged by general Ludwig Beck to carry out a military putsch against the Hitler regime, but that he declined and was pressured to resign."
  yamm.97.a:0 "He will resign. We will have an army command with more loyal Nazis."
  yamm.97.b:0 "Let him stay. We will need him in the coming war."
+ 
+ #Greece
+ yamm.99.t:0 "The Bloody May of Thessaloniki"
+ yamm.99.desc:0 "A general strike of the tobacco workers and other unions on May 8th 1936 led to the bloody events of May 9th. The police confronted the massive strike by opening fire on the protesters. 12 dead and hundreds of wounded in one of the most important days in greek working class history. The brutality of the police during the strike has remained legendary and has informed expectations concerning police action, especially since it revealed, again, the means that the liberal state is willing to use in order to remain in power."
+ yamm.99.a:0 "What will happen of Greece ?"
+ yamm.100.t:0 "A New Regime in Greece"
+ yamm.100.desc:0 "After years of political turmoil and the recent return of the monarchy in Greece, it seems there is now a new strong man in charge of Greece: Under the approval of the King George II, the Prime Minister Ioannis Metaxas, after a series of violent strikes, that he claimed have been orchestrated by the leftists, has now installed an authoritative government to quell the dissent int the country. It seems Greece has gone past political instability but at the cost of the liberty of its citizens as thousands of political opponents are rounded up and hunted down."
+ yamm.100.a: "Will they pay their debts though ?"
+ yamm.101.t:0 "The Great Greek Purge"
+ yamm.101.desc:0 "In 1937, on the 15 December: Mass NKVD operation were orchestrated against Greeks in the USSR under Joseph Stalin's Directive 50125 of Dec. 1937, resulting in the loss of 38,000 Soviet citizens of Hellenic descent at the Gulags of Siberia. The prosecution of Greeks in USSR was gradual: at first the authorities shut down the Greek schools, cultural centres, and publishing houses.[1] Then, the secret police indiscriminately arrested all Greek men 16 years old or older.[1] All Greeks who were wealthy or self-employed professionals were sought for prosecution first. On many occasions, the central authorities sent telegrams to police forces with orders to arrest a certain number of Greeks, without giving any individual names, and the police officers would arrest at random any persons of Greek origin until they reached the requested total number of arrests, until the process was repeated at a later date. In all, some 50,000 Greeks were affected, more than 10% of the entire community of about 450,000."
+ yamm.101.a:0 "This is an outrage"
+ yamm.102.t:0 "Cessation of Hatay"
+ yamm.102.desc:0 "After the Syrian province of Alexandretta was given to Turkey illegally by the French Mandate powers in 1938, many Antiochian Greek Christians emigrated to Greece, Syria and Lebanon. We must accommodate those refugees into our New Greece."
+ yamm.102.a:0 "Filthy Turks..."
+ yamm.10x.t:0 ""
+ yamm.10x.desc:0 ""
+ yamm.10x.a:0 ""
+ 
