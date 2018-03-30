@@ -482,7 +482,7 @@ ideas = {
 			}
 			picture = generic_industrial_concern_2
 			
-			traits = { construction_concern }
+			traits = { construction_company }
 			
 			modifier = {
 				local_resources_factor = 0.10
@@ -495,7 +495,7 @@ ideas = {
 			}
 			picture = generic_industrial_concern_3
 			
-			traits = { construction_concern }
+			traits = { construction_company }
 			
 			research_bonus = {
 				synth_resources = 0.01

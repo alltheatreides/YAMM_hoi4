@@ -1,4 +1,4 @@
-add_namespace = fraser
+﻿add_namespace = fraser
 
 country_event = {
 	id = fraser.1
@@ -32,5 +32,4 @@ country_event = {
 		}
 	}
 	}
-}
 }

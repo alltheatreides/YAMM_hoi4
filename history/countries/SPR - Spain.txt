@@ -76,7 +76,7 @@ add_ideas = {
 	SPR_niceto_alcala_zamora
 }
 set_convoys = 150
-set_national_unity = 0.5
+set_stability = 0.5
 
 create_country_leader = {
 	name = "Manuel Portela"
@@ -197,8 +197,8 @@ create_country_leader = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -240,7 +240,16 @@ create_country_leader = {
 	set_global_flag = scw_over
 	add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1095 }
 }
-
+create_field_marshal = {
+	name = "José Asensio Torrado"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { defensive_doctrine }
+	skill = 2
+    attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
 ### Ship Variants ###
 
 

@@ -1772,211 +1772,209 @@ country_event = {
 
 
 # Portugese Islands Transfer
-country_event = {  
-	id = yamm.88
-	title = yamm.88.t
-	desc = yamm.88.d
-	picture = GFX_report_event_generic_sign_treaty2
+# country_event = {  
+	# id = yamm.88
+	# title = yamm.88.t
+	# desc = yamm.88.d
+	# picture = GFX_report_event_generic_sign_treaty2
 
-	fire_only_once = yes
+	# fire_only_once = yes
+	
+	# trigger = {
+		# tag = ENG
+		# not = { has_country_flag = portugese_islands }
+		# GER = { has_war_with = ENG }
+		# FRA = { has_capitulated = yes }
+		# POR = { controls_state = 697 }
+		# POR = { controls_state = 698 }	
+	# }
+	
+	# mean_time_to_happen = {
+		# days = 3
+	# }
+	
+	# option = {
+		# name = britain.88.a
+		
+		# hidden_effect = {
+			# POR = {
+				# country_event = { id = yamm.89 hours = 1 }
+			# }
+		# }
+		# set_country_flag = portugese_islands
+	# }
+# }
+
+# Portugese Islands Transfer
+# country_event = {
+	# id = yamm.89
+	# title = yamm.89.t
+	# desc = yamm.89.d
+	# picture = GFX_report_event_generic_sign_treaty2
+
+	# is_triggered_only = yes
 	
 	# hidden = yes
 	
-	trigger = {
-		tag = ENG
-		not = { has_country_flag = portugese_islands }
-		GER = { has_war_with = ENG }
-		FRA = { has_capitulated = yes }
-		POR = { controls_state = 697 }
-		POR = { controls_state = 698 }	
-	}
-	
-	mean_time_to_happen = {
-		days = 3
-	}
-	
-	option = {
-		name = britain.88.a
+	# option = {
+		# name = yamm.89.a
+		# ai_chance = { factor = 100 }
 		
-		hidden_effect = {
-			POR = {
-				country_event = { id = yamm.89 hours = 1 }
-			}
-		}
-		set_country_flag = portugese_islands
-	}
-}
-
-# Portugese Islands Transfer
-country_event = {
-	id = yamm.89
-	title = yamm.89.t
-	desc = yamm.89.d
-	picture = GFX_report_event_generic_sign_treaty2
-
-	is_triggered_only = yes
-	
-	hidden = yes
-	
-	option = {
-		name = yamm.89.a
-		ai_chance = { factor = 100 }
+		# hidden_effect = {
+			# ENG = { 
+				# transfer_state = 698
+				# transfer_state = 697
+			# }
+			# 698 = {
+				# add_building_construction = {
+					# type = air_base
+					# level = 1
+					# instant_build = yes
+				# } 
+			# }
+			# 697 = {
+				# add_building_construction = {
+					# type = air_base
+					# level = 1
+					# instant_build = yes
+				# } 
+			# }
+		# }
+		# set_country_flag = portugese_islands_y
 		
-		hidden_effect = {
-			ENG = { 
-				transfer_state = 698
-				transfer_state = 697
-			}
-			698 = {
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				} 
-			}
-			697 = {
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				} 
-			}
-		}
-		set_country_flag = portugese_islands_y
-		
-	}
-}
+	# }
+# }
 
 # Soviet - Move Industry to the Urals
-country_event = {
-	id = yamm.90
-	title = yamm.90.t
-	desc = yamm.90.d
-	picture = GFX_report_event_urals_industry
+# country_event = {
+	# id = yamm.90
+	# title = yamm.90.t
+	# desc = yamm.90.d
+	# picture = GFX_report_event_urals_industry
 	
-	fire_only_once = yes
+	# fire_only_once = yes
 	
-	trigger = {
-		219 = {
-			is_owned_and_controlled_by = SOV
-			arms_factory > 5
-			industrial_complex > 1
-		}
-		195 = {
-			is_owned_and_controlled_by = SOV
-			arms_factory > 4
-			industrial_complex > 0
-		}
-		242 = {
-			is_owned_and_controlled_by = SOV
-			industrial_complex > 1
-		}
-		202 = {
-			is_owned_and_controlled_by = SOV
-			arms_factory > 2
-			industrial_complex > 0
-		}
-		SOV = { has_defensive_war = yes }
-		tag = SOV
-		573 = {
-			is_owned_and_controlled_by = SOV
-		}
-		582 = {
-			is_owned_and_controlled_by = SOV
-		}
-		583 = {
-			is_owned_and_controlled_by = SOV
-		}
-		221 = {
-			is_owned_and_controlled_by = SOV
-		}
-	}
+	# trigger = {
+		# 219 = {
+			# is_owned_and_controlled_by = SOV
+			# arms_factory > 5
+			# industrial_complex > 1
+		# }
+		# 195 = {
+			# is_owned_and_controlled_by = SOV
+			# arms_factory > 4
+			# industrial_complex > 0
+		# }
+		# 242 = {
+			# is_owned_and_controlled_by = SOV
+			# industrial_complex > 1
+		# }
+		# 202 = {
+			# is_owned_and_controlled_by = SOV
+			# arms_factory > 2
+			# industrial_complex > 0
+		# }
+		# SOV = { has_defensive_war = yes }
+		# tag = SOV
+		# 573 = {
+			# is_owned_and_controlled_by = SOV
+		# }
+		# 582 = {
+			# is_owned_and_controlled_by = SOV
+		# }
+		# 583 = {
+			# is_owned_and_controlled_by = SOV
+		# }
+		# 221 = {
+			# is_owned_and_controlled_by = SOV
+		# }
+	# }
 	
-	option = {
-		name = yamm.90.a
-		219 = {
-			remove_building = {
-				type = arms_factory
-				level = 6
-			}
-			remove_building = {
-				type = industrial_complex
-				level = 2
-			}
-		}
-		195 = {
-			remove_building = {
-				type = arms_factory
-				level = 5
-			}
-			remove_building = {
-				type = industrial_complex
-				level = 1
-			}
-		}
-		242 = {
-			remove_building = {
-				type = industrial_complex
-				level = 2
-			}
-		}
-		202 = {
-			remove_building = {
-				type = arms_factory
-				level = 6
-			}
-			remove_building = {
-				type = industrial_complex
-				level = 6
-			}
-		}
-		221 = {
-			remove_building = {
-				type = arms_factory
-				level = 5
-			}
-		}
-		573 = {
-			add_extra_state_shared_building_slots = 8
-			add_building_construction = {
-				type = arms_factory
-				level = 5
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = industrial_complex
-				level = 3
-				instant_build = yes
-			}
-		}
-		582 = {
-			add_extra_state_shared_building_slots = 11
-			add_building_construction = {
-				type = arms_factory
-				level = 9
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-		}
-		583 = {
-			add_extra_state_shared_building_slots = 14
-			add_building_construction = {
-				type = arms_factory
-				level = 8
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = industrial_complex
-				level = 6
-				instant_build = yes
-			}
-		}
-	}
-}
+	# option = {
+		# name = yamm.90.a
+		# 219 = {
+			# remove_building = {
+				# type = arms_factory
+				# level = 6
+			# }
+			# remove_building = {
+				# type = industrial_complex
+				# level = 2
+			# }
+		# }
+		# 195 = {
+			# remove_building = {
+				# type = arms_factory
+				# level = 5
+			# }
+			# remove_building = {
+				# type = industrial_complex
+				# level = 1
+			# }
+		# }
+		# 242 = {
+			# remove_building = {
+				# type = industrial_complex
+				# level = 2
+			# }
+		# }
+		# 202 = {
+			# remove_building = {
+				# type = arms_factory
+				# level = 6
+			# }
+			# remove_building = {
+				# type = industrial_complex
+				# level = 6
+			# }
+		# }
+		# 221 = {
+			# remove_building = {
+				# type = arms_factory
+				# level = 5
+			# }
+		# }
+		# 573 = {
+			# add_extra_state_shared_building_slots = 8
+			# add_building_construction = {
+				# type = arms_factory
+				# level = 5
+				# instant_build = yes
+			# }
+			# add_building_construction = {
+				# type = industrial_complex
+				# level = 3
+				# instant_build = yes
+			# }
+		# }
+		# 582 = {
+			# add_extra_state_shared_building_slots = 11
+			# add_building_construction = {
+				# type = arms_factory
+				# level = 9
+				# instant_build = yes
+			# }
+			# add_building_construction = {
+				# type = industrial_complex
+				# level = 2
+				# instant_build = yes
+			# }
+		# }
+		# 583 = {
+			# add_extra_state_shared_building_slots = 14
+			# add_building_construction = {
+				# type = arms_factory
+				# level = 8
+				# instant_build = yes
+			# }
+			# add_building_construction = {
+				# type = industrial_complex
+				# level = 6
+				# instant_build = yes
+			# }
+		# }
+	# }
+# }
 
 # Swiss Trade
 country_event = {
@@ -2169,29 +2167,29 @@ country_event = {
 }
 
 # China lose corrupt army
-country_event = {
-	id = yamm.93
-	title = yamm.93.t
-	desc = yamm.93.d
+# country_event = {
+	# id = yamm.93
+	# title = yamm.93.t
+	# desc = yamm.93.d
 	# picture = GFX_report_event_hungry_mussolini
 	
-	hidden = yes
-	fire_only_once = yes
+	# hidden = yes
+	# fire_only_once = yes
 	
-	trigger = {
-		tag = CHI
-		has_army_experience > 250
-	}
+	# trigger = {
+		# tag = CHI
+		# has_army_experience > 250
+	# }
 	
-	immediate = {
-		remove_ideas = army_corruption
-	}
+	# immediate = {
+		# remove_ideas = army_corruption
+	# }
 	
 	
-	option = {
-		name = yamm.93
-	}
-}
+	# option = {
+		# name = yamm.93
+	# }
+# }
 
 # Todt ded
 country_event = {
@@ -2330,7 +2328,7 @@ country_event = {
 			factor = 100
 		}
 		add_political_power = 50
-		# add_national_unity = 0.01
+		# add_stability = 0.01
 		remove_ideas = werner_von_fritsch_sc
 		add_ideas = walther_von_brauchitsch_sc
 		hidden_effect = {
@@ -2404,7 +2402,7 @@ country_event = {
 		}
 		
 		add_popularity = {
-		    ideology = communist
+		    ideology = communism
 			popularity = 0.02
 		}
 		
@@ -2509,7 +2507,7 @@ country_event = {
 	option = {
 		name = yamm.102.a
 		
-		add_manpower = 100000
+		add_manpower = 10000
 		
 		ai_chance = {
 			factor = 100

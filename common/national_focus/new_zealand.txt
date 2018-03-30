@@ -560,7 +560,7 @@ focus_tree = {
 				}
 			}
 			add_tech_bonus = {
-				name = NZL_expand_the_nzpaf
+				name = NZL_form_the_rnzaf
 				bonus = 0.5
 				uses = 1
 				category = air_doctrine
@@ -584,7 +584,7 @@ focus_tree = {
 				set_state_flag = NZL_expand_the_nzpaf_AB
 			}
 			add_tech_bonus = {
-				name = NZL_expand_the_nzpaf
+				name = NZL_form_the_rnzaf
 				bonus = 0.5
 				uses = 1
 				category = air_doctrine
@@ -1139,7 +1139,7 @@ focus_tree = {
 			}
 		}
 
-		available {
+		available = {
 
 		}
 
@@ -1906,7 +1906,7 @@ focus_tree = {
 			723 = {
 				add_extra_state_shared_building_slots = 1
 			}
-			add_national_unity = -0.02
+			add_stability = -0.05
 		}
 	}
 
@@ -2018,7 +2018,7 @@ focus_tree = {
 			723 = {
 				add_extra_state_shared_building_slots = 2
 			}
-			add_national_unity = -0.03
+			add_stability = -0.05
 		}
 	}
 
@@ -2125,7 +2125,9 @@ focus_tree = {
 
 		completion_reward = {
 			division_template = {
+				is_locked = yes
 				name = "Maori Volunteers"
+				division_names_group = NZL_INF_01
 				regiments = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }

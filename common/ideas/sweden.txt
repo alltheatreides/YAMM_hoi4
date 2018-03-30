@@ -1685,7 +1685,7 @@ ideas = {
 				}
 			}
 			
-			traits = { bofors }
+			traits = { bofor_artillery_manufacturer }
 			
 			modifier = {
 			}

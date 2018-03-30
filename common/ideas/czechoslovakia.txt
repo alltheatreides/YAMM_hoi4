@@ -9,7 +9,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = democratic
 			}
 			
 			picture = generic_democratic_drift_bonus
@@ -19,6 +19,27 @@ ideas = {
 			modifier = {
 				democratic_drift = 0.1
 				drift_defence_factor = 0.3
+				war_support_factor = 0.05
+			}
+		}
+
+		CZE_czech_fascism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			picture = generic_fascism_drift_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.05
+				
 			}
 		}
 		
@@ -29,7 +50,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = democratic
 			}
 			
 			picture = generic_democratic_drift_bonus
@@ -39,6 +60,7 @@ ideas = {
 			modifier = {
 				democratic_drift = 0.1
 				drift_defence_factor = 0.3
+				war_support_factor = 0.1
 				army_core_defence_factor = 0.1
 				research_time_factor = -0.05
 			}
@@ -166,7 +188,7 @@ ideas = {
 
 			equipment_bonus = {
 				fighter_equipment = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -391,32 +413,12 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				unity_factor = -0.2
+				stability_factor = -0.2
 				conscription = -0.005
 				consumer_goods_factor = 0.02
 			}
 		}		
-		CZE_divided_nation_2 = {
-
-			name = CZE_divided_nation
 		
-			allowed = {
-				original_tag = CZE
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			modifier = {
-				unity_factor = -0.2
-				conscription = -0.005
-				consumer_goods_factor = 0.01
-			}
-		}
 		
 		CZE_czech_fascism_idea = {
 		

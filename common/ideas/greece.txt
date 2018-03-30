@@ -55,7 +55,7 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = generic_foreign_capital
+			picture = chi_hyper_inflation
 			
 			modifier = {
 				consumer_goods_factor = 0.05
@@ -105,7 +105,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
-			    unity_factor = -0.15
+			    stability_factor = -0.15
 				political_power_factor = -0.5				
 			}
 		}
@@ -121,7 +121,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
-			    unity_factor = -0.20
+			    stability_factor = -0.20
 				political_power_factor = -0.25
 				communism_drift = 0.05
 				democratic_drift = 0.05
@@ -139,7 +139,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
-			    unity_factor = -0.15
+			    stability_factor = -0.15
 				political_power_factor = -0.15
 				communism_drift = 0.1
 				democratic_drift = 0.05
@@ -157,7 +157,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
-			    unity_factor = -0.05
+			    stability_factor = -0.05
 				political_power_factor = -0.05
 				communism_drift = 0.05
 				democratic_drift = 0.05
@@ -305,7 +305,7 @@ ideas = {
 			}
 
 			modifier = {
-				unity_factor = 0.10
+				stability_factor = 0.10
 				conscription = 0.01
 			}
 		}

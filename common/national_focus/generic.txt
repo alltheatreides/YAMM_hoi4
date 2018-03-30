@@ -1,10 +1,10 @@
 focus_tree = {
 	id = generic_focus
-
+	
 	country = {
 		factor = 1
 	}
-
+	
 	default = yes
 	reset_on_civilwar = no
 
@@ -207,6 +207,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = special_forces
 			add_tech_bonus = {
 				name = special_forces_bonus
 				bonus = 0.5
@@ -1874,6 +1875,14 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				tag = AUS
+			}
+		}
 
 		completion_reward = {
 			if = {

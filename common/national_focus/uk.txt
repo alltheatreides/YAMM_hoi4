@@ -67,6 +67,9 @@ focus_tree = {
 				NOT = { has_government = democratic }
 				num_of_factories > 30
 			}
+			NOt = {
+				has_war_with = USA
+			}
 			USA = { 
 				has_government = democratic
 				NOT = {
@@ -1235,7 +1238,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = additional_naval_tech
 				bonus = 0.50
-				use = 3
+				uses = 3
 				technology = Surface_search_radar
 				technology = Interwar_AA_tech
 				technology = Late_1930s_AA_tech
@@ -1249,6 +1252,7 @@ focus_tree = {
 						size > 0
 						include_locked = yes
 					}
+					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1266,6 +1270,7 @@ focus_tree = {
 						size > 0
 						include_locked = yes
 					}
+					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1283,6 +1288,7 @@ focus_tree = {
 						size > 0
 						include_locked = yes
 					}
+					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1335,7 +1341,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = additional_naval_tech
 				bonus = 0.50
-				use = 3
+				uses = 3
 				technology = early_sonar
 				technology = depth_charge_throwers
 				technology = basic_sonar
@@ -1548,8 +1554,8 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			#Increase nat unity
-			add_national_unity = 0.1
+			add_war_support = 0.05
+			add_stability = 0.1
 		}
 	}
 
@@ -1930,7 +1936,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_national_unity = 0.1
+			add_stability = 0.1
 			add_political_power = 75
 		}
 	}
@@ -2707,7 +2713,13 @@ focus_tree = {
 					}
 				}
 			}
-			
+			add_war_support = 0.05
+			if = {
+				limit = {
+					has_dlc = "Waking the Tiger"
+				}
+				unlock_decision_tooltip = CHI_expand_the_burma_road
+			}
 			CHI = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
 				country_event = britain.4
@@ -3281,10 +3293,21 @@ focus_tree = {
 		available = {
 			if = {
 				limit = { has_dlc = "Together for Victory" }
-				date > 1943.10.01
-				RAJ = {
-					is_subject_of = ENG
-					has_war = no
+				OR = {
+					AND = {
+						date > 1943.10.01
+						RAJ = {
+							is_subject_of = ENG
+							has_war = no
+						}
+					}
+					AND = {
+						NOT = { has_government = democratic }
+						RAJ = {
+							is_subject_of = ENG
+							has_war = no
+						}
+					}
 				}
 				else = {				
 					has_global_flag = indian_national_army_setup

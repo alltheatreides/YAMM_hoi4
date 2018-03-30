@@ -1106,7 +1106,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_national_unity = 0.1
+			add_stability = 0.1
 		}
 	}
 	
@@ -1193,7 +1193,7 @@ focus_tree = {
 				    popularity = -1
 			    }				
 			}
-            add_national_unity = -0.1
+            add_stability = -0.1
             add_ideas = reign_of_terror			
 		}
 	}
@@ -1513,7 +1513,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = SPR_old_guard
 			add_political_power = -70
-			add_national_unity = -0.05
+			add_stability = -0.05
 		}
 	}
 	

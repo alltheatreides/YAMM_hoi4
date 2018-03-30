@@ -1,5 +1,6 @@
 division_template = {
 	name = "División Azul"
+	division_names_group = SPR_INF_01
 	priority = 1
 
 	regiments = {

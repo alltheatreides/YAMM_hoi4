@@ -3,6 +3,8 @@ division_template = {
 	name = "Pješadijska Divizija"	# Infantry Division	
 	# Note: infantry divisions were all at low reserve levels even just prior to Axis 
 	#	invasion of 1941
+	division_names_group = CRO_INF_01	
+	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -31,7 +33,11 @@ units = {
 	##### Croatian "home guard" #####
 	# 
 	division= {	
-		name = "1. Pješadijska Divizija"
+		#name = "1. Pješadijska Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 11581  # zagreb
 		division_template = "Pješadijska Divizija"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "YUG" } }
@@ -41,7 +47,11 @@ units = {
 	}
 
 	division= {	
-		name = "2. Pješadijska Divizija"
+		#name = "2. Pješadijska Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 11581  # zagreb
 		division_template = "Pješadijska Divizija"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "YUG" } }
@@ -51,7 +61,11 @@ units = {
 	}
 	
 	division= {	
-		name = "3. Pješadijska Divizija"
+		#name = "3. Pješadijska Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 11581  # zagreb
 		division_template = "Pješadijska Divizija"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "YUG" } }

@@ -117,8 +117,9 @@ focus_tree = {
 			add_political_power = 50
 			add_ideas = GRE_metaxas_regime_1
 			hidden_effect = {
-				news_event = yamm.100
-			}
+				all_country = {
+					news_event = yamm.100
+				}
 		}
 	}
 	
@@ -436,7 +437,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_popularity = { ideology = neutrality popularity = 0.05 }
-			add_national_unity = 0.1
+			add_stability = 0.1
 		}
 	}
 	
@@ -478,7 +479,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_national_unity = 0.1
+			add_stability = 0.1
 		}
 	}
 	
@@ -523,7 +524,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_national_unity = 0.10
+			add_stability = 0.10
 			swap_ideas = { remove_idea = GRE_metaxas_regime_2 add_idea = GRE_metaxas_regime_3 }
 		}
 	}

@@ -2081,33 +2081,33 @@ transfer_technology = {
 		if = {
 			limit = {
 				PREV = {
-					has_tech = oil_plant
+					has_tech = oil_processing
 				}
 			}
 			set_technology = {
-				oil_plant = 1
+				oil_processing = 1
 			}
 		}
 
 		if = {
 			limit = {
 				PREV = {
-					has_tech = improved_oil_plant
+					has_tech = improved_oil_processing
 				}
 			}
 			set_technology = {
-				improved_oil_plant = 1
+				improved_oil_processing = 1
 			}
 		}
 
 		if = {
 			limit = {
 				PREV = {
-					has_tech = advanced_oil_plant
+					has_tech = advanced_oil_processing
 				}
 			}
 			set_technology = {
-				advanced_oil_plant = 1
+				advanced_oil_processing = 1
 			}
 		}
 

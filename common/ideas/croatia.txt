@@ -17,7 +17,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				unity_factor = 0.05
+				stability_factor = 0.05
 			}
 		}	
 		CRO_religious_minorities = {
@@ -35,7 +35,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				unity_factor = -0.1
+				stability_factor = -0.1
 				conscription_factor = -0.025
 			}
 		}
@@ -117,7 +117,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				unity_factor = 0.1
+				stability_factor = 0.1
 				conscription_factor = -0.025
 				justify_war_goal_time = -0.25 
 				 

@@ -771,9 +771,19 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject = no
-				AND = {
-					has_autonomy_state = autonomy_dominion
-					compare_autonomy_progress_ratio > 0.65
+				if = {
+					limit = { NOT = { has_government = fascism } }
+					AND = {
+						has_autonomy_state = autonomy_dominion
+						compare_autonomy_progress_ratio > 0.65
+					}
+				}
+				if = {
+					limit = { has_government = fascism } 
+					AND = {
+						has_autonomy_state = autonomy_satellite
+						compare_autonomy_progress_ratio > 0.65
+					}
 				}
 			}
 		}
@@ -890,7 +900,14 @@ focus_tree = {
 
 		available = {
 			fascism > 0.20
-			compare_autonomy_state > autonomy_colony
+			if = {
+				limit = { not = { has_government = fascism } }
+				compare_autonomy_state > autonomy_colony
+			}
+			if = {
+				limit = { has_government = fascism  }
+				compare_autonomy_state > autonomy_reichsprotectorate
+			}
 			controls_state = 541
 		}
 		
@@ -980,9 +997,19 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject = no
-				AND = {
-					has_autonomy_state = autonomy_dominion
-					compare_autonomy_progress_ratio > 0.75
+				if = {
+					limit = { NOT = { has_government = fascism } }
+					AND = {
+						has_autonomy_state = autonomy_dominion
+						compare_autonomy_progress_ratio > 0.75
+					}
+				}
+				if = {
+					limit = { has_government = fascism } 
+					AND = {
+						has_autonomy_state = autonomy_satellite
+						compare_autonomy_progress_ratio > 0.75
+					}
 				}
 			}
 			NOT = { has_war_together_with = ENG }
@@ -1013,7 +1040,7 @@ focus_tree = {
 			ENG = { remove_from_faction = ROOT }
 			set_rule = { can_create_factions = yes }
 			add_political_power = 70
-			add_national_unity = 0.1
+			add_stability = 0.1
 		}
 	}
 
@@ -1036,9 +1063,19 @@ focus_tree = {
 			controls_state = 541
 			OR = {
 				is_subject = no
-				AND = {
-					has_autonomy_state = autonomy_dominion
-					compare_autonomy_progress_ratio > 0.80
+				if = {
+					limit = { NOT = { has_government = fascism } }
+					AND = {
+						has_autonomy_state = autonomy_dominion
+						compare_autonomy_progress_ratio > 0.80
+					}
+				}
+				if = {
+					limit = { has_government = fascism } 
+					AND = {
+						has_autonomy_state = autonomy_satellite
+						compare_autonomy_progress_ratio > 0.80
+					}
 				}
 			}
 		}
@@ -1192,6 +1229,9 @@ focus_tree = {
 		x = -2
 		y = 5
 		relative_position_id = SAF_support_the_afrikaner_broederbond
+		available = {
+			GER = { has_government = fascism }
+		}
 
 		cost = 10
 
@@ -1381,7 +1421,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -1391,8 +1431,8 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = scw_in_progress_tt
 				AND = {
-			has_global_flag = spanish_civil_war
-			NOT = { has_global_flag = scw_over }
+					has_global_flag = spanish_civil_war
+					NOT = { has_global_flag = scw_over }
 				}
 			}
 			OR = {
@@ -1401,9 +1441,19 @@ focus_tree = {
 			}
 			OR = {
 				is_subject = no
-				AND = {
-					has_autonomy_state = autonomy_dominion
-					compare_autonomy_progress_ratio > 0.60
+				if = {
+					limit = { NOT = { has_government = fascism } }
+					AND = {
+						has_autonomy_state = autonomy_dominion
+						compare_autonomy_progress_ratio > 0.65
+					}
+				}
+				if = {
+					limit = { has_government = fascism } 
+					AND = {
+						has_autonomy_state = autonomy_satellite
+						compare_autonomy_progress_ratio > 0.65
+					}
 				}
 			}
 		}
@@ -1586,6 +1636,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_war_support = 0.1
 			ENG = { 
 					remove_from_faction = SAF
 					add_opinion_modifier = { target = SAF modifier = SAF_anti_colonialist_crusaders }
@@ -1636,7 +1687,7 @@ focus_tree = {
 			set_rule = { can_create_factions = yes }
 			create_faction = SAF_faction_uotap
 			hidden_effect = {
-			news_event = { hours = 6 id = news.264 }
+				news_event = { hours = 6 id = news.264 }
 			}
 		}
 	}
@@ -2025,7 +2076,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2036,12 +2087,12 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 1
+						size > 2
 					}
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = SAF_south_african_railways_Inf
@@ -2198,7 +2249,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2209,12 +2260,12 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 1
+						size > 2
 					}
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = SAF_infrastructure_effort_Inf

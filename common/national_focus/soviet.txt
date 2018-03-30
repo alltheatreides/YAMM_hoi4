@@ -123,144 +123,49 @@ focus_tree = {
 		}
 	}
 
-	# focus = {
-		# id = SOV_move_industry_to_urals
-		# icon = GFX_goal_generic_construct_civilian
-		# prerequisite = { focus = SOV_finish_five_year_plan }
-		# x = 0
-		# y = 1
-		# cost = 2
-		# ai_will_do = {
-			# factor = 10
-			# modifier = {
-				# factor = 0
-				# NOT = { has_war_with = GER }
-			# }
-		# }
-		# available = {
-			# 219 = {
-				# is_owned_and_controlled_by = SOV
-				# arms_factory > 5
-				# industrial_complex > 1
-			# }
-			# 195 = {
-				# is_owned_and_controlled_by = SOV
-				# arms_factory > 4
-				# industrial_complex > 0
-			# }
-			# 242 = {
-				# is_owned_and_controlled_by = SOV
-				# industrial_complex > 1
-			# }
-			# 202 = {
-				# is_owned_and_controlled_by = SOV
-				# arms_factory > 2
-				# industrial_complex > 0
-			# }
-			# has_defensive_war = yes
-			# 573 = {
-				# is_owned_and_controlled_by = SOV
-			# }
-			# 582 = {
-				# is_owned_and_controlled_by = SOV
-			# }
-			# 583 = {
-				# is_owned_and_controlled_by = SOV
-			# }
-			# 221 = {
-				# is_owned_and_controlled_by = SOV
-			# }
-		# }
-		# completion_reward = {
-			# 219 = {
-				# remove_building = {
-					# type = arms_factory
-					# level = 6
-				# }
-				# remove_building = {
-					# type = industrial_complex
-					# level = 2
-				# }
-			# }
-			# 195 = {
-				# remove_building = {
-					# type = arms_factory
-					# level = 5
-				# }
-				# remove_building = {
-					# type = industrial_complex
-					# level = 1
-				# }
-			# }
-			# 242 = {
-				# remove_building = {
-					# type = industrial_complex
-					# level = 2
-				# }
-			# }
-			# 202 = {
-				# remove_building = {
-					# type = arms_factory
-					# level = 6
-				# }
-				# remove_building = {
-					# type = industrial_complex
-					# level = 6
-				# }
-			# }
-			# 221 = {
-				# remove_building = {
-					# type = arms_factory
-					# level = 5
-				# }
-			# }
-			# 573 = {
-				# add_extra_state_shared_building_slots = 8
-				# add_building_construction = {
-					# type = arms_factory
-					# level = 5
-					# instant_build = yes
-				# }
-				# add_building_construction = {
-					# type = industrial_complex
-					# level = 3
-					# instant_build = yes
-				# }
-			# }
-			# 582 = {
-				# add_extra_state_shared_building_slots = 11
-				# add_building_construction = {
-					# type = arms_factory
-					# level = 9
-					# instant_build = yes
-				# }
-				# add_building_construction = {
-					# type = industrial_complex
-					# level = 2
-					# instant_build = yes
-				# }
-			# }
-			# 583 = {
-				# add_extra_state_shared_building_slots = 14
-				# add_building_construction = {
-					# type = arms_factory
-					# level = 8
-					# instant_build = yes
-				# }
-				# add_building_construction = {
-					# type = industrial_complex
-					# level = 6
-					# instant_build = yes
-				# }
-			# }
-			# REVISIT Consider implementing as events
-		# }
-	# }
+	focus = {
+		id = SOV_move_industry_to_urals
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_finish_five_year_plan }
+		x = -1
+		y = 1
+		relative_position_id = SOV_finish_five_year_plan
+		cost = 10
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+
+		available = {
+			has_war = yes
+			573 = {
+				is_owned_and_controlled_by = SOV
+			}
+			582 = {
+				is_owned_and_controlled_by = SOV
+			} 
+		}
+
+		bypass = {
+			NOT = { 219 = { is_owned_and_controlled_by = ROOT } }
+			NOT = { 195 = { is_owned_and_controlled_by = ROOT } }
+			NOT = { 242 = { is_owned_and_controlled_by = ROOT } }
+		}
+
+		completion_reward = {
+			unlock_decision_tooltip = SOV_relocate_industry_from_moscow
+			unlock_decision_tooltip = SOV_relocate_industry_from_leningrad
+			unlock_decision_tooltip = SOV_relocate_industry_from_smolensk			
+		}
+	}
 
 	focus = {
 		id = SOV_defense_of_moscow
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = SOV_finish_five_year_plan }
+		prerequisite = { focus = SOV_move_industry_to_urals }
 		available = {
 			#any_owned_state = {
 			#	any_neighbor_state = { state = 219 } # Moscow
@@ -279,7 +184,8 @@ focus_tree = {
 			}
 		}
 		x = 0
-		y = 2
+		y = 1
+		relative_position_id = SOV_move_industry_to_urals
 		cost = 4.3
 		ai_will_do = {
 			factor = 100
@@ -369,7 +275,8 @@ focus_tree = {
 			GER = { focus_progress = { focus = GER_fall_blau progress > 0.1 } }
 		}
 		x = 0
-		y = 3
+		y = 1
+		relative_position_id = SOV_defense_of_moscow
 		cost = 4.3
 		ai_will_do = {
 		factor = 100
@@ -889,7 +796,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
-			# add_national_unity = 0.20 # replaced with idea
+			# add_stability = 0.20 # replaced with idea
 			add_ideas = SOV_collectivist_propaganda
 		}
 	}
@@ -947,6 +854,15 @@ focus_tree = {
 			air_experience = 25
 			set_rule = {
 				can_generate_female_aces = yes
+			}
+			if = {
+				limit = {
+					SOV = { has_full_control_of_state = 219 }
+				}
+				custom_effect_tooltip = SOV_night_witches_tt
+				hidden_effect = {
+					load_oob = "SOV_night_witches"
+				}
 			}
 		}
 	}
@@ -1213,7 +1129,7 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				technology = basic_battleship
-#				technology = heavy_battleship #tech removed in DNM
+#				#technology = heavy_battleship #tech removed in DNM
 			}
 		}
 	}
@@ -1248,7 +1164,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_government = fascist
+				has_government = fascism
 				factor = 0
 			}
 
@@ -1273,19 +1189,19 @@ focus_tree = {
 		completion_reward = {
 			USA = { 
 				if = {
-					limit = { NOT = { has_government = fascist } }
+					limit = { NOT = { has_government = fascism } }
 					add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_focus } 
 				}
 			}
 			ENG = { 
 				if = {
-					limit = { NOT = { has_government = fascist } }
+					limit = { NOT = { has_government = fascism } }
 					add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_focus } 
 				}
 			}
 			FRA = { 
 				if = {
-					limit = { NOT = { has_government = fascist } }
+					limit = { NOT = { has_government = fascism } }
 					add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_focus } 
 				}
 			}
@@ -1438,10 +1354,32 @@ focus_tree = {
 			}
 		}
 		select_effect = {
-			send_equipment = {
-				target = CHI
-				type = infantry_equipment
-				amount = 200
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = CHI
+						CHI = {
+							has_war_with = PRC
+						}
+					}
+				}
+				send_equipment = {
+					target = CHI
+					type = infantry_equipment
+					amount = 200
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_war_with = PRC
+					}
+				}
+				send_equipment = {
+					target = PRC
+					type = infantry_equipment
+					amount = 200
+				}
 			}
 		}
 		x = 10
@@ -1451,11 +1389,33 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			CHI = {
-				add_opinion_modifier = { target = SOV modifier = operation_zet_chi }				
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = CHI
+						CHI = {
+							has_war_with = PRC
+						}
+					}
+				}
+				CHI = {
+					add_opinion_modifier = { target = SOV modifier = operation_zet_chi }				
+				}
+				JAP = { add_opinion_modifier = { target = SOV modifier = operation_zet_jap } }
+				PRC = { add_opinion_modifier = { target = SOV modifier = operation_zet_jap } }
 			}
-			JAP = { add_opinion_modifier = { target = SOV modifier = operation_zet_jap } }
-			PRC = { add_opinion_modifier = { target = SOV modifier = operation_zet_jap } }
+			else_if = {
+				limit = {
+					NOT = {
+						has_war_with = PRC
+					}
+				}
+				CHI = {
+					add_opinion_modifier = { target = SOV modifier = operation_zet_jap }				
+				}
+				JAP = { add_opinion_modifier = { target = SOV modifier = operation_zet_jap } }
+				PRC = { add_opinion_modifier = { target = SOV modifier = operation_zet_chi } }
+			}
 		}
 	}
 
@@ -1514,8 +1474,8 @@ focus_tree = {
 
 				OR = {
 					AND = {
-						has_completed_focus = SOV_war_with_japan
-						JAP = { has_capitulated = no }
+						has_completed_focus = SOV_war_with_germany
+						GER = { has_capitulated = no }
 					}
 					AND = {
 						has_completed_focus = SOV_war_with_uk
@@ -1804,6 +1764,10 @@ focus_tree = {
 				factor = 0
 				date < 1939.1.1
 			}	
+			modifier = {
+				factor = 200
+				GER = { has_government = democratic }
+			}
 		}
 		available = {
 			date > 1945.1.1
@@ -2159,6 +2123,12 @@ focus_tree = {
 				ROM = {
 					is_in_faction_with = GER
 				}
+			}
+			modifier = {
+				factor = 200
+				GER = { has_government = democratic }
+				FRA = { has_government = fascism }
+				GER = { has_war_with = FRA }
 			}
 		}	
 		completion_reward = {

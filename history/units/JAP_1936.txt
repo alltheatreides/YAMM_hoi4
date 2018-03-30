@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Yon-tan-i Shidan" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
-									# 1 engineering regiment, 1 recon regiment
+	division_names_group = JAP_INF_01							# 1 engineering regiment, 1 recon regiment
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -27,7 +27,7 @@
 
 division_template = {
 	name = "San-tan-i Shidan" 			# (Triangular) Infantry Division - 3 infantry regiments (3k men each), 1 field artillery regiment plus integral artillery,
-									# 1 engineering regiment, 1 recon regiment, up to 4 field hospitals and transport and labour elements, 2-3 cavalry regiments
+	division_names_group = JAP_INF_01								# 1 engineering regiment, 1 recon regiment, up to 4 field hospitals and transport and labour elements, 2-3 cavalry regiments
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -55,7 +55,7 @@ division_template = {
 
 division_template = {
 	name = "Dokuritsu Konsei Ryodan Ko" 	# Independent Mixed Brigade: 5 infantry battalions (4k men total), 1 field artillery basttalion - abstracted into infantry,
-										# 1 engineering battalion
+	division_names_group = JAP_IMB_01									# 1 engineering battalion
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -98,6 +98,7 @@ division_template = {
 }
 division_template = {
 	name = "Kihei Shidan" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	division_names_group = JAP_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -115,6 +116,7 @@ division_template = {
 }
 division_template = {
 	name = "Jidousha Shidan" 			# Motorized divisions - 4 motorized infantry regiments (3k men each), 1 recon regiment, 
+	division_names_group = JAP_MOT_01
 										#1 engineer regiment, 1 mounted artillery regiment
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -142,6 +144,7 @@ division_template = {
 }
 division_template = {
 	name = "Rikusentai"				#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
+	division_names_group = JAP_MAR_01
 	regiments = {
 		marine = { x = 0 y = 0 }
 		marine = { x = 0 y = 1 }
@@ -160,7 +163,7 @@ division_template = {
 }
 division_template = {
 	name = "Konoe Shidan"				# Japanese Imperial Guard
-
+	division_names_group = JAP_MOT_01
 	regiments = {
 		fascist_motorized = { x = 0 y = 0 }
 		fascist_motorized = { x = 0 y = 1 }
@@ -187,7 +190,8 @@ division_template = {
 }
 division_template = {
 	name = "Chuton-chi Shidan" 			# Garrison template - represents Imperial Manchukuo Army infantry divisions: 2 infantry regiments (3k men) -- militia (lowest equipment, experience)
-										# Also represents (over-sized) IJN Base Defense Unit ("Security Division") (island, city and naval base garrisons): 2 infantry rgts (3k men), 1 field artillery rgt (abstracted), 1 engineering rgt
+	division_names_group = JAP_GAR_01
+										# Also represents (over-sized) IJN Base Defense Unit (island, city and naval base garrisons): 2 infantry rgts (3k men), 1 field artillery rgt (abstracted), 1 engineering rgt
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -210,8 +214,11 @@ division_template = {
 units = {
 
 	#Kita Homengun - North Japan Army
-	division = {
-		name = "7 'Kuma' Shidan"
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
 		location = 10125 #Asahigawa
 		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
@@ -231,22 +238,31 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3	
 	}
-	division = {
-		name = "Karafuto Dokuritsu Konsei Ryodan"
+	division = { # "Karafuto Dokuritsu Konsei Ryodan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 201
+		}
 		location = 7169 #Toyohara
 		division_template = "Dokuritsu Konsei Ryodan Ko"
 		start_experience_factor = 0.3
 	}
 
 	#Chuo Homengun - East Japan Army
-	division = {
-		name = "2 'Yu' Shidan"
+	division = { # "2 'Yu' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 7087 #Shizuoka
 		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
-	division = {
-		name = "Konoe Shidan"
+	division = { # "Konoe Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 601
+		}
 		location = 1182 #Tokyo
 		division_template = "Konoe Shidan"			# Elite Guard unit (highest experience, best equipment)
 		start_experience_factor = 0.4
@@ -259,15 +275,18 @@ units = {
 		start_equipment_factor = 0.3	
 	}
 	division = {
-		name = "Yokosuka Tokubetsu Rikusentai"
+		name = "Yokusaka Tokubetsu Rikusentai"
 		location = 9998 #Yokosuka
 		division_template = "Rikusentai"
 		start_experience_factor = 0.3
 	}
 
 	#Roppou Homengun - West Japan Army
-	division = {
-		name = "4 'Yodo' Shidan"
+	division = { # "4 'Yodo' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 9950 #Nagasaki
 		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
@@ -299,20 +318,29 @@ units = {
 	}
 
 	#3 Homengun - 3rd Field Army
-	division = {
-		name = "3 'Ko' Shidan"
+	division = { # "3 'Ko' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 12068 #Taipei
 		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
-	division = {
-		name = "6 'Mei' Shidan"
+	division = { # "6 'Mei' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
 		location = 12068 #Taipei
 		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
-	division = {
-		name = "11 'Nishiki' Shidan"
+	division = { # "11 'Nishiki' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
 		location = 12068 #Taipei
 		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
@@ -320,14 +348,20 @@ units = {
 
 
 	#Chosen Gun - Korea Army
-	division = {
-		name = "19 'Tora' Shidan"
+	division = { # "19 'Tora' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
 		location = 4052 #Pyongyang
 		division_template = "San-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
-	division = {
-		name = "20 'Asa' Shidan"
+	division = { # "20 'Asa' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
 		location = 7125 #Seoul
 		division_template = "San-tan-i Shidan"
 		start_experience_factor = 0.3
@@ -477,14 +511,20 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3		
 	}
-	division = {
-		name = "9 'Take' Shidan"
+	division = { # "9 'Take' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
 		location = 3944 #Near Changkufeng Lake
 		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
-	division = {
-		name = "14 'Sho' Shidan"
+	division = { # "14 'Sho' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
 		location = 3843 #Eastern Manchuria
 		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
@@ -503,14 +543,20 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7		
 	}
-	division = {
-		name = "1 'Gyoku' Shidan"
+	division = { # "1 'Gyoku' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 10612
 		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
-	division = {
-		name = "1 Kiheishidan"
+	division = { # "1 Kiheishidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 7697
 		division_template = "Kihei Shidan"
 		start_experience_factor = 0.2
@@ -549,50 +595,71 @@ units = {
 		start_equipment_factor = 0.7
 		
 	}
-	division = {
-		name = "8 'Sugi' Shidan"
+	division = { # "8 'Sugi' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
 		location = 1693
 		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
-	division = {
-		name = "12 'Ken' Shidan"
+	division = { # "12 'Ken' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
 		location = 7569
 		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
 	
 	### Chumo Gun -- Inner Mongolian Army ###
-	division = {
-		name = "1 Mouko Kiheishidan"
+	division = { # "1 Mouko Kiheishidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
 		location = 12469
 		division_template = "Kihei Shidan"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
 		start_experience_factor = 0.2
 	}
-	division = {
-		name = "2 Mouko Kiheishidan"
+	division = { # "2 Mouko Kiheishidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
 		location = 12469
 		division_template = "Kihei Shidan"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
 		start_experience_factor = 0.2
 	}
-	division = {
-		name = "3 Mouko Kiheishidan"
+	division = { # "3 Mouko Kiheishidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 103
+		}
 		location = 7812
 		division_template = "Kihei Shidan"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
 		start_experience_factor = 0.2
 	}
-	division = {
-		name = "4 Mouko Kiheishidan"
+	division = { # "4 Mouko Kiheishidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 104
+		}
 		location = 7812
 		division_template = "Kihei Shidan"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
 		start_experience_factor = 0.2
 	}
-	division = {
-		name = "5 Mouko Kiheishidan"
+	division = { # "5 Mouko Kiheishidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 105
+		}
 		location = 10429
 		division_template = "Kihei Shidan"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
@@ -600,23 +667,31 @@ units = {
 
 
 	}
-	division = {
-		name = "6 Mouko Kiheishidan"
+	division = { # "6 Mouko Kiheishidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 106
+		}
 		location = 10429
 		division_template = "Kihei Shidan"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
 		start_experience_factor = 0.2
 	}
-	division = {
-		name = "7 Mouko Kiheishidan"
-
+	division = { # "7 Mouko Kiheishidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 107
+		}
 		location = 3978
 		division_template = "Kihei Shidan"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
 		start_experience_factor = 0.2
 	}
-	division = {
-		name = "8 Mouko Kiheishidan"
+	division = { # "8 Mouko Kiheishidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 108
+		}
 		location = 3978
 		division_template = "Kihei Shidan"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
@@ -626,20 +701,30 @@ units = {
 
 	### Kita-Shina Ichigun - North China Army ###
 	#Independents
-	division = {
-		name = "5 'Koi' Shidan"
+	division = { # "5 'Koi' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 3955 #East Hebei Autonomous Council
 		division_template = "Jidousha Shidan"
 		start_experience_factor = 0.3
 	}
-	division = {
-		name = "1 Dokuritsu Konsei Ryodan"
+	division = { # "1 Dokuritsu Konsei Ryodan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 3900 #East Hebei Autonomous Council
 		division_template = "Dokuritsu Konsei Ryodan Otsu"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "11 Dokuritsu Konsei Ryodan Ko"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
 		location = 11822 #East Hebei Autonomous Council
 		division_template = "Dokuritsu Konsei Ryodan Ko"
 		start_experience_factor = 0.3
@@ -647,14 +732,20 @@ units = {
 
 	#2 Homengun - 2nd Field Army
 
-	division = {
-		name = "10 'Tetsu' Shidan"
+	division = { # "10 'Tetsu' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
 		location = 881
 		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3
 	}
-	division = {
-		name = "16 'Kaki' Shidan"
+	division = { # "16 'Kaki' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
 		location = 9768
 		division_template = "Yon-tan-i Shidan"
 		start_experience_factor = 0.3

@@ -173,6 +173,10 @@ focus_tree = {
 					gfx = "GFX_AST_iven_mackay"
 					traits = { }
 					skill = 3
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 2
 				}
 			}		
 		}
@@ -2570,6 +2574,7 @@ focus_tree = {
 					}
 					division_template = {
 						name = "Rats of Tobruk"
+						division_names_group = AST_INF_01
 						regiments = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
@@ -2596,6 +2601,7 @@ focus_tree = {
 					else = {
 						division_template = {
 							name = "Rats of Tobruk"
+							division_names_group = AST_INF_01
 							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }

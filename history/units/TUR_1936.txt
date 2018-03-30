@@ -1,6 +1,8 @@
 ﻿division_template = {
 	name = "Piyade Tümeni"  			# Infantry Division
 
+	division_names_group = TUR_INF_01
+
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,6 +25,8 @@
 division_template = {
 	name = "Dag Tugayi" 				# Mountain Brigade
 
+	division_names_group = TUR_MTN_01
+
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -38,6 +42,8 @@ division_template = {
 division_template = {
 	name = "Bogazi Tugay" 				# Fortress Brigade - garrison brigade, lower experience and equipment
 
+	division_names_group = TUR_GAR_01
+
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		light_infantry = { x = 0 y = 1 }
@@ -51,6 +57,8 @@ division_template = {
 }
 division_template = {
 	name = "Süvari Tümeni" 				# Cavalry Division
+
+	division_names_group = TUR_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -72,7 +80,11 @@ units = {
 	######## LAND UNITS ########
 	##### Türk Ordusu #####
 	division = {
-		name = "14. Süvari Tümeni"
+		#name = "14. Süvari Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 14
+		}
 		location = 11811
 		division_template = "Süvari Tümeni" 
 		start_experience_factor = 0.2
@@ -81,7 +93,11 @@ units = {
 	}
 	## VI. Kolordu ##
 	division = {
-		name = "7. Piyade Tümeni"
+		#name = "7. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 7
+		}
 		location = 11811
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -89,7 +105,11 @@ units = {
 
 	}
 	division = {
-		name = "17. Piyade Tümeni"
+		#name = "17. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 17
+		}
 		location = 11811
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -97,7 +117,11 @@ units = {
 
 	}
 	division = {
-		name = "20. Piyade Tümeni"
+		#name = "20. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 20
+		}
 		location = 11811
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -107,7 +131,11 @@ units = {
 
 	### Birinci Ordu ###
 	division = {
-		name = "11. Piyade Tümeni"
+		#name = "11. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 11
+		}
 		location = 9833
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -115,7 +143,11 @@ units = {
 
 	}
 	division = {
-		name = "2. Süvari Tümeni"
+		#name = "2. Süvari Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 9833
 		division_template = "Süvari Tümeni" 
 		start_experience_factor = 0.2
@@ -124,7 +156,11 @@ units = {
 	}
 	## III. Kolordu ##
 	division = {
-		name = "1. Piyade Tümeni"
+		#name = "1. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 11842
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -132,7 +168,11 @@ units = {
 
 	}
 	division = {
-		name = "23. Piyade Tümeni"
+		#name = "23. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 23
+		}
 		location = 3893
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -140,7 +180,11 @@ units = {
 
 	}
 	division = {
-		name = "24. Piyade Tümeni"
+		#name = "24. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 24
+		}
 		location = 11842
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -149,7 +193,11 @@ units = {
 	}
 	## IV. Kolordu ##
 	division = {
-		name = "8. Piyade Tümeni"
+		#name = "8. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 8
+		}
 		location = 6895
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -157,7 +205,11 @@ units = {
 
 	}
 	division = {
-		name = "22. Piyade Tümeni"
+		#name = "22. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 22
+		}
 		location = 6895
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -165,7 +217,11 @@ units = {
 
 	}
 	division = {
-		name = "1. Dag Tugayi"
+		#name = "1. Dag Tugayi"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 6895
 		division_template = "Dag Tugayi" 
 		start_experience_factor = 0.2
@@ -175,7 +231,11 @@ units = {
 
 	### Ikinci Ordu Ordu ###
 	division = {
-		name = "39. Dag Tugayi"
+		#name = "39. Dag Tugayi"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 39
+		}
 		location = 947
 		division_template = "Dag Tugayi" 
 		start_experience_factor = 0.2
@@ -184,7 +244,11 @@ units = {
 	}
 	## I. Kolordu ##
 	division = {
-		name = "6. Piyade Tümeni"
+		#name = "6. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 6
+		}
 		location = 4112
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -192,7 +256,11 @@ units = {
 
 	}
 	division = {
-		name = "16. Piyade Tümeni"
+		#name = "16. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 16
+		}
 		location = 4112
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -200,7 +268,11 @@ units = {
 
 	}
 	division = {
-		name = "Çanakkale Bogazi Tugay"
+		#name = "Çanakkale Bogazi Tugay"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 14
+		}
 		location = 4112
 		division_template = "Bogazi Tugay"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
@@ -210,7 +282,11 @@ units = {
 	}
 	## II.  Kolordu ##
 	division = {
-		name = "4. Piyade Tümeni"
+		#name = "4. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 849
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -218,7 +294,11 @@ units = {
 
 	}
 	division = {
-		name = "18. Dag Tugayi"
+		#name = "18. Dag Tugayi"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 18
+		}
 		location = 849
 		division_template = "Dag Tugayi" 
 		start_experience_factor = 0.2
@@ -227,7 +307,11 @@ units = {
 	}
 	## V. Kolordu ##
 	division = {
-		name = "5. Piyade Tümeni"
+		#name = "5. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 947
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -235,7 +319,11 @@ units = {
 
 	}
 	division = {
-		name = "25. Piyade Tümeni"
+		#name = "25. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 25
+		}
 		location = 947
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -246,7 +334,11 @@ units = {
 	### Üçüncüsü Ordu ###
 	## VII. Kolordu ##
 	division = {
-		name = "2. Piyade Tümeni"
+		#name = "2. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 4512
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -254,7 +346,11 @@ units = {
 
 	}
 	division = {
-		name = "10. Piyade Tümeni"
+		#name = "10. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 10
+		}
 		location = 4512
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -263,7 +359,11 @@ units = {
 	}
 	## VIII. Kolordu ##
 	division = {
-		name = "12. Piyade Tümeni"
+		#name = "12. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 12
+		}
 		location = 11894
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -271,7 +371,11 @@ units = {
 
 	}
 	division = {
-		name = "15. Piyade Tümeni"
+		#name = "15. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 15
+		}
 		location = 11894
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -280,7 +384,11 @@ units = {
 	}
 	## IX. Kolordu ##
 	division = {
-		name = "3. Piyade Tümeni"
+		#name = "3. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 10403
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -288,7 +396,11 @@ units = {
 
 	}
 	division = {
-		name = "9. Piyade Tümeni"
+		#name = "9. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 9
+		}
 		location = 10472
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
@@ -296,7 +408,11 @@ units = {
 
 	}
 	division = {
-		name = "1. Süvari Tümeni"
+		#name = "1. Süvari Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 10472
 		division_template = "Süvari Tümeni" 
 		start_experience_factor = 0.2

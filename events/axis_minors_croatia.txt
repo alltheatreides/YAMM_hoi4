@@ -132,7 +132,7 @@ country_event = {
 
 	}
 }
-}
+
 #fix for the zagreb university
 #country_event = {
 #	id = axis_minors_croatia.4

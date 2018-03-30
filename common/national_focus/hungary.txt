@@ -590,6 +590,7 @@ focus_tree = {
 
 		available = {
 			has_army_manpower = { size > 200000 }
+			89 = { OWNER = { NOT = { is_in_faction_with = HUN } } }
 			is_subject = no
 		}
 
@@ -748,7 +749,10 @@ focus_tree = {
 				target = SWE
 				modifier = HUN_dynastic_ties_license
 			}
-			news_event = { id = news.296 }
+			hidden_effect = {
+				news_event = { id = news.296 }
+			}
+			set_cosmetic_tag = HUN_MONARCHY
 		}
 	}
 
@@ -895,6 +899,12 @@ focus_tree = {
 				is_puppet = no
 				NOT = {
 					has_war_with = HUN
+				}
+			}
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = ENG
+					has_war_with = HUN	
 				}
 			}
 		}
@@ -1075,11 +1085,12 @@ focus_tree = {
 				add_idea = HUN_hungarian_monarchy_fascism
 				remove_idea = HUN_hungarian_monarchy_2
 			}
+			set_cosmetic_tag = HUN_MONARCHY
 			if = {
 				limit = {
 					has_government = neutrality
 				}
-				
+				add_popularity = { ideology = fascism popularity = 0.05 }
 				create_country_leader = {
 					name = "Friedrich Franz of Mecklenburg-Schwerin"
 					desc = "POLITICS_FRIEDRICH_FRANZ_OF_MECKLENBURG-SCHWERIN_DESC"
@@ -1116,7 +1127,9 @@ focus_tree = {
 					}
 				}
 			}
-			news_event = { id = news.297 }
+			hidden_effect = {
+				news_event = { id = news.297 }
+			}
 		}
 	}
 
@@ -1731,8 +1744,9 @@ focus_tree = {
 			add_state_core = 76
 			add_state_core = 83
 			add_state_core = 84
-			add_state_claim = 664
+			add_state_core = 664
 			add_state_claim = 45
+			add_state_claim = 82
 		}
 	}
 
@@ -4598,6 +4612,7 @@ focus_tree = {
 					limit = { has_tech = tech_engineers }
 					division_template = {
 						name = "Light Division"
+						division_names_group = HUN_INF_01
 						priority = 2
 		
 						regiments = {
@@ -4621,6 +4636,7 @@ focus_tree = {
 					else = {
 						division_template = {
 							name = "Light Division"
+							division_names_group = HUN_INF_01
 							priority = 2
 			
 							regiments = {

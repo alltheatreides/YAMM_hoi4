@@ -1,5 +1,7 @@
 ﻿division_template = {
-	name = "Infantry Division"	# Divisions were reserves assigned to various military districts
+	name = "Reserve Infantry Division"	# Divisions were reserves assigned to various military districts
+
+	division_names_group = AST_GAR_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -21,7 +23,9 @@
 	}
 }
 division_template = {
-	name = "Cavalry Division"  
+	name = "Cavalry Division"
+
+	division_names_group = AST_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -37,7 +41,9 @@ division_template = {
 }
 
 division_template = {
-	name = "Armored-Division"
+	name = "Armored Division"
+
+	division_names_group = AST_ARM_01
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -54,6 +60,8 @@ division_template = {
 
 division_template = {
 	name = "Infantry Division"			# 1st - 5th divisions = fully equipped, others = reserve divisions
+	
+	division_names_group = AST_INF_01	
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -84,7 +92,11 @@ division_template = {
 units = {
 	##### Royal Australian Army #####
 	division= {	
-		name = "5th Infantry Division"
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 1652 # Perth
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -92,7 +104,11 @@ units = {
 
 	}
 	division= {	
-		name = "1st Cavalry Division"
+		#name = "1st Cavalry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 7564 # Brisbane
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.2
@@ -101,7 +117,11 @@ units = {
 	}
 	# 2nd Military District -- New South Wales
 	division= {	
-		name = "1st Infantry Division"
+		#name = "1st Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 12406 # Sydney
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -109,7 +129,11 @@ units = {
 
 	}
 	division= {	
-		name = "2nd Infantry Division"
+		#name = "2nd Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 7859 # Canberra
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -119,7 +143,11 @@ units = {
 
 	# 3rd Military District -- New South Wales
 	division= {	
-		name = "3rd Infantry Division"
+		#name = "3rd Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 7798 # Melbourne
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -127,7 +155,11 @@ units = {
 
 	}
 	division= {	
-		name = "4th Infantry Division"
+		#name = "4th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 7798 # Melbourne
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -135,7 +167,11 @@ units = {
 
 	}
 	division= {	
-		name = "2nd Cavalry Division"
+		#name = "2nd Cavalry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 7798 # Melbourne
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.2

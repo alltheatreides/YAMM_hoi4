@@ -3,7 +3,11 @@ units = {
 	##### Croato - italian legion #####
 	# 
 	division= {	
-		name = "1. Hrvatska Legija"
+		#name = "1. Hrvatska Legija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 11581  # zagreb
 		division_template = "Hrvatska Legija"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "CRO" } }

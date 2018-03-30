@@ -72,18 +72,33 @@ guiTypes = {
 		}
 		
 		iconType = {
-			name = "can_paradrop_icon"
-			spriteType = "GFX_can_paradrop_icon"
-			position = { x = 50 y = 57 }
+			name = "division_template_icon"
+			spriteType = "GFX_division_template_icon"
+			position = { x = 132 y = 64 }
 		}
 		
+		iconType = {
+			name = "division_nametag_icon"
+			spriteType = "GFX_division_nametag_icon"
+			position = { x = 130 y = 120 }
+		}
+
+		iconType = {
+			name = "can_paradrop_icon"
+			spriteType = "GFX_can_paradrop_icon_small"
+			position = { x = 77 y = 116 }
+		}
+		
+		iconType = {
+			name = "special_forces_icon"
+			spriteType = "GFX_special_forces_icon"
+			position = { x = 38 y = 116 }
+		}
+	
 		buttonType = {
 			name = "division_equipment_btn"
-			position = { x = 290 y = 60 }
-			quadTextureSprite ="GFX_button_221x34"	
-		
-		
-		
+			position = { x = 400 y = 60 }
+			quadTextureSprite ="GFX_button_123x34"	
 			buttonText = "DIVISION_EQUIPMENT"
 			buttonFont = "hoi_16mbs"
 			clicksound = click_close
@@ -188,7 +203,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 					name = "combat_stats_label"
-					position = { x = 184 y = 34 }
+					position = { x = 187 y = 34 }
 					font = "hoi4_typewriter22"
 					text = "DESIGNER_COMBAT_STATS_LABEL"
 					maxWidth = 165
@@ -224,7 +239,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "equipment_stats_label"
-				position = { x = 359 y = 34 }
+				position = { x = 362 y = 34 }
 				font = "hoi4_typewriter22"
 				text = "DESIGNER_EQUIPMENT_STATS_LABEL"
 				maxWidth = 165
@@ -330,13 +345,13 @@ guiTypes = {
 		iconType = {
 			name ="division_icon_bg"
 			spriteType = "GFX_division_icon_bg"	
-			position = { x=29 y=106 }
+			position = { x=29 y=56 }
 		}		
 
 		ButtonType = {
 			name ="div_templ_symbol_button"
 			spriteType = "GFX_unit_super_heavy_armor_icon_medium"	
-			position = { x=37 y=106 }
+			position = { x=37 y=57 }
 			clicksound = click_default
 			pdx_tooltip = "DIV_TEMPL_SYMBOL_TOOLTIP"
 		}	
@@ -372,11 +387,91 @@ guiTypes = {
 			quadTextureSprite ="GFX_div_priority_strip"
 			clicksound = click_default
 		}
-
 		
+		iconType = {
+			name = "colonial_force_flag"
+			quadTextureSprite ="GFX_flag_small"
+			position = { x= 34 y = 75 }
+		}
+
+		iconType = {
+			name = "colonial_force_flag_frame"
+			quadTextureSprite ="GFX_div_designer_colonial_flag_frame2"
+			position = { x= 35 y = 68 }
+			alwaystransparent = yes
+		}	
+
+		instantTextboxType = {
+			name = "combat_header_label"
+			position = { x = 105 y = 196 }
+			font = "hoi_18mbs"
+			text = "COMBAT_HEADER"
+			maxWidth = 372
+			maxHeight = 20
+			format = right
+			pdx_tooltip = "DESIGNER_MAIN_COLUMN_TITLE"
+		}
+		
+
+		dropDownBoxType = {
+			name = "division_names"
+			position = { x = 162 y = 116 }
+			size = { width = 200 height = 30 }
+			
+			instantTextboxType = {
+				name = "name"
+				position = { x = 5 y = 5 }
+				font = "hoi_18mbs"
+				text = "COMBAT_HEADER"
+				maxWidth = 185
+				maxHeight = 20
+				fixedsize = yes
+				format = left
+			}
+
+			expandButton = {
+				name = "expand_button"	
+				position = { x = -9 y = 6 }
+				quadTextureSprite ="GFX_expand_button"
+				buttonFont = "Main_14_black"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_default
+			}
+			
+			expandedWindow = {
+				name = "expanded_window"
+				position = { x=0 y= -160 }	
+				show_position = { x = 0 y = 25 }
+				show_animation_type = decelerated
+				hide_animation_type = accelerated
+				animation_time = 300
+				size = { width=219 height=160 }	
+				verticalScrollbar = "right_vertical_slider"
+				margin = { top = 7 bottom = 7 right = 6 }
+				#clipping = no
+				
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_tiled_window_1b_thin_border"
+					position = { x = 0 y = 0 }
+				}
+				
+				gridBoxType = {
+					name = "names_grid"
+					position = { x = 8 y = 0 }
+					size = { width = 199 height = 100%% }
+					slotsize = { width = 186 height = 30 }
+					max_slots_horizontal = 1
+					format = "UPPER_LEFT"
+				}
+			}
+		}
+
+
+
 		dropDownBoxType = {
 			name = "divisions"
-			position = { x = 162 y = 116 }
+			position = { x = 162 y = 66 }
 			size = { width = 200 height = 30 }
 			
 			editBoxType = {
@@ -849,9 +944,16 @@ guiTypes = {
 		}
 		
 		iconType = {
+			name = "special_forces_icon"
+			spriteType = "GFX_special_forces_icon"
+			position = { x = 176 y = 5 }
+		}
+		
+		iconType = {
 			name = "can_paradrop_icon"
 			spriteType = "GFX_can_paradrop_icon_small"
 			position = { x = 216 y = 5 }
+			frame = 2
 		}
 	}
 	
@@ -884,6 +986,32 @@ guiTypes = {
 			maxHeight = 40
 			fixedsize = yes
 			format = left
+		}
+	}
+	
+	containerWindowType = {
+		name = "designer_div_name_group_entry"
+		size = { width = 186 height = 30 }
+		clipping = no
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_mini_tooltip"
+			clicksound = click_default
+		}
+
+		instantTextboxType = {
+			name = "name"
+			position = { x = 5 y = 5 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Maus"
+			maxWidth = 170
+			maxHeight = 30
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
 		}
 	}
 	

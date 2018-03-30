@@ -1,7 +1,7 @@
 ﻿###### OOB ######
 division_template = {
 	name = "Motorised Division 41"
-
+	division_names_group = USA_MOT_01
 	regiments = {
 
 		motorized = { x = 0 y = 0 }
@@ -31,7 +31,7 @@ division_template = {
 
 division_template = {
 	name = "Armor Division 41"
-
+	division_names_group = USA_ARM_01
 	regiments = {
 
 		motorized = { x = 0 y = 0 }

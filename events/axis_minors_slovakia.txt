@@ -129,7 +129,7 @@ country_event = {
 		add_political_power = -50
 		71 = {add_manpower = -2200}
 		add_manpower = -34
-		add_national_unity = -0.05
+		add_stability = -0.05
 		army_experience = 10
 		air_experience = 1 	
 		HUN = { country_event = { id = axis_minors_slovakia.3 } }
@@ -149,7 +149,7 @@ country_event = {
 		add_political_power = 100
 		73 = {add_manpower = 2200}
 		add_manpower = -14
-		add_national_unity = 0.05	
+		add_stability = 0.05	
 		army_experience = 10 	
 		air_experience = 3 
 	}
@@ -194,7 +194,7 @@ country_event = {
 	option = {
 		name = axis_minors_slovakia.4.a
 		add_political_power = -100
-		add_national_unity = -0.05
+		add_stability = -0.05
 		add_manpower = -328
 		army_experience = 10
 		air_experience = 1 	
@@ -214,7 +214,7 @@ country_event = {
 	option = {
 		name = axis_minors_slovakia.5.a
 		add_political_power = 100
-		add_national_unity = 0.05
+		add_stability = 0.05
 		add_manpower = -142
 		army_experience = 10
 		air_experience = 3 	

@@ -11,6 +11,8 @@ add_ideas = {
 	NOR_aftermath_of_the_depression
 }
 
+set_stability = 0.9
+set_war_support = 0.1
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -87,8 +89,8 @@ set_technology = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -97,7 +99,7 @@ set_technology = {
 }
 
 set_convoys = 1000		# biggest merchant marine in the world
-set_national_unity = 0.7
+set_stability = 0.7
 
 set_politics = {
 
@@ -202,6 +204,10 @@ create_field_marshal = {
 	picture = "Portrait_Norway_Carl_Gustav_Fleischer.dds"
 	traits = { fast_planner organisational_leader offensive_doctrine }
 	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -209,6 +215,10 @@ create_field_marshal = {
 	picture = "Portrait_Norway_Otto_Ruge.dds"
 	traits = { thorough_planner inspirational_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -216,6 +226,10 @@ create_corps_commander = {
 	picture = "Portrait_Norway_Kristian_Laake.dds"
 	traits = {  trickster winter_specialist }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -223,6 +237,10 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { trickster trait_engineer }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
 }
 
 create_navy_leader = {
@@ -240,8 +258,7 @@ create_navy_leader = {
 ############################################################################
 ## DNM Variants
 ############################################################################
-1936.1.1 = {
-	create_equipment_variant = {
+create_equipment_variant = {
 	name = "A Class"
 	type = submarine_ww1
 	parent_version = 0
@@ -254,68 +271,67 @@ create_navy_leader = {
 		sub_torpedo_upgrade = 0
 	}
 	obsolete=yes
+}
+create_equipment_variant = {
+	name = "B Class"
+	type = submarine_1
+	parent_version = 0
+	upgrades = {
+		sub_engine_upgrade = 3
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 1
+		sub_stealth_upgrade = 3
+		sub_torpedo_upgrade = 1
 	}
-	create_equipment_variant = {
-		name = "B Class"
-		type = submarine_1
-		parent_version = 0
-		upgrades = {
-			sub_engine_upgrade = 3
-			ship_quality_upgrade = 0
-			ship_anti_air_upgrade = 0
-			ship_range_upgrade = 1
-			sub_stealth_upgrade = 3
-			sub_torpedo_upgrade = 1
-		}
+}
+create_equipment_variant = {
+	name = "Draug Class"
+	type = destroyer_tb
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 2
+		ship_barrels_upgrade = 2
+		ship_calibre_upgrade = 0
+		ship_gunquality_upgrade = 7
+		ship_quality_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 9
+		ship_torpedo_upgrade = 4
 	}
-	create_equipment_variant = {
-		name = "Draug Class"
-		type = destroyer_tb
-		parent_version = 0
-		upgrades = {
-			destroyer_engine_upgrade = 2
-			ship_barrels_upgrade = 2
-			ship_calibre_upgrade = 0
-			ship_gunquality_upgrade = 7
-			ship_quality_upgrade = 0
-			ship_ASW_upgrade = 0
-			ship_anti_air_upgrade = 0
-			ship_range_upgrade = 9
-			ship_torpedo_upgrade = 4
-		}
-		obsolete = yes
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Norge Class"
+	type = armoured_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 10
+		ship_barrels_upgrade = 10
+		ship_calibre_upgrade = 6
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 7
+		ship_armor_upgrade = 5
+		ship_torpedo_upgrade = 10
 	}
-	create_equipment_variant = {
-		name = "Norge Class"
-		type = armoured_cruiser_1
-		parent_version = 0
-		upgrades = {
-			ship_engine_upgrade = 10
-			ship_barrels_upgrade = 10
-			ship_calibre_upgrade = 6
-			ship_gunquality_upgrade = 0
-			ship_quality_upgrade = 0
-			ship_anti_air_upgrade = 0
-			ship_range_upgrade = 7
-			ship_armor_upgrade = 5
-			ship_torpedo_upgrade = 10
-		}
+}
+create_equipment_variant = {
+	name = "Tordenskjold Class"
+	type = armoured_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 9
+		ship_barrels_upgrade = 5
+		ship_calibre_upgrade = 6
+		ship_gunquality_upgrade = 0
+		ship_quality_upgrade = 0
+		ship_anti_air_upgrade = 0
+		ship_range_upgrade = 5
+		ship_armor_upgrade = 6
+		ship_torpedo_upgrade = 10
 	}
-	create_equipment_variant = {
-		name = "Tordenskjold Class"
-		type = armoured_cruiser_1
-		parent_version = 0
-		upgrades = {
-			ship_engine_upgrade = 9
-			ship_barrels_upgrade = 5
-			ship_calibre_upgrade = 6
-			ship_gunquality_upgrade = 0
-			ship_quality_upgrade = 0
-			ship_anti_air_upgrade = 0
-			ship_range_upgrade = 5
-			ship_armor_upgrade = 6
-			ship_torpedo_upgrade = 10
-		}
-		obsolete=yes
-	}
+	obsolete=yes
 }

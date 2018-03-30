@@ -133,7 +133,7 @@ ideas = {
 			}
 
 			modifier = {
-				unity_factor = 0.10
+				stability_factor = 0.10
 				conscription = 0.01
 			}
 		}
@@ -223,7 +223,7 @@ ideas = {
 			picture = victor_emmanuel
 			
 			modifier = {
-				unity_factor = 0.05				
+				stability_factor = 0.05				
 			}
 		}
 		
@@ -272,7 +272,7 @@ ideas = {
 			picture = generic_victors_of_ww1
 			
 			modifier = {
-			    unity_factor = 0.05
+			    stability_factor = 0.05
 				political_power_factor = 0.1				
 			}
 			research_bonus = {
@@ -348,7 +348,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
-			    unity_factor = -0.15
+			    stability_factor = -0.15
 				political_power_factor = -0.5				
 			}
 		}
@@ -405,7 +405,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
-			    unity_factor = -0.15
+			    stability_factor = -0.15
 				political_power_factor = -0.25				
 			}
 		}
@@ -438,7 +438,7 @@ ideas = {
 			
 			
 			modifier = {
-			    unity_factor = 0.05
+			    stability_factor = 0.05
 				democratic_acceptance = 10				
 			}
 		}

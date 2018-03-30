@@ -2041,7 +2041,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = additional_naval_tech
 				bonus = 0.50
-				use = 3
+				uses = 3
 				technology = early_sonar
 				technology = depth_charge_throwers
 				technology = basic_sonar
@@ -3495,6 +3495,11 @@ focus_tree = {
 				has_government = democratic
 			}
 		}
+		
+		available = {
+			threat > 10.00
+		}
+		
 		completion_reward = {
 			add_named_threat = { threat = 1 name = USA_preemptive_intervention }
 			# US democratic

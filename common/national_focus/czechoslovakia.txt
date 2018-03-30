@@ -1118,7 +1118,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = CZE_divided_nation
-				add_idea = CZE_divided_nation_2
+				# add_idea = CZE_divided_nation_2
 			}
 			9 = {
 				add_extra_state_shared_building_slots = 1
@@ -1176,7 +1176,7 @@ focus_tree = {
 				else = {
 					if = {
 						limit = { has_idea = CZE_divided_nation_2 }
-						remove_ideas = CZE_divided_nation_2				
+						# remove_ideas = CZE_divided_nation_2				
 					}
 				}
 			}
@@ -1463,7 +1463,7 @@ focus_tree = {
 				else = {
 					if = {
 						limit = { has_idea = CZE_divided_nation_2 }
-						remove_ideas = CZE_divided_nation_2				
+						# remove_ideas = CZE_divided_nation_2				
 					}
 				}
 			}
@@ -1562,6 +1562,12 @@ focus_tree = {
 				has_government = communism 
 			}
 			is_in_faction = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = SOV
+					has_war_with = CZE
+				}
+			}
 		}
 
 		bypass = {
@@ -1909,7 +1915,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = fascist_influence
+			add_ideas = CZE_czech_fascism
 		}
 	}
 
@@ -2247,8 +2253,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#ger relations
-			#small fascist drift
+			 GER = { add_opinion_modifier = { target = CZE modifier = CZE_german_leanings } }
 		}
 	}
 
@@ -2531,7 +2536,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			NOT = { amount_research_slots < 4 }
+			NOT = { amount_research_slots < 5 }
 		}
 
 		cancel_if_invalid = yes
@@ -3127,7 +3132,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = cze_army_upgrades
+				name = CZE_inf_and_artillery_advancement
 				bonus = 0.5
 				ahead_reduction = 1
 				uses = 1
@@ -3168,7 +3173,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = cze_army_upgrades2
+				name = CZE_support_bonus #@#
 				bonus = 0.5
 				uses = 2
 				#category = hospital_tech
@@ -3181,7 +3186,7 @@ focus_tree = {
 				category = support_tech	
 			}
 		add_tech_bonus = {
-			name = cze_army_upgrades3
+			name = CZE_support_bonus #@#
 			bonus = 0.5
 			uses = 1
 			technology = support_weapons2
@@ -3222,7 +3227,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = cze_army_second_upgrade2
+				name = CZE_inf_and_artillery_advancement_2 #@#
 				bonus = 0.5
 				ahead_reduction = 1
 				uses = 1
@@ -3382,7 +3387,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = CZE_mechanized_focus
+				name = CZE_mechanization #@#
 				bonus = 0.5
 				uses = 1
 				category = cat_mechanized_equipment
@@ -3584,7 +3589,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = cze_import_fighter
+				name = CZE_import_foreign_fighters #@#
 				bonus = 0.5
 				uses = 1
 				category = light_fighter

@@ -13,6 +13,8 @@ set_technology = {
 	the_15_65_bracket = 1
 	female_do_not_fight = 1
 }
+set_war_support = 0.1
+set_stability = 0.8
 
 add_ideas = {
 	George_v
@@ -94,7 +96,7 @@ set_politics = {
 create_country_leader = {
 	name = "Juddha Rana"
 	desc = "POLITICS_JUDDHA_RANA_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	picture = "GFX_portrait_nepal_portrait_juddah_rana"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

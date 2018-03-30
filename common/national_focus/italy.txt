@@ -188,7 +188,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_national_unity = 0.1
+			add_stability = 0.1
 			add_political_power = 120
 			add_ideas = impero_di_argilla
 		}
@@ -1155,9 +1155,9 @@ focus_tree = {
 					support = {
 						DIV_HQ = { x = 0 y = 0 }
 						engineer = { x = 0 y = 1 }
-						recon_mot = { x = 0 y = 2 }
-						maintenance_company = { x = 1 y = 0 }
-						logistics_company = { x = 1 y = 1 }
+						# recon_mot = { x = 0 y = 2 }
+						maintenance_company = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
 					}
 				}
 			}
@@ -1193,8 +1193,13 @@ focus_tree = {
 				create_corps_commander = {
 					name = "Giovanni Messe"
 					picture = "Portrait_Italy_Giovanni_Messe.dds"
-					traits = { panzer_leader }
+					traits = {  armor_officer war_hero }
 					skill = 4
+					rank = 1
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 4
 				}
 			}
 		}
