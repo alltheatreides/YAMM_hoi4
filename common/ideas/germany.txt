@@ -1575,7 +1575,9 @@ ideas = {
 				original_tag = GER
 				NOT = { has_country_flag = himmler_dead }
 			}
-			
+			on_add = {
+				custom_effect_tooltip = GER_SS_himmler_recruit
+			}
 			available = {
 				has_government = fascism
 			}			
@@ -1802,7 +1804,7 @@ ideas = {
 				has_government = fascism
 				NOT = { has_country_flag = goebbels_dead }
 			}
-			traits = { fascist_demagogue }
+			traits = { fascist_demagogue propaganda_expert}
 
 			removal_cost = -1
 			ai_will_do = {
