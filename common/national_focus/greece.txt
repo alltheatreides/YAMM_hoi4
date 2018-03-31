@@ -117,9 +117,8 @@ focus_tree = {
 			add_political_power = 50
 			add_ideas = GRE_metaxas_regime_1
 			hidden_effect = {
-				all_country = {
-					news_event = yamm.100
-				}
+				news_event = yamm.100
+			}
 		}
 	}
 	
