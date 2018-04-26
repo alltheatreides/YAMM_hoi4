@@ -46,7 +46,7 @@ sub_units = {
 		maximum_speed = -0.5
 		training_time = 100
 		suppression = 2 # fanatics +1
-		weight = 0.5
+		weight = 5
 
 		supply_consumption = 0.10 # internal struggle, bad allocation +0.03
 
@@ -104,7 +104,7 @@ sub_units = {
 		maximum_speed = -0.5
 		training_time = 180
 		suppression = 2 # fanatics +1
-		weight = 0.5
+		weight = 5
 		supply_consumption = 0.09 # internal struggle, bad allocation +0.03
 		breakthrough = 0.3
 
@@ -162,7 +162,7 @@ sub_units = {
 		maximum_speed = -0.5
 		training_time = 180
 		suppression = 2 # fanatics +1
-		weight = 0.5
+		weight = 5
 
 		supply_consumption = 0.1 # internal struggle, bad allocation +0.03
 		breakthrough = 0.3
@@ -221,7 +221,7 @@ sub_units = {
 		maximum_speed = -0.5
 		training_time = 180
 		suppression = 2 # fanatics +1
-		weight = 0.5
+		weight = 5
 		supply_consumption = 0.09 # internal struggle, bad allocation +0.03
 
 		can_be_parachuted = yes
@@ -264,7 +264,7 @@ sub_units = {
 		#Misc Abilities
 		maximum_speed = 0.6
 		training_time = 120
-		weight = 0.5
+		weight = 5
 
 		supply_consumption = 0.17 # internal struggle, bad allocation +0.05
 

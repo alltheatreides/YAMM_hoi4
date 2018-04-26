@@ -37,7 +37,7 @@ sub_units = {
 		maximum_speed = -0.5
 		training_time = 90
 		suppression = 1
-		weight = 0.5
+		weight = 5
 		
 		supply_consumption = 0.07
 	
@@ -82,7 +82,7 @@ sub_units = {
 		#Misc Abilities
 		training_time = 90
 		suppression = 1
-		weight = 0.5
+		weight = 5
 		
 		supply_consumption = 0.07
 	
@@ -157,7 +157,7 @@ sub_units = {
 		maximum_speed = -0.5
 		training_time = 180
 		suppression = 1
-		weight = 0.5
+		weight = 5
 		supply_consumption = 0.06
 		breakthrough = 0.3
 	
@@ -215,7 +215,7 @@ sub_units = {
 		maximum_speed = -0.5
 		training_time = 180
 		suppression = 1
-		weight = 0.5
+		weight = 5
 		
 		supply_consumption = 0.07
 		breakthrough = 0.3
@@ -274,7 +274,7 @@ sub_units = {
 		maximum_speed = -0.5
 		training_time = 180
 		suppression = 1
-		weight = 0.5
+		weight = 5
 		supply_consumption = 0.06
 
 		can_be_parachuted = yes
@@ -319,7 +319,7 @@ sub_units = {
 		#Misc Abilities
 		training_time = 150
 		suppression = 1
-		weight = 0.4
+		weight = 5
 		supply_consumption = 0.07
 		breakthrough = 0.3
 	
@@ -371,7 +371,7 @@ sub_units = {
 		#Misc Abilities
 		training_time = 150
 		suppression = 1
-		weight = 0.4
+		weight = 5
 		supply_consumption = 0.06
 		breakthrough = 0.3
 	
@@ -426,7 +426,7 @@ sub_units = {
 		#Misc Abilities
 		training_time = 150
 		suppression = 1
-		weight = 0.4
+		weight = 5
 		supply_consumption = 0.08
 		breakthrough = 1
 	
@@ -474,7 +474,7 @@ sub_units = {
 		#Misc Abilities
 		training_time = 120
 		suppression = 1
-		weight = 0.4
+		weight = 5
 		supply_consumption = 0.06
 		breakthrough = 0.3
 	
@@ -523,7 +523,7 @@ sub_units = {
 		#Misc Abilities
 		training_time = 100
 		suppression = 1
-		weight = 0.75
+		weight = 7.5
 		supply_consumption = 0.11
 		
 		#Stats mod
@@ -604,7 +604,7 @@ sub_units = {
 		#Misc Abilities
 		training_time = 120
 		suppression = 1
-		weight = 1
+		weight = 10
 		
 		#Stats mod
 		breakthrough = 0.10
