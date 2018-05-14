@@ -18,7 +18,9 @@ ideas = {
 				conscription = 0.015
 				military_leader_cost_factor = 2.0
 				drift_defence_factor = 0.25
-				mobilization_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.5
+				democratic_drift = 0.15
+				communism_drift = 0.05
 			}
 		}
 	}
@@ -112,6 +114,45 @@ ideas = {
 			}
 		}
 	}	
+	navy_chief = {
+		emile_muselier2 = { ##FFI obligatoire 1er utilisateur de la croix de lorraine
+			
+			picture = emile_muselier
+			allowed = {
+				original_tag = FRA 
+			}
+			available = {
+				has_country_flag = free_france
+				NOT = {
+					has_idea = emile_muselier
+				}
+			}
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		FRA_FREE_georges_thierry_d_argenlieu = { 
+			
+
+			allowed = {
+				original_tag = FRA 
+			}
+			available = {
+				has_country_flag = free_france
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+	
+	
 	high_command = {
 		
 		FRA_FREE_adolphe_cise = { ##military medic
@@ -130,6 +171,21 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 1
+			}
+		}
+		FRA_FREE_philippe_kieffer = { ##marine commando
+			
+			allowed = {
+				original_tag = FRA 
+			}
+			available = {
+				has_country_flag = free_france
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {#probably too specific to be used by the AI
+				factor = 0
 			}
 		}		
 	}	

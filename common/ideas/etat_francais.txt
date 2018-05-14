@@ -107,8 +107,28 @@ ideas = {
 			modifier = {
 				conscription = -0.015
 			}
-		}		
-		idea_EFR_rationning = {
+		}
+		EFR_idea_bombing_awareness = {
+
+			picture = anti_bombing_measures
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_anti_air_building_factor = 0.3
+
+			}
+		}
+
+		idea_EFR_rationing = {
 
 			picture = generic_agrarian_reform
 		
@@ -143,6 +163,88 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.02
 			}
+		}
+		idea_EFR_terms_of_compiegne_armistice = {
+
+			picture = saf_history_of_segregation
+		
+			allowed = {
+				is_subject_of = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				mobilization_laws_cost_factor = 10
+				conscription_factor = -0.05
+			}
+		}
+		idea_EFR_shattered_economy = {
+
+			picture = great_depression
+		
+			allowed = {
+				is_subject_of = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                production_factory_max_efficiency_factor = -0.15
+                production_speed_buildings_factor = -0.1
+			}
+		}
+		idea_EFR_shattered_economy2 = {
+
+			picture = great_depression
+		
+			allowed = {
+				is_subject_of = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                production_factory_max_efficiency_factor = -0.15
+			}
+		}		
+		idea_EFR_hidden_rifles = {
+
+			picture = HUN_secret_rearmament
+		
+			allowed = {
+				is_subject_of = GER
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+			
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.2 instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+			}			
 		}		
 	}
 	political_advisor = {
@@ -275,21 +377,6 @@ ideas = {
 			}
 
 		}
-
-		EFR_paul_gastin = {
-					
-			picture = generic_air_europe_1
-				
-			allowed = {
-				original_tag = EFR
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
 	}
 
 	high_command = {
@@ -320,6 +407,46 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+		}
+		EFR_paul_gastin = {
+				
+			allowed = {
+				original_tag = EFR
+			}
+			
+			research_bonus = {
+			}
+			
+			traits = { air_bomber_interception_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}			
+		}
+		EFR_de_lattre_de_tassigny = {
+				
+			allowed = {
+				original_tag = EFR
+			}
+			
+			available = {
+				NOT = {
+					OR ={
+						has_country_flag = delattre_imprisonned
+						has_country_flag = delattre_betrayed
+						has_country_flag = delattre_died
+					}
+				}
+			}
+			
+			research_bonus = {
+			}
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}			
 		}		
 	}
 	# MILITARY

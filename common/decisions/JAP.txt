@@ -823,12 +823,12 @@ JAP_southern_expansion = {
 			16 = { NOT = { is_controlled_by = FRA } }
 			custom_trigger_tooltip = {
 				tooltip = demand_indochina_focus_tt
-				NOT = { has_war_with = FRA }
-				NOT = { is_in_faction_with = FRA }
+				NOT = { has_war_with = EFR }
+				NOT = { is_in_faction_with = EFR }
 				OR = {
-					286 = { is_fully_controlled_by = FRA }
-					670 = { is_fully_controlled_by = FRA }
-					671 = { is_fully_controlled_by = FRA }
+					286 = { is_fully_controlled_by = EFR }
+					670 = { is_fully_controlled_by = EFR }
+					671 = { is_fully_controlled_by = EFR }
 				}
 			}
 		}
@@ -866,7 +866,7 @@ JAP_southern_expansion = {
 		}
 
 		complete_effect = {
-			FRA = { country_event = { id = france.1 } }
+			EFR = { country_event = { id = france.1 } }
 		}
 
 	}

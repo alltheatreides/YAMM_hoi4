@@ -2,7 +2,9 @@ ideas = {
 	country = {
 		idea_communist_central_management = {
 		
-
+		
+			picture = communist_central_management
+		
 			allowed = {
 				has_government = communism
 			}

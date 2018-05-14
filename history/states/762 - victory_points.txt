@@ -1,6 +1,6 @@
 state={
-		id=762
-		name="STATE_762"
+		id=763
+		name="STATE_763"
 		history={
 		victory_points = { 9620 15 }
 		victory_points = { 6666 1 }

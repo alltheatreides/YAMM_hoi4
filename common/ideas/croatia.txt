@@ -117,7 +117,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = 0.1
+				stability_factor = -0.05
+				war_support_factor = -0.05
 				conscription_factor = -0.025
 				justify_war_goal_time = -0.25 
 				 
