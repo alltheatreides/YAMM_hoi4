@@ -28,6 +28,9 @@ state={
 			9340 = {
 				naval_base = 3
 			}
+			310 = {
+				bunker = 2
+			}
 		}
 		add_core_of = LAT
 	}

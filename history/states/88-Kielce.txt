@@ -1,7 +1,7 @@
 state={
 	id=88 # Krakow
 	name="STATE_88"
-	manpower = 4392800
+	manpower = 3692800
 	resources={
 		# steel=18
 		oil=8

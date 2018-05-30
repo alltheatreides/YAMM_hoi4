@@ -7,7 +7,7 @@ state={
 	state_category = town
 	
 	resources={
-		oil=6
+		oil=4
 		iron=368
 		coal=296
 	}

@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	resources={
-		aluminium=2
+		#aluminium=2
 	}
 
 	history={
@@ -21,6 +21,7 @@ state={
 			industrial_complex = 3
 			air_base = 6
 			steel_refinery = 1
+			aluminium_refinery = 1
 		}
 		add_core_of = SPR
 	}

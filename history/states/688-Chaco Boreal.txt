@@ -6,7 +6,7 @@ state={
 	state_category = pastoral
 	
 	resources={
-		tungsten=4
+		tungsten=3
 		# steel=2
 	}
 

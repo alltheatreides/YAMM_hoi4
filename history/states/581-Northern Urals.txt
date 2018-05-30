@@ -7,7 +7,7 @@ state={
 	state_category = wasteland
 	
 	resources={
-		chromium=44
+		chromium=40
 		# aluminium=30
 	}
 

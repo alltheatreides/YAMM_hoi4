@@ -20,7 +20,7 @@ focus_tree = {
 	focus = {
 		id = parliamentaryelections 
 		icon = GFX_goal_support_democracy 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 6
 		y = 0 
 		mutually_exclusive = { } 
@@ -37,7 +37,7 @@ focus_tree = {
 	focus = {
 		id = breakthepoliticaldeadlock 
 		icon = GFX_goal_generic_intelligence_exchange 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 6
 		y = 1 
 		mutually_exclusive = { } 
@@ -65,7 +65,7 @@ focus_tree = {
 	focus = {
 		id = clampdownonunrest 
 		icon = GFX_goal_demand_sudetenland
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 6
 		y = 2 
 		mutually_exclusive = { } 
@@ -105,7 +105,7 @@ focus_tree = {
 	focus = {
 		id = new_regime 
 		icon = GFX_goal_support_fascism
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 3
 		y = 3
 		mutually_exclusive = { } 
@@ -128,7 +128,7 @@ focus_tree = {
 	focus = {
 		id = danzadelamuerte
 		icon = GFX_GRE_SCW 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 1 
 		y = 4
 		mutually_exclusive = { } 
@@ -162,7 +162,7 @@ focus_tree = {
 	focus = {
 		id = danzadelamuerte2
 		icon = GFX_GRE_SCW_2 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 1 
 		y = 5
 		mutually_exclusive = { } 
@@ -208,7 +208,7 @@ focus_tree = {
 	focus = {
 		id = danzadelamuerte3
 		icon = GFX_goal_generic_construct_mil_factory 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 1
 		y = 6
 		mutually_exclusive = { } 
@@ -244,7 +244,7 @@ focus_tree = {
 	focus = {
 		id = danzadelamuerte4
 		icon = GFX_CHI_chiang 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 3
 		y = 6
 		mutually_exclusive = { } 
@@ -276,7 +276,7 @@ focus_tree = {
 	focus = {
 		id = theschachtplanopportunity 
 		icon = GFX_goal_generic_consumer_goods 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 3
 		y = 4 
 		mutually_exclusive = { } 
@@ -299,7 +299,7 @@ focus_tree = {
 	focus = {
 		id = german_weapon_deals 
 		icon = GFX_goal_generic_small_arms 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 3
 		y = 5
 		mutually_exclusive = { } 
@@ -330,7 +330,7 @@ focus_tree = {
 	focus = {
 		id = book_burning 
 		icon = GFX_goal_generic_forceful_treaty 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 5
 		y = 4
 		mutually_exclusive = { } 
@@ -350,7 +350,7 @@ focus_tree = {
 	focus = {
 		id = press_censorship 
 		icon = GFX_goal_generic_propaganda 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 7
 		y = 4
 		mutually_exclusive = { } 
@@ -371,7 +371,7 @@ focus_tree = {
 	focus = {
 		id = political_persecution 
 		icon = GFX_goal_generic_secret_weapon 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 6
 		y = 5
 		mutually_exclusive = { } 
@@ -397,7 +397,7 @@ focus_tree = {
 	focus = {
 		id = GRE_regime_consolidation
 		icon = GFX_GRE_consolidate_regime
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 11
 		y = 3
 		mutually_exclusive = { } 
@@ -422,7 +422,7 @@ focus_tree = {
 	focus = {
 		id = GRE_new_greece
 		icon = GFX_GRE_new_greece
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 9
 		y = 4
 		mutually_exclusive = { } 
@@ -444,7 +444,7 @@ focus_tree = {
 	# focus = {
 		# id = GRE_third_hellenic_civilization
 		# icon = GFX_GRE_third_hellenic_civilization
-		# ai_will_do = { factor = 0 } 
+		# ai_will_do = { factor = 1 } 
 		# x = 9
 		# y = 5
 		# mutually_exclusive = { } 
@@ -465,7 +465,7 @@ focus_tree = {
 	focus = {
 		id = GRE_greek_pop_art
 		icon = GFX_GRE_greek_arts
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 8
 		y = 5
 		mutually_exclusive = { } 
@@ -486,7 +486,7 @@ focus_tree = {
 	focus = {
 		id = GRE_education_funding
 		icon = GFX_focus_research
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 10
 		y = 5
 		mutually_exclusive = { } 
@@ -507,7 +507,7 @@ focus_tree = {
 	focus = {
 		id = GRE_demotic_in_school
 		icon = GFX_GRE_demotic_greek
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 9
 		y = 6
 		mutually_exclusive = { } 
@@ -532,7 +532,7 @@ focus_tree = {
 	focus = {
 		id = GRE_secret_services
 		icon = GFX_focus_generic_strike_at_democracy1
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 12
 		y = 4
 		mutually_exclusive = { } 
@@ -553,7 +553,7 @@ focus_tree = {
 	focus = {
 		id = GRE_eon_creation
 		icon = GFX_GRE_EON
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 12
 		y = 5
 		mutually_exclusive = { } 
@@ -574,7 +574,7 @@ focus_tree = {
 	focus = {
 		id = GRE_labour_battalions
 		icon = GFX_goal_generic_construction2
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 12
 		y = 6
 		mutually_exclusive = { } 
@@ -597,7 +597,7 @@ focus_tree = {
 	focus = {
 		id = GRE_economic_revival
 		icon = GFX_goal_generic_demand_territory 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 16
 		y = 4
 		mutually_exclusive = { } 
@@ -615,7 +615,7 @@ focus_tree = {
 	focus = {
 		id = GRE_raise_wages
 		icon = GFX_goal_generic_construct_civ_factory 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 14
 		y = 5
 		mutually_exclusive = { } 
@@ -646,7 +646,7 @@ focus_tree = {
 	focus = {
 		id = GRE_social_insurance_fund 
 		icon = GFX_goal_generic_national_unity 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 14
 		y = 6
 		mutually_exclusive = { } 
@@ -663,7 +663,7 @@ focus_tree = {
 	focus = {
 		id = GRE_improve_working_conditions
 		icon = GFX_goal_generic_construct_civ_factory 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 16
 		y = 5
 		mutually_exclusive = { } 
@@ -688,7 +688,7 @@ focus_tree = {
 	focus = {
 		id = GRE_public_work_initiative 
 		icon = GFX_goal_generic_construct_infrastructure
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 16
 		y = 6
 		mutually_exclusive = { } 
@@ -726,7 +726,7 @@ focus_tree = {
 	focus = {
 		id = GRE_agricultural_reforms_2
 		icon = GFX_goal_agrarian_reform 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 18
 		y = 5
 		mutually_exclusive = { } 
@@ -752,7 +752,7 @@ focus_tree = {
 	focus = {
 		id = GRE_military_subsidies
 		icon = GFX_goal_generic_construct_mil_factory 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 18
 		y = 6
 		mutually_exclusive = { } 
@@ -787,7 +787,7 @@ focus_tree = {
 	focus = { 
 		id = GRE_stabilize_the_drachma 
 		icon = GFX_goal_generic_improve_relations 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 20
 		y = 6
 		mutually_exclusive = { } 
@@ -804,7 +804,7 @@ focus_tree = {
 	focus = {
 		id = GRE_revitalized_economy
 		icon = GFX_goal_generic_construct_civ_factory 
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 16
 		y = 7
 		mutually_exclusive = { } 
@@ -839,7 +839,7 @@ focus_tree = {
 	focus = {
 		id = GRE_armed_neutrality_policy
 		icon = GFX_goal_generic_defence
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 23
 		y = 3
 		mutually_exclusive = { } 
@@ -861,7 +861,7 @@ focus_tree = {
 	focus = {
 		id = GRE_czech_no_more
 		icon = GFX_goal_generic_position_armies
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 22
 		y = 4
 		mutually_exclusive = { } 
@@ -882,7 +882,7 @@ focus_tree = {
 	focus = {
 		id = GRE_realpolitik
 		icon = GFX_goal_tripartite_pact
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 22
 		y = 5
 		mutually_exclusive = { } 
@@ -911,7 +911,7 @@ focus_tree = {
 	focus = {
 		id = GRE_expand_military_budget
 		icon = GFX_focus_generic_little_entente
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 25
 		y = 4
 		mutually_exclusive = { } 
@@ -939,7 +939,7 @@ focus_tree = {
 	focus = {
 		id = GRE_bulgarian_threat
 		icon = GFX_goal_generic_territory_or_war
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 24
 		y = 5
 		mutually_exclusive = { } 
@@ -966,7 +966,7 @@ focus_tree = {
 	focus = {
 		id = GRE_metaxas_line
 		icon = GFX_goal_generic_defence
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 24
 		y = 6
 		# mutually_exclusive = { GRE_ib_plan } 
@@ -1016,7 +1016,7 @@ focus_tree = {
 	focus = {
 		id = GRE_metaxas_line_3
 		icon = GFX_goal_generic_construction2
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 23
 		y = 7
 		# mutually_exclusive = { GRE_ib_plan }
@@ -1072,7 +1072,7 @@ focus_tree = {
 	focus = {
 		id = GRE_italian_menace
 		icon = GFX_focus_generic_italy_first
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 26
 		y = 5
 		mutually_exclusive = { } 
@@ -1104,7 +1104,7 @@ focus_tree = {
 	focus = {
 		id = GRE_ib_plan
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 25
 		y = 7
 		# mutually_exclusive = { GRE_metaxas_line_3 } 
@@ -1128,7 +1128,7 @@ focus_tree = {
 	focus = {
 		id = GRE_mountain_guns
 		icon = GFX_goal_generic_army_artillery2
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 28
 		y = 5
 		mutually_exclusive = { } 
@@ -1149,7 +1149,7 @@ focus_tree = {
 	focus = {
 		id = GRE_ski_battalion
 		icon = GFX_ITA_Regio_Esercito
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 28
 		y = 7
 		mutually_exclusive = { } 
@@ -1170,7 +1170,7 @@ focus_tree = {
 	focus = {
 		id = GRE_greek_royal_airforce
 		icon = GFX_goal_generic_build_airforce
-		ai_will_do = { factor = 0 } 
+		ai_will_do = { factor = 1 } 
 		x = 27
 		y = 6
 		mutually_exclusive = { } 

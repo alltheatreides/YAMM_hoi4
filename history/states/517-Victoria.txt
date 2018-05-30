@@ -9,7 +9,7 @@ state={
 	
 	resources={
 		# steel=12
-		chromium=6
+		chromium=4
 		iron=12
 		bauxite=1
 	}

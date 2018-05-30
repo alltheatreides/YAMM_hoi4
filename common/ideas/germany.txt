@@ -471,11 +471,29 @@ ideas = {
 			picture = ger_rebuild_the_nation
 
 			modifier = {
+				consumer_goods_factor = -0.20
+			}
+		}
+
+		GER_national_revitalization = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
 				industry_repair_factor = 0.20
 			}
 		}
 
-		GER_rebuild_the_nation2 = {
+		GER_national_revitalization2 = {
 			allowed = {
 				always = no
 			}
@@ -495,7 +513,7 @@ ideas = {
 			}
 		}
 
-		GER_rebuild_the_nation3 = {
+		GER_national_revitalization3 = {
 			allowed = {
 				always = no
 			}
@@ -515,7 +533,7 @@ ideas = {
 			}
 		}
 
-		GER_rebuild_the_nation4 = {
+		GER_national_revitalization4 = {
 			allowed = {
 				always = no
 			}
@@ -971,7 +989,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -979,8 +997,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.20
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 0.2
 			}
 		}
 
@@ -991,7 +1018,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -999,8 +1026,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.25
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 0.35
 			}
 		}
 
@@ -1011,7 +1047,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1019,8 +1055,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.30
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 0.5
 			}
 		}
 
@@ -1031,7 +1076,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1039,8 +1084,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.35
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 0.65
 			}
 		}
 
@@ -1051,7 +1105,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1059,8 +1113,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.40
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 0.8
 			}
 		}
 
@@ -1071,7 +1134,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1079,8 +1142,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.45
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 0.95
 			}
 		}
 
@@ -1091,7 +1163,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1099,8 +1171,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.50
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 1.1
 			}
 		}
 
@@ -1111,7 +1192,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1119,8 +1200,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.55
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 1.25
 			}
 		}
 
@@ -1131,7 +1221,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1139,8 +1229,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.60
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 1.4
 			}
 		}
 
@@ -1151,7 +1250,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1159,8 +1258,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.65
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 1.55
 			}
 		}
 
@@ -1171,7 +1279,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1179,8 +1287,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.70
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 1.7
 			}
 		}
 
@@ -1191,7 +1308,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1199,8 +1316,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.75
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 1.85
 			}
 		}
 
@@ -1211,7 +1337,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1219,8 +1345,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.80
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 2
 			}
 		}
 
@@ -1231,7 +1366,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1239,8 +1374,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.85
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 2.15
 			}
 		}
 
@@ -1251,7 +1395,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1259,8 +1403,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.90
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 2.3
 			}
 		}
 
@@ -1271,7 +1424,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1279,8 +1432,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -0.95
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 2.45
 			}
 		}
 
@@ -1291,7 +1453,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1299,8 +1461,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -1.00
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 2.6
 			}
 		}
 
@@ -1311,7 +1482,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
@@ -1319,108 +1490,17 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -1.05
-			}
-		}
-
-		GER_mefo_bills_19 = {
-			name = GER_mefo_bills
-			allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = ger_mefo_bills
-
-			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -1.10
-			}
-		}
-
-		GER_mefo_bills_20 = {
-			name = GER_mefo_bills
-			allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = ger_mefo_bills
-
-			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -1.15
-			}
-		}
-
-		GER_mefo_bills_21 = {
-			name = GER_mefo_bills
-			allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = ger_mefo_bills
-
-			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -1.20
-			}
-		}
-
-		GER_mefo_bills_22 = {
-			name = GER_mefo_bills
-			allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = ger_mefo_bills
-
-			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -1.25
-			}
-		}
-
-		GER_mefo_bills_23 = {
-			name = GER_mefo_bills
-			allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = ger_mefo_bills
-
-			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_gain = -1.30
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
+				political_power_cost = 2.75
 			}
 		}
 
@@ -1430,7 +1510,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1

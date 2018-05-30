@@ -7,9 +7,9 @@ state={
 	state_category = large_town
 	
 	resources={
-		rubber=848
+		rubber=342
 		# steel=32
-		tungsten=308
+		tungsten=189
 		# aluminium = 25
 		iron=34
 		coal=5
